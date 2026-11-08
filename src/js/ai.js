@@ -1205,7 +1205,7 @@
     setTimeout(function () { log.scrollTop = Math.max(0, log.scrollTop + node.getBoundingClientRect().top - log.getBoundingClientRect().top - 10); }, 30);
   }
   function load() {
-    if (!loading) loading = fetch("ai/catalogue.json").then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (j) { init(j); return j; });
+    if (!loading) loading = fetch(panel.dataset.cat || "ai/catalogue.json").then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (j) { init(j); return j; });
     return loading;
   }
   function cap1(t) { return String(t).replace(/^./, function (c) { return c.toUpperCase(); }); }

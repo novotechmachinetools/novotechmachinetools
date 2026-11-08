@@ -6,6 +6,7 @@
 
 Content lives in content/, templates in templates/, static assets in src/.
 """
+import urllib.parse
 import json, os, re, shutil, sys, datetime, hashlib
 import html as html_mod
 from jinja2 import Environment, FileSystemLoader, select_autoescape
@@ -405,6 +406,13 @@ def organization_ld():
         "areaServed": {"@type": "Country", "name": "Canada"},
         "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "17:00"}],
         "sameAs": [x["url"] for x in site.get("social", []) if x.get("url")],
+        "email": f"{site['email_user']}@{site['email_domain']}",
+        "contactPoint": [{"@type": "ContactPoint", "contactType": "sales", "telephone": site["phone_tel"], "email": f"{site['email_user']}@{site['email_domain']}",
+                          "areaServed": "CA", "availableLanguage": ["English"]}],
+        "hasMap": "https://www.google.com/maps/search/?api=1&query=" + urllib.parse.quote(f"{site['name']}, {a['street']}, {a['city']}, {a['region']} {a['postal']}"),
+        "knowsAbout": ["press brakes", "fiber laser cutting machines", "hydraulic shears", "ironworkers", "metal band saws", "plate rolling machines",
+                       "angle rolls and tube rollers", "pipe and tube benders", "rebar benders and cutters", "hydraulic presses", "deburring and finishing machines",
+                       "press brake tooling", "welding positioners", "CNC machine tools"],
     }
 
 
@@ -1737,8 +1745,10 @@ def render_page(page):
         # Oct 31 2026: "the photo of each topic under it or beside it")
         art = re.sub(r'((?:<figure class="guide-figure[^"]*\bis-small\b[^"]*">.*?</figure>\s*)+)(<p>.*?</p>)',
                      r'<div class="guide-pair">\1\2</div>', art, flags=re.S)
-        page["article_html"] = art
         page["article_toc"] = [{"id": i, "label": re.sub(r"<[^>]+>", "", t)} for i, t in re.findall(r'<section class="guide-section" id="([^"]+)">\s*<h3>(.*?)</h3>', art)]
+        if page.get("template") == "article.html":   # a standalone article: its sections sit directly under the H1, so h3/h4 become h2/h3
+            art = re.sub(r"<(/?)h4\b", r"<\1h3", re.sub(r"<(/?)h3\b", r"<\1h2", art))
+        page["article_html"] = art
         gid = "#" + (page.get("article_id") or "buying-guide")
         if page.get("jump_links") and not any(j["href"] == gid for j in page["jump_links"]):   # the guide in the bar under the hero
             jl = list(page["jump_links"])

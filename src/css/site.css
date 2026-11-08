@@ -538,8 +538,8 @@ small { font-size: .85em; }
 .guide-toc ol { margin: 10px 0 26px; padding-left: 22px; columns: 2; column-gap: 32px; font-size: 15.5px; }
 .guide-toc li { break-inside: avoid; padding: 3px 0; }
 .guide-section { margin-top: 30px; }
-.guide-section h3 { font-size: 26px; margin: 0 0 10px; }
-.guide-section h4 { font-size: 19px; margin: 22px 0 6px; color: var(--charcoal); }
+.guide-section h3, .article-page .guide-section h2 { font-size: 26px; margin: 0 0 10px; }
+.guide-section h4, .article-page .guide-section h3 { font-size: 19px; margin: 22px 0 6px; color: var(--charcoal); }
 .guide-section p, .guide-section li { max-width: 78ch; }
 .guide-figure { margin: 18px 0; }
 .guide-figure img { max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: var(--radius); }
@@ -1249,7 +1249,7 @@ body.ai-locked { overflow: hidden; }
 .guide-figure.is-small.is-cutout { --fig-mh: 240px; }
 .guide-figure.is-half { --fig-w: 560px; --fig-mh: 400px; }
 .guide-figure img[style*="--ar"] { aspect-ratio: var(--ar); width: min(100%, var(--fig-w), calc(var(--fig-mh) * var(--ar))); height: auto; }
-.guide-section h3, .guide-section h4 { clear: both; }
+.guide-section h2, .guide-section h3, .guide-section h4 { clear: both; }
 .guide-section .control-card { clear: both; }
 /* one reading column for every guide (the owner, Oct 31 2026): the text keeps its 78ch measure and the small photos sit right
    beside it — before, the sections ran the full page width, so a floated photo landed 400 px away from its text and the

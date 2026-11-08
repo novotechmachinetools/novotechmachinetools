@@ -192,9 +192,10 @@ Redirect 301 "/files/Aluminum-and-PVC-processing-machines---PLASTMAK---MADE-IN-T
   ExpiresByType image/x-icon "access plus 1 year"
   ExpiresByType font/woff2 "access plus 1 year"
   ExpiresByType application/pdf "access plus 1 month"
+  ExpiresByType application/json "access plus 1 year"
 </IfModule>
 <IfModule mod_headers.c>
-  <FilesMatch "\.(css|js|webp|png|jpg|svg|ico|woff2)$">
+  <FilesMatch "\.(css|js|json|webp|png|jpg|svg|ico|woff2)$">
     Header set Cache-Control "public, max-age=31536000, immutable"
   </FilesMatch>
   Header always set X-Content-Type-Options "nosniff"
