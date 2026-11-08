@@ -12,6 +12,7 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DIST = os.path.join(ROOT, "dist")
+INDEXNOW_KEY = "a9f4c2e7b16d4d0e8c3b5f7a2d9e1c46"   # IndexNow (Bing, Yandex, Naver…): the key file sits at the site root; tools/indexnow.py submits changed URLs
 if os.environ.get("LENIENT_IMAGES"):   # preview build with placeholder images: never into dist/, so it cannot be deployed
     DIST = os.path.join(ROOT, "dist-preview")
 STAGING = "--staging" in sys.argv
@@ -1978,7 +1979,7 @@ def main():
     except ImportError:
         print("rcssmin/rjsmin not installed - shipping unminified CSS/JS")
     for extra in ("robots.txt", "llms.txt", ".htaccess", ".user.ini", "quote.php", "ask.php", "ai-config.sample.php", "form-config.sample.php",
-                  "favicon.ico", "favicon.svg", "site.webmanifest"):
+                  "favicon.ico", "favicon.svg", "site.webmanifest", INDEXNOW_KEY + ".txt"):
         s = os.path.join(ROOT, "src", "root", extra)
         if os.path.exists(s):
             shutil.copy(s, os.path.join(DIST, extra))
@@ -2090,11 +2091,26 @@ def main():
           f"{os.path.getsize(os.path.join(DIST, 'ai', 'catalogue.json'))//1024} KB")
     # sitemap
     today = datetime.date.today().isoformat()
+    # <lastmod> is the day the page's content file last changed in git (a date that is always "today" is ignored by Google)
+    changed = {}
+    try:
+        import subprocess
+        log = subprocess.run(["git", "log", "--format=%cs", "--name-only", "--", "content/pages"], cwd=ROOT, capture_output=True, text=True, timeout=30).stdout
+        cur = None
+        for line in log.splitlines():
+            if not line.strip():
+                continue
+            if "/" not in line and line[:4].isdigit():
+                cur = line.strip()
+            elif cur and line.startswith("content/pages/"):
+                changed.setdefault(os.path.basename(line)[:-5], cur)
+    except Exception:
+        pass
     def loc(p):
         return site["domain"] + "/" if p["slug"] == "index" else f"{site['domain']}/{p['slug']}"
     def prio(p):
         return "1.0" if p["slug"] == "index" else "0.9" if p.get("subpages") or p["slug"] == "products" else "0.5" if p["slug"] == "privacy-policy" else "0.8"
-    urls = "".join(f"  <url><loc>{loc(p)}</loc><lastmod>{today}</lastmod><changefreq>monthly</changefreq><priority>{prio(p)}</priority></url>\n" for p in pages
+    urls = "".join(f"  <url><loc>{loc(p)}</loc><lastmod>{changed.get(p['slug'], today)}</lastmod><changefreq>monthly</changefreq><priority>{prio(p)}</priority></url>\n" for p in pages
                    if not p.get("noindex"))   # the page-not-found page stays out
     open(os.path.join(DIST, "sitemap.xml"), "w").write(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}</urlset>\n')
     if STAGING:
