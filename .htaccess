@@ -13,6 +13,8 @@ RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
 </FilesMatch>
 
 # ---- Clean URLs: /band-saw serves band-saw.html, and /band-saw.html redirects to /band-saw ----
+RewriteCond %{THE_REQUEST} \s/+((?:[^\s?]+/)?)index\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
 RewriteCond %{THE_REQUEST} \s/+([^\s?]+)\.html[\s?] [NC]
 RewriteRule ^ /%1 [R=301,L]
 RewriteCond %{REQUEST_FILENAME} !-d
@@ -57,6 +59,13 @@ RedirectMatch 301 ^/sheet-metal-shears(\.html)?$ /mechanical-guillotine-shear
 # pipe benders by kind of machine (the owner, Nov 7 2026): the CSM line page and the value-line page merged into the three kind pages
 RedirectMatch 301 ^/csm-tube-benders(\.html)?$ /cnc-tube-benders
 RedirectMatch 301 ^/tube-bender(\.html)?$ /rotary-draw-tube-benders
+# redirects carried over from the old WebSite X5 .htaccess (Nov 8 2026): links that other sites and Google still hold
+RedirectMatch 301 ^/rebar/?$ /rebar-bender-and-cutter
+RedirectMatch 301 ^/(pilous|karmetal|bekamak)-(dual-column|pivot)-band-saw(\.html)?$ /band-saw
+RedirectMatch 301 ^/unleash-the-power-how-band-saws-revolutionize-metal-cutting(\.html)?$ /band-saw
+RedirectMatch 301 ^/beam-drill(\.html)?$ /drill-press
+RedirectMatch 301 ^/mandrel-tube-bender---copy(\.html)?$ /pipe-benders
+RedirectMatch 301 ^/corner-sander-seam-weld-grinding(\.html)?$ /sheet-metal-plate-deburring-edge-rounding-finishing-grinding
 # CNC plasma tables are not sold any more (the owner, Nov 7 2026)
 RedirectMatch 301 ^/cnc-plasma-table(\.html)?$ /laser-cutting-machine
 # lasers are split by kind of machine, not by supplier (Oct 2026)
