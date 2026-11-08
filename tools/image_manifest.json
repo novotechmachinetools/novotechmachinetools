@@ -120350,28 +120350,28 @@
   "alt": "A 4-roll plate roll rolling a steel cylinder \u2014 the first frame of NovoTech's header video",
   "variants": [
    {
+    "w": 1920,
+    "h": 1080,
+    "file": "img/site/nt-hero-poster-1920.webp",
+    "bytes": 61366
+   },
+   {
     "w": 1280,
     "h": 720,
     "file": "img/site/nt-hero-poster-1280.webp",
-    "bytes": 34224
+    "bytes": 37104
    },
    {
     "w": 960,
     "h": 540,
     "file": "img/site/nt-hero-poster-960.webp",
-    "bytes": 24242
+    "bytes": 26458
    },
    {
     "w": 640,
     "h": 360,
     "file": "img/site/nt-hero-poster-640.webp",
-    "bytes": 14966
-   },
-   {
-    "w": 480,
-    "h": 270,
-    "file": "img/site/nt-hero-poster-480.webp",
-    "bytes": 10584
+    "bytes": 16156
    }
   ],
   "alpha": false,
@@ -120379,35 +120379,41 @@
    "w": 160,
    "h": 90,
    "file": "img/site/nt-hero-poster-thumb.webp",
-   "bytes": 2178
+   "bytes": 2246
   }
  },
  "nt-work-band-saw": {
   "alt": "Band saw cutting a bundle of round tubes in one pass",
   "variants": [
    {
-    "w": 1280,
-    "h": 720,
-    "file": "img/site/nt-work-band-saw-1280.webp",
-    "bytes": 71552
+    "w": 2560,
+    "h": 1440,
+    "file": "img/site/nt-work-band-saw-2560.webp",
+    "bytes": 180110
+   },
+   {
+    "w": 1920,
+    "h": 1080,
+    "file": "img/site/nt-work-band-saw-1920.webp",
+    "bytes": 119390
+   },
+   {
+    "w": 1440,
+    "h": 810,
+    "file": "img/site/nt-work-band-saw-1440.webp",
+    "bytes": 83760
    },
    {
     "w": 960,
     "h": 540,
     "file": "img/site/nt-work-band-saw-960.webp",
-    "bytes": 51476
+    "bytes": 48516
    },
    {
     "w": 640,
     "h": 360,
     "file": "img/site/nt-work-band-saw-640.webp",
-    "bytes": 30672
-   },
-   {
-    "w": 480,
-    "h": 270,
-    "file": "img/site/nt-work-band-saw-480.webp",
-    "bytes": 20510
+    "bytes": 28326
    }
   ],
   "alpha": false,
@@ -120415,35 +120421,41 @@
    "w": 160,
    "h": 90,
    "file": "img/site/nt-work-band-saw-thumb.webp",
-   "bytes": 3804
+   "bytes": 3836
   }
  },
  "nt-work-plate-roll": {
   "alt": "Operator rolling a sheet on a CNC 4-roll plate roll",
   "variants": [
    {
-    "w": 1280,
-    "h": 720,
-    "file": "img/site/nt-work-plate-roll-1280.webp",
-    "bytes": 57656
+    "w": 2560,
+    "h": 1440,
+    "file": "img/site/nt-work-plate-roll-2560.webp",
+    "bytes": 136018
+   },
+   {
+    "w": 1920,
+    "h": 1080,
+    "file": "img/site/nt-work-plate-roll-1920.webp",
+    "bytes": 95298
+   },
+   {
+    "w": 1440,
+    "h": 810,
+    "file": "img/site/nt-work-plate-roll-1440.webp",
+    "bytes": 67538
    },
    {
     "w": 960,
     "h": 540,
     "file": "img/site/nt-work-plate-roll-960.webp",
-    "bytes": 42008
+    "bytes": 41814
    },
    {
     "w": 640,
     "h": 360,
     "file": "img/site/nt-work-plate-roll-640.webp",
-    "bytes": 25694
-   },
-   {
-    "w": 480,
-    "h": 270,
-    "file": "img/site/nt-work-plate-roll-480.webp",
-    "bytes": 18084
+    "bytes": 25290
    }
   ],
   "alpha": false,
@@ -120451,35 +120463,41 @@
    "w": 160,
    "h": 90,
    "file": "img/site/nt-work-plate-roll-thumb.webp",
-   "bytes": 3380
+   "bytes": 3486
   }
  },
  "nt-work-angle-roll": {
   "alt": "Angle roll bending round bar into a spiral ring",
   "variants": [
    {
-    "w": 1280,
-    "h": 720,
-    "file": "img/site/nt-work-angle-roll-1280.webp",
-    "bytes": 44156
+    "w": 2560,
+    "h": 1440,
+    "file": "img/site/nt-work-angle-roll-2560.webp",
+    "bytes": 99034
+   },
+   {
+    "w": 1920,
+    "h": 1080,
+    "file": "img/site/nt-work-angle-roll-1920.webp",
+    "bytes": 70638
+   },
+   {
+    "w": 1440,
+    "h": 810,
+    "file": "img/site/nt-work-angle-roll-1440.webp",
+    "bytes": 50714
    },
    {
     "w": 960,
     "h": 540,
     "file": "img/site/nt-work-angle-roll-960.webp",
-    "bytes": 32750
+    "bytes": 32092
    },
    {
     "w": 640,
     "h": 360,
     "file": "img/site/nt-work-angle-roll-640.webp",
-    "bytes": 20960
-   },
-   {
-    "w": 480,
-    "h": 270,
-    "file": "img/site/nt-work-angle-roll-480.webp",
-    "bytes": 14600
+    "bytes": 19972
    }
   ],
   "alpha": false,
@@ -120487,35 +120505,41 @@
    "w": 160,
    "h": 90,
    "file": "img/site/nt-work-angle-roll-thumb.webp",
-   "bytes": 2906
+   "bytes": 2888
   }
  },
  "nt-work-ironworker": {
   "alt": "Operator punching plate on a hydraulic ironworker",
   "variants": [
    {
-    "w": 1280,
-    "h": 720,
-    "file": "img/site/nt-work-ironworker-1280.webp",
-    "bytes": 53170
+    "w": 2560,
+    "h": 1440,
+    "file": "img/site/nt-work-ironworker-2560.webp",
+    "bytes": 118718
+   },
+   {
+    "w": 1920,
+    "h": 1080,
+    "file": "img/site/nt-work-ironworker-1920.webp",
+    "bytes": 84360
+   },
+   {
+    "w": 1440,
+    "h": 810,
+    "file": "img/site/nt-work-ironworker-1440.webp",
+    "bytes": 60368
    },
    {
     "w": 960,
     "h": 540,
     "file": "img/site/nt-work-ironworker-960.webp",
-    "bytes": 39622
+    "bytes": 37970
    },
    {
     "w": 640,
     "h": 360,
     "file": "img/site/nt-work-ironworker-640.webp",
-    "bytes": 24200
-   },
-   {
-    "w": 480,
-    "h": 270,
-    "file": "img/site/nt-work-ironworker-480.webp",
-    "bytes": 18206
+    "bytes": 23900
    }
   ],
   "alpha": false,
@@ -120523,35 +120547,41 @@
    "w": 160,
    "h": 90,
    "file": "img/site/nt-work-ironworker-thumb.webp",
-   "bytes": 4144
+   "bytes": 4164
   }
  },
  "nt-work-rebar": {
   "alt": "Bending rebar on a stationary rebar bender",
   "variants": [
    {
-    "w": 1280,
-    "h": 720,
-    "file": "img/site/nt-work-rebar-1280.webp",
-    "bytes": 56738
+    "w": 2560,
+    "h": 1440,
+    "file": "img/site/nt-work-rebar-2560.webp",
+    "bytes": 142122
+   },
+   {
+    "w": 1920,
+    "h": 1080,
+    "file": "img/site/nt-work-rebar-1920.webp",
+    "bytes": 97066
+   },
+   {
+    "w": 1440,
+    "h": 810,
+    "file": "img/site/nt-work-rebar-1440.webp",
+    "bytes": 69760
    },
    {
     "w": 960,
     "h": 540,
     "file": "img/site/nt-work-rebar-960.webp",
-    "bytes": 41516
+    "bytes": 42576
    },
    {
     "w": 640,
     "h": 360,
     "file": "img/site/nt-work-rebar-640.webp",
-    "bytes": 25616
-   },
-   {
-    "w": 480,
-    "h": 270,
-    "file": "img/site/nt-work-rebar-480.webp",
-    "bytes": 18190
+    "bytes": 25546
    }
   ],
   "alpha": false,
@@ -120559,35 +120589,41 @@
    "w": 160,
    "h": 90,
    "file": "img/site/nt-work-rebar-thumb.webp",
-   "bytes": 3666
+   "bytes": 3706
   }
  },
  "nt-work-tube-bender": {
   "alt": "CNC tube bender bending a tube around the bend die",
   "variants": [
    {
-    "w": 1280,
-    "h": 720,
-    "file": "img/site/nt-work-tube-bender-1280.webp",
-    "bytes": 90354
+    "w": 2560,
+    "h": 1440,
+    "file": "img/site/nt-work-tube-bender-2560.webp",
+    "bytes": 234242
+   },
+   {
+    "w": 1920,
+    "h": 1080,
+    "file": "img/site/nt-work-tube-bender-1920.webp",
+    "bytes": 162848
+   },
+   {
+    "w": 1440,
+    "h": 810,
+    "file": "img/site/nt-work-tube-bender-1440.webp",
+    "bytes": 117686
    },
    {
     "w": 960,
     "h": 540,
     "file": "img/site/nt-work-tube-bender-960.webp",
-    "bytes": 68910
+    "bytes": 73690
    },
    {
     "w": 640,
     "h": 360,
     "file": "img/site/nt-work-tube-bender-640.webp",
-    "bytes": 42758
-   },
-   {
-    "w": 480,
-    "h": 270,
-    "file": "img/site/nt-work-tube-bender-480.webp",
-    "bytes": 29810
+    "bytes": 43344
    }
   ],
   "alpha": false,
@@ -120595,35 +120631,41 @@
    "w": 160,
    "h": 90,
    "file": "img/site/nt-work-tube-bender-thumb.webp",
-   "bytes": 5348
+   "bytes": 5420
   }
  },
  "nt-work-pipe-polish": {
   "alt": "Pipe sanding machine polishing a large-diameter pipe",
   "variants": [
    {
-    "w": 1280,
-    "h": 720,
-    "file": "img/site/nt-work-pipe-polish-1280.webp",
-    "bytes": 62104
+    "w": 2560,
+    "h": 1440,
+    "file": "img/site/nt-work-pipe-polish-2560.webp",
+    "bytes": 151718
+   },
+   {
+    "w": 1920,
+    "h": 1080,
+    "file": "img/site/nt-work-pipe-polish-1920.webp",
+    "bytes": 104212
+   },
+   {
+    "w": 1440,
+    "h": 810,
+    "file": "img/site/nt-work-pipe-polish-1440.webp",
+    "bytes": 75690
    },
    {
     "w": 960,
     "h": 540,
     "file": "img/site/nt-work-pipe-polish-960.webp",
-    "bytes": 45508
+    "bytes": 46860
    },
    {
     "w": 640,
     "h": 360,
     "file": "img/site/nt-work-pipe-polish-640.webp",
-    "bytes": 28718
-   },
-   {
-    "w": 480,
-    "h": 270,
-    "file": "img/site/nt-work-pipe-polish-480.webp",
-    "bytes": 20270
+    "bytes": 28804
    }
   ],
   "alpha": false,
@@ -120631,7 +120673,7 @@
    "w": 160,
    "h": 90,
    "file": "img/site/nt-work-pipe-polish-thumb.webp",
-   "bytes": 3990
+   "bytes": 4022
   }
  },
  "nt-work-section-bender": {
@@ -121148,6 +121190,282 @@
    "h": 90,
    "file": "img/bandsaw/video-5hBggXWPuKE-thumb.webp",
    "bytes": 2544
+  }
+ },
+ "nt-work-press-brake": {
+  "alt": "CNC hydraulic press brake bending a long steel part",
+  "variants": [
+   {
+    "w": 2560,
+    "h": 1440,
+    "file": "img/site/nt-work-press-brake-2560.webp",
+    "bytes": 172834
+   },
+   {
+    "w": 1920,
+    "h": 1080,
+    "file": "img/site/nt-work-press-brake-1920.webp",
+    "bytes": 120066
+   },
+   {
+    "w": 1440,
+    "h": 810,
+    "file": "img/site/nt-work-press-brake-1440.webp",
+    "bytes": 86560
+   },
+   {
+    "w": 960,
+    "h": 540,
+    "file": "img/site/nt-work-press-brake-960.webp",
+    "bytes": 54346
+   },
+   {
+    "w": 640,
+    "h": 360,
+    "file": "img/site/nt-work-press-brake-640.webp",
+    "bytes": 31930
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/site/nt-work-press-brake-thumb.webp",
+   "bytes": 4318
+  }
+ },
+ "nt-work-fiber-laser": {
+  "alt": "Fiber laser cutting mild steel plate",
+  "variants": [
+   {
+    "w": 2560,
+    "h": 1440,
+    "file": "img/site/nt-work-fiber-laser-2560.webp",
+    "bytes": 81504
+   },
+   {
+    "w": 1920,
+    "h": 1080,
+    "file": "img/site/nt-work-fiber-laser-1920.webp",
+    "bytes": 56212
+   },
+   {
+    "w": 1440,
+    "h": 810,
+    "file": "img/site/nt-work-fiber-laser-1440.webp",
+    "bytes": 40066
+   },
+   {
+    "w": 960,
+    "h": 540,
+    "file": "img/site/nt-work-fiber-laser-960.webp",
+    "bytes": 25798
+   },
+   {
+    "w": 640,
+    "h": 360,
+    "file": "img/site/nt-work-fiber-laser-640.webp",
+    "bytes": 15936
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/site/nt-work-fiber-laser-thumb.webp",
+   "bytes": 2346
+  }
+ },
+ "nt-work-shear": {
+  "alt": "Hydraulic guillotine shear with a steel sheet on its table",
+  "variants": [
+   {
+    "w": 2560,
+    "h": 1144,
+    "file": "img/site/nt-work-shear-2560.webp",
+    "bytes": 107912
+   },
+   {
+    "w": 1920,
+    "h": 858,
+    "file": "img/site/nt-work-shear-1920.webp",
+    "bytes": 74596
+   },
+   {
+    "w": 1440,
+    "h": 644,
+    "file": "img/site/nt-work-shear-1440.webp",
+    "bytes": 52744
+   },
+   {
+    "w": 960,
+    "h": 429,
+    "file": "img/site/nt-work-shear-960.webp",
+    "bytes": 32028
+   },
+   {
+    "w": 640,
+    "h": 286,
+    "file": "img/site/nt-work-shear-640.webp",
+    "bytes": 19100
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 72,
+   "file": "img/site/nt-work-shear-thumb.webp",
+   "bytes": 2550
+  }
+ },
+ "nt-work-tube-laser": {
+  "alt": "Tube laser cutting a rectangular steel tube, sparks flying",
+  "variants": [
+   {
+    "w": 2560,
+    "h": 1184,
+    "file": "img/site/nt-work-tube-laser-2560.webp",
+    "bytes": 128674
+   },
+   {
+    "w": 1920,
+    "h": 888,
+    "file": "img/site/nt-work-tube-laser-1920.webp",
+    "bytes": 88212
+   },
+   {
+    "w": 1440,
+    "h": 666,
+    "file": "img/site/nt-work-tube-laser-1440.webp",
+    "bytes": 63756
+   },
+   {
+    "w": 960,
+    "h": 444,
+    "file": "img/site/nt-work-tube-laser-960.webp",
+    "bytes": 37160
+   },
+   {
+    "w": 640,
+    "h": 296,
+    "file": "img/site/nt-work-tube-laser-640.webp",
+    "bytes": 21628
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 74,
+   "file": "img/site/nt-work-tube-laser-thumb.webp",
+   "bytes": 2706
+  }
+ },
+ "nt-work-folder": {
+  "alt": "Folding a coated steel panel on a sheet metal brake",
+  "variants": [
+   {
+    "w": 2560,
+    "h": 1184,
+    "file": "img/site/nt-work-folder-2560.webp",
+    "bytes": 90034
+   },
+   {
+    "w": 1920,
+    "h": 888,
+    "file": "img/site/nt-work-folder-1920.webp",
+    "bytes": 61066
+   },
+   {
+    "w": 1440,
+    "h": 666,
+    "file": "img/site/nt-work-folder-1440.webp",
+    "bytes": 43566
+   },
+   {
+    "w": 960,
+    "h": 444,
+    "file": "img/site/nt-work-folder-960.webp",
+    "bytes": 27548
+   },
+   {
+    "w": 640,
+    "h": 296,
+    "file": "img/site/nt-work-folder-640.webp",
+    "bytes": 17456
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 74,
+   "file": "img/site/nt-work-folder-thumb.webp",
+   "bytes": 2924
+  }
+ },
+ "nt-work-deburring": {
+  "alt": "Deburring a laser-cut steel part on an abrasive belt",
+  "variants": [
+   {
+    "w": 2560,
+    "h": 1184,
+    "file": "img/site/nt-work-deburring-2560.webp",
+    "bytes": 113068
+   },
+   {
+    "w": 1920,
+    "h": 888,
+    "file": "img/site/nt-work-deburring-1920.webp",
+    "bytes": 77116
+   },
+   {
+    "w": 1440,
+    "h": 666,
+    "file": "img/site/nt-work-deburring-1440.webp",
+    "bytes": 53938
+   },
+   {
+    "w": 960,
+    "h": 444,
+    "file": "img/site/nt-work-deburring-960.webp",
+    "bytes": 32298
+   },
+   {
+    "w": 640,
+    "h": 296,
+    "file": "img/site/nt-work-deburring-640.webp",
+    "bytes": 19152
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 74,
+   "file": "img/site/nt-work-deburring-thumb.webp",
+   "bytes": 2834
+  }
+ },
+ "nt-hero-poster-tall": {
+  "alt": "A 4-roll plate roll rolling a steel cylinder \u2014 the first frame of NovoTech's header video, as a phone shows it",
+  "variants": [
+   {
+    "w": 810,
+    "h": 1440,
+    "file": "img/site/nt-hero-poster-tall-810.webp",
+    "bytes": 32810
+   },
+   {
+    "w": 540,
+    "h": 960,
+    "file": "img/site/nt-hero-poster-tall-540.webp",
+    "bytes": 20208
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 90,
+   "h": 160,
+   "file": "img/site/nt-hero-poster-tall-thumb.webp",
+   "bytes": 2214
   }
  }
 }

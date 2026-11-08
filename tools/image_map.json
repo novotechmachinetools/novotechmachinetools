@@ -35337,10 +35337,10 @@
   "quality": 82,
   "cutout": false,
   "sizes": [
+   1920,
    1280,
    960,
-   640,
-   480
+   640
   ]
  },
  "nt-work-band-saw": {
@@ -35348,13 +35348,14 @@
   "alt": "Band saw cutting a bundle of round tubes in one pass",
   "section": "site",
   "trim": false,
-  "quality": 82,
+  "quality": 80,
   "cutout": false,
   "sizes": [
-   1280,
+   2560,
+   1920,
+   1440,
    960,
-   640,
-   480
+   640
   ]
  },
  "nt-work-plate-roll": {
@@ -35362,13 +35363,14 @@
   "alt": "Operator rolling a sheet on a CNC 4-roll plate roll",
   "section": "site",
   "trim": false,
-  "quality": 82,
+  "quality": 80,
   "cutout": false,
   "sizes": [
-   1280,
+   2560,
+   1920,
+   1440,
    960,
-   640,
-   480
+   640
   ]
  },
  "nt-work-angle-roll": {
@@ -35376,13 +35378,14 @@
   "alt": "Angle roll bending round bar into a spiral ring",
   "section": "site",
   "trim": false,
-  "quality": 82,
+  "quality": 80,
   "cutout": false,
   "sizes": [
-   1280,
+   2560,
+   1920,
+   1440,
    960,
-   640,
-   480
+   640
   ]
  },
  "nt-work-ironworker": {
@@ -35390,13 +35393,14 @@
   "alt": "Operator punching plate on a hydraulic ironworker",
   "section": "site",
   "trim": false,
-  "quality": 82,
+  "quality": 80,
   "cutout": false,
   "sizes": [
-   1280,
+   2560,
+   1920,
+   1440,
    960,
-   640,
-   480
+   640
   ]
  },
  "nt-work-rebar": {
@@ -35404,13 +35408,14 @@
   "alt": "Bending rebar on a stationary rebar bender",
   "section": "site",
   "trim": false,
-  "quality": 82,
+  "quality": 80,
   "cutout": false,
   "sizes": [
-   1280,
+   2560,
+   1920,
+   1440,
    960,
-   640,
-   480
+   640
   ]
  },
  "nt-work-tube-bender": {
@@ -35418,13 +35423,14 @@
   "alt": "CNC tube bender bending a tube around the bend die",
   "section": "site",
   "trim": false,
-  "quality": 82,
+  "quality": 80,
   "cutout": false,
   "sizes": [
-   1280,
+   2560,
+   1920,
+   1440,
    960,
-   640,
-   480
+   640
   ]
  },
  "nt-work-pipe-polish": {
@@ -35432,13 +35438,14 @@
   "alt": "Pipe sanding machine polishing a large-diameter pipe",
   "section": "site",
   "trim": false,
-  "quality": 82,
+  "quality": 80,
   "cutout": false,
   "sizes": [
-   1280,
+   2560,
+   1920,
+   1440,
    960,
-   640,
-   480
+   640
   ]
  },
  "nt-work-section-bender": {
@@ -35582,5 +35589,107 @@
   "cutout": false,
   "quality": 72,
   "section": "bandsaw"
+ },
+ "nt-work-press-brake": {
+  "src": "tools/src-images/site/work/nt-work-press-brake.jpg",
+  "alt": "CNC hydraulic press brake bending a long steel part",
+  "section": "site",
+  "trim": false,
+  "quality": 80,
+  "cutout": false,
+  "sizes": [
+   2560,
+   1920,
+   1440,
+   960,
+   640
+  ]
+ },
+ "nt-work-fiber-laser": {
+  "src": "tools/src-images/site/work/nt-work-fiber-laser.jpg",
+  "alt": "Fiber laser cutting mild steel plate",
+  "section": "site",
+  "trim": false,
+  "quality": 80,
+  "cutout": false,
+  "sizes": [
+   2560,
+   1920,
+   1440,
+   960,
+   640
+  ]
+ },
+ "nt-work-shear": {
+  "src": "tools/src-images/site/work/nt-work-shear.jpg",
+  "alt": "Hydraulic guillotine shear with a steel sheet on its table",
+  "section": "site",
+  "trim": false,
+  "quality": 80,
+  "cutout": false,
+  "sizes": [
+   2560,
+   1920,
+   1440,
+   960,
+   640
+  ]
+ },
+ "nt-work-tube-laser": {
+  "src": "tools/src-images/site/work/nt-work-tube-laser.jpg",
+  "alt": "Tube laser cutting a rectangular steel tube, sparks flying",
+  "section": "site",
+  "trim": false,
+  "quality": 80,
+  "cutout": false,
+  "sizes": [
+   2560,
+   1920,
+   1440,
+   960,
+   640
+  ]
+ },
+ "nt-work-folder": {
+  "src": "tools/src-images/site/work/nt-work-folder.jpg",
+  "alt": "Folding a coated steel panel on a sheet metal brake",
+  "section": "site",
+  "trim": false,
+  "quality": 80,
+  "cutout": false,
+  "sizes": [
+   2560,
+   1920,
+   1440,
+   960,
+   640
+  ]
+ },
+ "nt-work-deburring": {
+  "src": "tools/src-images/site/work/nt-work-deburring.jpg",
+  "alt": "Deburring a laser-cut steel part on an abrasive belt",
+  "section": "site",
+  "trim": false,
+  "quality": 80,
+  "cutout": false,
+  "sizes": [
+   2560,
+   1920,
+   1440,
+   960,
+   640
+  ]
+ },
+ "nt-hero-poster-tall": {
+  "src": "tools/src-images/site/work/nt-hero-poster-tall.jpg",
+  "alt": "A 4-roll plate roll rolling a steel cylinder — the first frame of NovoTech's header video, as a phone shows it",
+  "section": "site",
+  "trim": false,
+  "quality": 80,
+  "cutout": false,
+  "sizes": [
+   810,
+   540
+  ]
  }
 }

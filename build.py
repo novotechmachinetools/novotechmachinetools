@@ -1801,6 +1801,25 @@ def ai_catalogue(pages):
                     models.append({k: v for k, v in entry.items() if v})
                 ci = f.get("card_image")
                 thumb = (ci.get("thumb") or ci.get("small")) if ci else None
+                # sharp photos for the finder's cards (the owner, Nov 7 2026: the thumbnails looked blurry): the family's
+                # card photo up to 800 px, and a model's own photo when the gallery has one named after it ('b-36' for B 36)
+                def card_img(name):
+                    if not name or name not in manifest:
+                        return None
+                    x = img(name, max_w=800)
+                    return {"src": x["small"], "srcset": x["srcset"], "alpha": x["alpha"]}
+                fam_img = card_img(ci.get("name")) if ci else None
+                gallery = [k for k in (f.get("images") or []) if isinstance(k, str) and k in manifest]
+                for m in models:
+                    mk = re.sub(r"[^a-z0-9]", "", m["name"].lower())
+                    if len(mk) < 3 or not re.search(r"\d", mk):
+                        continue
+                    for k in gallery:
+                        kk = re.sub(r"[^a-z0-9]", "", k.lower())
+                        i = kk.find(mk)
+                        if i >= 0 and not kk[i + len(mk):i + len(mk) + 1].isdigit() and (i == 0 or not kk[i - 1].isdigit()):
+                            m["img"] = card_img(k)
+                            break
                 brand = site.get("brands", {}).get(f.get("brand"), {})
                 pdf = f.get("pdf") if isinstance(f.get("pdf"), dict) else None
                 strip = lambda x: html_mod.unescape(re.sub(r"<[^>]+>", "", x)) if isinstance(x, str) else ""
@@ -1812,7 +1831,7 @@ def ai_catalogue(pages):
                     "headline": f.get("headline", ""), "summary": strip(f.get("summary", "")),
                     "features": [strip(x) for x in f.get("features", [])],
                     "optional": [strip(x) for x in (f.get("optional") or []) if isinstance(x, str)],
-                    "automation": f.get("group"), "models": models, "image": thumb,
+                    "automation": f.get("group"), "models": models, "image": thumb, "img": fam_img,
                     "pdf": pdf.get("file") if pdf else None,
                     "specs": ai_index.table_rows(spec) or None,
                     "caps": ai_index.family_caps(f, model_single, bandsaw_round0),

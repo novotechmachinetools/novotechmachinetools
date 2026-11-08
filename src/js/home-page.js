@@ -1,5 +1,5 @@
-/* The home page: the header video, the AI machine finder boxes, the machines-at-work slides and their videos, and the
-   index of every kind of machine (folded on phones). Loaded by templates/home.html only. */
+/* The home page: the header video, the AI machine finder boxes, the slides of the main machines, and the index of
+   every kind of machine (folded on phones). Loaded by templates/home.html only. */
 (function () {
   "use strict";
   var d = document, w = window;
@@ -7,12 +7,13 @@
   var conn = navigator.connection || {};
   var slow = !!conn.saveData || /(^|-)(2g|3g)$/.test(conn.effectiveType || "");
 
-  /* ---------- header video: starts once the page has loaded; phones get the small file; a still picture on
-     Save-Data, slow connections and reduced motion; pauses when it scrolls out of view; a button pauses it ---------- */
+  /* ---------- header video: starts once the page has loaded; AV1 where the browser plays it, else H.264; tall screens
+     (phones) get the centre of the frame at twice the sharpness; a still picture on Save-Data, slow connections and
+     reduced motion; pauses when it scrolls out of view or something covers it; a button pauses it ---------- */
   var hero = d.querySelector(".hp-hero"), vid = hero && hero.querySelector("video"), toggle = hero && hero.querySelector(".hp-video-toggle");
   var userPaused = false, inView = true, aiPanel = d.getElementById("ai-panel");
   // it plays only while it is on screen and nothing covers it (the AI machine finder, a video lightbox)
-  function covered() { return (aiPanel && !aiPanel.hidden) || !!d.querySelector(".hp-modal"); }
+  function covered() { return !!(aiPanel && !aiPanel.hidden); }
   function resume() { if (vid.src && vid.paused && inView && !userPaused && !d.hidden && !covered()) play(); }
   function label(paused) {
     if (!toggle) return;
@@ -20,13 +21,30 @@
     toggle.querySelector(".hp-video-label").textContent = paused ? "Play video" : "Pause video";
   }
   function play() { var p = vid.play(); if (p && p.catch) p.catch(function () {}); }
+  var tallMq = w.matchMedia ? w.matchMedia("(max-aspect-ratio: 4/5)") : null;     // the same rule as the poster <picture>
+  function pick() {
+    var av1 = false;
+    try { av1 = vid.canPlayType('video/mp4; codecs="av01.0.08M.08"') === "probably"; } catch (e) {}
+    var k = tallMq && tallMq.matches ? "tall" : "wide";
+    return (av1 && vid.dataset[k + "Av1"]) || vid.dataset[k];
+  }
   function startVideo() {
     if (!vid || reduce || slow) return;
-    var small = Math.min(screen.width || 9999, w.innerWidth) < 900;
-    vid.src = small ? vid.dataset.srcSmall : vid.dataset.src;
+    vid.src = pick();
     vid.preload = "auto";
     if (!covered()) play();
     if (toggle) toggle.hidden = false;
+  }
+  if (vid && tallMq && tallMq.addEventListener) {        // a phone turned sideways: swap to the other file, same moment
+    tallMq.addEventListener("change", function () {
+      if (!vid.src) return;
+      var t = vid.currentTime, next = pick();
+      if (vid.src.indexOf(next) !== -1) return;
+      vid.classList.remove("is-playing");
+      vid.src = next;
+      vid.addEventListener("loadedmetadata", function once() { vid.removeEventListener("loadedmetadata", once); try { vid.currentTime = t; } catch (e) {} }, false);
+      resume();
+    });
   }
   if (vid) {
     vid.addEventListener("playing", function () { vid.classList.add("is-playing"); label(false); });
@@ -134,35 +152,6 @@
       }, { threshold: 0.3 }).observe(sl);
     } else restart();
     mark(0);
-  });
-
-  /* ---------- "Watch it run": the machine's video in a lightbox (youtube-nocookie) ---------- */
-  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
-  Array.prototype.forEach.call(d.querySelectorAll(".hp-watch[data-yt]"), function (b) {
-    b.addEventListener("click", function () {
-      var back = d.activeElement, id = b.dataset.yt, title = b.dataset.title || "Video";
-      var m = d.createElement("div");
-      m.className = "hp-modal";
-      m.innerHTML = '<div class="hp-modal-box" role="dialog" aria-modal="true" aria-label="' + esc(title) + '">' +
-        '<button type="button" class="hp-modal-close" aria-label="Close video">×</button>' +
-        '<div class="hp-modal-frame"><iframe src="https://www.youtube-nocookie.com/embed/' + encodeURIComponent(id) + '?autoplay=1&rel=0&modestbranding=1&playsinline=1" title="' + esc(title) +
-        '" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div>' +
-        '<p class="hp-modal-title">' + esc(title) + "</p></div>";
-      function close() {
-        d.removeEventListener("keydown", onKey);
-        if (m.parentNode) m.parentNode.removeChild(m);
-        d.body.classList.remove("ai-locked");
-        if (back && back.focus) back.focus();
-        if (vid) resume();
-      }
-      function onKey(e) { if (e.key === "Escape") close(); }
-      m.addEventListener("click", function (e) { if (e.target === m || e.target.closest(".hp-modal-close")) close(); });
-      d.addEventListener("keydown", onKey);
-      d.body.appendChild(m);
-      d.body.classList.add("ai-locked");
-      if (vid && !vid.paused) vid.pause();
-      m.querySelector(".hp-modal-close").focus();
-    });
   });
 
   /* ---------- every kind of machine: folded on phones, open elsewhere ---------- */
