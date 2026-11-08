@@ -58,20 +58,12 @@
   ],
   "work_slides": [
     {
-      "image": "nt-work-press-brake",
-      "kicker": "Bend sheet and plate",
-      "title": "Press brakes",
-      "short": "press brakes",
-      "line": "CNC hydraulic, hybrid and servo-electric press brakes from 22 to 1,323 US tons and 4 to 20 ft.",
-      "href": "press-brake.html"
-    },
-    {
-      "image": "nt-work-fiber-laser",
-      "kicker": "Cut sheet and plate",
-      "title": "Fiber laser cutting machines",
-      "short": "fiber lasers",
-      "line": "Sheet and plate fiber lasers from 4 × 4 ft to 10 × 164 ft and 1.5 to 80 kW, with shuttle tables, loaders and sorting.",
-      "href": "laser-cutting-machine.html"
+      "image": "nt-work-rebar",
+      "kicker": "Bend and cut rebar",
+      "title": "Rebar benders and cutters",
+      "short": "rebar machines",
+      "line": "Stationary and portable rebar benders, hydraulic cutters, stirrup and spiral benders and automatic lines, #3 to #18.",
+      "href": "rebar-bender-and-cutter.html"
     },
     {
       "image": "nt-work-band-saw",
@@ -82,12 +74,28 @@
       "href": "band-saw.html"
     },
     {
-      "image": "nt-work-shear",
-      "kicker": "Shear sheet and plate",
-      "title": "Shears",
-      "short": "shears",
-      "line": "Hydraulic guillotine and swing beam shears, CNC and NC, and mechanical shears — from 16 ga sheet to 1-9/16″ plate, 4 to 20 ft long.",
-      "href": "shear-cutting.html"
+      "image": "nt-work-alu-saw",
+      "kicker": "Saw aluminum and vinyl",
+      "title": "Aluminum and PVC saws",
+      "short": "aluminum and PVC saws",
+      "line": "Upcut, double-head, glazing bead and miter saws for aluminum extrusions and vinyl window profiles, with Ø17-11/16″ to Ø25-9/16″ blades.",
+      "href": "aluminum-and-pvc-upcut-saws.html"
+    },
+    {
+      "image": "nt-work-cold-saw",
+      "kicker": "Saw tube and bar",
+      "title": "Circular cold saws",
+      "short": "cold saws",
+      "line": "Manual and semi-automatic cold saws with 9 – 16″ HSS blades, and automatic carbide and HSS saws with servo feed for tube and bar to Ø11-3/4″.",
+      "href": "circular-cold-saws.html"
+    },
+    {
+      "image": "nt-work-blades",
+      "kicker": "Blades for every band saw",
+      "title": "Band saw blades",
+      "short": "band saw blades",
+      "line": "WIKUS MARATHON M42 bimetal and FUTURA carbide-tipped blades, welded to length in Canada, 1/2″ to 3-1/8″ wide in every tooth pitch.",
+      "href": "band-saw-blades.html"
     },
     {
       "image": "nt-work-angle-roll",
@@ -106,28 +114,60 @@
       "href": "plate-rollers.html"
     },
     {
-      "image": "nt-work-ironworker",
-      "kicker": "Punch, shear and notch",
-      "title": "Ironworkers",
-      "short": "ironworkers",
-      "line": "Hydraulic ironworkers from 44 to 276 US tons: punch plate, shear flat bar and angle, notch — single- and double-piston.",
-      "href": "ironworker-machines.html"
+      "image": "nt-work-press-brake",
+      "kicker": "Bend sheet and plate",
+      "title": "Press brakes",
+      "short": "press brakes",
+      "line": "CNC hydraulic, hybrid and servo-electric press brakes from 22 to 1,323 US tons and 4 to 20 ft.",
+      "href": "press-brake.html"
     },
     {
-      "image": "nt-work-rebar",
-      "kicker": "Bend and cut rebar",
-      "title": "Rebar benders and cutters",
-      "short": "rebar machines",
-      "line": "Stationary and portable rebar benders, hydraulic cutters, stirrup and spiral benders and automatic lines, #3 to #18.",
-      "href": "rebar-bender-and-cutter.html"
+      "image": "nt-work-folder",
+      "kicker": "Fold sheet metal",
+      "title": "Sheet metal brakes and folders",
+      "short": "brakes and folders",
+      "line": "Hand, box and pan, magnetic and roofing brakes up to hydraulic, electric and CNC folding machines — up to 20 ft.",
+      "href": "folder-sheet-metal-brake.html"
     },
     {
-      "image": "nt-work-tube-bender",
-      "kicker": "Bend tube and pipe",
-      "title": "Pipe and tube benders",
-      "short": "tube benders",
-      "line": "CNC, NC, all-electric and hydraulic mandrel and rotary-draw benders, from Ø15/32″ tube to Ø8-5/8″ pipe.",
-      "href": "pipe-benders.html"
+      "image": "nt-work-horizontal-press",
+      "kicker": "Bend, punch and straighten bar",
+      "title": "Horizontal press brakes",
+      "short": "horizontal press brakes",
+      "line": "NC hydraulic horizontal presses from 11 to 165 US tons that bend, punch, shear and straighten flat bar, pipe, bar and busbar.",
+      "href": "horizontal-press-brake.html"
+    },
+    {
+      "image": "nt-work-panel-bender",
+      "kicker": "Bend panels on four sides",
+      "title": "CNC panel benders",
+      "short": "panel benders",
+      "line": "Automatic panel benders from 47 to 165″ bend width — push-down and suction-cup machines for boxes, doors and cabinet panels.",
+      "href": "panel-bender.html"
+    },
+    {
+      "image": "nt-work-v-groove",
+      "kicker": "Groove for sharp bends",
+      "title": "CNC V-grooving machines",
+      "short": "V-grooving machines",
+      "line": "Horizontal machines with 10.5 to 20 ft tables for sheet to 5/32″, and vertical machines to 13 ft for plate to 1/4″ — for sharp, zero-radius bends.",
+      "href": "v-grooving-machine.html"
+    },
+    {
+      "image": "nt-work-tooling",
+      "kicker": "Punches and dies",
+      "title": "Press brake tooling",
+      "short": "press brake tooling",
+      "line": "EUROSTAMP punches, dies, holders and adapters made in Italy, for Amada-Promecam, Trumpf, Wila, Bystronic, LVD and American-style press brakes.",
+      "href": "press-brake-tooling-punch-and-die.html"
+    },
+    {
+      "image": "nt-work-fiber-laser",
+      "kicker": "Cut sheet and plate",
+      "title": "Fiber laser cutting machines",
+      "short": "fiber lasers",
+      "line": "Sheet and plate fiber lasers from 4 × 4 ft to 10 × 164 ft and 1.5 to 80 kW, with shuttle tables, loaders and sorting.",
+      "href": "laser-cutting-machine.html"
     },
     {
       "image": "nt-work-tube-laser",
@@ -138,12 +178,116 @@
       "href": "tube-laser-cutting-machine.html"
     },
     {
-      "image": "nt-work-folder",
-      "kicker": "Fold sheet metal",
-      "title": "Sheet metal brakes and folders",
-      "short": "brakes and folders",
-      "line": "Hand, box and pan, magnetic and roofing brakes up to hydraulic, electric and CNC folding machines — up to 20 ft.",
-      "href": "folder-sheet-metal-brake.html"
+      "image": "nt-work-laser-welding",
+      "kicker": "Weld and clad with a laser",
+      "title": "Laser welding machines",
+      "short": "laser welders",
+      "line": "Handheld and portable laser welders from 0.8 to 3 kW, robotic laser welding cells to 20 kW, cobot MIG welders and laser cladding.",
+      "href": "laser-welding-machine.html"
+    },
+    {
+      "image": "nt-work-ironworker",
+      "kicker": "Punch, shear and notch",
+      "title": "Ironworkers",
+      "short": "ironworkers",
+      "line": "Hydraulic ironworkers from 44 to 276 US tons: punch plate, shear flat bar and angle, notch — single- and double-piston.",
+      "href": "ironworker-machines.html"
+    },
+    {
+      "image": "nt-work-shear",
+      "kicker": "Shear sheet and plate",
+      "title": "Shears",
+      "short": "shears",
+      "line": "Hydraulic guillotine and swing beam shears, CNC and NC, and mechanical shears — from 16 ga sheet to 1-9/16″ plate, 4 to 20 ft long.",
+      "href": "shear-cutting.html"
+    },
+    {
+      "image": "nt-work-corner-notcher",
+      "kicker": "Notch sheet corners",
+      "title": "Corner notchers",
+      "short": "corner notchers",
+      "line": "Hydraulic corner notchers that cut a 90° or 30° – 140° corner out of sheet to 1/4″ in one stroke.",
+      "href": "corner-notcher.html"
+    },
+    {
+      "image": "nt-work-beveler",
+      "kicker": "Bevel plate for welding",
+      "title": "Plate bevelers",
+      "short": "plate bevelers",
+      "line": "Self-feeding cold bevelers for V, X, K and Y weld preps in plate and pipe from 1/8″ to 4-3/4″ thick — shearing and milling heads.",
+      "href": "plate-beveler.html"
+    },
+    {
+      "image": "nt-work-tube-bender",
+      "kicker": "Bend tube and pipe",
+      "title": "Pipe and tube benders",
+      "short": "tube benders",
+      "line": "CNC, NC, all-electric and hydraulic mandrel and rotary-draw benders, from Ø15/32″ tube to Ø8-5/8″ pipe.",
+      "href": "pipe-benders.html"
+    },
+    {
+      "image": "nt-work-tube-notcher",
+      "kicker": "Notch tube for fit-up",
+      "title": "Tube and pipe notchers",
+      "short": "tube notchers",
+      "line": "Belt-sander notchers for tube from 11/16″ to 3-1/2″ OD at any angle to 50°, with ten drums included.",
+      "href": "pipe-notcher.html"
+    },
+    {
+      "image": "nt-work-wire-bender",
+      "kicker": "Bend wire from the coil",
+      "title": "CNC wire bending machines",
+      "short": "wire benders",
+      "line": "3D CNC wire benders fed straight from the coil, Ø5/32″ to Ø9/16″ — baskets, racks, frames, hooks and exhaust hangers.",
+      "href": "wire-bending-machines.html"
+    },
+    {
+      "image": "nt-work-end-former",
+      "kicker": "Form tube ends",
+      "title": "Tube end forming machines",
+      "short": "tube end formers",
+      "line": "Expand, reduce, bead, flare and groove tube ends — from Ø3-1/2″ expander-reducers to CNC machines for Ø23.6″ tube.",
+      "href": "tube-end-forming-machines.html"
+    },
+    {
+      "image": "nt-work-circle-cutter",
+      "kicker": "Cut discs and flange heads",
+      "title": "Circle cutters and flanging machines",
+      "short": "circle cutters",
+      "line": "Circle shears for discs and rings to Ø78.7″ in 3/16″ plate, and cutting and flanging machines for dished tank heads to Ø15 ft.",
+      "href": "circle-cutters-and-seamers.html"
+    },
+    {
+      "image": "nt-work-bead-roller",
+      "kicker": "Bead, swage and flange sheet",
+      "title": "Bead rollers",
+      "short": "bead rollers",
+      "line": "Hydraulic and motorized bead rollers for sheet to 8 ga, with beading, swaging and flanging roll sets.",
+      "href": "bead-rollers.html"
+    },
+    {
+      "image": "nt-work-lock-former",
+      "kicker": "Form duct seams",
+      "title": "Lock formers and HVAC machines",
+      "short": "HVAC machines",
+      "line": "Pittsburgh lock formers for 26 – 16 ga duct, roll formers for button lock and drive cleat, and seamers for round duct.",
+      "href": "lock-former.html"
+    },
+    {
+      "image": "nt-work-hydraulic-press",
+      "kicker": "Press, draw and straighten",
+      "title": "Hydraulic presses",
+      "short": "hydraulic presses",
+      "line": "Shop presses from 10 US tons, H-frame and four-column production presses, C-frame presses and straightening presses — to 661 US tons, larger to order.",
+      "href": "hydraulic-press.html"
+    },
+    {
+      "image": "nt-work-riveting",
+      "kicker": "Rivet with orbital force",
+      "title": "Riveting machines",
+      "short": "riveting machines",
+      "line": "Hydraulic orbital riveters for solid rivets from Ø3/16″ to Ø1-3/16″, 1,911 to 22,481 lbf.",
+      "href": "riveting-machine.html"
     },
     {
       "image": "nt-work-deburring",
@@ -160,6 +304,102 @@
       "short": "pipe polishers",
       "line": "Tube sanders and pipe polishers for straight and bent tube — automatic feed, orbital, centreless and large-pipe sanders.",
       "href": "pipe-sanding-polishing-machines.html"
+    },
+    {
+      "image": "nt-work-belt-grinder",
+      "kicker": "Grind and sand by hand",
+      "title": "Belt grinders and sanders",
+      "short": "belt grinders",
+      "line": "Pedestal, floor and wide-belt grinders with 2 – 8″ belts, knife grinders, 12 – 20″ disc sanders, bench grinders and dust collectors.",
+      "href": "belt-grinder.html"
+    },
+    {
+      "image": "nt-work-corner-grinder",
+      "kicker": "Grind weld corners flush",
+      "title": "Corner grinders",
+      "short": "corner grinders",
+      "line": "Hand-fed, automatic and PLC corner grinders that grind the welds on boxes, cabinets, doors and tube frames flush or to a radius.",
+      "href": "corner-grinding-machines.html"
+    },
+    {
+      "image": "nt-work-tube-deburring",
+      "kicker": "Deburr cut tube ends",
+      "title": "Tube end deburring machines",
+      "short": "tube end deburring machine",
+      "line": "Pipe and tube ends deburred inside and outside in one cycle, Ø13/16″ to 4-3/4″, cut at 90° or 45°.",
+      "href": "tube-end-deburring-machine.html"
+    },
+    {
+      "image": "nt-work-positioner",
+      "kicker": "Turn, tilt and hold the work",
+      "title": "Welding automation",
+      "short": "welding automation",
+      "line": "Welding positioners from 22 to 44,092 lb, turning rolls to 220,462 lb, column and boom manipulators and welding tables.",
+      "href": "welding-automation.html"
+    },
+    {
+      "image": "nt-work-corner-welder",
+      "kicker": "Weld box corners",
+      "title": "Corner welding machines",
+      "short": "corner welders",
+      "line": "1-, 2-, 3- and 4-axis TIG and plasma corner welders for bent boxes in steel, stainless and aluminum, with laser seam reading.",
+      "href": "corner-welding-machines.html"
+    },
+    {
+      "image": "nt-work-drill-press",
+      "kicker": "Drill and tap",
+      "title": "Drill presses",
+      "short": "drill presses",
+      "line": "Gear-head drill presses for 1 – 2″ holes in steel with power feed and tapping, plus inverter, belt-drive and column drills.",
+      "href": "drill-press.html"
+    },
+    {
+      "image": "nt-work-milling",
+      "kicker": "Mill, drill and cut keyways",
+      "title": "Milling machines",
+      "short": "milling machines",
+      "line": "Turret mills with a horizontal spindle, universal and ISO50 mills, drill-mills, keyseaters and a cylinder head resurfacer.",
+      "href": "milling-machine.html"
+    },
+    {
+      "image": "nt-work-cnc-lathe",
+      "kicker": "Turn parts on CNC",
+      "title": "CNC lathes",
+      "short": "CNC lathes",
+      "line": "Slant-bed CNC lathes with Fanuc control, 12-station servo turret, 6″ to 12″ chucks, Ø27.6″ swing and C-axis live tooling.",
+      "href": "cnc-lathe.html"
+    },
+    {
+      "image": "nt-work-vmc",
+      "kicker": "Mill on CNC",
+      "title": "CNC machining centres",
+      "short": "machining centres",
+      "line": "Vertical machining centres with BBT40 spindles, 10,000 rpm and 24 tools, and double-column machines with BBT50 and X travel to 161.4″.",
+      "href": "vertical-machining-center.html"
+    },
+    {
+      "image": "nt-work-surface-grinder",
+      "kicker": "Grind flat and true",
+      "title": "Surface grinders",
+      "short": "surface grinder",
+      "line": "The TGH-B 450 NC surface grinder: 17.7 × 35.4″ table, Ø13.8″ wheel and NC down feed in 0.00004″ steps.",
+      "href": "surface-grinder.html"
+    },
+    {
+      "image": "nt-work-window",
+      "kicker": "Build windows and doors",
+      "title": "Aluminum and PVC window machinery",
+      "short": "window machinery",
+      "line": "Welders, corner cleaners, CNC machining centres, copy routers, end mills, corner crimpers and complete lines for vinyl and aluminum windows and doors.",
+      "href": "pvc-aluminum-window-machines.html"
+    },
+    {
+      "image": "nt-work-woodworking",
+      "kicker": "Work wood",
+      "title": "Woodworking machinery",
+      "short": "woodworking machines",
+      "line": "Jointers, thickness planers, jointer-planers, 10″ table saws, band saws, slot boring machines, a lathe and a dust collector.",
+      "href": "woodworking-machinery.html"
     }
   ]
 }
