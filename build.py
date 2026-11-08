@@ -1080,12 +1080,21 @@ def build_nav_preview(loaded):
                             sadd(f.get("short") or f.get("name", ""), f"{ep['slug']}.html#{f['id']}", family_thumb(f), f.get("headline", ""))
             else:                                                  # a section page: the families of its groups, or its hub sections
                 blurb = ep.get("meta_description", "")
+                # "menu_series" on a page: the versions of one series as a single card that opens the series on the page (the
+                # owner, Nov 7 2026: one SRGM card in the Mechanical shears menu, not six)
+                series = {fid: sr for sr in ep.get("menu_series", []) for fid in sr["families"]}
                 for g in ep.get("groups", []):
                     fs = FAMILY_SETS.get(g.get("family_set") or ep.get("family_set") or "", {})
                     for fid in g.get("families", []):
                         f = fs.get(fid) if isinstance(fid, str) else None
-                        if f and f.get("images"):
-                            sadd(f.get("short") or f.get("name", ""), f"{ep['slug']}.html#{f['id']}", family_thumb(f), f.get("headline", ""))
+                        if not (f and f.get("images")):
+                            continue
+                        sr = series.get(f["id"])
+                        if sr:
+                            lead = fs.get(sr.get("image_family") or sr["families"][0]) or f
+                            sadd(sr["label"], sr["href"], family_thumb(lead), sr.get("note", ""))
+                            continue
+                        sadd(f.get("short") or f.get("name", ""), f"{ep['slug']}.html#{f['id']}", family_thumb(f), f.get("headline", ""))
                 for sp in ep.get("subpages", []):
                     sadd(sp.get("nav_label") or sp["title"], f"{sp['slug']}.html", sp.get("image"))
             if not scards:
