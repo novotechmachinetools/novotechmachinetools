@@ -320,7 +320,7 @@
   /* sizes in the question → req.nums: size (section or tube OD), nps, thk, len, D (target diameter), clr, ton, kw, load, bar (mm),
      angle, bed [L, W], rect [W, H], hole */
   function parseNumbers(req) {
-    var n = " " + req.n.replace(/(\d)\s*(?:inches|inch|in\.|in\b|")/g, '$1" ').replace(/(\d)\s*(?:feet|foot|ft\b|')/g, "$1' ") + " ";
+    var n = " " + req.n.replace(/\b(?:3|three)\s*-?\s*in\s*-?\s*(?:1|one)\b/g, " ").replace(/(\d)\s*(?:inches|inch|in\.|in\b|")/g, '$1" ').replace(/(\d)\s*(?:feet|foot|ft\b|')/g, "$1' ") + " ";
     var N = req.nums, m, re;
     // rebar sizes
     if ((m = /#\s?(\d{1,2})\b/.exec(n)) && US_BARS[m[1]]) N.bar = US_BARS[m[1]];
@@ -509,7 +509,7 @@
   }
 
   /* ======================================================================================== the index */
-  var DATA = null, FAM = [], PAGES = [], BYPAGE = {}, DF = {}, NDOC = 0, VOCAB = [], AVG = {}, MODELS = [];
+  var DATA = null, FAM = [], FAMBYID = {}, PAGES = [], BYPAGE = {}, DF = {}, NDOC = 0, VOCAB = [], AVG = {}, MODELS = [];
   var FW = { name: 4, cat: 3, head: 2, body: 1.2, spec: 0.8, page: 0.5, pdf: 0.35 };
 
   function tf(list) { var o = {}; list.forEach(function (t) { o[t] = (o[t] || 0) + 1; }); return o; }
@@ -555,6 +555,7 @@
         if (base !== c && base.length >= 3) MODELS.push({ key: base, f: f, mi: mi, loose: true });
       });
       f._caps = f.caps || [];
+      FAMBYID[f.id] = f;
     });
     NDOC = FAM.length;
     for (var k2 in sums) AVG[k2] = sums[k2] / Math.max(1, NDOC);
@@ -662,7 +663,7 @@
 
   /* how well one model fits the request: {ok: true|false|null, score, notes: ["Rolls NPS 2 pipe to about Ø24″ minimum"], ratio} */
   function fitModel(f, mi, req) {
-    var c = (f._caps || [])[mi] || {}, N = req.nums, notes = [], ok = null, ratio = null, checks = 0, fails = 0, warn = [];
+    var c = (f._caps || [])[mi] || {}, N = req.nums, notes = [], ok = null, ratio = null, checks = 0, fails = 0, warn = [], caution = [];
     var rs = [];
     function pass(cond, note, r) { checks++; if (cond) { if (note) notes.push(note); if (r != null) rs.push(Math.min(1.05, r)); } else { fails++; if (note) warn.push(note); } }
     var page = f.page;
@@ -734,9 +735,11 @@
     }
     // ironworkers and punching machines
     if (c.punch && (N.hole || N.thk && (req.ops.punch || page === "ironworker-machines"))) {
+      // the punching force grows with hole Ø × thickness: the thickest plate this machine punches at the visitor's hole size
       var h = N.hole || 0.75, th = N.thk || 0.25;
-      var okp = c.punch.some(function (p) { return p[0] >= h * 0.99 && p[1] >= th * 0.99; }) || c.punch.some(function (p) { return p[0] * p[1] >= h * th; }) && c.punch.some(function (p) { return p[0] >= h; });
-      pass(okp, "punches Ø" + fmtIn(c.punch[0][0]) + " through " + fmtIn(c.punch[0][1]));
+      var pmax = Math.max.apply(null, c.punch.map(function (x) { return x[0] * x[1]; })), tTop = Math.max.apply(null, c.punch.map(function (x) { return x[1]; }));
+      var bigHole = c.punch.some(function (x) { return x[0] >= h * 0.99; }), tAt = Math.min(tTop, pmax / h);
+      pass(bigHole && tAt >= th * 0.99, bigHole ? "punches Ø" + fmtIn(h) + " holes through up to " + fmtIn(Math.floor(tAt * 16 + 1e-6) / 16) : "punches holes up to Ø" + fmtIn(Math.max.apply(null, c.punch.map(function (x) { return x[0]; }))), bigHole ? th / tAt : null);
     }
     if (c.fbs && req.mat === "flat" && N.size) {
       pass(c.fbs.some(function (x) { return (!x[0] || x[0] >= N.size) && (!N.size2 || x[1] >= N.size2 * 0.99); }), "shears flat bar " + fmtIn(c.fbs[0][0]) + " × " + fmtIn(c.fbs[0][1]));
@@ -745,8 +748,11 @@
     if (c.bar_rd && req.mat === "rd_bar" && N.size && (req.ops.shear || req.ops.cut) && page === "ironworker-machines") pass(c.bar_rd >= N.size * 0.99, "shears round bar Ø" + fmtIn(c.bar_rd));
     // rebar
     if (N.bar && (c.bar65 || c.bar45)) {
-      var capb = c.bar65 || c.bar45;
-      pass(capb >= N.bar * 0.99, (c.op === "cut" ? "cuts" : "bends") + " one bar up to " + barLabel(capb) + " in Grade 400W", N.bar / capb);
+      // the rated size (the maker's "max single bar", as on the product page) decides — the owner: a BT 26 bends 25 mm bar;
+      // the smaller Grade 400W size is a caution on the card
+      var nom = c.bar45 || c.bar65, g400 = c.bar65 || c.bar45;
+      pass(nom >= N.bar * 0.99, (c.op === "cut" ? "cuts" : "bends") + " one bar up to " + barLabel(nom) + (g400 < nom ? " — " + g400 + " mm in Grade 400W" : ""), N.bar / nom);
+      if (nom >= N.bar * 0.99 && g400 < N.bar * 0.99) caution.push("in Grade 400W rebar it is rated to " + g400 + " mm — tell us your bar grade and we will confirm");
     }
     // lasers
     if (N.bed && c.bed) pass(c.bed[0] >= N.bed[0] * 0.99 && c.bed[1] >= N.bed[1] * 0.99, "bed " + Math.round(c.bed[0] / 12 * 10) / 10 + " × " + Math.round(c.bed[1] / 12 * 10) / 10 + " ft");
@@ -757,7 +763,7 @@
     if (N.hole && c.drill && page === "drill-press") pass(c.drill >= N.hole * 0.99, "drills Ø" + fmtIn(c.drill) + " in steel", N.hole / c.drill);
     if (checks) ok = fails === 0;
     if (rs.length) ratio = rs.reduce(function (a, b) { return a + b; }, 0) / rs.length;   // how closely the machine matches the job: 1 = just big enough
-    return { ok: ok, notes: notes, warn: warn, ratio: ratio, checks: checks };
+    return { ok: ok, notes: notes, warn: warn, ratio: ratio, checks: checks, caution: caution };
   }
   function npsLabel(od) { for (var k in NPS) if (Math.abs(NPS[k] - od) < 0.02) return k; return fmtIn(od).replace("″", ""); }
   function sizeLabel(req) {
@@ -862,10 +868,177 @@
     return null;
   }
 
+  /* ======================================================================================== every machine that does the job */
+  /* The owner (Nov 7 2026): list every machine on the site that does the job, the smallest that does it first and then
+     the bigger ones in order, each as a full card; machines that may also do it (not sure) go below the whole list. */
+  var SEC_ORDER = ["pipe", "rd_tube", "sq_tube", "rect_tube", "angle_out", "flat_easy", "flat_hard", "rd_bar", "sq_bar", "channel", "beam", "tee", "angle_in"];
+  /* a model's size for "smallest first": its main capacity, then the next one, then its place in the spec table */
+  function sizeKey(f, mi) {
+    var c = (f._caps || [])[mi] || {}, a = 0, b = 0, i;
+    if (c.ton) { a = c.ton; b = c.len || 0; }
+    else if (c.thk) { a = c.thk; b = c.len || 0; }
+    else if (c.bar45 || c.bar65) { a = c.bar45 || c.bar65; b = c.bar65 || 0; }
+    else if (c.sec) { for (i = 0; i < SEC_ORDER.length; i++) if (c.sec[SEC_ORDER[i]]) { a = sizeOf(c.sec[SEC_ORDER[i]][0]); break; } }
+    else if (c.od || c.nps_od) { a = c.od || c.nps_od; b = c.wall || 0; }
+    else if (c.rnd || c.rect) { a = c.rnd || c.rect[1]; b = c.rect ? c.rect[0] * c.rect[1] : 0; }
+    else if (c.punch) a = Math.max.apply(null, c.punch.map(function (x) { return x[0] * x[1]; }));
+    else if (c.bed) { a = c.bed[0] * c.bed[1]; b = c.kw ? c.kw[1] : 0; }
+    else if (c.kw) a = c.kw[1];
+    else if (c.load) a = c.load;
+    else if (c.drill) a = c.drill;
+    else if (c.work_d) a = c.work_d[1] || 0;
+    else if (c.len) a = c.len;
+    return [a || 1e9, b, mi];          // a machine without capacities in the index goes after the ones with
+  }
+  function famSize(f) {
+    if (!f.models.length) return [1e9, 0, 0];
+    var best = null;
+    f.models.forEach(function (m, mi) { var x = sizeKey(f, mi); if (!best || x[0] < best[0] || x[0] === best[0] && x[1] < best[1]) best = x; });
+    return [best[0], best[1], 0];
+  }
+  function cmpSize(a, b) {
+    var x = a.size, y = b.size;
+    if (x[0] !== y[0]) return x[0] - y[0];
+    if (x[1] !== y[1]) return x[1] - y[1];
+    if (a.f._i !== b.f._i) return a.f._i - b.f._i;
+    return x[2] - y[2];
+  }
+  /* machines that do the job: the closest fit (just big enough) first */
+  function cmpFit(a, b) {
+    var ra = a.fit && a.fit.ratio, rb = b.fit && b.fit.ratio;
+    if (ra != null && rb != null && Math.abs(ra - rb) > 0.004) return rb - ra;
+    if (ra != null && rb == null) return -1;
+    if (ra == null && rb != null) return 1;
+    return cmpSize(a, b);
+  }
+  function fam(f, why) { return { f: f, mi: null, fit: null, size: famSize(f), why: why || null }; }
+  /* machines made for one special shape: below the list unless the question names it */
+  var SPECIAL = ["stirrup", "spiral", "dowel", "mesh", "combined", "bender-cutter", "coiler"];
+  function special(f, qn) {
+    var t = (f.short + " " + f.name).toLowerCase();
+    for (var i = 0; i < SPECIAL.length; i++) if (t.indexOf(SPECIAL[i]) >= 0 && qn.indexOf(SPECIAL[i].slice(0, 5)) < 0) return true;
+    return false;
+  }
+  /* the kind of machine the visitor asked for (automatic, CNC, electric, premium line…) */
+  function qualMismatch(f, Q) {
+    var label = (f.name + " " + f.category + " " + (f.automation || "") + " " + f.short).toLowerCase();
+    if (Q.auto && (/semi/.test(label) || !/automatic|cnc|\bauto|line\b/.test(label))) return "not automatic";
+    if (Q.semi && !/semi/.test(label)) return "not semi-automatic";
+    if (Q.manual && !/manual|gravity|hand/.test(label)) return "not manual";
+    if (Q.cnc && !/\bcnc\b/.test(label)) return "not CNC";
+    if (Q.nc && !/\bnc\b|\bcnc\b/.test(label)) return "not NC";
+    if (Q.electric && !/electric|servo/.test(label)) return "not electric";
+    if (Q.hydraulic && !/hydraulic/.test(label)) return "not hydraulic";
+    if (Q.mechanical && !/mechanical/.test(label)) return "not mechanical";
+    if (Q.premium && f.line === "Value line") return "not the premium line";
+    if (Q.value && f.line !== "Value line") return "not the value line";
+    if (Q.single) {
+      if (f._single == null) f._single = /single.?phase|1.?phase|\b(110|115|120|220|230) ?v/i.test(f.summary + " " + f.features.join(" ") + " " + JSON.stringify(f.models));
+      if (!f._single) return "three-phase";
+    }
+    return null;
+  }
+  /* rebar: a bender is not a cutter, and the other way round */
+  function opMismatch(f, req) {
+    var caps = f._caps || [], ops = req.ops;
+    if (!caps.length) return false;
+    if (ops.bend && !ops.cut && caps.every(function (c) { return c.op === "cut"; })) return true;
+    if (ops.cut && !ops.bend && caps.every(function (c) { return c.op === "bend" && !c.cut65; })) return true;
+    return false;
+  }
+  function machines(req, r) {
+    var pages = req.pages, max = 0, k, hasNums = Object.keys(req.nums).length > 0, Q = req.qual, qn = req.n;
+    for (k in pages) if (pages[k] > max) max = pages[k];
+    var hits = {}, hitList = [];
+    r.list.forEach(function (x) { if (x.hit) { hits[x.f.id] = x; hitList.push(x); } });
+    var fits = [], maybe = [], fails = [], closest = [], mode = "models";
+    // no machine type recognised, only words: the families the words point to, the most relevant first
+    if (!max && !hitList.length) {
+      var topS = r.list.length ? r.list[0].s : 0;
+      r.list.forEach(function (x) { if (x.s >= topS * 0.45) fits.push(fam(x.f)); });
+      return { fits: fits, maybe: [], closest: [], mode: "relevance" };
+    }
+    // a model the visitor named: that model, then the rest of its series and the machines like it
+    if (hitList.length && !hasNums) {
+      var seenF = {}, pg = {};
+      hitList.forEach(function (x) {
+        seenF[x.f.id] = 1; pg[x.f.page] = 1;
+        if (x.mi != null) fits.push({ f: x.f, mi: x.mi, fit: null, size: sizeKey(x.f, x.mi) }); else fits.push(fam(x.f));
+        x.f.models.forEach(function (m, mi) { if (mi !== x.mi) maybe.push({ f: x.f, mi: mi, fit: null, size: sizeKey(x.f, mi), why: "series" }); });
+      });
+      FAM.forEach(function (f) { if (pg[f.page] && !seenF[f.id]) maybe.push(fam(f, "page")); });
+      maybe.sort(function (a, b) { return (a.why === "page") - (b.why === "page") || cmpSize(a, b); });   // its own series first
+      return { fits: fits, maybe: maybe, closest: [], mode: "hit" };
+    }
+    FAM.forEach(function (f) {
+      var w = pages[f.page] || 0, hit = hits[f.id];
+      if (!hit && (!max || w < max * 0.4)) return;
+      if (opMismatch(f, req)) return;
+      var main = !!hit || w >= max * 0.7, mis = qualMismatch(f, Q), sp = special(f, qn);
+      var why = hit ? null : !main ? "other" : sp ? "special" : mis ? "qual" : null;
+      if (hasNums) {
+        var ok = [], unknown = !f.models.length;
+        f.models.forEach(function (m, mi) {
+          var fit = fitModel(f, mi, req), e = { f: f, mi: mi, fit: fit, size: sizeKey(f, mi) };
+          if (fit.ok) ok.push(e); else if (fit.ok === null) unknown = true; else if (main && !why) fails.push(e);
+        });
+        if (ok.length) {
+          if (why) { ok.sort(cmpFit); ok[0].why = why; ok[0].mis = mis; maybe.push(ok[0]); }      // the smallest of them that fits, as one card
+          else Array.prototype.push.apply(fits, ok);
+        } else if (unknown && main && !why) maybe.push(fam(f, "unknown"));
+      } else if (why) {
+        if (main) { var e2 = fam(f, why); e2.mis = mis; maybe.push(e2); }
+      } else if (f.models.length) {
+        f.models.forEach(function (m, mi) { fits.push({ f: f, mi: mi, fit: null, size: sizeKey(f, mi) }); });
+      } else fits.push(fam(f));
+    });
+    if (!fits.length && maybe.some(function (e) { return e.why === "qual"; })) {
+      maybe = maybe.filter(function (e) {
+        if (e.why !== "qual") return true;
+        if (hasNums) { if (e.mi != null) { e.why = null; fits.push(e); } }
+        else if (e.f.models.length) e.f.models.forEach(function (m, mi) { fits.push({ f: e.f, mi: mi, fit: null, size: sizeKey(e.f, mi) }); });
+        else fits.push(fam(e.f));
+        return false;
+      });
+    }
+    if (hasNums) {
+      fits.sort(cmpFit);
+      if (!fits.length && fails.length) { fails.sort(function (a, b) { return cmpSize(b, a); }); closest = fails.slice(0, 3); }
+    } else {
+      fits.sort(cmpSize);
+      if (fits.length > 24) {       // a whole range (press brakes: 100+ models): one card per series, smallest first
+        var byF = {}, fl = [];
+        fits.forEach(function (e) { if (!byF[e.f.id]) { byF[e.f.id] = 1; fl.push(fam(e.f)); } });
+        fits = fl.sort(cmpSize); mode = "families";
+      }
+    }
+    // machines that fit go first in the similar list, the ones without data for this size after them
+    maybe.sort(function (a, b) { return (a.why === "unknown") - (b.why === "unknown") || cmpSize(a, b); });
+    return { fits: fits, maybe: maybe, closest: closest, mode: mode };
+  }
+  /* what the visitor asked for, in words: the common end of the product pages' names ("press brakes") */
+  function typeLabel(req) {
+    var pages = req.pages, max = 0, k, navs = [];
+    for (k in pages) if (pages[k] > max) max = pages[k];
+    for (k in pages) if (pages[k] >= max * 0.7) {
+      var p = pageBySlug(k), nm = p ? (p.nav || (p.h1 || "").split(" — ")[0]) : "";
+      if (nm) navs.push(nm.toLowerCase().replace(/[^a-z0-9 &-]+/g, " ").trim());
+    }
+    if (!navs.length) return "machines";
+    if (navs.length === 1) return navs[0];
+    var w = navs.map(function (x) { return x.split(/\s+/); }), out = [];
+    for (var i = 1; i <= w[0].length; i++) {
+      var word = w[0][w[0].length - i];
+      if (w.every(function (a) { return a[a.length - i] === word; })) out.unshift(word); else break;
+    }
+    return out.length ? out.join(" ") : "machines";
+  }
+
   /* ======================================================================================== the answer */
   function pageBySlug(slug) { for (var i = 0; i < PAGES.length; i++) if (PAGES[i].slug === slug) return PAGES[i]; return null; }
   function firstSentence(t) { var m = /^(.{40,260}?[.!?])\s/.exec((t || "") + " "); return m ? m[1] : (t || "").slice(0, 220); }
   function modelName(r) { return r.mi != null && r.f.models[r.mi] ? r.f.models[r.mi].name : null; }
+  function entryName(e) { return modelName(e) || e.f.short || e.f.name; }
   function lineLabel(f) { return f.line === "Premium line" ? "NovoTech premium line" : f.line === "Value line" ? "NovoTech value line" : (f.brand || ""); }
 
   function answer(q, prev) {
@@ -873,73 +1046,59 @@
     var info = infoAnswer(n), greet = /^\s*(hi|hello|hey|good (morning|afternoon|evening)|salam|bonjour|سلام)\b/.test(n) && n.length < 30;
     var r = rank(req), list = r.list;
     var top = list[0], strong = top && (top.s >= 9 || r.modelHit || top.cov >= 0.99 && top.s >= 2.5);
-    var anyPages = Object.keys(req.pages).length > 0;
-    // the machine types the question is about come first, the machines that fit before the others; failing machines last
-    var off = [];
-    if (anyPages) {
-      var onTopic = list.filter(function (x) { return x.intent > 0 || x.hit; });
-      off = list.filter(function (x) { return !(x.intent > 0 || x.hit) && x.s >= 20 && (!x.fit || x.fit.ok !== false); });
-      if (onTopic.length) list = onTopic;
-    }
-    var fitting = list.filter(function (x) { return x.fit && x.fit.ok; }), unknown = list.filter(function (x) { return !x.fit || x.fit.ok === null; }),
-      failing = list.filter(function (x) { return x.fit && x.fit.ok === false; });
-    list = fitting.concat(unknown);
-    if (list.length < 4) list = list.concat(off.slice(0, 4 - list.length));
-    if (list.length < 3 || !fitting.length) list = list.concat(failing.slice(0, Math.max(2, 4 - list.length)));
-    var res = { req: req, best: null, similar: [], text: [], chips: [], page: null, faq: null };
+    var anyPages = Object.keys(req.pages).length > 0, N = req.nums, hasNums = Object.keys(N).length > 0;
+    var res = { req: req, fits: [], maybe: [], closest: [], best: null, text: [], chips: [], page: null, faq: null, mode: null };
     if (greet && !anyPages) {
-      res.text.push("Hello! Tell me what you need to make — the material, its size and what you want to do with it (cut, bend, roll, punch…) — and I will pick the machine from NovoTech's catalogue.");
+      res.text.push("Hello! Tell me what you need to make — the material, its size and what you want to do with it (cut, bend, roll, punch…) — and I will list every machine in NovoTech's catalogue that does it, the smallest first.");
       res.chips = DEFAULT_CHIPS;
       return res;
     }
-    var machineAsk = anyPages || r.modelHit || req.mat || Object.keys(req.nums).length > 0;
+    var machineAsk = anyPages || r.modelHit || req.mat || hasNums;
     if (info) res.text.push(info.text);
     if (info && (!strong || !machineAsk)) { res.page = pageBySlug(info.page); res.chips = DEFAULT_CHIPS.slice(0, 3); return res; }
-    if (!list.length || (!strong && !anyPages && !info)) {
-      res.text.push("I could not match that to a machine in our catalogue. Describe the job — the material (plate, sheet, pipe, angle, rebar…), its size, and whether you want to cut, bend, roll, punch or weld it — or call **" + DATA.contact.phone + "** and we will help.");
-      res.chips = DEFAULT_CHIPS;
-      return res;
-    }
-    var best = list[0];
-    res.best = best;
-    // similar machines: the next best, at most three from the best's own series page, one from the other line when there is one
-    var seen = {}; seen[best.f.id] = 1;
-    var sim = [];
-    list.slice(1).forEach(function (x) { if (sim.length < 6 && !seen[x.f.id]) { seen[x.f.id] = 1; sim.push(x); } });
-    if (best.f.line && !sim.some(function (x) { return x.f.line && x.f.line !== best.f.line; })) {
-      var alt = list.filter(function (x) { return x.f.line && x.f.line !== best.f.line && !seen[x.f.id]; })[0];
-      if (alt) sim.splice(Math.min(2, sim.length), 0, alt);
-    }
-    res.similar = sim.slice(0, 6);
-    var p = pageBySlug(best.f.page);
-    res.page = p;
-    // the written answer
-    var N = req.nums, mn = modelName(best), what = mn || best.f.short || best.f.name;
-    var fit = best.fit;
-    if (r.modelHit && best.hit) {
-      res.text.push("**" + what + "** — " + best.f.name + (best.f.headline ? ": " + best.f.headline : "") + ".");
-      res.text.push(firstSentence(best.f.summary));
+    var noMatch = "I could not match that to a machine in our catalogue. Describe the job — the material (plate, sheet, pipe, angle, rebar…), its size, and whether you want to cut, bend, roll, punch or weld it — or call **" + DATA.contact.phone + "** and we will help.";
+    if (!list.length || (!strong && !anyPages && !info)) { res.text.push(noMatch); res.chips = DEFAULT_CHIPS; return res; }
+    var M = machines(req, r);
+    res.fits = M.fits; res.maybe = M.maybe; res.closest = M.closest; res.mode = M.mode;
+    var lead = res.fits[0] || res.closest[0] || res.maybe[0];
+    if (!lead) { res.text.push(noMatch); res.chips = DEFAULT_CHIPS; return res; }
+    res.best = lead;
+    res.page = pageBySlug(lead.f.page);
+    var what = entryName(lead), nF = res.fits.length, label = typeLabel(req);
+    if (M.mode === "hit") {
+      res.text.push("**" + what + "** — " + lead.f.name + (lead.f.headline ? ": " + lead.f.headline : "") + ".");
+      res.text.push(firstSentence(lead.f.summary));
+      if (res.maybe.length) res.text.push("Below it are the other models of the series and the machines like it, from the smallest to the largest.");
     } else {
       var faq = !info && /\?|^(what|which|how|why|can|could|do|does|is|are|should|difference|vs\b)|\bor\b|\bvs\.?\b|difference|better/.test(n.trim()) ? faqMatch(req, r.qt, req.pages) : null;
       if (faq && faq.s >= 8) { res.faq = faq; res.text.push("**" + faq.qa[0] + "** " + faq.qa[1]); }
-      else if (p && !Object.keys(N).length) res.text.push("**" + (p.nav || p.h1) + "** — " + firstSentence(p.intro || p.desc));
-      if (Object.keys(N).length && fit) {
+      if (hasNums) {
         var job = jobLine(req);
-        if (fit.ok) {
-          res.text.push((job ? job + " " : "") + "The best match is the **" + what + "** (" + lineLabel(best.f) + ") — " + fit.notes.slice(0, 3).join("; ") + ".");
+        if (nF) {
+          var why = lead.fit && lead.fit.notes.length ? " — " + lead.fit.notes.slice(0, 3).join("; ") : "";
+          res.text.push((job ? job + " " : "") + (nF === 1 ? "One machine on our site does this job: the **" + what + "** (" + lineLabel(lead.f) + ")" + why + "." :
+            "**" + nF + " machines** on our site can do this job. The smallest that does it is the **" + what + "** (" + lineLabel(lead.f) + ")" + why + (nF === 2 ? ". Both are listed below, the smaller first." : ". All " + nF + " are listed below, from the smallest to the largest.")));
+          if (lead.fit && lead.fit.caution && lead.fit.caution.length) res.text.push("Note: " + lead.fit.caution[0].replace(/^in /, "In ") + ".");
+        } else if (res.closest.length) {
+          res.text.push((job ? job + " " : "") + "None of our machines of this type is rated for every size you gave. The largest ones are below — call **" + DATA.contact.phone + "** and we will check your part against them.");
         } else {
-          res.text.push((job ? job + " " : "") + "None of the machines I found is rated for every size you gave. The closest is the **" + what + "** (" + (fit.warn[0] || fit.notes[0] || "") + ") — call us and we will check it with your drawing.");
+          res.text.push((job ? job + " " : "") + "I could not find a machine on our site rated for every size you gave. Call **" + DATA.contact.phone + "** and we will check your part.");
         }
-        if (req.need && PRESS_BRAKES[best.f.page]) res.text.push("For air bending " + fmtThk(N.thk) + (req.qual.stainless ? " stainless" : " mild steel") + " on a die about 8 × thickness wide, a press brake needs about **" + Math.round(req.need.perFt) + " US tons per foot**" + (N.len ? " — " + Math.round(req.need.tons) + " US tons over " + fmtLen(N.len) : "") + ".");
-      } else if (!res.text.length || res.faq) {
-        res.text.push("The best match is the **" + what + "** (" + lineLabel(best.f) + ")" + (best.f.headline ? ": " + best.f.headline : "") + ".");
-      } else {
-        res.text.push("Best match: **" + what + "** (" + lineLabel(best.f) + ")" + (best.f.headline ? " — " + best.f.headline : "") + ".");
+        if (req.need && PRESS_BRAKES[lead.f.page]) res.text.push("For air bending " + fmtThk(N.thk) + (req.qual.stainless ? " stainless" : " mild steel") + " on a die about 8 × thickness wide, a press brake needs about **" + Math.round(req.need.perFt) + " US tons per foot**" + (N.len ? " — " + Math.round(req.need.tons) + " US tons over " + fmtLen(N.len) : "") + ".");
+      } else if (!res.faq) {
+        if (M.mode === "relevance") res.text.push(nF === 1 ? "This machine on our site matches what you wrote:" : "These " + nF + " machines on our site match what you wrote, the closest match first:");
+        else if (M.mode === "families") {
+          var nm = res.fits.reduce(function (a, e) { return a + e.f.models.length; }, 0);
+          res.text.push("We sell **" + nF + " series of " + label + "** (" + nm + " models), listed below from the smallest to the largest. Tell me the material, the size and the length of your parts and I will list the exact models that do the job.");
+        } else if (!nF) res.text.push("I found no machine of that exact kind on our site — the closest ones are below. Tell me the material, the size and the length of your parts and I will check which of them does the job.");
+        else res.text.push(nF === 1 ? "Here is the one model we sell. Tell me the material and the size of your parts and I will check that it does the job." :
+          "Here are all **" + nF + " " + label + "** we sell, from the smallest to the largest. Tell me the material, the size and the length of your parts and I will show only the models that do the job.");
       }
+      if (res.maybe.length) res.text.push(res.maybe.length === 1 ? "At the end of the list is one similar machine that may also do it — we confirm it with your drawing." :
+        "At the end of the list are " + res.maybe.length + " similar machines that may also do it — we confirm those with your drawing.");
     }
-    if (req.mat === "pipe" && N.nps && best.f.page === "angle-rolls") res.text.push("Pipe and tube need the matching set of pipe rolls; the minimum diameter depends on the wall thickness and the material, so send us your drawing and we will confirm it.");
-    if (res.similar.length) res.text.push(res.similar.length === 1 ? "A similar machine is below." : "Similar machines are listed below.");
-    res.chips = chipsFor(best.f.page, best);
+    if (req.mat === "pipe" && N.nps && lead.f.page === "angle-rolls") res.text.push("Pipe and tube need the matching set of pipe rolls; the minimum diameter depends on the wall thickness and the material, so send us your drawing and we will confirm it.");
+    res.chips = chipsFor(lead.f.page, lead);
     return res;
   }
   function jobLine(req) {
@@ -981,7 +1140,7 @@
     return c;
   }
 
-  var API = { init: init, answer: answer, understand: understand, rank: rank, fitModel: fitModel, terms: terms, fmtIn: fmtIn };
+  var API = { init: init, answer: answer, understand: understand, rank: rank, fitModel: fitModel, terms: terms, fmtIn: fmtIn, machines: machines, sizeKey: sizeKey };
   root.NTFinder = API;
   if (typeof module !== "undefined" && module.exports) module.exports = API;
 
@@ -1005,7 +1164,10 @@
       if (ln.trim()) out += "<p>" + ln + "</p>";
     });
     if (inList) out += "</ul>";
-    return out.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+    return out.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>").replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, function (m, t, url) {
+      var own = /^(\/|#|[a-z0-9-]+(\.html)?(#[\w-]+)?$)/i.test(url) || /^https?:\/\/(www\.)?novotechmachinetools\.(com|github\.io)\b/i.test(url);
+      return own ? '<a href="' + url.replace(/^\/(?!\/)/, "") + '">' + t + "</a>" : t;
+    });
   }
   function scrollTo(node) {
     setTimeout(function () { log.scrollTop = Math.max(0, log.scrollTop + node.getBoundingClientRect().top - log.getBoundingClientRect().top - 10); }, 30);
@@ -1014,59 +1176,125 @@
     if (!loading) loading = fetch("ai/catalogue.json").then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (j) { init(j); return j; });
     return loading;
   }
-  function capLine(x) {
-    if (x.fit && x.fit.ok && x.fit.notes.length) return x.fit.notes[0].replace(/^./, function (c) { return c.toUpperCase(); });
-    return x.f.headline || "";
+  function cap1(t) { return String(t).replace(/^./, function (c) { return c.toUpperCase(); }); }
+  /* a short spec summary for a card: the capacity rows of the model's spec table first, at most four */
+  var SPEC_HI = /capacit|max(imum|\.)?\b|force|tonnage|length|thickness|width|diameter|Ø|\bbar\b|pipe|tube|laser power|power source|\bbed\b|working (area|range)|table|travel|punch|stroke|swing|centres|centers|load|section|angle|flat|cut/i;
+  var SPEC_MID = /motor|power|speed|throat|daylight|axis|control|chuck|spindle|feed|roll/i;
+  var SPEC_SKIP = /dimension|oil|tank|colou?r|paint|noise|frame, stroke/i;
+  function brief(v) { return String(v).replace(/\s*\([^)]*\)/g, "").split(" · ")[0].replace(/\s+/g, " ").trim(); }
+  function shortVal(v) {
+    v = String(v).replace(/\s+/g, " ").trim();
+    if (v.length > 54) { var first = v.split(" · ")[0]; v = first.length >= 4 && first.length < v.length ? first : v.slice(0, 52).replace(/\s+\S*$/, "") + "…"; }
+    return v;
   }
-  function card(x, big) {
-    var f = x.f, mn = modelName(x), a = el("a", big ? "ai-best" : "ai-card");
-    a.href = f.href;
-    var img = f.image ? '<span class="ai-img"><img src="' + esc(f.image) + '" alt="" loading="lazy" decoding="async"></span>' : '<span class="ai-img"></span>';
-    var why = "";
-    if (big && x.fit && x.fit.ok && x.fit.notes.length) why = '<ul class="ai-why">' + x.fit.notes.slice(0, 3).map(function (t) { return "<li>" + esc(t.replace(/^./, function (c) { return c.toUpperCase(); })) + "</li>"; }).join("") + "</ul>";
-    else if (big && f.headline) why = '<p class="ai-cap">' + esc(f.headline) + "</p>";
-    a.innerHTML = img + '<span class="ai-body">' + (big ? '<span class="ai-flag">Best match</span>' : "") +
-      '<span class="ai-line">' + esc(lineLabel(f)) + "</span>" +
-      "<strong>" + esc(mn || f.short || f.name) + "</strong>" +
-      '<span class="ai-fam">' + esc(mn ? f.name : f.page_nav || f.category) + "</span>" +
-      (big ? why : (capLine(x) ? '<span class="ai-cap">' + esc(capLine(x)) + "</span>" : "")) +
-      '<span class="ai-go">' + (big ? "Specifications, photos and video" : "View") + " →</span></span>";
-    return a;
-  }
-  function renderResult(res, bubble, llmText) {
-    bubble.className = "ai-msg ai-assistant";
-    bubble.innerHTML = '<span class="ai-avatar" aria-hidden="true">AI</span><div class="ai-text">' + md(llmText || res.text.join("\n")) + "</div>";
-    var body = bubble;
-    if (res.best) {
-      var wrap = el("div", "ai-result");
-      wrap.appendChild(card(res.best, true));
-      var acts = el("div", "ai-actions");
-      var qhref = res.best.f.page + "#reques-a-quote";
-      acts.innerHTML = '<a class="btn btn-primary btn-sm" href="' + esc(qhref) + '">Get a quote for this machine</a>' +
-        (res.best.f.pdf ? '<a class="btn btn-ghost btn-sm" href="' + esc(res.best.f.pdf) + '" target="_blank" rel="noopener">PDF brochure</a>' : "");
-      wrap.appendChild(acts);
-      body.appendChild(wrap);
-      if (res.similar.length) {
-        var sim = el("div", "ai-similar");
-        sim.appendChild(el("p", "ai-sub", "Similar machines"));
-        var row = el("div", "ai-row");
-        res.similar.forEach(function (x) { row.appendChild(card(x, false)); });
-        sim.appendChild(row);
-        body.appendChild(sim);
+  function specRows(f, mi) {
+    var rows = [], name = mi != null && f.models[mi] ? f.models[mi].name : null, i = 0, key;
+    if (name) {
+      (f.specs || []).some(function (t) {
+        var col = (t.models || []).indexOf(name);
+        if (col < 0) return false;
+        t.rows.forEach(function (r, ri) { var v = r[col + 1]; if (v && !/^[—–-]$/.test(String(v).trim())) rows.push({ k: r[0], v: v, i: ri }); });
+        return true;
+      });
+      if (!rows.length) {
+        var m = f.models[mi];
+        for (key in m) if (key !== "name" && key !== "img" && m[key] != null) rows.push({ k: cap1(key.replace(/_/g, " ")), v: Array.isArray(m[key]) ? m[key].join(", ") : String(m[key]), i: i++ });
       }
+    } else {
+      var t = (f.specs || [])[0];          // a whole series: the range from its first model to its last
+      if (t && t.models && t.models.length) t.rows.forEach(function (r, ri) {
+        var a = r[1], b = r[t.models.length];
+        if (!a || /^[—–-]$/.test(String(a).trim())) return;
+        var sa = brief(a), sb = b ? brief(b) : sa;
+        rows.push({ k: r[0], v: sa === sb ? sa : sa + " – " + sb, i: ri });
+      });
     }
+    function pr(x) { return SPEC_SKIP.test(x.k) ? 0 : SPEC_HI.test(x.k) ? 3 : SPEC_MID.test(x.k) ? 2 : 1; }
+    var top = rows.filter(function (x) { return pr(x) > 0 && String(x.v).length < 160; })
+      .sort(function (a, b) { return pr(b) - pr(a) || a.i - b.i; }).slice(0, name ? 4 : 3);
+    top.sort(function (a, b) { return a.i - b.i; });
+    return top.map(function (x) { return [x.k.replace(/\s*\([^)]*\)\s*$/, "").replace(/,? (mild steel|standard rolls)$/i, ""), shortVal(x.v)]; });
+  }
+  function cardImg(e) {
+    var m = e.mi != null ? e.f.models[e.mi] : null, im = (m && m.img) || e.f.img;
+    if (im) return { html: '<img src="' + esc(im.src) + '" srcset="' + esc(im.srcset) + '" sizes="(max-width: 640px) 120px, 230px" alt="" loading="lazy" decoding="async">', cut: !!im.alpha };
+    return { html: e.f.image ? '<img src="' + esc(e.f.image) + '" alt="" loading="lazy" decoding="async">' : "", cut: true };
+  }
+  /* one machine: photo, name, series, why it fits, cautions, a short spec summary and the links — the same for every card */
+  function card(e, num, flag) {
+    var f = e.f, nm = entryName(e), box = el("article", "ai-card" + (flag ? " is-lead" : ""));
+    var series = e.mi != null ? f.name : (f.page_nav || f.category);
+    var notes = e.fit && e.fit.ok ? e.fit.notes : (e.fit && e.fit.ok === false ? e.fit.warn : []);
+    var cautions = (e.fit && e.fit.caution || []).slice();
+    if (e.why === "unknown") cautions.push("our spec tables do not list this size for it — we check it with your drawing");
+    if (e.why === "qual" && e.mis) cautions.push(e.mis.replace(/^not /, "not ") + " — listed because it does the job");
+    if (e.fit && e.fit.ok === false) cautions.push("below the size you gave");
+    var specs = specRows(f, e.mi);
+    if (e.mi == null && f.models.length) specs.unshift(["Models", f.models.length > 1 ? f.models[0].name + " … " + f.models[f.models.length - 1].name + " (" + f.models.length + ")" : f.models[0].name]);
+    var im = cardImg(e);
+    box.innerHTML = '<a class="ai-img' + (im.cut ? "" : " is-photo") + '" href="' + esc(f.href) + '" tabindex="-1" aria-hidden="true">' + im.html + "</a>" +
+      '<div class="ai-body">' +
+        '<div class="ai-top">' + (num ? '<span class="ai-n">' + num + "</span>" : "") + (flag ? '<span class="ai-flag">' + esc(flag) + "</span>" : "") + '<span class="ai-line">' + esc(lineLabel(f)) + "</span></div>" +
+        '<a class="ai-name" href="' + esc(f.href) + '">' + esc(nm) + "</a>" +
+        '<span class="ai-fam">' + esc(series) + "</span>" +
+        (notes.length ? '<ul class="ai-why' + (e.fit && e.fit.ok === false ? " is-bad" : "") + '">' + notes.map(function (t) { return "<li>" + esc(cap1(t)) + "</li>"; }).join("") + "</ul>" : (!e.fit && f.headline && e.mi == null ? '<p class="ai-cap">' + esc(f.headline) + "</p>" : "")) +
+        (cautions.length ? '<ul class="ai-warn">' + cautions.map(function (t) { return "<li>" + esc(cap1(t)) + "</li>"; }).join("") + "</ul>" : "") +
+        (specs.length ? '<dl class="ai-specs">' + specs.map(function (r) { return "<div><dt>" + esc(r[0]) + "</dt><dd>" + esc(r[1]) + "</dd></div>"; }).join("") + "</dl>" : "") +
+        '<div class="ai-links"><a href="' + esc(f.href) + '">Specifications, photos and video →</a><a href="' + esc(f.page) + '#reques-a-quote">Get a quote</a>' +
+          (f.pdf ? '<a href="' + esc(f.pdf) + '" target="_blank" rel="noopener">PDF brochure</a>' : "") + "</div>" +
+      "</div>";
+    return box;
+  }
+  function renderResult(res, bubble, text) {
+    bubble.className = "ai-msg ai-assistant";
+    bubble.innerHTML = '<span class="ai-avatar" aria-hidden="true">AI</span><div class="ai-text">' + md(text || res.text.join("\n")) + "</div>";
+    renderLists(res, bubble);
+  }
+  function renderLists(res, bubble) {
+    Array.prototype.forEach.call(bubble.querySelectorAll(".ai-list, .ai-more, .ai-chips"), function (x) { x.parentNode.removeChild(x); });
+    var hasNums = res.req && Object.keys(res.req.nums).length > 0;
+    function section(title, list, cls, numbered, flag) {
+      if (!list.length) return;
+      var sec = el("section", "ai-list " + cls);
+      sec.appendChild(el("p", "ai-sub", esc(title)));
+      list.forEach(function (e, i) { sec.appendChild(card(e, numbered ? i + 1 : 0, i === 0 ? flag : null)); });
+      bubble.appendChild(sec);
+    }
+    var n = res.fits.length, title = res.mode === "hit" ? "The machine you asked about" :
+      res.mode === "relevance" ? "Machines that match" :
+      hasNums ? (n === 1 ? "The machine that does this job" : "Machines that do this job — smallest first (" + n + ")") :
+      res.mode === "families" ? "Every series — smallest first (" + n + ")" : "Every model — smallest first (" + n + ")";
+    section(title, res.fits, "is-fits", res.mode !== "hit" && res.mode !== "relevance" && n > 1, hasNums && n ? (n > 1 ? "Smallest that does it" : "Does the job") : null);
+    section("Closest machines — below the size you gave", res.closest, "is-closest", false, null);
+    section(res.mode === "hit" ? "The rest of the series and the machines like it" : "Similar machines — may also do the job (we confirm with your drawing)", res.maybe, "is-maybe", false, null);
     if (res.page) {
       var more = el("p", "ai-more");
       var label = (res.page.nav || res.page.h1.split(" — ")[0]).replace(/^(premium|value)[- ]line /i, "");
-      more.innerHTML = '<a href="' + esc(res.page.slug === "index" ? "./" : res.page.slug) + '">' + (res.best ? "See all " + esc(label.charAt(0).toLowerCase() + label.slice(1)) + " →" : "Open the " + esc(label) + " page →") + "</a>";
-      body.appendChild(more);
+      more.innerHTML = '<a href="' + esc(res.page.slug === "index" ? "./" : res.page.slug) + '">' + (res.fits.length ? "Open the " + esc(label.charAt(0).toLowerCase() + label.slice(1)) + " page →" : "Open the " + esc(label) + " page →") + "</a>";
+      bubble.appendChild(more);
     }
     if (res.chips && res.chips.length) {
       var chips = el("div", "ai-chips");
       res.chips.forEach(function (c) { var b = el("button", null, esc(c)); b.type = "button"; chips.appendChild(b); });
-      body.appendChild(chips);
+      bubble.appendChild(chips);
     }
   }
+  /* the machines Claude names (live site), checked against the catalogue */
+  function picks(list, req) {
+    var out = [], seen = {}, hasNums = Object.keys(req.nums).length > 0;
+    (Array.isArray(list) ? list : []).forEach(function (x) {
+      var f = x && FAMBYID[x.id];
+      if (!f) return;
+      var mi = null;
+      if (x.model) f.models.forEach(function (m, i) { if (mi == null && m.name === x.model) mi = i; });
+      var k = f.id + "|" + mi;
+      if (seen[k]) return;
+      seen[k] = 1;
+      out.push({ f: f, mi: mi, fit: mi != null && hasNums ? fitModel(f, mi, req) : null, size: mi != null ? sizeKey(f, mi) : famSize(f), why: x.note ? "llm" : null });
+    });
+    return out;
+  }
+  function visible(t) { var i = t.indexOf("RESULTS:"); return (i >= 0 ? t.slice(0, i) : t).replace(/\s+$/, ""); }
   var SERVER = !!panel.dataset.server && !STAGING;
   function ask(q) {
     q = (q || "").trim();
@@ -1085,47 +1313,72 @@
     load().then(function () {
       var local = answer(q, prevReq);
       prevReq = local.req;
-      return new Promise(function (ok) { setTimeout(ok, Math.max(0, 500 - (Date.now() - t0))); }).then(function () {
+      return new Promise(function (ok) { setTimeout(ok, Math.max(0, 450 - (Date.now() - t0))); }).then(function () {
         renderResult(local, bubble);
         scrollTo(u);
         var text = local.text.join("\n");
         if (!SERVER) { history.push({ role: "assistant", content: text }); return; }
-        // on the live site Claude writes a fuller answer from the same catalogue; the engine's picks are its candidates
+        // the live site: Claude answers like a chat, from the whole catalogue; the lists stay the engine's unless Claude corrects them
+        var tx = bubble.querySelector(".ai-text");
         var note = el("p", "ai-note", '<span class="ai-dots"><i></i><i></i><i></i></span> Writing a fuller answer…');
-        bubble.querySelector(".ai-text").appendChild(note);
-        var cands = (local.best ? [local.best] : []).concat(local.similar).map(function (x) { return x.f.id; });
-        rankIds(local.req).forEach(function (id) { if (cands.indexOf(id) < 0 && cands.length < 24) cands.push(id); });
-        return fetch("ask.php", { method: "POST", headers: { "Content-Type": "application/json", "Accept": "application/json" },
-          body: JSON.stringify({ messages: history.slice(-12), page: panel.dataset.page, candidates: cands, engine: text }) })
-          .then(function (r) { return r.json().catch(function () { return { error: "bad_json" }; }); })
-          .then(function (j) {
-            if (note.parentNode) note.parentNode.removeChild(note);
-            if (!j || j.error || !j.answer) {
-              if (j && (j.error === "not_configured" || j.error === "bad_json")) SERVER = false;
-              history.push({ role: "assistant", content: text });
-              return;
+        tx.parentNode.insertBefore(note, tx.nextSibling);
+        var ref = function (e) { return { id: e.f.id, model: modelName(e) || "" }; };
+        var body = { messages: history.slice(-12), page: panel.dataset.page, engine: text, stream: true,
+          fits: local.fits.slice(0, 90).map(ref), maybe: local.maybe.slice(0, 30).map(ref), closest: local.closest.map(ref) };
+        var acc = "", final = null;
+        function finish(j) {
+          if (note.parentNode) note.parentNode.removeChild(note);
+          if (!j || j.error || !j.answer) {
+            if (j && (j.error === "not_configured" || j.error === "bad_json")) SERVER = false;
+            tx.innerHTML = md(text);
+            history.push({ role: "assistant", content: text });
+            return;
+          }
+          tx.innerHTML = md(j.answer);
+          var R = j.results || {};
+          if (!R.use_engine && (R.fits && R.fits.length || R.maybe && R.maybe.length)) {
+            var mine = { req: local.req, fits: picks(R.fits, local.req), maybe: picks(R.maybe, local.req), closest: [], chips: local.chips, page: local.page, mode: local.mode === "hit" ? "hit" : local.mode };
+            if (mine.fits.length || mine.maybe.length) {
+              if (mine.fits[0]) mine.page = pageBySlug(mine.fits[0].f.page) || local.page;
+              renderLists(mine, bubble);
             }
-            var picks = (j.results || []).map(function (x) {
-              var f = FAM.filter(function (y) { return y.id === x.id; })[0];
-              if (!f) return null;
-              var mi = null;
-              f.models.forEach(function (m, i) { if (x.model && m.name === x.model) mi = i; });
-              return { f: f, mi: mi, fit: mi != null && Object.keys(local.req.nums).length ? fitModel(f, mi, local.req) : null };
-            }).filter(Boolean);
-            var merged = { req: local.req, best: picks[0] || local.best, similar: [], text: [], chips: local.chips, page: picks[0] ? pageBySlug(picks[0].f.page) : local.page };
-            var seen = {};
-            if (merged.best) seen[merged.best.f.id] = 1;
-            picks.slice(1).concat(local.similar).forEach(function (x) { if (!seen[x.f.id] && merged.similar.length < 6) { seen[x.f.id] = 1; merged.similar.push(x); } });
-            renderResult(merged, bubble, j.answer);
-            history.push({ role: "assistant", content: j.answer });
-          }).catch(function () { if (note.parentNode) note.parentNode.removeChild(note); history.push({ role: "assistant", content: text }); });
+          }
+          history.push({ role: "assistant", content: j.answer });
+        }
+        return fetch("ask.php", { method: "POST", headers: { "Content-Type": "application/json", "Accept": "text/event-stream, application/json" }, body: JSON.stringify(body) })
+          .then(function (r) {
+            var ct = r.headers.get("Content-Type") || "";
+            if (ct.indexOf("event-stream") < 0 || !r.body || !r.body.getReader || !root.TextDecoder) {
+              return r.json().then(finish, function () { finish({ error: "bad_json" }); });
+            }
+            var reader = r.body.getReader(), dec = new root.TextDecoder(), buf = "";
+            function pump() {
+              return reader.read().then(function (x) {
+                if (x.done) return finish(final || (acc ? { answer: visible(acc) } : { error: "empty" }));
+                buf += dec.decode(x.value, { stream: true });
+                var parts = buf.split("\n\n");
+                buf = parts.pop();
+                parts.forEach(function (part) {
+                  var data = part.split("\n").filter(function (l) { return l.indexOf("data:") === 0; }).map(function (l) { return l.slice(5).trim(); }).join("");
+                  if (!data) return;
+                  var j;
+                  try { j = JSON.parse(data); } catch (e) { return; }
+                  if (j.t) { acc += j.t; tx.innerHTML = md(visible(acc)); }
+                  else if (j.error) final = j;
+                  else if (j.done) final = { answer: j.answer != null ? j.answer : visible(acc), results: j.results, model: j.model };
+                });
+                return pump();
+              });
+            }
+            return pump();
+          })
+          .catch(function () { finish({ error: "network" }); });
       });
     }).catch(function () {
       bubble.className = "ai-msg ai-assistant";
       bubble.innerHTML = '<span class="ai-avatar" aria-hidden="true">AI</span><div class="ai-text"><p>The machine finder could not load the catalogue. Please call <a href="tel:+16475265510">+1 647 526 5510</a> or email info@NovoTechMachineTools.com.</p></div>';
     }).then(done, done);
   }
-  function rankIds(req) { return rank(req).list.slice(0, 24).map(function (x) { return x.f.id; }); }
 
   form.addEventListener("submit", function (e) { e.preventDefault(); var q = input.value; input.value = ""; autosize(); ask(q); });
   input.addEventListener("keydown", function (e) { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); form.requestSubmit ? form.requestSubmit() : form.dispatchEvent(new Event("submit")); } });
