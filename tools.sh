@@ -12,4 +12,4 @@ rsync -a "$HOME/public_html/new/" "$NEXT/" && rm -f "$NEXT/_oldsite-files.txt" "
 for d in .well-known cgi-bin; do [ -e "$HOME/public_html/$d" ] && cp -a "$HOME/public_html/$d" "$NEXT/"; done
 [ -f "$NEXT/form-config.php" ] || { echo "form-config.php missing in staged site"; exit 1; }
 mv "$HOME/public_html" "$OLD" && mv "$NEXT" "$HOME/public_html" && echo "swapped: $(ls "$HOME/public_html" | wc -l) entries in public_html"
-chmod 750 "$HOME/public_html" 2>/dev/null; ls -ld "$HOME/public_html" "$OLD"
+chmod 755 "$HOME/public_html"; ls -ld "$HOME/public_html" "$OLD"
