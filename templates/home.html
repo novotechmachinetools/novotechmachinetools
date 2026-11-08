@@ -21,26 +21,23 @@
     </picture>
     <video muted playsinline loop preload="none" disablepictureinpicture tabindex="-1" data-wide="{{ hv.wide.h264 }}" data-wide-av1="{{ hv.wide.av1 }}" data-tall="{{ hv.tall.h264 }}" data-tall-av1="{{ hv.tall.av1 }}"></video>
   </div>
+  {# the owner (Nov 7 2026): nothing on the video but the title — the AI search sits in its own band right under it #}
   <div class="wrap hp-hero-inner">
-    <p class="hp-kicker"><span class="hp-kick-name">NovoTech Machine Tools · </span>Mississauga, Ontario, Canada</p>
     <h1 id="hp-title">{{ page.h1 }}</h1>
-    <form class="hp-ask" role="search" action="#find-a-machine">
+    <div class="hp-hero-cta"><a class="hp-link" href="#reques-a-quote">Request a quote</a></div>
+  </div>
+  <button type="button" class="hp-video-toggle" aria-pressed="false" aria-label="Pause the video" title="Pause the video" hidden><span class="hp-ico-pause" aria-hidden="true"></span><span class="hp-video-label sr-only">Pause video</span></button>
+</section>
+
+{# ---------- the AI machine finder, right under the video ---------- #}
+<section class="hp-finder" aria-label="AI machine finder">
+  <div class="wrap">
+    <form class="hp-ask is-band" role="search" action="#find-a-machine">
       <span class="hp-ask-badge" aria-hidden="true">AI</span>
       <label class="sr-only" for="hp-q">Describe your job or the machine you need</label>
       <input id="hp-q" type="text" name="q" autocomplete="off" enterkeyhint="search" placeholder="Describe your job — e.g. roll 2″ pipe into a 30″ ring" data-short="Describe your job…">
       <button type="submit" class="btn btn-primary">Find my machine</button>
     </form>
-    <p class="hp-try"><span>Try:</span>{% for q in page.hero_examples %}<button type="button" data-ask="{{ q }}">{{ q }}</button>{% endfor %}</p>
-    <div class="hp-hero-cta">
-      <a class="btn btn-light" href="products.html">Browse all {{ page.category_count }} kinds of machine</a>
-      <a class="hp-link" href="#reques-a-quote">Request a quote</a>
-    </div>
-  </div>
-  <div class="hp-hero-foot">
-    <ul class="wrap hp-trust">
-      {% for p in page.hero_points %}<li>{{ p }}</li>{% endfor %}
-      <li class="hp-trust-video"><button type="button" class="hp-video-toggle" aria-pressed="false" hidden><span class="hp-ico-pause" aria-hidden="true"></span><span class="hp-video-label">Pause video</span></button></li>
-    </ul>
   </div>
 </section>
 

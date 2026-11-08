@@ -19,6 +19,8 @@
     if (!toggle) return;
     toggle.setAttribute("aria-pressed", paused ? "true" : "false");
     toggle.querySelector(".hp-video-label").textContent = paused ? "Play video" : "Pause video";
+    toggle.setAttribute("aria-label", paused ? "Play the video" : "Pause the video");
+    toggle.title = paused ? "Play the video" : "Pause the video";
   }
   function play() { var p = vid.play(); if (p && p.catch) p.catch(function () {}); }
   var tallMq = w.matchMedia ? w.matchMedia("(max-aspect-ratio: 4/5)") : null;     // the same rule as the poster <picture>
