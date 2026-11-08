@@ -1,12 +1,15 @@
 {% extends "base.html" %}
-{% from "partials/site.html" import crumbs, cat_card, why_section with context %}
+{% from "partials/site.html" import crumbs, cat_card, why_section, hub_art with context %}
 
 {% block content %}
 <section class="page-hero">
   <div class="wrap page-hero-inner">
     {{ crumbs(page) }}
     <h1>{{ page.h1 }}</h1>
-    <p class="lead">{{ page.intro }}</p>
+    {% set picks = [] %}{% for g in page.catalog_groups if g.cards and g.cards[0].image and picks | length < 3 %}{% set _ = picks.append({"href": "#" ~ g.id, "img": g.cards[0].image}) %}{% endfor %}
+    {{ hub_art(picks) }}
+    <p class="lead is-long">{{ page.intro }}</p>
+    {% if page.intro_short %}<p class="lead is-short">{{ page.intro_short }}</p>{% endif %}
     <nav class="chip-nav" aria-label="Machine groups">
       <ul>
         {% for g in page.catalog_groups %}<li><a href="#{{ g.id }}">{{ g.title }}</a></li>{% endfor %}

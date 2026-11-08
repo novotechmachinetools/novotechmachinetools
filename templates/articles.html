@@ -1,12 +1,15 @@
 {% extends "base.html" %}
-{% from "partials/site.html" import crumbs with context %}
+{% from "partials/site.html" import crumbs, hub_art with context %}
 
 {% block content %}
 <section class="page-hero">
   <div class="wrap page-hero-inner">
     {{ crumbs(page) }}
     <h1>{{ page.h1 }}</h1>
-    <p class="lead">{{ page.intro }}</p>
+    {% set picks = [] %}{% for a in page.articles if a.featured and a.img and picks | length < 3 %}{% set _ = picks.append({"href": a.href, "img": a.img}) %}{% endfor %}{% for a in page.articles if a.img and picks | length < 3 and not a.featured %}{% set _ = picks.append({"href": a.href, "img": a.img}) %}{% endfor %}
+    {{ hub_art(picks) }}
+    <p class="lead is-long">{{ page.intro }}</p>
+    {% if page.intro_short %}<p class="lead is-short">{{ page.intro_short }}</p>{% endif %}
     {% if page.article_groups %}
     <nav class="article-topics" aria-label="Guide topics">
       <ul>{% for g in page.article_groups %}<li><a href="#{{ g.id }}">{{ g.title }} <span>{{ g.count }}</span></a></li>{% endfor %}</ul>

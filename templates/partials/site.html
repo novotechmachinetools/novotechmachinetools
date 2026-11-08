@@ -20,6 +20,15 @@
 </section>
 {%- endmacro %}
 
+{# phones and tablets: a row of photos right under the title of a hub page (Products, Brochures, Articles), so the first screen
+   shows machines, not only a paragraph and links (the owner, Nov 8 2026); hidden on desktop, where the grid is right below #}
+{% macro hub_art(items, kind="") -%}
+{% set pics = items | selectattr("img") | list %}
+{% if pics %}<ul class="hub-art{{ ' is-' ~ kind if kind else '' }} is-{{ pics | length }}" aria-hidden="true">
+{% for x in pics %}<li><a href="{{ x.href }}" tabindex="-1"><img src="{{ x.img.small }}" srcset="{{ x.img.srcset }}" sizes="{{ '25vw' if pics | length > 3 else '31vw' }}" width="{{ x.img.w }}" height="{{ x.img.h }}" alt=""{% if loop.first %} fetchpriority="high"{% endif %} decoding="async"></a></li>{% endfor %}
+</ul>{% endif %}
+{%- endmacro %}
+
 {% macro cat_card(c, h="h3", sizes="(max-width: 640px) 92vw, (max-width: 1100px) 45vw, 360px", subs=False, max_subs=6) -%}
 {% set show = c.subs if subs and c.subs and (c.subs | length > 1 or c.children) else [] %}
 <li class="cat-card{{ ' has-subs' if show else '' }}">

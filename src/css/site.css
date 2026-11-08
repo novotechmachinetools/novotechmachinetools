@@ -964,6 +964,27 @@ body.ai-locked { overflow: hidden; }
 .chip-nav a { display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border: 1px solid var(--line); border-radius: 999px; background: var(--white); color: var(--charcoal); font-family: var(--cond); font-weight: 600; font-size: 17px; text-decoration: none; }
 .chip-nav a small { font-family: var(--sans); font-weight: 600; font-size: 12px; color: var(--steel); background: var(--paper); border-radius: 999px; padding: 1px 7px; }
 .chip-nav a:hover, .chip-nav a:focus-visible { border-color: var(--orange); color: var(--orange-ink); }
+/* hub pages (Products, Brochures, Articles) on phones and tablets: photos right under the title, a one-line introduction and the
+   group links in one row that scrolls sideways — the first screen shows machines, not a paragraph and a column of links
+   (the owner, Nov 8 2026). Desktop keeps the full introduction and the wrapped links; the strip is hidden there. */
+.hub-art { display: none; }
+.page-hero .lead.is-short { display: none; }
+@media (max-width: 960px) {
+  .hub-art { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; list-style: none; margin: 14px 0 2px; padding: 0; }
+  .hub-art.is-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .hub-art li { margin: 0; }
+  .hub-art a { display: block; aspect-ratio: 1 / 1; background: var(--white); border: 1px solid var(--line-soft); border-radius: var(--radius); overflow: hidden; }
+  .hub-art img { display: block; width: 100%; height: 100%; object-fit: contain; padding: 6px; box-sizing: border-box; }
+  .hub-art.is-covers a { aspect-ratio: 640 / 829; }
+  .hub-art.is-covers img { object-fit: cover; padding: 0; }
+  .page-hero .lead.is-long { display: none; }
+  .page-hero .lead.is-short { display: block; margin-top: 12px; }
+  .page-hero .lead.is-long:only-of-type { display: block; }
+  .page-hero .chip-nav ul, .page-hero .article-topics ul { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; margin: 12px -16px 0; padding: 2px 16px 6px; }
+  .page-hero .chip-nav ul::-webkit-scrollbar, .page-hero .article-topics ul::-webkit-scrollbar { display: none; }
+  .page-hero .chip-nav li, .page-hero .article-topics li { flex: none; }
+  .page-hero-inner { padding: 22px 0 18px; }
+}
 
 /* home hero and facts strip */
 .home-hero h1 { font-size: clamp(42px, 5.6vw, 70px); max-width: 15ch; }

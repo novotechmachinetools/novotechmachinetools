@@ -1,12 +1,15 @@
 {% extends "base.html" %}
-{% from "partials/site.html" import crumbs, pdf_card with context %}
+{% from "partials/site.html" import crumbs, pdf_card, hub_art with context %}
 
 {% block content %}
 <section class="page-hero">
   <div class="wrap page-hero-inner">
     {{ crumbs(page) }}
     <h1>{{ page.h1 }}</h1>
-    <p class="lead">{{ page.intro }}</p>
+    {% set picks = [] %}{% for g in page.brochure_groups if picks | length < 4 %}{% set first = g.cards | selectattr("cover") | list | first %}{% if first %}{% set _ = picks.append({"href": "#" ~ g.id, "img": first.cover}) %}{% endif %}{% endfor %}
+    {{ hub_art(picks, "covers") }}
+    <p class="lead is-long">{{ page.intro }}</p>
+    {% if page.intro_short %}<p class="lead is-short">{{ page.intro_short }}</p>{% endif %}
     <nav class="chip-nav" aria-label="Brochure groups">
       <ul>
         {% for g in page.brochure_groups %}<li><a href="#{{ g.id }}">{{ g.title }} <small>{{ g.cards|length }}</small></a></li>{% endfor %}
