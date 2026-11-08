@@ -23,12 +23,17 @@
 @font-face { font-family: "NT Diameter"; font-style: normal; font-weight: 600; font-display: swap; src: url("../fonts/nt-diameter-600.woff2") format("woff2"); unicode-range: U+00D8, U+00F8; size-adjust: 96.2%; }
 @font-face { font-family: "NT Diameter"; font-style: normal; font-weight: 700; font-display: swap; src: url("../fonts/nt-diameter-700.woff2") format("woff2"); unicode-range: U+00D8, U+00F8; size-adjust: 96.2%; }
 
-/* Metric-matched fallbacks (Arial scaled to Barlow's widths and vertical metrics) so the swap to the
-   web font does not move the layout — keeps CLS near zero while the woff2 files load. */
-@font-face { font-family: "Barlow Fallback"; font-weight: 400; src: local("Arial"), local("ArialMT"), local("Helvetica"), local("Liberation Sans"); size-adjust: 96.1%; ascent-override: 104.05%; descent-override: 20.81%; line-gap-override: 0%; }
-@font-face { font-family: "Barlow Fallback"; font-weight: 500 700; src: local("Arial Bold"), local("Arial-BoldMT"), local("Arial"), local("Helvetica"), local("Liberation Sans Bold"); size-adjust: 91%; ascent-override: 109.9%; descent-override: 21.98%; line-gap-override: 0%; }
-@font-face { font-family: "Barlow Condensed Fallback"; font-weight: 500 600; src: local("Arial Bold"), local("Arial-BoldMT"), local("Arial"), local("Helvetica"), local("Liberation Sans Bold"); size-adjust: 74.4%; ascent-override: 134.4%; descent-override: 26.9%; line-gap-override: 0%; }
-@font-face { font-family: "Barlow Condensed Fallback"; font-weight: 700; src: local("Arial Bold"), local("Arial-BoldMT"), local("Arial"), local("Helvetica"), local("Liberation Sans Bold"); size-adjust: 76.2%; ascent-override: 131.2%; descent-override: 26.25%; line-gap-override: 0%; }
+/* Metric-matched fallbacks (Arial / Liberation Sans scaled to Barlow's widths and vertical metrics) so the swap to the
+   web font does not move the layout — keeps CLS near zero while the woff2 files load. size-adjust = Barlow width ÷ fallback
+   width over the whole site text, per weight (Nov 8 2026; see the measurement note in docs). Text measures use em, never ch,
+   so a container is the same width in both fonts. */
+@font-face { font-family: "Barlow Fallback"; font-weight: 400; src: local("Arial"), local("ArialMT"), local("Helvetica"), local("Liberation Sans"); size-adjust: 95.3%; ascent-override: 104.93%; descent-override: 20.99%; line-gap-override: 0%; }
+@font-face { font-family: "Barlow Fallback"; font-weight: 500; src: local("Arial Bold"), local("Arial-BoldMT"), local("Arial"), local("Helvetica"), local("Liberation Sans Bold"); size-adjust: 90%; ascent-override: 111.11%; descent-override: 22.22%; line-gap-override: 0%; }
+@font-face { font-family: "Barlow Fallback"; font-weight: 600; src: local("Arial Bold"), local("Arial-BoldMT"), local("Arial"), local("Helvetica"), local("Liberation Sans Bold"); size-adjust: 90.75%; ascent-override: 110.19%; descent-override: 22.04%; line-gap-override: 0%; }
+@font-face { font-family: "Barlow Fallback"; font-weight: 700; src: local("Arial Bold"), local("Arial-BoldMT"), local("Arial"), local("Helvetica"), local("Liberation Sans Bold"); size-adjust: 91.9%; ascent-override: 108.81%; descent-override: 21.76%; line-gap-override: 0%; }
+@font-face { font-family: "Barlow Condensed Fallback"; font-weight: 500; src: local("Arial Bold"), local("Arial-BoldMT"), local("Arial"), local("Helvetica"), local("Liberation Sans Bold"); size-adjust: 72.1%; ascent-override: 138.70%; descent-override: 27.74%; line-gap-override: 0%; }
+@font-face { font-family: "Barlow Condensed Fallback"; font-weight: 600; src: local("Arial Bold"), local("Arial-BoldMT"), local("Arial"), local("Helvetica"), local("Liberation Sans Bold"); size-adjust: 73.5%; ascent-override: 136.05%; descent-override: 27.21%; line-gap-override: 0%; }
+@font-face { font-family: "Barlow Condensed Fallback"; font-weight: 700; src: local("Arial Bold"), local("Arial-BoldMT"), local("Arial"), local("Helvetica"), local("Liberation Sans Bold"); size-adjust: 75.35%; ascent-override: 132.71%; descent-override: 26.54%; line-gap-override: 0%; }
 
 @font-face { font-family: "Barlow Fallback R"; font-weight: 400; src: local("Roboto"), local("Roboto-Regular"); size-adjust: 96.7%; ascent-override: 103.4%; descent-override: 20.7%; line-gap-override: 0%; }
 @font-face { font-family: "Barlow Fallback R"; font-weight: 500 700; src: local("Roboto Bold"), local("Roboto-Bold"); size-adjust: 96.8%; ascent-override: 103.3%; descent-override: 20.7%; line-gap-override: 0%; }
@@ -188,11 +193,11 @@ small { font-size: .85em; }
 .crumbs li + li::before { content: "/"; margin-right: 6px; color: var(--mist); }
 .crumbs a, .crumbs span { color: var(--steel); text-decoration: none; display: inline-block; padding: 4px 0; line-height: 1.3; }
 .crumbs a:hover { color: var(--orange-ink); text-decoration: underline; }
-.lead { font-size: 19px; max-width: 64ch; color: var(--charcoal-2); }
+.lead { font-size: 19px; max-width: 36.16em; color: var(--charcoal-2); }
 .hero-points { list-style: none; padding: 0; margin: 10px 0 0; display: grid; gap: 6px; }
 .hero-points li { padding-left: 22px; position: relative; font-weight: 500; }
 .hero-points li::before { content: ""; position: absolute; left: 0; top: .55em; width: 12px; height: 4px; background: var(--orange); }
-.hero-brand { font-size: 15px; color: var(--steel); max-width: 60ch; margin-top: 4px; }
+.hero-brand { font-size: 15px; color: var(--steel); max-width: 33.9em; margin-top: 4px; }
 .hero-updated { font-size: 13px; color: var(--steel); margin-top: 6px; }
 .hero-art { position: relative; display: grid; justify-items: center; gap: 14px; padding-top: 10px; }
 .hero-band { position: absolute; top: 6%; right: -40%; left: 12%; height: 74%; background: var(--orange); clip-path: polygon(18% 0, 100% 0, 100% 100%, 0 100%); z-index: 0; }
@@ -209,7 +214,7 @@ small { font-size: .85em; }
 .hero-minis.is-many li { display: flex; justify-content: center; min-width: 0; }
 .hero-minis.is-many .hero-mini-link { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 6px; width: 100%; min-height: 48px; padding: 6px 4px; border-radius: 8px; line-height: 1.2; text-decoration: none; color: var(--charcoal); }
 .hero-minis.is-many img { display: block; width: auto; max-width: 100%; height: var(--mh, 127px); object-fit: contain; object-position: bottom; filter: drop-shadow(0 8px 10px rgba(30, 30, 30, .28)); }
-.hero-mini-cap { font-family: var(--sans); font-weight: 500; font-size: 13px; line-height: 1.3; letter-spacing: .01em; text-align: center; color: var(--steel); max-width: 22ch; overflow-wrap: anywhere; }
+.hero-mini-cap { font-family: var(--sans); font-weight: 500; font-size: 13px; line-height: 1.3; letter-spacing: .01em; text-align: center; color: var(--steel); max-width: 12.45em; overflow-wrap: anywhere; }
 /* the name of the large photo's machine: black on the orange band, no box (option A, the owner, Nov 1 2026) — 6.5:1 contrast */
 .hero-main-cap { position: relative; z-index: 2; margin: 4px 0 0; padding: 0; max-width: 90%; font-size: 14px; font-weight: 600; line-height: 1.3; letter-spacing: .01em; color: var(--ink); text-align: center; }
 .hero-minis.is-many a.hero-mini-link:hover { background: rgba(242, 138, 31, .08); }
@@ -233,7 +238,7 @@ small { font-size: .85em; }
 .page-body { padding-top: 10px; }
 .group { padding: 44px 0 10px; border-top: 1px solid var(--line-soft); }
 .group:first-child { border-top: 0; }
-.group-head { max-width: 76ch; margin-bottom: 8px; }
+.group-head { max-width: 42.94em; margin-bottom: 8px; }
 .group-head h2 { position: relative; padding-left: 18px; }
 .group-head h2::before { content: ""; position: absolute; left: 0; top: .12em; bottom: .12em; width: 7px; background: var(--orange); }
 .group-lead { color: var(--charcoal-2); font-size: 18px; }
@@ -244,8 +249,8 @@ small { font-size: .85em; }
 .nameplate { margin: 0; }
 .nameplate span { display: inline-block; font-family: var(--cond); font-weight: 600; font-size: 18px; letter-spacing: .02em; color: #fff; background: var(--charcoal); padding: 5px 14px 4px 18px; clip-path: polygon(8px 0, 100% 0, 100% 100%, 0 100%); border-left: 6px solid var(--orange); }
 .family-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px; align-items: start; }
-.summary { font-size: 18px; color: var(--charcoal-2); max-width: 70ch; }
-.features { max-width: 78ch; }
+.summary { font-size: 18px; color: var(--charcoal-2); max-width: 39.55em; }
+.features { max-width: 44.07em; }
 .features { list-style: none; padding: 0; margin: 0 0 6px; }
 .features li { position: relative; padding: 6px 0 6px 24px; border-top: 1px solid var(--line-soft); }
 .features li:last-child { border-bottom: 1px solid var(--line-soft); }
@@ -372,7 +377,7 @@ small { font-size: .85em; }
   .family.is-stacked .gallery-main .gallery-link::before { padding-top: 46%; }
   .family.is-stacked .gallery-thumbs { grid-template-columns: repeat(12, minmax(0, 1fr)); }
   .family.is-stacked .gallery-thumbs .thumb { height: 78px; }
-  .family.is-stacked .family-text > .summary { max-width: 96ch; }
+  .family.is-stacked .family-text > .summary { max-width: 54.24em; }
   .family.is-stacked .equip { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 48px; align-items: start; margin-bottom: 8px; }
   .family.is-stacked .equip .features { max-width: none; }
 }
@@ -421,7 +426,7 @@ small { font-size: .85em; }
 .spec-table tbody tr:nth-child(even) td { background: #FAFAFB; }
 .spec-table tbody th, .spec-table thead th.label-col { position: sticky; left: 0; z-index: 1; }
 .spec-table tbody th { box-shadow: 1px 0 0 var(--line); }
-.table-note { font-size: 14px; color: var(--steel); margin: 8px 0 0; max-width: 90ch; }
+.table-note { font-size: 14px; color: var(--steel); margin: 8px 0 0; max-width: 50.85em; }
 
 /* ---------- why / standard features ---------- */
 .why { background: var(--charcoal); color: #fff; padding: 46px 0 36px; margin-top: 30px; }
@@ -439,14 +444,14 @@ small { font-size: .85em; }
 .videos { padding: 46px 0 10px; }
 .videos-grid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 32px; align-items: center; }
 .faq { padding: 40px 0 10px; }
-.faq-list { display: grid; gap: 8px; max-width: 86ch; }
+.faq-list { display: grid; gap: 8px; max-width: 48.59em; }
 .faq details { border: 1px solid var(--line); background: var(--white); }
 .faq summary { cursor: pointer; padding: 12px 16px; font-family: var(--cond); font-weight: 600; font-size: 21px; color: var(--charcoal); list-style: none; position: relative; padding-right: 40px; }
 .faq summary::-webkit-details-marker { display: none; }
 .faq summary::after { content: "+"; position: absolute; right: 14px; top: 8px; font-size: 26px; color: var(--orange); }
 .faq details[open] summary::after { content: "–"; }
 .faq details p { padding: 0 16px 14px; margin: 0; color: var(--charcoal-2); }
-.steel-note { font-size: 14px; color: var(--steel); max-width: 90ch; margin-top: 18px; }
+.steel-note { font-size: 14px; color: var(--steel); max-width: 50.85em; margin-top: 18px; }
 
 /* ---------- quote form: in the brand's colours (the owner, Nov 7 2026: "plain and white — give it the brand's colours so it
    stands out") — a warm orange band, the form a white card under a charcoal head with an orange rule ---------- */
@@ -540,7 +545,7 @@ small { font-size: .85em; }
 .guide-section { margin-top: 30px; }
 .guide-section h3, .article-page .guide-section h2 { font-size: 26px; margin: 0 0 10px; }
 .guide-section h4, .article-page .guide-section h3 { font-size: 19px; margin: 22px 0 6px; color: var(--charcoal); }
-.guide-section p, .guide-section li { max-width: 78ch; }
+.guide-section p, .guide-section li { max-width: 44.07em; }
 .guide-figure { margin: 18px 0; }
 .guide-figure img { max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: var(--radius); }
 .guide-figure.is-cutout { background: linear-gradient(180deg, #fff 0%, #f3f4f5 100%); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; }
@@ -619,7 +624,7 @@ small { font-size: .85em; }
 .agents-grid { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 32px; align-items: center; }
 .agents-kicker { font-family: var(--cond); font-weight: 600; font-size: 16px; letter-spacing: .04em; text-transform: uppercase; color: var(--orange); margin: 0 0 6px; }
 .agents h2 { color: #fff; margin: 0 0 12px; }
-.agents-copy p { color: #D5D7DA; max-width: 62ch; }
+.agents-copy p { color: #D5D7DA; max-width: 35.03em; }
 .agents-points { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 8px; }
 .agents-points li { position: relative; padding-left: 22px; color: #E6E7E9; }
 .agents-points li::before { content: ""; position: absolute; left: 0; top: .55em; width: 12px; height: 3px; background: var(--orange); }
@@ -772,7 +777,7 @@ small { font-size: .85em; }
 .line-block .subpage-body p { font-size: 15px; }
 .line-head { margin-bottom: 16px; padding: 18px 20px 14px; border: 1px solid var(--line); border-left: 6px solid var(--charcoal); background: #EFF0F2; }
 .line-head .line-badge { margin-bottom: 8px; }
-.line-head .group-lead { margin: 0 0 8px; max-width: 80ch; }
+.line-head .group-lead { margin: 0 0 8px; max-width: 45.2em; }
 .line-title { font-size: 34px; margin: 0 0 6px; }
 .line-links { margin: 0; display: flex; flex-wrap: wrap; gap: 10px 22px; align-items: center; }
 .btn-small { font-size: 16px; padding: 7px 14px; }
@@ -950,7 +955,7 @@ body.ai-locked { overflow: hidden; }
 
 /* ============================================================ the site's own pages: home, products, contact, about, brochures, articles, privacy */
 .kicker { font-family: var(--cond); font-weight: 600; font-size: 16px; letter-spacing: .05em; text-transform: uppercase; color: var(--orange-ink); margin: 0 0 8px; }
-.section-head { max-width: 80ch; margin-bottom: 18px; }
+.section-head { max-width: 45.2em; margin-bottom: 18px; }
 .section-head h2, .home-learn h2, .about-gallery h2, .contact-visit h2 { position: relative; padding-left: 18px; }
 .section-head h2::before, .home-learn h2::before, .about-gallery h2::before, .contact-visit h2::before { content: ""; position: absolute; left: 0; top: .12em; bottom: .12em; width: 7px; background: var(--orange); }
 .section-more { margin: 22px 0 0; }
@@ -960,7 +965,7 @@ body.ai-locked { overflow: hidden; }
 /* page header of the text pages */
 .page-hero { background: var(--paper); border-bottom: 1px solid var(--line-soft); }
 .page-hero-inner { padding: 30px 0 30px; }
-.page-hero h1 { max-width: 22ch; }
+.page-hero h1 { max-width: 9.97em; }
 .page-hero .lead { margin-bottom: 6px; }
 .chip-nav ul { list-style: none; margin: 18px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
 .chip-nav a { display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border: 1px solid var(--line); border-radius: 999px; background: var(--white); color: var(--charcoal); font-family: var(--cond); font-weight: 600; font-size: 17px; text-decoration: none; }
@@ -989,7 +994,7 @@ body.ai-locked { overflow: hidden; }
 }
 
 /* home hero and facts strip */
-.home-hero h1 { font-size: clamp(42px, 5.6vw, 70px); max-width: 15ch; }
+.home-hero h1 { font-size: clamp(42px, 5.6vw, 70px); max-width: 6.79em; }
 .facts { background: var(--charcoal); color: #fff; border-bottom: 4px solid var(--orange); }
 .facts-list { list-style: none; margin: 0 auto; padding: 22px 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px 28px; }
 .facts-list li { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: 12px; }
@@ -1051,7 +1056,7 @@ body.ai-locked { overflow: hidden; }
 .showroom-grid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 34px; align-items: center; }
 .showroom-band h2 { color: #fff; }
 .showroom-band .kicker { color: var(--orange); }
-.showroom-copy p { color: #D5D7DA; max-width: 60ch; }
+.showroom-copy p { color: #D5D7DA; max-width: 33.9em; }
 .showroom-hours a { color: #fff; }
 .showroom-photos { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
 .showroom-photos img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: var(--radius); }
@@ -1074,7 +1079,7 @@ body.ai-locked { overflow: hidden; }
 .products-help { padding: 40px 0 0; }
 .help-box { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px 30px; padding: 24px 28px; background: var(--orange-tint); border: 1px solid #F2C9A0; border-left: 6px solid var(--orange); border-radius: var(--radius); }
 .help-box h2 { margin-bottom: 6px; }
-.help-box p { margin: 0; max-width: 72ch; }
+.help-box p { margin: 0; max-width: 40.68em; }
 
 /* contact page */
 .contact-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 28px; padding: 36px 0 10px; align-items: start; }
@@ -1102,7 +1107,7 @@ body.ai-locked { overflow: hidden; }
 .story-row { display: grid; grid-template-columns: minmax(0, .38fr) minmax(0, 1fr); gap: 28px; padding: 22px 0; border-top: 1px solid var(--line-soft); }
 .story-row:first-child { border-top: 0; }
 .story-row h2 { font-size: clamp(26px, 3vw, 34px); }
-.story-row p { max-width: 74ch; color: var(--charcoal-2); }
+.story-row p { max-width: 41.81em; color: var(--charcoal-2); }
 .about-gallery { padding: 36px 0 6px; }
 .gallery-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
 .gallery-grid figure { margin: 0; }
@@ -1150,7 +1155,7 @@ body.ai-locked { overflow: hidden; }
 .article-body p { color: var(--charcoal-2); font-size: 15.5px; }
 
 /* privacy page */
-.policy { padding: 34px 0 30px; max-width: 86ch; }
+.policy { padding: 34px 0 30px; max-width: 48.59em; }
 .policy-section { padding: 14px 0 4px; border-top: 1px solid var(--line-soft); }
 .policy-section:first-child { border-top: 0; }
 .policy-section h2 { font-size: clamp(24px, 2.6vw, 30px); }
@@ -1203,7 +1208,7 @@ body.ai-locked { overflow: hidden; }
 .lineup { scroll-margin-top: calc(var(--header-h) + 56px); }
 .lineup-line { scroll-margin-top: calc(var(--header-h) + 56px); }
 .lineup-line .group-head h2 { margin-top: 2px; }
-.lineup-line .group-tagline { max-width: 72ch; }
+.lineup-line .group-tagline { max-width: 40.68em; }
 .card-type { color: var(--steel); background: var(--white); }
 .hero-points a { color: inherit; text-decoration: underline; text-decoration-color: var(--orange); text-decoration-thickness: 2px; text-underline-offset: 3px; }
 .hero-points a:hover { color: var(--orange-deep); }
@@ -1247,7 +1252,7 @@ body.ai-locked { overflow: hidden; }
 @media (max-width: 700px) { .calc-out dl > div { grid-template-columns: 1fr; gap: 2px; } .calc-row input, .calc-row select { min-width: 0; width: 100%; } .calc-row label { flex: 1 1 140px; } }
 
 /* ---- line-up / line headers: one style everywhere (the band-saw hub's), Oct 28 2026 ---- */
-.lineup-head { margin: 0 0 18px; max-width: 80ch; }
+.lineup-head { margin: 0 0 18px; max-width: 45.2em; }
 .lineup-title { font-size: 34px; margin: 0 0 6px; position: relative; padding-left: 18px; }
 .lineup-title::before { content: ""; position: absolute; left: 0; top: .12em; bottom: .12em; width: 7px; background: var(--orange); }
 .group .line-head { margin-bottom: 22px; }
@@ -1290,11 +1295,11 @@ body.ai-locked { overflow: hidden; }
 .guide-figure img[style*="--ar"] { aspect-ratio: var(--ar); width: min(100%, var(--fig-w), calc(var(--fig-mh) * var(--ar))); height: auto; }
 .guide-section h2, .guide-section h3, .guide-section h4 { clear: both; }
 .guide-section .control-card { clear: both; }
-/* one reading column for every guide (the owner, Oct 31 2026): the text keeps its 78ch measure and the small photos sit right
+/* one reading column for every guide (the owner, Oct 31 2026): the text keeps its 78-character measure (44.07em; em rather than the ch unit, so the measure does not change while the fallback font shows) and the small photos sit right
    beside it — before, the sections ran the full page width, so a floated photo landed 400 px away from its text and the
    photo rows spread wider than the text. Tables still use the whole width of the page (100cqw of .guide). */
 .guide { container-type: inline-size; }
-.guide-section { max-width: calc(78ch + 340px); }
+.guide-section { max-width: calc(44.07em + 340px); }
 .guide-section .table-scroll { width: 100cqw; max-width: none; }
 .guide-pair, .guide-section .control-card { display: flow-root; }
 .guide-pair { margin: 16px 0; }

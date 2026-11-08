@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Build the site and publish the build to a deployment branch that the HostPapa server pulls (cPanel Git Version Control):
 #   bash tools/deploy-hostpapa.sh staging   -> branch hostpapa-staging: --staging build (noindex), served at /new/
+#   bash tools/deploy-hostpapa.sh preview   -> branch hostpapa-staging: the production build itself, served at /new/ (a last look before go-live)
 #   bash tools/deploy-hostpapa.sh prod      -> branch hostpapa: production build, served at the document root
 # The branch keeps a linear history (one commit per deploy on top of the last), so the server's "git pull" fast-forwards.
 # The commit is built from dist/ with a temporary index — no second copy of the 900 MB build on disk; unchanged images
@@ -11,8 +12,9 @@ cd "$(dirname "$0")/.."
 MODE="${1:-staging}"
 case "$MODE" in
   staging) BRANCH=hostpapa-staging; FLAGS=--staging ;;
+  preview) BRANCH=hostpapa-staging; FLAGS= ;;
   prod)    BRANCH=hostpapa;         FLAGS= ;;
-  *) echo "usage: $0 staging|prod" >&2; exit 2 ;;
+  *) echo "usage: $0 staging|preview|prod" >&2; exit 2 ;;
 esac
 python3 build.py $FLAGS >/dev/null
 python3 tools/check_links.py

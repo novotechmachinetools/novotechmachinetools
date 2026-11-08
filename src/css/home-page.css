@@ -7,7 +7,7 @@
 .hp-head h2 { font-size: clamp(32px, 3.4vw, 48px); line-height: 1.02; margin: 0; }
 .hp-eyebrow { display: inline-flex; align-items: center; gap: 10px; margin: 0 0 8px; font-family: var(--cond); font-weight: 700; font-size: 15px; letter-spacing: .09em; text-transform: uppercase; color: var(--orange-ink); }
 .hp-eyebrow::before { content: ""; width: 28px; height: 3px; background: var(--orange); }
-.hp-head-lead { margin: 0; font-size: 18px; line-height: 1.5; color: var(--steel); max-width: 72ch; }
+.hp-head-lead { margin: 0; font-size: 18px; line-height: 1.5; color: var(--steel); max-width: 40.68em; }
 .hp-head.is-dark h2 { color: #fff; }
 .hp-head.is-dark .hp-eyebrow { color: var(--orange); }
 .hp-head.is-dark .hp-head-lead { color: #C9CCD0; }
@@ -23,7 +23,7 @@
   background: linear-gradient(90deg, rgba(16, 17, 19, .55) 0%, rgba(16, 17, 19, .32) 30%, rgba(16, 17, 19, .06) 56%, rgba(16, 17, 19, 0) 70%),
               linear-gradient(0deg, rgba(16, 17, 19, .5) 0%, rgba(16, 17, 19, 0) 22%); }
 .hp-hero-inner { padding-top: clamp(40px, 8vh, 96px); padding-bottom: clamp(30px, 5vh, 56px); max-width: var(--wrap); }
-.hp-hero h1 { margin: 14px 0 26px; max-width: 18.5ch; font-size: clamp(46px, 5.2vw, 84px); line-height: .98; letter-spacing: -.005em; color: #fff; text-wrap: balance; text-shadow: 0 2px 3px rgba(0, 0, 0, .45), 0 4px 28px rgba(0, 0, 0, .55); }
+.hp-hero h1 { margin: 14px 0 26px; max-width: 8.38em; font-size: clamp(46px, 5.2vw, 84px); line-height: .98; letter-spacing: -.005em; color: #fff; text-wrap: balance; text-shadow: 0 2px 3px rgba(0, 0, 0, .45), 0 4px 28px rgba(0, 0, 0, .55); }
 /* the AI search box */
 .hp-ask { display: flex; align-items: center; gap: 10px; width: min(700px, 100%); padding: 7px 7px 7px 10px; background: #fff; border-radius: 999px; box-shadow: 0 14px 40px rgba(0, 0, 0, .35), 0 0 0 1px rgba(255, 255, 255, .12); }
 .hp-ask:focus-within { box-shadow: 0 14px 40px rgba(0, 0, 0, .35), 0 0 0 4px rgba(242, 138, 31, .55); }
@@ -88,7 +88,7 @@
 .hp-cap { position: absolute; z-index: 1; left: 0; bottom: 0; top: 0; display: flex; flex-direction: column; justify-content: center; width: min(560px, 50%); padding: 32px 0 32px clamp(24px, 4vw, 56px); }
 .hp-cap-kicker { margin: 0 0 8px; font-family: var(--cond); font-weight: 700; font-size: 16px; letter-spacing: .09em; text-transform: uppercase; color: var(--orange); }
 .hp-cap h3 { margin: 0 0 12px; font-size: clamp(30px, 3.3vw, 50px); line-height: 1; color: #fff; }
-.hp-cap-line { margin: 0 0 22px; font-size: 17px; line-height: 1.5; color: #DEE1E4; max-width: 44ch; }
+.hp-cap-line { margin: 0 0 22px; font-size: 17px; line-height: 1.5; color: #DEE1E4; max-width: 24.86em; }
 .hp-cap-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; }
 .hp-arrow { position: absolute; top: calc(50% - 60px); z-index: 2; display: grid; place-items: center; width: 52px; height: 52px; border-radius: 50%; border: 0; background: rgba(255, 255, 255, .92); color: var(--ink); cursor: pointer; box-shadow: 0 6px 18px rgba(0, 0, 0, .35); transition: background .15s, transform .15s; }
 .hp-arrow:hover, .hp-arrow:focus-visible { background: var(--orange); transform: scale(1.06); }
