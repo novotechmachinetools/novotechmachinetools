@@ -23,7 +23,7 @@
 {% macro cat_card(c, h="h3", sizes="(max-width: 640px) 92vw, (max-width: 1100px) 45vw, 360px", subs=False, max_subs=6) -%}
 {% set show = c.subs if subs and c.subs and (c.subs | length > 1 or c.children) else [] %}
 <li class="cat-card{{ ' has-subs' if show else '' }}">
-  <a class="cat-art{{ ' is-cutout' if c.image and c.image.alpha else '' }}" href="{{ c.href }}" tabindex="-1" aria-hidden="true">{% if c.image %}<img src="{{ c.image.small }}" srcset="{{ c.image.srcset }}" sizes="{{ sizes }}" width="{{ c.image.w }}" height="{{ c.image.h }}" alt="" loading="lazy" decoding="async">{% endif %}</a>
+  <a class="cat-art{{ ' is-cutout' if c.image and c.image.alpha else '' }}" href="{{ c.href }}" tabindex="-1" aria-hidden="true">{% if c.image %}<img src="{{ c.image.small }}" srcset="{{ c.image.srcset }}" sizes="{{ sizes }}" width="{{ c.image.w }}" height="{{ c.image.h }}" alt="{{ c.image.alt }}" loading="lazy" decoding="async">{% endif %}</a>
   <div class="cat-body">
     <{{ h }} class="cat-title"><a href="{{ c.href }}">{{ c.label }}</a></{{ h }}>
     <p>{{ c.blurb }}</p>
@@ -42,7 +42,7 @@
   <li><a class="brand-card" href="{{ b.href }}">
     {% if logos and b.logo_img %}{# every logo shown with about the same visual weight: the same area, a wide one capped in width #}
     {%- set im = b.logo_img %}{% set r = im.w / im.h %}{% set lw = [190, (4600 * r) ** 0.5] | min %}{% set lh = [lw / r, 54] | min %}
-    <span class="brand-logo"><img src="{{ im.small }}" srcset="{{ im.srcset }}" sizes="{{ (lh * r) | round | int }}px" width="{{ (lh * r) | round | int }}" height="{{ lh | round | int }}" alt="" loading="lazy" decoding="async"></span>{% endif %}
+    <span class="brand-logo"><img src="{{ im.small }}" srcset="{{ im.srcset }}" sizes="{{ (lh * r) | round | int }}px" width="{{ (lh * r) | round | int }}" height="{{ lh | round | int }}" alt="{{ b.name }} logo" loading="lazy" decoding="async"></span>{% endif %}
     <{{ h }} class="brand-name">{{ b.name }}</{{ h }}>
     <span class="brand-origin">{{ b.country }}{% if b.since %} · since {{ b.since }}{% endif %}</span>
     <span class="brand-what">{{ b.what }}</span>
@@ -71,7 +71,7 @@
 
 {% macro pdf_card(e) -%}
 <li class="pdf-card">
-  <a class="pdf-cover" href="{{ e.file }}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">{% if e.cover %}<img src="{{ e.cover.small }}" srcset="{{ e.cover.srcset }}" sizes="(max-width: 640px) 40vw, 200px" width="{{ e.cover.w }}" height="{{ e.cover.h }}" alt="" loading="lazy" decoding="async">{% endif %}</a>
+  <a class="pdf-cover" href="{{ e.file }}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">{% if e.cover %}<img src="{{ e.cover.small }}" srcset="{{ e.cover.srcset }}" sizes="(max-width: 640px) 40vw, 200px" width="{{ e.cover.w }}" height="{{ e.cover.h }}" alt="{{ e.title }} — brochure cover" loading="lazy" decoding="async">{% endif %}</a>
   <div class="pdf-body">
     <h3 class="pdf-title"><a href="{{ e.file }}" target="_blank" rel="noopener">{{ e.title }}</a></h3>
     {% set sz = (e.size or '') | replace('PDF · ', '') %}<p class="pdf-meta">PDF{% if e.page_count %} · {{ e.page_count }} pages{% endif %}{% if sz %} · {{ sz }}{% endif %}</p>

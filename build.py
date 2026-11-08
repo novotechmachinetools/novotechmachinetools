@@ -1628,7 +1628,7 @@ def both_tons_page(page, everything):
 
     def walk(x, key=None):
         if isinstance(x, str):
-            if key in skip or key == "title" and x is page.get("title"):
+            if key in skip or key in ("title", "meta_description") and x is page.get(key):   # the search snippet stays ≤ 158 characters
                 return x
             if everything or "press brake" in x.lower():
                 return both_tons(x)

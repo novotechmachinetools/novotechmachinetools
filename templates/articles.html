@@ -21,7 +21,7 @@
   <ul class="article-grid">
     {% for a in page.articles if a.group == g.id %}
     <li class="article-card">
-      <a class="article-art{{ ' is-cutout' if a.img and a.img.alpha else '' }}" href="{{ a.href }}" tabindex="-1" aria-hidden="true">{% if a.img %}<img src="{{ a.img.small }}" srcset="{{ a.img.srcset }}" sizes="(max-width: 640px) 92vw, 360px" width="{{ a.img.w }}" height="{{ a.img.h }}" alt="" loading="lazy" decoding="async">{% endif %}</a>
+      <a class="article-art{{ ' is-cutout' if a.img and a.img.alpha else '' }}" href="{{ a.href }}" tabindex="-1" aria-hidden="true">{% if a.img %}<img src="{{ a.img.small }}" srcset="{{ a.img.srcset }}" sizes="(max-width: 640px) 92vw, 360px" width="{{ a.img.w }}" height="{{ a.img.h }}" alt="{{ a.img.alt }}" loading="lazy" decoding="async">{% endif %}</a>
       <div class="article-body">
         <p class="article-topic">{{ 'Buying guide' if 'buying guide' in a.title|lower else ('Guide' if 'guide' in a.title|lower else 'Article') }}</p>
         <h3 class="article-title"><a href="{{ a.href }}">{{ a.title }}</a></h3>

@@ -121,7 +121,7 @@
     <li class="family-card">
       {% if f.card_image %}
       <a class="family-card-art{{ ' is-cutout' if f.card_image.alpha else '' }}" href="{{ it.href }}" aria-hidden="true" tabindex="-1">
-        <img src="{{ f.card_image.small }}" srcset="{{ f.card_image.srcset }}" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 46vw, 420px" width="{{ f.card_image.w }}" height="{{ f.card_image.h }}" alt="" loading="lazy" decoding="async">
+        <img src="{{ f.card_image.small }}" srcset="{{ f.card_image.srcset }}" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 46vw, 420px" width="{{ f.card_image.w }}" height="{{ f.card_image.h }}" alt="{{ f.card_image.alt }}" loading="lazy" decoding="async">
       </a>
       {% endif %}
       <div class="family-card-body">
@@ -171,7 +171,7 @@
       {% for a in f.alt_ids or [] %}<span id="{{ a }}" class="anchor"></span>{% endfor %}
       {% if f.card_image %}
       <a class="family-card-art{{ ' is-cutout' if f.card_image.alpha else '' }}" href="{{ sp.href }}#{{ f.id }}" aria-hidden="true" tabindex="-1">
-        <img src="{{ f.card_image.small }}" srcset="{{ f.card_image.srcset }}" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 46vw, 420px" width="{{ f.card_image.w }}" height="{{ f.card_image.h }}" alt="" loading="lazy" decoding="async">
+        <img src="{{ f.card_image.small }}" srcset="{{ f.card_image.srcset }}" sizes="(max-width: 700px) 92vw, (max-width: 1100px) 46vw, 420px" width="{{ f.card_image.w }}" height="{{ f.card_image.h }}" alt="{{ f.card_image.alt }}" loading="lazy" decoding="async">
       </a>
       {% endif %}
       <div class="family-card-body">
