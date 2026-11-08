@@ -85,17 +85,17 @@
     <div class="hp-slider" data-slider>
       <div class="hp-slides" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Machines at work">
         {% for s in slides %}{% set im = img(s.image) %}
-        <figure class="hp-slide" role="group" aria-roledescription="slide" aria-label="{{ loop.index }} of {{ slides | length }}: {{ s.title }}">
+        <div class="hp-slide" role="group" aria-roledescription="slide" aria-label="{{ loop.index }} of {{ slides | length }}: {{ s.title }}">
           <img src="{{ im.small }}" srcset="{{ im.srcset }}" sizes="(max-width: 1600px) 100vw, 1560px" width="{{ im.w }}" height="{{ im.h }}" alt="{{ im.alt }}"{% if not loop.first %} loading="lazy"{% endif %} decoding="async">
-          <figcaption class="hp-cap">
+          <div class="hp-cap">
             <p class="hp-cap-kicker">{{ s.kicker }}</p>
             <h3>{{ s.title }}</h3>
             <p class="hp-cap-line">{{ s.line }}</p>
             <div class="hp-cap-cta">
               <a class="btn btn-primary" href="{{ s.href }}">See the {{ s.short }}</a>
             </div>
-          </figcaption>
-        </figure>
+          </div>
+        </div>
         {% endfor %}
       </div>
       <button type="button" class="hp-arrow hp-prev" aria-label="Previous slide"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
