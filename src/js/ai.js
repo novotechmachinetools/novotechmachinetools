@@ -433,12 +433,29 @@
       P["box-and-pan-brake"] || P["sheet-metal-hand-brake"] || P["hydraulic-folding-machine"] || P["panel-bender"] || P["motorized-plate-rollers"] || P["hydraulic-4-roll-plate-rollers"] ||
       req.ops.bend && !req.mat || req.ops.roll && !req.mat);
   }
+  /* every kind of machine that bends sheet: a job given with sizes is answered with all of them (the owner, Nov 7 2026: "a 10 ft
+     22 ga bending brake" is a press brake, a hydraulic folder, a box and pan brake, a hand brake…), the smallest first */
+  var BEND_SHEET = { "hydraulic-press-brake": 11, "electric-press-brake": 8, "compact-hydraulic-press-brakes": 7, "hydraulic-folding-machine": 8,
+    "box-and-pan-brake": 7, "sheet-metal-hand-brake": 6, "magnetic-sheet-metal-brake": 6, "roofing-siding-brake": 5, "shear-brake-roll-3-in-1": 5, "panel-bender": 5 };
+  function allBendSheet(P, floor) {
+    for (var p in BEND_SHEET) P[p] = Math.max(P[p] || 0, Math.max(BEND_SHEET[p], floor || 0));
+  }
   /* machine types from the job (operation + material) when the question names no machine */
   function inferPages(req) {
     var P = req.pages, o = req.ops, mat = req.mat, long = mat && LONG[mat], N = req.nums;
     function add(p, w) { P[p] = Math.max(P[p] || 0, w); }
     if (P["pipe-notcher"] >= 15) delete P["corner-notcher"];
     var named = Object.keys(P).length;
+    // a sheet-bending job with sizes, whatever kind of brake was named: every kind that bends sheet joins the list
+    var maxW = 0;
+    for (var k in P) if (P[k] > maxW) maxW = P[k];
+    // (a 3-in-1 or a panel bender named by the visitor is a specific kind — only the brakes and folders open the whole list)
+    var bendNamed = Object.keys(P).some(function (p) { return BEND_SHEET[p] && p !== "shear-brake-roll-3-in-1" && p !== "panel-bender" && P[p] >= maxW * 0.7; }) &&
+      !(o.shear || o.cut || o.roll || o.punch || o.notch);
+    if ((N.thk || N.len) && !long && mat !== "rebar" && (bendNamed || (o.bend && !named && (mat === "sheet" || mat === "plate" || !mat)))) {
+      allBendSheet(P, bendNamed ? maxW * 0.45 : 0);
+      if (bendNamed) return;
+    }
     if (mat === "rebar") {
       if (o.cut && !o.bend) add("rebar-cutter", 14); else if (o.bend && !o.cut) add("rebar-bender", 14);
       else { add("rebar-bender", 10); add("rebar-cutter", 9); }
@@ -467,7 +484,7 @@
     if (o.bend && (mat === "flat" || mat === "angle" || mat === "rd_bar" || mat === "sq_bar")) { add("horizontal-press-brake", 10); add("angle-rolls", 8); add("ironworker-machines", 4); return; }
     if (o.bend && (mat === "sheet" || mat === "plate" || N.thk || !mat)) {
       add("hydraulic-press-brake", 11); add("electric-press-brake", 8); add("compact-hydraulic-press-brakes", 7);
-      if (mat === "sheet" || (N.thk && N.thk < 0.08)) { add("hydraulic-folding-machine", 7); add("box-and-pan-brake", 6); add("sheet-metal-hand-brake", 5); }
+      if (mat === "sheet" || (N.thk && N.thk < 0.08) || N.len) allBendSheet(P);
       return;
     }
     if (o.shear) { add("hydraulic-shearing-machine", 11); add("mechanical-guillotine-shear", 9); if (long) add("ironworker-machines", 9); return; }
@@ -970,11 +987,14 @@
       maybe.sort(function (a, b) { return (a.why === "page") - (b.why === "page") || cmpSize(a, b); });   // its own series first
       return { fits: fits, maybe: maybe, closest: [], mode: "hit" };
     }
+    var ACCESSORY = /dispenser|\bstands?\b|\bcarts?\b|accessor|conveyor|\btables?\b(?!.*weld)|dust collector/i;   // not machines that do a job
     FAM.forEach(function (f) {
       var w = pages[f.page] || 0, hit = hits[f.id];
       if (!hit && (!max || w < max * 0.4)) return;
       if (opMismatch(f, req)) return;
-      var main = !!hit || w >= max * 0.7, mis = qualMismatch(f, Q), sp = special(f, qn);
+      if (hasNums && !hit && w < max * 0.7 && ACCESSORY.test(f.short + " " + f.name)) return;
+      // a job with sizes: every kind that was inferred for it is a full answer, not a "similar machine"
+      var main = !!hit || w >= max * (hasNums ? 0.4 : 0.7), mis = qualMismatch(f, Q), sp = special(f, qn);
       var why = hit ? null : !main ? "other" : sp ? "special" : mis ? "qual" : null;
       if (hasNums) {
         var ok = [], unknown = !f.models.length;
@@ -1034,6 +1054,17 @@
     return out.length ? out.join(" ") : "machines";
   }
 
+  /* the kinds of machine in a list ("roofing brakes, folders, press brakes"), in the order they first appear */
+  function kindsOf(list) {
+    var seen = {}, out = [];
+    list.forEach(function (e) {
+      if (seen[e.f.page]) return;
+      seen[e.f.page] = 1;
+      var p = pageBySlug(e.f.page), nm = p ? (p.nav || (p.h1 || "").split(" — ")[0]) : "";
+      if (nm) out.push(nm.toLowerCase().replace(/[^a-z0-9 &-]+/g, " ").replace(/\s+/g, " ").trim());
+    });
+    return out;
+  }
   /* ======================================================================================== the answer */
   function pageBySlug(slug) { for (var i = 0; i < PAGES.length; i++) if (PAGES[i].slug === slug) return PAGES[i]; return null; }
   function firstSentence(t) { var m = /^(.{40,260}?[.!?])\s/.exec((t || "") + " "); return m ? m[1] : (t || "").slice(0, 220); }
@@ -1076,8 +1107,9 @@
         var job = jobLine(req);
         if (nF) {
           var why = lead.fit && lead.fit.notes.length ? " — " + lead.fit.notes.slice(0, 3).join("; ") : "";
+          var kinds = kindsOf(res.fits);
           res.text.push((job ? job + " " : "") + (nF === 1 ? "One machine on our site does this job: the **" + what + "** (" + lineLabel(lead.f) + ")" + why + "." :
-            "**" + nF + " machines** on our site can do this job. The smallest that does it is the **" + what + "** (" + lineLabel(lead.f) + ")" + why + (nF === 2 ? ". Both are listed below, the smaller first." : ". All " + nF + " are listed below, from the smallest to the largest.")));
+            "**" + nF + " machines** on our site can do this job" + (kinds.length > 1 ? " — " + kinds.join(", ").replace(/, ([^,]*)$/, " and $1") : "") + ". The smallest that does it is the **" + what + "** (" + lineLabel(lead.f) + ")" + why + (nF === 2 ? ". Both are listed below, the smaller first." : ". All " + nF + " are listed below, from the smallest to the largest" + (kinds.length > 1 ? ", whatever their kind" : "") + ".")));
           if (lead.fit && lead.fit.caution && lead.fit.caution.length) res.text.push("Note: " + lead.fit.caution[0].replace(/^in /, "In ") + ".");
         } else if (res.closest.length) {
           res.text.push((job ? job + " " : "") + "None of our machines of this type is rated for every size you gave. The largest ones are below — call **" + DATA.contact.phone + "** and we will check your part against them.");
