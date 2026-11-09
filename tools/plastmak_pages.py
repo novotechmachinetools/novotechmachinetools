@@ -342,8 +342,10 @@ def video_ids():
 
 
 def copy_pdf():
+    """the owner's brochure, copied once: the site's copy carries in-place fixes — the model codes with a Latin C ("SC 400S",
+    the owner, Nov 9 2026) and the e-mail size (tools/pdf_email_fit.py) — so it is never overwritten from the original"""
     dst = os.path.join(ROOT, "src", PDF_FILE)
-    if not os.path.exists(dst) or os.path.getsize(dst) != os.path.getsize(PDF_SRC):
+    if not os.path.exists(dst):
         shutil.copyfile(PDF_SRC, dst)
 
 

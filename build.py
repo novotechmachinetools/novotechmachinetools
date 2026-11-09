@@ -8,7 +8,7 @@ Content lives in content/, templates in templates/, static assets in src/.
 """
 import html as html_lib
 import urllib.parse
-import json, os, re, shutil, sys, datetime, hashlib
+import glob, json, os, re, shutil, sys, datetime, hashlib
 import html as html_mod
 from zoneinfo import ZoneInfo
 from jinja2 import Environment, FileSystemLoader, select_autoescape
@@ -2179,6 +2179,10 @@ def main():
         print(f"PREVIEW ONLY: {len(MISSING_IMAGES)} images missing, logo shown instead: " + ", ".join(sorted(MISSING_IMAGES)[:12]) + " …")
     if NO_HERO_NAME:
         print(f"WARNING: {len(NO_HERO_NAME)} small hero photos have no short name in content/hero_names.json: " + ", ".join(sorted(NO_HERO_NAME)))
+    big = [f for f in glob.glob(os.path.join(ROOT, "src", "files", "**", "*.pdf"), recursive=True) if os.path.getsize(f) > 13_900_000]
+    if big:     # the owner, Nov 9 2026: every brochure must fit in an e-mail
+        print(f"WARNING: {len(big)} PDFs are too big to attach to an e-mail — python3 tools/pdf_email_fit.py: "
+              + ", ".join(os.path.basename(f) for f in big))
     print("done", "(staging)" if STAGING else "")
 
 

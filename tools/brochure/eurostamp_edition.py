@@ -80,6 +80,9 @@ def build(out=OUT, pages=None, annotated=None):
                         "creator": "NovoTech Machine Tools Inc.", "producer": "NovoTech Machine Tools Inc."})
     final.subset_fonts()
     final.save(out, garbage=3, deflate=True, encryption=fitz.PDF_ENCRYPT_NONE)
+    sys.path.insert(0, os.path.join(ROOT, "tools"))
+    from pdf_email_fit import fit                   # small enough to attach to an e-mail (the owner, Nov 9 2026)
+    fit(out)
     print("saved", out, final.page_count, "pages", os.path.getsize(out) // 1024, "KB")
     return out, report
 
