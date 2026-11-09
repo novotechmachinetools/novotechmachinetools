@@ -642,7 +642,8 @@ VIDEO_MAP = json.load(open(_vp, encoding="utf-8")) if os.path.exists(_vp) else {
 
 def _iso_dur(mmss):
     p = [int(x) for x in mmss.split(":")]
-    return f"PT{p[0]}H{p[1]}M{p[2]}S" if len(p) == 3 else f"PT{p[0]}M{p[1]}S"
+    p = [0] * (3 - len(p)) + p                     # "15", "2:13" or "1:02:13" (yt-dlp gives seconds alone under a minute)
+    return f"PT{p[0]}H{p[1]}M{p[2]}S" if p[0] else f"PT{p[1]}M{p[2]}S"
 
 
 def family_videos(f):
