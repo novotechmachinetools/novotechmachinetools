@@ -2,6 +2,7 @@
  "order": [
   "tt-eb",
   "tt-hw",
+  "tt-hw-nc",
   "tt-hw-h",
   "tt-tfm",
   "tt-efm",
@@ -333,27 +334,26 @@
   "tt-hw": {
    "id": "tt-hw",
    "brand": "novotech",
-   "name": "HW hydraulic folding machines, 10 ga × 4 – 10 ft and 3/16″ × 80 – 100″",
+   "name": "HW hydraulic folding machines, 10 ga × 4 – 10 ft",
    "short": "HW hydraulic folders",
-   "models_label": "HW1220×3.5 – HW3050×3.5E · 7 models",
-   "summary": "Hydraulic folding machines for the production sheet-metal shop. The HW…×3.5 models fold 10 ga (3.5 mm) mild steel and 12 ga stainless over 4, 6, 8 and 10 ft, with segmented upper tools for boxes up to 5.9″ deep, a bending angle stop from 0 to 135°, foot pedals and a 26″ manual back gauge. The HW…E models add a touch screen that shows the angle and the gauge position, a servo back gauge on a ball screw and a light curtain at the front, and fold 3/16″ (4.5 mm) structural steel over 80″ and 100″ or 10 ga over 120″.",
+   "models_label": "HW1220×3.5 – HW3050×3.5 · 4 models",
+   "summary": "Hydraulic folding machines for the production sheet-metal shop. Four models fold 10 ga (3.5 mm) mild steel and 12 ga (2.5 mm) stainless over 4, 6, 8 and 10 ft, with segmented upper tools for boxes up to 5.9″ deep, a bending angle stop from 0 to 135°, hand wheels that set the upper beam and the gap between the tools, foot pedals and a 26″ manual back gauge. The control panel stands on a movable pedestal or is fixed to the machine. The HW…E NC models below add a touch screen and a servo back gauge.",
    "features": [
-    "HW…×3.5: 10 ga (3.5 mm) mild steel and 12 ga (2.5 mm) stainless × 48 – 120″; 5 – 10 HP",
-    "HW…E: 3/16″ (4.5 mm) structural steel × 80″ and 100″, 10 ga × 120″; touch screen; servo back gauge with ball screw, 21.7 – 49.2″",
+    "10 ga (3.5 mm) mild steel and 12 ga (2.5 mm) stainless × 48, 72, 96 and 120″",
     "Boxes to 5.9″ (150 mm) deep with the segmented upper tools",
     "Bending angle setting 0 – 135°; hand wheels set the upper beam and the tool gap",
-    "Foot pedal control; full protective covers; light curtain at the front on the E models"
+    "26″ (660 mm) manual back gauge; foot pedals; control panel on a movable pedestal or fixed",
+    "5 – 10 HP hydraulic unit; full protective covers"
    ],
    "optional": [],
    "images": [
-    "tm-hwe",
     "tm-hw2440",
     "tm-hw",
     "tm-hw-box",
     "tm-hw-angle"
    ],
    "videos": [],
-   "headline": "10 ga × 4 – 10 ft, 3/16″ × 80 – 100″",
+   "headline": "10 ga × 4 – 10 ft",
    "specs": {
     "kind": "table",
     "tables": [
@@ -489,7 +489,96 @@
         "key": true
        }
       ]
+     }
+    ],
+    "models": [
+     {
+      "name": "HW1220×3.5",
+      "glance": [
+       "48″ (1,220 mm)",
+       "10 ga (3.5 mm) mild steel, 12 ga (2.5 mm) stainless",
+       "5.9″ (150 mm)",
+       "5 HP (3.7 kW)",
+       "3,924 lb (1,780 kg)"
+      ]
      },
+     {
+      "name": "HW1830×3.5",
+      "glance": [
+       "72″ (1,830 mm)",
+       "10 ga (3.5 mm) mild steel, 12 ga (2.5 mm) stainless",
+       "5.9″ (150 mm)",
+       "5 HP (3.7 kW)",
+       "4,784 lb (2,170 kg)"
+      ]
+     },
+     {
+      "name": "HW2440×3.5",
+      "glance": [
+       "96″ (2,440 mm)",
+       "10 ga (3.5 mm) mild steel, 12 ga (2.5 mm) stainless",
+       "5.9″ (150 mm)",
+       "7.5 HP (5.5 kW)",
+       "6,283 lb (2,850 kg)"
+      ]
+     },
+     {
+      "name": "HW3050×3.5",
+      "glance": [
+       "120″ (3,050 mm)",
+       "10 ga (3.5 mm) mild steel, 12 ga (2.5 mm) stainless",
+       "5.9″ (150 mm)",
+       "10 HP (7.5 kW)",
+       "7,496 lb (3,400 kg)"
+      ]
+     }
+    ],
+    "glance_keys": [
+     "bending_length",
+     "capacity",
+     "box_depth_max",
+     "motor",
+     "weight"
+    ],
+    "caps": {
+     "HW1220×3.5": "48″ (1,220 mm) × 10 ga (3.5 mm) mild steel, 12 ga (2.5 mm) stainless",
+     "HW1830×3.5": "72″ (1,830 mm) × 10 ga (3.5 mm) mild steel, 12 ga (2.5 mm) stainless",
+     "HW2440×3.5": "96″ (2,440 mm) × 10 ga (3.5 mm) mild steel, 12 ga (2.5 mm) stainless",
+     "HW3050×3.5": "120″ (3,050 mm) × 10 ga (3.5 mm) mild steel, 12 ga (2.5 mm) stainless"
+    },
+    "note": "Metric values in brackets are the manufacturer's figures; thin sheet is given in gauge. Packing size is the shipping crate L × W × H and weight is the net weight of the machine."
+   },
+   "manual": false,
+   "no_pdf": true,
+   "thumb_image": "tm-hw",
+   "group": "hyd"
+  },
+  "tt-hw-nc": {
+   "id": "tt-hw-nc",
+   "brand": "novotech",
+   "name": "HW…E NC hydraulic folding machines, 3/16″ × 80 – 100″ and 10 ga × 10 ft",
+   "short": "HW…E NC hydraulic folders",
+   "models_label": "HW2040×4.5E · HW2540×4.5E · HW3050×3.5E · 3 models",
+   "summary": "The NC version of the HW folding machine. A touch screen shows the bending angle and the back-gauge position and makes the bending program easy to set up, and a servo motor drives the back gauge on a ball screw — 21.7″, 31.9″ or 49.2″ of travel — for accurate flanges. The HW2040×4.5E and HW2540×4.5E fold 3/16″ (4.5 mm) structural steel and 1/8″ (3 mm) stainless over 80″ and 100″; the HW3050×3.5E folds 10 ga over 10 ft. Hydraulic cylinders drive the clamping beam with the pressure set to the thickness, the bending beam swings on two hydraulic cylinders and levers, segmented upper tools fold boxes up to 5.9″ deep, and a light curtain guards the front of the machine.",
+   "features": [
+    "3/16″ (4.5 mm) structural steel and 1/8″ (3 mm) stainless × 80″ and 100″; 10 ga (3.5 mm) × 120″",
+    "Touch screen shows the bending angle and the back-gauge position",
+    "Servo back gauge on a ball screw: 21.7″, 31.9″ and 49.2″ (550, 810 and 1,250 mm)",
+    "Boxes to 5.9″ (150 mm) deep; optional segment sets for the upper beam",
+    "Light curtain at the front; welded steel-plate frame, stress-relieved; 10 HP (7.5 kW)"
+   ],
+   "optional": [],
+   "images": [
+    "tm-hwe",
+    "tm-hwe-panel",
+    "tm-hwe-curtain",
+    "tm-hwe-gauge"
+   ],
+   "videos": [],
+   "headline": "3/16″ × 80 – 100″, 10 ga × 10 ft",
+   "specs": {
+    "kind": "table",
+    "tables": [
      {
       "title": "HW2040×4.5E · HW2540×4.5E · HW3050×3.5E",
       "sub": "Hydraulic folding machines with touch screen and servo back gauge, to 3/16″ × 10 ft",
@@ -614,52 +703,12 @@
     ],
     "models": [
      {
-      "name": "HW1220×3.5",
-      "glance": [
-       "48″ (1,220 mm)",
-       "10 ga (3.5 mm) mild steel, 12 ga (2.5 mm) stainless",
-       "5.9″ (150 mm)",
-       "5 HP (3.7 kW)",
-       "3,924 lb (1,780 kg)"
-      ]
-     },
-     {
-      "name": "HW1830×3.5",
-      "glance": [
-       "72″ (1,830 mm)",
-       "10 ga (3.5 mm) mild steel, 12 ga (2.5 mm) stainless",
-       "5.9″ (150 mm)",
-       "5 HP (3.7 kW)",
-       "4,784 lb (2,170 kg)"
-      ]
-     },
-     {
-      "name": "HW2440×3.5",
-      "glance": [
-       "96″ (2,440 mm)",
-       "10 ga (3.5 mm) mild steel, 12 ga (2.5 mm) stainless",
-       "5.9″ (150 mm)",
-       "7.5 HP (5.5 kW)",
-       "6,283 lb (2,850 kg)"
-      ]
-     },
-     {
-      "name": "HW3050×3.5",
-      "glance": [
-       "120″ (3,050 mm)",
-       "10 ga (3.5 mm) mild steel, 12 ga (2.5 mm) stainless",
-       "5.9″ (150 mm)",
-       "10 HP (7.5 kW)",
-       "7,496 lb (3,400 kg)"
-      ]
-     },
-     {
       "name": "HW2040×4.5E",
       "glance": [
        "80″ (2,040 mm)",
        "3/16″ (4.5 mm) structural steel, 1/8″ (3 mm) stainless",
        "5.9″ (150 mm)",
-       "10 HP (7.5 kW); max. 2,321 psi (16 MPa)",
+       "21.7″ (550 mm), servo with ball screw",
        "7,385 lb (3,350 kg)"
       ]
      },
@@ -669,7 +718,7 @@
        "100″ (2,540 mm)",
        "3/16″ (4.5 mm) structural steel, 1/8″ (3 mm) stainless",
        "5.9″ (150 mm)",
-       "10 HP (7.5 kW); max. 2,321 psi (16 MPa)",
+       "31.9″ (810 mm), servo with ball screw",
        "9,370 lb (4,250 kg)"
       ]
      },
@@ -679,7 +728,7 @@
        "120″ (3,050 mm)",
        "10 ga (3.5 mm) structural steel, 14 ga (2 mm) stainless",
        "5.9″ (150 mm)",
-       "10 HP (7.5 kW); max. 2,321 psi (16 MPa)",
+       "49.2″ (1,250 mm), servo with ball screw",
        "10,141 lb (4,600 kg)"
       ]
      }
@@ -688,14 +737,10 @@
      "bending_length",
      "capacity",
      "box_depth_max",
-     "motor",
+     "back_gauge",
      "weight"
     ],
     "caps": {
-     "HW1220×3.5": "48″ (1,220 mm) × 10 ga (3.5 mm) mild steel, 12 ga (2.5 mm) stainless",
-     "HW1830×3.5": "72″ (1,830 mm) × 10 ga (3.5 mm) mild steel, 12 ga (2.5 mm) stainless",
-     "HW2440×3.5": "96″ (2,440 mm) × 10 ga (3.5 mm) mild steel, 12 ga (2.5 mm) stainless",
-     "HW3050×3.5": "120″ (3,050 mm) × 10 ga (3.5 mm) mild steel, 12 ga (2.5 mm) stainless",
      "HW2040×4.5E": "80″ (2,040 mm) × 3/16″ (4.5 mm) structural steel, 1/8″ (3 mm) stainless",
      "HW2540×4.5E": "100″ (2,540 mm) × 3/16″ (4.5 mm) structural steel, 1/8″ (3 mm) stainless",
      "HW3050×3.5E": "120″ (3,050 mm) × 10 ga (3.5 mm) structural steel, 14 ga (2 mm) stainless"
@@ -704,7 +749,6 @@
    },
    "manual": false,
    "no_pdf": true,
-   "thumb_image": "tm-hw",
    "group": "hyd"
   },
   "tt-hw-h": {
@@ -14814,11 +14858,11 @@
    ],
    "optional": [],
    "images": [
+    "tm-rbm50",
     "tm-hrbm50",
-    "tm-rbm40",
     "tm-hrbm65",
     "tm-hrbm40",
-    "tm-rbm50",
+    "tm-rbm40",
     "tm-hrbm-work"
    ],
    "videos": [],

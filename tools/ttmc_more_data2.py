@@ -140,7 +140,7 @@ ANGLE = [
       "1″ flat bar the easy way and 3-1/8 × 1″ on edge. Rolls for round tube and special profiles — also in nylon — are made to order.",
       ["Shafts Ø1-9/16″ (40 mm), Ø2″ (50 mm) and Ø2-1/2″ (65 mm); 2 – 3 HP; 9 – 9.3 rpm", "Horizontal and vertical operation (HV models)",
        "Hydraulic top roll on the HRBM models", "One standard combination roll set for all listed profiles", "Foot pedal; special rolls (also nylon) to order"],
-      ["tm-hrbm50", "tm-rbm40", "tm-hrbm65", "tm-hrbm40", "tm-rbm50", "tm-hrbm-work"], headline="Shafts Ø1-9/16 – 2-1/2″", cap="[Shaft diameter] shafts"),
+      ["tm-rbm50", "tm-hrbm50", "tm-hrbm65", "tm-hrbm40", "tm-rbm40", "tm-hrbm-work"], headline="Shafts Ø1-9/16 – 2-1/2″", cap="[Shaft diameter] shafts"),
     F("tt-rbm-small", P_ANGLE, "tt-ring", "ERBM10HV – RBM30HV motorized ring rollers, Ø13/16 – 1-3/16″ shafts", "RBM motorized ring rollers",
       [pick(RB[0], ["ERBM10HV", "RBM20", "RBM30", "RBM30HV"], title="ERBM10HV · RBM20 · RBM30 · RBM30HV", sub="Motorized ring rollers with Ø13/16 – 1-3/16″ shafts")],
       "Small motorized ring rollers for flat bar, square and round bar, light angle, channel and tube — railings, gates, frames and "

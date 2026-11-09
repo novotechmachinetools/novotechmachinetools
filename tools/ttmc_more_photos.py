@@ -173,7 +173,11 @@ PLAN = {
  "tm-hw2440": (74, "R1", [], "HW2440×3.5 hydraulic folding machine"),
  "tm-hw-angle": (74, "L3", [], "Bending angle setting on the hydraulic folding machine"),
  "tm-hw-box": (74, "L2", [], "Segments for bending boxes on the hydraulic folding machine"),
- "tm-hwe": (75, "L1", [(252, 312, 340, 326)], "HW2040×4.5E hydraulic folding machine with touch screen, servo back gauge and light curtain"), "tm-hbv": (76, "L1", [(150, 436, 210, 452)], "HBV48 hydraulic bending brake with four-way V-block and foot valve"),
+ "tm-hwe": (75, "L1", [(252, 312, 340, 326)], "HW2040×4.5E hydraulic folding machine with touch screen, servo back gauge and light curtain"),
+ # the HW…E NC folders' own detail photos (the owner, Nov 9 2026: the NC models get an item and a gallery of their own)
+ "tm-hwe-panel": (75, "L3", [], "Control cabinet on the side frame of the HW…E NC folding machine: touch screen, pressure gauge and emergency stop"),
+ "tm-hwe-curtain": (75, "L4", [], "Light curtain at the front of the HW…E NC folding machine"),
+ "tm-hwe-gauge": (75, "L5", [], "Servo back gauge with sheet supports on the HW…E NC folding machine"), "tm-hbv": (76, "L1", [(150, 436, 210, 452)], "HBV48 hydraulic bending brake with four-way V-block and foot valve"),
  "tm-m55": (76, "R5", [(1104, 524, 1222, 556)], "M55 compact single-cylinder ironworker with punch, shear and notcher"),
  "tm-stand-ra785": (77, "L7", [], "RA785 roller table with measuring feed system"),
  "tm-stand-rb365": (77, "L6", [(164, 608, 242, 634)], "RB365 roller conveyor"),
@@ -329,7 +333,7 @@ PLAN = {
  "tm-c41-16": (113, "R2", [], "C41-16KG pneumatic forging hammer"),
 }
 
-DETAIL = {"tm-eb-bars", "tm-alb-work", "tm-hw-angle", "tm-hw-box", "tm-rbm-rolls", "tm-crb-rolls", "tm-lock-forms", "tm-ss-jaws", "tm-anvils",
+DETAIL = {"tm-eb-bars", "tm-alb-work", "tm-hw-angle", "tm-hw-box", "tm-hwe-panel", "tm-hwe-curtain", "tm-hwe-gauge", "tm-rbm-rolls", "tm-crb-rolls", "tm-lock-forms", "tm-ss-jaws", "tm-anvils",
           "tm-pic50-sample", "tm-ptn-work", "tm-louver", "tm-hb-vee", "tm-q01b-gauge", "tm-dollies", "tm-wg", "tm-ns1", "tm-fr120"}
 
 
@@ -357,7 +361,8 @@ CLEAN = {
     "tm-e3in1", "tm-eb2500", "tm-ebq01", "tm-esr", "tm-esr1300e", "tm-etb12", "tm-etb25", "tm-etr50", "tm-f1210", "tm-f1256",
     "tm-fsm16", "tm-hb10", "tm-hb10t", "tm-hb2248", "tm-hb2250", "tm-hb40t", "tm-hbv", "tm-her", "tm-hnm6a", "tm-hp100",
     "tm-hp12n", "tm-hp150m1", "tm-hp200m1", "tm-hp24n", "tm-hp30", "tm-hp30c", "tm-hp315fk", "tm-hp50f", "tm-hpp100",
-    "tm-hrbm40", "tm-hrbm50", "tm-htb1000", "tm-htb2000", "tm-htes", "tm-hw-angle", "tm-hw-box", "tm-lb2", "tm-lm1450",
+    "tm-hrbm40", "tm-hrbm50", "tm-htb1000", "tm-htb2000", "tm-htes", "tm-hw-angle", "tm-hw-box", "tm-hwe-panel", "tm-hwe-curtain",
+    "tm-hwe-gauge", "tm-lb2", "tm-lm1450",
     "tm-lm1450b", "tm-lq15", "tm-ms", "tm-mms6", "tm-txk160d", "tm-ufp2", "tm-vise", "tm-w01-2", "tm-w1500", "tm-w1830p", "tm-wf",
     "tm-x5750", "tm-x6436", "tm-xm8", "tm-xq6226", "tm-zx6350", "tm-zx7550",
 }
@@ -383,6 +388,8 @@ WHITE = {
     "tm-rm18": [(185, 215, 190, 247, "w"), (200, 262, 140, 195, "d")], "tm-rmb": [(338, 368, 60, 340, "w")],
     "tm-t40": [(50, 130, 0, 40, "w"), (730, 785, 0, 40, "d")], "tm-t50": [(682, 712, 0, 90, "d")],
     "tm-tb12": [(205, 235, 255, 395, "w")], "tm-tr50": [(300, 420, 185, 395, "d")], "tm-hp30": [(168, 190, 166, 258, "d")],
+    # the printed captions under the HW…E detail photos ("European design", "Light curtain", "Back gauge with supports")
+    "tm-hwe-panel": [(177, 400, 0, 400, "w")], "tm-hwe-curtain": [(183, 400, 0, 400, "w")], "tm-hwe-gauge": [(176, 400, 0, 400, "w")],
 }
 
 

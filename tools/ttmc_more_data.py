@@ -48,17 +48,33 @@ BRAKES = [
        "Four sets of clamping bars — full length, short set for boxes, narrow and slotted",
        "Foot switch, easy-raise clamp bar and bending stop standard; back gauge 15.4 – 25.2″ (390 – 640 mm)"],
       ["tm-eb2500", "tm-eb1250", "tm-eb625", "tm-eb-bars"], headline="16 ga × 2 – 8 ft, 18 ga × 10 ft", cap="[Capacity, length × mild steel]"),
-    F("tt-hw", P_BRAKE, "hyd", "HW hydraulic folding machines, 10 ga × 4 – 10 ft and 3/16″ × 80 – 100″", "HW hydraulic folders", T["tt-hw"],
-      "Hydraulic folding machines for the production sheet-metal shop. The HW…×3.5 models fold 10 ga (3.5 mm) mild steel and 12 ga "
-      "stainless over 4, 6, 8 and 10 ft, with segmented upper tools for boxes up to 5.9″ deep, a bending angle stop from 0 to 135°, foot "
-      "pedals and a 26″ manual back gauge. The HW…E models add a touch screen that shows the angle and the gauge position, a servo back "
-      "gauge on a ball screw and a light curtain at the front, and fold 3/16″ (4.5 mm) structural steel over 80″ and 100″ or 10 ga over 120″.",
-      ["HW…×3.5: 10 ga (3.5 mm) mild steel and 12 ga (2.5 mm) stainless × 48 – 120″; 5 – 10 HP",
-       "HW…E: 3/16″ (4.5 mm) structural steel × 80″ and 100″, 10 ga × 120″; touch screen; servo back gauge with ball screw, 21.7 – 49.2″",
+    # the HW folders are two items (the owner, Nov 9 2026): the HW…×3.5 with a manual back gauge first, the HW…E NC models under it
+    F("tt-hw", P_BRAKE, "hyd", "HW hydraulic folding machines, 10 ga × 4 – 10 ft", "HW hydraulic folders", [T["tt-hw"][0]],
+      "Hydraulic folding machines for the production sheet-metal shop. Four models fold 10 ga (3.5 mm) mild steel and 12 ga (2.5 mm) "
+      "stainless over 4, 6, 8 and 10 ft, with segmented upper tools for boxes up to 5.9″ deep, a bending angle stop from 0 to 135°, hand "
+      "wheels that set the upper beam and the gap between the tools, foot pedals and a 26″ manual back gauge. The control panel stands on "
+      "a movable pedestal or is fixed to the machine. The HW…E NC models below add a touch screen and a servo back gauge.",
+      ["10 ga (3.5 mm) mild steel and 12 ga (2.5 mm) stainless × 48, 72, 96 and 120″",
        "Boxes to 5.9″ (150 mm) deep with the segmented upper tools",
        "Bending angle setting 0 – 135°; hand wheels set the upper beam and the tool gap",
-       "Foot pedal control; full protective covers; light curtain at the front on the E models"],
-      ["tm-hwe", "tm-hw", "tm-hw2440", "tm-hw-box", "tm-hw-angle"], headline="10 ga × 4 – 10 ft, 3/16″ × 80 – 100″", cap="[Bending length] × [Capacity]"),
+       "26″ (660 mm) manual back gauge; foot pedals; control panel on a movable pedestal or fixed",
+       "5 – 10 HP hydraulic unit; full protective covers"],
+      ["tm-hw", "tm-hw2440", "tm-hw-box", "tm-hw-angle"], headline="10 ga × 4 – 10 ft", cap="[Bending length] × [Capacity]"),
+    F("tt-hw-nc", P_BRAKE, "hyd", "HW…E NC hydraulic folding machines, 3/16″ × 80 – 100″ and 10 ga × 10 ft", "HW…E NC hydraulic folders",
+      [T["tt-hw"][1]],
+      "The NC version of the HW folding machine. A touch screen shows the bending angle and the back-gauge position and makes the bending "
+      "program easy to set up, and a servo motor drives the back gauge on a ball screw — 21.7″, 31.9″ or 49.2″ of travel — for accurate "
+      "flanges. The HW2040×4.5E and HW2540×4.5E fold 3/16″ (4.5 mm) structural steel and 1/8″ (3 mm) stainless over 80″ and 100″; the "
+      "HW3050×3.5E folds 10 ga over 10 ft. Hydraulic cylinders drive the clamping beam with the pressure set to the thickness, the "
+      "bending beam swings on two hydraulic cylinders and levers, segmented upper tools fold boxes up to 5.9″ deep, and a light curtain "
+      "guards the front of the machine.",
+      ["3/16″ (4.5 mm) structural steel and 1/8″ (3 mm) stainless × 80″ and 100″; 10 ga (3.5 mm) × 120″",
+       "Touch screen shows the bending angle and the back-gauge position",
+       "Servo back gauge on a ball screw: 21.7″, 31.9″ and 49.2″ (550, 810 and 1,250 mm)",
+       "Boxes to 5.9″ (150 mm) deep; optional segment sets for the upper beam",
+       "Light curtain at the front; welded steel-plate frame, stress-relieved; 10 HP (7.5 kW)"],
+      ["tm-hwe", "tm-hwe-panel", "tm-hwe-curtain", "tm-hwe-gauge"], headline="3/16″ × 80 – 100″, 10 ga × 10 ft",
+      cap="[Bending length] × [Capacity]"),
     F("tt-hw-h", P_BRAKE, "hyd", "HW2.0×1320H · HW2.0×2540H hydraulic box and pan brakes, 14 ga × 52″ and 100″", "Hydraulic box and pan brakes",
       NT["tt-hw-h"],
       "The box and pan brake with hydraulic power: the bending leaf is swung by hydraulics while the operator holds the sheet, and a "
@@ -661,7 +677,8 @@ BIG_FIRST = {
               "tm-w610"],
     "tt-folder": ["tm-tsb2060", "tm-tsb2020", "tm-mf3020", "tm-tfs", "tm-wf", "tm-pbb", "tm-pbb1020", "tm-pbb1020-1a", "tm-brake36"],
     "tt-bench-brake": ["tm-w1000", "tm-w610b", "tm-wb14", "tm-w460", "tm-zwj"],
-    "tt-hw": ["tm-hwe", "tm-hw2440", "tm-hw", "tm-hw-box", "tm-hw-angle"],
+    "tt-hw": ["tm-hw2440", "tm-hw", "tm-hw-box", "tm-hw-angle"],
+    "tt-hw-nc": ["tm-hwe", "tm-hwe-panel", "tm-hwe-curtain", "tm-hwe-gauge"],
     "tt-efm": ["tm-efm", "tm-efms2540l", "tm-efms", "tm-efms2540l-angle"],
     "tt-bsm": ["tm-bsm2540", "tm-bsm1220", "tm-bsm1016"],
     "tt-3in1": ["tm-3in1", "tm-3in1-1016", "tm-3in1a", "tm-3in1-610", "tm-3in1-305", "tm-minibrake"],

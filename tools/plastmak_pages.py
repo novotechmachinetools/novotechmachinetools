@@ -2,11 +2,11 @@
 """Plastmak (Bursa, Turkey) aluminum and PVC window and door machinery — the saws page (the old site's URL, menu "Aluminum & PVC
 saws") and the new "Aluminum & PVC processing machines" hub with four pages; image registration (section 'plastmak').
 
-    Aluminum & PVC saws               aluminum-and-pvc-upcut-saws               SÇ 401 · 402 · 403 · 450 · 400S · 4000S · 301 · 301S · 431 · 441 · 451
+    Aluminum & PVC saws               aluminum-and-pvc-upcut-saws               SC 401 · 402 · 403 · 450 · 400S · 4000S · 301 · 301S · 431 · 441 · 451
     Aluminum & PVC processing machines pvc-aluminum-window-machines (hub)
-        ├ pvc-window-welding-machines             SÇ 100 Gold Plus · Gold Plus Full · SÇ 100 · SÇ 101 · SÇ 6000 · 6000S · SÇ 601
-        ├ profile-machining-centres-copy-routers  SÇ 4550 · 5000 · 5000S · 501 · 502S · 512 · 521S · 542 · 211 · 211S
-        ├ window-assembly-machines                SÇ 902 · screwing and sash assembly · SÇ 221 · 551 · SÇ 1000 – 1003
+        ├ pvc-window-welding-machines             SC 100 Gold Plus · Gold Plus Full · SC 100 · SC 101 · SC 6000 · 6000S · SC 601
+        ├ profile-machining-centres-copy-routers  SC 4550 · 5000 · 5000S · 501 · 502S · 512 · 521S · 542 · 211 · 211S
+        ├ window-assembly-machines                SC 902 · screwing and sash assembly · SC 221 · 551 · SC 1000 – 1003
         └ window-production-lines                 PVC single-head · PVC double-head · aluminum double-head · PVC workshop
 
     python3 tools/plastmak_photos.py                 # catalogue, plastmak.com and 2024-catalogue images → tools/src-images/plastmak
@@ -59,46 +59,46 @@ PAGE_SAWS = dict(
     h1="Aluminum & PVC upcut saws — automatic upcut, double-head, glazing bead and miter saws for extrusions and window profiles",
     intro="An upcut saw (rising-blade saw) raises its blade from under the table through a profile that is already clamped, so the "
           "cut is guarded, square and nearly burr-free — the standard saw for aluminum extrusions and PVC (vinyl) window profiles. "
-          "NovoTech supplies the saws of Plastmak, built in Bursa, Turkey: the SÇ 401, whose Ø17-11/16″ blade turns from 0° to "
-          "180°; the fully automatic SÇ 402 and SÇ 403 with Ø21-5/8″ to Ø25-9/16″ blades and hydro-pneumatic feed, for profiles "
-          "up to 9-3/16 × 12-3/8″; the SÇ 450 for roller-shutter boxes and lamella packs; the SÇ 400S and SÇ 4000S double-head "
-          "saws, which cut both ends of a frame profile at once, up to 171-5/8″ long; the SÇ 301 and SÇ 301S glazing bead saws; "
-          "and the SÇ 431, SÇ 441 and SÇ 451 miter saws. Supplied with a CSA-approved panel, installed and supported from "
+          "NovoTech supplies the saws of Plastmak, built in Bursa, Turkey: the SC 401, whose Ø17-11/16″ blade turns from 0° to "
+          "180°; the fully automatic SC 402 and SC 403 with Ø21-5/8″ to Ø25-9/16″ blades and hydro-pneumatic feed, for profiles "
+          "up to 9-3/16 × 12-3/8″; the SC 450 for roller-shutter boxes and lamella packs; the SC 400S and SC 4000S double-head "
+          "saws, which cut both ends of a frame profile at once, up to 171-5/8″ long; the SC 301 and SC 301S glazing bead saws; "
+          "and the SC 431, SC 441 and SC 451 miter saws. Supplied with a CSA-approved panel, installed and supported from "
           "Mississauga, ON, Canada.",
-    points=["Upcut saws Ø17-11/16″ – Ø25-9/16″ (450 – 650 mm), automatic from the SÇ 402, profiles to 9-3/16 × 12-3/8″",
-            "Double-head saws: 2 × Ø19-11/16″ or 2 × Ø23-5/8″, lengths 19-1/8″ – 171-5/8″, ±.020″ on the SÇ 4000S",
+    points=["Upcut saws Ø17-11/16″ – Ø25-9/16″ (450 – 650 mm), automatic from the SC 402, profiles to 9-3/16 × 12-3/8″",
+            "Double-head saws: 2 × Ø19-11/16″ or 2 × Ø23-5/8″, lengths 19-1/8″ – 171-5/8″, ±.020″ on the SC 4000S",
             "Glazing bead, shutter box and miter saws — the whole cutting side of a window shop"],
     hero="pm-402", minis=["pm-401", "pm-4000s"],
     groups=[("pm-upcut", "Upcut saws",
-             "Rising-blade saws for aluminum and PVC profiles, from the 0° – 180° SÇ 401 to the fully automatic SÇ 402 and SÇ 403, "
-             "and the SÇ 450 for roller-shutter work.", P),
+             "Rising-blade saws for aluminum and PVC profiles, from the 0° – 180° SC 401 to the fully automatic SC 402 and SC 403, "
+             "and the SC 450 for roller-shutter work.", P),
             ("pm-double", "Double-head miter saws", "Both ends of a profile in one stroke, square or mitred, to the length set on the control.", P),
             ("pm-bead", "Glazing bead saws", "45° bead cutting, with a universal mould or with no moulds at all.", P),
             ("pm-miter", "Overhead and bench miter saws", "Top-down miter saws for the shop and the site.", P)],
     faq=[{"q": "What is an upcut saw?",
           "a": "A saw whose blade sits under the table and rises through the profile, which is clamped from above and from the side "
                "before the cut. The blade stays covered until it cuts, the profile cannot move, and the cut comes out square and "
-               "nearly burr-free — which is why aluminum and PVC window shops use upcut saws rather than chop saws. The SÇ 401, "
-               "SÇ 402 and SÇ 403 are upcut saws; the SÇ 431, 441 and 451 cut from above."},
+               "nearly burr-free — which is why aluminum and PVC window shops use upcut saws rather than chop saws. The SC 401, "
+               "SC 402 and SC 403 are upcut saws; the SC 431, 441 and 451 cut from above."},
          {"q": "Which blade size do I need?",
-          "a": "The blade decides the largest profile. At 90° the Ø17-11/16″ (450 mm) SÇ 401 cuts profiles up to 5-5/16″ high and "
-               "8-9/16″ wide, the Ø21-5/8″ (550 mm) SÇ 402 7-1/16 × 10-7/16″, and the SÇ 403 8-3/16 × 11-5/16″ with its "
+          "a": "The blade decides the largest profile. At 90° the Ø17-11/16″ (450 mm) SC 401 cuts profiles up to 5-5/16″ high and "
+               "8-9/16″ wide, the Ø21-5/8″ (550 mm) SC 402 7-1/16 × 10-7/16″, and the SC 403 8-3/16 × 11-5/16″ with its "
                "Ø23-5/8″ (600 mm) blade or 9-3/16 × 12-3/8″ with the Ø25-9/16″ (650 mm) one. Most window and door profiles fit "
-               "the SÇ 401 or 402; curtain-wall and large door profiles need the SÇ 403. Send us your largest profile and we will "
+               "the SC 401 or 402; curtain-wall and large door profiles need the SC 403. Send us your largest profile and we will "
                "check it against the cutting chart."},
          {"q": "Upcut saw or double-head saw?",
           "a": "An upcut saw cuts one end at a time — flexible and inexpensive, enough for a few dozen windows a shift. A double-head "
-               "saw cuts both ends at once, to a length typed in or read from a barcode, with both heads tilting to 45°: the SÇ "
-               "400S and SÇ 4000S roughly double a shop's output and take measuring errors out of the job. Many shops run a "
+               "saw cuts both ends at once, to a length typed in or read from a barcode, with both heads tilting to 45°: the SC "
+               "400S and SC 4000S roughly double a shop's output and take measuring errors out of the job. Many shops run a "
                "double-head saw for frames and an upcut saw for mullions and odd cuts."},
          {"q": "Do they cut aluminum as well as PVC?",
-          "a": "Yes. The SÇ 402, 403, 400S and 4000S cut both, with hydro-pneumatic or hydro-check feeds that keep aluminum cuts "
-               "clean and spray or oil cooling for the blade; the SÇ 401 slows its feed in aluminum and takes an optional cooling "
+          "a": "Yes. The SC 402, 403, 400S and 4000S cut both, with hydro-pneumatic or hydro-check feeds that keep aluminum cuts "
+               "clean and spray or oil cooling for the blade; the SC 401 slows its feed in aluminum and takes an optional cooling "
                "device and hydro-check. Fit a blade made for the material you cut."},
          {"q": "What do the model names mean?",
-          "a": "SÇ — often written SC — is Plastmak's model prefix. Across the range, 1xx are welders, 2xx end mills and notchers, "
+          "a": "SC — often written SC — is Plastmak's model prefix. Across the range, 1xx are welders, 2xx end mills and notchers, "
                "3xx bead saws, 4xx saws, 5xx routers and CNCs, 6xx corner cleaners, 9xx crimpers and 1000s conveyors; an S marks "
-               "the servo or upgraded version, as on the SÇ 400S and SÇ 4000S."},
+               "the servo or upgraded version, as on the SC 400S and SC 4000S."},
          VOLT_FAQ_GENERIC],
     faq_title="Questions we get asked about aluminum and PVC saws",
     related_pages=[{"href": f"{D.P_HUB}.html", "label": "Aluminum & PVC processing machines"},
@@ -114,15 +114,15 @@ PAGE_WELD = dict(
     h1="PVC window welding and corner cleaning machines — single-head, double-head and 4-corner welders, CNC corner cleaners",
     intro="A PVC (vinyl) window frame is joined by welding: the mitred profile ends are pressed against a heated plate until they "
           "melt, then pushed together and held while the seam cools; the bead of melted plastic left on the corner is cleaned "
-          "off afterwards. NovoTech supplies the welders and corner cleaners of Plastmak, built in Bursa, Turkey: the SÇ 101 "
-          "single-head welder for any angle from 25° to 180°; the SÇ 100 double-head welder for profiles 13-3/8″ to 126″ long; "
-          "the SÇ 100 Gold Plus, which welds all four corners of a frame up to 145-11/16 × 106-5/16″ at once, and the Gold Plus "
-          "Full line that adds a robot and a CNC cleaner; the SÇ 601 corner cleaner with three knives; and the SÇ 6000 and SÇ "
+          "off afterwards. NovoTech supplies the welders and corner cleaners of Plastmak, built in Bursa, Turkey: the SC 101 "
+          "single-head welder for any angle from 25° to 180°; the SC 100 double-head welder for profiles 13-3/8″ to 126″ long; "
+          "the SC 100 Gold Plus, which welds all four corners of a frame up to 145-11/16 × 106-5/16″ at once, and the Gold Plus "
+          "Full line that adds a robot and a CNC cleaner; the SC 601 corner cleaner with three knives; and the SC 6000 and SC "
           "6000S CNC corner cleaners. All three welders can make a 0.2 mm (.008″) seam. Supplied with a CSA-approved panel, "
           "installed and supported from Mississauga, ON, Canada.",
-    points=["SÇ 101 single-head, 25° – 180° · SÇ 100 double-head, profiles 13-3/8″ – 126″ long and to 6-5/16″ high",
-            "SÇ 100 Gold Plus: four corners at once, frames to 145-11/16 × 106-5/16″ · Gold Plus Full welding and cleaning line",
-            "SÇ 601 three-knife corner cleaner · SÇ 6000 and 6000S CNC cleaners, up to 500 frames a shift"],
+    points=["SC 101 single-head, 25° – 180° · SC 100 double-head, profiles 13-3/8″ – 126″ long and to 6-5/16″ high",
+            "SC 100 Gold Plus: four corners at once, frames to 145-11/16 × 106-5/16″ · Gold Plus Full welding and cleaning line",
+            "SC 601 three-knife corner cleaner · SC 6000 and 6000S CNC cleaners, up to 500 frames a shift"],
     hero="pm-100gp", minis=["pm-100", "pm-6000s"],
     groups=[("pm-weld", "PVC window welding machines",
              "Single, double and 4-corner welders with PLC or servo control and welding recipes for every profile.", P),
@@ -133,14 +133,14 @@ PAGE_WELD = dict(
                "temperature set for each profile type. A 0.2 mm seam limits the weld bead to 0.2 mm (.008″), so laminated and "
                "coloured profiles need little or no cleaning."},
          {"q": "Which welder for my output?",
-          "a": "The single-head SÇ 101 welds one corner at a time — four cycles a frame, any angle, the right start for small "
-               "shops and arched windows. The double-head SÇ 100 welds two corners at once, and the SÇ 100 Gold Plus all four, so "
+          "a": "The single-head SC 101 welds one corner at a time — four cycles a frame, any angle, the right start for small "
+               "shops and arched windows. The double-head SC 100 welds two corners at once, and the SC 100 Gold Plus all four, so "
                "a frame is welded in one cycle and comes out square. The Gold Plus Full carries the frame on to a CNC cleaner by "
                "robot, with no operator in between."},
          {"q": "Why clean the corners?",
           "a": "Welding leaves a bead of melted PVC on the faces and in the gasket grooves of every corner; left on, it stops "
-               "gaskets and hardware from seating and looks poor. The SÇ 601 cleans the corner and faces with knives in one PLC "
-               "cycle; the CNC cleaners also clean seal grooves, radii and laminated profiles — the SÇ 6000S with 10 tools and "
+               "gaskets and hardware from seating and looks poor. The SC 601 cleans the corner and faces with knives in one PLC "
+               "cycle; the CNC cleaners also clean seal grooves, radii and laminated profiles — the SC 6000S with 10 tools and "
                "automatic profile recognition."},
          {"q": "What frame sizes fit the 4-corner welder?",
           "a": "Frames from 16-1/8 × 19-1/2″ (410 × 495 mm) up to 145-11/16 × 106-5/16″ (3,700 × 2,700 mm), with profiles 1-9/16″ to "
@@ -159,14 +159,14 @@ PAGE_CNC = dict(
     intro="Before a window frame is assembled, its profiles are machined for the hardware — lock and handle places, hinge and "
           "espagnolette slots, drainage slots — and its mullions are end-milled to fit the frame. NovoTech supplies these machines "
           "from Plastmak, built in Bursa, Turkey, from template-guided to fully automatic: copy routers that follow a template "
-          "(the SÇ 501, 502S and 512 with triple drilling units, the SÇ 521S for drainage slots and the SÇ 542 for aluminum); the "
-          "SÇ 211 and SÇ 211S end milling machines; the SÇ 5000 and SÇ 5000S 3-axis CNC drilling and milling machines with three "
-          "spindles; and the SÇ 4550, a 9-axis machining and cutting centre that takes profiles up to 21′ 4″ (6,500 mm) from a "
+          "(the SC 501, 502S and 512 with triple drilling units, the SC 521S for drainage slots and the SC 542 for aluminum); the "
+          "SC 211 and SC 211S end milling machines; the SC 5000 and SC 5000S 3-axis CNC drilling and milling machines with three "
+          "spindles; and the SC 4550, a 9-axis machining and cutting centre that takes profiles up to 21′ 4″ (6,500 mm) from a "
           "magazine and delivers them machined, cut and labelled. Supplied with a CSA-approved panel, installed and supported "
           "from Mississauga, ON, Canada.",
-    points=["SÇ 4550: 9 axes, 10 spindles, profiles 78-3/4″ – 255-7/8″, cut at 30° – 150°",
-            "SÇ 5000 · 5000S: 3-axis CNC, 3 spindles at 18,000 rpm, travel 15-3/8 × 7-7/8 × 7-7/8″",
-            "Copy routers SÇ 501 · 502S · 512 · 521S · 542 · end mills SÇ 211 · 211S, cutters to Ø6-5/16″"],
+    points=["SC 4550: 9 axes, 10 spindles, profiles 78-3/4″ – 255-7/8″, cut at 30° – 150°",
+            "SC 5000 · 5000S: 3-axis CNC, 3 spindles at 18,000 rpm, travel 15-3/8 × 7-7/8 × 7-7/8″",
+            "Copy routers SC 501 · 502S · 512 · 521S · 542 · end mills SC 211 · 211S, cutters to Ø6-5/16″"],
     hero="pm-4550", minis=["pm-5000s", "pm-502s"],
     groups=[("pm-cnc", "CNC profile machining centres", "Programmed machining of every hardware place in one clamping — up to a 9-axis line with saw and magazine.", P),
             ("pm-copy", "Copy routers", "Template-guided routing and triple drilling for lock, handle, hinge and drainage cut-outs in series.", P),
@@ -174,16 +174,16 @@ PAGE_CNC = dict(
     faq=[{"q": "Copy router or CNC?",
           "a": "A copy router repeats a cut-out from a template: quick to set up, inexpensive, ideal for a few profile systems. A "
                "CNC is programmed instead — new hardware or a new profile system is a new program, not a new template — and the "
-               "SÇ 5000 and 5000S make every cut-out of a profile in one clamping, the SÇ 5000S from DXF drawings. The SÇ 4550 "
+               "SC 5000 and 5000S make every cut-out of a profile in one clamping, the SC 5000S from DXF drawings. The SC 4550 "
                "adds a magazine, cutting and labelling for unattended work."},
          {"q": "What does an end milling machine do?",
           "a": "It cuts the end of a mullion (transom) to the shape of the frame profile it meets, so the T-joint closes tight and "
-               "can be screwed. A stack of cutters matching the profile does it in one pass; the SÇ 211S changes the whole stack "
+               "can be screwed. A stack of cutters matching the profile does it in one pass; the SC 211S changes the whole stack "
                "with one button when the profile series changes and mills at angles from −45° to +45°."},
          {"q": "Which machines work on aluminum?",
-          "a": "The SÇ 502S, 512, 542, 5000S, 4550 and 211S work on aluminum as well as PVC, with 18,000 rpm spindles and cooling "
-               "where aluminum needs it; the SÇ 501, 521S and 5000 are for PVC, and the SÇ 211 mills both."},
-         {"q": "What does the SÇ 4550 do?",
+          "a": "The SC 502S, 512, 542, 5000S, 4550 and 211S work on aluminum as well as PVC, with 18,000 rpm spindles and cooling "
+               "where aluminum needs it; the SC 501, 521S and 5000 are for PVC, and the SC 211 mills both."},
+         {"q": "What does the SC 4550 do?",
           "a": "It takes up to seven profiles from its magazine, measures each, clamps it on a 3-axis holding station, grooves, "
                "drills, marks and mills it with ten spindles and cuts it with a servo saw at any angle from 30° to 150° — "
                "profiles 78-3/4″ to 255-7/8″ long. Finished parts leave on a conveyor with a printed barcode label, and the "
@@ -200,28 +200,28 @@ PAGE_ASSY = dict(
     h1="Window assembly machines — corner crimper, screwing and sash assembly, portable machines and conveyors",
     intro="Once the profiles are cut and machined, the frames are put together: aluminum corners are crimped over cleats, "
           "reinforcements and hardware are screwed in, and the sashes are fitted with their hardware. NovoTech supplies the "
-          "machines for that from Plastmak, built in Bursa, Turkey: the SÇ 902 hydraulic corner crimper with 4 + 4 knives; single "
+          "machines for that from Plastmak, built in Bursa, Turkey: the SC 902 hydraulic corner crimper with 4 + 4 knives; single "
           "and double-head pneumatic screwing machines and a sash assembly machine that fits a double-opening sash's hardware in "
-          "3.5 minutes; the SÇ 221 and SÇ 551 portable notching and copy milling machines; and the SÇ 1000 digital measuring "
-          "conveyor with the SÇ 1001 – 1003 conveyors that carry profiles to and from every machine. Supplied with a "
+          "3.5 minutes; the SC 221 and SC 551 portable notching and copy milling machines; and the SC 1000 digital measuring "
+          "conveyor with the SC 1001 – 1003 conveyors that carry profiles to and from every machine. Supplied with a "
           "CSA-approved panel, installed and supported from Mississauga, ON, Canada.",
-    points=["SÇ 902 hydraulic corner crimper: 4 + 4 knives, aluminum profiles to 5-1/8″ high",
+    points=["SC 902 hydraulic corner crimper: 4 + 4 knives, aluminum profiles to 5-1/8″ high",
             "Single and double-head screwing machines · sash assembly machine, double sash in 3.5 min",
-            "SÇ 221 · SÇ 551 portable machines · SÇ 1000 measuring conveyor 9′ 10″, ±.020″"],
+            "SC 221 · SC 551 portable machines · SC 1000 measuring conveyor 9′ 10″, ±.020″"],
     hero="pm-902", minis=["pm-sash", "pm-1000"],
     groups=[("pm-crimp", "Corner crimping machine", "Aluminum frame corners locked over their cleats by hydraulic knives.", P),
             ("pm-screw", "Screwing and sash assembly machines", "Pneumatic screwing stations and automatic sash hardware fitting.", P),
             ("pm-portable", "Portable machines and conveyors", "Bench machines for small shops and site work, and the conveyors that link every machine.", P)],
     faq=[{"q": "How is an aluminum frame joined?",
           "a": "Aluminum profiles are not welded: a cleat (corner bracket) is pushed into the mitred ends, and the crimper drives "
-               "knives into the profile walls over the cleat so they lock onto it. The SÇ 902 does it hydraulically with four "
+               "knives into the profile walls over the cleat so they lock onto it. The SC 902 does it hydraulically with four "
                "knives a side, set to the profile with millimetre scales, while a pneumatic miter wedge holds the corner square."},
          {"q": "What does the sash assembly machine do?",
           "a": "It fits the hardware of single and double-opening sashes without moulds or templates: it measures the sash, drills "
                "with a three-arm unit, mills the espagnolette groove and screws the hardware in, aligned by laser — 3.5 minutes on "
                "average for a double-opening window."},
          {"q": "Why a digital measuring conveyor?",
-          "a": "It sets the saw's length stop for you: type the length on the SÇ 1000's touch screen and the stop moves there to "
+          "a": "It sets the saw's length stop for you: type the length on the SC 1000's touch screen and the stop moves there to "
                "±.020″ (±0.5 mm), then retracts at one push so the cut piece comes out. No tape and no reading errors, and it fits "
                "any of the saws."},
          VOLT_FAQ_GENERIC],
@@ -287,9 +287,9 @@ HUB_PAGE = dict(
                "windows a shift. Double-head saws and welders double that; a 4-corner welder, CNC corner cleaner and 3-axis CNC "
                "take a shop past 200 windows a shift."},
          {"q": "What is different for aluminum windows?",
-          "a": "Aluminum frames are not welded but joined with corner cleats and crimped — on the SÇ 902 — and the profiles are "
+          "a": "Aluminum frames are not welded but joined with corner cleats and crimped — on the SC 902 — and the profiles are "
                "cut on saws with cooling and hydro-check feeds, machined on copy routers or CNCs with cooled 18,000 rpm spindles "
-               "and end-milled on the heavier SÇ 211S. The aluminum double-head group puts those machines together."},
+               "and end-milled on the heavier SC 211S. The aluminum double-head group puts those machines together."},
          {"q": "PVC, uPVC or vinyl?",
           "a": "The same material: rigid PVC, called uPVC in Europe and vinyl in North America. Every machine on these pages that "
                "is marked PVC works on vinyl window and door profiles."},
@@ -308,9 +308,9 @@ HUB_PAGE = dict(
     range_note="Power is the machine's total installed power; air is the consumption at 87 – 116 psi (6 – 8 bar). Production groups show the sums of their machines. Weights are approximate.",
 )
 SUBPAGES = [  # slug, title, image, blurb, nav label
-    (D.P_WELD, "PVC welding & corner cleaning", "pm-100gp", "SÇ 101 single-head, SÇ 100 double-head and SÇ 100 Gold Plus 4-corner welders, the Gold Plus Full line, SÇ 601 and SÇ 6000 / 6000S corner cleaners.", "PVC welding & corner cleaning"),
-    (D.P_CNC, "CNC centres, copy routers & end mills", "pm-4550", "SÇ 4550 9-axis machining centre, SÇ 5000 / 5000S 3-axis CNC, five copy routers and the SÇ 211 / 211S end milling machines.", "CNC centres & copy routers"),
-    (D.P_ASSY, "Assembly machines & conveyors", "pm-902", "SÇ 902 hydraulic corner crimper, screwing and sash assembly machines, SÇ 221 / 551 portable machines and SÇ 1000 – 1003 conveyors.", "Assembly & conveyors"),
+    (D.P_WELD, "PVC welding & corner cleaning", "pm-100gp", "SC 101 single-head, SC 100 double-head and SC 100 Gold Plus 4-corner welders, the Gold Plus Full line, SC 601 and SC 6000 / 6000S corner cleaners.", "PVC welding & corner cleaning"),
+    (D.P_CNC, "CNC centres, copy routers & end mills", "pm-4550", "SC 4550 9-axis machining centre, SC 5000 / 5000S 3-axis CNC, five copy routers and the SC 211 / 211S end milling machines.", "CNC centres & copy routers"),
+    (D.P_ASSY, "Assembly machines & conveyors", "pm-902", "SC 902 hydraulic corner crimper, screwing and sash assembly machines, SC 221 / 551 portable machines and SC 1000 – 1003 conveyors.", "Assembly & conveyors"),
     (D.P_LINES, "Window production lines", "pm-line-pvc2", "Four matched production groups for PVC and aluminum windows, 40 to 220 windows a shift, with power, air and weight.", "Production lines"),
 ]
 PAGES = {D.P_WELD: PAGE_WELD, D.P_CNC: PAGE_CNC, D.P_ASSY: PAGE_ASSY, D.P_LINES: PAGE_LINES}

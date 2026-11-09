@@ -133,15 +133,15 @@ PAGES = {
         intro="A powered folding machine clamps and folds the sheet with hydraulic cylinders or electric drives, so a 10 ft bend in 10 ga takes "
               "a foot pedal instead of two people and a CNC folder runs a 99-bend program with its back gauge while the operator only turns "
               "and feeds the sheet. NovoTech sells three kinds in Canada, all on this page: HW hydraulic folding machines, 10 ga over 4 to 10 ft "
-              "and 3/16″ over 80 – 100″, with a hydraulic clamping beam, a folding beam driven by cylinders and a segmented upper beam on the "
-              "box models; EFM / EFMS electric folding machines, 16 to 20 ga over 80 – 120″, for the shop that wants power without hydraulics; "
+              "with a manual back gauge, and the HW…E NC models with a touch screen and a servo back gauge, 3/16″ over 80 – 100″ and 10 ga "
+              "over 10 ft — both with a hydraulic clamping beam, a folding beam driven by cylinders and segmented upper tools for boxes; EFM / EFMS electric folding machines, 16 to 20 ga over 80 – 120″, for the shop that wants power without hydraulics; "
               "and TFM / TFMS CNC electric folders, 14 ga over 122 and 145″, with a CNC back gauge to 48″ and ±0.004″ repeatability for "
               "production panels, cassettes and enclosures. Each family below has its full specification table and photos. NovoTech's value-line machines are built in China to our specification, with "
               "parts and support from Mississauga, ON, Canada.",
-        points=["HW hydraulic folders: 10 ga × 4 – 10 ft and 3/16″ × 80 – 100″; hydraulic clamping, foot pedal, segmented beam on the H models",
+        points=["HW hydraulic folders 10 ga × 4 – 10 ft with manual back gauge · HW…E NC folders 3/16″ × 80 – 100″ with touch screen and servo back gauge",
                 "TFM / TFMS CNC folders 14 ga × 122 – 145″: CNC back gauge 1/2 – 48-3/8″, ±0.004″, 99-bend programs, segmented beam on the TFMS",
                 "EFM / EFMS electric folders 16 – 20 ga × 80 – 120″: motor-driven clamping and folding, no hydraulics"],
-        groups=[("hw", "Hydraulic folding machines", "Powered clamping and folding: a 10 ft bend in 10 ga takes a foot pedal instead of two people; the H models fold boxes with a segmented beam.", False, ["tt-hw"]),
+        groups=[("hw", "Hydraulic folding machines", "Powered clamping and folding: a 10 ft bend in 10 ga takes a foot pedal instead of two people; the H models fold boxes with a segmented beam.", False, ["tt-hw", "tt-hw-nc"]),
                 ("tfm", "CNC electric folding machines", "The TFM and TFMS run a program of up to 99 bends with a CNC back gauge — the production folder for panels, cassettes and enclosures.", False, ["tt-tfm"]),
                 ("efm", "Electric folding machines", "Motor-driven clamping and folding for 16 – 20 ga sheet over 80 – 120″ — power without hydraulics.", False, ["tt-efm"])],
         faq=[{"q": "When should I buy a folding machine instead of a press brake?",

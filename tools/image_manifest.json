@@ -127047,5 +127047,89 @@
    "file": "img/bandsaw/video-CIF0fU6vcb4-thumb.webp",
    "bytes": 3512
   }
+ },
+ "video-qJcyTCesBXo": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-qJcyTCesBXo-1200.webp",
+    "bytes": 37940
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-qJcyTCesBXo-800.webp",
+    "bytes": 23798
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-qJcyTCesBXo-480.webp",
+    "bytes": 12700
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-qJcyTCesBXo-thumb.webp",
+   "bytes": 3172
+  }
+ },
+ "tm-hwe-curtain": {
+  "alt": "Light curtain at the front of the HW\u2026E NC folding machine",
+  "variants": [
+   {
+    "w": 206,
+    "h": 185,
+    "file": "img/ttmc-more/tm-hwe-curtain-206.webp",
+    "bytes": 5098
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 144,
+   "file": "img/ttmc-more/tm-hwe-curtain-thumb.webp",
+   "bytes": 2938
+  }
+ },
+ "tm-hwe-gauge": {
+  "alt": "Servo back gauge with sheet supports on the HW\u2026E NC folding machine",
+  "variants": [
+   {
+    "w": 260,
+    "h": 180,
+    "file": "img/ttmc-more/tm-hwe-gauge-260.webp",
+    "bytes": 4848
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 111,
+   "file": "img/ttmc-more/tm-hwe-gauge-thumb.webp",
+   "bytes": 2144
+  }
+ },
+ "tm-hwe-panel": {
+  "alt": "Control cabinet on the side frame of the HW\u2026E NC folding machine: touch screen, pressure gauge and emergency stop",
+  "variants": [
+   {
+    "w": 224,
+    "h": 179,
+    "file": "img/ttmc-more/tm-hwe-panel-224.webp",
+    "bytes": 3636
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 128,
+   "file": "img/ttmc-more/tm-hwe-panel-thumb.webp",
+   "bytes": 2002
+  }
  }
 }
