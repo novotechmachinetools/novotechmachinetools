@@ -2010,7 +2010,7 @@ def main():
                 fp = os.path.join(DIST, "js", fn); src = open(fp, encoding="utf-8").read(); open(fp, "w", encoding="utf-8").write(rjsmin.jsmin(src))
     except ImportError:
         print("rcssmin/rjsmin not installed - shipping unminified CSS/JS")
-    for extra in ("robots.txt", "llms.txt", ".htaccess", ".user.ini", "quote.php", "ask.php", "ai-config.sample.php", "form-config.sample.php",
+    for extra in ("robots.txt", "llms.txt", ".htaccess", ".user.ini", "quote.php", "quote-mail.php", "ask.php", "ai-config.sample.php", "form-config.sample.php",
                   "favicon.ico", "favicon.svg", "site.webmanifest", INDEXNOW_KEY + ".txt", ".cpanel.yml", ".deploy-hostpapa.sh"):
         s = os.path.join(ROOT, "src", "root", extra)
         if os.path.exists(s):

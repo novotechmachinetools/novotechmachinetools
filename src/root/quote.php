@@ -2,7 +2,8 @@
 /**
  * NovoTech quote-request handler.
  * Receives the form on each product page, checks it (honeypot, time to submit, Google reCAPTCHA, attachments) and emails it
- * to the sales inbox with the customer's drawings and photos attached.
+ * to the sales inbox with the customer's drawings and photos attached, as HTML with a plain-text twin. With $AUTOREPLY set,
+ * the customer gets an automatic reply too. The e-mail designs are in quote-mail.php, written by tools/mail_templates.py.
  * Works with the JavaScript submit (returns JSON) and with a plain HTML POST (returns a small page).
  *
  * reCAPTCHA v3: put the secret key in form-config.php next to this file (copy form-config.sample.php); the site key goes into
@@ -25,6 +26,15 @@ $cfg = is_file($cfgFile) ? (array)(require $cfgFile) : [];
 $SECRET = (string)($cfg['recaptcha_secret'] ?? '');
 $MIN_SCORE = (float)($cfg['recaptcha_min_score'] ?? 0.5);     // reCAPTCHA v3: 0.0 = bot … 1.0 = person
 
+// The e-mail designs (tools/mail_templates.py); without the file the notification goes out as plain text, as before
+define('NT_QUOTE', true);
+$mailFile = __DIR__ . '/quote-mail.php';
+$MAIL = is_file($mailFile) ? (array)(require $mailFile) : [];
+// The automatic reply to the customer (design in tools/mail_templates.py): true sends it. It comes from the sales inbox and
+// the customer's reply goes back there (the owner, Nov 9 2026)
+$AUTOREPLY  = false;
+$REPLY_FROM = 'info@novotechmachinetools.com';
+
 header('X-Content-Type-Options: nosniff');
 $wantsJson = isset($_SERVER['HTTP_ACCEPT']) && strpos($_SERVER['HTTP_ACCEPT'], 'application/json') !== false;
 
@@ -42,6 +52,128 @@ function respond(bool $ok, string $msg, int $code = 200): void {
            . "<p><a href=\"javascript:history.back()\">Go back</a> · <a href=\"/\">NovoTech home</a></p></body></html>";
     }
     exit;
+}
+
+function nt_e(string $s): string {
+    return htmlspecialchars($s, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+}
+
+// fills the {{KEY}} placeholders of a design in one pass, so a value can never bring in another placeholder
+function nt_fill(string $tpl, array $v): string {
+    $map = [];
+    foreach ($v as $k => $x) { $map['{{' . $k . '}}'] = (string)$x; }
+    return strtr($tpl, $map);
+}
+
+// "Name" <address> for a header: quoted, or encoded when the name is not plain ASCII
+function nt_addr(string $name, string $email): string {
+    if ($name === '') { return $email; }
+    $n = preg_match('/^[\x20-\x7E]*$/', $name) ? '"' . addcslashes($name, '"\\') . '"' : '=?UTF-8?B?' . base64_encode($name) . '?=';
+    return "$n <$email>";
+}
+
+// a plain-text and an HTML part as one multipart/alternative body; the Content-Type header names the boundary $b
+function nt_alternative(string $text, string $html, string $b): string {
+    return "--$b\r\nContent-Type: text/plain; charset=UTF-8\r\nContent-Transfer-Encoding: quoted-printable\r\n\r\n"
+         . quoted_printable_encode(str_replace("\n", "\r\n", $text)) . "\r\n"
+         . "--$b\r\nContent-Type: text/html; charset=UTF-8\r\nContent-Transfer-Encoding: base64\r\n\r\n"
+         . chunk_split(base64_encode($html), 76, "\r\n")
+         . "--$b--\r\n";
+}
+
+// what the automatic reply may repeat from the form: short, and without a web or e-mail address in it
+function nt_safe(string $s, int $max): string {
+    return (mb_strlen($s) <= $max && !preg_match('~https?:|www\.|://|@|\.(com|net|org|info|biz|ru|cn|xyz|top)\b~i', $s)) ? $s : '';
+}
+
+// the notification to the sales inbox, in HTML
+function nt_notification(array $M, array $d): string {
+    $row   = static function (string $k, string $v) use ($M): string { return nt_fill($M['notify_row'], ['K' => nt_e($k), 'V' => $v]); };
+    $link  = static function (string $href, string $label) use ($M): string { return nt_fill($M['link'], ['HREF' => nt_e($href), 'LABEL' => nt_e($label)]); };
+    $muted = static function (string $t) use ($M): string { return nt_fill($M['muted'], ['T' => nt_e($t)]); };
+    $tel = (string)preg_replace('/[^0-9+]/', '', $d['phone']);
+    $mailto = 'mailto:' . str_replace('%40', '@', rawurlencode($d['email']));
+    $rows = $row('Name', nt_e($d['name']))
+          . ($d['company'] !== '' ? $row('Company', nt_e($d['company'])) : '')
+          . $row('Email', $link($mailto, $d['email']))
+          . ($d['phone'] !== '' ? $row('Phone', strlen($tel) >= 7 ? $link("tel:$tel", $d['phone']) : nt_e($d['phone'])) : '')
+          . ($d['machine'] === '' ? $row('Machine', $muted('not chosen')) : '')
+          . $row('Page', $d['url'] !== '' ? $link($d['url'], $d['page']) : nt_e($d['page']));
+    $files = '';
+    if ($d['files']) {
+        $list = '';
+        foreach ($d['files'] as $a) {
+            $list .= nt_fill($M['notify_file'], ['NAME' => nt_e($a['name']), 'SIZE' => number_format(max(1, $a['size'] / 1024), 0) . ' KB']);
+        }
+        $files = nt_fill($M['notify_files'], ['N' => (string)count($d['files']), 'LIST' => $list]);
+    }
+    $buttons = nt_fill($M['button'], ['HREF' => nt_e($mailto . '?subject=' . rawurlencode('Re: Your request to NovoTech Machine Tools')),
+                                      'LABEL' => 'Reply to ' . nt_e(mb_substr($d['name'], 0, 40))])
+             . (strlen($tel) >= 7 ? nt_fill($M['button_ghost'], ['HREF' => nt_e("tel:$tel"), 'LABEL' => 'Call ' . nt_e($d['phone'])]) : '');
+    $footer = 'Sent ' . nt_e($d['when']) . ' from IP ' . nt_e($d['ip'])
+            . ($d['ref'] !== '' ? '<br>Form on ' . ($d['url'] !== '' ? $link($d['url'], $d['url']) : nt_e($d['ref'])) : '');
+    $pre = array_filter([$d['name'], $d['company'], $d['machine']], static function ($x) { return $x !== ''; });
+    return nt_fill($M['notify'], [
+        'PRE'     => nt_e(implode(' · ', $pre)),
+        'TITLE'   => nt_e($d['title']),
+        'MACHINE' => $d['machine'] !== '' ? nt_fill($M['notify_machine'], ['T' => nt_e($d['machine'])]) : '',
+        'ROWS'    => $rows,
+        'MESSAGE' => nt_fill($M['notify_message'], ['TEXT' => $d['message'] !== '' ? nl2br(nt_e($d['message']), false) : $muted('No message')]),
+        'FILES'   => $files,
+        'BUTTONS' => $buttons,
+        'FOOTER'  => $footer,
+    ]);
+}
+
+// the automatic reply: [plain text, HTML]; the customer's own message is never repeated in it
+function nt_autoreply(array $M, string $name, string $machine, string $page, string $when): array {
+    $name = nt_safe($name, 60);
+    $machine = nt_safe($machine, 140);
+    $page = nt_safe($page, 80);
+    $about = $machine !== '' && stripos($machine, 'not sure') !== 0;
+    $srow = static function (string $k, string $v) use ($M): string { return nt_fill($M['summary_row'], ['K' => nt_e($k), 'V' => nt_e($v)]); };
+    $html = nt_fill($M['reply'], [
+        'COMMA_NAME' => $name !== '' ? ', ' . nt_e($name) : '',
+        'ABOUT'      => $about ? nt_fill($M['about'], ['T' => nt_e($machine)]) : '',
+        'ROWS'       => ($machine !== '' ? $srow('Machine', $machine) : '') . ($page !== '' ? $srow('Page', $page) : '') . $srow('Received', $when),
+    ]);
+    $text = nt_fill($M['text'], [
+        'COMMA_NAME' => $name !== '' ? ", $name" : '',
+        'ABOUT'      => $about ? " about $machine" : '',
+        'ROWS'       => ($machine !== '' ? "Machine:  $machine\n" : '') . ($page !== '' ? "Page:     $page\n" : '') . "Received: $when\n",
+    ]);
+    return [$text, $html];
+}
+
+// at most 3 automatic replies to one address a day, 5 to one IP an hour and 100 a day in all, so the form cannot be used to
+// flood someone's inbox; the log in the temp folder keeps hashes, not addresses
+function nt_autoreply_allowed(string $email, string $ip): bool {
+    $fh = @fopen(rtrim(sys_get_temp_dir(), '/\\') . '/nt-autoreply-' . substr(md5(__DIR__), 0, 10) . '.json', 'c+');
+    if ($fh === false) { return true; }
+    if (!flock($fh, LOCK_EX)) { fclose($fh); return true; }
+    $now = time();
+    $log = json_decode((string)stream_get_contents($fh), true);
+    $keep = [];
+    foreach (is_array($log) ? $log : [] as $r) {
+        if (is_array($r) && count($r) === 3 && (int)$r[0] > $now - 86400) { $keep[] = $r; }
+    }
+    $e = substr(hash('sha256', 'e|' . strtolower($email)), 0, 20);
+    $i = substr(hash('sha256', 'i|' . $ip), 0, 20);
+    $byEmail = 0;
+    $byIp = 0;
+    foreach ($keep as $r) {
+        if ($r[1] === $e) { $byEmail++; }
+        if ($r[2] === $i && (int)$r[0] > $now - 3600) { $byIp++; }
+    }
+    $ok = $byEmail < 3 && $byIp < 5 && count($keep) < 100;
+    if ($ok) { $keep[] = [$now, $e, $i]; }
+    ftruncate($fh, 0);
+    rewind($fh);
+    fwrite($fh, (string)json_encode($keep));
+    fflush($fh);
+    flock($fh, LOCK_UN);
+    fclose($fh);
+    return $ok;
 }
 
 if (($_SERVER['REQUEST_METHOD'] ?? '') !== 'POST') {
@@ -153,6 +285,13 @@ if (isset($_FILES['files']) && is_array($_FILES['files']['name'] ?? null)) {
     }
 }
 
+$now  = new DateTime('now', new DateTimeZone('America/Toronto'));
+$when = $now->format('F j, Y, g:i A T');                       // November 9, 2026, 4:51 PM EST
+$ip   = (string)($_SERVER['REMOTE_ADDR'] ?? '?');
+$ref  = (string)($_SERVER['HTTP_REFERER'] ?? '');
+$pageUrl   = preg_match('~^https://(www\.)?novotechmachinetools\.com(/[^\s"\'<>]*)?$~i', $ref) ? $ref : '';
+$pageLabel = $pageShort !== '' ? $pageShort : ($page !== '' ? $page : 'NovoTechMachineTools.com');
+
 $lines = [
     "Quote request from " . ($page !== '' ? $page : 'NovoTechMachineTools.com'),
     "",
@@ -173,22 +312,31 @@ if ($files) {
     $lines[] = "";
 }
 $lines[] = "----";
-$lines[] = "Sent " . date('Y-m-d H:i:s T') . " from IP " . ($_SERVER['REMOTE_ADDR'] ?? '?');
-$lines[] = "Page: " . ($_SERVER['HTTP_REFERER'] ?? '?');
+$lines[] = "Sent $when from IP $ip";
+$lines[] = "Page: " . ($ref !== '' ? $ref : '?');
 $text = implode("\n", $lines);
+
+// the same in HTML (the owner, Nov 9 2026); the plain text above goes along for mail programs that do not show HTML
+$html = isset($MAIL['notify']) ? nt_notification($MAIL, [
+    'name' => $name, 'company' => $company, 'email' => $email, 'phone' => $phone, 'machine' => $machine, 'message' => $message,
+    'title' => 'Quote request' . ($pageShort !== '' ? " — $pageShort" : ''), 'page' => $pageLabel, 'url' => $pageUrl,
+    'ref' => $ref, 'files' => $files, 'when' => $when, 'ip' => $ip,
+]) : '';
 
 $headers = [
     "From: NovoTech website <$FROM>",
-    "Reply-To: " . ($name !== '' ? "$name <$email>" : $email),
+    "Reply-To: " . nt_addr($name, $email),
     "MIME-Version: 1.0",
     "X-Mailer: NovoTech-quote-form",
 ];
+$alt = 'NTA-' . bin2hex(random_bytes(12));
+$part = $html !== ''
+    ? ["Content-Type: multipart/alternative; boundary=\"$alt\"", nt_alternative($text, $html, $alt)]
+    : ["Content-Type: text/plain; charset=UTF-8\r\nContent-Transfer-Encoding: 8bit", str_replace("\n", "\r\n", $text) . "\r\n"];
 if ($files) {
     $boundary = 'NT-' . bin2hex(random_bytes(12));
     $headers[] = "Content-Type: multipart/mixed; boundary=\"$boundary\"";
-    $body = "This is a multi-part message in MIME format.\r\n\r\n"
-          . "--$boundary\r\nContent-Type: text/plain; charset=UTF-8\r\nContent-Transfer-Encoding: 8bit\r\n\r\n"
-          . str_replace("\n", "\r\n", $text) . "\r\n";
+    $body = "This is a multi-part message in MIME format.\r\n\r\n--$boundary\r\n{$part[0]}\r\n\r\n{$part[1]}";
     foreach ($files as $a) {
         $body .= "--$boundary\r\n"
                . "Content-Type: {$a['mime']}; name=\"{$a['name']}\"\r\n"
@@ -197,6 +345,9 @@ if ($files) {
                . chunk_split(base64_encode($a['data']), 76, "\r\n");
     }
     $body .= "--$boundary--\r\n";
+} elseif ($html !== '') {
+    $headers[] = $part[0];
+    $body = "This is a multi-part message in MIME format.\r\n\r\n" . $part[1];
 } else {
     $headers[] = "Content-Type: text/plain; charset=UTF-8";
     $body = $text;
@@ -208,6 +359,23 @@ $subject = 'Quote request' . ($pageShort !== '' ? " — $pageShort" : '') . ($ma
 $subject = '=?UTF-8?B?' . base64_encode($subject) . '?=';
 
 $sent = @mail($TO, $subject, $body, implode("\r\n", $headers), "-f$FROM");
+
+// the automatic reply to the customer, once the request has reached the sales inbox: from info@, and replies go back there
+if ($sent && $AUTOREPLY && isset($MAIL['reply'], $MAIL['text']) && nt_autoreply_allowed($email, $ip)) {
+    list($arText, $arHtml) = nt_autoreply($MAIL, $name, $machine, $pageShort, $when);
+    $b = 'NTR-' . bin2hex(random_bytes(12));
+    $arHeaders = [
+        "From: NovoTech Machine Tools <$REPLY_FROM>",
+        "Reply-To: NovoTech Machine Tools <$REPLY_FROM>",
+        "MIME-Version: 1.0",
+        "Auto-Submitted: auto-generated",            // RFC 3834: out-of-office replies are not sent back to it
+        "X-Auto-Response-Suppress: All",
+        "X-Mailer: NovoTech-quote-form",
+        "Content-Type: multipart/alternative; boundary=\"$b\"",
+    ];
+    @mail($email, 'We received your request | NovoTech Machine Tools',
+          "This is a multi-part message in MIME format.\r\n\r\n" . nt_alternative($arText, $arHtml, $b), implode("\r\n", $arHeaders), "-f$REPLY_FROM");
+}
 
 if ($sent) {
     respond(true, 'Thanks — your request is on its way. We will reply within one business day.');

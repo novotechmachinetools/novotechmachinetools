@@ -7,8 +7,8 @@ RewriteCond %{HTTP_HOST} ^www\. [NC]
 RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
 RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
 
-# ---- Server-side settings and keys are never served ------------------------------
-<FilesMatch "^(\.user\.ini|form-config\.php|ai-config\.php|.*\.sample\.php|\.cpanel\.yml|\.deploy-hostpapa\.sh)$">
+# ---- Server-side settings, keys and the e-mail designs quote.php reads are never served ----
+<FilesMatch "^(\.user\.ini|form-config\.php|ai-config\.php|quote-mail\.php|.*\.sample\.php|\.cpanel\.yml|\.deploy-hostpapa\.sh)$">
   Require all denied
 </FilesMatch>
 
