@@ -58,6 +58,11 @@ function nt_e(string $s): string {
     return htmlspecialchars($s, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
 }
 
+// a machine name for HTML: escaped, and a number keeps its unit on the same line ("20 ft", "300 t")
+function nt_machine(string $s): string {
+    return (string)preg_replace('/(\d) (?=(ft|in|mm|m|t|ga|US)\b)/u', '$1&nbsp;', nt_e($s));
+}
+
 // fills the {{KEY}} placeholders of a design in one pass, so a value can never bring in another placeholder
 function nt_fill(string $tpl, array $v): string {
     $map = [];
@@ -86,39 +91,75 @@ function nt_safe(string $s, int $max): string {
     return (mb_strlen($s) <= $max && !preg_match('~https?:|www\.|://|@|\.(com|net|org|info|biz|ru|cn|xyz|top)\b~i', $s)) ? $s : '';
 }
 
-// the notification to the sales inbox, in HTML
+// the page the form was sent from: the address the page put in the form, else the browser's Referer; only this site's pages,
+// without query or fragment
+function nt_page_url(string $field, string $ref): string {
+    foreach ([$field, $ref] as $u) {
+        $p = parse_url($u);
+        if (is_array($p) && ($p['scheme'] ?? '') === 'https' && preg_match('/^(www\.)?novotechmachinetools\.com$/i', $p['host'] ?? '')
+            && preg_match('#^(/[A-Za-z0-9._~-]*)*$#', $p['path'] ?? '/')) {
+            return 'https://novotechmachinetools.com' . (($p['path'] ?? '') !== '' ? $p['path'] : '/');
+        }
+    }
+    return '';
+}
+
+// the automatic reply's button back to the page the request came from, named after it: "Browse band saws" (the owner,
+// Nov 9 2026). Pages that are not about machines get "Browse our machines" and the products page.
+function nt_browse(string $short, string $url): array {
+    $other = ['home page', 'contact us', 'about us', 'products', 'brochures', 'articles', 'rebar bender and cutter benefits'];
+    $short = nt_safe($short, 60);
+    if ($url === '' || $short === '' || in_array(mb_strtolower($short), $other, true) || count(preg_split('/\s+/', $short)) > 7) {
+        return ['https://novotechmachinetools.com/products', 'Browse our machines'];
+    }
+    // "Band saws" -> "band saws"; brand names and abbreviations keep their capitals (NovoTech, Bekamak, European, CNC, H-frame)
+    $first = (string)preg_replace('/[\s-].*$/s', '', $short);
+    $keep = ['NovoTech', 'Bekamak', 'Bystronic', 'Trumpf', 'Wila', 'Amada', 'Dener', 'Durma', 'Plastmak', 'Isitan', 'Eurostamp',
+             'European', 'American', 'Canadian'];
+    if (preg_match('/^[A-Z][a-z]/', $short) && !in_array($first, $keep, true)) {
+        $short = mb_strtolower(mb_substr($short, 0, 1)) . mb_substr($short, 1);
+    }
+    return [$url, "Browse $short"];
+}
+
+// the notification to the sales inbox, in HTML, in the look of the automatic reply (the owner, Nov 9 2026)
 function nt_notification(array $M, array $d): string {
-    $row   = static function (string $k, string $v) use ($M): string { return nt_fill($M['notify_row'], ['K' => nt_e($k), 'V' => $v]); };
-    $link  = static function (string $href, string $label) use ($M): string { return nt_fill($M['link'], ['HREF' => nt_e($href), 'LABEL' => nt_e($label)]); };
-    $muted = static function (string $t) use ($M): string { return nt_fill($M['muted'], ['T' => nt_e($t)]); };
+    $row  = static function (string $k, string $v) use ($M): string { return nt_fill($M['summary_row'], ['K' => nt_e($k), 'V' => $v]); };
+    $link = static function (string $href, string $label, string $tpl = 'link') use ($M): string {
+        return nt_fill($M[$tpl], ['HREF' => nt_e($href), 'LABEL' => nt_e($label)]);
+    };
+    $box  = static function (string $title, string $body) use ($M): string { return nt_fill($M['box'], ['TITLE' => nt_e($title), 'BODY' => $body]); };
     $tel = (string)preg_replace('/[^0-9+]/', '', $d['phone']);
     $mailto = 'mailto:' . str_replace('%40', '@', rawurlencode($d['email']));
-    $rows = $row('Name', nt_e($d['name']))
-          . ($d['company'] !== '' ? $row('Company', nt_e($d['company'])) : '')
-          . $row('Email', $link($mailto, $d['email']))
+    $m = $d['machine'];
+    $about = $m === '' ? $M['notify_no_machine']
+           : (stripos($m, 'not sure') === 0 ? $M['notify_not_sure'] : nt_fill($M['notify_about'], ['T' => nt_machine($m)]));
+    $rows = $row('Email', $link($mailto, $d['email']))
           . ($d['phone'] !== '' ? $row('Phone', strlen($tel) >= 7 ? $link("tel:$tel", $d['phone']) : nt_e($d['phone'])) : '')
-          . ($d['machine'] === '' ? $row('Machine', $muted('not chosen')) : '')
-          . $row('Page', $d['url'] !== '' ? $link($d['url'], $d['page']) : nt_e($d['page']));
+          . $row('Page', $d['url'] !== '' ? $link($d['url'], $d['page']) : nt_e($d['page']))
+          . $row('Received', nt_e($d['when']));
     $files = '';
     if ($d['files']) {
         $list = '';
         foreach ($d['files'] as $a) {
             $list .= nt_fill($M['notify_file'], ['NAME' => nt_e($a['name']), 'SIZE' => number_format(max(1, $a['size'] / 1024), 0) . ' KB']);
         }
-        $files = nt_fill($M['notify_files'], ['N' => (string)count($d['files']), 'LIST' => $list]);
+        $files = $box('Attached files (' . count($d['files']) . ')', nt_fill($M['files_table'], ['LIST' => $list]));
     }
+    $text = $d['message'] !== '' ? nl2br(nt_e($d['message']), false) : nt_fill($M['muted'], ['T' => 'No message']);
     $buttons = nt_fill($M['button'], ['HREF' => nt_e($mailto . '?subject=' . rawurlencode('Re: Your request to NovoTech Machine Tools')),
                                       'LABEL' => 'Reply to ' . nt_e(mb_substr($d['name'], 0, 40))])
              . (strlen($tel) >= 7 ? nt_fill($M['button_ghost'], ['HREF' => nt_e("tel:$tel"), 'LABEL' => 'Call ' . nt_e($d['phone'])]) : '');
-    $footer = 'Sent ' . nt_e($d['when']) . ' from IP ' . nt_e($d['ip'])
-            . ($d['ref'] !== '' ? '<br>Form on ' . ($d['url'] !== '' ? $link($d['url'], $d['url']) : nt_e($d['ref'])) : '');
-    $pre = array_filter([$d['name'], $d['company'], $d['machine']], static function ($x) { return $x !== ''; });
+    $footer = 'Sent from IP ' . nt_e($d['ip'])
+            . ($d['url'] !== '' ? '<br>Form on ' . $link($d['url'], $d['url'], 'link_dark') : ($d['ref'] !== '' ? '<br>Form on ' . nt_e($d['ref']) : ''));
+    $pre = array_filter([$d['name'], $d['company'], $m], static function ($x) { return $x !== ''; });
     return nt_fill($M['notify'], [
         'PRE'     => nt_e(implode(' · ', $pre)),
-        'TITLE'   => nt_e($d['title']),
-        'MACHINE' => $d['machine'] !== '' ? nt_fill($M['notify_machine'], ['T' => nt_e($d['machine'])]) : '',
-        'ROWS'    => $rows,
-        'MESSAGE' => nt_fill($M['notify_message'], ['TEXT' => $d['message'] !== '' ? nl2br(nt_e($d['message']), false) : $muted('No message')]),
+        'NAME'    => nt_e($d['name']),
+        'COMPANY' => $d['company'] !== '' ? nt_fill($M['notify_company'], ['T' => nt_e($d['company'])]) : '',
+        'ABOUT'   => $about,
+        'DETAILS' => $box('Details', nt_fill($M['rows_table'], ['ROWS' => $rows])),
+        'MESSAGE' => $box('Message', nt_fill($M['text_block'], ['TEXT' => $text])),
         'FILES'   => $files,
         'BUTTONS' => $buttons,
         'FOOTER'  => $footer,
@@ -126,21 +167,25 @@ function nt_notification(array $M, array $d): string {
 }
 
 // the automatic reply: [plain text, HTML]; the customer's own message is never repeated in it
-function nt_autoreply(array $M, string $name, string $machine, string $page, string $when): array {
+function nt_autoreply(array $M, string $name, string $machine, string $page, string $when, array $browse): array {
     $name = nt_safe($name, 60);
     $machine = nt_safe($machine, 140);
     $page = nt_safe($page, 80);
     $about = $machine !== '' && stripos($machine, 'not sure') !== 0;
-    $srow = static function (string $k, string $v) use ($M): string { return nt_fill($M['summary_row'], ['K' => nt_e($k), 'V' => nt_e($v)]); };
+    $srow = static function (string $k, string $v) use ($M): string { return nt_fill($M['summary_row'], ['K' => nt_e($k), 'V' => nt_machine($v)]); };
     $html = nt_fill($M['reply'], [
-        'COMMA_NAME' => $name !== '' ? ', ' . nt_e($name) : '',
-        'ABOUT'      => $about ? nt_fill($M['about'], ['T' => nt_e($machine)]) : '',
-        'ROWS'       => ($machine !== '' ? $srow('Machine', $machine) : '') . ($page !== '' ? $srow('Page', $page) : '') . $srow('Received', $when),
+        'COMMA_NAME'   => $name !== '' ? ', ' . nt_e($name) : '',
+        'ABOUT'        => $about ? nt_fill($M['about'], ['T' => nt_machine($machine)]) : '',
+        'ROWS'         => ($machine !== '' ? $srow('Machine', $machine) : '') . ($page !== '' ? $srow('Page', $page) : '') . $srow('Received', $when),
+        'BROWSE_URL'   => nt_e($browse[0]),
+        'BROWSE_LABEL' => nt_e($browse[1]),
     ]);
     $text = nt_fill($M['text'], [
-        'COMMA_NAME' => $name !== '' ? ", $name" : '',
-        'ABOUT'      => $about ? " about $machine" : '',
-        'ROWS'       => ($machine !== '' ? "Machine:  $machine\n" : '') . ($page !== '' ? "Page:     $page\n" : '') . "Received: $when\n",
+        'COMMA_NAME'   => $name !== '' ? ", $name" : '',
+        'ABOUT'        => $about ? " about $machine" : '',
+        'ROWS'         => ($machine !== '' ? "Machine:  $machine\n" : '') . ($page !== '' ? "Page:     $page\n" : '') . "Received: $when\n",
+        'BROWSE_URL'   => $browse[0],
+        'BROWSE_LABEL' => $browse[1],
     ]);
     return [$text, $html];
 }
@@ -289,7 +334,7 @@ $now  = new DateTime('now', new DateTimeZone('America/Toronto'));
 $when = $now->format('F j, Y, g:i A T');                       // November 9, 2026, 4:51 PM EST
 $ip   = (string)($_SERVER['REMOTE_ADDR'] ?? '?');
 $ref  = (string)($_SERVER['HTTP_REFERER'] ?? '');
-$pageUrl   = preg_match('~^https://(www\.)?novotechmachinetools\.com(/[^\s"\'<>]*)?$~i', $ref) ? $ref : '';
+$pageUrl   = nt_page_url($f('page_url', 300), $ref);
 $pageLabel = $pageShort !== '' ? $pageShort : ($page !== '' ? $page : 'NovoTechMachineTools.com');
 
 $lines = [
@@ -319,8 +364,7 @@ $text = implode("\n", $lines);
 // the same in HTML (the owner, Nov 9 2026); the plain text above goes along for mail programs that do not show HTML
 $html = isset($MAIL['notify']) ? nt_notification($MAIL, [
     'name' => $name, 'company' => $company, 'email' => $email, 'phone' => $phone, 'machine' => $machine, 'message' => $message,
-    'title' => 'Quote request' . ($pageShort !== '' ? " — $pageShort" : ''), 'page' => $pageLabel, 'url' => $pageUrl,
-    'ref' => $ref, 'files' => $files, 'when' => $when, 'ip' => $ip,
+    'page' => $pageLabel, 'url' => $pageUrl, 'ref' => $ref, 'files' => $files, 'when' => $when, 'ip' => $ip,
 ]) : '';
 
 $headers = [
@@ -362,7 +406,7 @@ $sent = @mail($TO, $subject, $body, implode("\r\n", $headers), "-f$FROM");
 
 // the automatic reply to the customer, once the request has reached the sales inbox: from info@, and replies go back there
 if ($sent && $AUTOREPLY && isset($MAIL['reply'], $MAIL['text']) && nt_autoreply_allowed($email, $ip)) {
-    list($arText, $arHtml) = nt_autoreply($MAIL, $name, $machine, $pageShort, $when);
+    list($arText, $arHtml) = nt_autoreply($MAIL, $name, $machine, $pageShort, $when, nt_browse($pageShort, $pageUrl));
     $b = 'NTR-' . bin2hex(random_bytes(12));
     $arHeaders = [
         "From: NovoTech Machine Tools <$REPLY_FROM>",

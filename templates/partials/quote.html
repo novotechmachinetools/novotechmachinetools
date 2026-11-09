@@ -14,6 +14,8 @@
       <p class="quote-form-head"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v12H5.2L4 17.2V4z"/><path d="M8 9h8M8 12.5h5"/></svg>Your quote request<small>We reply within one business day</small></p>
       <input type="hidden" name="page" value="{{ page.title }}">
       <input type="hidden" name="page_short" value="{{ short }}">
+      {#- the page's address, for the button in the customer's automatic reply that leads back to it (the owner, Nov 9 2026) #}
+      <input type="hidden" name="page_url" value="{{ page.url }}">
       <input type="hidden" name="ts" value="{{ build_ts }}">
       <p class="hp" aria-hidden="true"><label>Leave this field empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label></p>
       <div class="field">
