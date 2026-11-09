@@ -23803,7 +23803,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-ebq01": {
   "src": "tools/src-images/ttmc-more/tm-ebq01.jpg",
@@ -24154,7 +24154,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-hp12n": {
   "src": "tools/src-images/ttmc-more/tm-hp12n.jpg",
@@ -24208,7 +24208,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-hp30c": {
   "src": "tools/src-images/ttmc-more/tm-hp30c.jpg",
@@ -24253,7 +24253,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-hp63c": {
   "src": "tools/src-images/ttmc-more/tm-hp63c.jpg",
@@ -24271,7 +24271,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-hpb1500d": {
   "src": "tools/src-images/ttmc-more/tm-hpb1500d.jpg",
@@ -24280,7 +24280,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-hpb580": {
   "src": "tools/src-images/ttmc-more/tm-hpb580.jpg",
@@ -24289,16 +24289,16 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-hpb580d": {
   "src": "tools/src-images/ttmc-more/tm-hpb580d.jpg",
-  "alt": "HPB-580D two-cylinder press with brake function and safety fence",
+  "alt": "HPB-580D two-cylinder press with brake function",
   "section": "ttmc-more",
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-hpp100": {
   "src": "tools/src-images/ttmc-more/tm-hpp100.jpg",
@@ -27038,7 +27038,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-wj876": {
   "src": "tools/src-images/ttmc-more/tm-wj876.jpg",
@@ -27047,7 +27047,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-wjp-cutterhead": {
   "src": "tools/src-images/ttmc-more/tm-wjp-cutterhead.jpg",
@@ -27065,7 +27065,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-wjp15b": {
   "src": "tools/src-images/ttmc-more/tm-wjp15b.jpg",
@@ -27074,7 +27074,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-wjp20": {
   "src": "tools/src-images/ttmc-more/tm-wjp20.jpg",
@@ -27083,7 +27083,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-wm-drilling": {
   "src": "tools/src-images/ttmc-more/tm-wm-drilling.jpg",
@@ -27389,7 +27389,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-wts1050s": {
   "src": "tools/src-images/ttmc-more/tm-wts1050s.jpg",
@@ -27398,7 +27398,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 1024
  },
  "tm-x6336-dro": {
   "src": "tools/src-images/ttmc-more/tm-x6336-dro.jpg",
@@ -37441,5 +37441,14 @@
   "cutout": false,
   "quality": 72,
   "section": "bandsaw"
+ },
+ "tm-wj655": {
+  "src": "tools/src-images/ttmc-more/tm-wj655.jpg",
+  "alt": "WJ-6x55 6″ jointer with spiral cutterhead on cabinet stand",
+  "section": "ttmc-more",
+  "trim": true,
+  "quality": 82,
+  "cutout": true,
+  "cut_size": 1024
  }
 }

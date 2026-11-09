@@ -312,6 +312,33 @@ PHOTOS.update({
     "tm-ptn30": dict(dir=WHEEL, src="PTN-30.png", alt="PTN-30 motorized tube and pipe notcher with hole saw and degree wheel"),
     "tm-ptn12u": dict(dir=WHEEL, src="PTN-12U.png", alt="PTN-12U electric pipe notcher"),
 })
+# the owner's WeTransfer "woodworking" and "pictures for shop press" (Nov 9 2026): only the photos sharper than the site's catalogue
+# crops and of models on the site.  Left out: TDM-260 / TDM-320, TBS-356 / TBS-457, MGX16 / MGX20R (the same photos at the same size
+# as the catalogue's), HP-20C – HP-100C and HPP-60 – HPP-100 (smaller than the site's), and BP-16T, HP-20CNC – HP-50CNC,
+# HP-20S – HP-100S, HP-80M and HP-24N (not on the site).  boxes: the TTMC badge, and the TTMC nameplate on the HPB crowns.
+WOODW = "/home/claude/ttmc-new/woodworking_2026-11-09/"
+PRESS = "/home/claude/ttmc-new/shop_press_2026-11-09/Shop press/"
+PHOTOS.update({
+    "tm-wj876": dict(dir=WOODW, src="WJ8X76 Jointer.png", alt="WJ-8x76 8″ jointer with spiral cutterhead on cabinet stand"),
+    "tm-wj655": dict(dir=WOODW, src="WJ-6X55 jointer.jpg", alt="WJ-6x55 6″ jointer with spiral cutterhead on cabinet stand"),
+    "tm-wj1040": dict(dir=WOODW, src="WJ10X40.psd", alt="WJ10X40 10″ surface planer"),
+    "tm-wjp15": dict(dir=WOODW, src="WJP15 Planer.png", alt="WJP-15 15″ thickness planer with spiral cutterhead", boxes=[(2520, 860, 2830, 1010)]),
+    "tm-wjp15b": dict(dir=WOODW, src="WJP-15B Planer.png", alt="WJP-15B benchtop thickness planer", boxes=[(2400, 1555, 2935, 1765)]),
+    "tm-wjp20": dict(dir=WOODW, src="WJP-20 Planer.png", alt="WJP-20 20″ thickness planer with spiral cutterhead"),
+    "tm-wts1050": dict(dir=WOODW, src="WTS10-30 WTS10-50.png", alt="WTS10-50 10″ cabinet table saw with 52″ rip fence", boxes=[(2150, 2000, 2510, 2195)]),
+    "tm-wts1050s": dict(dir=WOODW, src="WTS10-30S WTS10-50S.png", alt="WTS10-50S table saw with touch-screen blade height and angle",
+                        boxes=[(1690, 2128, 2035, 2280)]),
+    "tm-ebp25t": dict(dir=PRESS, src="BP-25T.jpg", alt="EBP-25T workshop press with motorized pump"),
+    "tm-hp30": dict(dir=PRESS, src="HP-30 HP-50 HP-63 HP-80.jpg", alt="HP-30 motorized H-frame hydraulic press"),
+    "tm-hp100": dict(dir=PRESS, src="HP-100 HP-150 HP-200 HP-300 HP-400 HP-500.png", alt="HP-100 H-frame hydraulic press with separate hydraulic station"),
+    "tm-hp50f": dict(dir=PRESS, src="HP-50F 100F HP150F HP200F.png", alt="HP-50F four-column hydraulic press with separate pump unit"),
+    "tm-hpb580": dict(dir=PRESS, src="HPB-580 790.tif", alt="HPB-580 press with brake function"),
+    "tm-hpb1500": dict(dir=PRESS, src="HPB-1010 HPB-1500 HPB-2000.png", alt="HPB-1500 press with brake function — V-block and support table",
+                       boxes=[(548, 120, 670, 197)]),
+    "tm-hpb580d": dict(dir=PRESS, src="HPB-580D HPB-790D.jpg", alt="HPB-580D two-cylinder press with brake function", boxes=[(560, 236, 652, 300)]),
+    "tm-hpb1500d": dict(dir=PRESS, src="HPB-1000D HPB-1500D HPB-2000D HPB-3000D.jpg", alt="HPB-1500D two-cylinder hydraulic press brake",
+                        boxes=[(289, 277, 347, 325)]),
+})
 BIG = 1800           # px: a source bigger than this is scaled down before the cut-out
 
 

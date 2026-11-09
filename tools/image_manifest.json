@@ -87663,18 +87663,24 @@
   "alt": "EBP-25T workshop press with motorized pump",
   "variants": [
    {
-    "w": 457,
-    "h": 671,
-    "file": "img/ttmc-more/tm-ebp25t-457.webp",
-    "bytes": 31324
+    "w": 800,
+    "h": 1147,
+    "file": "img/ttmc-more/tm-ebp25t-800.webp",
+    "bytes": 80126
+   },
+   {
+    "w": 480,
+    "h": 688,
+    "file": "img/ttmc-more/tm-ebp25t-480.webp",
+    "bytes": 39794
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 109,
+   "w": 112,
    "h": 160,
    "file": "img/ttmc-more/tm-ebp25t-thumb.webp",
-   "bytes": 6292
+   "bytes": 6380
   },
   "cut": "birefnet"
  },
@@ -88529,18 +88535,30 @@
   "alt": "HP-100 H-frame hydraulic press with separate hydraulic station",
   "variants": [
    {
+    "w": 1200,
+    "h": 1148,
+    "file": "img/ttmc-more/tm-hp100-1200.webp",
+    "bytes": 105184
+   },
+   {
+    "w": 800,
+    "h": 765,
+    "file": "img/ttmc-more/tm-hp100-800.webp",
+    "bytes": 66320
+   },
+   {
     "w": 480,
-    "h": 426,
+    "h": 459,
     "file": "img/ttmc-more/tm-hp100-480.webp",
-    "bytes": 38228
+    "bytes": 36136
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 142,
+   "h": 153,
    "file": "img/ttmc-more/tm-hp100-thumb.webp",
-   "bytes": 9710
+   "bytes": 9728
   },
   "cut": "birefnet"
  },
@@ -88643,18 +88661,24 @@
   "alt": "HP-30 motorized H-frame hydraulic press",
   "variants": [
    {
-    "w": 299,
-    "h": 408,
-    "file": "img/ttmc-more/tm-hp30-299.webp",
-    "bytes": 23464
+    "w": 800,
+    "h": 1293,
+    "file": "img/ttmc-more/tm-hp30-800.webp",
+    "bytes": 80020
+   },
+   {
+    "w": 480,
+    "h": 776,
+    "file": "img/ttmc-more/tm-hp30-480.webp",
+    "bytes": 41772
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 117,
+   "w": 99,
    "h": 160,
    "file": "img/ttmc-more/tm-hp30-thumb.webp",
-   "bytes": 8602
+   "bytes": 6384
   },
   "cut": "birefnet"
  },
@@ -88738,18 +88762,24 @@
   "alt": "HP-50F four-column hydraulic press with separate pump unit",
   "variants": [
    {
-    "w": 415,
-    "h": 490,
-    "file": "img/ttmc-more/tm-hp50f-415.webp",
-    "bytes": 35640
+    "w": 707,
+    "h": 865,
+    "file": "img/ttmc-more/tm-hp50f-707.webp",
+    "bytes": 73018
+   },
+   {
+    "w": 480,
+    "h": 587,
+    "file": "img/ttmc-more/tm-hp50f-480.webp",
+    "bytes": 54566
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 136,
+   "w": 131,
    "h": 160,
    "file": "img/ttmc-more/tm-hp50f-thumb.webp",
-   "bytes": 9942
+   "bytes": 10344
   },
   "cut": "birefnet"
  },
@@ -88776,18 +88806,30 @@
   "alt": "HPB-1500 press with brake function \u2014 V-block and support table",
   "variants": [
    {
+    "w": 1200,
+    "h": 953,
+    "file": "img/ttmc-more/tm-hpb1500-1200.webp",
+    "bytes": 95734
+   },
+   {
+    "w": 800,
+    "h": 635,
+    "file": "img/ttmc-more/tm-hpb1500-800.webp",
+    "bytes": 59108
+   },
+   {
     "w": 480,
-    "h": 428,
+    "h": 381,
     "file": "img/ttmc-more/tm-hpb1500-480.webp",
-    "bytes": 37872
+    "bytes": 31428
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 143,
+   "h": 127,
    "file": "img/ttmc-more/tm-hpb1500-thumb.webp",
-   "bytes": 9210
+   "bytes": 7446
   },
   "cut": "birefnet"
  },
@@ -88795,24 +88837,30 @@
   "alt": "HPB-1500D two-cylinder hydraulic press brake",
   "variants": [
    {
+    "w": 963,
+    "h": 660,
+    "file": "img/ttmc-more/tm-hpb1500d-963.webp",
+    "bytes": 57152
+   },
+   {
     "w": 800,
-    "h": 547,
+    "h": 548,
     "file": "img/ttmc-more/tm-hpb1500d-800.webp",
-    "bytes": 65574
+    "bytes": 54598
    },
    {
     "w": 480,
-    "h": 328,
+    "h": 329,
     "file": "img/ttmc-more/tm-hpb1500d-480.webp",
-    "bytes": 33914
+    "bytes": 31284
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 109,
+   "h": 110,
    "file": "img/ttmc-more/tm-hpb1500d-thumb.webp",
-   "bytes": 8042
+   "bytes": 7698
   },
   "cut": "birefnet"
  },
@@ -88820,37 +88868,55 @@
   "alt": "HPB-580 press with brake function",
   "variants": [
    {
-    "w": 339,
-    "h": 430,
-    "file": "img/ttmc-more/tm-hpb580-339.webp",
-    "bytes": 27466
+    "w": 968,
+    "h": 1256,
+    "file": "img/ttmc-more/tm-hpb580-968.webp",
+    "bytes": 89596
+   },
+   {
+    "w": 800,
+    "h": 1038,
+    "file": "img/ttmc-more/tm-hpb580-800.webp",
+    "bytes": 85720
+   },
+   {
+    "w": 480,
+    "h": 623,
+    "file": "img/ttmc-more/tm-hpb580-480.webp",
+    "bytes": 49066
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 126,
+   "w": 123,
    "h": 160,
    "file": "img/ttmc-more/tm-hpb580-thumb.webp",
-   "bytes": 9174
+   "bytes": 9620
   },
   "cut": "birefnet"
  },
  "tm-hpb580d": {
-  "alt": "HPB-580D two-cylinder press with brake function and safety fence",
+  "alt": "HPB-580D two-cylinder press with brake function",
   "variants": [
    {
-    "w": 458,
-    "h": 556,
-    "file": "img/ttmc-more/tm-hpb580d-458.webp",
-    "bytes": 59474
+    "w": 669,
+    "h": 823,
+    "file": "img/ttmc-more/tm-hpb580d-669.webp",
+    "bytes": 54180
+   },
+   {
+    "w": 480,
+    "h": 590,
+    "file": "img/ttmc-more/tm-hpb580d-480.webp",
+    "bytes": 42210
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 132,
+   "w": 130,
    "h": 160,
    "file": "img/ttmc-more/tm-hpb580d-thumb.webp",
-   "bytes": 11276
+   "bytes": 8618
   },
   "cut": "birefnet"
  },
@@ -90962,19 +91028,19 @@
     "w": 1200,
     "h": 1697,
     "file": "img/ttmc-more/tm-hp150f1plc-1200.webp",
-    "bytes": 149748
+    "bytes": 152966
    },
    {
     "w": 800,
     "h": 1131,
     "file": "img/ttmc-more/tm-hp150f1plc-800.webp",
-    "bytes": 90000
+    "bytes": 91890
    },
    {
     "w": 480,
     "h": 679,
     "file": "img/ttmc-more/tm-hp150f1plc-480.webp",
-    "bytes": 44770
+    "bytes": 45906
    }
   ],
   "alpha": true,
@@ -90982,7 +91048,7 @@
    "w": 113,
    "h": 160,
    "file": "img/ttmc-more/tm-hp150f1plc-thumb.webp",
-   "bytes": 6988
+   "bytes": 7086
   },
   "cut": "birefnet"
  },
@@ -92175,18 +92241,30 @@
   "alt": "WJ10X40 10\u2033 surface planer",
   "variants": [
    {
+    "w": 1200,
+    "h": 1128,
+    "file": "img/ttmc-more/tm-wj1040-1200.webp",
+    "bytes": 82464
+   },
+   {
+    "w": 800,
+    "h": 752,
+    "file": "img/ttmc-more/tm-wj1040-800.webp",
+    "bytes": 51684
+   },
+   {
     "w": 480,
-    "h": 453,
+    "h": 451,
     "file": "img/ttmc-more/tm-wj1040-480.webp",
-    "bytes": 26118
+    "bytes": 26956
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 151,
+   "h": 150,
    "file": "img/ttmc-more/tm-wj1040-thumb.webp",
-   "bytes": 6224
+   "bytes": 6374
   },
   "cut": "birefnet"
  },
@@ -92194,24 +92272,30 @@
   "alt": "WJ-8x76 8\u2033 jointer with spiral cutterhead on cabinet stand",
   "variants": [
    {
+    "w": 1200,
+    "h": 867,
+    "file": "img/ttmc-more/tm-wj876-1200.webp",
+    "bytes": 65744
+   },
+   {
     "w": 800,
-    "h": 480,
+    "h": 578,
     "file": "img/ttmc-more/tm-wj876-800.webp",
-    "bytes": 31438
+    "bytes": 40046
    },
    {
     "w": 480,
-    "h": 288,
+    "h": 347,
     "file": "img/ttmc-more/tm-wj876-480.webp",
-    "bytes": 16736
+    "bytes": 21808
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 96,
+   "h": 116,
    "file": "img/ttmc-more/tm-wj876-thumb.webp",
-   "bytes": 4782
+   "bytes": 5310
   },
   "cut": "birefnet"
  },
@@ -92243,18 +92327,30 @@
   "alt": "WJP-15 15\u2033 thickness planer with spiral cutterhead",
   "variants": [
    {
+    "w": 1200,
+    "h": 1533,
+    "file": "img/ttmc-more/tm-wjp15-1200.webp",
+    "bytes": 108710
+   },
+   {
+    "w": 800,
+    "h": 1022,
+    "file": "img/ttmc-more/tm-wjp15-800.webp",
+    "bytes": 69504
+   },
+   {
     "w": 480,
-    "h": 610,
+    "h": 613,
     "file": "img/ttmc-more/tm-wjp15-480.webp",
-    "bytes": 37538
+    "bytes": 37978
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 126,
+   "w": 125,
    "h": 160,
    "file": "img/ttmc-more/tm-wjp15-thumb.webp",
-   "bytes": 7182
+   "bytes": 7078
   },
   "cut": "birefnet"
  },
@@ -92262,18 +92358,30 @@
   "alt": "WJP-15B benchtop thickness planer",
   "variants": [
    {
+    "w": 1200,
+    "h": 1116,
+    "file": "img/ttmc-more/tm-wjp15b-1200.webp",
+    "bytes": 99132
+   },
+   {
+    "w": 800,
+    "h": 744,
+    "file": "img/ttmc-more/tm-wjp15b-800.webp",
+    "bytes": 55990
+   },
+   {
     "w": 480,
-    "h": 426,
+    "h": 446,
     "file": "img/ttmc-more/tm-wjp15b-480.webp",
-    "bytes": 27166
+    "bytes": 30044
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 142,
+   "h": 149,
    "file": "img/ttmc-more/tm-wjp15b-thumb.webp",
-   "bytes": 7258
+   "bytes": 7802
   },
   "cut": "birefnet"
  },
@@ -92281,10 +92389,22 @@
   "alt": "WJP-20 20\u2033 thickness planer with spiral cutterhead",
   "variants": [
    {
+    "w": 1200,
+    "h": 1277,
+    "file": "img/ttmc-more/tm-wjp20-1200.webp",
+    "bytes": 120322
+   },
+   {
+    "w": 800,
+    "h": 851,
+    "file": "img/ttmc-more/tm-wjp20-800.webp",
+    "bytes": 77400
+   },
+   {
     "w": 480,
     "h": 511,
     "file": "img/ttmc-more/tm-wjp20-480.webp",
-    "bytes": 39146
+    "bytes": 42720
    }
   ],
   "alpha": true,
@@ -92292,7 +92412,7 @@
    "w": 150,
    "h": 160,
    "file": "img/ttmc-more/tm-wjp20-thumb.webp",
-   "bytes": 8642
+   "bytes": 9478
   },
   "cut": "birefnet"
  },
@@ -93048,24 +93168,30 @@
   "alt": "WTS10-50 10\u2033 cabinet table saw with 52\u2033 rip fence",
   "variants": [
    {
+    "w": 1200,
+    "h": 652,
+    "file": "img/ttmc-more/tm-wts1050-1200.webp",
+    "bytes": 64450
+   },
+   {
     "w": 800,
-    "h": 441,
+    "h": 435,
     "file": "img/ttmc-more/tm-wts1050-800.webp",
-    "bytes": 36320
+    "bytes": 39632
    },
    {
     "w": 480,
-    "h": 265,
+    "h": 261,
     "file": "img/ttmc-more/tm-wts1050-480.webp",
-    "bytes": 20170
+    "bytes": 21472
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 88,
+   "h": 87,
    "file": "img/ttmc-more/tm-wts1050-thumb.webp",
-   "bytes": 5332
+   "bytes": 5504
   },
   "cut": "birefnet"
  },
@@ -93073,24 +93199,30 @@
   "alt": "WTS10-50S table saw with touch-screen blade height and angle",
   "variants": [
    {
+    "w": 1200,
+    "h": 549,
+    "file": "img/ttmc-more/tm-wts1050s-1200.webp",
+    "bytes": 50616
+   },
+   {
     "w": 800,
-    "h": 372,
+    "h": 366,
     "file": "img/ttmc-more/tm-wts1050s-800.webp",
-    "bytes": 29724
+    "bytes": 30206
    },
    {
     "w": 480,
-    "h": 223,
+    "h": 220,
     "file": "img/ttmc-more/tm-wts1050s-480.webp",
-    "bytes": 16530
+    "bytes": 16092
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 74,
+   "h": 73,
    "file": "img/ttmc-more/tm-wts1050s-thumb.webp",
-   "bytes": 4394
+   "bytes": 4236
   },
   "cut": "birefnet"
  },
@@ -127581,5 +127713,36 @@
    "file": "img/bandsaw/video-oMUjOnHlJZQ-thumb.webp",
    "bytes": 3942
   }
+ },
+ "tm-wj655": {
+  "alt": "WJ-6x55 6\u2033 jointer with spiral cutterhead on cabinet stand",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 980,
+    "file": "img/ttmc-more/tm-wj655-1200.webp",
+    "bytes": 68066
+   },
+   {
+    "w": 800,
+    "h": 653,
+    "file": "img/ttmc-more/tm-wj655-800.webp",
+    "bytes": 41030
+   },
+   {
+    "w": 480,
+    "h": 392,
+    "file": "img/ttmc-more/tm-wj655-480.webp",
+    "bytes": 22574
+   }
+  ],
+  "alpha": true,
+  "thumb": {
+   "w": 160,
+   "h": 131,
+   "file": "img/ttmc-more/tm-wj655-thumb.webp",
+   "bytes": 5970
+  },
+  "cut": "birefnet"
  }
 }

@@ -597,7 +597,7 @@ WOOD = [
       ["WJ-6x55: 6″ cut, 55-1/2″ tables; WJ-8x76: 8″ cut, 76″ tables", "Spiral cutterhead with indexable carbide inserts, 4,800 rpm",
        "Fence 36 × 5″, tilts 45 – 135° with stops at 45°, 90° and 135°", "Cutting depth to 1/8″ (3 mm)",
        "WJ10X40: 10″ (260 mm) surface planer, three knives, 6,500 rpm, 3 HP"],
-      ["tm-wj876", "tm-wj-cutterhead", "tm-wj1040"], headline="6 – 10″", cap="[Cutting width] cut"),
+      ["tm-wj876", "tm-wj655", "tm-wj-cutterhead", "tm-wj1040"], headline="6 – 10″", cap="[Cutting width] cut"),
     F("tt-tdm", P_WOOD, "planing", "TDM jointer-planer combinations, 10 – 16″ planing, thicknessing to 9″", "TDM jointer-planers", NT["tt-tdm"],
       "Two machines on one cutterblock: lift the infeed and outfeed tables and the jointer becomes a thickness planer, with a "
       "spiral-toothed infeed roller that feeds the board at 20 ft/min under the same cutterblock. Planing widths of 10.2″, 12.6″ and "

@@ -141,7 +141,7 @@ PHOTOS = {
     "tm-x6336b": S(NI + "X6336.jpg", (1100, 318, 2264, 1696), "X6336 turret milling machine with power feed and digital readout", clean=True),
     "tm-x6336-dro": S(NI + "X6336.jpg", (277, 407, 945, 1185), "Three-axis digital readout and feed controls of the X6336", detail=True),
     "tm-hp150f1plc": S(NI + "HP-150F1-PLC.jpg", (535, 310, 1921, 2271), "HP-150F1/PLC four-column hydraulic press with PLC cabinet",
-                       white=[(1600, 650, 2270, 770)], clean=True, logo_out=[(257, 275, 393, 333)]),
+                       white=[(1600, 650, 2270, 770)], logo_out=[(257, 275, 393, 333)]),   # no clean: it wiped the touch screen and buttons off the cabinet
     "tm-hp63c2": S(NI + "C type hydraulic press.jpg", (394, 334, 1341, 2036), "HP-63C C-frame hydraulic press with guard doors", clean=True),
     "tm-hp30c2": S(NI + "C type hydraulic press.jpg", (1516, 489, 2310, 2033), "HP-30C C-frame hydraulic press with foot pedal", clean=True),
     # ------------------------------------------------------------------------------------------- welding positioners (2026 sheets)
