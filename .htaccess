@@ -69,7 +69,7 @@ RedirectMatch 301 ^/(pilous|karmetal|bekamak)-(dual-column|pivot)-band-saw(\.htm
 RedirectMatch 301 ^/unleash-the-power-how-band-saws-revolutionize-metal-cutting(\.html)?$ /band-saw
 RedirectMatch 301 ^/beam-drill(\.html)?$ /drill-press
 RedirectMatch 301 ^/mandrel-tube-bender---copy(\.html)?$ /pipe-benders
-RedirectMatch 301 ^/corner-sander-seam-weld-grinding(\.html)?$ /sheet-metal-plate-deburring-edge-rounding-finishing-grinding
+RedirectMatch 301 ^/corner-sander-seam-weld-grinding(\.html)?$ /corner-grinding-machines
 # CNC plasma tables are not sold any more (the owner, Nov 7 2026)
 RedirectMatch 301 ^/cnc-plasma-table(\.html)?$ /laser-cutting-machine
 # lasers are split by kind of machine, not by supplier (Oct 2026)
