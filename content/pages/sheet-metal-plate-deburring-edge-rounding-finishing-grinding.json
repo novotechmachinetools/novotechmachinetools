@@ -101,6 +101,10 @@
    "a": "The abrasive belt (R) cuts the burr off and levels the surface; top brushes (X, T) and brush carousels (B4, B8) round the edges, inside holes too; cylindrical Scotch-Brite brushes (B) give a satin finish. Most shops combine them — a belt and top brushes deburr and round in one pass, and a Scotch-Brite brush at the end leaves an even grain."
   },
   {
+   "q": "Do you also sell corner grinders?",
+   "a": "Yes. Corner grinders (also called corner sanders or weld seam sanders) grind the weld on the corner of a welded box, cabinet, door or tray flush or to a radius. They have their own page: the hand-fed GECAM 131 and 136, the GECAM 135 that runs the full length of an edge up to 59″ by itself, and PLC corner grinders for series work — see Corner grinders in the menu, or the button at the top of this page."
+  },
+  {
    "q": "Which machine for plasma and oxy-fuel parts?",
    "a": "The G65DCC: its D belt on a soft rubber roller breaks the slag off the bottom edge of parts 3/8″ to 4-3/4″ thick and strip brushes on two transverse belts round the edges in the same pass. For thinner plasma parts with light dross a G65 with belt and top brushes is usually enough."
   },
@@ -208,5 +212,11 @@
  "intro_video_heading": "Inside the factory — Gecam in Parma, Italy",
  "intro_video_text": "A tour of Gecam at Vicofertile, Parma, where the machines on this page are designed and built.",
  "catalogue_pdfs": null,
- "nav_label": "Metal deburring & finishing machines"
+ "nav_label": "Metal deburring & finishing machines",
+ "cross_promo": {
+  "href": "corner-grinding-machines",
+  "label": "Looking for a corner grinder?",
+  "sub": "GECAM 131, 135 and 136 corner grinders (corner sanders) for the welds of boxes, doors and frames",
+  "img": "img/gecam/gc-131-thumb.webp"
+ }
 }

@@ -1391,6 +1391,13 @@ body.ai-locked { overflow: hidden; }
 .btn-guide svg { flex: none; color: var(--orange); }
 .btn-guide span { display: grid; gap: 3px; }
 .btn-guide small { font-size: 13.5px; font-weight: 500; letter-spacing: 0; opacity: .82; }
+/* a machine that used to be on this page and now has its own (the corner grinders on the deburring page, Nov 8 2026) */
+.hero-cross { margin: 12px 0 0; }
+.btn-cross { background: var(--white); border: 2px solid var(--orange); color: var(--ink); gap: 12px; padding: 8px 18px 8px 10px; text-align: left; }
+.btn-cross:hover { background: rgba(242, 138, 31, .08); }
+.btn-cross img { flex: none; width: 56px; height: 42px; object-fit: contain; }
+.btn-cross span { display: grid; gap: 3px; }
+.btn-cross small { font-size: 13.5px; font-weight: 500; letter-spacing: 0; color: var(--steel); }
 .btn-guide:hover, .btn-guide:focus-visible { background: var(--ink); border-color: var(--orange); color: #fff; }
 .btn-guide:hover svg, .btn-guide:focus-visible svg { color: var(--orange); }
 /* calculator: "Other" material — the number is typed in the material field itself */
