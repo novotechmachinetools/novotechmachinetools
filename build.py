@@ -10,6 +10,7 @@ import html as html_lib
 import urllib.parse
 import json, os, re, shutil, sys, datetime, hashlib
 import html as html_mod
+from zoneinfo import ZoneInfo
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -495,7 +496,7 @@ def page_ld(page):
         t = img(v["thumb"])
         graph.append({
             "@type": "VideoObject", "@id": vurl, "name": v["title"], "description": v["title"] + " — NovoTech Machine Tools, Canada.",
-            "thumbnailUrl": [absurl(t["src"])], "uploadDate": v.get("upload_date", "2023-12-26"), "duration": v.get("duration", "PT2M"),
+            "thumbnailUrl": [absurl(t["src"])], "uploadDate": upload_datetime(v), "duration": v.get("duration", "PT2M"),
             "contentUrl": "https://www.youtube.com/watch?v=" + v["id"], "embedUrl": "https://www.youtube-nocookie.com/embed/" + v["id"],
             "publisher": {"@id": site["domain"] + "/#organization"},
         })
@@ -696,6 +697,25 @@ if os.path.exists(_vd):
                 if _t1 <= _x <= _t0:
                     YT_ORDER[_i] = _r0 + (_r1 - _r0) * (_t0 - _x) / ((_t0 - _t1) or 1) + 0.01
                     break
+
+# VideoObject uploadDate is a full ISO 8601 date-time with its UTC offset: a bare date makes Search Console report
+# 'Invalid datetime value for "uploadDate"' and 'Datetime property "uploadDate" is missing a timezone' (the owner, Nov 9
+# 2026, on every page). Publish times known from YouTube (tools/video_dates.json: "dates", "shorts", "anchors", UTC) are
+# used as they are; a bare date (a video's "upload_date", or the old default) becomes midday Mississauga time that day.
+TORONTO = ZoneInfo("America/Toronto")
+VIDEO_PUBLISHED = {}
+if os.path.exists(_vd):
+    for _sec in ("anchors", "shorts", "dates"):
+        VIDEO_PUBLISHED.update(json.load(open(_vd, encoding="utf-8")).get(_sec) or {})
+
+
+def upload_datetime(v):
+    t = (VIDEO_PUBLISHED.get(v.get("id")) or v.get("upload_date") or "2023-12-26").strip()
+    if "T" not in t:
+        return datetime.datetime.fromisoformat(t + "T12:00:00").replace(tzinfo=TORONTO).isoformat()
+    dt = datetime.datetime.fromisoformat(t.replace("Z", "+00:00"))
+    return (dt if dt.tzinfo else dt.replace(tzinfo=TORONTO)).isoformat()
+
 
 GENERAL_VIDEO = re.compile(r"\b(factory|assembly line|tour|instructions?|how to|how-to|vs\.?|versus|comparison|compar\w+|install\w*|"
                            r"operating|training|tutorial|exhibition|trade fair|catalogue|overview)\b", re.I)
@@ -1279,7 +1299,7 @@ def site_page_ld(page):
         t = img(v["thumb"])
         graph.append({"@type": "VideoObject", "@id": url + "#video-" + v["id"], "name": v["title"],
                       "description": v["title"] + " — NovoTech Machine Tools, Canada.", "thumbnailUrl": [absurl(t["src"])],
-                      "uploadDate": v.get("upload_date", "2023-12-26"), "duration": v.get("duration", "PT2M"),
+                      "uploadDate": upload_datetime(v), "duration": v.get("duration", "PT2M"),
                       "contentUrl": "https://www.youtube.com/watch?v=" + v["id"], "embedUrl": "https://www.youtube-nocookie.com/embed/" + v["id"],
                       "publisher": {"@id": site["domain"] + "/#organization"}})
     return json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False)
