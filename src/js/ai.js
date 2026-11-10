@@ -1589,11 +1589,14 @@
      its speech synthesis reads the answer aloud. Nothing runs on the server for it, and the button shows only where the
      browser can do it. Click to speak; click again to stop listening, or to stop the reading. */
   var mic = form.querySelector(".ai-mic"), SR = root.SpeechRecognition || root.webkitSpeechRecognition, synth = root.speechSynthesis;
-  var rec = null, heard = "";
+  var rec = null, heard = "", stopBtn = form.querySelector(".ai-stop");
+  // the Stop button shows while the chat listens or reads aloud (the owner, Nov 9 2026: a clear way to stop the voice)
+  function syncStop() { if (stopBtn) stopBtn.hidden = !(rec || (mic && mic.classList.contains("is-speaking"))); }
   function lang() { return (navigator.language || "en-CA"); }
   function stopSpeaking() {
     if (synth && (synth.speaking || synth.pending)) synth.cancel();
     if (mic) mic.classList.remove("is-speaking");
+    syncStop();
   }
   function voiceFor(l) {
     var vs = synth ? synth.getVoices() : [], base = l.slice(0, 2).toLowerCase();
@@ -1618,11 +1621,12 @@
     if (cur.trim()) chunks.push(cur);
     if (!chunks.length) return;
     if (mic) mic.classList.add("is-speaking");
+    syncStop();
     chunks.forEach(function (c, i) {
       var u = new root.SpeechSynthesisUtterance(c);
       if (v) { u.voice = v; u.lang = v.lang; } else u.lang = l;
       u.rate = 1.02;
-      if (i === chunks.length - 1) u.onend = u.onerror = function () { if (mic) mic.classList.remove("is-speaking"); };
+      if (i === chunks.length - 1) u.onend = u.onerror = function () { if (mic) mic.classList.remove("is-speaking"); syncStop(); };
       synth.speak(u);
     });
   }
@@ -1654,11 +1658,14 @@
         rec = null;
         mic.classList.remove("is-on");
         mic.setAttribute("aria-pressed", "false");
+        syncStop();
         var q = heard.trim();
         if (q) { input.value = ""; autosize(); ask(q, true); }
       };
       try { rec.start(); mic.classList.add("is-on"); mic.setAttribute("aria-pressed", "true"); } catch (err) { rec = null; }
+      syncStop();
     });
+    if (stopBtn) stopBtn.addEventListener("click", function () { if (rec) { heard = ""; rec.abort(); } stopSpeaking(); });
     // the reading stops when the panel closes or the page is left
     panel.querySelectorAll("[data-ai-close]").forEach(function (b) { b.addEventListener("click", function () { stopSpeaking(); if (rec) rec.abort(); }); });
     d.addEventListener("visibilitychange", function () { if (d.hidden) stopSpeaking(); });

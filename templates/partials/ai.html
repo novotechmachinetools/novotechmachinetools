@@ -26,7 +26,8 @@
     <form class="ai-form" id="ai-form">
       <label class="sr-only" for="ai-q">Describe your job or ask about a machine</label>
       <textarea id="ai-q" rows="1" placeholder="Describe the job or ask a question…" maxlength="1500" enterkeyhint="send" required></textarea>
-      {#- voice (the owner, Nov 9 2026): shown by js/ai.js where the browser can listen #}
+      {#- voice (the owner, Nov 9 2026): shown by js/ai.js where the browser can listen; Stop shows while it listens or reads #}
+      <button type="button" class="ai-stop" aria-label="Stop the voice" hidden><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><rect x="5" y="5" width="14" height="14" rx="2.5" fill="currentColor"/></svg><span>Stop</span></button>
       <button type="button" class="ai-mic" aria-label="Speak your question — the answer is read aloud" aria-pressed="false" title="Speak your question — the answer is read aloud" hidden><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><rect x="9" y="3" width="6" height="11" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M8.5 21h7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
       <button type="submit" class="ai-send" aria-label="Ask the machine finder"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path d="M4 12h14M12 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
     </form>
