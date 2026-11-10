@@ -1494,10 +1494,11 @@
   }
   function visible(t) { ["CONTACT:", "RESULTS:"].forEach(function (m) { var i = t.indexOf(m); if (i >= 0) t = t.slice(0, i); }); return t.replace(/\s+$/, ""); }
   var SERVER = !!panel.dataset.server && !STAGING;
-  function ask(q) {
+  function ask(q, voice) {
     q = (q || "").trim();
     if (busy || !q) return;
     busy = true;
+    stopSpeaking();
     var send = form.querySelector("button[type=submit]");
     send.disabled = true;
     var u = el("div", "ai-msg ai-user", esc(q));
@@ -1515,7 +1516,7 @@
         renderResult(local, bubble);
         scrollTo(u);
         var text = local.text.join("\n");
-        if (!SERVER) { history.push({ role: "assistant", content: text }); return; }
+        if (!SERVER) { history.push({ role: "assistant", content: text }); if (voice) speak(text); return; }
         // the live site: Claude answers like a chat, from the whole catalogue; the lists stay the engine's unless Claude corrects them
         var tx = bubble.querySelector(".ai-text");
         var note = el("p", "ai-note", '<span class="ai-dots"><i></i><i></i><i></i></span> Writing a fuller answer…');
@@ -1530,6 +1531,7 @@
             if (j && (j.error === "not_configured" || j.error === "bad_json")) SERVER = false;
             tx.innerHTML = md(text);
             history.push({ role: "assistant", content: text });
+            if (voice) speak(text);
             return;
           }
           tx.innerHTML = md(j.answer);
@@ -1545,6 +1547,7 @@
             }
           }
           history.push({ role: "assistant", content: j.answer });
+          if (voice) speak(j.answer);
         }
         return fetch("ask.php", { method: "POST", headers: { "Content-Type": "application/json", "Accept": "text/event-stream, application/json" }, body: JSON.stringify(body) })
           .then(function (r) {
@@ -1579,6 +1582,87 @@
       bubble.className = "ai-msg ai-assistant";
       bubble.innerHTML = '<span class="ai-avatar" aria-hidden="true">AI</span><div class="ai-text"><p>The machine finder could not load the catalogue. Please call <a href="tel:+16475265510">+1 647 526 5510</a> or email info@NovoTechMachineTools.com.</p></div>';
     }).then(done, done);
+  }
+
+  /* ======================================================================================== voice
+     The owner (Nov 9 2026): talk to the chat like to Claude. The browser's own speech recognition turns the spoken question
+     into text (Chrome and Edge send the sound to their maker's service, Safari to Apple's; the site gets only the text) and
+     its speech synthesis reads the answer aloud. Nothing runs on the server for it, and the button shows only where the
+     browser can do it. Click to speak; click again to stop listening, or to stop the reading. */
+  var mic = form.querySelector(".ai-mic"), SR = root.SpeechRecognition || root.webkitSpeechRecognition, synth = root.speechSynthesis;
+  var rec = null, heard = "";
+  function lang() { return (navigator.language || "en-CA"); }
+  function stopSpeaking() {
+    if (synth && (synth.speaking || synth.pending)) synth.cancel();
+    if (mic) mic.classList.remove("is-speaking");
+  }
+  function voiceFor(l) {
+    var vs = synth ? synth.getVoices() : [], base = l.slice(0, 2).toLowerCase();
+    var mine = vs.filter(function (v) { return (v.lang || "").toLowerCase().slice(0, 2) === base; });
+    var good = /natural|neural|online|premium|enhanced|google|siri|samantha|aria|jenny|guy/i;
+    return mine.filter(function (v) { return v.lang === l && good.test(v.name); })[0] || mine.filter(function (v) { return good.test(v.name); })[0] ||
+      mine.filter(function (v) { return v.lang === l; })[0] || mine[0] || null;
+  }
+  // what a voice should say: no markup, and the signs read as words ("1/4″ × 10 ft" -> "1/4 inch by 10 ft")
+  function sayable(t) {
+    return t.replace(/\*\*(.+?)\*\*/g, "$1").replace(/\[([^\]]+)\]\([^)]*\)/g, "$1").replace(/^\s*(?:[-*•]|\d+[.)])\s+/gm, "")
+      .replace(/(\d)\s*″/g, "$1 inch").replace(/″/g, " inch").replace(/\s*×\s*/g, " by ").replace(/Ø\s*/g, "diameter ")
+      .replace(/(\d)\s*[–-]\s*(\d)/g, "$1 to $2").replace(/\s+·\s+/g, ", ").replace(/\s+/g, " ").trim();
+  }
+  function speak(text) {
+    if (!synth || !text) return;
+    stopSpeaking();
+    var l = lang(), v = voiceFor(l), parts = sayable(text).match(/[^.!?;:]+[.!?;:]*\s*/g) || [];
+    // short pieces: some browsers stop a long utterance after about 15 seconds
+    var chunks = [], cur = "";
+    parts.forEach(function (s) { if ((cur + s).length > 180 && cur) { chunks.push(cur); cur = s; } else cur += s; });
+    if (cur.trim()) chunks.push(cur);
+    if (!chunks.length) return;
+    if (mic) mic.classList.add("is-speaking");
+    chunks.forEach(function (c, i) {
+      var u = new root.SpeechSynthesisUtterance(c);
+      if (v) { u.voice = v; u.lang = v.lang; } else u.lang = l;
+      u.rate = 1.02;
+      if (i === chunks.length - 1) u.onend = u.onerror = function () { if (mic) mic.classList.remove("is-speaking"); };
+      synth.speak(u);
+    });
+  }
+  if (synth && synth.onvoiceschanged !== undefined) synth.onvoiceschanged = function () {};   // loads the voice list early
+  if (mic && SR) {
+    mic.hidden = false;
+    mic.addEventListener("click", function () {
+      if (mic.classList.contains("is-speaking")) { stopSpeaking(); return; }
+      if (rec) { rec.stop(); return; }
+      if (busy) return;
+      heard = "";
+      rec = new SR();
+      rec.lang = lang();
+      rec.interimResults = true;
+      rec.continuous = false;
+      rec.maxAlternatives = 1;
+      rec.onresult = function (e) {
+        var s = "";
+        for (var i = 0; i < e.results.length; i++) s += e.results[i][0].transcript;
+        heard = s;
+        input.value = s;
+        autosize();
+      };
+      rec.onerror = function (e) {
+        if (e.error === "not-allowed" || e.error === "service-not-allowed") input.placeholder = "Allow the microphone for this site in your browser, then try again.";
+        else if (e.error === "no-speech") input.placeholder = "I did not hear anything — click the microphone and speak.";
+      };
+      rec.onend = function () {
+        rec = null;
+        mic.classList.remove("is-on");
+        mic.setAttribute("aria-pressed", "false");
+        var q = heard.trim();
+        if (q) { input.value = ""; autosize(); ask(q, true); }
+      };
+      try { rec.start(); mic.classList.add("is-on"); mic.setAttribute("aria-pressed", "true"); } catch (err) { rec = null; }
+    });
+    // the reading stops when the panel closes or the page is left
+    panel.querySelectorAll("[data-ai-close]").forEach(function (b) { b.addEventListener("click", function () { stopSpeaking(); if (rec) rec.abort(); }); });
+    d.addEventListener("visibilitychange", function () { if (d.hidden) stopSpeaking(); });
   }
 
   form.addEventListener("submit", function (e) { e.preventDefault(); var q = input.value; input.value = ""; autosize(); ask(q); });
