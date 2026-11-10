@@ -1789,6 +1789,34 @@ def render_page(page):
     return clean_urls(html)
 
 
+def model_photo(name, gallery):
+    """the gallery photo of one model, by its key ('sh-hpk65' for HPK 65, 'b-36' for B 36), for the finder's cards — the owner
+    (Nov 9 2026) wants each model's own photo, not the series photo for all of them. Best first: the key names exactly this
+    model; the key adds a suffix (HPK 120 -> sh-hpk120nc); the model adds a suffix to a photographed one (RBM40HV ->
+    tm-rbm40, never tm-hrbm40); a run of the key's parts is the model (bk-bmso-350ga-1), or the model with a suffix (3041 ->
+    es-d-3041pn)."""
+    norm = lambda s: re.sub(r"[^a-z0-9]", "", s.lower())
+    mk = norm(name)
+    if len(mk) < 3 or not re.search(r"\d", mk):
+        return None
+    cands = []
+    for k in gallery:
+        parts = [norm(p) for p in k.split("-") if norm(p)]
+        forms = {norm(k)} | ({"".join(parts[1:])} if len(parts) > 1 else set())   # with and without the line prefix ('tm', 'sh')
+        if mk in forms:
+            cands.append((0, k))
+        elif any(x.startswith(mk) and not x[len(mk)].isdigit() for x in forms if len(x) > len(mk)):
+            cands.append((1, k))
+        elif any(len(x) >= 3 and re.search(r"\d", x) and mk.startswith(x) and mk[len(x):].isalpha() for x in forms):
+            cands.append((2, k))
+        elif any("".join(parts[i:j]) == mk for i in range(len(parts)) for j in range(i + 1, len(parts) + 1)):
+            cands.append((3, k))
+        elif any("".join(parts[i:j]).startswith(mk) and "".join(parts[i:j])[len(mk):].isalpha()
+                 for i in range(len(parts)) for j in range(i + 1, len(parts) + 1)):
+            cands.append((4, k))                                   # 3041 -> es-d-3041pn
+    return min(cands, key=lambda c: c[0])[1] if cands else None
+
+
 def ai_catalogue(pages):
     """Machine-finder index (dist/ai/catalogue.json): one entry per family, with the page it lives on, its models and
     their headline capacities, and — for the finder to know everything the site says (the owner, Nov 7 2026) — every
@@ -1853,15 +1881,9 @@ def ai_catalogue(pages):
                 fam_img = card_img(ci.get("name")) if ci else None
                 gallery = [k for k in (f.get("images") or []) if isinstance(k, str) and k in manifest]
                 for m in models:
-                    mk = re.sub(r"[^a-z0-9]", "", m["name"].lower())
-                    if len(mk) < 3 or not re.search(r"\d", mk):
-                        continue
-                    for k in gallery:
-                        kk = re.sub(r"[^a-z0-9]", "", k.lower())
-                        i = kk.find(mk)
-                        if i >= 0 and not kk[i + len(mk):i + len(mk) + 1].isdigit() and (i == 0 or not kk[i - 1].isdigit()):
-                            m["img"] = card_img(k)
-                            break
+                    k = model_photo(m["name"], gallery)
+                    if k:
+                        m["img"] = card_img(k)
                 brand = site.get("brands", {}).get(f.get("brand"), {})
                 pdf = f.get("pdf") if isinstance(f.get("pdf"), dict) else None
                 strip = lambda x: html_mod.unescape(re.sub(r"<[^>]+>", "", x)) if isinstance(x, str) else ""

@@ -849,6 +849,13 @@ small { font-size: .85em; }
 .ai-card .ai-img img { width: 100%; height: 100%; max-height: 200px; object-fit: contain; }
 .ai-card .ai-img.is-photo { padding: 0; background: #EEF0F2; }
 .ai-card .ai-img.is-photo img { max-height: none; object-fit: cover; }
+/* a series card with each model's own photo (the owner, Nov 9 2026): two one above the other, more two by two */
+.ai-card .ai-img.is-multi { display: grid; grid-template-columns: 1fr 1fr; align-content: center; place-items: stretch; gap: 10px 8px; padding: 12px 10px; }
+.ai-card .ai-img.is-multi.is-2 { grid-template-columns: 1fr; }
+.ai-mimg { margin: 0; display: grid; gap: 4px; text-align: center; }
+.ai-card .ai-img.is-multi .ai-mimg img { width: 100%; height: 84px; max-height: none; object-fit: contain; }
+.ai-card .ai-img.is-multi.is-2 .ai-mimg img { height: 112px; }
+.ai-mimg figcaption { font-size: 12px; line-height: 1.25; font-weight: 600; color: var(--charcoal-2); overflow-wrap: anywhere; }
 .ai-body { display: flex; flex-direction: column; gap: 3px; padding: 12px 16px 12px; min-width: 0; }
 .ai-top { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; }
 .ai-n { display: inline-grid; place-items: center; min-width: 26px; height: 26px; padding: 0 7px; border-radius: 999px; background: var(--charcoal); color: #fff; font-family: var(--cond); font-weight: 700; font-size: 15px; line-height: 1; }
@@ -917,6 +924,10 @@ body.ai-locked { overflow: hidden; }
   .ai-card .ai-img { padding: 6px; min-height: 0; align-self: stretch; }
   .ai-card .ai-img img { max-height: 120px; }
   .ai-card .ai-img.is-photo { padding: 0; }
+  .ai-card .ai-img.is-multi { grid-template-columns: 1fr; gap: 8px; padding: 8px 6px; align-content: start; }
+  .ai-card .ai-img.is-multi .ai-mimg img, .ai-card .ai-img.is-multi.is-2 .ai-mimg img { height: 62px; }
+  .ai-card .ai-img.is-multi .ai-mimg:nth-child(n+5) { display: none; }
+  .ai-mimg figcaption { font-size: 10.5px; }
   .ai-body { padding: 10px 10px 10px 12px; }
   .ai-name { font-size: 21px; }
   .ai-fam, .ai-why li, .ai-warn li, .ai-also { font-size: 13.5px; }

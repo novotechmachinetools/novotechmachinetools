@@ -1380,8 +1380,29 @@
     top.sort(function (a, b) { return a.i - b.i; });
     return top.map(function (x) { return [x.k.replace(/\s*\([^)]*\)\s*$/, "").replace(/,? (mild steel|standard rolls)$/i, ""), shortVal(x.v)]; });
   }
+  /* "A", "A · B", or "A … Z (n)" */
+  function modelsLabel(names) { return names.length < 3 ? names.join(" · ") : names[0] + " … " + names[names.length - 1] + " (" + names.length + ")"; }
   function cardImg(e) {
-    var m = e.mi != null ? e.f.models[e.mi] : null, im = (m && m.img) || e.f.img;
+    var m = e.mi != null ? e.f.models[e.mi] : null;
+    // a series card shows each model's own photo once, with the models it shows (the owner, Nov 9 2026: not one photo for
+    // HRBM 50 and HRBM 65; models that share a photo, or have none, are not repeated)
+    if (!m) {
+      var groups = [], bySrc = {};
+      e.f.models.forEach(function (x) {
+        if (!x.img) return;
+        var g = bySrc[x.img.src];
+        if (!g) { g = bySrc[x.img.src] = { img: x.img, names: [] }; groups.push(g); }
+        g.names.push(x.name);
+      });
+      if (groups.length > 1) {
+        groups = groups.slice(0, 6);
+        return { multi: groups.length, html: groups.map(function (g) {
+          return '<figure class="ai-mimg"><img src="' + esc(g.img.src) + '" srcset="' + esc(g.img.srcset) + '" sizes="120px" alt="" loading="lazy" decoding="async">' +
+            "<figcaption>" + esc(modelsLabel(g.names)) + "</figcaption></figure>";
+        }).join("") };
+      }
+    }
+    var im = (m && m.img) || e.f.img;
     if (im) return { html: '<img src="' + esc(im.src) + '" srcset="' + esc(im.srcset) + '" sizes="(max-width: 640px) 120px, 230px" alt="" loading="lazy" decoding="async">', cut: !!im.alpha };
     return { html: e.f.image ? '<img src="' + esc(e.f.image) + '" alt="" loading="lazy" decoding="async">' : "", cut: true };
   }
@@ -1398,7 +1419,7 @@
     if (e.mi == null && f.models.length) specs.unshift(["Models", f.models.length > 1 ? f.models[0].name + " … " + f.models[f.models.length - 1].name + " (" + f.models.length + ")" : f.models[0].name]);
     var also = e.also && e.also.length ? '<p class="ai-also"><b>' + (e.also.length === 1 ? "Also does it:" : "Also do it (" + e.also.length + "):") + "</b> " + esc(e.also.slice(0, 6).join(", ")) + (e.also.length > 6 ? " and " + (e.also.length - 6) + " more" : "") + "</p>" : "";
     var im = cardImg(e);
-    box.innerHTML = '<a class="ai-img' + (im.cut ? "" : " is-photo") + '" href="' + esc(f.href) + '" tabindex="-1" aria-hidden="true">' + im.html + "</a>" +
+    box.innerHTML = '<a class="ai-img' + (im.multi ? " is-multi is-" + im.multi : im.cut ? "" : " is-photo") + '" href="' + esc(f.href) + '" tabindex="-1" aria-hidden="true">' + im.html + "</a>" +
       '<div class="ai-body">' +
         '<div class="ai-top">' + (num ? '<span class="ai-n">' + num + "</span>" : "") + (flag ? '<span class="ai-flag">' + esc(flag) + "</span>" : "") + '<span class="ai-line">' + esc(lineLabel(f)) + "</span></div>" +
         '<a class="ai-name" href="' + esc(f.href) + '">' + esc(nm) + "</a>" +
