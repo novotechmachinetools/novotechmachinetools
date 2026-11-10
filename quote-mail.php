@@ -106,11 +106,11 @@ NTMAIL;
     $t['notify'] = <<<'NTMAIL'
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="light"><meta name="supported-color-schemes" content="light"><title>NovoTech Machine Tools</title></head>
-<body style="margin:0;padding:0;background:#E9EAEC;">
+<body style="margin:0;padding:0;background:#FFFFFF;">
 <div style="display:none;max-height:0;overflow:hidden;opacity:0;">{{PRE}}</div>
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#E9EAEC;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#FFFFFF;">
 <tr><td align="center" style="padding:28px 12px;">
-<table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background:#FFFFFF;">
+<table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background:#FFFFFF;border:1px solid #E2E0DC;">
 <tr><td style="padding:22px 24px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
 <td><img src="{{LOGO}}" width="190" height="65" alt="NovoTech Machine Tools Inc." style="display:block;width:190px;height:auto;border:0;"></td>
 <td align="right" style="font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:#B85C00;padding-left:10px;">New quote request</td>
