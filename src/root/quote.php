@@ -79,13 +79,43 @@ function nt_addr(string $name, string $email): string {
     return "$n <$email>";
 }
 
-// a plain-text and an HTML part as one multipart/alternative body; the Content-Type header names the boundary $b
-function nt_alternative(string $text, string $html, string $b): string {
+// a plain-text and an HTML part as one multipart/alternative body; the Content-Type header names the boundary $b. The HTML
+// part carries its pictures with it (multipart/related, from nt_images)
+function nt_alternative(string $text, string $html, string $b, array $images = []): string {
+    $part = "Content-Type: text/html; charset=UTF-8\r\nContent-Transfer-Encoding: base64\r\n\r\n" . chunk_split(base64_encode($html), 76, "\r\n");
+    if ($images) {
+        $r = 'NTI-' . bin2hex(random_bytes(12));
+        $rel = "Content-Type: multipart/related; type=\"text/html\"; boundary=\"$r\"\r\n\r\n--$r\r\n" . $part;
+        foreach ($images as $im) {
+            $rel .= "--$r\r\nContent-Type: {$im['mime']}; name=\"{$im['name']}\"\r\nContent-Transfer-Encoding: base64\r\n"
+                  . "Content-ID: <{$im['cid']}>\r\nContent-Disposition: inline; filename=\"{$im['name']}\"\r\n\r\n"
+                  . chunk_split(base64_encode($im['data']), 76, "\r\n");
+        }
+        $part = $rel . "--$r--\r\n";
+    }
     return "--$b\r\nContent-Type: text/plain; charset=UTF-8\r\nContent-Transfer-Encoding: quoted-printable\r\n\r\n"
          . quoted_printable_encode(str_replace("\n", "\r\n", $text)) . "\r\n"
-         . "--$b\r\nContent-Type: text/html; charset=UTF-8\r\nContent-Transfer-Encoding: base64\r\n\r\n"
-         . chunk_split(base64_encode($html), 76, "\r\n")
+         . "--$b\r\n" . $part
          . "--$b--\r\n";
+}
+
+// the pictures a template names ({{LOGO}}, {{SIG}}, {{ICON_…}}) go inside the e-mail, because Outlook does not download
+// pictures from the internet by itself (the owner, Nov 9 2026): [placeholder => "cid:…", the parts for nt_alternative].
+// A picture missing on the server is linked from the site instead.
+function nt_images(string $tpl): array {
+    $src = [];
+    $parts = [];
+    $all = function_exists('nt_mail_images') ? nt_mail_images() : [];
+    foreach ($all as $k => $im) {
+        if (strpos($tpl, '{{' . $k . '}}') === false) { continue; }
+        $file = __DIR__ . '/' . $im[0];
+        $data = is_file($file) ? (string)file_get_contents($file) : '';
+        if ($data === '') { $src[$k] = 'https://novotechmachinetools.com/' . $im[0]; continue; }
+        $cid = strtolower(str_replace('_', '-', $k)) . '@novotechmachinetools.com';
+        $src[$k] = "cid:$cid";
+        $parts[] = ['cid' => $cid, 'mime' => $im[1], 'name' => basename($im[0]), 'data' => $data];
+    }
+    return [$src, $parts];
 }
 
 // what the automatic reply may repeat from the form: short, and without a web or e-mail address in it
@@ -124,8 +154,8 @@ function nt_browse(string $short, string $url): array {
     return [$url, "Browse $short"];
 }
 
-// the notification to the sales inbox, in HTML, in the look of the automatic reply (the owner, Nov 9 2026)
-function nt_notification(array $M, array $d): string {
+// the notification to the sales inbox, in HTML, in the look of the automatic reply (the owner, Nov 9 2026): [HTML, pictures]
+function nt_notification(array $M, array $d): array {
     $row  = static function (string $k, string $v) use ($M): string { return nt_fill($M['summary_row'], ['K' => nt_e($k), 'V' => $v]); };
     $link = static function (string $href, string $label, string $tpl = 'link') use ($M): string {
         return nt_fill($M[$tpl], ['HREF' => nt_e($href), 'LABEL' => nt_e($label)]);
@@ -155,7 +185,8 @@ function nt_notification(array $M, array $d): string {
     $footer = 'Sent from IP ' . nt_e($d['ip'])
             . ($d['url'] !== '' ? '<br>Form on ' . $link($d['url'], $d['url'], 'link_dark') : ($d['ref'] !== '' ? '<br>Form on ' . nt_e($d['ref']) : ''));
     $pre = array_filter([$d['name'], $d['company'], $m], static function ($x) { return $x !== ''; });
-    return nt_fill($M['notify'], [
+    list($src, $images) = nt_images($M['notify']);
+    return [nt_fill($M['notify'], $src + [
         'PRE'     => nt_e(implode(' · ', $pre)),
         'NAME'    => nt_e($d['name']),
         'COMPANY' => $d['company'] !== '' ? nt_fill($M['notify_company'], ['T' => nt_e($d['company'])]) : '',
@@ -165,17 +196,18 @@ function nt_notification(array $M, array $d): string {
         'FILES'   => $files,
         'BUTTONS' => $buttons,
         'FOOTER'  => $footer,
-    ]);
+    ]), $images];
 }
 
-// the automatic reply: [plain text, HTML]; the customer's own message is never repeated in it
+// the automatic reply: [plain text, HTML, pictures]; the customer's own message is never repeated in it
 function nt_autoreply(array $M, string $name, string $machine, string $page, string $when, array $browse): array {
     $name = nt_safe($name, 60);
     $machine = nt_safe($machine, 140);
     $page = nt_safe($page, 80);
     $about = $machine !== '' && stripos($machine, 'not sure') !== 0;
     $srow = static function (string $k, string $v) use ($M): string { return nt_fill($M['summary_row'], ['K' => nt_e($k), 'V' => nt_machine($v)]); };
-    $html = nt_fill($M['reply'], [
+    list($src, $images) = nt_images($M['reply']);
+    $html = nt_fill($M['reply'], $src + [
         'COMMA_NAME'   => $name !== '' ? ', ' . nt_e($name) : '',
         'ABOUT'        => $about ? nt_fill($M['about'], ['T' => nt_machine($machine)]) : '',
         'ROWS'         => ($machine !== '' ? $srow('Machine', $machine) : '') . ($page !== '' ? $srow('Page', $page) : '') . $srow('Received', $when),
@@ -189,7 +221,7 @@ function nt_autoreply(array $M, string $name, string $machine, string $page, str
         'BROWSE_URL'   => $browse[0],
         'BROWSE_LABEL' => $browse[1],
     ]);
-    return [$text, $html];
+    return [$text, $html, $images];
 }
 
 // at most 3 automatic replies to one address a day, 5 to one IP an hour and 100 a day in all, so the form cannot be used to
@@ -364,10 +396,10 @@ $lines[] = "Page: " . ($ref !== '' ? $ref : '?');
 $text = implode("\n", $lines);
 
 // the same in HTML (the owner, Nov 9 2026); the plain text above goes along for mail programs that do not show HTML
-$html = isset($MAIL['notify']) ? nt_notification($MAIL, [
+list($html, $htmlImages) = isset($MAIL['notify']) ? nt_notification($MAIL, [
     'name' => $name, 'company' => $company, 'email' => $email, 'phone' => $phone, 'machine' => $machine, 'message' => $message,
     'page' => $pageLabel, 'url' => $pageUrl, 'ref' => $ref, 'files' => $files, 'when' => $when, 'ip' => $ip,
-]) : '';
+]) : ['', []];
 
 $headers = [
     "From: NovoTech website <$FROM>",
@@ -377,7 +409,7 @@ $headers = [
 ];
 $alt = 'NTA-' . bin2hex(random_bytes(12));
 $part = $html !== ''
-    ? ["Content-Type: multipart/alternative; boundary=\"$alt\"", nt_alternative($text, $html, $alt)]
+    ? ["Content-Type: multipart/alternative; boundary=\"$alt\"", nt_alternative($text, $html, $alt, $htmlImages)]
     : ["Content-Type: text/plain; charset=UTF-8\r\nContent-Transfer-Encoding: 8bit", str_replace("\n", "\r\n", $text) . "\r\n"];
 if ($files) {
     $boundary = 'NT-' . bin2hex(random_bytes(12));
@@ -408,7 +440,7 @@ $sent = @mail($TO, $subject, $body, implode("\r\n", $headers), "-f$FROM");
 
 // the automatic reply to the customer, once the request has reached the sales inbox: from info@, and replies go back there
 if ($sent && $AUTOREPLY && isset($MAIL['reply'], $MAIL['text']) && nt_autoreply_allowed($email, $ip)) {
-    list($arText, $arHtml) = nt_autoreply($MAIL, $name, $machine, $pageShort, $when, nt_browse($pageShort, $pageUrl));
+    list($arText, $arHtml, $arImages) = nt_autoreply($MAIL, $name, $machine, $pageShort, $when, nt_browse($pageShort, $pageUrl));
     $b = 'NTR-' . bin2hex(random_bytes(12));
     $arHeaders = [
         "From: NovoTech Machine Tools <$REPLY_FROM>",
@@ -420,7 +452,7 @@ if ($sent && $AUTOREPLY && isset($MAIL['reply'], $MAIL['text']) && nt_autoreply_
         "Content-Type: multipart/alternative; boundary=\"$b\"",
     ];
     @mail($email, 'We received your request | NovoTech Machine Tools',
-          "This is a multi-part message in MIME format.\r\n\r\n" . nt_alternative($arText, $arHtml, $b), implode("\r\n", $arHeaders), "-f$REPLY_FROM");
+          "This is a multi-part message in MIME format.\r\n\r\n" . nt_alternative($arText, $arHtml, $b, $arImages), implode("\r\n", $arHeaders), "-f$REPLY_FROM");
 }
 
 if ($sent) {

@@ -5,6 +5,21 @@
  */
 if (!defined('NT_QUOTE')) { http_response_code(404); exit; }
 
+// the pictures the templates name: placeholder => [file under the site root, type]
+function nt_mail_images(): array
+{
+    return [
+        'LOGO' => ['img/email/novotech-logo.png', 'image/png'],
+        'SIG' => ['img/email/novotech-signature.gif', 'image/gif'],
+        'ICON_YOUTUBE' => ['img/email/icon-youtube.png', 'image/png'],
+        'ICON_FACEBOOK' => ['img/email/icon-facebook.png', 'image/png'],
+        'ICON_INSTAGRAM' => ['img/email/icon-instagram.png', 'image/png'],
+        'ICON_TIKTOK' => ['img/email/icon-tiktok.png', 'image/png'],
+        'ICON_WHATSAPP' => ['img/email/icon-whatsapp.png', 'image/png'],
+        'ICON_LINKEDIN' => ['img/email/icon-linkedin.png', 'image/png'],
+    ];
+}
+
 function nt_mail_templates(): array
 {
     $t = [];
@@ -17,7 +32,7 @@ function nt_mail_templates(): array
 <tr><td align="center" style="padding:28px 12px;">
 <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background:#FFFFFF;">
 <tr><td style="padding:22px 24px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
-<td><img src="https://novotechmachinetools.com/img/email/novotech-logo-600.png" width="190" alt="NovoTech Machine Tools Inc." style="display:block;width:190px;height:auto;border:0;"></td>
+<td><img src="{{LOGO}}" width="190" height="65" alt="NovoTech Machine Tools Inc." style="display:block;width:190px;height:auto;border:0;"></td>
 <td align="right" style="font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:#B85C00;padding-left:10px;">Request received</td>
 </tr></table></td></tr>
 <tr><td style="background:#2D2E30;padding:30px 24px 28px 24px;">
@@ -34,18 +49,18 @@ function nt_mail_templates(): array
 <div style="height:22px;line-height:22px;font-size:0;">&nbsp;</div>
 <p style="margin:0 0 16px 0;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;color:#2D2E30;">If you would like to add drawings, photos of your parts or anything else, simply reply to this email.</p>
 <p style="margin:0 0 16px 0;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;color:#2D2E30;">Need an answer sooner? Call us at <a href="tel:+16475265510" style="color:#B85C00;font-weight:bold;text-decoration:none;">+1 647 526 5510</a>, Monday to Friday, 9:00&nbsp;–&nbsp;17:00 Eastern.</p>
-<table role="presentation" align="left" cellpadding="0" cellspacing="0" border="0" style="margin:0 12px 12px 0;"><tr><td style="border-radius:4px;background:#F28A1F;"><a href="{{BROWSE_URL}}" style="display:inline-block;padding:12px 22px;font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:bold;color:#1F1F1F;text-decoration:none;border-radius:4px;">{{BROWSE_LABEL}}</a></td></tr></table><table role="presentation" align="left" cellpadding="0" cellspacing="0" border="0" style="margin:0 12px 12px 0;"><tr><td style="border-radius:4px;border:2px solid #F28A1F;"><a href="https://www.youtube.com/watch?v=ZGo_n6-2_Qc&amp;t=3s" style="display:inline-block;padding:10px 20px;font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:bold;color:#2D2E30;text-decoration:none;">Watch our video</a></td></tr></table><div style="clear:both;height:0;line-height:0;font-size:0;">&nbsp;</div>
+<table role="presentation" align="left" cellpadding="0" cellspacing="0" border="0" style="margin:0 14px 14px 0;"><tr><td align="center" bgcolor="#F28A1F" style="background:#F28A1F;border:2px solid #F28A1F;border-radius:3px;padding:14px 30px;"><a href="{{BROWSE_URL}}" style="display:inline-block;font-family:'Arial Narrow',Arial,Helvetica,sans-serif;font-size:20px;line-height:24px;font-weight:bold;color:#1F2022;text-decoration:none;"><span style="color:#1F2022;">{{BROWSE_LABEL}}</span></a></td></tr></table><table role="presentation" align="left" cellpadding="0" cellspacing="0" border="0" style="margin:0 14px 14px 0;"><tr><td align="center" bgcolor="#FFFFFF" style="background:#FFFFFF;border:2px solid #2D2E30;border-radius:3px;padding:14px 30px;"><a href="https://www.youtube.com/watch?v=ZGo_n6-2_Qc&amp;t=3s" style="display:inline-block;font-family:'Arial Narrow',Arial,Helvetica,sans-serif;font-size:20px;line-height:24px;font-weight:bold;color:#2D2E30;text-decoration:none;"><span style="color:#2D2E30;">Watch our video</span></a></td></tr></table><div style="clear:both;height:0;line-height:0;font-size:0;">&nbsp;</div>
 </td></tr>
 <tr><td style="padding:16px 24px 30px 24px;">
 <p style="margin:0 0 16px 0;font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:25px;color:#2D2E30;margin-bottom:0;">Best regards,<br><b>The sales team</b><br>NovoTech Machine Tools Inc.</p>
 <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-top:18px;">
-<tr><td style="padding:0 0 12px 0;"><img src="https://novotechmachinetools.com/img/email/novotech-signature.gif" width="250" height="84" alt="NovoTech Machine Tools Inc." style="display:block;border:0;outline:none;"></td></tr>
+<tr><td style="padding:0 0 10px 0;"><img src="{{SIG}}" width="260" height="117" alt="NovoTech Machine Tools Inc." style="display:block;border:0;outline:none;"></td></tr>
 <tr><td style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:22px;color:#2D2E30;">
 <a href="https://novotechmachinetools.com" style="color:#B85C00;text-decoration:none;">www.NovoTechMachineTools.com</a><br>
 <a href="mailto:info@NovoTechMachineTools.com" style="color:#B85C00;text-decoration:none;">info@NovoTechMachineTools.com</a><br>
 1365 Mid-Way Blvd 26, Mississauga<br>Ontario L5T 2J5, Canada<br>
-Tel: <a href="tel:+16475265510" style="color:#2D2E30;text-decoration:none;">+1 647 526 5510</a><br>
-<a href="https://www.youtube.com/watch?v=ZGo_n6-2_Qc&amp;t=3s" style="color:#B85C00;text-decoration:none;">Our corporate video</a></td></tr></table>
+Tel: <a href="tel:+16475265510" style="color:#2D2E30;text-decoration:none;">+1 647 526 5510</a></td></tr>
+<tr><td style="padding:12px 0 0 0;"><table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding:0 8px 0 0;"><a href="https://www.youtube.com/@NovoTechMachineTools" style="text-decoration:none;"><img src="{{ICON_YOUTUBE}}" width="28" height="28" alt="YouTube" title="NovoTech on YouTube" style="display:block;border:0;outline:none;"></a></td><td style="padding:0 8px 0 0;"><a href="https://www.facebook.com/novotechmachinetoolscanada" style="text-decoration:none;"><img src="{{ICON_FACEBOOK}}" width="28" height="28" alt="Facebook" title="NovoTech on Facebook" style="display:block;border:0;outline:none;"></a></td><td style="padding:0 8px 0 0;"><a href="https://www.instagram.com/novotech_machinetools/" style="text-decoration:none;"><img src="{{ICON_INSTAGRAM}}" width="28" height="28" alt="Instagram" title="NovoTech on Instagram" style="display:block;border:0;outline:none;"></a></td><td style="padding:0 8px 0 0;"><a href="https://www.tiktok.com/@novotechmachinetools" style="text-decoration:none;"><img src="{{ICON_TIKTOK}}" width="28" height="28" alt="TikTok" title="NovoTech on TikTok" style="display:block;border:0;outline:none;"></a></td><td style="padding:0 8px 0 0;"><a href="https://wa.me/16475265510" style="text-decoration:none;"><img src="{{ICON_WHATSAPP}}" width="28" height="28" alt="WhatsApp" title="NovoTech on WhatsApp" style="display:block;border:0;outline:none;"></a></td><td style="padding:0 8px 0 0;"><a href="https://www.linkedin.com/company/novotech-machine-tools-inc/" style="text-decoration:none;"><img src="{{ICON_LINKEDIN}}" width="28" height="28" alt="LinkedIn" title="NovoTech on LinkedIn" style="display:block;border:0;outline:none;"></a></td></tr></table></td></tr></table>
 </td></tr>
 <tr><td style="background:#2D2E30;padding:16px 24px;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:18px;color:#B4B6BA;">You received this email because you sent a request on NovoTechMachineTools.com.</td></tr>
 </table></td></tr></table>
@@ -73,7 +88,13 @@ info@NovoTechMachineTools.com
 1365 Mid-Way Blvd 26, Mississauga
 Ontario L5T 2J5, Canada
 Tel: +1 647 526 5510
-Our corporate video: https://www.youtube.com/watch?v=ZGo_n6-2_Qc&t=3s
+
+YouTube: https://www.youtube.com/@NovoTechMachineTools
+Facebook: https://www.facebook.com/novotechmachinetoolscanada
+Instagram: https://www.instagram.com/novotech_machinetools/
+TikTok: https://www.tiktok.com/@novotechmachinetools
+WhatsApp: https://wa.me/16475265510
+LinkedIn: https://www.linkedin.com/company/novotech-machine-tools-inc/
 
 NTMAIL;
     $t['summary_row'] = <<<'NTMAIL'
@@ -91,7 +112,7 @@ NTMAIL;
 <tr><td align="center" style="padding:28px 12px;">
 <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background:#FFFFFF;">
 <tr><td style="padding:22px 24px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
-<td><img src="https://novotechmachinetools.com/img/email/novotech-logo-600.png" width="190" alt="NovoTech Machine Tools Inc." style="display:block;width:190px;height:auto;border:0;"></td>
+<td><img src="{{LOGO}}" width="190" height="65" alt="NovoTech Machine Tools Inc." style="display:block;width:190px;height:auto;border:0;"></td>
 <td align="right" style="font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:#B85C00;padding-left:10px;">New quote request</td>
 </tr></table></td></tr>
 <tr><td style="background:#2D2E30;padding:30px 24px 28px 24px;">
@@ -149,10 +170,10 @@ NTMAIL;
 <a href="{{HREF}}" style="color:#F28A1F;text-decoration:none;">{{LABEL}}</a>
 NTMAIL;
     $t['button'] = <<<'NTMAIL'
-<table role="presentation" align="left" cellpadding="0" cellspacing="0" border="0" style="margin:0 12px 12px 0;"><tr><td style="border-radius:4px;background:#F28A1F;"><a href="{{HREF}}" style="display:inline-block;padding:12px 22px;font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:bold;color:#1F1F1F;text-decoration:none;border-radius:4px;">{{LABEL}}</a></td></tr></table>
+<table role="presentation" align="left" cellpadding="0" cellspacing="0" border="0" style="margin:0 14px 14px 0;"><tr><td align="center" bgcolor="#F28A1F" style="background:#F28A1F;border:2px solid #F28A1F;border-radius:3px;padding:14px 30px;"><a href="{{HREF}}" style="display:inline-block;font-family:'Arial Narrow',Arial,Helvetica,sans-serif;font-size:20px;line-height:24px;font-weight:bold;color:#1F2022;text-decoration:none;"><span style="color:#1F2022;">{{LABEL}}</span></a></td></tr></table>
 NTMAIL;
     $t['button_ghost'] = <<<'NTMAIL'
-<table role="presentation" align="left" cellpadding="0" cellspacing="0" border="0" style="margin:0 12px 12px 0;"><tr><td style="border-radius:4px;border:2px solid #F28A1F;"><a href="{{HREF}}" style="display:inline-block;padding:10px 20px;font-family:Arial,Helvetica,sans-serif;font-size:15px;font-weight:bold;color:#2D2E30;text-decoration:none;">{{LABEL}}</a></td></tr></table>
+<table role="presentation" align="left" cellpadding="0" cellspacing="0" border="0" style="margin:0 14px 14px 0;"><tr><td align="center" bgcolor="#FFFFFF" style="background:#FFFFFF;border:2px solid #2D2E30;border-radius:3px;padding:14px 30px;"><a href="{{HREF}}" style="display:inline-block;font-family:'Arial Narrow',Arial,Helvetica,sans-serif;font-size:20px;line-height:24px;font-weight:bold;color:#2D2E30;text-decoration:none;"><span style="color:#2D2E30;">{{LABEL}}</span></a></td></tr></table>
 NTMAIL;
     return $t;
 }

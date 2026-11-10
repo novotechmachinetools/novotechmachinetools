@@ -10,26 +10,44 @@ file again; quote-mail.php is never edited by hand.
     Its first button leads back to the page the request came from, named after it ("Browse band saws").
     quote.php sends it when $AUTOREPLY is true.
 
-The templates hold {{PLACEHOLDERS}}; quote.php fills them with escaped values in one pass (strtr), so a value can never bring in
+The pictures (logo, the owner's animated signature GIF, the social icons) travel inside the e-mails: Outlook does not download
+pictures from the internet by itself (the owner, Nov 9 2026: "the logo does not open").  The templates name them {{LOGO}},
+{{SIG}} and {{ICON_…}}; quote.php puts in cid: references to the attached copies (src/img/email/, listed in IMAGES), or the
+picture's address on the site if the file is missing.  The buttons are tables padded in the cell, which Outlook draws at full
+size, in the look of the site's buttons.
+
+The other {{PLACEHOLDERS}} are filled by quote.php with escaped values in one pass (strtr), so a value can never bring in
 another placeholder.  The customer's own message is never repeated in the automatic reply, so nobody can use the form to send
-a third party a text of their choosing.  The logo and the signature GIF are served from the site (src/img/email/).
+a third party a text of their choosing.
 
     python3 tools/mail_templates.py
 """
+import json
 import os
 import re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "src", "root", "quote-mail.php")
-IMG = "https://novotechmachinetools.com/img/email/"
-LOGO, GIF = IMG + "novotech-logo-600.png", IMG + "novotech-signature.gif"
 SITE = "https://novotechmachinetools.com"
 VIDEO = "https://www.youtube.com/watch?v=ZGo_n6-2_Qc&amp;t=3s"
 PHONE, TEL = "+1 647 526 5510", "tel:+16475265510"
 HOURS = "Monday to Friday, 9:00 – 17:00 Eastern"
 
 ORANGE, ORANGE_TXT, INK, MUTED, BG, LINE = "#F28A1F", "#B85C00", "#2D2E30", "#5A5D62", "#F2F3F5", "#E2E0DC"
+BTN_INK = "#1F2022"                                        # the site's --ink, the text of its orange buttons
 FONT = "Arial,Helvetica,sans-serif"
+BTN_FONT = "'Arial Narrow',Arial,Helvetica,sans-serif"     # the site's buttons are set in a condensed face
+
+# the signature's social row (the owner, Nov 9 2026, in this order), addresses from content/site.json; icons rendered from the
+# site's own icon set (Font Awesome Free, CC BY 4.0) as 56 px PNGs shown at 28 px
+SOCIAL = ["YouTube", "Facebook", "Instagram", "TikTok", "WhatsApp", "LinkedIn"]
+_site = json.load(open(os.path.join(ROOT, "content", "site.json"), encoding="utf-8"))
+_urls = {s["name"]: s["url"] for s in _site.get("social", []) + _site.get("social_more", []) if s.get("url")}
+SOCIAL_LINKS = [(n, _urls[n]) for n in SOCIAL]
+
+# placeholder -> (file under the site root, type); quote.php attaches the ones a template names
+IMAGES = {"LOGO": ("img/email/novotech-logo.png", "image/png"), "SIG": ("img/email/novotech-signature.gif", "image/gif")}
+IMAGES.update({"ICON_" + n.upper(): (f"img/email/icon-{n.lower()}.png", "image/png") for n in SOCIAL})
 
 
 def T(k):
@@ -39,14 +57,16 @@ def T(k):
 
 def signature(top=24):
     a = f"color:{ORANGE_TXT};text-decoration:none;"
+    icons = "".join(f'<td style="padding:0 8px 0 0;"><a href="{u}" style="text-decoration:none;"><img src="{T("ICON_" + n.upper())}" width="28" height="28" '
+                    f'alt="{n}" title="NovoTech on {n}" style="display:block;border:0;outline:none;"></a></td>' for n, u in SOCIAL_LINKS)
     return f'''<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-top:{top}px;">
-<tr><td style="padding:0 0 12px 0;"><img src="{GIF}" width="250" height="84" alt="NovoTech Machine Tools Inc." style="display:block;border:0;outline:none;"></td></tr>
+<tr><td style="padding:0 0 10px 0;"><img src="{T("SIG")}" width="260" height="117" alt="NovoTech Machine Tools Inc." style="display:block;border:0;outline:none;"></td></tr>
 <tr><td style="font-family:{FONT};font-size:14px;line-height:22px;color:{INK};">
 <a href="{SITE}" style="{a}">www.NovoTechMachineTools.com</a><br>
 <a href="mailto:info@NovoTechMachineTools.com" style="{a}">info@NovoTechMachineTools.com</a><br>
 1365 Mid-Way Blvd 26, Mississauga<br>Ontario L5T 2J5, Canada<br>
-Tel: <a href="{TEL}" style="color:{INK};text-decoration:none;">{PHONE}</a><br>
-<a href="{VIDEO}" style="{a}">Our corporate video</a></td></tr></table>'''
+Tel: <a href="{TEL}" style="color:{INK};text-decoration:none;">{PHONE}</a></td></tr>
+<tr><td style="padding:12px 0 0 0;"><table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>{icons}</tr></table></td></tr></table>'''
 
 
 def shell(inner, pre, bg="#FFFFFF"):
@@ -59,15 +79,13 @@ def shell(inner, pre, bg="#FFFFFF"):
 
 
 def button(href, label, solid=True):
-    """a button that wraps under the one before it on a narrow screen (tables aligned left)"""
-    if solid:
-        td = f'<td style="border-radius:4px;background:{ORANGE};">'
-        a = f"display:inline-block;padding:12px 22px;font-family:{FONT};font-size:15px;font-weight:bold;color:#1F1F1F;text-decoration:none;border-radius:4px;"
-    else:
-        td = f'<td style="border-radius:4px;border:2px solid {ORANGE};">'
-        a = f"display:inline-block;padding:10px 20px;font-family:{FONT};font-size:15px;font-weight:bold;color:{INK};text-decoration:none;"
-    return (f'<table role="presentation" align="left" cellpadding="0" cellspacing="0" border="0" style="margin:0 12px 12px 0;"><tr>'
-            f'{td}<a href="{href}" style="{a}">{label}</a></td></tr></table>')
+    """the site's buttons: orange with dark text, or white with a charcoal frame; the padding sits in the cell so Outlook draws the
+    full button, and tables aligned left let the second wrap under the first on a narrow screen"""
+    bg, edge, fg = (ORANGE, ORANGE, BTN_INK) if solid else ("#FFFFFF", INK, INK)
+    return (f'<table role="presentation" align="left" cellpadding="0" cellspacing="0" border="0" style="margin:0 14px 14px 0;"><tr>'
+            f'<td align="center" bgcolor="{bg}" style="background:{bg};border:2px solid {edge};border-radius:3px;padding:14px 30px;">'
+            f'<a href="{href}" style="display:inline-block;font-family:{BTN_FONT};font-size:20px;line-height:24px;font-weight:bold;color:{fg};text-decoration:none;">'
+            f'<span style="color:{fg};">{label}</span></a></td></tr></table>')
 
 
 CLEAR = '<div style="clear:both;height:0;line-height:0;font-size:0;">&nbsp;</div>'
@@ -95,15 +113,19 @@ DRAWINGS = "If you would like to add drawings, photos of your parts or anything 
 SOONER = f"Need an answer sooner? Call us at {CALL}, {HOURS.replace(' – ', '&nbsp;–&nbsp;')}."   # the hours never split over two lines
 
 
+def header(label):
+    return f'''<tr><td style="padding:22px 24px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+<td><img src="{T("LOGO")}" width="190" height="65" alt="NovoTech Machine Tools Inc." style="display:block;width:190px;height:auto;border:0;"></td>
+<td align="right" style="font-family:{FONT};font-size:13px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:{ORANGE_TXT};padding-left:10px;">{label}</td>
+</tr></table></td></tr>'''
+
+
 # ---------------------------------------------------------------------------------------------- the automatic reply
 def auto_reply():
     inner = f'''<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#E9EAEC;">
 <tr><td align="center" style="padding:28px 12px;">
 <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background:#FFFFFF;">
-<tr><td style="padding:22px 24px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
-<td><img src="{LOGO}" width="190" alt="NovoTech Machine Tools Inc." style="display:block;width:190px;height:auto;border:0;"></td>
-<td align="right" style="font-family:{FONT};font-size:13px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:{ORANGE_TXT};padding-left:10px;">Request received</td>
-</tr></table></td></tr>
+{header("Request received")}
 <tr><td style="background:{INK};padding:30px 24px 28px 24px;">
 <h1 style="margin:0;font-family:{FONT};font-size:28px;line-height:34px;font-weight:bold;color:#FFFFFF;">Thank you{T("COMMA_NAME")}!</h1>
 <div style="width:64px;height:4px;line-height:4px;font-size:0;background:{ORANGE};margin-top:14px;">&nbsp;</div>
@@ -147,8 +169,8 @@ info@NovoTechMachineTools.com
 1365 Mid-Way Blvd 26, Mississauga
 Ontario L5T 2J5, Canada
 Tel: {PHONE}
-Our corporate video: {VIDEO.replace("&amp;", "&")}
-"""
+
+""" + "\n".join(f"{n}: {u}" for n, u in SOCIAL_LINKS) + "\n"
 
 
 # ---------------------------------------------------------------------------------------------- the notification to the sales inbox
@@ -158,10 +180,7 @@ def notification():
     inner = f'''<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#E9EAEC;">
 <tr><td align="center" style="padding:28px 12px;">
 <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background:#FFFFFF;">
-<tr><td style="padding:22px 24px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
-<td><img src="{LOGO}" width="190" alt="NovoTech Machine Tools Inc." style="display:block;width:190px;height:auto;border:0;"></td>
-<td align="right" style="font-family:{FONT};font-size:13px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:{ORANGE_TXT};padding-left:10px;">New quote request</td>
-</tr></table></td></tr>
+{header("New quote request")}
 <tr><td style="background:{INK};padding:30px 24px 28px 24px;">
 <h1 style="margin:0;font-family:{FONT};font-size:28px;line-height:34px;font-weight:bold;color:#FFFFFF;word-break:break-word;">{T("NAME")}</h1>
 {T("COMPANY")}
@@ -216,9 +235,15 @@ def php():
            " */",
            "if (!defined('NT_QUOTE')) { http_response_code(404); exit; }",
            "",
-           "function nt_mail_templates(): array",
+           "// the pictures the templates name: placeholder => [file under the site root, type]",
+           "function nt_mail_images(): array",
            "{",
-           "    $t = [];"]
+           "    return ["]
+    out += [f"        '{k}' => ['{f}', '{t}']," for k, (f, t) in IMAGES.items()]
+    out += ["    ];", "}", "",
+            "function nt_mail_templates(): array",
+            "{",
+            "    $t = [];"]
     for k, v in TEMPLATES.items():
         assert "NTMAIL" not in v, k
         out += [f"    $t['{k}'] = <<<'NTMAIL'", v, "NTMAIL;"]
@@ -227,7 +252,9 @@ def php():
 
 
 if __name__ == "__main__":
+    for k, (f, _) in IMAGES.items():
+        assert os.path.isfile(os.path.join(ROOT, "src", f)), f"missing picture {f}"
     used = sorted({m for v in TEMPLATES.values() for m in re.findall(r"\{\{(\w+)\}\}", v)})
     with open(OUT, "w", encoding="utf-8") as fh:
         fh.write(php())
-    print(f"{os.path.relpath(OUT, ROOT)}: {len(TEMPLATES)} templates; placeholders {', '.join(used)}")
+    print(f"{os.path.relpath(OUT, ROOT)}: {len(TEMPLATES)} templates, {len(IMAGES)} pictures; placeholders {', '.join(used)}")
