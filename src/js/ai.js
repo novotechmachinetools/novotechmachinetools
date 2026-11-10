@@ -325,7 +325,12 @@
     // rebar sizes
     if ((m = /#\s?(\d{1,2})\b/.exec(n)) && US_BARS[m[1]]) N.bar = US_BARS[m[1]];
     if ((m = /\b(10|15|20|25|30|35|45|55)\s?m\b/.exec(n)) && (req.mat === "rebar" || /rebar|bar|bend|cut/.test(n))) N.bar = CA_BARS[m[1]];
-    if (!N.bar && req.mat === "rebar" && (m = /(\d+(?:\.\d+)?)\s?mm/.exec(n))) N.bar = +m[1];
+    if (!N.bar && req.mat === "rebar" && (m = /(\d+(?:\.\d+)?)\s*mm\b/.exec(n))) N.bar = +m[1];
+    // a bare number with rebar is the bar size in mm ("bend rebar 25", "میلگرد ۲۵ خم کن" — the owner, Nov 9 2026)
+    if (!N.bar && req.mat === "rebar") {
+      var bare = n.replace(/\d+(?:[.\/]\d+)?\s*(?:"|'|°|%|cm\b|m\b|kg|lbs?\b|t\b|tons?\b|hp\b|kw\b|v\b|ga\b|gauge)/g, " ");
+      if ((m = /(?:^|\s)(\d{1,2})(?=\s|$)/.exec(bare)) && +m[1] >= 6 && +m[1] <= 60) N.bar = CA_BARS[m[1]] || +m[1];
+    }
     if (N.bar) req._barOnly = true;
     // gauge
     if ((m = /\b(\d{1,2})\s?(?:ga|gauge|gage)\b/.exec(n)) && GA[m[1]]) N.thk = GA[m[1]];
@@ -1384,11 +1389,13 @@
   function modelsLabel(names) { return names.length < 3 ? names.join(" · ") : names[0] + " … " + names[names.length - 1] + " (" + names.length + ")"; }
   function cardImg(e) {
     var m = e.mi != null ? e.f.models[e.mi] : null;
-    // a series card shows each model's own photo once, with the models it shows (the owner, Nov 9 2026: not one photo for
-    // HRBM 50 and HRBM 65; models that share a photo, or have none, are not repeated)
-    if (!m) {
+    // a card shows each model's own photo once, with the models it shows (the owner, Nov 9 2026: not one photo for HRBM 50
+    // and HRBM 65; and a BT 26 that also does the job is seen, not only named): a series card all its models, a model card
+    // the model with the other sizes of its series that also do the job. Models that share a photo, or have none, are not repeated
+    var shown = !m ? e.f.models : [m].concat((e.also || []).map(function (nm) { return e.f.models.filter(function (x) { return x.name === nm; })[0]; }).filter(Boolean));
+    if (shown.length > 1) {
       var groups = [], bySrc = {};
-      e.f.models.forEach(function (x) {
+      shown.forEach(function (x) {
         if (!x.img) return;
         var g = bySrc[x.img.src];
         if (!g) { g = bySrc[x.img.src] = { img: x.img, names: [] }; groups.push(g); }
