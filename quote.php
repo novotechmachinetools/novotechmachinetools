@@ -16,8 +16,8 @@ $TO        = 'info@NovoTechMachineTools.com';
 $FROM      = 'website@novotechmachinetools.com';   // must be a mailbox on this domain for HostPapa's mail server
 $SUBJECT   = 'Quote request from NovoTechMachineTools.com';
 $MIN_SECS  = 4;                                     // forms submitted faster than this are bots
-$MAX_FILES = 5;
-$MAX_BYTES = 10 * 1024 * 1024;                      // all attachments together
+$MAX_FILES = 10;                                    // the owner, Nov 9 2026 (was 5 files and 10 MB)
+$MAX_BYTES = 13 * 1024 * 1024;                      // all attachments together; the e-mail stays under 20 MB
 $OK_EXT    = ['pdf', 'dwg', 'dxf', 'step', 'stp', 'igs', 'iges', 'sldprt', 'x_t', 'jpg', 'jpeg', 'png', 'heic', 'webp', 'zip',
               'xls', 'xlsx', 'doc', 'docx', 'txt', 'csv'];
 
@@ -47,8 +47,10 @@ function respond(bool $ok, string $msg, int $code = 200): void {
     } else {
         header('Content-Type: text/html; charset=utf-8');
         $title = $ok ? 'Thank you' : 'Something went wrong';
+        $tick  = $ok ? '<svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true" style="vertical-align:-4px;margin-right:10px"><circle cx="12" cy="12" r="12" fill="#43A047"/><path d="M6.8 12.4l3.4 3.4 7-7.4" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>' : '';
+        $color = $ok ? ' style="color:#43A047"' : '';
         echo "<!doctype html><html lang=\"en\"><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta name=\"robots\" content=\"noindex\"><title>$title — NovoTech Machine Tools</title>"
-           . "<body style=\"font-family:Arial,sans-serif;max-width:40em;margin:3em auto;padding:0 1em;line-height:1.5\"><h1>$title</h1><p>" . htmlspecialchars($msg, ENT_QUOTES, 'UTF-8') . "</p>"
+           . "<body style=\"font-family:Arial,sans-serif;max-width:40em;margin:3em auto;padding:0 1em;line-height:1.5\"><h1$color>$tick$title</h1><p$color>" . htmlspecialchars($msg, ENT_QUOTES, 'UTF-8') . "</p>"
            . "<p><a href=\"javascript:history.back()\">Go back</a> · <a href=\"/\">NovoTech home</a></p></body></html>";
     }
     exit;
@@ -227,7 +229,7 @@ if (($_SERVER['REQUEST_METHOD'] ?? '') !== 'POST') {
 
 // A request larger than PHP's post_max_size arrives with $_POST and $_FILES empty.
 if (empty($_POST) && (int)($_SERVER['CONTENT_LENGTH'] ?? 0) > 0) {
-    respond(false, 'The attached files are too large. Please keep attachments under 10 MB in total, or email larger files to info@NovoTechMachineTools.com.', 413);
+    respond(false, 'The attached files are too large. Please keep attachments under ' . intdiv($MAX_BYTES, 1048576) . ' MB in total, or email larger files to info@NovoTechMachineTools.com.', 413);
 }
 
 $f = static function (string $k, int $max = 500): string {
@@ -298,7 +300,7 @@ if (isset($_FILES['files']) && is_array($_FILES['files']['name'] ?? null)) {
         $err = (int)$_FILES['files']['error'][$i];
         if ($err === UPLOAD_ERR_NO_FILE) { continue; }
         if ($err === UPLOAD_ERR_INI_SIZE || $err === UPLOAD_ERR_FORM_SIZE) {
-            respond(false, 'One of the files is too large. Please keep attachments under 10 MB in total, or email larger files to info@NovoTechMachineTools.com.', 413);
+            respond(false, 'One of the files is too large. Please keep attachments under ' . intdiv($MAX_BYTES, 1048576) . ' MB in total, or email larger files to info@NovoTechMachineTools.com.', 413);
         }
         if ($err !== UPLOAD_ERR_OK) { respond(false, 'A file could not be uploaded. Please try again.', 400); }
         $tmp = (string)$_FILES['files']['tmp_name'][$i];
@@ -312,7 +314,7 @@ if (isset($_FILES['files']) && is_array($_FILES['files']['name'] ?? null)) {
         $total += $size;
         if (count($files) >= $MAX_FILES) { respond(false, "Please attach up to $MAX_FILES files.", 413); }
         if ($total > $MAX_BYTES) {
-            respond(false, 'The files add up to more than 10 MB. Please send fewer or smaller files, or email them to info@NovoTechMachineTools.com.', 413);
+            respond(false, 'The files add up to more than ' . intdiv($MAX_BYTES, 1048576) . ' MB. Please send fewer or smaller files, or email them to info@NovoTechMachineTools.com.', 413);
         }
         $base = preg_replace('/[^A-Za-z0-9._ ()-]+/', '_', pathinfo($orig, PATHINFO_FILENAME));
         $base = trim(mb_substr((string)$base, 0, 80), ' ._') ?: 'attachment';
