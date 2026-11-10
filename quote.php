@@ -179,9 +179,9 @@ function nt_notification(array $M, array $d): array {
         $files = $box('Attached files (' . count($d['files']) . ')', nt_fill($M['files_table'], ['LIST' => $list]));
     }
     $text = $d['message'] !== '' ? nl2br(nt_e($d['message']), false) : nt_fill($M['muted'], ['T' => 'No message']);
-    $buttons = nt_fill($M['button'], ['HREF' => nt_e($mailto . '?subject=' . rawurlencode('Re: Your request to NovoTech Machine Tools')),
-                                      'LABEL' => 'Reply to ' . nt_e(mb_substr($d['name'], 0, 40))])
-             . (strlen($tel) >= 7 ? nt_fill($M['button_ghost'], ['HREF' => nt_e("tel:$tel"), 'LABEL' => 'Call ' . nt_e($d['phone'])]) : '');
+    // no "Reply to" button: a button in an e-mail can only open a new, empty message, while the mail program's own Reply
+    // answers the customer (Reply-To) with this request below it (the owner, Nov 9 2026)
+    $buttons = strlen($tel) >= 7 ? nt_fill($M['button'], ['HREF' => nt_e("tel:$tel"), 'LABEL' => 'Call ' . nt_e($d['phone'])]) : '';
     $footer = 'Sent from IP ' . nt_e($d['ip'])
             . ($d['url'] !== '' ? '<br>Form on ' . $link($d['url'], $d['url'], 'link_dark') : ($d['ref'] !== '' ? '<br>Form on ' . nt_e($d['ref']) : ''));
     $pre = array_filter([$d['name'], $d['company'], $m], static function ($x) { return $x !== ''; });
