@@ -1331,8 +1331,7 @@
     if (inList) out += "</ul>";
     return out.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>").replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, function (m, t, url) {
       var own = /^(\/|#|[a-z0-9-]+(\.html)?(#[\w-]+)?$)/i.test(url) || /^https?:\/\/(www\.)?novotechmachinetools\.(com|github\.io)\b/i.test(url);
-      // the Contact us page opens in a new tab, so the chat stays open (the owner, Nov 9 2026)
-      return own ? '<a href="' + url.replace(/^\/(?!\/)/, "") + '"' + (/contact-us/.test(url) ? ' target="_blank" rel="noopener"' : "") + ">" + t + "</a>" : t;
+      return own ? '<a href="' + url.replace(/^\/(?!\/)/, "") + '" target="_blank" rel="noopener">' + t + "</a>" : t;
     });
   }
   function scrollTo(node) {
@@ -1665,6 +1664,14 @@
     d.addEventListener("visibilitychange", function () { if (d.hidden) stopSpeaking(); });
   }
 
+  /* every link in the chat opens in a new tab — answers, machine cards, the Contact us page — so the conversation stays
+     there to go on with or read again, and several machines can be open side by side (the owner, Nov 9 2026) */
+  log.addEventListener("click", function (e) {
+    var a = e.target.closest ? e.target.closest("a[href]") : null;
+    if (!a || /^(tel:|mailto:)/i.test(a.getAttribute("href") || "")) return;
+    a.target = "_blank";
+    a.rel = "noopener";
+  }, true);
   form.addEventListener("submit", function (e) { e.preventDefault(); var q = input.value; input.value = ""; autosize(); ask(q); });
   input.addEventListener("keydown", function (e) { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); form.requestSubmit ? form.requestSubmit() : form.dispatchEvent(new Event("submit")); } });
   function autosize() { input.style.height = "auto"; input.style.height = Math.min(140, input.scrollHeight + 2) + "px"; }
