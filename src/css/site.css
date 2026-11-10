@@ -486,7 +486,8 @@ small { font-size: .85em; }
 .form-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
 .form-status { margin: 0; font-weight: 500; color: var(--charcoal-2); }
 .form-status.is-error { color: #B3261E; }
-.form-status.is-ok { color: #1B5E20; }
+.form-status.is-ok { color: #43A047; display: flex; align-items: center; gap: 10px; }   /* lighter green and a tick: sent (the owner, Nov 9 2026) */
+.form-status.is-ok::before { content: ""; flex: none; width: 1.2em; height: 1.2em; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='12' fill='%2343A047'/%3E%3Cpath d='M6.8 12.4l3.4 3.4 7-7.4' fill='none' stroke='%23fff' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat; }
 
 
 /* ---------- hub: sub-page panels and family cards ---------- */

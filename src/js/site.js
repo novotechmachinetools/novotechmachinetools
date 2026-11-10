@@ -670,7 +670,7 @@
   if (form && window.fetch && window.FormData) {
     var status = form.querySelector(".form-status");
     var fileIn = form.querySelector("input[type=file]");
-    var MAX_FILES = 5, MAX_BYTES = 10 * 1024 * 1024;
+    var MAX_FILES = 10, MAX_BYTES = 13 * 1024 * 1024;   // as in quote.php (the owner, Nov 9 2026)
     var OK_EXT = /\.(pdf|dwg|dxf|step|stp|igs|iges|sldprt|x_t|jpe?g|png|heic|webp|zip|xlsx?|docx?|txt|csv)$/i;
     var say = function (cls, msg, html) { status.className = "form-status" + (cls ? " " + cls : ""); if (html) status.innerHTML = msg; else status.textContent = msg; };
     var checkFiles = function () {
@@ -681,7 +681,7 @@
         total += fs[i].size;
         if (!OK_EXT.test(fs[i].name)) msg = "“" + fs[i].name + "” is not a file type we accept — please send PDF, DWG, DXF, STEP, IGES, JPG, PNG, ZIP, Excel or Word files.";
       }
-      if (!msg && total > MAX_BYTES) msg = "The files add up to " + (total / 1048576).toFixed(1) + " MB — please keep attachments under 10 MB in total, or email larger files to " + EMAIL + ".";
+      if (!msg && total > MAX_BYTES) msg = "The files add up to " + (total / 1048576).toFixed(1) + " MB — please keep attachments under " + MAX_BYTES / 1048576 + " MB in total, or email larger files to " + EMAIL + ".";
       fileIn.setAttribute("aria-invalid", msg ? "true" : "false");
       return msg;
     };
