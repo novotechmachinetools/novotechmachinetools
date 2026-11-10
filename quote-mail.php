@@ -113,7 +113,7 @@ NTMAIL;
 <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background:#FFFFFF;border:1px solid #E2E0DC;">
 <tr><td style="padding:22px 24px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
 <td><img src="{{LOGO}}" width="190" height="65" alt="NovoTech Machine Tools Inc." style="display:block;width:190px;height:auto;border:0;"></td>
-<td align="right" style="font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:#B85C00;padding-left:10px;">New quote request</td>
+<td align="right" style="font-family:Arial,Helvetica,sans-serif;font-size:13px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:#B85C00;padding-left:10px;">{{LABEL}}</td>
 </tr></table></td></tr>
 <tr><td style="background:#2D2E30;padding:30px 24px 28px 24px;">
 <h1 style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:28px;line-height:34px;font-weight:bold;color:#FFFFFF;word-break:break-word;">{{NAME}}</h1>
