@@ -906,7 +906,10 @@ def apply_extra_groups(loaded):
     another generator writes — e.g. the NovoTech value-line cold saws on circular-cold-saws.html — so that generator need not change:
         {"slug": page, "family_set": set, "groups": [{"id", "title", "lead", "brand", "families": [...], "after": group id}],
          "subpages": [{"slug", "title", "image", "blurb", "nav_label", "families", "in_range": false, "after": slug}],
-         "intro_add": text, "points_add": [...], "faq_add": [...], "related_add": [...], "set": {field: value}}"""
+         "subpage_add": {slug: {"families": [...], "blurb_add": text}},
+         "intro_add": text, "points_add": [...], "faq_add": [...], "related_add": [...], "set": {field: value}}
+    "subpage_add" puts families of the other set into a hub's existing section card and line-up (as "set:id"), e.g. the
+    NovoTech value-line ESR / HER slip rolls in the plate-roller hub (the owner, Nov 10 2026)."""
     d = os.path.join(ROOT, "content", "extra_groups")
     if not os.path.isdir(d):
         return
@@ -928,6 +931,17 @@ def apply_extra_groups(loaded):
                 if any(o[idkey] == e[idkey] for o in lst):
                     raise SystemExit(f"content/extra_groups/{fn}: {key} {e[idkey]} is already on {x['slug']}")
                 lst.insert(pos, e)
+        for sslug, add in (x.get("subpage_add") or {}).items():
+            sp = next((s for s in p.get("subpages", []) if s["slug"] == sslug), None)
+            if sp is None:
+                raise SystemExit(f"content/extra_groups/{fn}: {x['slug']} has no section page {sslug}")
+            fset = add.get("family_set") or x.get("family_set")
+            for fid in add.get("families", []):
+                if fid not in FAMILY_SETS.get(fset, {}):
+                    raise SystemExit(f"content/extra_groups/{fn}: unknown family {fset}:{fid}")
+            sp["families"] = list(sp.get("families", [])) + [f"{fset}:{fid}" for fid in add.get("families", [])]
+            if add.get("blurb_add"):
+                sp["blurb"] = (sp.get("blurb") or "").rstrip() + " " + add["blurb_add"]
         if x.get("intro_add"):
             p["intro"] = p["intro"].rstrip() + " " + x["intro_add"]
         if x.get("points_add"):
@@ -1682,7 +1696,9 @@ def render_page(page):
     page = dict(page)
     if page.get("subpages"):  # hub: resolve each sub-page's families and derive groups for the quote form / structured data
         for sp in page["subpages"]:
-            sp["families"] = [prepare_family(family(page, fid, sp.get("family_set"))) for fid in sp["families"]]
+            # "set:id" is a family of another set (content/extra_groups "subpage_add")
+            sp["families"] = [prepare_family(family(page, fid.split(":", 1)[1], fid.split(":", 1)[0]) if ":" in fid
+                                             else family(page, fid, sp.get("family_set"))) for fid in sp["families"]]
             sp["has_videos"] = any(f.get("videos") for f in sp["families"])
             sp["href"] = sp["slug"] + ".html"
         page["groups"] = [{"id": sp["slug"], "title": sp["title"], "families": sp["families"]} for sp in page["subpages"]]
