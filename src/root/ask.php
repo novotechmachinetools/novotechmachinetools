@@ -27,6 +27,13 @@ $RATE_N    = (int)($cfg['rate_limit'] ?? 40);        // questions per IP per win
 $RATE_SECS = (int)($cfg['rate_window'] ?? 600);      // window length in seconds
 $DAY_N     = (int)($cfg['daily_limit'] ?? 400);      // questions per day for the whole site (a cost ceiling)
 $API_URL   = $cfg['api_url'] ?? 'https://api.anthropic.com/v1/messages';
+// a visitor who asks in the chat to be contacted: the details go to the sales inbox (the owner, Nov 9 2026), in the look
+// of the quote form's e-mails (quote-mail.php, mail-lib.php)
+$CONTACT_TO   = 'info@NovoTechMachineTools.com';
+$CONTACT_FROM = 'website@novotechmachinetools.com';
+define('NT_QUOTE', true);
+$MAIL = is_file(__DIR__ . '/quote-mail.php') ? (array)(require __DIR__ . '/quote-mail.php') : [];
+if (is_file(__DIR__ . '/mail-lib.php')) { require __DIR__ . '/mail-lib.php'; }
 
 function fail(string $code, string $msg, int $http = 200): void {
     http_response_code($http);
@@ -216,6 +223,7 @@ Rules:
 - Two lines: the NovoTech premium line (built in Turkey and Europe, heavier construction) and the NovoTech value line (lower price). A machine whose line is "NovoTech premium line" is sold only under NovoTech's name — never name another maker for it, and never use words from the ids as brand names.
 - Every machine ships with a CSA-approved electrical panel; three-phase machines are supplied for 600 V (208, 240 or 480 V on request). Every new machine has a 1-year warranty; in-stock models have a 7-day money-back guarantee; financing with 0% down is available through NovoTech's financing partners; NovoTech delivers, installs and trains across Canada, with spare parts and support from Mississauga. Mention these only when relevant.
 - NovoTech does not publish prices: for a price or quote, invite the visitor to use "Get a quote" on the machine's card or page, or to call or email.
+- When the visitor wants NovoTech to contact them (to call back, send a quote, arrange a visit) or offers their contact details, ask for what is missing: their name and an email address or a phone number (company and city are welcome); never ask for anything else personal. Also give them the link [Contact us](/contact-us) in case they prefer to fill in the form themselves. Once you have a name and an email or phone, thank them and say NovoTech's sales team will contact them as soon as possible (normally within one business day), and add on its own line, just before the RESULTS line: CONTACT: {"name": "...", "email": "...", "phone": "...", "company": "...", "summary": "what they need, in English, one or two sentences"} — one line of JSON, empty strings for what they did not give, written once for the same details (not again in later answers unless they give new details).
 - Answer in the language the visitor writes in. Write like a helpful chat: short paragraphs, a list when it helps, model names in **bold**, inches first with millimetres in brackets when useful. No headings, no marketing fluff.
 - End EVERY answer with one last line exactly in this form: RESULTS: {"use_engine": true}   when the engine's lists are right (most of the time). When you correct or replace them — the engine found nothing, misunderstood the question, or missed or wrongly listed a machine — give the complete lists instead, in order, ids and model names exactly as in the catalogue (model "" for a whole series): RESULTS: {"fits": [{"id": "...", "model": "..."}], "maybe": [{"id": "...", "model": "...", "note": "why it may also do it"}]}
 
@@ -246,8 +254,10 @@ if ($CLI) {
 
 /** the answer the visitor sees: nothing from RESULTS on, and NovoTech's own name for its premium line */
 function visible(string $t): string {
-    $i = strpos($t, 'RESULTS:');
-    if ($i !== false) { $t = substr($t, 0, $i); }
+    foreach (['CONTACT:', 'RESULTS:'] as $mark) {
+        $i = strpos($t, $mark);
+        if ($i !== false) { $t = substr($t, 0, $i); }
+    }
     return (string)preg_replace('/\b[ŞS]ahinler\b/iu', 'NovoTech premium line', rtrim($t));
 }
 /** the lists Claude gave, checked against the catalogue */
@@ -272,6 +282,109 @@ function results(string $t, array $byId): array {
     return ($fitsOut || $maybeOut) ? ['fits' => $fitsOut, 'maybe' => $maybeOut] : ['use_engine' => true];
 }
 
+/**
+ * A visitor who asked in the chat to be contacted (the owner, Nov 9 2026): Claude writes their details on a CONTACT line,
+ * and they go to the sales inbox with the conversation — once for the same details, at most 5 a day from one IP.
+ * Returns 'sent', 'failed', 'repeat', or null when the answer has no contact line.
+ */
+function chat_contact(string $acc, array $messages, string $answer, string $page, string $pageName, array $M, string $to, string $from): ?string {
+    if (!preg_match('/^\s*CONTACT:\s*(\{.*\})\s*$/mu', $acc, $mm)) { return null; }
+    $j = json_decode($mm[1], true);
+    if (!is_array($j) || !function_exists('nt_fill') || !isset($M['notify'], $M['box'])) { return null; }
+    $s = static function (string $k, int $max) use ($j): string {
+        return trim(mb_substr((string)preg_replace('/[\r\n\t]+/u', ' ', (string)($j[$k] ?? '')), 0, $max));
+    };
+    $name = $s('name', 80);
+    $email = $s('email', 120);
+    $phone = $s('phone', 40);
+    $company = $s('company', 120);
+    $summary = $s('summary', 600);
+    if ($email !== '' && !filter_var($email, FILTER_VALIDATE_EMAIL)) { $email = ''; }
+    $tel = (string)preg_replace('/[^0-9+]/', '', $phone);
+    if (strlen($tel) < 7) { $phone = ''; $tel = ''; }
+    if ($name === '' || ($email === '' && $phone === '')) { return null; }
+    $ip = (string)($_SERVER['REMOTE_ADDR'] ?? '?');
+    $fh = @fopen(rtrim(sys_get_temp_dir(), '/\\') . '/nt-chat-contact-' . substr(md5(__DIR__), 0, 10) . '.json', 'c+');
+    if ($fh !== false && flock($fh, LOCK_EX)) {
+        $now = time();
+        $log = json_decode((string)stream_get_contents($fh), true);
+        $keep = [];
+        foreach (is_array($log) ? $log : [] as $r) {
+            if (is_array($r) && count($r) === 3 && (int)$r[0] > $now - 86400) { $keep[] = $r; }
+        }
+        $who = substr(hash('sha256', mb_strtolower($name . '|' . $email . '|' . $tel)), 0, 20);
+        $iph = substr(hash('sha256', 'i|' . $ip), 0, 20);
+        $same = 0;
+        $byIp = 0;
+        foreach ($keep as $r) {
+            if ($r[1] === $who) { $same++; }
+            if ($r[2] === $iph) { $byIp++; }
+        }
+        $ok = $same === 0 && $byIp < 5;
+        if ($ok) { $keep[] = [$now, $who, $iph]; }
+        ftruncate($fh, 0);
+        rewind($fh);
+        fwrite($fh, (string)json_encode($keep));
+        fflush($fh);
+        flock($fh, LOCK_UN);
+        fclose($fh);
+        if (!$ok) { return 'repeat'; }
+    }
+    $when = (new DateTime('now', new DateTimeZone('America/Toronto')))->format('F j, Y, g:i A T');
+    $url = preg_match('/^[a-z0-9-]+$/', $page) ? 'https://novotechmachinetools.com/' . ($page === 'index' ? '' : $page) : '';
+    $link = static function (string $href, string $label, string $tpl = 'link') use ($M): string {
+        return nt_fill($M[$tpl], ['HREF' => nt_e($href), 'LABEL' => nt_e($label)]);
+    };
+    $row = static function (string $k, string $v) use ($M): string { return nt_fill($M['summary_row'], ['K' => nt_e($k), 'V' => $v]); };
+    $box = static function (string $title, string $body) use ($M): string { return nt_fill($M['box'], ['TITLE' => nt_e($title), 'BODY' => $body]); };
+    $rows = ($email !== '' ? $row('Email', $link('mailto:' . str_replace('%40', '@', rawurlencode($email)), $email)) : '')
+          . ($phone !== '' ? $row('Phone', $link("tel:$tel", $phone)) : '')
+          . ($url !== '' ? $row('Page', $link($url, $pageName !== '' ? $pageName : $page)) : '')
+          . $row('Received', nt_e($when));
+    $conv = '';
+    $convText = '';
+    foreach (array_merge($messages, [['role' => 'assistant', 'content' => $answer]]) as $m) {
+        $who = $m['role'] === 'user' ? 'Visitor' : 'NovoTech AI';
+        $c = mb_substr((string)$m['content'], 0, 1500);
+        // the chat's own markup: **bold** and [links](/page)
+        $h = (string)preg_replace(['/\*\*(.+?)\*\*/u', '/\[([^\]]+)\]\([^)\s]+\)/u'], ['<b>$1</b>', '$1'], nl2br(nt_e($c), false));
+        $conv .= '<p style="margin:0 0 10px 0;"><b>' . $who . ':</b> ' . $h . '</p>';
+        $convText .= $who . ': ' . preg_replace(['/\*\*(.+?)\*\*/u', '/\[([^\]]+)\]\([^)\s]+\)/u'], ['$1', '$1'], $c) . "\n\n";
+    }
+    list($src, $images) = nt_images($M['notify']);
+    $pre = array_filter([$name, $company, $summary], static function ($x) { return $x !== ''; });
+    $html = nt_fill($M['notify'], $src + [
+        'LABEL'   => 'Contact from the AI chat',
+        'PRE'     => nt_e(implode(' · ', $pre)),
+        'NAME'    => nt_e($name),
+        'COMPANY' => $company !== '' ? nt_fill($M['notify_company'], ['T' => nt_e($company)]) : '',
+        'ABOUT'   => nt_e($summary !== '' ? $summary : 'Asked to be contacted'),
+        'DETAILS' => $box('Details', nt_fill($M['rows_table'], ['ROWS' => $rows])),
+        'MESSAGE' => $box('Conversation', nt_fill($M['text_block'], ['TEXT' => $conv])),
+        'FILES'   => '',
+        'BUTTONS' => $tel !== '' ? nt_fill($M['button'], ['HREF' => nt_e("tel:$tel"), 'LABEL' => 'Call ' . nt_e($phone)]) : '',
+        'FOOTER'  => 'Sent from IP ' . nt_e($ip) . ($url !== '' ? '<br>Chat on ' . $link($url, $url, 'link_dark') : ''),
+    ]);
+    $text = "Contact request from the AI chat on NovoTechMachineTools.com\n\nName: $name\n"
+          . ($company !== '' ? "Company: $company\n" : '') . ($email !== '' ? "Email: $email\n" : '') . ($phone !== '' ? "Phone: $phone\n" : '')
+          . ($summary !== '' ? "Needs: $summary\n" : '') . ($url !== '' ? "Page: $url\n" : '') . "Received: $when\n\nConversation\n\n" . $convText;
+    $b = 'NTC-' . bin2hex(random_bytes(12));
+    $headers = ["From: NovoTech website <$from>"];
+    if ($email !== '') { $headers[] = 'Reply-To: ' . nt_addr($name, $email); }
+    $headers[] = 'MIME-Version: 1.0';
+    $headers[] = 'X-Mailer: NovoTech-ai-chat';
+    $headers[] = "Content-Type: multipart/alternative; boundary=\"$b\"";
+    $subject = '=?UTF-8?B?' . base64_encode('Chat contact — ' . $name . ($company !== '' ? " ($company)" : '')) . '?=';
+    $sent = @mail($to, $subject, "This is a multi-part message in MIME format.\r\n\r\n" . nt_alternative($text, $html, $b, $images),
+                  implode("\r\n", $headers), "-f$from");
+    return $sent ? 'sent' : 'failed';
+}
+
+$page = isset($in['page']) ? (string)preg_replace('/[^a-z0-9-]/', '', strtolower((string)$in['page'])) : '';
+$pageName = '';
+foreach ($cat['pages'] ?? [] as $p) {
+    if (($p['slug'] ?? '') === $page) { $pageName = (string)(($p['nav'] ?? '') ?: explode(' — ', (string)($p['h1'] ?? ''))[0]); break; }
+}
 $headers = ['Content-Type: application/json', 'x-api-key: ' . $API_KEY, 'anthropic-version: 2023-06-01'];
 
 if (!$stream) {
@@ -294,7 +407,8 @@ if (!$stream) {
         if (($block['type'] ?? '') === 'text') { $text .= $block['text']; }
     }
     header('Content-Type: application/json; charset=utf-8');
-    echo json_encode(['answer' => visible($text), 'results' => results($text, $byId), 'model' => $MODEL], JSON_UNESCAPED_UNICODE);
+    $contact = chat_contact($text, $messages, visible($text), $page, $pageName, $MAIL, $CONTACT_TO, $CONTACT_FROM);
+    echo json_encode(['answer' => visible($text), 'results' => results($text, $byId), 'model' => $MODEL, 'contact' => $contact], JSON_UNESCAPED_UNICODE);
     exit;
 }
 
@@ -331,7 +445,7 @@ curl_setopt_array($ch, [
                     $acc .= (string)$d['delta']['text'];
                     // send what is safe: hold back the last characters (a name or "RESULTS:" may be half written)
                     $vis = visible($acc);
-                    $safe = strpos($acc, 'RESULTS:') !== false ? mb_strlen($vis) : max(0, mb_strlen($vis) - 12);
+                    $safe = (strpos($acc, 'RESULTS:') !== false || strpos($acc, 'CONTACT:') !== false) ? mb_strlen($vis) : max(0, mb_strlen($vis) - 12);
                     if ($safe > $sent) { $emit(['t' => mb_substr($vis, $sent, $safe - $sent)]); $sent = $safe; }
                 } elseif (($d['type'] ?? '') === 'error') {
                     $upErr = (string)($d['error']['message'] ?? 'error');
@@ -353,4 +467,5 @@ if ($http >= 400 || $err !== '' || ($upErr !== '' && $acc === '')) {
 }
 $vis = visible($acc);
 if (mb_strlen($vis) > $sent) { $emit(['t' => mb_substr($vis, $sent)]); }
-$emit(['done' => true, 'answer' => $vis, 'results' => results($acc, $byId), 'model' => $MODEL]);
+$contact = chat_contact($acc, $messages, $vis, $page, $pageName, $MAIL, $CONTACT_TO, $CONTACT_FROM);
+$emit(['done' => true, 'answer' => $vis, 'results' => results($acc, $byId), 'model' => $MODEL, 'contact' => $contact]);

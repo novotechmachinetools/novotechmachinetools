@@ -1331,7 +1331,8 @@
     if (inList) out += "</ul>";
     return out.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>").replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, function (m, t, url) {
       var own = /^(\/|#|[a-z0-9-]+(\.html)?(#[\w-]+)?$)/i.test(url) || /^https?:\/\/(www\.)?novotechmachinetools\.(com|github\.io)\b/i.test(url);
-      return own ? '<a href="' + url.replace(/^\/(?!\/)/, "") + '">' + t + "</a>" : t;
+      // the Contact us page opens in a new tab, so the chat stays open (the owner, Nov 9 2026)
+      return own ? '<a href="' + url.replace(/^\/(?!\/)/, "") + '"' + (/contact-us/.test(url) ? ' target="_blank" rel="noopener"' : "") + ">" + t + "</a>" : t;
     });
   }
   function scrollTo(node) {
@@ -1491,7 +1492,7 @@
     });
     return out;
   }
-  function visible(t) { var i = t.indexOf("RESULTS:"); return (i >= 0 ? t.slice(0, i) : t).replace(/\s+$/, ""); }
+  function visible(t) { ["CONTACT:", "RESULTS:"].forEach(function (m) { var i = t.indexOf(m); if (i >= 0) t = t.slice(0, i); }); return t.replace(/\s+$/, ""); }
   var SERVER = !!panel.dataset.server && !STAGING;
   function ask(q) {
     q = (q || "").trim();
@@ -1532,6 +1533,9 @@
             return;
           }
           tx.innerHTML = md(j.answer);
+          // a visitor who left their details: ask.php e-mailed them to the sales team (the owner, Nov 9 2026)
+          if (j.contact === "sent") tx.insertAdjacentHTML("beforeend", '<p class="ai-sent">Your details were sent to NovoTech\'s sales team.</p>');
+          else if (j.contact === "failed") tx.insertAdjacentHTML("beforeend", '<p class="ai-sent is-bad">We could not send your details. Please call <a href="tel:+16475265510">+1 647 526 5510</a> or email info@NovoTechMachineTools.com.</p>');
           var R = j.results || {};
           if (!R.use_engine && (R.fits && R.fits.length || R.maybe && R.maybe.length)) {
             var mine = { req: local.req, fits: picks(R.fits, local.req), maybe: picks(R.maybe, local.req), closest: [], chips: local.chips, page: local.page, mode: local.mode === "hit" ? "hit" : local.mode };
@@ -1562,7 +1566,7 @@
                   try { j = JSON.parse(data); } catch (e) { return; }
                   if (j.t) { acc += j.t; tx.innerHTML = md(visible(acc)); }
                   else if (j.error) final = j;
-                  else if (j.done) final = { answer: j.answer != null ? j.answer : visible(acc), results: j.results, model: j.model };
+                  else if (j.done) final = { answer: j.answer != null ? j.answer : visible(acc), results: j.results, model: j.model, contact: j.contact };
                 });
                 return pump();
               });

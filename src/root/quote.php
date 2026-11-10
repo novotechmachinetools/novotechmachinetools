@@ -28,6 +28,7 @@ $MIN_SCORE = (float)($cfg['recaptcha_min_score'] ?? 0.5);     // reCAPTCHA v3: 0
 
 // The e-mail designs (tools/mail_templates.py); without the file the notification goes out as plain text, as before
 define('NT_QUOTE', true);
+require __DIR__ . '/mail-lib.php';                  // nt_e, nt_fill, nt_addr, nt_alternative, nt_images, nt_machine
 $mailFile = __DIR__ . '/quote-mail.php';
 $MAIL = is_file($mailFile) ? (array)(require $mailFile) : [];
 // The automatic reply to the customer (design in tools/mail_templates.py): true sends it (approved by the owner, Nov 9 2026).
@@ -54,68 +55,6 @@ function respond(bool $ok, string $msg, int $code = 200): void {
            . "<p><a href=\"javascript:history.back()\">Go back</a> · <a href=\"/\">NovoTech home</a></p></body></html>";
     }
     exit;
-}
-
-function nt_e(string $s): string {
-    return htmlspecialchars($s, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
-}
-
-// a machine name for HTML: escaped, and a number keeps its unit on the same line ("20 ft", "300 t")
-function nt_machine(string $s): string {
-    return (string)preg_replace('/(\d) (?=(ft|in|mm|m|t|ga|US)\b)/u', '$1&nbsp;', nt_e($s));
-}
-
-// fills the {{KEY}} placeholders of a design in one pass, so a value can never bring in another placeholder
-function nt_fill(string $tpl, array $v): string {
-    $map = [];
-    foreach ($v as $k => $x) { $map['{{' . $k . '}}'] = (string)$x; }
-    return strtr($tpl, $map);
-}
-
-// "Name" <address> for a header: quoted, or encoded when the name is not plain ASCII
-function nt_addr(string $name, string $email): string {
-    if ($name === '') { return $email; }
-    $n = preg_match('/^[\x20-\x7E]*$/', $name) ? '"' . addcslashes($name, '"\\') . '"' : '=?UTF-8?B?' . base64_encode($name) . '?=';
-    return "$n <$email>";
-}
-
-// a plain-text and an HTML part as one multipart/alternative body; the Content-Type header names the boundary $b. The HTML
-// part carries its pictures with it (multipart/related, from nt_images)
-function nt_alternative(string $text, string $html, string $b, array $images = []): string {
-    $part = "Content-Type: text/html; charset=UTF-8\r\nContent-Transfer-Encoding: base64\r\n\r\n" . chunk_split(base64_encode($html), 76, "\r\n");
-    if ($images) {
-        $r = 'NTI-' . bin2hex(random_bytes(12));
-        $rel = "Content-Type: multipart/related; type=\"text/html\"; boundary=\"$r\"\r\n\r\n--$r\r\n" . $part;
-        foreach ($images as $im) {
-            $rel .= "--$r\r\nContent-Type: {$im['mime']}; name=\"{$im['name']}\"\r\nContent-Transfer-Encoding: base64\r\n"
-                  . "Content-ID: <{$im['cid']}>\r\nContent-Disposition: inline; filename=\"{$im['name']}\"\r\n\r\n"
-                  . chunk_split(base64_encode($im['data']), 76, "\r\n");
-        }
-        $part = $rel . "--$r--\r\n";
-    }
-    return "--$b\r\nContent-Type: text/plain; charset=UTF-8\r\nContent-Transfer-Encoding: quoted-printable\r\n\r\n"
-         . quoted_printable_encode(str_replace("\n", "\r\n", $text)) . "\r\n"
-         . "--$b\r\n" . $part
-         . "--$b--\r\n";
-}
-
-// the pictures a template names ({{LOGO}}, {{SIG}}, {{ICON_…}}) go inside the e-mail, because Outlook does not download
-// pictures from the internet by itself (the owner, Nov 9 2026): [placeholder => "cid:…", the parts for nt_alternative].
-// A picture missing on the server is linked from the site instead.
-function nt_images(string $tpl): array {
-    $src = [];
-    $parts = [];
-    $all = function_exists('nt_mail_images') ? nt_mail_images() : [];
-    foreach ($all as $k => $im) {
-        if (strpos($tpl, '{{' . $k . '}}') === false) { continue; }
-        $file = __DIR__ . '/' . $im[0];
-        $data = is_file($file) ? (string)file_get_contents($file) : '';
-        if ($data === '') { $src[$k] = 'https://novotechmachinetools.com/' . $im[0]; continue; }
-        $cid = strtolower(str_replace('_', '-', $k)) . '@novotechmachinetools.com';
-        $src[$k] = "cid:$cid";
-        $parts[] = ['cid' => $cid, 'mime' => $im[1], 'name' => basename($im[0]), 'data' => $data];
-    }
-    return [$src, $parts];
 }
 
 // what the automatic reply may repeat from the form: short, and without a web or e-mail address in it
@@ -187,6 +126,7 @@ function nt_notification(array $M, array $d): array {
     $pre = array_filter([$d['name'], $d['company'], $m], static function ($x) { return $x !== ''; });
     list($src, $images) = nt_images($M['notify']);
     return [nt_fill($M['notify'], $src + [
+        'LABEL'   => 'New quote request',
         'PRE'     => nt_e(implode(' · ', $pre)),
         'NAME'    => nt_e($d['name']),
         'COMPANY' => $d['company'] !== '' ? nt_fill($M['notify_company'], ['T' => nt_e($d['company'])]) : '',

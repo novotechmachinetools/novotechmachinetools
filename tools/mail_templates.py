@@ -175,13 +175,14 @@ Tel: {PHONE}
 
 # ---------------------------------------------------------------------------------------------- the notification to the sales inbox
 def notification():
-    """the look of the automatic reply (the owner, Nov 9 2026: "make the e-mail I receive look like this one"): the customer's
+    """{{LABEL}} at the top right: "New quote request" from the form, "Contact from the AI chat" from ask.php.
+    The look of the automatic reply (the owner, Nov 9 2026: "make the e-mail I receive look like this one"): the customer's
     name in the dark band, the machine under it, then boxes for the details, the message and the files.  White around the card,
     not grey: Outlook gives a reply the background of the e-mail replied to, and the owner's signature is on white (Nov 9 2026)"""
     inner = f'''<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#FFFFFF;">
 <tr><td align="center" style="padding:28px 12px;">
 <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background:#FFFFFF;border:1px solid {LINE};">
-{header("New quote request")}
+{header(T("LABEL"))}
 <tr><td style="background:{INK};padding:30px 24px 28px 24px;">
 <h1 style="margin:0;font-family:{FONT};font-size:28px;line-height:34px;font-weight:bold;color:#FFFFFF;word-break:break-word;">{T("NAME")}</h1>
 {T("COMPANY")}

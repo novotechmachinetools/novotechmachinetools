@@ -55,7 +55,7 @@
   {
    "title": "AI machine finder",
    "text": [
-    "The AI machine finder sends the question you type, together with our machine catalogue, to Anthropic's Claude service to write the answer. Do not type personal information into it. The questions are not used to identify you; to protect the service from abuse, the server keeps a short-lived count of requests per IP address."
+    "The AI machine finder sends the question you type, together with our machine catalogue, to Anthropic's Claude service to write the answer. If you ask us to contact you and give your name and an email address or phone number, the finder e-mails them, with the conversation, to our sales team, who use them only to answer you. Do not type other personal information into it. The questions are not used to identify you; to protect the service from abuse, the server keeps a short-lived count of requests per IP address."
    ]
   },
   {
