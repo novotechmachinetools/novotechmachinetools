@@ -224,8 +224,8 @@ function nt_autoreply(array $M, string $name, string $machine, string $page, str
     return [$text, $html, $images];
 }
 
-// at most 3 automatic replies to one address a day, 5 to one IP an hour and 100 a day in all, so the form cannot be used to
-// flood someone's inbox; the log in the temp folder keeps hashes, not addresses
+// at most 10 automatic replies to one address a day (the owner, Nov 9 2026; was 3), 10 to one IP an hour and 100 a day in all,
+// so the form cannot be used to flood someone's inbox; the log in the temp folder keeps hashes, not addresses
 function nt_autoreply_allowed(string $email, string $ip): bool {
     $fh = @fopen(rtrim(sys_get_temp_dir(), '/\\') . '/nt-autoreply-' . substr(md5(__DIR__), 0, 10) . '.json', 'c+');
     if ($fh === false) { return true; }
@@ -244,7 +244,7 @@ function nt_autoreply_allowed(string $email, string $ip): bool {
         if ($r[1] === $e) { $byEmail++; }
         if ($r[2] === $i && (int)$r[0] > $now - 3600) { $byIp++; }
     }
-    $ok = $byEmail < 3 && $byIp < 5 && count($keep) < 100;
+    $ok = $byEmail < 10 && $byIp < 10 && count($keep) < 100;
     if ($ok) { $keep[] = [$now, $e, $i]; }
     ftruncate($fh, 0);
     rewind($fh);
