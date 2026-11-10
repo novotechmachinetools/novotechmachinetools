@@ -30,9 +30,9 @@ $MIN_SCORE = (float)($cfg['recaptcha_min_score'] ?? 0.5);     // reCAPTCHA v3: 0
 define('NT_QUOTE', true);
 $mailFile = __DIR__ . '/quote-mail.php';
 $MAIL = is_file($mailFile) ? (array)(require $mailFile) : [];
-// The automatic reply to the customer (design in tools/mail_templates.py): true sends it. It comes from the sales inbox and
-// the customer's reply goes back there (the owner, Nov 9 2026)
-$AUTOREPLY  = false;
+// The automatic reply to the customer (design in tools/mail_templates.py): true sends it (approved by the owner, Nov 9 2026).
+// It comes from the sales inbox and the customer's reply goes back there
+$AUTOREPLY  = true;
 $REPLY_FROM = 'info@novotechmachinetools.com';
 
 header('X-Content-Type-Options: nosniff');
