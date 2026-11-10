@@ -176,10 +176,11 @@ Tel: {PHONE}
 # ---------------------------------------------------------------------------------------------- the notification to the sales inbox
 def notification():
     """the look of the automatic reply (the owner, Nov 9 2026: "make the e-mail I receive look like this one"): the customer's
-    name in the dark band, the machine under it, then boxes for the details, the message and the files"""
-    inner = f'''<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#E9EAEC;">
+    name in the dark band, the machine under it, then boxes for the details, the message and the files.  White around the card,
+    not grey: Outlook gives a reply the background of the e-mail replied to, and the owner's signature is on white (Nov 9 2026)"""
+    inner = f'''<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#FFFFFF;">
 <tr><td align="center" style="padding:28px 12px;">
-<table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background:#FFFFFF;">
+<table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background:#FFFFFF;border:1px solid {LINE};">
 {header("New quote request")}
 <tr><td style="background:{INK};padding:30px 24px 28px 24px;">
 <h1 style="margin:0;font-family:{FONT};font-size:28px;line-height:34px;font-weight:bold;color:#FFFFFF;word-break:break-word;">{T("NAME")}</h1>
@@ -197,7 +198,7 @@ def notification():
 <tr><td style="padding:0 24px 18px 24px;font-size:0;line-height:0;">&nbsp;</td></tr>
 <tr><td style="background:{INK};padding:16px 24px;font-family:{FONT};font-size:12px;line-height:18px;color:#B4B6BA;word-break:break-word;">{T("FOOTER")}</td></tr>
 </table></td></tr></table>'''
-    return shell(inner, T("PRE"), "#E9EAEC")
+    return shell(inner, T("PRE"), "#FFFFFF")
 
 
 TEMPLATES = {
