@@ -70,24 +70,36 @@ PDF_AUTHOR = "NovoTech Machine Tools Inc."
 IMAGE_MAP = json.load(open(os.path.join(ROOT, "tools", "image_map.json"), encoding="utf-8"))
 
 
+RECOLOR_PY = os.path.join(ROOT, "tools", "recolor_grey.py")
+
+
 def prepare_photo(key, out_dir):
     """PNG (RGB, white background) -> JPEG, max 1400 px wide. Returns the relative file name.  The source is the one the site
-    shows (tools/image_map.json — the cut-outs and the supplier photos that replaced damaged ones), else the value-line PNG."""
+    shows (tools/image_map.json — the cut-outs and the supplier photos that replaced damaged ones), else the value-line PNG.
+    A photo the site recolours ("recolor" in tools/image_map.json: the blue TTMC paint made the RBM 50 grey) is recoloured here
+    the same way, so the catalogue shows the machines as the site does (the owner, Nov 10 2026)."""
     src = os.path.join(ROOT, IMAGE_MAP[key]["src"]) if key in IMAGE_MAP else os.path.join(PHOTOS, key + ".png")
     if not os.path.exists(src):
         raise SystemExit(f"photo missing: {src}")
-    dst = os.path.join(out_dir, key + ".jpg")
-    if not os.path.exists(dst) or os.path.getmtime(dst) < os.path.getmtime(src):
+    recolor = IMAGE_MAP.get(key, {}).get("recolor")
+    dst = os.path.join(out_dir, key + (f"-{recolor}" if recolor else "") + ".jpg")
+    newest = max(os.path.getmtime(src), os.path.getmtime(RECOLOR_PY)) if recolor else os.path.getmtime(src)
+    if not os.path.exists(dst) or os.path.getmtime(dst) < newest:
         im = Image.open(src)
-        if im.mode in ("RGBA", "LA", "P"):
+        im = im.convert("RGBA") if im.mode in ("RGBA", "LA", "P") else im.convert("RGB")
+        if recolor:
+            sys.path.insert(0, os.path.dirname(RECOLOR_PY))
+            from recolor_grey import blue_to_grey, red_grey_white  # noqa: E402
+            im = blue_to_grey(im) if recolor == "grey" else red_grey_white(im)
+        if im.mode == "RGBA":
             bg = Image.new("RGBA", im.size, (255, 255, 255, 255))
-            bg.alpha_composite(im.convert("RGBA"))
+            bg.alpha_composite(im)
             im = bg
         im = im.convert("RGB")
         if im.width > MAX_W:
             im = im.resize((MAX_W, round(im.height * MAX_W / im.width)), Image.LANCZOS)
         im.save(dst, "JPEG", quality=JPEG_Q, optimize=True, progressive=False)
-    return "img/" + key + ".jpg"
+    return "img/" + os.path.basename(dst)
 
 
 def prepare_logo(src, name, out_dir, max_w):

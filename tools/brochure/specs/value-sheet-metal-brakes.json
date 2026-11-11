@@ -19,6 +19,7 @@
  ],
  "families": [
   "tt-hw",
+  "tt-hw-nc",
   "tt-tfm",
   "tt-efm",
   "tt-pb",
@@ -40,7 +41,8 @@
   {
    "title": "Hydraulic folding machines",
    "families": [
-    "tt-hw"
+    "tt-hw",
+    "tt-hw-nc"
    ]
   },
   {

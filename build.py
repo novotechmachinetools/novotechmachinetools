@@ -347,8 +347,9 @@ def img(name, max_w=None):
         v = [x for x in v if x["w"] <= max_w] or v[:1]
     largest = v[-1]
     # photos changed in place after they were published get ?v=<content hash>: the server lets browsers keep images a year
-    # ("immutable"), so without it a returning visitor would go on seeing the old photo (the TTMC photos recoloured grey, Nov 10 2026)
-    q = (lambda f: f"{f}?v={file_v(f)}") if image_map.get(name, {}).get("recolor") else (lambda f: f)
+    # ("immutable"), so without it a returning visitor would go on seeing the old photo (the TTMC photos recoloured grey, Nov 10 2026;
+    # the brochure covers, redrawn in place whenever a brochure is rebuilt — the grey TTMC brochures, Nov 11 2026)
+    q = (lambda f: f"{f}?v={file_v(f)}") if (image_map.get(name, {}).get("recolor") or name.startswith("pdf-")) else (lambda f: f)
     return {
         "name": name,
         "alt": image_map.get(name, {}).get("alt") or e["alt"],
