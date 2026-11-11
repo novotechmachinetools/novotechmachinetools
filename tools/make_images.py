@@ -123,6 +123,9 @@ for name, spec in MAP.items():
             has_alpha = True
         elif spec.get("trim_white", True):
             im = trim_white(im)
+    if spec.get("recolor") == "grey":           # TTMC blue paint → the RBM 50 grey (the owner, Nov 10 2026; tools/recolor_grey.py)
+        from recolor_grey import blue_to_grey  # noqa: E402
+        im = blue_to_grey(im)
     if spec.get("upscale") and has_alpha:       # page heroes: a 1.5x Lanczos upscale so the 1200 px variant exists
         f = float(spec["upscale"]); im = im.resize((round(im.width * f), round(im.height * f)), Image.LANCZOS)
     outdir = os.path.join(ROOT, "src", "img", section)

@@ -2737,7 +2737,8 @@
   "section": "bandsaw",
   "trim": true,
   "quality": 82,
-  "orig": "tools/src-images/value-line/nt-h13-1.png"
+  "orig": "tools/src-images/value-line/nt-h13-1.png",
+  "recolor": "grey"
  },
  "nt-h13c-1": {
   "src": "tools/src-images/cutouts/nt-h13c-1-cut.png",
@@ -2761,14 +2762,16 @@
   "section": "bandsaw",
   "trim": true,
   "quality": 82,
-  "orig": "tools/src-images/value-line/nt-h12sc-1.png"
+  "orig": "tools/src-images/value-line/nt-h12sc-1.png",
+  "recolor": "grey"
  },
  "nt-h12sc-2": {
   "src": "tools/src-images/value-line/nt-h12sc-2.png",
   "alt": "BS-5030 — hydraulic jaw clamping vise",
   "section": "bandsaw",
   "trim": false,
-  "quality": 82
+  "quality": 82,
+  "recolor": "grey"
  },
  "nt-h12sc-3": {
   "src": "tools/src-images/value-line/nt-h12sc-3.png",
@@ -2782,7 +2785,8 @@
   "alt": "BS-5030 — chip box and coolant tank",
   "section": "bandsaw",
   "trim": false,
-  "quality": 82
+  "quality": 82,
+  "recolor": "grey"
  },
  "nt-h18-1": {
   "src": "tools/src-images/cutouts/nt-h18-1-cut.png",
@@ -2877,7 +2881,8 @@
   "section": "bandsaw",
   "trim": true,
   "quality": 82,
-  "orig": "tools/src-images/value-line/nt-a13-2.png"
+  "orig": "tools/src-images/value-line/nt-a13-2.png",
+  "recolor": "grey"
  },
  "nt-a13-3": {
   "src": "tools/src-images/cutouts/nt-a13-3-cut.png",
@@ -2916,7 +2921,8 @@
   "section": "bandsaw",
   "trim": true,
   "quality": 82,
-  "orig": "tools/src-images/value-line/nt-a24-1.png"
+  "orig": "tools/src-images/value-line/nt-a24-1.png",
+  "recolor": "grey"
  },
  "nt-dc11t-1": {
   "src": "tools/src-images/cutouts/nt-dc11t-1-cut.png",
@@ -2924,7 +2930,8 @@
   "section": "bandsaw",
   "trim": true,
   "quality": 82,
-  "orig": "tools/src-images/value-line/nt-dc11t-1.png"
+  "orig": "tools/src-images/value-line/nt-dc11t-1.png",
+  "recolor": "grey"
  },
  "nt-dc11t-2": {
   "src": "tools/src-images/value-line/nt-dc11t-2.png",
@@ -2932,14 +2939,17 @@
   "section": "bandsaw",
   "trim": false,
   "quality": 82,
-  "cutout": false
+  "cutout": false,
+  "recolor": "grey"
  },
  "nt-dc11t-3": {
   "src": "tools/src-images/value-line/nt-dc11t-3.png",
   "alt": "TBK-4228A — swivel table for 0°–45° miter cuts",
   "section": "bandsaw",
   "trim": false,
-  "quality": 82
+  "quality": 82,
+  "recolor": "grey",
+  "cutout": "threshold"
  },
  "nt-dc11a-1": {
   "src": "tools/src-images/cutouts/nt-dc11a-1-cut.png",
@@ -2947,7 +2957,8 @@
   "section": "bandsaw",
   "trim": true,
   "quality": 82,
-  "orig": "tools/src-images/value-line/nt-dc11a-1.png"
+  "orig": "tools/src-images/value-line/nt-dc11a-1.png",
+  "recolor": "grey"
  },
  "nt-dc11av-1": {
   "src": "tools/src-images/cutouts/nt-dc11av-1-cut.png",
@@ -2955,21 +2966,24 @@
   "section": "bandsaw",
   "trim": true,
   "quality": 84,
-  "orig": "tools/src-images/value-line/nt-dc11av-1.png"
+  "orig": "tools/src-images/value-line/nt-dc11av-1.png",
+  "recolor": "grey"
  },
  "nt-dc11av-3": {
   "src": "tools/src-images/value-line/nt-dc11av-3.png",
   "alt": "TBK-4228B — automatic chip conveyor",
   "section": "bandsaw",
   "trim": false,
-  "quality": 82
+  "quality": 82,
+  "recolor": "grey"
  },
  "nt-dc11av-4": {
   "src": "tools/src-images/value-line/nt-dc11av-4.png",
   "alt": "TBK-4228B — new hydraulic vise design",
   "section": "bandsaw",
   "trim": false,
-  "quality": 82
+  "quality": 82,
+  "recolor": "grey"
  },
  "nt-dc11-stand": {
   "src": "tools/src-images/cutouts/nt-dc11-stand-cut.png",
@@ -2977,7 +2991,8 @@
   "section": "bandsaw",
   "trim": true,
   "quality": 82,
-  "orig": "tools/src-images/value-line/nt-dc11-stand.png"
+  "orig": "tools/src-images/value-line/nt-dc11-stand.png",
+  "recolor": "grey"
  },
  "nt-dc14-2": {
   "src": "tools/src-images/value-line/nt-dc14-2.png",
@@ -3005,14 +3020,16 @@
   "alt": "NovoTech GZ4260/120 gantry double column band saw, 23-5/8-inch",
   "section": "bandsaw",
   "trim": false,
-  "quality": 82
+  "quality": 82,
+  "recolor": "grey"
  },
  "nt-dc24-2": {
   "src": "tools/src-images/value-line/nt-dc24-2.png",
   "alt": "GZ4260/120 — chain-driven powered roller table",
   "section": "bandsaw",
   "trim": false,
-  "quality": 82
+  "quality": 82,
+  "recolor": "grey"
  },
  "nt-h18-1-cut": {
   "src": "tools/src-images/cutouts/nt-h18-1-cut.png",
@@ -3036,7 +3053,8 @@
   "section": "bandsaw",
   "trim": true,
   "quality": 84,
-  "orig": "tools/src-images/value-line/nt-h12sc-1.png"
+  "orig": "tools/src-images/value-line/nt-h12sc-1.png",
+  "recolor": "grey"
  },
  "nt-a12sc-1-cut": {
   "src": "tools/src-images/cutouts/nt-a12sc-1-cut.png",
@@ -3068,7 +3086,8 @@
   "section": "bandsaw",
   "trim": true,
   "quality": 84,
-  "orig": "tools/src-images/value-line/nt-dc11a-1.png"
+  "orig": "tools/src-images/value-line/nt-dc11a-1.png",
+  "recolor": "grey"
  },
  "a-40-head": {
   "src": "/home/claude/gms-site/dl/a-40-gms-filiz-demir-bukum.webp",
@@ -10296,7 +10315,8 @@
   "section": "bandsaw",
   "trim": false,
   "cutout": false,
-  "quality": 82
+  "quality": 82,
+  "recolor": "grey"
  },
  "nt-bs315gf-d8": {
   "src": "tools/src-images/novotech-photos/bs-315gf-d08-pressure-gauge.jpg",
@@ -10349,7 +10369,8 @@
   "section": "bandsaw",
   "trim": true,
   "quality": 84,
-  "orig": "tools/src-images/value-line/nt-dc11av-1.png"
+  "orig": "tools/src-images/value-line/nt-dc11av-1.png",
+  "recolor": "grey"
  },
  "bk-gantry-2200xs-1": {
   "src": "/home/claude/bekamak/site/img/bekamak-2224-gantry-125_18033.jpg",
@@ -15977,7 +15998,8 @@
   "section": "shears",
   "trim": false,
   "quality": 82,
-  "cutout": true
+  "cutout": true,
+  "recolor": "grey"
  },
  "tt-ths-gauge": {
   "src": "tools/src-images/ttmc/tt-ths-gauge.jpg",
@@ -15985,7 +16007,8 @@
   "section": "shears",
   "trim": false,
   "quality": 82,
-  "cutout": false
+  "cutout": false,
+  "recolor": "grey"
  },
  "tt-q11a": {
   "src": "tools/src-images/ttmc-hires/tt-q11a.jpg",
@@ -15994,7 +16017,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tt-q11a-rear": {
   "src": "tools/src-images/ttmc/tt-q11a-rear.jpg",
@@ -16002,7 +16026,8 @@
   "section": "shears",
   "trim": false,
   "quality": 82,
-  "cutout": true
+  "cutout": true,
+  "recolor": "grey"
  },
  "tt-q11": {
   "src": "tools/src-images/ttmc/tt-q11.jpg",
@@ -16010,7 +16035,8 @@
   "section": "shears",
   "trim": false,
   "quality": 82,
-  "cutout": true
+  "cutout": true,
+  "recolor": "grey"
  },
  "tt-q11-gauge": {
   "src": "tools/src-images/ttmc/tt-q11-gauge.jpg",
@@ -16018,7 +16044,8 @@
   "section": "shears",
   "trim": false,
   "quality": 82,
-  "cutout": false
+  "cutout": false,
+  "recolor": "grey"
  },
  "tt-q11-stop": {
   "src": "tools/src-images/ttmc/tt-q11-stop.jpg",
@@ -16026,7 +16053,8 @@
   "section": "shears",
   "trim": false,
   "quality": 82,
-  "cutout": false
+  "cutout": false,
+  "recolor": "grey"
  },
  "tt-q11nc": {
   "src": "tools/src-images/ttmc/tt-q11nc.jpg",
@@ -16034,7 +16062,8 @@
   "section": "shears",
   "trim": false,
   "quality": 82,
-  "cutout": true
+  "cutout": true,
+  "recolor": "grey"
  },
  "tt-q11nc-rear": {
   "src": "tools/src-images/ttmc/tt-q11nc-rear.jpg",
@@ -16042,7 +16071,8 @@
   "section": "shears",
   "trim": false,
   "quality": 82,
-  "cutout": true
+  "cutout": true,
+  "recolor": "grey"
  },
  "tt-q11nc-screen": {
   "src": "tools/src-images/ttmc/tt-q11nc-screen.jpg",
@@ -16050,7 +16080,8 @@
   "section": "shears",
   "trim": false,
   "quality": 82,
-  "cutout": false
+  "cutout": false,
+  "recolor": "grey"
  },
  "tt-q11nc-light": {
   "src": "tools/src-images/ttmc/tt-q11nc-light.jpg",
@@ -16058,7 +16089,8 @@
   "section": "shears",
   "trim": false,
   "quality": 82,
-  "cutout": false
+  "cutout": false,
+  "recolor": "grey"
  },
  "tt-q11nc-balls": {
   "src": "tools/src-images/ttmc/tt-q11nc-balls.jpg",
@@ -16066,7 +16098,8 @@
   "section": "shears",
   "trim": false,
   "quality": 82,
-  "cutout": false
+  "cutout": false,
+  "recolor": "grey"
  },
  "tt-q11nc-gauge": {
   "src": "tools/src-images/ttmc/tt-q11nc-gauge.jpg",
@@ -16074,7 +16107,8 @@
   "section": "shears",
   "trim": false,
   "quality": 82,
-  "cutout": false
+  "cutout": false,
+  "recolor": "grey"
  },
  "tt-q11-4x2000": {
   "src": "tools/src-images/ttmc/tt-q11-4x2000.jpg",
@@ -16082,7 +16116,8 @@
   "section": "shears",
   "trim": false,
   "quality": 82,
-  "cutout": true
+  "cutout": true,
+  "recolor": "grey"
  },
  "tt-q11-3x1300": {
   "src": "tools/src-images/ttmc/tt-q11-3x1300.jpg",
@@ -16090,7 +16125,8 @@
   "section": "shears",
   "trim": false,
   "quality": 82,
-  "cutout": true
+  "cutout": true,
+  "recolor": "grey"
  },
  "tt-q11-6x2000": {
   "src": "tools/src-images/ttmc/tt-q11-6x2000.jpg",
@@ -16098,7 +16134,8 @@
   "section": "shears",
   "trim": false,
   "quality": 82,
-  "cutout": true
+  "cutout": true,
+  "recolor": "grey"
  },
  "tt-hq01": {
   "src": "tools/src-images/ttmc/tt-hq01.jpg",
@@ -16106,7 +16143,8 @@
   "section": "shears",
   "trim": false,
   "quality": 82,
-  "cutout": true
+  "cutout": true,
+  "recolor": "grey"
  },
  "tt-hq01-photocell": {
   "src": "tools/src-images/ttmc/tt-hq01-photocell.jpg",
@@ -16122,7 +16160,8 @@
   "section": "shears",
   "trim": false,
   "quality": 82,
-  "cutout": false
+  "cutout": false,
+  "recolor": "grey"
  },
  "tt-hq01-switch": {
   "src": "tools/src-images/ttmc/tt-hq01-switch.jpg",
@@ -16130,7 +16169,8 @@
   "section": "shears",
   "trim": false,
   "quality": 82,
-  "cutout": false
+  "cutout": false,
+  "recolor": "grey"
  },
  "tt-hq11": {
   "src": "tools/src-images/ttmc/tt-hq11.jpg",
@@ -16138,7 +16178,8 @@
   "section": "shears",
   "trim": false,
   "quality": 82,
-  "cutout": true
+  "cutout": true,
+  "recolor": "grey"
  },
  "tt-hq11-table": {
   "src": "tools/src-images/ttmc/tt-hq11-table.jpg",
@@ -16146,7 +16187,8 @@
   "section": "shears",
   "trim": false,
   "quality": 82,
-  "cutout": false
+  "cutout": false,
+  "recolor": "grey"
  },
  "tt-hq11-egauge": {
   "src": "tools/src-images/ttmc/tt-hq11-egauge.jpg",
@@ -16154,7 +16196,8 @@
   "section": "shears",
   "trim": false,
   "quality": 82,
-  "cutout": false
+  "cutout": false,
+  "recolor": "grey"
  },
  "tt-hq11-mgauge": {
   "src": "tools/src-images/ttmc/tt-hq11-mgauge.jpg",
@@ -16162,7 +16205,8 @@
   "section": "shears",
   "trim": false,
   "quality": 82,
-  "cutout": false
+  "cutout": false,
+  "recolor": "grey"
  },
  "tt-hq11-pump": {
   "src": "tools/src-images/ttmc/tt-hq11-pump.jpg",
@@ -16170,7 +16214,8 @@
   "section": "shears",
   "trim": false,
   "quality": 82,
-  "cutout": false
+  "cutout": false,
+  "recolor": "grey"
  },
  "video--2gkOrFzL_E": {
   "src": "/home/claude/gms-site/yt/-2gkOrFzL_E.jpg",
@@ -23335,7 +23380,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-3in1-1016": {
   "src": "tools/src-images/ttmc-more/tm-3in1-1016.jpg",
@@ -23362,7 +23408,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-4h": {
   "src": "tools/src-images/ttmc-more/tm-4h.jpg",
@@ -23380,7 +23427,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-alb": {
   "src": "tools/src-images/ttmc-more/tm-alb.jpg",
@@ -23416,7 +23464,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-ap8": {
   "src": "tools/src-images/ttmc-more/tm-ap8.jpg",
@@ -23425,7 +23474,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-ax20g": {
   "src": "tools/src-images/ttmc-more/tm-ax20g.jpg",
@@ -23434,7 +23484,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-b5012": {
   "src": "tools/src-images/ttmc-more/tm-b5012.jpg",
@@ -23443,7 +23494,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-b5013": {
   "src": "tools/src-images/ttmc-more/tm-b5013.jpg",
@@ -23452,7 +23504,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-bfm2560": {
   "src": "tools/src-images/ttmc-more/tm-bfm2560.jpg",
@@ -23470,7 +23523,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-bg60": {
   "src": "tools/src-images/ttmc-more/tm-bg60.jpg",
@@ -23488,7 +23542,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-bgm50b": {
   "src": "tools/src-images/ttmc-more/tm-bgm50b.jpg",
@@ -23497,7 +23552,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-bkm250": {
   "src": "tools/src-images/ttmc-more/tm-bkm250.jpg",
@@ -23506,7 +23562,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-bp1648h": {
   "src": "tools/src-images/ttmc-more/tm-bp1648h.jpg",
@@ -23515,7 +23572,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-bp1650": {
   "src": "tools/src-images/ttmc-more/tm-bp1650.jpg",
@@ -23524,7 +23582,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-bp16t": {
   "src": "tools/src-images/ttmc-more/tm-bp16t.jpg",
@@ -23542,7 +23601,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-bp3t": {
   "src": "tools/src-images/ttmc-more/tm-bp3t.jpg",
@@ -23560,7 +23620,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-bqf01": {
   "src": "tools/src-images/ttmc-more/tm-bqf01.jpg",
@@ -23569,7 +23630,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-bsm1016": {
   "src": "tools/src-images/ttmc-more/tm-bsm1016.jpg",
@@ -23578,7 +23640,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-bsm2540": {
   "src": "tools/src-images/ttmc-more/tm-bsm2540.jpg",
@@ -23596,7 +23659,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-c41-16": {
   "src": "tools/src-images/ttmc-more/tm-c41-16.jpg",
@@ -23605,7 +23669,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-c41-40": {
   "src": "tools/src-images/ttmc-more/tm-c41-40.jpg",
@@ -23614,7 +23679,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-cb": {
   "src": "tools/src-images/ttmc-more/tm-cb.jpg",
@@ -23623,7 +23689,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-chb": {
   "src": "tools/src-images/ttmc-more/tm-chb.jpg",
@@ -23632,7 +23699,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-cmd": {
   "src": "tools/src-images/ttmc-more/tm-cmd.jpg",
@@ -23641,7 +23709,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-cmd4": {
   "src": "tools/src-images/ttmc-more/tm-cmd4.jpg",
@@ -23650,7 +23719,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-cnc100": {
   "src": "tools/src-images/ttmc-more/tm-cnc100.jpg",
@@ -23659,7 +23729,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-crb-rolls": {
   "src": "tools/src-images/ttmc-more/tm-crb-rolls.jpg",
@@ -23677,7 +23748,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-cs": {
   "src": "tools/src-images/ttmc-more/tm-cs.jpg",
@@ -23695,7 +23767,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-dc650": {
   "src": "tools/src-images/ttmc-more/tm-dc650.jpg",
@@ -23713,7 +23786,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-ds12": {
   "src": "tools/src-images/ttmc-more/tm-ds12.jpg",
@@ -23758,7 +23832,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-eb-bars": {
   "src": "tools/src-images/ttmc-more/tm-eb-bars.jpg",
@@ -23767,7 +23842,8 @@
   "trim": true,
   "quality": 82,
   "cutout": false,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-eb1250": {
   "src": "tools/src-images/ttmc-more/tm-eb1250.jpg",
@@ -23776,7 +23852,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-eb2500": {
   "src": "tools/src-images/ttmc-more/tm-eb2500.jpg",
@@ -23794,7 +23871,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-ebp25t": {
   "src": "tools/src-images/ttmc-more/tm-ebp25t.jpg",
@@ -23812,7 +23890,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-ecs": {
   "src": "tools/src-images/ttmc-more/tm-ecs.jpg",
@@ -23830,7 +23909,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-efms": {
   "src": "tools/src-images/ttmc-more/tm-efms.jpg",
@@ -23839,7 +23919,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-ehb10": {
   "src": "tools/src-images/ttmc-more/tm-ehb10.jpg",
@@ -23848,7 +23929,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-erbm10": {
   "src": "tools/src-images/ttmc-more/tm-erbm10.jpg",
@@ -23857,7 +23939,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-esr": {
   "src": "tools/src-images/ttmc-more/tm-esr.jpg",
@@ -23893,7 +23976,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-etb25": {
   "src": "tools/src-images/ttmc-more/tm-etb25.jpg",
@@ -23902,7 +23986,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-etr50": {
   "src": "tools/src-images/ttmc-more/tm-etr50.jpg",
@@ -23911,7 +23996,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-f1210": {
   "src": "tools/src-images/ttmc-more/tm-f1210.jpg",
@@ -23920,7 +24006,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-f12100": {
   "src": "tools/src-images/ttmc-more/tm-f12100.jpg",
@@ -23929,7 +24016,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-f1256": {
   "src": "tools/src-images/ttmc-more/tm-f1256.jpg",
@@ -23938,7 +24026,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-f15110": {
   "src": "tools/src-images/ttmc-more/tm-f15110.jpg",
@@ -23947,7 +24036,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-f1570": {
   "src": "tools/src-images/ttmc-more/tm-f1570.jpg",
@@ -23956,7 +24046,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-f2063": {
   "src": "tools/src-images/ttmc-more/tm-f2063.jpg",
@@ -23983,7 +24074,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-fsm16": {
   "src": "tools/src-images/ttmc-more/tm-fsm16.jpg",
@@ -23992,7 +24084,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-gs1000": {
   "src": "tools/src-images/ttmc-more/tm-gs1000.jpg",
@@ -24037,7 +24130,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-hb2248": {
   "src": "tools/src-images/ttmc-more/tm-hb2248.jpg",
@@ -24046,7 +24140,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-hb2250": {
   "src": "tools/src-images/ttmc-more/tm-hb2250.jpg",
@@ -24055,7 +24150,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-hb40t": {
   "src": "tools/src-images/ttmc-more/tm-hb40t.jpg",
@@ -24073,7 +24169,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-hbv": {
   "src": "tools/src-images/ttmc-more/tm-hbv.jpg",
@@ -24082,7 +24179,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-hcs": {
   "src": "tools/src-images/ttmc-more/tm-hcs.jpg",
@@ -24118,7 +24216,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-hn4": {
   "src": "tools/src-images/ttmc-more/tm-hn4.jpg",
@@ -24127,7 +24226,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-hnm6": {
   "src": "tools/src-images/ttmc-more/tm-hnm6.jpg",
@@ -24136,7 +24236,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-hnm6a": {
   "src": "tools/src-images/ttmc-more/tm-hnm6a.jpg",
@@ -24154,7 +24255,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-hp12n": {
   "src": "tools/src-images/ttmc-more/tm-hp12n.jpg",
@@ -24163,7 +24265,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-hp150m1": {
   "src": "tools/src-images/ttmc-more/tm-hp150m1.jpg",
@@ -24172,7 +24275,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-hp200m1": {
   "src": "tools/src-images/ttmc-more/tm-hp200m1.jpg",
@@ -24190,7 +24294,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-hp24n": {
   "src": "tools/src-images/ttmc-more/tm-hp24n.jpg",
@@ -24217,7 +24322,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-hp30s": {
   "src": "tools/src-images/ttmc-more/tm-hp30s.jpg",
@@ -24226,7 +24332,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-hp30sa": {
   "src": "tools/src-images/ttmc-more/tm-hp30sa.jpg",
@@ -24235,7 +24342,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-hp315fk": {
   "src": "tools/src-images/ttmc-more/tm-hp315fk.jpg",
@@ -24244,7 +24352,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-hp50f": {
   "src": "tools/src-images/ttmc-more/tm-hp50f.jpg",
@@ -24253,7 +24362,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-hp63c": {
   "src": "tools/src-images/ttmc-more/tm-hp63c.jpg",
@@ -24262,7 +24372,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-hpb1500": {
   "src": "tools/src-images/ttmc-more/tm-hpb1500.jpg",
@@ -24271,7 +24382,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-hpb1500d": {
   "src": "tools/src-images/ttmc-more/tm-hpb1500d.jpg",
@@ -24280,7 +24392,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-hpb580": {
   "src": "tools/src-images/ttmc-more/tm-hpb580.jpg",
@@ -24289,7 +24402,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-hpb580d": {
   "src": "tools/src-images/ttmc-more/tm-hpb580d.jpg",
@@ -24298,7 +24412,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-hpp100": {
   "src": "tools/src-images/ttmc-more/tm-hpp100.jpg",
@@ -24307,7 +24422,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-hrbm40": {
   "src": "tools/src-images/ttmc-more/tm-hrbm40.jpg",
@@ -24325,7 +24441,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-hrbm65": {
   "src": "tools/src-images/ttmc-more/tm-hrbm65.jpg",
@@ -24334,7 +24451,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-hs": {
   "src": "tools/src-images/ttmc-more/tm-hs.jpg",
@@ -24343,7 +24461,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-hs300": {
   "src": "tools/src-images/ttmc-more/tm-hs300.jpg",
@@ -24361,7 +24480,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-htb1000": {
   "src": "tools/src-images/ttmc-more/tm-htb1000.jpg",
@@ -24370,7 +24490,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-htb2000": {
   "src": "tools/src-images/ttmc-more/tm-htb2000.jpg",
@@ -24379,7 +24500,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-htb25t": {
   "src": "tools/src-images/ttmc-more/tm-htb25t.jpg",
@@ -24397,7 +24519,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-htes": {
   "src": "tools/src-images/ttmc-more/tm-htes.jpg",
@@ -24406,7 +24529,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-hw": {
   "src": "tools/src-images/ttmc-more/tm-hw.jpg",
@@ -24415,7 +24539,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-hw-angle": {
   "src": "tools/src-images/ttmc-more/tm-hw-angle.jpg",
@@ -24433,7 +24558,8 @@
   "trim": true,
   "quality": 82,
   "cutout": false,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-hw2440": {
   "src": "tools/src-images/ttmc-more/tm-hw2440.jpg",
@@ -24451,7 +24577,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-jtb40": {
   "src": "tools/src-images/ttmc-more/tm-jtb40.jpg",
@@ -24460,7 +24587,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-jtb50": {
   "src": "tools/src-images/ttmc-more/tm-jtb50.jpg",
@@ -24469,7 +24597,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-jtb80": {
   "src": "tools/src-images/ttmc-more/tm-jtb80.jpg",
@@ -24487,7 +24616,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-khs": {
   "src": "tools/src-images/ttmc-more/tm-khs.jpg",
@@ -24505,7 +24635,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-lm1450": {
   "src": "tools/src-images/ttmc-more/tm-lm1450.jpg",
@@ -24514,7 +24645,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-lm1450b": {
   "src": "tools/src-images/ttmc-more/tm-lm1450b.jpg",
@@ -24532,7 +24664,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-lock-forms": {
   "src": "tools/src-images/ttmc-more/tm-lock-forms.jpg",
@@ -24559,7 +24692,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-m55": {
   "src": "tools/src-images/ttmc-more/tm-m55.jpg",
@@ -24568,7 +24702,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-mcs1000": {
   "src": "tools/src-images/ttmc-more/tm-mcs1000.jpg",
@@ -24595,7 +24730,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-mfs": {
   "src": "tools/src-images/ttmc-more/tm-mfs.jpg",
@@ -24604,7 +24740,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-mini-ub": {
   "src": "tools/src-images/ttmc-more/tm-mini-ub.jpg",
@@ -24622,7 +24759,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-mms3": {
   "src": "tools/src-images/ttmc-more/tm-mms3.jpg",
@@ -24631,7 +24769,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-mms6": {
   "src": "tools/src-images/ttmc-more/tm-mms6.jpg",
@@ -24649,7 +24788,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-my22": {
   "src": "tools/src-images/ttmc-more/tm-my22.jpg",
@@ -24667,7 +24807,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-pb1220z": {
   "src": "tools/src-images/ttmc-more/tm-pb1220z.jpg",
@@ -24676,7 +24817,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-pbb": {
   "src": "tools/src-images/ttmc-more/tm-pbb.jpg",
@@ -24685,7 +24827,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-pbb1020": {
   "src": "tools/src-images/ttmc-more/tm-pbb1020.jpg",
@@ -24694,7 +24837,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-pbb3sh": {
   "src": "tools/src-images/ttmc-more/tm-pbb3sh.jpg",
@@ -24712,7 +24856,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-pbs9": {
   "src": "tools/src-images/ttmc-more/tm-pbs9.jpg",
@@ -24721,7 +24866,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-pds315h": {
   "src": "tools/src-images/ttmc-more/tm-pds315h.jpg",
@@ -24748,7 +24894,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-pf20g": {
   "src": "tools/src-images/ttmc-more/tm-pf20g.jpg",
@@ -24757,7 +24904,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-ph20d": {
   "src": "tools/src-images/ttmc-more/tm-ph20d.jpg",
@@ -24766,7 +24914,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-ph30d": {
   "src": "tools/src-images/ttmc-more/tm-ph30d.jpg",
@@ -24784,7 +24933,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-pic50-sample": {
   "src": "tools/src-images/ttmc-more/tm-pic50-sample.jpg",
@@ -24811,7 +24961,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-pnm15": {
   "src": "tools/src-images/ttmc-more/tm-pnm15.jpg",
@@ -24829,7 +24980,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-pph610": {
   "src": "tools/src-images/ttmc-more/tm-pph610.jpg",
@@ -24838,7 +24990,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-pr3": {
   "src": "tools/src-images/ttmc-more/tm-pr3.jpg",
@@ -24847,7 +25000,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-pr5": {
   "src": "tools/src-images/ttmc-more/tm-pr5.jpg",
@@ -24856,7 +25010,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-pr5-stand": {
   "src": "tools/src-images/ttmc-more/tm-pr5-stand.jpg",
@@ -24874,7 +25029,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-prs150": {
   "src": "tools/src-images/ttmc-more/tm-prs150.jpg",
@@ -24883,7 +25039,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-ptn-work": {
   "src": "tools/src-images/ttmc-more/tm-ptn-work.jpg",
@@ -24901,7 +25058,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-ptn30": {
   "src": "tools/src-images/ttmc-more/tm-ptn30.jpg",
@@ -24919,7 +25077,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-q01a": {
   "src": "tools/src-images/ttmc-more/tm-q01a.jpg",
@@ -24928,7 +25087,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-q01b": {
   "src": "tools/src-images/ttmc-more/tm-q01b.jpg",
@@ -24937,7 +25097,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-q01b-gauge": {
   "src": "tools/src-images/ttmc-more/tm-q01b-gauge.jpg",
@@ -24946,7 +25107,8 @@
   "trim": true,
   "quality": 82,
   "cutout": false,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-q01h": {
   "src": "tools/src-images/ttmc-more/tm-q01h.jpg",
@@ -24955,7 +25117,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-qcs400": {
   "src": "tools/src-images/ttmc-more/tm-qcs400.jpg",
@@ -24982,7 +25145,14 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey",
+  "crop": [
+   0,
+   240,
+   252,
+   677
+  ]
  },
  "tm-rb1": {
   "src": "tools/src-images/ttmc-more/tm-rb1.jpg",
@@ -24991,7 +25161,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-rbm-rolls": {
   "src": "tools/src-images/ttmc-more/tm-rbm-rolls.jpg",
@@ -25009,7 +25180,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-rbm20": {
   "src": "tools/src-images/ttmc-more/tm-rbm20.jpg",
@@ -25018,7 +25190,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-rbm30": {
   "src": "tools/src-images/ttmc-more/tm-rbm30.jpg",
@@ -25027,7 +25200,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-rbm30hv": {
   "src": "tools/src-images/ttmc-more/tm-rbm30hv.jpg",
@@ -25063,7 +25237,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-rm18": {
   "src": "tools/src-images/ttmc-more/tm-rm18.jpg",
@@ -25072,7 +25247,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-rm18e": {
   "src": "tools/src-images/ttmc-more/tm-rm18e.jpg",
@@ -25081,7 +25257,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-rm24m": {
   "src": "tools/src-images/ttmc-more/tm-rm24m.jpg",
@@ -25090,7 +25267,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-rm27": {
   "src": "tools/src-images/ttmc-more/tm-rm27.jpg",
@@ -25117,7 +25295,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-rm8h": {
   "src": "tools/src-images/ttmc-more/tm-rm8h.jpg",
@@ -25135,7 +25314,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-rtb8": {
   "src": "tools/src-images/ttmc-more/tm-rtb8.jpg",
@@ -25144,7 +25324,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-rtb8as": {
   "src": "tools/src-images/ttmc-more/tm-rtb8as.jpg",
@@ -25153,7 +25334,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-s100": {
   "src": "tools/src-images/ttmc-more/tm-s100.jpg",
@@ -25162,7 +25344,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-s220": {
   "src": "tools/src-images/ttmc-more/tm-s220.jpg",
@@ -25171,7 +25354,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-s50": {
   "src": "tools/src-images/ttmc-more/tm-s50.jpg",
@@ -25180,7 +25364,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-s50b": {
   "src": "tools/src-images/ttmc-more/tm-s50b.jpg",
@@ -25189,7 +25374,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-s50v": {
   "src": "tools/src-images/ttmc-more/tm-s50v.jpg",
@@ -25207,7 +25393,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-s75f": {
   "src": "tools/src-images/ttmc-more/tm-s75f.jpg",
@@ -25216,7 +25403,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-s75h": {
   "src": "tools/src-images/ttmc-more/tm-s75h.jpg",
@@ -25225,7 +25413,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-sbg30": {
   "src": "tools/src-images/ttmc-more/tm-sbg30.jpg",
@@ -25234,7 +25423,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-sdd75": {
   "src": "tools/src-images/ttmc-more/tm-sdd75.jpg",
@@ -25243,7 +25433,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-sl10": {
   "src": "tools/src-images/ttmc-more/tm-sl10.jpg",
@@ -25252,7 +25443,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-slip-1300": {
   "src": "tools/src-images/ttmc-more/tm-slip-1300.jpg",
@@ -25261,7 +25453,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-slip-kw01": {
   "src": "tools/src-images/ttmc-more/tm-slip-kw01.jpg",
@@ -25270,7 +25463,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-slip-sj": {
   "src": "tools/src-images/ttmc-more/tm-slip-sj.jpg",
@@ -25279,7 +25473,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-slip-w01": {
   "src": "tools/src-images/ttmc-more/tm-slip-w01.jpg",
@@ -25288,7 +25483,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-sm16b": {
   "src": "tools/src-images/ttmc-more/tm-sm16b.jpg",
@@ -25297,7 +25493,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-sp2": {
   "src": "tools/src-images/ttmc-more/tm-sp2.jpg",
@@ -25306,7 +25503,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-sp3": {
   "src": "tools/src-images/ttmc-more/tm-sp3.jpg",
@@ -25333,7 +25531,8 @@
   "trim": true,
   "quality": 82,
   "cutout": false,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-ss16": {
   "src": "tools/src-images/ttmc-more/tm-ss16.jpg",
@@ -25342,7 +25541,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-ss16f": {
   "src": "tools/src-images/ttmc-more/tm-ss16f.jpg",
@@ -25351,7 +25551,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-ss18fd": {
   "src": "tools/src-images/ttmc-more/tm-ss18fd.jpg",
@@ -25360,7 +25561,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-stand-ra785": {
   "src": "tools/src-images/ttmc-more/tm-stand-ra785.jpg",
@@ -25369,7 +25571,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-stand-rb365": {
   "src": "tools/src-images/ttmc-more/tm-stand-rb365.jpg",
@@ -25378,7 +25581,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-stand-rv": {
   "src": "tools/src-images/ttmc-more/tm-stand-rv.jpg",
@@ -25387,7 +25591,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-t25": {
   "src": "tools/src-images/ttmc-more/tm-t25.jpg",
@@ -25396,7 +25601,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-t25b": {
   "src": "tools/src-images/ttmc-more/tm-t25b.jpg",
@@ -25405,7 +25611,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-t25c": {
   "src": "tools/src-images/ttmc-more/tm-t25c.jpg",
@@ -25414,7 +25621,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-t28": {
   "src": "tools/src-images/ttmc-more/tm-t28.jpg",
@@ -25423,7 +25631,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-t32": {
   "src": "tools/src-images/ttmc-more/tm-t32.jpg",
@@ -25432,7 +25641,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-t40": {
   "src": "tools/src-images/ttmc-more/tm-t40.jpg",
@@ -25441,7 +25651,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-t4025": {
   "src": "tools/src-images/ttmc-more/tm-t4025.jpg",
@@ -25459,7 +25670,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-t5025": {
   "src": "tools/src-images/ttmc-more/tm-t5025.jpg",
@@ -25486,7 +25698,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-tb": {
   "src": "tools/src-images/ttmc-more/tm-tb.jpg",
@@ -25504,7 +25717,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-tb180": {
   "src": "tools/src-images/ttmc-more/tm-tb180.jpg",
@@ -25522,7 +25736,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-tb3b": {
   "src": "tools/src-images/ttmc-more/tm-tb3b.jpg",
@@ -25585,7 +25800,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-th800": {
   "src": "tools/src-images/ttmc-more/tm-th800.jpg",
@@ -25594,7 +25810,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-tp12a": {
   "src": "tools/src-images/ttmc-more/tm-tp12a.jpg",
@@ -25612,7 +25829,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-tr40": {
   "src": "tools/src-images/ttmc-more/tm-tr40.jpg",
@@ -25621,7 +25839,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-tr50": {
   "src": "tools/src-images/ttmc-more/tm-tr50.jpg",
@@ -25630,7 +25849,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-tr60": {
   "src": "tools/src-images/ttmc-more/tm-tr60.jpg",
@@ -25639,7 +25859,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-tsb2060": {
   "src": "tools/src-images/ttmc-more/tm-tsb2060.jpg",
@@ -25648,7 +25869,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-tsbs": {
   "src": "tools/src-images/ttmc-more/tm-tsbs.jpg",
@@ -25657,7 +25879,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-tsc": {
   "src": "tools/src-images/ttmc-more/tm-tsc.jpg",
@@ -25666,7 +25889,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-tsm300": {
   "src": "tools/src-images/ttmc-more/tm-tsm300.jpg",
@@ -25675,7 +25899,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-tv": {
   "src": "tools/src-images/ttmc-more/tm-tv.jpg",
@@ -25693,7 +25918,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-tx20": {
   "src": "tools/src-images/ttmc-more/tm-tx20.jpg",
@@ -25702,7 +25928,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-tx530": {
   "src": "tools/src-images/ttmc-more/tm-tx530.jpg",
@@ -25720,7 +25947,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-txk160d": {
   "src": "tools/src-images/ttmc-more/tm-txk160d.jpg",
@@ -25729,7 +25957,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-txk68": {
   "src": "tools/src-images/ttmc-more/tm-txk68.jpg",
@@ -25738,7 +25967,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-ub100a": {
   "src": "tools/src-images/ttmc-more/tm-ub100a.jpg",
@@ -25747,7 +25977,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-ub70": {
   "src": "tools/src-images/ttmc-more/tm-ub70.jpg",
@@ -25756,7 +25987,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-ubm30": {
   "src": "tools/src-images/ttmc-more/tm-ubm30.jpg",
@@ -25765,7 +25997,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-ufp2": {
   "src": "tools/src-images/ttmc-more/tm-ufp2.jpg",
@@ -25774,7 +26007,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-utn40": {
   "src": "tools/src-images/ttmc-more/tm-utn40.jpg",
@@ -25783,7 +26017,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-utn40v": {
   "src": "tools/src-images/ttmc-more/tm-utn40v.jpg",
@@ -25792,7 +26027,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-vise": {
   "src": "tools/src-images/ttmc-more/tm-vise.jpg",
@@ -25810,7 +26046,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-vmc10562": {
   "src": "tools/src-images/ttmc-more/tm-vmc10562.jpg",
@@ -25819,7 +26056,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-vmc8046": {
   "src": "tools/src-images/ttmc-more/tm-vmc8046.jpg",
@@ -25828,7 +26066,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-w01-2": {
   "src": "tools/src-images/ttmc-more/tm-w01-2.jpg",
@@ -25837,7 +26076,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-w1": {
   "src": "tools/src-images/ttmc-more/tm-w1.jpg",
@@ -25846,7 +26086,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-w10": {
   "src": "tools/src-images/ttmc-more/tm-w10.jpg",
@@ -25864,7 +26105,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-w1050": {
   "src": "tools/src-images/ttmc-more/tm-w1050.jpg",
@@ -25873,7 +26115,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-w1220": {
   "src": "tools/src-images/ttmc-more/tm-w1220.jpg",
@@ -25882,7 +26125,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-w1220pb": {
   "src": "tools/src-images/ttmc-more/tm-w1220pb.jpg",
@@ -25891,7 +26135,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-w1500": {
   "src": "tools/src-images/ttmc-more/tm-w1500.jpg",
@@ -25900,7 +26145,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-w1500h": {
   "src": "tools/src-images/ttmc-more/tm-w1500h.jpg",
@@ -25927,7 +26173,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-w2540a": {
   "src": "tools/src-images/ttmc-more/tm-w2540a.jpg",
@@ -25936,7 +26183,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-w2540h": {
   "src": "tools/src-images/ttmc-more/tm-w2540h.jpg",
@@ -25954,7 +26202,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-wd1800": {
   "src": "tools/src-images/ttmc-more/tm-wd1800.jpg",
@@ -25972,7 +26221,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-wtz": {
   "src": "tools/src-images/ttmc-more/tm-wtz.jpg",
@@ -25981,7 +26231,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-wtz16q": {
   "src": "tools/src-images/ttmc-more/tm-wtz16q.jpg",
@@ -25999,7 +26250,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-wu": {
   "src": "tools/src-images/ttmc-more/tm-wu.jpg",
@@ -26008,7 +26260,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-x5750": {
   "src": "tools/src-images/ttmc-more/tm-x5750.jpg",
@@ -26017,7 +26270,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-x6325": {
   "src": "tools/src-images/ttmc-more/tm-x6325.jpg",
@@ -26026,7 +26280,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-x6332": {
   "src": "tools/src-images/ttmc-more/tm-x6332.jpg",
@@ -26035,7 +26290,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-x6336": {
   "src": "tools/src-images/ttmc-more/tm-x6336.jpg",
@@ -26044,7 +26300,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-x6436": {
   "src": "tools/src-images/ttmc-more/tm-x6436.jpg",
@@ -26053,7 +26310,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-xm8": {
   "src": "tools/src-images/ttmc-more/tm-xm8.jpg",
@@ -26062,7 +26320,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-xq6226": {
   "src": "tools/src-images/ttmc-more/tm-xq6226.jpg",
@@ -26071,7 +26330,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-xq6226w": {
   "src": "tools/src-images/ttmc-more/tm-xq6226w.jpg",
@@ -26098,7 +26358,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-zx5325": {
   "src": "tools/src-images/ttmc-more/tm-zx5325.jpg",
@@ -26462,7 +26723,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-bsm3150-head": {
   "src": "tools/src-images/ttmc-more/tm-bsm3150-head.jpg",
@@ -26471,7 +26733,8 @@
   "trim": true,
   "quality": 82,
   "cutout": false,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-cd24": {
   "src": "tools/src-images/ttmc-more/tm-cd24.jpg",
@@ -26552,7 +26815,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-hp63c2": {
   "src": "tools/src-images/ttmc-more/tm-hp63c2.jpg",
@@ -26561,7 +26825,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-hw2540h": {
   "src": "tools/src-images/ttmc-more/tm-hw2540h.jpg",
@@ -26588,7 +26853,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-ksm850-panel": {
   "src": "tools/src-images/ttmc-more/tm-ksm850-panel.jpg",
@@ -26606,7 +26872,8 @@
   "trim": true,
   "quality": 82,
   "cutout": false,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-mdt4840": {
   "src": "tools/src-images/ttmc-more/tm-mdt4840.jpg",
@@ -26615,7 +26882,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-mdt6022": {
   "src": "tools/src-images/ttmc-more/tm-mdt6022.jpg",
@@ -26759,7 +27027,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-ps1220-slit": {
   "src": "tools/src-images/ttmc-more/tm-ps1220-slit.jpg",
@@ -26768,7 +27037,8 @@
   "trim": true,
   "quality": 82,
   "cutout": false,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-ptr185": {
   "src": "tools/src-images/ttmc-more/tm-ptr185.jpg",
@@ -26822,7 +27092,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-tbs356": {
   "src": "tools/src-images/ttmc-more/tm-tbs356.jpg",
@@ -26858,7 +27129,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-tdm260": {
   "src": "tools/src-images/ttmc-more/tm-tdm260.jpg",
@@ -27020,7 +27292,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-wj-cutterhead": {
   "src": "tools/src-images/ttmc-more/tm-wj-cutterhead.jpg",
@@ -27038,7 +27311,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-wj876": {
   "src": "tools/src-images/ttmc-more/tm-wj876.jpg",
@@ -27119,7 +27393,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-wm2200": {
   "src": "tools/src-images/ttmc-more/tm-wm2200.jpg",
@@ -27128,7 +27403,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-wm2200r": {
   "src": "tools/src-images/ttmc-more/tm-wm2200r.jpg",
@@ -27137,7 +27413,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-wm2500e": {
   "src": "tools/src-images/ttmc-more/tm-wm2500e.jpg",
@@ -27146,7 +27423,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-wp-heavy-box": {
   "src": "tools/src-images/ttmc-more/tm-wp-heavy-box.jpg",
@@ -27200,7 +27478,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-wp110-panel": {
   "src": "tools/src-images/ttmc-more/tm-wp110-panel.jpg",
@@ -27209,7 +27488,8 @@
   "trim": true,
   "quality": 82,
   "cutout": false,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-wp110t": {
   "src": "tools/src-images/ttmc-more/tm-wp110t.jpg",
@@ -27218,7 +27498,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-wp2000": {
   "src": "tools/src-images/ttmc-more/tm-wp2000.jpg",
@@ -27236,7 +27517,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-wp3000": {
   "src": "tools/src-images/ttmc-more/tm-wp3000.jpg",
@@ -27272,7 +27554,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-wp50": {
   "src": "tools/src-images/ttmc-more/tm-wp50.jpg",
@@ -27299,7 +27582,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-wp500-panel": {
   "src": "tools/src-images/ttmc-more/tm-wp500-panel.jpg",
@@ -27443,21 +27727,24 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "nt-vs300-1": {
   "src": "tools/src-images/value-line/nt-vs300-1.png",
   "alt": "NovoTech VS-300 vertical metal band saw with blade welder, 12″ throat",
   "section": "bandsaw",
   "trim": true,
-  "quality": 84
+  "quality": 84,
+  "recolor": "grey"
  },
  "nt-vs400-1": {
   "src": "tools/src-images/value-line/nt-vs400-1.png",
   "alt": "NovoTech VS-400 vertical metal band saw with work light and table gauge, 15-3/4″ throat",
   "section": "bandsaw",
   "trim": true,
-  "quality": 84
+  "quality": 84,
+  "recolor": "grey"
  },
  "nt-vs500-1": {
   "src": "tools/src-images/value-line/nt-vs500-1.png",
@@ -28111,7 +28398,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-dm5a": {
   "src": "tools/src-images/ttmc-more/tm-dm5a.jpg",
@@ -28120,7 +28408,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-ds12b": {
   "src": "tools/src-images/ttmc-more/tm-ds12b.jpg",
@@ -28138,7 +28427,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-esr1300-15e": {
   "src": "tools/src-images/ttmc-more/tm-esr1300-15e.jpg",
@@ -28147,7 +28437,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-esr1300-45": {
   "src": "tools/src-images/ttmc-more/tm-esr1300-45.jpg",
@@ -28201,7 +28492,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-prs76a": {
   "src": "tools/src-images/ttmc-more/tm-prs76a.jpg",
@@ -28210,7 +28502,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-s75hb": {
   "src": "tools/src-images/ttmc-more/tm-s75hb.jpg",
@@ -28219,7 +28512,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-s75l": {
   "src": "tools/src-images/ttmc-more/tm-s75l.jpg",
@@ -28228,7 +28522,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "video-EHRMBwaOEiA": {
   "src": "/home/claude/gms-site/yt/EHRMBwaOEiA.jpg",
@@ -28747,7 +29042,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-t25a": {
   "src": "tools/src-images/ttmc-more/tm-t25a.jpg",
@@ -28756,7 +29052,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-t25ch": {
   "src": "tools/src-images/ttmc-more/tm-t25ch.jpg",
@@ -28765,7 +29062,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-t30": {
   "src": "tools/src-images/ttmc-more/tm-t30.jpg",
@@ -28774,7 +29072,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-t5025-3a": {
   "src": "tools/src-images/ttmc-more/tm-t5025-3a.jpg",
@@ -28837,7 +29136,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-wtz16j": {
   "src": "tools/src-images/ttmc-more/tm-wtz16j.jpg",
@@ -28846,7 +29146,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-x6336wa": {
   "src": "tools/src-images/ttmc-more/tm-x6336wa.jpg",
@@ -28855,7 +29156,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-xq6226b": {
   "src": "tools/src-images/ttmc-more/tm-xq6226b.jpg",
@@ -28864,7 +29166,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-zx7550c": {
   "src": "tools/src-images/ttmc-more/tm-zx7550c.jpg",
@@ -28873,7 +29176,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "video-gYyQIv5HRME": {
   "src": "/home/claude/gms-site/yt/gYyQIv5HRME.jpg",
@@ -30816,7 +31120,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tt-q11nc-4x1300": {
   "src": "tools/src-images/ttmc-hires/tt-q11nc-4x1300.jpg",
@@ -30825,7 +31130,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tt-hq01-2500": {
   "src": "tools/src-images/ttmc-hires/tt-hq01-2500.jpg",
@@ -34133,7 +34439,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-brake36": {
   "src": "tools/src-images/ttmc-more/tm-brake36.jpg",
@@ -34151,7 +34458,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-eb625": {
   "src": "tools/src-images/ttmc-more/tm-eb625.jpg",
@@ -34160,7 +34468,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-hb1650": {
   "src": "tools/src-images/ttmc-more/tm-hb1650.jpg",
@@ -34169,7 +34478,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-mf3020": {
   "src": "tools/src-images/ttmc-more/tm-mf3020.jpg",
@@ -34178,7 +34488,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-pbb1020-1a": {
   "src": "tools/src-images/ttmc-more/tm-pbb1020-1a.jpg",
@@ -34187,7 +34498,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-pbb1020a": {
   "src": "tools/src-images/ttmc-more/tm-pbb1020a.jpg",
@@ -34205,7 +34517,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-rb1100": {
   "src": "tools/src-images/ttmc-more/tm-rb1100.jpg",
@@ -34214,7 +34527,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-tsb2020": {
   "src": "tools/src-images/ttmc-more/tm-tsb2020.jpg",
@@ -34223,7 +34537,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-w1050f": {
   "src": "tools/src-images/ttmc-more/tm-w1050f.jpg",
@@ -34232,7 +34547,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-w1060": {
   "src": "tools/src-images/ttmc-more/tm-w1060.jpg",
@@ -34241,7 +34557,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-w1220n": {
   "src": "tools/src-images/ttmc-more/tm-w1220n.jpg",
@@ -34250,7 +34567,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-w305a": {
   "src": "tools/src-images/ttmc-more/tm-w305a.jpg",
@@ -34259,7 +34577,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-w460": {
   "src": "tools/src-images/ttmc-more/tm-w460.jpg",
@@ -34268,7 +34587,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-w610": {
   "src": "tools/src-images/ttmc-more/tm-w610.jpg",
@@ -34277,7 +34597,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-w610b": {
   "src": "tools/src-images/ttmc-more/tm-w610b.jpg",
@@ -34286,7 +34607,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "tm-pph500": {
   "src": "tools/src-images/ttmc-more/tm-pph500.jpg",
@@ -34295,7 +34617,8 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "nt-dc14-tgk4240": {
   "src": "tools/src-images/value-line/nt-dc14-tgk4240.png",
@@ -34311,14 +34634,16 @@
   "trim": true,
   "quality": 84,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  },
  "nt-dc11-tbk4228": {
   "src": "tools/src-images/value-line/nt-dc11-tbk4228.png",
   "alt": "NovoTech TBK-4228 semi-automatic double column band saw, Ø11″",
   "section": "bandsaw",
   "trim": true,
-  "quality": 84
+  "quality": 84,
+  "recolor": "grey"
  },
  "tm-bsm3150-caster": {
   "src": "tools/src-images/ttmc-more/tm-bsm3150-caster.jpg",
@@ -37302,7 +37627,8 @@
   "trim": true,
   "quality": 82,
   "cutout": false,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-hwe-gauge": {
   "src": "tools/src-images/ttmc-more/tm-hwe-gauge.jpg",
@@ -37311,7 +37637,8 @@
   "trim": true,
   "quality": 82,
   "cutout": false,
-  "cut_size": 768
+  "cut_size": 768,
+  "recolor": "grey"
  },
  "tm-hwe-panel": {
   "src": "tools/src-images/ttmc-more/tm-hwe-panel.jpg",
@@ -37449,6 +37776,7 @@
   "trim": true,
   "quality": 82,
   "cutout": true,
-  "cut_size": 1024
+  "cut_size": 1024,
+  "recolor": "grey"
  }
 }

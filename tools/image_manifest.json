@@ -10938,16 +10938,22 @@
   "alt": "NovoTech BS-460G dual-miter hydraulic band saw, 13-inch",
   "variants": [
    {
+    "w": 1160,
+    "h": 1188,
+    "file": "img/bandsaw/nt-h13-1-1160.webp",
+    "bytes": 123574
+   },
+   {
     "w": 800,
     "h": 819,
     "file": "img/bandsaw/nt-h13-1-800.webp",
-    "bytes": 95742
+    "bytes": 88674
    },
    {
     "w": 480,
     "h": 492,
     "file": "img/bandsaw/nt-h13-1-480.webp",
-    "bytes": 53576
+    "bytes": 49244
    }
   ],
   "alpha": true,
@@ -10955,7 +10961,7 @@
    "w": 156,
    "h": 160,
    "file": "img/bandsaw/nt-h13-1-thumb.webp",
-   "bytes": 11446
+   "bytes": 10668
   },
   "cut": "birefnet"
  },
@@ -11024,16 +11030,22 @@
   "alt": "NovoTech BS-5030 single-column band saw with touch screen",
   "variants": [
    {
+    "w": 1175,
+    "h": 1150,
+    "file": "img/bandsaw/nt-h12sc-1-1175.webp",
+    "bytes": 74146
+   },
+   {
     "w": 800,
     "h": 783,
     "file": "img/bandsaw/nt-h12sc-1-800.webp",
-    "bytes": 62192
+    "bytes": 56138
    },
    {
     "w": 480,
     "h": 470,
     "file": "img/bandsaw/nt-h12sc-1-480.webp",
-    "bytes": 35472
+    "bytes": 32746
    }
   ],
   "alpha": true,
@@ -11041,8 +11053,9 @@
    "w": 160,
    "h": 157,
    "file": "img/bandsaw/nt-h12sc-1-thumb.webp",
-   "bytes": 9032
-  }
+   "bytes": 8596
+  },
+  "cut": "birefnet"
  },
  "nt-h12sc-2": {
   "alt": "BS-5030 \u2014 hydraulic jaw clamping vise",
@@ -11051,7 +11064,7 @@
     "w": 480,
     "h": 383,
     "file": "img/bandsaw/nt-h12sc-2-480.webp",
-    "bytes": 15112
+    "bytes": 11206
    }
   ],
   "alpha": false,
@@ -11059,7 +11072,7 @@
    "w": 160,
    "h": 128,
    "file": "img/bandsaw/nt-h12sc-2-thumb.webp",
-   "bytes": 3892
+   "bytes": 3118
   }
  },
  "nt-h12sc-3": {
@@ -11087,7 +11100,7 @@
     "w": 480,
     "h": 351,
     "file": "img/bandsaw/nt-h12sc-4-480.webp",
-    "bytes": 5526
+    "bytes": 3230
    }
   ],
   "alpha": false,
@@ -11095,7 +11108,7 @@
    "w": 160,
    "h": 117,
    "file": "img/bandsaw/nt-h12sc-4-thumb.webp",
-   "bytes": 1576
+   "bytes": 992
   }
  },
  "nt-h18-1": {
@@ -11414,7 +11427,7 @@
     "w": 480,
     "h": 325,
     "file": "img/bandsaw/nt-a13-2-480.webp",
-    "bytes": 29538
+    "bytes": 39506
    }
   ],
   "alpha": true,
@@ -11422,8 +11435,9 @@
    "w": 160,
    "h": 108,
    "file": "img/bandsaw/nt-a13-2-thumb.webp",
-   "bytes": 7370
-  }
+   "bytes": 9614
+  },
+  "cut": "birefnet"
  },
  "nt-a13-3": {
   "alt": "BS-460GB \u2014 PLC control panel",
@@ -11530,19 +11544,19 @@
     "w": 1200,
     "h": 846,
     "file": "img/bandsaw/nt-a24-1-1200.webp",
-    "bytes": 93960
+    "bytes": 84636
    },
    {
     "w": 800,
     "h": 564,
     "file": "img/bandsaw/nt-a24-1-800.webp",
-    "bytes": 59168
+    "bytes": 56510
    },
    {
     "w": 480,
     "h": 338,
     "file": "img/bandsaw/nt-a24-1-480.webp",
-    "bytes": 32794
+    "bytes": 31220
    }
   ],
   "alpha": true,
@@ -11550,8 +11564,9 @@
    "w": 160,
    "h": 113,
    "file": "img/bandsaw/nt-a24-1-thumb.webp",
-   "bytes": 7642
-  }
+   "bytes": 7414
+  },
+  "cut": "birefnet"
  },
  "nt-dc11t-1": {
   "alt": "NovoTech TBK-4228A double column miter band saw",
@@ -11560,19 +11575,19 @@
     "w": 1200,
     "h": 1114,
     "file": "img/bandsaw/nt-dc11t-1-1200.webp",
-    "bytes": 88120
+    "bytes": 81748
    },
    {
     "w": 800,
     "h": 742,
     "file": "img/bandsaw/nt-dc11t-1-800.webp",
-    "bytes": 54640
+    "bytes": 51462
    },
    {
     "w": 480,
     "h": 445,
     "file": "img/bandsaw/nt-dc11t-1-480.webp",
-    "bytes": 30904
+    "bytes": 28748
    }
   ],
   "alpha": true,
@@ -11580,7 +11595,7 @@
    "w": 160,
    "h": 148,
    "file": "img/bandsaw/nt-dc11t-1-thumb.webp",
-   "bytes": 7920
+   "bytes": 7456
   }
  },
  "nt-dc11t-2": {
@@ -11590,7 +11605,7 @@
     "w": 400,
     "h": 300,
     "file": "img/bandsaw/nt-dc11t-2-400.webp",
-    "bytes": 11706
+    "bytes": 10578
    }
   ],
   "alpha": false,
@@ -11598,7 +11613,7 @@
    "w": 160,
    "h": 120,
    "file": "img/bandsaw/nt-dc11t-2-thumb.webp",
-   "bytes": 3856
+   "bytes": 3394
   }
  },
  "nt-dc11t-3": {
@@ -11608,7 +11623,7 @@
     "w": 400,
     "h": 300,
     "file": "img/bandsaw/nt-dc11t-3-400.webp",
-    "bytes": 15868
+    "bytes": 14912
    }
   ],
   "alpha": true,
@@ -11616,7 +11631,7 @@
    "w": 160,
    "h": 120,
    "file": "img/bandsaw/nt-dc11t-3-thumb.webp",
-   "bytes": 5280
+   "bytes": 5066
   },
   "cut": "auto"
  },
@@ -11627,19 +11642,19 @@
     "w": 1200,
     "h": 1170,
     "file": "img/bandsaw/nt-dc11a-1-1200.webp",
-    "bytes": 111168
+    "bytes": 106364
    },
    {
     "w": 800,
     "h": 780,
     "file": "img/bandsaw/nt-dc11a-1-800.webp",
-    "bytes": 71370
+    "bytes": 68336
    },
    {
     "w": 480,
     "h": 468,
     "file": "img/bandsaw/nt-dc11a-1-480.webp",
-    "bytes": 39488
+    "bytes": 38200
    }
   ],
   "alpha": true,
@@ -11647,8 +11662,9 @@
    "w": 160,
    "h": 156,
    "file": "img/bandsaw/nt-dc11a-1-thumb.webp",
-   "bytes": 8690
-  }
+   "bytes": 8456
+  },
+  "cut": "birefnet"
  },
  "nt-dc11av-1": {
   "alt": "NovoTech TBK-4228B automatic double column band saw with variable speed, 11\u2033",
@@ -11657,19 +11673,19 @@
     "w": 1200,
     "h": 1049,
     "file": "img/bandsaw/nt-dc11av-1-1200.webp",
-    "bytes": 103054
+    "bytes": 90232
    },
    {
     "w": 800,
     "h": 699,
     "file": "img/bandsaw/nt-dc11av-1-800.webp",
-    "bytes": 62674
+    "bytes": 54280
    },
    {
     "w": 480,
     "h": 420,
     "file": "img/bandsaw/nt-dc11av-1-480.webp",
-    "bytes": 34690
+    "bytes": 29706
    }
   ],
   "alpha": true,
@@ -11677,29 +11693,29 @@
    "w": 160,
    "h": 140,
    "file": "img/bandsaw/nt-dc11av-1-thumb.webp",
-   "bytes": 8466
+   "bytes": 7590
   }
  },
  "nt-dc11av-3": {
-  "alt": "TBK-4228B (improved) \u2014 automatic chip conveyor",
+  "alt": "TBK-4228B \u2014 automatic chip conveyor",
   "variants": [
    {
     "w": 1200,
     "h": 833,
     "file": "img/bandsaw/nt-dc11av-3-1200.webp",
-    "bytes": 45698
+    "bytes": 27100
    },
    {
     "w": 800,
     "h": 555,
     "file": "img/bandsaw/nt-dc11av-3-800.webp",
-    "bytes": 27994
+    "bytes": 16884
    },
    {
     "w": 480,
     "h": 333,
     "file": "img/bandsaw/nt-dc11av-3-480.webp",
-    "bytes": 14638
+    "bytes": 9056
    }
   ],
   "alpha": false,
@@ -11707,29 +11723,29 @@
    "w": 160,
    "h": 111,
    "file": "img/bandsaw/nt-dc11av-3-thumb.webp",
-   "bytes": 2628
+   "bytes": 1618
   }
  },
  "nt-dc11av-4": {
-  "alt": "TBK-4228B (improved) \u2014 new hydraulic vise design",
+  "alt": "TBK-4228B \u2014 new hydraulic vise design",
   "variants": [
    {
     "w": 1200,
     "h": 831,
     "file": "img/bandsaw/nt-dc11av-4-1200.webp",
-    "bytes": 51520
+    "bytes": 49330
    },
    {
     "w": 800,
     "h": 554,
     "file": "img/bandsaw/nt-dc11av-4-800.webp",
-    "bytes": 32228
+    "bytes": 31862
    },
    {
     "w": 480,
     "h": 332,
     "file": "img/bandsaw/nt-dc11av-4-480.webp",
-    "bytes": 17650
+    "bytes": 17156
    }
   ],
   "alpha": false,
@@ -11737,7 +11753,7 @@
    "w": 160,
    "h": 111,
    "file": "img/bandsaw/nt-dc11av-4-thumb.webp",
-   "bytes": 3332
+   "bytes": 3128
   }
  },
  "nt-dc11-stand": {
@@ -11747,19 +11763,19 @@
     "w": 1200,
     "h": 1284,
     "file": "img/bandsaw/nt-dc11-stand-1200.webp",
-    "bytes": 102542
+    "bytes": 88334
    },
    {
     "w": 800,
     "h": 856,
     "file": "img/bandsaw/nt-dc11-stand-800.webp",
-    "bytes": 65440
+    "bytes": 59624
    },
    {
     "w": 480,
     "h": 514,
     "file": "img/bandsaw/nt-dc11-stand-480.webp",
-    "bytes": 37498
+    "bytes": 34002
    }
   ],
   "alpha": true,
@@ -11767,8 +11783,9 @@
    "w": 150,
    "h": 160,
    "file": "img/bandsaw/nt-dc11-stand-thumb.webp",
-   "bytes": 9258
-  }
+   "bytes": 9110
+  },
+  "cut": "birefnet"
  },
  "nt-dc14-2": {
   "alt": "TGK-4235 \u2014 hydraulic clamping vise",
@@ -11844,19 +11861,19 @@
     "w": 1200,
     "h": 708,
     "file": "img/bandsaw/nt-dc24-1-1200.webp",
-    "bytes": 79542
+    "bytes": 84582
    },
    {
     "w": 800,
     "h": 472,
     "file": "img/bandsaw/nt-dc24-1-800.webp",
-    "bytes": 47594
+    "bytes": 51070
    },
    {
     "w": 480,
     "h": 283,
     "file": "img/bandsaw/nt-dc24-1-480.webp",
-    "bytes": 24908
+    "bytes": 26338
    }
   ],
   "alpha": true,
@@ -11864,9 +11881,9 @@
    "w": 160,
    "h": 94,
    "file": "img/bandsaw/nt-dc24-1-thumb.webp",
-   "bytes": 6040
+   "bytes": 6636
   },
-  "cut": "auto"
+  "cut": "birefnet"
  },
  "nt-dc24-2": {
   "alt": "GZ4260/120 \u2014 chain-driven powered roller table",
@@ -11875,19 +11892,19 @@
     "w": 1200,
     "h": 777,
     "file": "img/bandsaw/nt-dc24-2-1200.webp",
-    "bytes": 75938
+    "bytes": 62310
    },
    {
     "w": 800,
     "h": 518,
     "file": "img/bandsaw/nt-dc24-2-800.webp",
-    "bytes": 48792
+    "bytes": 41108
    },
    {
     "w": 480,
     "h": 311,
     "file": "img/bandsaw/nt-dc24-2-480.webp",
-    "bytes": 28246
+    "bytes": 23962
    }
   ],
   "alpha": false,
@@ -11895,7 +11912,7 @@
    "w": 160,
    "h": 104,
    "file": "img/bandsaw/nt-dc24-2-thumb.webp",
-   "bytes": 4982
+   "bytes": 4242
   }
  },
  "nt-h18-1-cut": {
@@ -11963,16 +11980,22 @@
   "alt": "NovoTech BS-5030 single-column band saw with touch screen",
   "variants": [
    {
+    "w": 1175,
+    "h": 1150,
+    "file": "img/bandsaw/nt-h12sc-1-cut-1175.webp",
+    "bytes": 77380
+   },
+   {
     "w": 800,
     "h": 783,
     "file": "img/bandsaw/nt-h12sc-1-cut-800.webp",
-    "bytes": 65084
+    "bytes": 58840
    },
    {
     "w": 480,
     "h": 470,
     "file": "img/bandsaw/nt-h12sc-1-cut-480.webp",
-    "bytes": 37170
+    "bytes": 34068
    }
   ],
   "alpha": true,
@@ -11980,8 +12003,9 @@
    "w": 160,
    "h": 157,
    "file": "img/bandsaw/nt-h12sc-1-cut-thumb.webp",
-   "bytes": 9020
-  }
+   "bytes": 8596
+  },
+  "cut": "birefnet"
  },
  "nt-a12sc-1-cut": {
   "alt": "NovoTech BS-5040 single-column automatic band saw",
@@ -12081,19 +12105,19 @@
     "w": 1200,
     "h": 1170,
     "file": "img/bandsaw/nt-dc11a-1-cut-1200.webp",
-    "bytes": 118336
+    "bytes": 110238
    },
    {
     "w": 800,
     "h": 780,
     "file": "img/bandsaw/nt-dc11a-1-cut-800.webp",
-    "bytes": 75254
+    "bytes": 72136
    },
    {
     "w": 480,
     "h": 468,
     "file": "img/bandsaw/nt-dc11a-1-cut-480.webp",
-    "bytes": 41416
+    "bytes": 40002
    }
   ],
   "alpha": true,
@@ -12101,8 +12125,9 @@
    "w": 160,
    "h": 156,
    "file": "img/bandsaw/nt-dc11a-1-cut-thumb.webp",
-   "bytes": 8698
-  }
+   "bytes": 8456
+  },
+  "cut": "birefnet"
  },
  "a-40-head": {
   "alt": "A 40 bending head with rollers bending a dowel bar",
@@ -37303,16 +37328,22 @@
   "alt": "BS-315GF \u2014 hydraulic vise with serrated jaws and the swivel table with angle stops",
   "variants": [
    {
+    "w": 1080,
+    "h": 608,
+    "file": "img/bandsaw/nt-bs315gf-d7-1080.webp",
+    "bytes": 60574
+   },
+   {
     "w": 800,
     "h": 450,
     "file": "img/bandsaw/nt-bs315gf-d7-800.webp",
-    "bytes": 41910
+    "bytes": 39540
    },
    {
     "w": 480,
     "h": 270,
     "file": "img/bandsaw/nt-bs315gf-d7-480.webp",
-    "bytes": 19048
+    "bytes": 17880
    }
   ],
   "alpha": false,
@@ -37320,7 +37351,7 @@
    "w": 160,
    "h": 90,
    "file": "img/bandsaw/nt-bs315gf-d7-thumb.webp",
-   "bytes": 3234
+   "bytes": 2904
   }
  },
  "nt-bs315gf-d8": {
@@ -37492,19 +37523,19 @@
     "w": 1200,
     "h": 1049,
     "file": "img/bandsaw/nt-dc11av-1-cut-1200.webp",
-    "bytes": 103054
+    "bytes": 90232
    },
    {
     "w": 800,
     "h": 699,
     "file": "img/bandsaw/nt-dc11av-1-cut-800.webp",
-    "bytes": 62674
+    "bytes": 54280
    },
    {
     "w": 480,
     "h": 420,
     "file": "img/bandsaw/nt-dc11av-1-cut-480.webp",
-    "bytes": 34690
+    "bytes": 29706
    }
   ],
   "alpha": true,
@@ -37512,7 +37543,7 @@
    "w": 160,
    "h": 140,
    "file": "img/bandsaw/nt-dc11av-1-cut-thumb.webp",
-   "bytes": 8466
+   "bytes": 7590
   }
  },
  "nt-bs315gf-v1": {
@@ -59807,19 +59838,19 @@
     "w": 1200,
     "h": 802,
     "file": "img/shears/tt-ths-1200.webp",
-    "bytes": 59110
+    "bytes": 55132
    },
    {
     "w": 800,
     "h": 535,
     "file": "img/shears/tt-ths-800.webp",
-    "bytes": 37476
+    "bytes": 34406
    },
    {
     "w": 480,
     "h": 321,
     "file": "img/shears/tt-ths-480.webp",
-    "bytes": 20824
+    "bytes": 19258
    }
   ],
   "alpha": true,
@@ -59827,7 +59858,7 @@
    "w": 160,
    "h": 107,
    "file": "img/shears/tt-ths-thumb.webp",
-   "bytes": 5410
+   "bytes": 4974
   },
   "cut": "birefnet"
  },
@@ -59835,10 +59866,16 @@
   "alt": "Hand-wheel back gauge of the THS hydraulic shear",
   "variants": [
    {
+    "w": 732,
+    "h": 451,
+    "file": "img/shears/tt-ths-gauge-732.webp",
+    "bytes": 15298
+   },
+   {
     "w": 480,
     "h": 296,
     "file": "img/shears/tt-ths-gauge-480.webp",
-    "bytes": 12224
+    "bytes": 9432
    }
   ],
   "alpha": false,
@@ -59846,7 +59883,7 @@
    "w": 160,
    "h": 99,
    "file": "img/shears/tt-ths-gauge-thumb.webp",
-   "bytes": 3056
+   "bytes": 2414
   }
  },
  "tt-q11a": {
@@ -59856,19 +59893,19 @@
     "w": 1200,
     "h": 818,
     "file": "img/shears/tt-q11a-1200.webp",
-    "bytes": 80646
+    "bytes": 75236
    },
    {
     "w": 800,
     "h": 545,
     "file": "img/shears/tt-q11a-800.webp",
-    "bytes": 49640
+    "bytes": 46234
    },
    {
     "w": 480,
     "h": 327,
     "file": "img/shears/tt-q11a-480.webp",
-    "bytes": 26618
+    "bytes": 24626
    }
   ],
   "alpha": true,
@@ -59876,7 +59913,7 @@
    "w": 160,
    "h": 109,
    "file": "img/shears/tt-q11a-thumb.webp",
-   "bytes": 6520
+   "bytes": 6046
   },
   "cut": "birefnet"
  },
@@ -59884,10 +59921,16 @@
   "alt": "Q11-3x1250A from the rear \u2014 light curtain and sheet catcher",
   "variants": [
    {
+    "w": 567,
+    "h": 432,
+    "file": "img/shears/tt-q11a-rear-567.webp",
+    "bytes": 39576
+   },
+   {
     "w": 480,
     "h": 366,
     "file": "img/shears/tt-q11a-rear-480.webp",
-    "bytes": 37640
+    "bytes": 34674
    }
   ],
   "alpha": true,
@@ -59895,7 +59938,7 @@
    "w": 160,
    "h": 122,
    "file": "img/shears/tt-q11a-rear-thumb.webp",
-   "bytes": 8516
+   "bytes": 7816
   },
   "cut": "birefnet"
  },
@@ -59906,19 +59949,19 @@
     "w": 1200,
     "h": 716,
     "file": "img/shears/tt-q11-1200.webp",
-    "bytes": 55048
+    "bytes": 52068
    },
    {
     "w": 800,
     "h": 478,
     "file": "img/shears/tt-q11-800.webp",
-    "bytes": 37686
+    "bytes": 35246
    },
    {
     "w": 480,
     "h": 287,
     "file": "img/shears/tt-q11-480.webp",
-    "bytes": 21464
+    "bytes": 19938
    }
   ],
   "alpha": true,
@@ -59926,7 +59969,7 @@
    "w": 160,
    "h": 96,
    "file": "img/shears/tt-q11-thumb.webp",
-   "bytes": 5378
+   "bytes": 5054
   },
   "cut": "birefnet"
  },
@@ -59937,7 +59980,7 @@
     "w": 480,
     "h": 377,
     "file": "img/shears/tt-q11-gauge-480.webp",
-    "bytes": 14418
+    "bytes": 12376
    }
   ],
   "alpha": false,
@@ -59945,7 +59988,7 @@
    "w": 160,
    "h": 126,
    "file": "img/shears/tt-q11-gauge-thumb.webp",
-   "bytes": 3826
+   "bytes": 3172
   }
  },
  "tt-q11-stop": {
@@ -59955,7 +59998,7 @@
     "w": 480,
     "h": 357,
     "file": "img/shears/tt-q11-stop-480.webp",
-    "bytes": 12462
+    "bytes": 9966
    }
   ],
   "alpha": false,
@@ -59963,7 +60006,7 @@
    "w": 160,
    "h": 119,
    "file": "img/shears/tt-q11-stop-thumb.webp",
-   "bytes": 2958
+   "bytes": 2226
   }
  },
  "tt-q11nc": {
@@ -59973,19 +60016,19 @@
     "w": 1200,
     "h": 743,
     "file": "img/shears/tt-q11nc-1200.webp",
-    "bytes": 59510
+    "bytes": 48688
    },
    {
     "w": 800,
     "h": 495,
     "file": "img/shears/tt-q11nc-800.webp",
-    "bytes": 39338
+    "bytes": 32210
    },
    {
     "w": 480,
     "h": 297,
     "file": "img/shears/tt-q11nc-480.webp",
-    "bytes": 21764
+    "bytes": 17980
    }
   ],
   "alpha": true,
@@ -59993,7 +60036,7 @@
    "w": 160,
    "h": 99,
    "file": "img/shears/tt-q11nc-thumb.webp",
-   "bytes": 5208
+   "bytes": 4554
   },
   "cut": "birefnet"
  },
@@ -60001,10 +60044,16 @@
   "alt": "Q11-2x2550NC from the rear \u2014 interlocked rear guard and pneumatic sheet catcher",
   "variants": [
    {
+    "w": 726,
+    "h": 517,
+    "file": "img/shears/tt-q11nc-rear-726.webp",
+    "bytes": 32842
+   },
+   {
     "w": 480,
     "h": 342,
     "file": "img/shears/tt-q11nc-rear-480.webp",
-    "bytes": 27186
+    "bytes": 24990
    }
   ],
   "alpha": true,
@@ -60012,7 +60061,7 @@
    "w": 160,
    "h": 114,
    "file": "img/shears/tt-q11nc-rear-thumb.webp",
-   "bytes": 6284
+   "bytes": 5814
   },
   "cut": "birefnet"
  },
@@ -60023,7 +60072,7 @@
     "w": 399,
     "h": 380,
     "file": "img/shears/tt-q11nc-screen-399.webp",
-    "bytes": 11032
+    "bytes": 8792
    }
   ],
   "alpha": false,
@@ -60031,7 +60080,7 @@
    "w": 160,
    "h": 152,
    "file": "img/shears/tt-q11nc-screen-thumb.webp",
-   "bytes": 3120
+   "bytes": 2420
   }
  },
  "tt-q11nc-light": {
@@ -60041,7 +60090,7 @@
     "w": 454,
     "h": 384,
     "file": "img/shears/tt-q11nc-light-454.webp",
-    "bytes": 12254
+    "bytes": 10088
    }
   ],
   "alpha": false,
@@ -60049,7 +60098,7 @@
    "w": 160,
    "h": 135,
    "file": "img/shears/tt-q11nc-light-thumb.webp",
-   "bytes": 2986
+   "bytes": 2460
   }
  },
  "tt-q11nc-balls": {
@@ -60059,7 +60108,7 @@
     "w": 400,
     "h": 370,
     "file": "img/shears/tt-q11nc-balls-400.webp",
-    "bytes": 7484
+    "bytes": 4756
    }
   ],
   "alpha": false,
@@ -60067,7 +60116,7 @@
    "w": 160,
    "h": 148,
    "file": "img/shears/tt-q11nc-balls-thumb.webp",
-   "bytes": 2472
+   "bytes": 1542
   }
  },
  "tt-q11nc-gauge": {
@@ -60077,7 +60126,7 @@
     "w": 424,
     "h": 367,
     "file": "img/shears/tt-q11nc-gauge-424.webp",
-    "bytes": 14496
+    "bytes": 10660
    }
   ],
   "alpha": false,
@@ -60085,7 +60134,7 @@
    "w": 160,
    "h": 138,
    "file": "img/shears/tt-q11nc-gauge-thumb.webp",
-   "bytes": 4120
+   "bytes": 3072
   }
  },
  "tt-q11-4x2000": {
@@ -60095,19 +60144,19 @@
     "w": 1200,
     "h": 527,
     "file": "img/shears/tt-q11-4x2000-1200.webp",
-    "bytes": 52696
+    "bytes": 47782
    },
    {
     "w": 800,
     "h": 351,
     "file": "img/shears/tt-q11-4x2000-800.webp",
-    "bytes": 33616
+    "bytes": 30048
    },
    {
     "w": 480,
     "h": 211,
     "file": "img/shears/tt-q11-4x2000-480.webp",
-    "bytes": 18770
+    "bytes": 16948
    }
   ],
   "alpha": true,
@@ -60115,7 +60164,7 @@
    "w": 160,
    "h": 70,
    "file": "img/shears/tt-q11-4x2000-thumb.webp",
-   "bytes": 4654
+   "bytes": 4334
   },
   "cut": "birefnet"
  },
@@ -60126,19 +60175,19 @@
     "w": 1200,
     "h": 678,
     "file": "img/shears/tt-q11-3x1300-1200.webp",
-    "bytes": 74694
+    "bytes": 71370
    },
    {
     "w": 800,
     "h": 452,
     "file": "img/shears/tt-q11-3x1300-800.webp",
-    "bytes": 46866
+    "bytes": 44142
    },
    {
     "w": 480,
     "h": 271,
     "file": "img/shears/tt-q11-3x1300-480.webp",
-    "bytes": 26416
+    "bytes": 24666
    }
   ],
   "alpha": true,
@@ -60146,7 +60195,7 @@
    "w": 160,
    "h": 90,
    "file": "img/shears/tt-q11-3x1300-thumb.webp",
-   "bytes": 6704
+   "bytes": 6174
   },
   "cut": "birefnet"
  },
@@ -60157,19 +60206,19 @@
     "w": 1200,
     "h": 730,
     "file": "img/shears/tt-q11-6x2000-1200.webp",
-    "bytes": 71432
+    "bytes": 61112
    },
    {
     "w": 800,
     "h": 487,
     "file": "img/shears/tt-q11-6x2000-800.webp",
-    "bytes": 48122
+    "bytes": 40940
    },
    {
     "w": 480,
     "h": 292,
     "file": "img/shears/tt-q11-6x2000-480.webp",
-    "bytes": 26502
+    "bytes": 22414
    }
   ],
   "alpha": true,
@@ -60177,7 +60226,7 @@
    "w": 160,
    "h": 97,
    "file": "img/shears/tt-q11-6x2000-thumb.webp",
-   "bytes": 6446
+   "bytes": 5644
   },
   "cut": "birefnet"
  },
@@ -60188,19 +60237,19 @@
     "w": 1200,
     "h": 866,
     "file": "img/shears/tt-hq01-1200.webp",
-    "bytes": 70540
+    "bytes": 64066
    },
    {
     "w": 800,
     "h": 577,
     "file": "img/shears/tt-hq01-800.webp",
-    "bytes": 45106
+    "bytes": 40612
    },
    {
     "w": 480,
     "h": 346,
     "file": "img/shears/tt-hq01-480.webp",
-    "bytes": 24298
+    "bytes": 21882
    }
   ],
   "alpha": true,
@@ -60208,7 +60257,7 @@
    "w": 160,
    "h": 115,
    "file": "img/shears/tt-hq01-thumb.webp",
-   "bytes": 5498
+   "bytes": 4978
   },
   "cut": "birefnet"
  },
@@ -60234,10 +60283,16 @@
   "alt": "Adjustable back gauge with scale",
   "variants": [
    {
+    "w": 700,
+    "h": 530,
+    "file": "img/shears/tt-hq01-gauge-700.webp",
+    "bytes": 17636
+   },
+   {
     "w": 480,
     "h": 363,
     "file": "img/shears/tt-hq01-gauge-480.webp",
-    "bytes": 12194
+    "bytes": 11058
    }
   ],
   "alpha": false,
@@ -60245,17 +60300,23 @@
    "w": 160,
    "h": 121,
    "file": "img/shears/tt-hq01-gauge-thumb.webp",
-   "bytes": 2890
+   "bytes": 2418
   }
  },
  "tt-hq01-switch": {
   "alt": "Control panel \u2014 automatic and single-stroke switching",
   "variants": [
    {
+    "w": 700,
+    "h": 530,
+    "file": "img/shears/tt-hq01-switch-700.webp",
+    "bytes": 25068
+   },
+   {
     "w": 480,
     "h": 363,
     "file": "img/shears/tt-hq01-switch-480.webp",
-    "bytes": 16794
+    "bytes": 13524
    }
   ],
   "alpha": false,
@@ -60263,7 +60324,7 @@
    "w": 160,
    "h": 121,
    "file": "img/shears/tt-hq01-switch-thumb.webp",
-   "bytes": 2406
+   "bytes": 1788
   }
  },
  "tt-hq11": {
@@ -60273,19 +60334,19 @@
     "w": 1200,
     "h": 799,
     "file": "img/shears/tt-hq11-1200.webp",
-    "bytes": 68688
+    "bytes": 58752
    },
    {
     "w": 800,
     "h": 533,
     "file": "img/shears/tt-hq11-800.webp",
-    "bytes": 45520
+    "bytes": 38266
    },
    {
     "w": 480,
     "h": 320,
     "file": "img/shears/tt-hq11-480.webp",
-    "bytes": 25794
+    "bytes": 21668
    }
   ],
   "alpha": true,
@@ -60293,7 +60354,7 @@
    "w": 160,
    "h": 107,
    "file": "img/shears/tt-hq11-thumb.webp",
-   "bytes": 6200
+   "bytes": 5454
   },
   "cut": "birefnet"
  },
@@ -60304,7 +60365,7 @@
     "w": 480,
     "h": 380,
     "file": "img/shears/tt-hq11-table-480.webp",
-    "bytes": 11038
+    "bytes": 8604
    }
   ],
   "alpha": false,
@@ -60312,7 +60373,7 @@
    "w": 160,
    "h": 127,
    "file": "img/shears/tt-hq11-table-thumb.webp",
-   "bytes": 2894
+   "bytes": 2084
   }
  },
  "tt-hq11-egauge": {
@@ -60322,7 +60383,7 @@
     "w": 480,
     "h": 383,
     "file": "img/shears/tt-hq11-egauge-480.webp",
-    "bytes": 10702
+    "bytes": 8166
    }
   ],
   "alpha": false,
@@ -60330,7 +60391,7 @@
    "w": 160,
    "h": 128,
    "file": "img/shears/tt-hq11-egauge-thumb.webp",
-   "bytes": 2790
+   "bytes": 2026
   }
  },
  "tt-hq11-mgauge": {
@@ -60340,7 +60401,7 @@
     "w": 480,
     "h": 380,
     "file": "img/shears/tt-hq11-mgauge-480.webp",
-    "bytes": 13964
+    "bytes": 11032
    }
   ],
   "alpha": false,
@@ -60348,7 +60409,7 @@
    "w": 160,
    "h": 127,
    "file": "img/shears/tt-hq11-mgauge-thumb.webp",
-   "bytes": 3488
+   "bytes": 2678
   }
  },
  "tt-hq11-pump": {
@@ -60358,7 +60419,7 @@
     "w": 480,
     "h": 388,
     "file": "img/shears/tt-hq11-pump-480.webp",
-    "bytes": 11266
+    "bytes": 10188
    }
   ],
   "alpha": false,
@@ -60366,7 +60427,7 @@
    "w": 160,
    "h": 129,
    "file": "img/shears/tt-hq11-pump-thumb.webp",
-   "bytes": 2796
+   "bytes": 2474
   }
  },
  "video--2gkOrFzL_E": {
@@ -83101,19 +83162,19 @@
     "w": 1200,
     "h": 1135,
     "file": "img/ttmc-more/tm-pf16g-1200.webp",
-    "bytes": 71132
+    "bytes": 61096
    },
    {
     "w": 800,
     "h": 757,
     "file": "img/ttmc-more/tm-pf16g-800.webp",
-    "bytes": 42736
+    "bytes": 38196
    },
    {
     "w": 480,
     "h": 454,
     "file": "img/ttmc-more/tm-pf16g-480.webp",
-    "bytes": 23146
+    "bytes": 20578
    }
   ],
   "alpha": true,
@@ -83121,7 +83182,7 @@
    "w": 160,
    "h": 151,
    "file": "img/ttmc-more/tm-pf16g-thumb.webp",
-   "bytes": 5876
+   "bytes": 5324
   },
   "cut": "birefnet"
  },
@@ -83132,7 +83193,7 @@
     "w": 435,
     "h": 547,
     "file": "img/ttmc-more/tm-pf20g-435.webp",
-    "bytes": 20002
+    "bytes": 18384
    }
   ],
   "alpha": true,
@@ -83140,7 +83201,7 @@
    "w": 127,
    "h": 160,
    "file": "img/ttmc-more/tm-pf20g-thumb.webp",
-   "bytes": 4958
+   "bytes": 4552
   },
   "cut": "birefnet"
  },
@@ -83151,7 +83212,7 @@
     "w": 321,
     "h": 468,
     "file": "img/ttmc-more/tm-ph20d-321.webp",
-    "bytes": 35808
+    "bytes": 35324
    }
   ],
   "alpha": true,
@@ -83159,7 +83220,7 @@
    "w": 110,
    "h": 160,
    "file": "img/ttmc-more/tm-ph20d-thumb.webp",
-   "bytes": 9322
+   "bytes": 8998
   },
   "cut": "birefnet"
  },
@@ -83186,10 +83247,16 @@
   "alt": "PIC50 roller former that embosses a diamond pattern into sheet",
   "variants": [
    {
+    "w": 594,
+    "h": 416,
+    "file": "img/ttmc-more/tm-pic50-594.webp",
+    "bytes": 22010
+   },
+   {
     "w": 480,
     "h": 336,
     "file": "img/ttmc-more/tm-pic50-480.webp",
-    "bytes": 20234
+    "bytes": 18656
    }
   ],
   "alpha": true,
@@ -83197,7 +83264,7 @@
    "w": 160,
    "h": 112,
    "file": "img/ttmc-more/tm-pic50-thumb.webp",
-   "bytes": 4862
+   "bytes": 4536
   },
   "cut": "birefnet"
  },
@@ -83245,13 +83312,13 @@
     "w": 648,
     "h": 902,
     "file": "img/ttmc-more/tm-pnm-648.webp",
-    "bytes": 46480
+    "bytes": 45754
    },
    {
     "w": 480,
     "h": 668,
     "file": "img/ttmc-more/tm-pnm-480.webp",
-    "bytes": 35758
+    "bytes": 34450
    }
   ],
   "alpha": true,
@@ -83259,7 +83326,7 @@
    "w": 115,
    "h": 160,
    "file": "img/ttmc-more/tm-pnm-thumb.webp",
-   "bytes": 6170
+   "bytes": 5900
   },
   "cut": "birefnet"
  },
@@ -83286,18 +83353,18 @@
   "alt": "PPH-12 pneumatic planishing hammer with foot pedal and anvils",
   "variants": [
    {
-    "w": 341,
+    "w": 361,
     "h": 507,
-    "file": "img/ttmc-more/tm-pph12-341.webp",
-    "bytes": 31092
+    "file": "img/ttmc-more/tm-pph12-361.webp",
+    "bytes": 30212
    }
   ],
   "alpha": true,
   "thumb": {
-   "w": 108,
+   "w": 114,
    "h": 160,
    "file": "img/ttmc-more/tm-pph12-thumb.webp",
-   "bytes": 8890
+   "bytes": 8346
   },
   "cut": "birefnet"
  },
@@ -83308,19 +83375,19 @@
     "w": 1200,
     "h": 1653,
     "file": "img/ttmc-more/tm-pph610-1200.webp",
-    "bytes": 126754
+    "bytes": 118908
    },
    {
     "w": 800,
     "h": 1102,
     "file": "img/ttmc-more/tm-pph610-800.webp",
-    "bytes": 81914
+    "bytes": 76544
    },
    {
     "w": 480,
     "h": 661,
     "file": "img/ttmc-more/tm-pph610-480.webp",
-    "bytes": 46068
+    "bytes": 42690
    }
   ],
   "alpha": true,
@@ -83328,7 +83395,7 @@
    "w": 116,
    "h": 160,
    "file": "img/ttmc-more/tm-pph610-thumb.webp",
-   "bytes": 7572
+   "bytes": 7046
   },
   "cut": "birefnet"
  },
@@ -83339,7 +83406,7 @@
     "w": 252,
     "h": 538,
     "file": "img/ttmc-more/tm-pr3-252.webp",
-    "bytes": 16834
+    "bytes": 16740
    }
   ],
   "alpha": true,
@@ -83347,7 +83414,7 @@
    "w": 75,
    "h": 160,
    "file": "img/ttmc-more/tm-pr3-thumb.webp",
-   "bytes": 4552
+   "bytes": 4380
   },
   "cut": "birefnet"
  },
@@ -83358,7 +83425,7 @@
     "w": 368,
     "h": 450,
     "file": "img/ttmc-more/tm-pr5-368.webp",
-    "bytes": 18568
+    "bytes": 16528
    }
   ],
   "alpha": true,
@@ -83366,7 +83433,7 @@
    "w": 131,
    "h": 160,
    "file": "img/ttmc-more/tm-pr5-thumb.webp",
-   "bytes": 6368
+   "bytes": 5670
   },
   "cut": "birefnet"
  },
@@ -83396,19 +83463,19 @@
     "w": 1200,
     "h": 958,
     "file": "img/ttmc-more/tm-prs-1200.webp",
-    "bytes": 73834
+    "bytes": 69844
    },
    {
     "w": 800,
     "h": 639,
     "file": "img/ttmc-more/tm-prs-800.webp",
-    "bytes": 49020
+    "bytes": 45340
    },
    {
     "w": 480,
     "h": 383,
     "file": "img/ttmc-more/tm-prs-480.webp",
-    "bytes": 27440
+    "bytes": 25462
    }
   ],
   "alpha": true,
@@ -83416,7 +83483,7 @@
    "w": 160,
    "h": 128,
    "file": "img/ttmc-more/tm-prs-thumb.webp",
-   "bytes": 6784
+   "bytes": 6260
   },
   "cut": "birefnet"
  },
@@ -83424,16 +83491,22 @@
   "alt": "PRS-150 tube end grinder with 6\u2033 belt for tube up to 5-3/4\u2033",
   "variants": [
    {
+    "w": 1111,
+    "h": 1256,
+    "file": "img/ttmc-more/tm-prs150-1111.webp",
+    "bytes": 71624
+   },
+   {
     "w": 800,
     "h": 904,
     "file": "img/ttmc-more/tm-prs150-800.webp",
-    "bytes": 60144
+    "bytes": 55650
    },
    {
     "w": 480,
     "h": 543,
     "file": "img/ttmc-more/tm-prs150-480.webp",
-    "bytes": 34298
+    "bytes": 31128
    }
   ],
   "alpha": true,
@@ -83441,7 +83514,7 @@
    "w": 142,
    "h": 160,
    "file": "img/ttmc-more/tm-prs150-thumb.webp",
-   "bytes": 7314
+   "bytes": 6696
   },
   "cut": "birefnet"
  },
@@ -83470,13 +83543,13 @@
     "w": 800,
     "h": 428,
     "file": "img/ttmc-more/tm-ptn12u-800.webp",
-    "bytes": 38194
+    "bytes": 31766
    },
    {
     "w": 480,
     "h": 257,
     "file": "img/ttmc-more/tm-ptn12u-480.webp",
-    "bytes": 21572
+    "bytes": 17762
    }
   ],
   "alpha": true,
@@ -83484,7 +83557,7 @@
    "w": 160,
    "h": 86,
    "file": "img/ttmc-more/tm-ptn12u-thumb.webp",
-   "bytes": 5644
+   "bytes": 4806
   },
   "cut": "birefnet"
  },
@@ -83523,10 +83596,16 @@
   "alt": "Q01-1.5\u00d71320 foot shear with front and back gauges",
   "variants": [
    {
+    "w": 651,
+    "h": 494,
+    "file": "img/ttmc-more/tm-q01-651.webp",
+    "bytes": 42460
+   },
+   {
     "w": 480,
     "h": 364,
     "file": "img/ttmc-more/tm-q01-480.webp",
-    "bytes": 36038
+    "bytes": 33038
    }
   ],
   "alpha": true,
@@ -83534,7 +83613,7 @@
    "w": 160,
    "h": 121,
    "file": "img/ttmc-more/tm-q01-thumb.webp",
-   "bytes": 8220
+   "bytes": 7554
   },
   "cut": "birefnet"
  },
@@ -83545,7 +83624,7 @@
     "w": 480,
     "h": 368,
     "file": "img/ttmc-more/tm-q01a-480.webp",
-    "bytes": 30878
+    "bytes": 28276
    }
   ],
   "alpha": true,
@@ -83553,7 +83632,7 @@
    "w": 160,
    "h": 123,
    "file": "img/ttmc-more/tm-q01a-thumb.webp",
-   "bytes": 8008
+   "bytes": 7246
   },
   "cut": "birefnet"
  },
@@ -83561,10 +83640,16 @@
   "alt": "Q01-1.6\u00d71320B light-duty foot shear with spring hold-down",
   "variants": [
    {
+    "w": 596,
+    "h": 439,
+    "file": "img/ttmc-more/tm-q01b-596.webp",
+    "bytes": 33156
+   },
+   {
     "w": 480,
     "h": 354,
     "file": "img/ttmc-more/tm-q01b-480.webp",
-    "bytes": 32538
+    "bytes": 28160
    }
   ],
   "alpha": true,
@@ -83572,7 +83657,7 @@
    "w": 160,
    "h": 118,
    "file": "img/ttmc-more/tm-q01b-thumb.webp",
-   "bytes": 7554
+   "bytes": 6774
   },
   "cut": "birefnet"
  },
@@ -83583,7 +83668,7 @@
     "w": 348,
     "h": 261,
     "file": "img/ttmc-more/tm-q01b-gauge-348.webp",
-    "bytes": 7376
+    "bytes": 7248
    }
   ],
   "alpha": false,
@@ -83591,17 +83676,23 @@
    "w": 160,
    "h": 120,
    "file": "img/ttmc-more/tm-q01b-gauge-thumb.webp",
-   "bytes": 1952
+   "bytes": 1742
   }
  },
  "tm-q01h": {
   "alt": "Q01-1.5\u00d71500 two-handle lever shear on stand",
   "variants": [
    {
+    "w": 738,
+    "h": 548,
+    "file": "img/ttmc-more/tm-q01h-738.webp",
+    "bytes": 24928
+   },
+   {
     "w": 480,
     "h": 356,
     "file": "img/ttmc-more/tm-q01h-480.webp",
-    "bytes": 20054
+    "bytes": 17688
    }
   ],
   "alpha": true,
@@ -83609,7 +83700,7 @@
    "w": 160,
    "h": 119,
    "file": "img/ttmc-more/tm-q01h-thumb.webp",
-   "bytes": 5206
+   "bytes": 4500
   },
   "cut": "birefnet"
  },
@@ -83658,7 +83749,7 @@
     "w": 197,
     "h": 425,
     "file": "img/ttmc-more/tm-rap-197.webp",
-    "bytes": 17164
+    "bytes": 15178
    }
   ],
   "alpha": true,
@@ -83666,7 +83757,7 @@
    "w": 74,
    "h": 160,
    "file": "img/ttmc-more/tm-rap-thumb.webp",
-   "bytes": 5378
+   "bytes": 4778
   },
   "cut": "birefnet"
  },
@@ -83677,7 +83768,7 @@
     "w": 324,
     "h": 464,
     "file": "img/ttmc-more/tm-rb1-324.webp",
-    "bytes": 19684
+    "bytes": 18922
    }
   ],
   "alpha": true,
@@ -83685,7 +83776,7 @@
    "w": 112,
    "h": 160,
    "file": "img/ttmc-more/tm-rb1-thumb.webp",
-   "bytes": 5674
+   "bytes": 5260
   },
   "cut": "birefnet"
  },
@@ -83714,7 +83805,7 @@
     "w": 359,
     "h": 519,
     "file": "img/ttmc-more/tm-rbm10-359.webp",
-    "bytes": 22360
+    "bytes": 20850
    }
   ],
   "alpha": true,
@@ -83722,7 +83813,7 @@
    "w": 111,
    "h": 160,
    "file": "img/ttmc-more/tm-rbm10-thumb.webp",
-   "bytes": 5696
+   "bytes": 5362
   },
   "cut": "birefnet"
  },
@@ -83730,10 +83821,16 @@
   "alt": "RBM20 ring roller with LED top-roll readout and foot pedal",
   "variants": [
    {
+    "w": 641,
+    "h": 979,
+    "file": "img/ttmc-more/tm-rbm20-641.webp",
+    "bytes": 45904
+   },
+   {
     "w": 480,
     "h": 733,
     "file": "img/ttmc-more/tm-rbm20-480.webp",
-    "bytes": 41432
+    "bytes": 37158
    }
   ],
   "alpha": true,
@@ -83741,7 +83838,7 @@
    "w": 105,
    "h": 160,
    "file": "img/ttmc-more/tm-rbm20-thumb.webp",
-   "bytes": 6520
+   "bytes": 5932
   },
   "cut": "birefnet"
  },
@@ -83752,7 +83849,7 @@
     "w": 480,
     "h": 689,
     "file": "img/ttmc-more/tm-rbm30-480.webp",
-    "bytes": 36060
+    "bytes": 33896
    }
   ],
   "alpha": true,
@@ -83760,7 +83857,7 @@
    "w": 111,
    "h": 160,
    "file": "img/ttmc-more/tm-rbm30-thumb.webp",
-   "bytes": 5756
+   "bytes": 5296
   },
   "cut": "birefnet"
  },
@@ -83828,7 +83925,7 @@
     "w": 343,
     "h": 379,
     "file": "img/ttmc-more/tm-rm08-343.webp",
-    "bytes": 21642
+    "bytes": 20836
    }
   ],
   "alpha": true,
@@ -83836,7 +83933,7 @@
    "w": 145,
    "h": 160,
    "file": "img/ttmc-more/tm-rm08-thumb.webp",
-   "bytes": 8276
+   "bytes": 7978
   },
   "cut": "birefnet"
  },
@@ -83847,7 +83944,7 @@
     "w": 247,
     "h": 395,
     "file": "img/ttmc-more/tm-rm18-247.webp",
-    "bytes": 17464
+    "bytes": 15902
    }
   ],
   "alpha": true,
@@ -83855,7 +83952,7 @@
    "w": 100,
    "h": 160,
    "file": "img/ttmc-more/tm-rm18-thumb.webp",
-   "bytes": 6710
+   "bytes": 5906
   },
   "cut": "birefnet"
  },
@@ -83866,19 +83963,19 @@
     "w": 1194,
     "h": 1336,
     "file": "img/ttmc-more/tm-rm18e-1194.webp",
-    "bytes": 93406
+    "bytes": 84252
    },
    {
     "w": 800,
     "h": 895,
     "file": "img/ttmc-more/tm-rm18e-800.webp",
-    "bytes": 69464
+    "bytes": 63970
    },
    {
     "w": 480,
     "h": 537,
     "file": "img/ttmc-more/tm-rm18e-480.webp",
-    "bytes": 38920
+    "bytes": 35820
    }
   ],
   "alpha": true,
@@ -83886,7 +83983,7 @@
    "w": 143,
    "h": 160,
    "file": "img/ttmc-more/tm-rm18e-thumb.webp",
-   "bytes": 9040
+   "bytes": 8408
   },
   "cut": "birefnet"
  },
@@ -83897,7 +83994,7 @@
     "w": 386,
     "h": 489,
     "file": "img/ttmc-more/tm-rm24m-386.webp",
-    "bytes": 19040
+    "bytes": 19004
    }
   ],
   "alpha": true,
@@ -83905,7 +84002,7 @@
    "w": 126,
    "h": 160,
    "file": "img/ttmc-more/tm-rm24m-thumb.webp",
-   "bytes": 6314
+   "bytes": 6108
   },
   "cut": "birefnet"
  },
@@ -83966,19 +84063,19 @@
     "w": 1080,
     "h": 1495,
     "file": "img/ttmc-more/tm-rm42h-1080.webp",
-    "bytes": 88294
+    "bytes": 85252
    },
    {
     "w": 800,
     "h": 1107,
     "file": "img/ttmc-more/tm-rm42h-800.webp",
-    "bytes": 72166
+    "bytes": 69398
    },
    {
     "w": 480,
     "h": 664,
     "file": "img/ttmc-more/tm-rm42h-480.webp",
-    "bytes": 40182
+    "bytes": 38332
    }
   ],
   "alpha": true,
@@ -83986,7 +84083,7 @@
    "w": 116,
    "h": 160,
    "file": "img/ttmc-more/tm-rm42h-thumb.webp",
-   "bytes": 7160
+   "bytes": 6764
   },
   "cut": "birefnet"
  },
@@ -84016,7 +84113,7 @@
     "w": 480,
     "h": 366,
     "file": "img/ttmc-more/tm-rmb-480.webp",
-    "bytes": 31062
+    "bytes": 29864
    }
   ],
   "alpha": true,
@@ -84024,7 +84121,7 @@
    "w": 160,
    "h": 122,
    "file": "img/ttmc-more/tm-rmb-thumb.webp",
-   "bytes": 7366
+   "bytes": 6998
   },
   "cut": "birefnet"
  },
@@ -84035,7 +84132,7 @@
     "w": 393,
     "h": 353,
     "file": "img/ttmc-more/tm-rtb8-393.webp",
-    "bytes": 17826
+    "bytes": 17094
    }
   ],
   "alpha": true,
@@ -84043,7 +84140,7 @@
    "w": 160,
    "h": 144,
    "file": "img/ttmc-more/tm-rtb8-thumb.webp",
-   "bytes": 7138
+   "bytes": 6544
   },
   "cut": "birefnet"
  },
@@ -84051,10 +84148,16 @@
   "alt": "RTB-8AS hand roller for round duct on welded stand",
   "variants": [
    {
+    "w": 554,
+    "h": 641,
+    "file": "img/ttmc-more/tm-rtb8as-554.webp",
+    "bytes": 33844
+   },
+   {
     "w": 480,
     "h": 555,
     "file": "img/ttmc-more/tm-rtb8as-480.webp",
-    "bytes": 37892
+    "bytes": 32512
    }
   ],
   "alpha": true,
@@ -84062,7 +84165,7 @@
    "w": 138,
    "h": 160,
    "file": "img/ttmc-more/tm-rtb8as-thumb.webp",
-   "bytes": 7596
+   "bytes": 6692
   },
   "cut": "birefnet"
  },
@@ -84073,13 +84176,13 @@
     "w": 800,
     "h": 1049,
     "file": "img/ttmc-more/tm-s100-800.webp",
-    "bytes": 56184
+    "bytes": 52506
    },
    {
     "w": 480,
     "h": 630,
     "file": "img/ttmc-more/tm-s100-480.webp",
-    "bytes": 31126
+    "bytes": 29178
    }
   ],
   "alpha": true,
@@ -84087,7 +84190,7 @@
    "w": 122,
    "h": 160,
    "file": "img/ttmc-more/tm-s100-thumb.webp",
-   "bytes": 5822
+   "bytes": 5298
   },
   "cut": "birefnet"
  },
@@ -84095,10 +84198,16 @@
   "alt": "S-220 wide-belt radius grinder and surface sander with 8\u2033 belt",
   "variants": [
    {
+    "w": 707,
+    "h": 732,
+    "file": "img/ttmc-more/tm-s220-707.webp",
+    "bytes": 33002
+   },
+   {
     "w": 480,
     "h": 497,
     "file": "img/ttmc-more/tm-s220-480.webp",
-    "bytes": 26516
+    "bytes": 24472
    }
   ],
   "alpha": true,
@@ -84106,7 +84215,7 @@
    "w": 155,
    "h": 160,
    "file": "img/ttmc-more/tm-s220-thumb.webp",
-   "bytes": 6706
+   "bytes": 6198
   },
   "cut": "birefnet"
  },
@@ -84117,19 +84226,19 @@
     "w": 1200,
     "h": 1212,
     "file": "img/ttmc-more/tm-s50-1200.webp",
-    "bytes": 96082
+    "bytes": 87588
    },
    {
     "w": 800,
     "h": 808,
     "file": "img/ttmc-more/tm-s50-800.webp",
-    "bytes": 61230
+    "bytes": 55694
    },
    {
     "w": 480,
     "h": 485,
     "file": "img/ttmc-more/tm-s50-480.webp",
-    "bytes": 33320
+    "bytes": 30118
    }
   ],
   "alpha": true,
@@ -84137,7 +84246,7 @@
    "w": 158,
    "h": 160,
    "file": "img/ttmc-more/tm-s50-thumb.webp",
-   "bytes": 7478
+   "bytes": 6972
   },
   "cut": "birefnet"
  },
@@ -84148,13 +84257,13 @@
     "w": 800,
     "h": 681,
     "file": "img/ttmc-more/tm-s50b-800.webp",
-    "bytes": 46036
+    "bytes": 40464
    },
    {
     "w": 480,
     "h": 409,
     "file": "img/ttmc-more/tm-s50b-480.webp",
-    "bytes": 26968
+    "bytes": 23458
    }
   ],
   "alpha": true,
@@ -84162,7 +84271,7 @@
    "w": 160,
    "h": 136,
    "file": "img/ttmc-more/tm-s50b-thumb.webp",
-   "bytes": 6532
+   "bytes": 5658
   },
   "cut": "birefnet"
  },
@@ -84192,19 +84301,19 @@
     "w": 1200,
     "h": 1289,
     "file": "img/ttmc-more/tm-s75-1200.webp",
-    "bytes": 74602
+    "bytes": 68810
    },
    {
     "w": 800,
     "h": 859,
     "file": "img/ttmc-more/tm-s75-800.webp",
-    "bytes": 51478
+    "bytes": 47332
    },
    {
     "w": 480,
     "h": 516,
     "file": "img/ttmc-more/tm-s75-480.webp",
-    "bytes": 28928
+    "bytes": 26396
    }
   ],
   "alpha": true,
@@ -84212,7 +84321,7 @@
    "w": 149,
    "h": 160,
    "file": "img/ttmc-more/tm-s75-thumb.webp",
-   "bytes": 6932
+   "bytes": 6338
   },
   "cut": "birefnet"
  },
@@ -84223,19 +84332,19 @@
     "w": 1200,
     "h": 1139,
     "file": "img/ttmc-more/tm-s75f-1200.webp",
-    "bytes": 86614
+    "bytes": 74302
    },
    {
     "w": 800,
     "h": 759,
     "file": "img/ttmc-more/tm-s75f-800.webp",
-    "bytes": 57158
+    "bytes": 48486
    },
    {
     "w": 480,
     "h": 455,
     "file": "img/ttmc-more/tm-s75f-480.webp",
-    "bytes": 31834
+    "bytes": 27080
    }
   ],
   "alpha": true,
@@ -84243,7 +84352,7 @@
    "w": 160,
    "h": 152,
    "file": "img/ttmc-more/tm-s75f-thumb.webp",
-   "bytes": 7682
+   "bytes": 6742
   },
   "cut": "birefnet"
  },
@@ -84254,13 +84363,13 @@
     "w": 800,
     "h": 1140,
     "file": "img/ttmc-more/tm-s75h-800.webp",
-    "bytes": 90414
+    "bytes": 84932
    },
    {
     "w": 480,
     "h": 684,
     "file": "img/ttmc-more/tm-s75h-480.webp",
-    "bytes": 48158
+    "bytes": 45740
    }
   ],
   "alpha": true,
@@ -84268,7 +84377,7 @@
    "w": 112,
    "h": 160,
    "file": "img/ttmc-more/tm-s75h-thumb.webp",
-   "bytes": 6918
+   "bytes": 6352
   },
   "cut": "birefnet"
  },
@@ -84279,7 +84388,7 @@
     "w": 366,
     "h": 277,
     "file": "img/ttmc-more/tm-sbg30-366.webp",
-    "bytes": 18806
+    "bytes": 17958
    }
   ],
   "alpha": true,
@@ -84287,7 +84396,7 @@
    "w": 160,
    "h": 121,
    "file": "img/ttmc-more/tm-sbg30-thumb.webp",
-   "bytes": 6942
+   "bytes": 6430
   },
   "cut": "birefnet"
  },
@@ -84295,10 +84404,16 @@
   "alt": "SDD75 multi-purpose belt grinder \u2014 flat, contact wheel and tube notching on one arm",
   "variants": [
    {
+    "w": 562,
+    "h": 709,
+    "file": "img/ttmc-more/tm-sdd75-562.webp",
+    "bytes": 49674
+   },
+   {
     "w": 480,
     "h": 606,
     "file": "img/ttmc-more/tm-sdd75-480.webp",
-    "bytes": 47534
+    "bytes": 44302
    }
   ],
   "alpha": true,
@@ -84306,7 +84421,7 @@
    "w": 127,
    "h": 160,
    "file": "img/ttmc-more/tm-sdd75-thumb.webp",
-   "bytes": 8090
+   "bytes": 7520
   },
   "cut": "birefnet"
  },
@@ -84317,7 +84432,7 @@
     "w": 229,
     "h": 437,
     "file": "img/ttmc-more/tm-sl10-229.webp",
-    "bytes": 15208
+    "bytes": 15312
    }
   ],
   "alpha": true,
@@ -84325,7 +84440,7 @@
    "w": 84,
    "h": 160,
    "file": "img/ttmc-more/tm-sl10-thumb.webp",
-   "bytes": 4806
+   "bytes": 4738
   },
   "cut": "birefnet"
  },
@@ -84333,10 +84448,16 @@
   "alt": "W01-1.5\u00d71300 manual slip roll",
   "variants": [
    {
+    "w": 738,
+    "h": 299,
+    "file": "img/ttmc-more/tm-slip-1300-738.webp",
+    "bytes": 27032
+   },
+   {
     "w": 480,
     "h": 194,
     "file": "img/ttmc-more/tm-slip-1300-480.webp",
-    "bytes": 23752
+    "bytes": 20090
    }
   ],
   "alpha": true,
@@ -84344,7 +84465,7 @@
    "w": 160,
    "h": 65,
    "file": "img/ttmc-more/tm-slip-1300-thumb.webp",
-   "bytes": 5578
+   "bytes": 4964
   },
   "cut": "birefnet"
  },
@@ -84352,10 +84473,16 @@
   "alt": "KW01-0.8\u00d71250 slip roll on stand",
   "variants": [
    {
+    "w": 766,
+    "h": 654,
+    "file": "img/ttmc-more/tm-slip-kw01-766.webp",
+    "bytes": 56622
+   },
+   {
     "w": 480,
     "h": 410,
     "file": "img/ttmc-more/tm-slip-kw01-480.webp",
-    "bytes": 44812
+    "bytes": 39344
    }
   ],
   "alpha": true,
@@ -84363,7 +84490,7 @@
    "w": 160,
    "h": 137,
    "file": "img/ttmc-more/tm-slip-kw01-thumb.webp",
-   "bytes": 11274
+   "bytes": 10198
   },
   "cut": "birefnet"
  },
@@ -84374,7 +84501,7 @@
     "w": 404,
     "h": 332,
     "file": "img/ttmc-more/tm-slip-sj-404.webp",
-    "bytes": 23054
+    "bytes": 20418
    }
   ],
   "alpha": true,
@@ -84382,7 +84509,7 @@
    "w": 160,
    "h": 131,
    "file": "img/ttmc-more/tm-slip-sj-thumb.webp",
-   "bytes": 8344
+   "bytes": 7292
   },
   "cut": "birefnet"
  },
@@ -84393,13 +84520,13 @@
     "w": 800,
     "h": 306,
     "file": "img/ttmc-more/tm-slip-w01-800.webp",
-    "bytes": 36772
+    "bytes": 32868
    },
    {
     "w": 480,
     "h": 184,
     "file": "img/ttmc-more/tm-slip-w01-480.webp",
-    "bytes": 21848
+    "bytes": 18696
    }
   ],
   "alpha": true,
@@ -84407,7 +84534,7 @@
    "w": 160,
    "h": 61,
    "file": "img/ttmc-more/tm-slip-w01-thumb.webp",
-   "bytes": 5374
+   "bytes": 4900
   },
   "cut": "birefnet"
  },
@@ -84418,7 +84545,7 @@
     "w": 480,
     "h": 476,
     "file": "img/ttmc-more/tm-sm16b-480.webp",
-    "bytes": 23842
+    "bytes": 21240
    }
   ],
   "alpha": true,
@@ -84426,7 +84553,7 @@
    "w": 160,
    "h": 159,
    "file": "img/ttmc-more/tm-sm16b-thumb.webp",
-   "bytes": 6416
+   "bytes": 5800
   },
   "cut": "birefnet"
  },
@@ -84434,16 +84561,22 @@
   "alt": "SP-2 variable-speed grinding and polishing machine with belt and disc",
   "variants": [
    {
+    "w": 947,
+    "h": 1326,
+    "file": "img/ttmc-more/tm-sp2-947.webp",
+    "bytes": 57714
+   },
+   {
     "w": 800,
     "h": 1120,
     "file": "img/ttmc-more/tm-sp2-800.webp",
-    "bytes": 56022
+    "bytes": 53600
    },
    {
     "w": 480,
     "h": 672,
     "file": "img/ttmc-more/tm-sp2-480.webp",
-    "bytes": 31692
+    "bytes": 29442
    }
   ],
   "alpha": true,
@@ -84451,7 +84584,7 @@
    "w": 114,
    "h": 160,
    "file": "img/ttmc-more/tm-sp2-thumb.webp",
-   "bytes": 5728
+   "bytes": 5340
   },
   "cut": "birefnet"
  },
@@ -84506,7 +84639,7 @@
     "w": 480,
     "h": 169,
     "file": "img/ttmc-more/tm-ss-jaws-480.webp",
-    "bytes": 8748
+    "bytes": 7954
    }
   ],
   "alpha": false,
@@ -84514,7 +84647,7 @@
    "w": 160,
    "h": 56,
    "file": "img/ttmc-more/tm-ss-jaws-thumb.webp",
-   "bytes": 1882
+   "bytes": 1566
   }
  },
  "tm-ss16": {
@@ -84524,7 +84657,7 @@
     "w": 192,
     "h": 407,
     "file": "img/ttmc-more/tm-ss16-192.webp",
-    "bytes": 12782
+    "bytes": 11650
    }
   ],
   "alpha": true,
@@ -84532,7 +84665,7 @@
    "w": 75,
    "h": 160,
    "file": "img/ttmc-more/tm-ss16-thumb.webp",
-   "bytes": 4624
+   "bytes": 4116
   },
   "cut": "birefnet"
  },
@@ -84543,7 +84676,7 @@
     "w": 322,
     "h": 560,
     "file": "img/ttmc-more/tm-ss16f-322.webp",
-    "bytes": 23028
+    "bytes": 20818
    }
   ],
   "alpha": true,
@@ -84551,7 +84684,7 @@
    "w": 92,
    "h": 160,
    "file": "img/ttmc-more/tm-ss16f-thumb.webp",
-   "bytes": 5398
+   "bytes": 4930
   },
   "cut": "birefnet"
  },
@@ -84562,7 +84695,7 @@
     "w": 253,
     "h": 573,
     "file": "img/ttmc-more/tm-ss18fd-253.webp",
-    "bytes": 21428
+    "bytes": 19800
    }
   ],
   "alpha": true,
@@ -84570,7 +84703,7 @@
    "w": 71,
    "h": 160,
    "file": "img/ttmc-more/tm-ss18fd-thumb.webp",
-   "bytes": 4678
+   "bytes": 4270
   },
   "cut": "birefnet"
  },
@@ -84578,10 +84711,16 @@
   "alt": "RA785 roller table with measuring feed system",
   "variants": [
    {
+    "w": 624,
+    "h": 342,
+    "file": "img/ttmc-more/tm-stand-ra785-624.webp",
+    "bytes": 36922
+   },
+   {
     "w": 480,
     "h": 263,
     "file": "img/ttmc-more/tm-stand-ra785-480.webp",
-    "bytes": 36062
+    "bytes": 31446
    }
   ],
   "alpha": true,
@@ -84589,7 +84728,7 @@
    "w": 160,
    "h": 88,
    "file": "img/ttmc-more/tm-stand-ra785-thumb.webp",
-   "bytes": 7766
+   "bytes": 7024
   },
   "cut": "birefnet"
  },
@@ -84600,19 +84739,19 @@
     "w": 1200,
     "h": 1020,
     "file": "img/ttmc-more/tm-stand-rb365-1200.webp",
-    "bytes": 98898
+    "bytes": 88580
    },
    {
     "w": 800,
     "h": 680,
     "file": "img/ttmc-more/tm-stand-rb365-800.webp",
-    "bytes": 64274
+    "bytes": 57292
    },
    {
     "w": 480,
     "h": 408,
     "file": "img/ttmc-more/tm-stand-rb365-480.webp",
-    "bytes": 34294
+    "bytes": 30496
    }
   ],
   "alpha": true,
@@ -84620,7 +84759,7 @@
    "w": 160,
    "h": 136,
    "file": "img/ttmc-more/tm-stand-rb365-thumb.webp",
-   "bytes": 8718
+   "bytes": 8008
   },
   "cut": "birefnet"
  },
@@ -84631,13 +84770,13 @@
     "w": 800,
     "h": 1654,
     "file": "img/ttmc-more/tm-stand-rv-800.webp",
-    "bytes": 67368
+    "bytes": 60174
    },
    {
     "w": 480,
     "h": 993,
     "file": "img/ttmc-more/tm-stand-rv-480.webp",
-    "bytes": 37900
+    "bytes": 34136
    }
   ],
   "alpha": true,
@@ -84645,7 +84784,7 @@
    "w": 77,
    "h": 160,
    "file": "img/ttmc-more/tm-stand-rv-thumb.webp",
-   "bytes": 4302
+   "bytes": 3862
   },
   "cut": "birefnet"
  },
@@ -84656,13 +84795,13 @@
     "w": 800,
     "h": 1780,
     "file": "img/ttmc-more/tm-t25-800.webp",
-    "bytes": 103502
+    "bytes": 97850
    },
    {
     "w": 480,
     "h": 1068,
     "file": "img/ttmc-more/tm-t25-480.webp",
-    "bytes": 59830
+    "bytes": 56752
    }
   ],
   "alpha": true,
@@ -84670,7 +84809,7 @@
    "w": 72,
    "h": 160,
    "file": "img/ttmc-more/tm-t25-thumb.webp",
-   "bytes": 5590
+   "bytes": 5236
   },
   "cut": "birefnet"
  },
@@ -84681,7 +84820,7 @@
     "w": 480,
     "h": 813,
     "file": "img/ttmc-more/tm-t25b-480.webp",
-    "bytes": 47916
+    "bytes": 45942
    }
   ],
   "alpha": true,
@@ -84689,7 +84828,7 @@
    "w": 94,
    "h": 160,
    "file": "img/ttmc-more/tm-t25b-thumb.webp",
-   "bytes": 6262
+   "bytes": 6018
   },
   "cut": "birefnet"
  },
@@ -84700,7 +84839,7 @@
     "w": 480,
     "h": 1071,
     "file": "img/ttmc-more/tm-t25c-480.webp",
-    "bytes": 51408
+    "bytes": 49170
    }
   ],
   "alpha": true,
@@ -84708,7 +84847,7 @@
    "w": 72,
    "h": 160,
    "file": "img/ttmc-more/tm-t25c-thumb.webp",
-   "bytes": 5476
+   "bytes": 5142
   },
   "cut": "birefnet"
  },
@@ -84719,7 +84858,7 @@
     "w": 480,
     "h": 1156,
     "file": "img/ttmc-more/tm-t28-480.webp",
-    "bytes": 54764
+    "bytes": 53924
    }
   ],
   "alpha": true,
@@ -84727,7 +84866,7 @@
    "w": 66,
    "h": 160,
    "file": "img/ttmc-more/tm-t28-thumb.webp",
-   "bytes": 5292
+   "bytes": 5212
   },
   "cut": "birefnet"
  },
@@ -84738,7 +84877,7 @@
     "w": 480,
     "h": 931,
     "file": "img/ttmc-more/tm-t32-480.webp",
-    "bytes": 55134
+    "bytes": 51204
    }
   ],
   "alpha": true,
@@ -84746,7 +84885,7 @@
    "w": 82,
    "h": 160,
    "file": "img/ttmc-more/tm-t32-thumb.webp",
-   "bytes": 5568
+   "bytes": 5194
   },
   "cut": "birefnet"
  },
@@ -84757,7 +84896,7 @@
     "w": 284,
     "h": 922,
     "file": "img/ttmc-more/tm-t40-284.webp",
-    "bytes": 33362
+    "bytes": 31462
    }
   ],
   "alpha": true,
@@ -84765,7 +84904,7 @@
    "w": 49,
    "h": 160,
    "file": "img/ttmc-more/tm-t40-thumb.webp",
-   "bytes": 4376
+   "bytes": 3984
   },
   "cut": "birefnet"
  },
@@ -84801,7 +84940,7 @@
     "w": 480,
     "h": 1183,
     "file": "img/ttmc-more/tm-t50-480.webp",
-    "bytes": 69744
+    "bytes": 66550
    }
   ],
   "alpha": true,
@@ -84809,7 +84948,7 @@
    "w": 65,
    "h": 160,
    "file": "img/ttmc-more/tm-t50-thumb.webp",
-   "bytes": 5484
+   "bytes": 5212
   },
   "cut": "birefnet"
  },
@@ -84858,13 +84997,13 @@
     "w": 576,
     "h": 1337,
     "file": "img/ttmc-more/tm-t50e-576.webp",
-    "bytes": 77516
+    "bytes": 72514
    },
    {
     "w": 480,
     "h": 1114,
     "file": "img/ttmc-more/tm-t50e-480.webp",
-    "bytes": 67440
+    "bytes": 63026
    }
   ],
   "alpha": true,
@@ -84872,7 +85011,7 @@
    "w": 69,
    "h": 160,
    "file": "img/ttmc-more/tm-t50e-thumb.webp",
-   "bytes": 5350
+   "bytes": 5030
   },
   "cut": "birefnet"
  },
@@ -84902,7 +85041,7 @@
     "w": 356,
     "h": 323,
     "file": "img/ttmc-more/tm-tb12-356.webp",
-    "bytes": 21908
+    "bytes": 20368
    }
   ],
   "alpha": true,
@@ -84910,7 +85049,7 @@
    "w": 160,
    "h": 145,
    "file": "img/ttmc-more/tm-tb12-thumb.webp",
-   "bytes": 8638
+   "bytes": 8076
   },
   "cut": "birefnet"
  },
@@ -84940,7 +85079,7 @@
     "w": 318,
     "h": 450,
     "file": "img/ttmc-more/tm-tb3-318.webp",
-    "bytes": 19696
+    "bytes": 19260
    }
   ],
   "alpha": true,
@@ -84948,7 +85087,7 @@
    "w": 113,
    "h": 160,
    "file": "img/ttmc-more/tm-tb3-thumb.webp",
-   "bytes": 6538
+   "bytes": 6102
   },
   "cut": "birefnet"
  },
@@ -85103,13 +85242,13 @@
     "w": 800,
     "h": 371,
     "file": "img/ttmc-more/tm-tfs-800.webp",
-    "bytes": 58872
+    "bytes": 53758
    },
    {
     "w": 480,
     "h": 223,
     "file": "img/ttmc-more/tm-tfs-480.webp",
-    "bytes": 32932
+    "bytes": 30336
    }
   ],
   "alpha": true,
@@ -85117,7 +85256,7 @@
    "w": 160,
    "h": 74,
    "file": "img/ttmc-more/tm-tfs-thumb.webp",
-   "bytes": 8034
+   "bytes": 7026
   },
   "cut": "birefnet"
  },
@@ -85125,10 +85264,16 @@
   "alt": "TH-800 CNC horizontal boring and milling machine with B-axis rotary table",
   "variants": [
    {
+    "w": 776,
+    "h": 815,
+    "file": "img/ttmc-more/tm-th800-776.webp",
+    "bytes": 41596
+   },
+   {
     "w": 480,
     "h": 504,
     "file": "img/ttmc-more/tm-th800-480.webp",
-    "bytes": 29352
+    "bytes": 25820
    }
   ],
   "alpha": true,
@@ -85136,7 +85281,7 @@
    "w": 152,
    "h": 160,
    "file": "img/ttmc-more/tm-th800-thumb.webp",
-   "bytes": 7072
+   "bytes": 6074
   },
   "cut": "birefnet"
  },
@@ -85166,7 +85311,7 @@
     "w": 480,
     "h": 664,
     "file": "img/ttmc-more/tm-tp12b-480.webp",
-    "bytes": 26610
+    "bytes": 24474
    }
   ],
   "alpha": true,
@@ -85174,7 +85319,7 @@
    "w": 116,
    "h": 160,
    "file": "img/ttmc-more/tm-tp12b-thumb.webp",
-   "bytes": 4814
+   "bytes": 4228
   },
   "cut": "birefnet"
  },
@@ -85185,7 +85330,7 @@
     "w": 480,
     "h": 271,
     "file": "img/ttmc-more/tm-tr40-480.webp",
-    "bytes": 21560
+    "bytes": 19318
    }
   ],
   "alpha": true,
@@ -85193,7 +85338,7 @@
    "w": 160,
    "h": 90,
    "file": "img/ttmc-more/tm-tr40-thumb.webp",
-   "bytes": 5738
+   "bytes": 5214
   },
   "cut": "birefnet"
  },
@@ -85204,7 +85349,7 @@
     "w": 311,
     "h": 624,
     "file": "img/ttmc-more/tm-tr50-311.webp",
-    "bytes": 30298
+    "bytes": 28368
    }
   ],
   "alpha": true,
@@ -85212,7 +85357,7 @@
    "w": 80,
    "h": 160,
    "file": "img/ttmc-more/tm-tr50-thumb.webp",
-   "bytes": 6100
+   "bytes": 5538
   },
   "cut": "birefnet"
  },
@@ -85223,7 +85368,7 @@
     "w": 480,
     "h": 629,
     "file": "img/ttmc-more/tm-tr60-480.webp",
-    "bytes": 39998
+    "bytes": 35870
    }
   ],
   "alpha": true,
@@ -85231,7 +85376,7 @@
    "w": 122,
    "h": 160,
    "file": "img/ttmc-more/tm-tr60-thumb.webp",
-   "bytes": 7570
+   "bytes": 6796
   },
   "cut": "birefnet"
  },
@@ -85239,16 +85384,22 @@
   "alt": "TSB 2060/2 cast-iron folding machine with counterweight",
   "variants": [
    {
+    "w": 972,
+    "h": 442,
+    "file": "img/ttmc-more/tm-tsb2060-972.webp",
+    "bytes": 41046
+   },
+   {
     "w": 800,
     "h": 364,
     "file": "img/ttmc-more/tm-tsb2060-800.webp",
-    "bytes": 43686
+    "bytes": 39056
    },
    {
     "w": 480,
     "h": 218,
     "file": "img/ttmc-more/tm-tsb2060-480.webp",
-    "bytes": 25174
+    "bytes": 22100
    }
   ],
   "alpha": true,
@@ -85256,7 +85407,7 @@
    "w": 160,
    "h": 73,
    "file": "img/ttmc-more/tm-tsb2060-thumb.webp",
-   "bytes": 6164
+   "bytes": 5568
   },
   "cut": "birefnet"
  },
@@ -85264,16 +85415,22 @@
   "alt": "TSBS 2020/2 manual folding machine with segmented blade",
   "variants": [
    {
+    "w": 935,
+    "h": 432,
+    "file": "img/ttmc-more/tm-tsbs-935.webp",
+    "bytes": 37960
+   },
+   {
     "w": 800,
     "h": 370,
     "file": "img/ttmc-more/tm-tsbs-800.webp",
-    "bytes": 39254
+    "bytes": 36756
    },
    {
     "w": 480,
     "h": 222,
     "file": "img/ttmc-more/tm-tsbs-480.webp",
-    "bytes": 21756
+    "bytes": 20242
    }
   ],
   "alpha": true,
@@ -85281,7 +85438,7 @@
    "w": 160,
    "h": 74,
    "file": "img/ttmc-more/tm-tsbs-thumb.webp",
-   "bytes": 5660
+   "bytes": 5124
   },
   "cut": "birefnet"
  },
@@ -85292,7 +85449,7 @@
     "w": 457,
     "h": 467,
     "file": "img/ttmc-more/tm-tsc-457.webp",
-    "bytes": 26206
+    "bytes": 24874
    }
   ],
   "alpha": true,
@@ -85300,7 +85457,7 @@
    "w": 157,
    "h": 160,
    "file": "img/ttmc-more/tm-tsc-thumb.webp",
-   "bytes": 7902
+   "bytes": 7288
   },
   "cut": "birefnet"
  },
@@ -85308,10 +85465,16 @@
   "alt": "TSM300 12\u2033 disc sander on cabinet stand",
   "variants": [
    {
+    "w": 610,
+    "h": 882,
+    "file": "img/ttmc-more/tm-tsm300-610.webp",
+    "bytes": 31116
+   },
+   {
     "w": 480,
     "h": 694,
     "file": "img/ttmc-more/tm-tsm300-480.webp",
-    "bytes": 27430
+    "bytes": 25042
    }
   ],
   "alpha": true,
@@ -85319,7 +85482,7 @@
    "w": 111,
    "h": 160,
    "file": "img/ttmc-more/tm-tsm300-thumb.webp",
-   "bytes": 4870
+   "bytes": 4462
   },
   "cut": "birefnet"
  },
@@ -85355,7 +85518,7 @@
     "w": 361,
     "h": 512,
     "file": "img/ttmc-more/tm-tv-sq-361.webp",
-    "bytes": 24298
+    "bytes": 22784
    }
   ],
   "alpha": true,
@@ -85363,7 +85526,7 @@
    "w": 113,
    "h": 160,
    "file": "img/ttmc-more/tm-tv-sq-thumb.webp",
-   "bytes": 5770
+   "bytes": 5376
   },
   "cut": "birefnet"
  },
@@ -85374,7 +85537,7 @@
     "w": 363,
     "h": 696,
     "file": "img/ttmc-more/tm-tx20-363.webp",
-    "bytes": 29100
+    "bytes": 26818
    }
   ],
   "alpha": true,
@@ -85382,7 +85545,7 @@
    "w": 83,
    "h": 160,
    "file": "img/ttmc-more/tm-tx20-thumb.webp",
-   "bytes": 4824
+   "bytes": 4336
   },
   "cut": "birefnet"
  },
@@ -85409,10 +85572,16 @@
   "alt": "TXK160 CNC boring and milling machine, fixed column",
   "variants": [
    {
+    "w": 764,
+    "h": 745,
+    "file": "img/ttmc-more/tm-txk160-764.webp",
+    "bytes": 42008
+   },
+   {
     "w": 480,
     "h": 468,
     "file": "img/ttmc-more/tm-txk160-480.webp",
-    "bytes": 26746
+    "bytes": 23840
    }
   ],
   "alpha": true,
@@ -85420,7 +85589,7 @@
    "w": 160,
    "h": 156,
    "file": "img/ttmc-more/tm-txk160-thumb.webp",
-   "bytes": 6394
+   "bytes": 5640
   },
   "cut": "birefnet"
  },
@@ -85428,16 +85597,22 @@
   "alt": "TXK160D CNC boring and milling machine with optional B axis",
   "variants": [
    {
+    "w": 921,
+    "h": 908,
+    "file": "img/ttmc-more/tm-txk160d-921.webp",
+    "bytes": 52650
+   },
+   {
     "w": 800,
     "h": 789,
     "file": "img/ttmc-more/tm-txk160d-800.webp",
-    "bytes": 52554
+    "bytes": 48816
    },
    {
     "w": 480,
     "h": 473,
     "file": "img/ttmc-more/tm-txk160d-480.webp",
-    "bytes": 28030
+    "bytes": 25786
    }
   ],
   "alpha": true,
@@ -85445,7 +85620,7 @@
    "w": 160,
    "h": 158,
    "file": "img/ttmc-more/tm-txk160d-thumb.webp",
-   "bytes": 6748
+   "bytes": 6180
   },
   "cut": "birefnet"
  },
@@ -85453,16 +85628,22 @@
   "alt": "TXK68 CNC boring and milling machine",
   "variants": [
    {
+    "w": 1036,
+    "h": 767,
+    "file": "img/ttmc-more/tm-txk68-1036.webp",
+    "bytes": 51572
+   },
+   {
     "w": 800,
     "h": 592,
     "file": "img/ttmc-more/tm-txk68-800.webp",
-    "bytes": 43812
+    "bytes": 40212
    },
    {
     "w": 480,
     "h": 355,
     "file": "img/ttmc-more/tm-txk68-480.webp",
-    "bytes": 23594
+    "bytes": 21724
    }
   ],
   "alpha": true,
@@ -85470,7 +85651,7 @@
    "w": 160,
    "h": 118,
    "file": "img/ttmc-more/tm-txk68-thumb.webp",
-   "bytes": 5822
+   "bytes": 5396
   },
   "cut": "birefnet"
  },
@@ -85481,7 +85662,7 @@
     "w": 409,
     "h": 358,
     "file": "img/ttmc-more/tm-ub100a-409.webp",
-    "bytes": 23524
+    "bytes": 20836
    }
   ],
   "alpha": true,
@@ -85489,7 +85670,7 @@
    "w": 160,
    "h": 140,
    "file": "img/ttmc-more/tm-ub100a-thumb.webp",
-   "bytes": 7862
+   "bytes": 6940
   },
   "cut": "birefnet"
  },
@@ -85500,7 +85681,7 @@
     "w": 447,
     "h": 394,
     "file": "img/ttmc-more/tm-ub70-447.webp",
-    "bytes": 27540
+    "bytes": 26762
    }
   ],
   "alpha": true,
@@ -85508,7 +85689,7 @@
    "w": 160,
    "h": 141,
    "file": "img/ttmc-more/tm-ub70-thumb.webp",
-   "bytes": 8858
+   "bytes": 8168
   },
   "cut": "birefnet"
  },
@@ -85519,7 +85700,7 @@
     "w": 350,
     "h": 454,
     "file": "img/ttmc-more/tm-ubm30-350.webp",
-    "bytes": 15304
+    "bytes": 15194
    }
   ],
   "alpha": true,
@@ -85527,7 +85708,7 @@
    "w": 123,
    "h": 160,
    "file": "img/ttmc-more/tm-ubm30-thumb.webp",
-   "bytes": 5188
+   "bytes": 4930
   },
   "cut": "birefnet"
  },
@@ -85538,19 +85719,19 @@
     "w": 1200,
     "h": 1132,
     "file": "img/ttmc-more/tm-ufp2-1200.webp",
-    "bytes": 105504
+    "bytes": 100516
    },
    {
     "w": 800,
     "h": 755,
     "file": "img/ttmc-more/tm-ufp2-800.webp",
-    "bytes": 69500
+    "bytes": 66568
    },
    {
     "w": 480,
     "h": 453,
     "file": "img/ttmc-more/tm-ufp2-480.webp",
-    "bytes": 37946
+    "bytes": 36226
    }
   ],
   "alpha": true,
@@ -85558,7 +85739,7 @@
    "w": 160,
    "h": 151,
    "file": "img/ttmc-more/tm-ufp2-thumb.webp",
-   "bytes": 9738
+   "bytes": 9240
   },
   "cut": "birefnet"
  },
@@ -85569,7 +85750,7 @@
     "w": 480,
     "h": 347,
     "file": "img/ttmc-more/tm-utn40-480.webp",
-    "bytes": 30372
+    "bytes": 27798
    }
   ],
   "alpha": true,
@@ -85577,7 +85758,7 @@
    "w": 160,
    "h": 116,
    "file": "img/ttmc-more/tm-utn40-thumb.webp",
-   "bytes": 6822
+   "bytes": 6184
   },
   "cut": "birefnet"
  },
@@ -85588,7 +85769,7 @@
     "w": 480,
     "h": 242,
     "file": "img/ttmc-more/tm-utn40v-480.webp",
-    "bytes": 25968
+    "bytes": 24156
    }
   ],
   "alpha": true,
@@ -85596,7 +85777,7 @@
    "w": 160,
    "h": 81,
    "file": "img/ttmc-more/tm-utn40v-thumb.webp",
-   "bytes": 6142
+   "bytes": 5618
   },
   "cut": "birefnet"
  },
@@ -85626,7 +85807,7 @@
     "w": 314,
     "h": 222,
     "file": "img/ttmc-more/tm-vise-tq-314.webp",
-    "bytes": 15590
+    "bytes": 14206
    }
   ],
   "alpha": true,
@@ -85634,7 +85815,7 @@
    "w": 160,
    "h": 113,
    "file": "img/ttmc-more/tm-vise-tq-thumb.webp",
-   "bytes": 6932
+   "bytes": 6448
   },
   "cut": "birefnet"
  },
@@ -85642,10 +85823,16 @@
   "alt": "VMC10562 vertical machining centre, BT40, 24-tool changer",
   "variants": [
    {
+    "w": 756,
+    "h": 693,
+    "file": "img/ttmc-more/tm-vmc10562-756.webp",
+    "bytes": 36492
+   },
+   {
     "w": 480,
     "h": 440,
     "file": "img/ttmc-more/tm-vmc10562-480.webp",
-    "bytes": 23768
+    "bytes": 21872
    }
   ],
   "alpha": true,
@@ -85653,7 +85840,7 @@
    "w": 160,
    "h": 147,
    "file": "img/ttmc-more/tm-vmc10562-thumb.webp",
-   "bytes": 5734
+   "bytes": 5032
   },
   "cut": "birefnet"
  },
@@ -85661,10 +85848,16 @@
   "alt": "VMC8046 vertical machining centre, BT40, 16-tool changer",
   "variants": [
    {
+    "w": 727,
+    "h": 648,
+    "file": "img/ttmc-more/tm-vmc8046-727.webp",
+    "bytes": 33662
+   },
+   {
     "w": 480,
     "h": 428,
     "file": "img/ttmc-more/tm-vmc8046-480.webp",
-    "bytes": 26060
+    "bytes": 22304
    }
   ],
   "alpha": true,
@@ -85672,7 +85865,7 @@
    "w": 160,
    "h": 143,
    "file": "img/ttmc-more/tm-vmc8046-thumb.webp",
-   "bytes": 6556
+   "bytes": 5688
   },
   "cut": "birefnet"
  },
@@ -85680,10 +85873,16 @@
   "alt": "W01-2\u00d71000 manual slip roll on stand, 14 ga",
   "variants": [
    {
+    "w": 687,
+    "h": 463,
+    "file": "img/ttmc-more/tm-w01-2-687.webp",
+    "bytes": 32902
+   },
+   {
     "w": 480,
     "h": 323,
     "file": "img/ttmc-more/tm-w01-2-480.webp",
-    "bytes": 26856
+    "bytes": 24758
    }
   ],
   "alpha": true,
@@ -85691,7 +85890,7 @@
    "w": 160,
    "h": 108,
    "file": "img/ttmc-more/tm-w01-2-thumb.webp",
-   "bytes": 6818
+   "bytes": 6234
   },
   "cut": "birefnet"
  },
@@ -85699,10 +85898,16 @@
   "alt": "W-1 ornamental iron tool set \u2014 scroll former, bender, twister, shear and punch",
   "variants": [
    {
+    "w": 668,
+    "h": 437,
+    "file": "img/ttmc-more/tm-w1-668.webp",
+    "bytes": 43422
+   },
+   {
     "w": 480,
     "h": 314,
     "file": "img/ttmc-more/tm-w1-480.webp",
-    "bytes": 33462
+    "bytes": 32374
    }
   ],
   "alpha": true,
@@ -85710,7 +85915,7 @@
    "w": 160,
    "h": 105,
    "file": "img/ttmc-more/tm-w1-thumb.webp",
-   "bytes": 7778
+   "bytes": 7516
   },
   "cut": "birefnet"
  },
@@ -85740,7 +85945,7 @@
     "w": 480,
     "h": 219,
     "file": "img/ttmc-more/tm-w1000-480.webp",
-    "bytes": 14600
+    "bytes": 13700
    }
   ],
   "alpha": true,
@@ -85748,7 +85953,7 @@
    "w": 160,
    "h": 73,
    "file": "img/ttmc-more/tm-w1000-thumb.webp",
-   "bytes": 3574
+   "bytes": 3236
   },
   "cut": "birefnet"
  },
@@ -85759,19 +85964,19 @@
     "w": 1200,
     "h": 1204,
     "file": "img/ttmc-more/tm-w1050-1200.webp",
-    "bytes": 131752
+    "bytes": 119214
    },
    {
     "w": 800,
     "h": 802,
     "file": "img/ttmc-more/tm-w1050-800.webp",
-    "bytes": 88434
+    "bytes": 78866
    },
    {
     "w": 480,
     "h": 481,
     "file": "img/ttmc-more/tm-w1050-480.webp",
-    "bytes": 49438
+    "bytes": 43546
    }
   ],
   "alpha": true,
@@ -85779,7 +85984,7 @@
    "w": 160,
    "h": 160,
    "file": "img/ttmc-more/tm-w1050-thumb.webp",
-   "bytes": 12384
+   "bytes": 11266
   },
   "cut": "birefnet"
  },
@@ -85790,13 +85995,13 @@
     "w": 780,
     "h": 352,
     "file": "img/ttmc-more/tm-w1220-780.webp",
-    "bytes": 31114
+    "bytes": 29306
    },
    {
     "w": 480,
     "h": 217,
     "file": "img/ttmc-more/tm-w1220-480.webp",
-    "bytes": 22028
+    "bytes": 20022
    }
   ],
   "alpha": true,
@@ -85804,7 +86009,7 @@
    "w": 160,
    "h": 72,
    "file": "img/ttmc-more/tm-w1220-thumb.webp",
-   "bytes": 5656
+   "bytes": 5176
   },
   "cut": "birefnet"
  },
@@ -85812,10 +86017,16 @@
   "alt": "W2.5\u00d71220 floor pan and box brake",
   "variants": [
    {
+    "w": 681,
+    "h": 574,
+    "file": "img/ttmc-more/tm-w1220pb-681.webp",
+    "bytes": 39294
+   },
+   {
     "w": 480,
     "h": 405,
     "file": "img/ttmc-more/tm-w1220pb-480.webp",
-    "bytes": 31278
+    "bytes": 28100
    }
   ],
   "alpha": true,
@@ -85823,7 +86034,7 @@
    "w": 160,
    "h": 135,
    "file": "img/ttmc-more/tm-w1220pb-thumb.webp",
-   "bytes": 7482
+   "bytes": 6944
   },
   "cut": "birefnet"
  },
@@ -85831,10 +86042,16 @@
   "alt": "W1.2\u00d71500 floor hand brake with one-piece blade",
   "variants": [
    {
+    "w": 763,
+    "h": 475,
+    "file": "img/ttmc-more/tm-w1500-763.webp",
+    "bytes": 39192
+   },
+   {
     "w": 480,
     "h": 299,
     "file": "img/ttmc-more/tm-w1500-480.webp",
-    "bytes": 33572
+    "bytes": 29026
    }
   ],
   "alpha": true,
@@ -85842,7 +86059,7 @@
    "w": 160,
    "h": 100,
    "file": "img/ttmc-more/tm-w1500-thumb.webp",
-   "bytes": 8342
+   "bytes": 7350
   },
   "cut": "birefnet"
  },
@@ -85915,13 +86132,13 @@
     "w": 800,
     "h": 505,
     "file": "img/ttmc-more/tm-w2040-800.webp",
-    "bytes": 44236
+    "bytes": 41410
    },
    {
     "w": 480,
     "h": 303,
     "file": "img/ttmc-more/tm-w2040-480.webp",
-    "bytes": 24492
+    "bytes": 22846
    }
   ],
   "alpha": true,
@@ -85929,7 +86146,7 @@
    "w": 160,
    "h": 101,
    "file": "img/ttmc-more/tm-w2040-thumb.webp",
-   "bytes": 5860
+   "bytes": 5536
   },
   "cut": "birefnet"
  },
@@ -85940,13 +86157,13 @@
     "w": 800,
     "h": 464,
     "file": "img/ttmc-more/tm-w2540a-800.webp",
-    "bytes": 41178
+    "bytes": 38250
    },
    {
     "w": 480,
     "h": 278,
     "file": "img/ttmc-more/tm-w2540a-480.webp",
-    "bytes": 22162
+    "bytes": 20320
    }
   ],
   "alpha": true,
@@ -85954,7 +86171,7 @@
    "w": 160,
    "h": 93,
    "file": "img/ttmc-more/tm-w2540a-thumb.webp",
-   "bytes": 5308
+   "bytes": 4890
   },
   "cut": "birefnet"
  },
@@ -85996,13 +86213,13 @@
     "w": 800,
     "h": 662,
     "file": "img/ttmc-more/tm-wb14-800.webp",
-    "bytes": 61926
+    "bytes": 58092
    },
    {
     "w": 480,
     "h": 397,
     "file": "img/ttmc-more/tm-wb14-480.webp",
-    "bytes": 34262
+    "bytes": 31638
    }
   ],
   "alpha": true,
@@ -86010,7 +86227,7 @@
    "w": 160,
    "h": 132,
    "file": "img/ttmc-more/tm-wb14-thumb.webp",
-   "bytes": 8568
+   "bytes": 7848
   },
   "cut": "birefnet"
  },
@@ -86037,16 +86254,22 @@
   "alt": "WF1.0\u00d73000 folding machine, 10 ft",
   "variants": [
    {
+    "w": 1092,
+    "h": 373,
+    "file": "img/ttmc-more/tm-wf-1092.webp",
+    "bytes": 39320
+   },
+   {
     "w": 800,
     "h": 273,
     "file": "img/ttmc-more/tm-wf-800.webp",
-    "bytes": 33778
+    "bytes": 31840
    },
    {
     "w": 480,
     "h": 164,
     "file": "img/ttmc-more/tm-wf-480.webp",
-    "bytes": 18720
+    "bytes": 17414
    }
   ],
   "alpha": true,
@@ -86054,7 +86277,7 @@
    "w": 160,
    "h": 55,
    "file": "img/ttmc-more/tm-wf-thumb.webp",
-   "bytes": 4440
+   "bytes": 4156
   },
   "cut": "birefnet"
  },
@@ -86065,7 +86288,7 @@
     "w": 218,
     "h": 814,
     "file": "img/ttmc-more/tm-wtz-218.webp",
-    "bytes": 28932
+    "bytes": 27612
    }
   ],
   "alpha": true,
@@ -86073,7 +86296,7 @@
    "w": 43,
    "h": 160,
    "file": "img/ttmc-more/tm-wtz-thumb.webp",
-   "bytes": 3978
+   "bytes": 3856
   },
   "cut": "birefnet"
  },
@@ -86103,13 +86326,13 @@
     "w": 800,
     "h": 1638,
     "file": "img/ttmc-more/tm-wtz16t-800.webp",
-    "bytes": 110022
+    "bytes": 103360
    },
    {
     "w": 480,
     "h": 983,
     "file": "img/ttmc-more/tm-wtz16t-480.webp",
-    "bytes": 61390
+    "bytes": 56774
    }
   ],
   "alpha": true,
@@ -86117,7 +86340,7 @@
    "w": 78,
    "h": 160,
    "file": "img/ttmc-more/tm-wtz16t-thumb.webp",
-   "bytes": 6316
+   "bytes": 5870
   },
   "cut": "birefnet"
  },
@@ -86128,19 +86351,19 @@
     "w": 1200,
     "h": 793,
     "file": "img/ttmc-more/tm-wu-1200.webp",
-    "bytes": 78526
+    "bytes": 68738
    },
    {
     "w": 800,
     "h": 529,
     "file": "img/ttmc-more/tm-wu-800.webp",
-    "bytes": 49500
+    "bytes": 43366
    },
    {
     "w": 480,
     "h": 317,
     "file": "img/ttmc-more/tm-wu-480.webp",
-    "bytes": 26516
+    "bytes": 23310
    }
   ],
   "alpha": true,
@@ -86148,7 +86371,7 @@
    "w": 160,
    "h": 106,
    "file": "img/ttmc-more/tm-wu-thumb.webp",
-   "bytes": 6458
+   "bytes": 5838
   },
   "cut": "birefnet"
  },
@@ -86159,19 +86382,19 @@
     "w": 1200,
     "h": 1088,
     "file": "img/ttmc-more/tm-x5750-1200.webp",
-    "bytes": 138414
+    "bytes": 128886
    },
    {
     "w": 800,
     "h": 725,
     "file": "img/ttmc-more/tm-x5750-800.webp",
-    "bytes": 83868
+    "bytes": 76550
    },
    {
     "w": 480,
     "h": 435,
     "file": "img/ttmc-more/tm-x5750-480.webp",
-    "bytes": 42340
+    "bytes": 38648
    }
   ],
   "alpha": true,
@@ -86179,7 +86402,7 @@
    "w": 160,
    "h": 145,
    "file": "img/ttmc-more/tm-x5750-thumb.webp",
-   "bytes": 9574
+   "bytes": 8770
   },
   "cut": "birefnet"
  },
@@ -86190,13 +86413,13 @@
     "w": 628,
     "h": 900,
     "file": "img/ttmc-more/tm-x6325-628.webp",
-    "bytes": 81958
+    "bytes": 77648
    },
    {
     "w": 480,
     "h": 688,
     "file": "img/ttmc-more/tm-x6325-480.webp",
-    "bytes": 63004
+    "bytes": 59866
    }
   ],
   "alpha": true,
@@ -86204,7 +86427,7 @@
    "w": 112,
    "h": 160,
    "file": "img/ttmc-more/tm-x6325-thumb.webp",
-   "bytes": 8272
+   "bytes": 7962
   },
   "cut": "birefnet"
  },
@@ -86215,13 +86438,13 @@
     "w": 631,
     "h": 892,
     "file": "img/ttmc-more/tm-x6332-631.webp",
-    "bytes": 83666
+    "bytes": 75086
    },
    {
     "w": 480,
     "h": 679,
     "file": "img/ttmc-more/tm-x6332-480.webp",
-    "bytes": 64054
+    "bytes": 57712
    }
   ],
   "alpha": true,
@@ -86229,7 +86452,7 @@
    "w": 113,
    "h": 160,
    "file": "img/ttmc-more/tm-x6332-thumb.webp",
-   "bytes": 8560
+   "bytes": 7788
   },
   "cut": "birefnet"
  },
@@ -86240,13 +86463,13 @@
     "w": 671,
     "h": 874,
     "file": "img/ttmc-more/tm-x6336-671.webp",
-    "bytes": 69966
+    "bytes": 66994
    },
    {
     "w": 480,
     "h": 625,
     "file": "img/ttmc-more/tm-x6336-480.webp",
-    "bytes": 52070
+    "bytes": 49802
    }
   ],
   "alpha": true,
@@ -86254,7 +86477,7 @@
    "w": 123,
    "h": 160,
    "file": "img/ttmc-more/tm-x6336-thumb.webp",
-   "bytes": 8442
+   "bytes": 8082
   },
   "cut": "birefnet"
  },
@@ -86262,10 +86485,16 @@
   "alt": "X6436 universal milling machine with servo feeds",
   "variants": [
    {
+    "w": 651,
+    "h": 596,
+    "file": "img/ttmc-more/tm-x6436-651.webp",
+    "bytes": 58118
+   },
+   {
     "w": 480,
     "h": 439,
     "file": "img/ttmc-more/tm-x6436-480.webp",
-    "bytes": 45974
+    "bytes": 42540
    }
   ],
   "alpha": true,
@@ -86273,7 +86502,7 @@
    "w": 160,
    "h": 146,
    "file": "img/ttmc-more/tm-x6436-thumb.webp",
-   "bytes": 10456
+   "bytes": 9904
   },
   "cut": "birefnet"
  },
@@ -86284,7 +86513,7 @@
     "w": 380,
     "h": 712,
     "file": "img/ttmc-more/tm-xm8-380.webp",
-    "bytes": 33854
+    "bytes": 33030
    }
   ],
   "alpha": true,
@@ -86292,7 +86521,7 @@
    "w": 85,
    "h": 160,
    "file": "img/ttmc-more/tm-xm8-thumb.webp",
-   "bytes": 5756
+   "bytes": 5498
   },
   "cut": "birefnet"
  },
@@ -86303,13 +86532,13 @@
     "w": 701,
     "h": 898,
     "file": "img/ttmc-more/tm-xq6226-701.webp",
-    "bytes": 77126
+    "bytes": 70922
    },
    {
     "w": 480,
     "h": 615,
     "file": "img/ttmc-more/tm-xq6226-480.webp",
-    "bytes": 52144
+    "bytes": 48244
    }
   ],
   "alpha": true,
@@ -86317,7 +86546,7 @@
    "w": 125,
    "h": 160,
    "file": "img/ttmc-more/tm-xq6226-thumb.webp",
-   "bytes": 7754
+   "bytes": 7332
   },
   "cut": "birefnet"
  },
@@ -86372,7 +86601,7 @@
     "w": 459,
     "h": 343,
     "file": "img/ttmc-more/tm-zwj-459.webp",
-    "bytes": 17632
+    "bytes": 17488
    }
   ],
   "alpha": true,
@@ -86380,7 +86609,7 @@
    "w": 160,
    "h": 120,
    "file": "img/ttmc-more/tm-zwj-thumb.webp",
-   "bytes": 6298
+   "bytes": 6014
   },
   "cut": "birefnet"
  },
@@ -86469,10 +86698,16 @@
   "alt": "3-IN-1/1067\u00d71.5 shear, brake and slip roll machine",
   "variants": [
    {
+    "w": 718,
+    "h": 513,
+    "file": "img/ttmc-more/tm-3in1-718.webp",
+    "bytes": 53562
+   },
+   {
     "w": 480,
     "h": 343,
     "file": "img/ttmc-more/tm-3in1-480.webp",
-    "bytes": 38230
+    "bytes": 34262
    }
   ],
   "alpha": true,
@@ -86480,7 +86715,7 @@
    "w": 160,
    "h": 114,
    "file": "img/ttmc-more/tm-3in1-thumb.webp",
-   "bytes": 8398
+   "bytes": 7774
   },
   "cut": "birefnet"
  },
@@ -86553,13 +86788,13 @@
     "w": 800,
     "h": 543,
     "file": "img/ttmc-more/tm-3in1a-800.webp",
-    "bytes": 52054
+    "bytes": 50002
    },
    {
     "w": 480,
     "h": 326,
     "file": "img/ttmc-more/tm-3in1a-480.webp",
-    "bytes": 29256
+    "bytes": 27904
    }
   ],
   "alpha": true,
@@ -86567,7 +86802,7 @@
    "w": 160,
    "h": 109,
    "file": "img/ttmc-more/tm-3in1a-thumb.webp",
-   "bytes": 6810
+   "bytes": 6426
   },
   "cut": "birefnet"
  },
@@ -86597,7 +86832,7 @@
     "w": 317,
     "h": 296,
     "file": "img/ttmc-more/tm-ac100h-317.webp",
-    "bytes": 22394
+    "bytes": 20760
    }
   ],
   "alpha": true,
@@ -86605,7 +86840,7 @@
    "w": 160,
    "h": 149,
    "file": "img/ttmc-more/tm-ac100h-thumb.webp",
-   "bytes": 9720
+   "bytes": 9000
   },
   "cut": "birefnet"
  },
@@ -86677,7 +86912,7 @@
     "w": 247,
     "h": 350,
     "file": "img/ttmc-more/tm-ap5-247.webp",
-    "bytes": 15924
+    "bytes": 14414
    }
   ],
   "alpha": true,
@@ -86685,7 +86920,7 @@
    "w": 113,
    "h": 160,
    "file": "img/ttmc-more/tm-ap5-thumb.webp",
-   "bytes": 6746
+   "bytes": 6080
   },
   "cut": "birefnet"
  },
@@ -86696,7 +86931,7 @@
     "w": 225,
     "h": 440,
     "file": "img/ttmc-more/tm-ap8-225.webp",
-    "bytes": 15694
+    "bytes": 13760
    }
   ],
   "alpha": true,
@@ -86704,7 +86939,7 @@
    "w": 82,
    "h": 160,
    "file": "img/ttmc-more/tm-ap8-thumb.webp",
-   "bytes": 5362
+   "bytes": 4688
   },
   "cut": "birefnet"
  },
@@ -86712,10 +86947,16 @@
   "alt": "AX20G auxiliary roll former with quick-change roll sets",
   "variants": [
    {
+    "w": 696,
+    "h": 541,
+    "file": "img/ttmc-more/tm-ax20g-696.webp",
+    "bytes": 20424
+   },
+   {
     "w": 480,
     "h": 373,
     "file": "img/ttmc-more/tm-ax20g-480.webp",
-    "bytes": 16748
+    "bytes": 14662
    }
   ],
   "alpha": true,
@@ -86723,7 +86964,7 @@
    "w": 160,
    "h": 124,
    "file": "img/ttmc-more/tm-ax20g-thumb.webp",
-   "bytes": 4764
+   "bytes": 4038
   },
   "cut": "birefnet"
  },
@@ -86734,13 +86975,13 @@
     "w": 783,
     "h": 837,
     "file": "img/ttmc-more/tm-b5012-783.webp",
-    "bytes": 45166
+    "bytes": 42606
    },
    {
     "w": 480,
     "h": 513,
     "file": "img/ttmc-more/tm-b5012-480.webp",
-    "bytes": 30142
+    "bytes": 28382
    }
   ],
   "alpha": true,
@@ -86748,7 +86989,7 @@
    "w": 150,
    "h": 160,
    "file": "img/ttmc-more/tm-b5012-thumb.webp",
-   "bytes": 7516
+   "bytes": 7070
   },
   "cut": "birefnet"
  },
@@ -86759,19 +87000,19 @@
     "w": 1123,
     "h": 1800,
     "file": "img/ttmc-more/tm-b5013-1123.webp",
-    "bytes": 144612
+    "bytes": 125168
    },
    {
     "w": 800,
     "h": 1282,
     "file": "img/ttmc-more/tm-b5013-800.webp",
-    "bytes": 101246
+    "bytes": 87496
    },
    {
     "w": 480,
     "h": 769,
     "file": "img/ttmc-more/tm-b5013-480.webp",
-    "bytes": 54894
+    "bytes": 47154
    }
   ],
   "alpha": true,
@@ -86779,7 +87020,7 @@
    "w": 100,
    "h": 160,
    "file": "img/ttmc-more/tm-b5013-thumb.webp",
-   "bytes": 7368
+   "bytes": 6616
   },
   "cut": "birefnet"
  },
@@ -86815,19 +87056,19 @@
     "w": 1200,
     "h": 655,
     "file": "img/ttmc-more/tm-bg-1200.webp",
-    "bytes": 96664
+    "bytes": 88440
    },
    {
     "w": 800,
     "h": 437,
     "file": "img/ttmc-more/tm-bg-800.webp",
-    "bytes": 51210
+    "bytes": 46372
    },
    {
     "w": 480,
     "h": 262,
     "file": "img/ttmc-more/tm-bg-480.webp",
-    "bytes": 24172
+    "bytes": 22040
    }
   ],
   "alpha": true,
@@ -86835,7 +87076,7 @@
    "w": 160,
    "h": 87,
    "file": "img/ttmc-more/tm-bg-thumb.webp",
-   "bytes": 5274
+   "bytes": 4826
   },
   "cut": "birefnet"
  },
@@ -86871,7 +87112,7 @@
     "w": 471,
     "h": 1226,
     "file": "img/ttmc-more/tm-bgm50-471.webp",
-    "bytes": 43672
+    "bytes": 37950
    }
   ],
   "alpha": true,
@@ -86879,7 +87120,7 @@
    "w": 61,
    "h": 160,
    "file": "img/ttmc-more/tm-bgm50-thumb.webp",
-   "bytes": 4446
+   "bytes": 3874
   },
   "cut": "birefnet"
  },
@@ -86887,16 +87128,22 @@
   "alt": "BGM-50 variable-speed belt grinder with inverter",
   "variants": [
    {
+    "w": 1062,
+    "h": 1004,
+    "file": "img/ttmc-more/tm-bgm50b-1062.webp",
+    "bytes": 70528
+   },
+   {
     "w": 800,
     "h": 756,
     "file": "img/ttmc-more/tm-bgm50b-800.webp",
-    "bytes": 70718
+    "bytes": 58890
    },
    {
     "w": 480,
     "h": 454,
     "file": "img/ttmc-more/tm-bgm50b-480.webp",
-    "bytes": 40046
+    "bytes": 33350
    }
   ],
   "alpha": true,
@@ -86904,7 +87151,7 @@
    "w": 160,
    "h": 151,
    "file": "img/ttmc-more/tm-bgm50b-thumb.webp",
-   "bytes": 9458
+   "bytes": 8124
   },
   "cut": "birefnet"
  },
@@ -86915,13 +87162,13 @@
     "w": 800,
     "h": 1252,
     "file": "img/ttmc-more/tm-bkm250-800.webp",
-    "bytes": 64034
+    "bytes": 61308
    },
    {
     "w": 480,
     "h": 751,
     "file": "img/ttmc-more/tm-bkm250-480.webp",
-    "bytes": 38004
+    "bytes": 35508
    }
   ],
   "alpha": true,
@@ -86929,7 +87176,7 @@
    "w": 102,
    "h": 160,
    "file": "img/ttmc-more/tm-bkm250-thumb.webp",
-   "bytes": 5318
+   "bytes": 4986
   },
   "cut": "birefnet"
  },
@@ -86940,13 +87187,13 @@
     "w": 800,
     "h": 591,
     "file": "img/ttmc-more/tm-bp1648h-800.webp",
-    "bytes": 50718
+    "bytes": 47332
    },
    {
     "w": 480,
     "h": 354,
     "file": "img/ttmc-more/tm-bp1648h-480.webp",
-    "bytes": 28650
+    "bytes": 26686
    }
   ],
   "alpha": true,
@@ -86954,7 +87201,7 @@
    "w": 160,
    "h": 118,
    "file": "img/ttmc-more/tm-bp1648h-thumb.webp",
-   "bytes": 7498
+   "bytes": 6784
   },
   "cut": "birefnet"
  },
@@ -86965,19 +87212,19 @@
     "w": 1048,
     "h": 466,
     "file": "img/ttmc-more/tm-bp1650-1048.webp",
-    "bytes": 42028
+    "bytes": 39932
    },
    {
     "w": 800,
     "h": 356,
     "file": "img/ttmc-more/tm-bp1650-800.webp",
-    "bytes": 35872
+    "bytes": 33976
    },
    {
     "w": 480,
     "h": 213,
     "file": "img/ttmc-more/tm-bp1650-480.webp",
-    "bytes": 19792
+    "bytes": 18758
    }
   ],
   "alpha": true,
@@ -86985,7 +87232,7 @@
    "w": 160,
    "h": 71,
    "file": "img/ttmc-more/tm-bp1650-thumb.webp",
-   "bytes": 4666
+   "bytes": 4306
   },
   "cut": "birefnet"
  },
@@ -87015,7 +87262,7 @@
     "w": 426,
     "h": 625,
     "file": "img/ttmc-more/tm-bp3f-426.webp",
-    "bytes": 36692
+    "bytes": 33286
    }
   ],
   "alpha": true,
@@ -87023,7 +87270,7 @@
    "w": 109,
    "h": 160,
    "file": "img/ttmc-more/tm-bp3f-thumb.webp",
-   "bytes": 7862
+   "bytes": 7180
   },
   "cut": "birefnet"
  },
@@ -87053,7 +87300,7 @@
     "w": 440,
     "h": 454,
     "file": "img/ttmc-more/tm-bq01-440.webp",
-    "bytes": 20494
+    "bytes": 18950
    }
   ],
   "alpha": true,
@@ -87061,7 +87308,7 @@
    "w": 155,
    "h": 160,
    "file": "img/ttmc-more/tm-bq01-thumb.webp",
-   "bytes": 6698
+   "bytes": 5956
   },
   "cut": "birefnet"
  },
@@ -87072,7 +87319,7 @@
     "w": 480,
     "h": 414,
     "file": "img/ttmc-more/tm-bqf01-480.webp",
-    "bytes": 36670
+    "bytes": 33480
    }
   ],
   "alpha": true,
@@ -87080,7 +87327,7 @@
    "w": 160,
    "h": 138,
    "file": "img/ttmc-more/tm-bqf01-thumb.webp",
-   "bytes": 9800
+   "bytes": 9002
   },
   "cut": "birefnet"
  },
@@ -87091,13 +87338,13 @@
     "w": 800,
     "h": 685,
     "file": "img/ttmc-more/tm-bsm1016-800.webp",
-    "bytes": 51406
+    "bytes": 49620
    },
    {
     "w": 480,
     "h": 411,
     "file": "img/ttmc-more/tm-bsm1016-480.webp",
-    "bytes": 29372
+    "bytes": 28130
    }
   ],
   "alpha": true,
@@ -87105,7 +87352,7 @@
    "w": 160,
    "h": 137,
    "file": "img/ttmc-more/tm-bsm1016-thumb.webp",
-   "bytes": 8400
+   "bytes": 8072
   },
   "cut": "birefnet"
  },
@@ -87144,10 +87391,16 @@
   "alt": "BTM250 6\u2033 belt and 10\u2033 disc sander on cabinet stand",
   "variants": [
    {
+    "w": 596,
+    "h": 1282,
+    "file": "img/ttmc-more/tm-btm250-596.webp",
+    "bytes": 34782
+   },
+   {
     "w": 480,
     "h": 1032,
     "file": "img/ttmc-more/tm-btm250-480.webp",
-    "bytes": 33938
+    "bytes": 31164
    }
   ],
   "alpha": true,
@@ -87155,7 +87408,7 @@
    "w": 74,
    "h": 160,
    "file": "img/ttmc-more/tm-btm250-thumb.webp",
-   "bytes": 4020
+   "bytes": 3650
   },
   "cut": "birefnet"
  },
@@ -87166,7 +87419,7 @@
     "w": 404,
     "h": 454,
     "file": "img/ttmc-more/tm-c41-16-404.webp",
-    "bytes": 25186
+    "bytes": 21622
    }
   ],
   "alpha": true,
@@ -87174,7 +87427,7 @@
    "w": 142,
    "h": 160,
    "file": "img/ttmc-more/tm-c41-16-thumb.webp",
-   "bytes": 6896
+   "bytes": 5996
   },
   "cut": "birefnet"
  },
@@ -87182,10 +87435,16 @@
   "alt": "C41-40KG self-contained pneumatic forging hammer",
   "variants": [
    {
+    "w": 642,
+    "h": 667,
+    "file": "img/ttmc-more/tm-c41-40-642.webp",
+    "bytes": 39970
+   },
+   {
     "w": 480,
     "h": 499,
     "file": "img/ttmc-more/tm-c41-40-480.webp",
-    "bytes": 33568
+    "bytes": 30262
    }
   ],
   "alpha": true,
@@ -87193,7 +87452,7 @@
    "w": 154,
    "h": 160,
    "file": "img/ttmc-more/tm-c41-40-thumb.webp",
-   "bytes": 7400
+   "bytes": 6590
   },
   "cut": "birefnet"
  },
@@ -87204,7 +87463,7 @@
     "w": 480,
     "h": 375,
     "file": "img/ttmc-more/tm-cb-480.webp",
-    "bytes": 26430
+    "bytes": 22266
    }
   ],
   "alpha": true,
@@ -87212,7 +87471,7 @@
    "w": 160,
    "h": 125,
    "file": "img/ttmc-more/tm-cb-thumb.webp",
-   "bytes": 6050
+   "bytes": 5192
   },
   "cut": "birefnet"
  },
@@ -87220,10 +87479,16 @@
   "alt": "CHB-24 hand brake for flanges on duct",
   "variants": [
    {
+    "w": 583,
+    "h": 327,
+    "file": "img/ttmc-more/tm-chb-583.webp",
+    "bytes": 24592
+   },
+   {
     "w": 480,
     "h": 269,
     "file": "img/ttmc-more/tm-chb-480.webp",
-    "bytes": 22924
+    "bytes": 19788
    }
   ],
   "alpha": true,
@@ -87231,7 +87496,7 @@
    "w": 160,
    "h": 90,
    "file": "img/ttmc-more/tm-chb-thumb.webp",
-   "bytes": 5428
+   "bytes": 4706
   },
   "cut": "birefnet"
  },
@@ -87239,16 +87504,22 @@
   "alt": "CMD-80 edge chamfering machine for 15 \u2013 45\u00b0 weld preps",
   "variants": [
    {
+    "w": 1066,
+    "h": 1179,
+    "file": "img/ttmc-more/tm-cmd-1066.webp",
+    "bytes": 65946
+   },
+   {
     "w": 800,
     "h": 885,
     "file": "img/ttmc-more/tm-cmd-800.webp",
-    "bytes": 56860
+    "bytes": 50558
    },
    {
     "w": 480,
     "h": 531,
     "file": "img/ttmc-more/tm-cmd-480.webp",
-    "bytes": 31974
+    "bytes": 28142
    }
   ],
   "alpha": true,
@@ -87256,7 +87527,7 @@
    "w": 145,
    "h": 160,
    "file": "img/ttmc-more/tm-cmd-thumb.webp",
-   "bytes": 7036
+   "bytes": 6186
   },
   "cut": "birefnet"
  },
@@ -87267,19 +87538,19 @@
     "w": 1200,
     "h": 1036,
     "file": "img/ttmc-more/tm-cmd4-1200.webp",
-    "bytes": 76408
+    "bytes": 71094
    },
    {
     "w": 800,
     "h": 691,
     "file": "img/ttmc-more/tm-cmd4-800.webp",
-    "bytes": 49544
+    "bytes": 45858
    },
    {
     "w": 480,
     "h": 414,
     "file": "img/ttmc-more/tm-cmd4-480.webp",
-    "bytes": 26920
+    "bytes": 24736
    }
   ],
   "alpha": true,
@@ -87287,7 +87558,7 @@
    "w": 160,
    "h": 138,
    "file": "img/ttmc-more/tm-cmd4-thumb.webp",
-   "bytes": 6612
+   "bytes": 6064
   },
   "cut": "birefnet"
  },
@@ -87298,13 +87569,13 @@
     "w": 800,
     "h": 611,
     "file": "img/ttmc-more/tm-cnc100-800.webp",
-    "bytes": 44104
+    "bytes": 39020
    },
    {
     "w": 480,
     "h": 367,
     "file": "img/ttmc-more/tm-cnc100-480.webp",
-    "bytes": 24374
+    "bytes": 20950
    }
   ],
   "alpha": true,
@@ -87312,7 +87583,7 @@
    "w": 160,
    "h": 122,
    "file": "img/ttmc-more/tm-cnc100-thumb.webp",
-   "bytes": 5888
+   "bytes": 5000
   },
   "cut": "birefnet"
  },
@@ -87338,10 +87609,16 @@
   "alt": "CRB-76 decorative ring roller for tube and flat bar",
   "variants": [
    {
+    "w": 611,
+    "h": 841,
+    "file": "img/ttmc-more/tm-crb76-611.webp",
+    "bytes": 34146
+   },
+   {
     "w": 480,
     "h": 661,
     "file": "img/ttmc-more/tm-crb76-480.webp",
-    "bytes": 31458
+    "bytes": 29458
    }
   ],
   "alpha": true,
@@ -87349,7 +87626,7 @@
    "w": 116,
    "h": 160,
    "file": "img/ttmc-more/tm-crb76-thumb.webp",
-   "bytes": 6010
+   "bytes": 5510
   },
   "cut": "birefnet"
  },
@@ -87376,10 +87653,16 @@
   "alt": "CTK6416 slant-bed CNC lathe with gang tooling",
   "variants": [
    {
+    "w": 709,
+    "h": 783,
+    "file": "img/ttmc-more/tm-ctk6416-709.webp",
+    "bytes": 34958
+   },
+   {
     "w": 480,
     "h": 530,
     "file": "img/ttmc-more/tm-ctk6416-480.webp",
-    "bytes": 26320
+    "bytes": 23758
    }
   ],
   "alpha": true,
@@ -87387,7 +87670,7 @@
    "w": 145,
    "h": 160,
    "file": "img/ttmc-more/tm-ctk6416-thumb.webp",
-   "bytes": 5996
+   "bytes": 5464
   },
   "cut": "birefnet"
  },
@@ -87423,13 +87706,13 @@
     "w": 800,
     "h": 1241,
     "file": "img/ttmc-more/tm-dm20-800.webp",
-    "bytes": 92510
+    "bytes": 91444
    },
    {
     "w": 480,
     "h": 745,
     "file": "img/ttmc-more/tm-dm20-480.webp",
-    "bytes": 54092
+    "bytes": 52992
    }
   ],
   "alpha": true,
@@ -87437,7 +87720,7 @@
    "w": 103,
    "h": 160,
    "file": "img/ttmc-more/tm-dm20-thumb.webp",
-   "bytes": 7750
+   "bytes": 7560
   },
   "cut": "birefnet"
  },
@@ -87539,16 +87822,22 @@
   "alt": "E3-IN-1/2040 motorized shear, brake and roll machine",
   "variants": [
    {
+    "w": 988,
+    "h": 552,
+    "file": "img/ttmc-more/tm-e3in1-988.webp",
+    "bytes": 56146
+   },
+   {
     "w": 800,
     "h": 447,
     "file": "img/ttmc-more/tm-e3in1-800.webp",
-    "bytes": 49128
+    "bytes": 45826
    },
    {
     "w": 480,
     "h": 268,
     "file": "img/ttmc-more/tm-e3in1-480.webp",
-    "bytes": 26528
+    "bytes": 24104
    }
   ],
   "alpha": true,
@@ -87556,7 +87845,7 @@
    "w": 160,
    "h": 89,
    "file": "img/ttmc-more/tm-e3in1-thumb.webp",
-   "bytes": 6208
+   "bytes": 5598
   },
   "cut": "birefnet"
  },
@@ -87567,7 +87856,7 @@
     "w": 435,
     "h": 118,
     "file": "img/ttmc-more/tm-eb-bars-435.webp",
-    "bytes": 2776
+    "bytes": 2076
    }
   ],
   "alpha": false,
@@ -87575,7 +87864,7 @@
    "w": 160,
    "h": 43,
    "file": "img/ttmc-more/tm-eb-bars-thumb.webp",
-   "bytes": 810
+   "bytes": 608
   }
  },
  "tm-eb1250": {
@@ -87585,19 +87874,19 @@
     "w": 1200,
     "h": 1222,
     "file": "img/ttmc-more/tm-eb1250-1200.webp",
-    "bytes": 107658
+    "bytes": 102742
    },
    {
     "w": 800,
     "h": 814,
     "file": "img/ttmc-more/tm-eb1250-800.webp",
-    "bytes": 71740
+    "bytes": 68268
    },
    {
     "w": 480,
     "h": 489,
     "file": "img/ttmc-more/tm-eb1250-480.webp",
-    "bytes": 40652
+    "bytes": 38706
    }
   ],
   "alpha": true,
@@ -87605,7 +87894,7 @@
    "w": 157,
    "h": 160,
    "file": "img/ttmc-more/tm-eb1250-thumb.webp",
-   "bytes": 9716
+   "bytes": 9288
   },
   "cut": "birefnet"
  },
@@ -87647,7 +87936,7 @@
     "w": 480,
     "h": 642,
     "file": "img/ttmc-more/tm-ebp10t-480.webp",
-    "bytes": 33322
+    "bytes": 29682
    }
   ],
   "alpha": true,
@@ -87655,7 +87944,7 @@
    "w": 120,
    "h": 160,
    "file": "img/ttmc-more/tm-ebp10t-thumb.webp",
-   "bytes": 6754
+   "bytes": 5854
   },
   "cut": "birefnet"
  },
@@ -87691,19 +87980,19 @@
     "w": 1200,
     "h": 880,
     "file": "img/ttmc-more/tm-ebq01-1200.webp",
-    "bytes": 113190
+    "bytes": 111172
    },
    {
     "w": 800,
     "h": 586,
     "file": "img/ttmc-more/tm-ebq01-800.webp",
-    "bytes": 70582
+    "bytes": 68884
    },
    {
     "w": 480,
     "h": 352,
     "file": "img/ttmc-more/tm-ebq01-480.webp",
-    "bytes": 33198
+    "bytes": 32322
    }
   ],
   "alpha": true,
@@ -87711,7 +88000,7 @@
    "w": 160,
    "h": 117,
    "file": "img/ttmc-more/tm-ebq01-thumb.webp",
-   "bytes": 6554
+   "bytes": 6366
   },
   "cut": "birefnet"
  },
@@ -87753,19 +88042,19 @@
     "w": 1200,
     "h": 557,
     "file": "img/ttmc-more/tm-efm-1200.webp",
-    "bytes": 61294
+    "bytes": 55822
    },
    {
     "w": 800,
     "h": 371,
     "file": "img/ttmc-more/tm-efm-800.webp",
-    "bytes": 41152
+    "bytes": 36170
    },
    {
     "w": 480,
     "h": 223,
     "file": "img/ttmc-more/tm-efm-480.webp",
-    "bytes": 22984
+    "bytes": 20280
    }
   ],
   "alpha": true,
@@ -87773,7 +88062,7 @@
    "w": 160,
    "h": 74,
    "file": "img/ttmc-more/tm-efm-thumb.webp",
-   "bytes": 5840
+   "bytes": 5250
   },
   "cut": "birefnet"
  },
@@ -87781,16 +88070,22 @@
   "alt": "EFMS 2020 electric folding machine with foot pedal",
   "variants": [
    {
+    "w": 978,
+    "h": 464,
+    "file": "img/ttmc-more/tm-efms-978.webp",
+    "bytes": 39366
+   },
+   {
     "w": 800,
     "h": 380,
     "file": "img/ttmc-more/tm-efms-800.webp",
-    "bytes": 40052
+    "bytes": 36210
    },
    {
     "w": 480,
     "h": 228,
     "file": "img/ttmc-more/tm-efms-480.webp",
-    "bytes": 23332
+    "bytes": 20426
    }
   ],
   "alpha": true,
@@ -87798,7 +88093,7 @@
    "w": 160,
    "h": 76,
    "file": "img/ttmc-more/tm-efms-thumb.webp",
-   "bytes": 5796
+   "bytes": 5202
   },
   "cut": "birefnet"
  },
@@ -87809,7 +88104,7 @@
     "w": 480,
     "h": 649,
     "file": "img/ttmc-more/tm-ehb10-480.webp",
-    "bytes": 39730
+    "bytes": 38230
    }
   ],
   "alpha": true,
@@ -87817,7 +88112,7 @@
    "w": 118,
    "h": 160,
    "file": "img/ttmc-more/tm-ehb10-thumb.webp",
-   "bytes": 7052
+   "bytes": 6664
   },
   "cut": "birefnet"
  },
@@ -87825,16 +88120,22 @@
   "alt": "ERBM10HV motorized ring roller, horizontal and vertical, with foot pedal",
   "variants": [
    {
+    "w": 999,
+    "h": 1343,
+    "file": "img/ttmc-more/tm-erbm10-999.webp",
+    "bytes": 92422
+   },
+   {
     "w": 800,
     "h": 1075,
     "file": "img/ttmc-more/tm-erbm10-800.webp",
-    "bytes": 86036
+    "bytes": 81270
    },
    {
     "w": 480,
     "h": 645,
     "file": "img/ttmc-more/tm-erbm10-480.webp",
-    "bytes": 48754
+    "bytes": 45958
    }
   ],
   "alpha": true,
@@ -87842,7 +88143,7 @@
    "w": 119,
    "h": 160,
    "file": "img/ttmc-more/tm-erbm10-thumb.webp",
-   "bytes": 8002
+   "bytes": 7572
   },
   "cut": "birefnet"
  },
@@ -87928,13 +88229,13 @@
     "w": 800,
     "h": 1223,
     "file": "img/ttmc-more/tm-etb12-800.webp",
-    "bytes": 71550
+    "bytes": 64352
    },
    {
     "w": 480,
     "h": 734,
     "file": "img/ttmc-more/tm-etb12-480.webp",
-    "bytes": 42828
+    "bytes": 38262
    }
   ],
   "alpha": true,
@@ -87942,7 +88243,7 @@
    "w": 105,
    "h": 160,
    "file": "img/ttmc-more/tm-etb12-thumb.webp",
-   "bytes": 7050
+   "bytes": 6302
   },
   "cut": "birefnet"
  },
@@ -87953,13 +88254,13 @@
     "w": 800,
     "h": 649,
     "file": "img/ttmc-more/tm-etb25-800.webp",
-    "bytes": 56104
+    "bytes": 52940
    },
    {
     "w": 480,
     "h": 389,
     "file": "img/ttmc-more/tm-etb25-480.webp",
-    "bytes": 31026
+    "bytes": 28952
    }
   ],
   "alpha": true,
@@ -87967,7 +88268,7 @@
    "w": 160,
    "h": 130,
    "file": "img/ttmc-more/tm-etb25-thumb.webp",
-   "bytes": 7830
+   "bytes": 7476
   },
   "cut": "birefnet"
  },
@@ -87978,7 +88279,7 @@
     "w": 461,
     "h": 705,
     "file": "img/ttmc-more/tm-etr50-461.webp",
-    "bytes": 41364
+    "bytes": 39864
    }
   ],
   "alpha": true,
@@ -87986,7 +88287,7 @@
    "w": 105,
    "h": 160,
    "file": "img/ttmc-more/tm-etr50-thumb.webp",
-   "bytes": 6844
+   "bytes": 6528
   },
   "cut": "birefnet"
  },
@@ -87997,7 +88298,7 @@
     "w": 327,
     "h": 676,
     "file": "img/ttmc-more/tm-f1210-327.webp",
-    "bytes": 30422
+    "bytes": 28894
    }
   ],
   "alpha": true,
@@ -88005,7 +88306,7 @@
    "w": 77,
    "h": 160,
    "file": "img/ttmc-more/tm-f1210-thumb.webp",
-   "bytes": 6436
+   "bytes": 6120
   },
   "cut": "birefnet"
  },
@@ -88016,7 +88317,7 @@
     "w": 362,
     "h": 568,
     "file": "img/ttmc-more/tm-f12100-362.webp",
-    "bytes": 32096
+    "bytes": 30578
    }
   ],
   "alpha": true,
@@ -88024,7 +88325,7 @@
    "w": 102,
    "h": 160,
    "file": "img/ttmc-more/tm-f12100-thumb.webp",
-   "bytes": 8640
+   "bytes": 8028
   },
   "cut": "birefnet"
  },
@@ -88035,7 +88336,7 @@
     "w": 356,
     "h": 605,
     "file": "img/ttmc-more/tm-f1256-356.webp",
-    "bytes": 32068
+    "bytes": 30560
    }
   ],
   "alpha": true,
@@ -88043,7 +88344,7 @@
    "w": 94,
    "h": 160,
    "file": "img/ttmc-more/tm-f1256-thumb.webp",
-   "bytes": 8230
+   "bytes": 7624
   },
   "cut": "birefnet"
  },
@@ -88054,7 +88355,7 @@
     "w": 457,
     "h": 653,
     "file": "img/ttmc-more/tm-f15110-457.webp",
-    "bytes": 38276
+    "bytes": 35138
    }
   ],
   "alpha": true,
@@ -88062,7 +88363,7 @@
    "w": 112,
    "h": 160,
    "file": "img/ttmc-more/tm-f15110-thumb.webp",
-   "bytes": 8174
+   "bytes": 7372
   },
   "cut": "birefnet"
  },
@@ -88073,7 +88374,7 @@
     "w": 308,
     "h": 556,
     "file": "img/ttmc-more/tm-f1570-308.webp",
-    "bytes": 37048
+    "bytes": 34582
    }
   ],
   "alpha": true,
@@ -88081,7 +88382,7 @@
    "w": 89,
    "h": 160,
    "file": "img/ttmc-more/tm-f1570-thumb.webp",
-   "bytes": 8262
+   "bytes": 7502
   },
   "cut": "birefnet"
  },
@@ -88130,7 +88431,7 @@
     "w": 222,
     "h": 586,
     "file": "img/ttmc-more/tm-fn-222.webp",
-    "bytes": 18008
+    "bytes": 15960
    }
   ],
   "alpha": true,
@@ -88138,7 +88439,7 @@
    "w": 61,
    "h": 160,
    "file": "img/ttmc-more/tm-fn-thumb.webp",
-   "bytes": 4278
+   "bytes": 3666
   },
   "cut": "birefnet"
  },
@@ -88149,7 +88450,7 @@
     "w": 279,
     "h": 527,
     "file": "img/ttmc-more/tm-fsm16-279.webp",
-    "bytes": 17172
+    "bytes": 16778
    }
   ],
   "alpha": true,
@@ -88157,7 +88458,7 @@
    "w": 85,
    "h": 160,
    "file": "img/ttmc-more/tm-fsm16-thumb.webp",
-   "bytes": 4702
+   "bytes": 4582
   },
   "cut": "birefnet"
  },
@@ -88243,7 +88544,7 @@
     "w": 400,
     "h": 356,
     "file": "img/ttmc-more/tm-hb12-400.webp",
-    "bytes": 32810
+    "bytes": 29874
    }
   ],
   "alpha": true,
@@ -88251,7 +88552,7 @@
    "w": 160,
    "h": 142,
    "file": "img/ttmc-more/tm-hb12-thumb.webp",
-   "bytes": 10286
+   "bytes": 9362
   },
   "cut": "birefnet"
  },
@@ -88262,13 +88563,13 @@
     "w": 800,
     "h": 542,
     "file": "img/ttmc-more/tm-hb2248-800.webp",
-    "bytes": 46424
+    "bytes": 42272
    },
    {
     "w": 480,
     "h": 325,
     "file": "img/ttmc-more/tm-hb2248-480.webp",
-    "bytes": 27426
+    "bytes": 23330
    }
   ],
   "alpha": true,
@@ -88276,7 +88577,7 @@
    "w": 160,
    "h": 109,
    "file": "img/ttmc-more/tm-hb2248-thumb.webp",
-   "bytes": 6930
+   "bytes": 5998
   },
   "cut": "birefnet"
  },
@@ -88287,13 +88588,13 @@
     "w": 800,
     "h": 299,
     "file": "img/ttmc-more/tm-hb2250-800.webp",
-    "bytes": 29322
+    "bytes": 26718
    },
    {
     "w": 480,
     "h": 179,
     "file": "img/ttmc-more/tm-hb2250-480.webp",
-    "bytes": 17064
+    "bytes": 15610
    }
   ],
   "alpha": true,
@@ -88301,7 +88602,7 @@
    "w": 160,
    "h": 60,
    "file": "img/ttmc-more/tm-hb2250-thumb.webp",
-   "bytes": 4528
+   "bytes": 4026
   },
   "cut": "birefnet"
  },
@@ -88337,7 +88638,7 @@
     "w": 329,
     "h": 423,
     "file": "img/ttmc-more/tm-hb8-329.webp",
-    "bytes": 35648
+    "bytes": 34916
    }
   ],
   "alpha": true,
@@ -88345,7 +88646,7 @@
    "w": 124,
    "h": 160,
    "file": "img/ttmc-more/tm-hb8-thumb.webp",
-   "bytes": 9872
+   "bytes": 9486
   },
   "cut": "birefnet"
  },
@@ -88356,13 +88657,13 @@
     "w": 800,
     "h": 625,
     "file": "img/ttmc-more/tm-hbv-800.webp",
-    "bytes": 58026
+    "bytes": 53010
    },
    {
     "w": 480,
     "h": 375,
     "file": "img/ttmc-more/tm-hbv-480.webp",
-    "bytes": 30800
+    "bytes": 27860
    }
   ],
   "alpha": true,
@@ -88370,7 +88671,7 @@
    "w": 160,
    "h": 125,
    "file": "img/ttmc-more/tm-hbv-thumb.webp",
-   "bytes": 7232
+   "bytes": 6572
   },
   "cut": "birefnet"
  },
@@ -88444,7 +88745,7 @@
     "w": 304,
     "h": 362,
     "file": "img/ttmc-more/tm-hn3-304.webp",
-    "bytes": 17610
+    "bytes": 16094
    }
   ],
   "alpha": true,
@@ -88452,7 +88753,7 @@
    "w": 134,
    "h": 160,
    "file": "img/ttmc-more/tm-hn3-thumb.webp",
-   "bytes": 6716
+   "bytes": 6096
   },
   "cut": "birefnet"
  },
@@ -88463,7 +88764,7 @@
     "w": 248,
     "h": 499,
     "file": "img/ttmc-more/tm-hn4-248.webp",
-    "bytes": 15818
+    "bytes": 14496
    }
   ],
   "alpha": true,
@@ -88471,7 +88772,7 @@
    "w": 80,
    "h": 160,
    "file": "img/ttmc-more/tm-hn4-thumb.webp",
-   "bytes": 4682
+   "bytes": 4214
   },
   "cut": "birefnet"
  },
@@ -88482,13 +88783,13 @@
     "w": 761,
     "h": 865,
     "file": "img/ttmc-more/tm-hnm6-761.webp",
-    "bytes": 62020
+    "bytes": 54334
    },
    {
     "w": 480,
     "h": 546,
     "file": "img/ttmc-more/tm-hnm6-480.webp",
-    "bytes": 39314
+    "bytes": 34660
    }
   ],
   "alpha": true,
@@ -88496,7 +88797,7 @@
    "w": 141,
    "h": 160,
    "file": "img/ttmc-more/tm-hnm6-thumb.webp",
-   "bytes": 8134
+   "bytes": 7268
   },
   "cut": "birefnet"
  },
@@ -88538,19 +88839,19 @@
     "w": 1200,
     "h": 1148,
     "file": "img/ttmc-more/tm-hp100-1200.webp",
-    "bytes": 105184
+    "bytes": 97472
    },
    {
     "w": 800,
     "h": 765,
     "file": "img/ttmc-more/tm-hp100-800.webp",
-    "bytes": 66320
+    "bytes": 60438
    },
    {
     "w": 480,
     "h": 459,
     "file": "img/ttmc-more/tm-hp100-480.webp",
-    "bytes": 36136
+    "bytes": 32652
    }
   ],
   "alpha": true,
@@ -88558,7 +88859,7 @@
    "w": 160,
    "h": 153,
    "file": "img/ttmc-more/tm-hp100-thumb.webp",
-   "bytes": 9728
+   "bytes": 8608
   },
   "cut": "birefnet"
  },
@@ -88569,7 +88870,7 @@
     "w": 316,
     "h": 393,
     "file": "img/ttmc-more/tm-hp12n-316.webp",
-    "bytes": 32662
+    "bytes": 30104
    }
   ],
   "alpha": true,
@@ -88577,7 +88878,7 @@
    "w": 129,
    "h": 160,
    "file": "img/ttmc-more/tm-hp12n-thumb.webp",
-   "bytes": 11362
+   "bytes": 10386
   },
   "cut": "birefnet"
  },
@@ -88585,10 +88886,16 @@
   "alt": "HP-150M1 hydraulic press with sliding table",
   "variants": [
    {
+    "w": 647,
+    "h": 571,
+    "file": "img/ttmc-more/tm-hp150m1-647.webp",
+    "bytes": 41898
+   },
+   {
     "w": 480,
     "h": 424,
     "file": "img/ttmc-more/tm-hp150m1-480.webp",
-    "bytes": 36690
+    "bytes": 32184
    }
   ],
   "alpha": true,
@@ -88596,7 +88903,7 @@
    "w": 160,
    "h": 141,
    "file": "img/ttmc-more/tm-hp150m1-thumb.webp",
-   "bytes": 8682
+   "bytes": 7724
   },
   "cut": "birefnet"
  },
@@ -88626,7 +88933,7 @@
     "w": 288,
     "h": 425,
     "file": "img/ttmc-more/tm-hp20m1-288.webp",
-    "bytes": 22456
+    "bytes": 20802
    }
   ],
   "alpha": true,
@@ -88634,7 +88941,7 @@
    "w": 108,
    "h": 160,
    "file": "img/ttmc-more/tm-hp20m1-thumb.webp",
-   "bytes": 7444
+   "bytes": 6758
   },
   "cut": "birefnet"
  },
@@ -88689,7 +88996,7 @@
     "w": 407,
     "h": 783,
     "file": "img/ttmc-more/tm-hp30c-407.webp",
-    "bytes": 34416
+    "bytes": 30330
    }
   ],
   "alpha": true,
@@ -88697,7 +89004,7 @@
    "w": 83,
    "h": 160,
    "file": "img/ttmc-more/tm-hp30c-thumb.webp",
-   "bytes": 5306
+   "bytes": 4672
   },
   "cut": "birefnet"
  },
@@ -88708,7 +89015,7 @@
     "w": 264,
     "h": 491,
     "file": "img/ttmc-more/tm-hp30s-264.webp",
-    "bytes": 25882
+    "bytes": 23836
    }
   ],
   "alpha": true,
@@ -88716,7 +89023,7 @@
    "w": 86,
    "h": 160,
    "file": "img/ttmc-more/tm-hp30s-thumb.webp",
-   "bytes": 7370
+   "bytes": 6828
   },
   "cut": "birefnet"
  },
@@ -88727,7 +89034,7 @@
     "w": 300,
     "h": 525,
     "file": "img/ttmc-more/tm-hp30sa-300.webp",
-    "bytes": 34052
+    "bytes": 30748
    }
   ],
   "alpha": true,
@@ -88735,7 +89042,7 @@
    "w": 91,
    "h": 160,
    "file": "img/ttmc-more/tm-hp30sa-thumb.webp",
-   "bytes": 8686
+   "bytes": 7800
   },
   "cut": "birefnet"
  },
@@ -88743,10 +89050,16 @@
   "alt": "HP-315FK four-column hydraulic press with PLC control",
   "variants": [
    {
+    "w": 700,
+    "h": 741,
+    "file": "img/ttmc-more/tm-hp315fk-700.webp",
+    "bytes": 59936
+   },
+   {
     "w": 480,
     "h": 508,
     "file": "img/ttmc-more/tm-hp315fk-480.webp",
-    "bytes": 46060
+    "bytes": 41262
    }
   ],
   "alpha": true,
@@ -88754,7 +89067,7 @@
    "w": 151,
    "h": 160,
    "file": "img/ttmc-more/tm-hp315fk-thumb.webp",
-   "bytes": 9712
+   "bytes": 8726
   },
   "cut": "birefnet"
  },
@@ -88765,13 +89078,13 @@
     "w": 707,
     "h": 865,
     "file": "img/ttmc-more/tm-hp50f-707.webp",
-    "bytes": 73018
+    "bytes": 69236
    },
    {
     "w": 480,
     "h": 587,
     "file": "img/ttmc-more/tm-hp50f-480.webp",
-    "bytes": 54566
+    "bytes": 51438
    }
   ],
   "alpha": true,
@@ -88779,7 +89092,7 @@
    "w": 131,
    "h": 160,
    "file": "img/ttmc-more/tm-hp50f-thumb.webp",
-   "bytes": 10344
+   "bytes": 9672
   },
   "cut": "birefnet"
  },
@@ -88790,7 +89103,7 @@
     "w": 457,
     "h": 806,
     "file": "img/ttmc-more/tm-hp63c-457.webp",
-    "bytes": 61610
+    "bytes": 58102
    }
   ],
   "alpha": true,
@@ -88798,7 +89111,7 @@
    "w": 91,
    "h": 160,
    "file": "img/ttmc-more/tm-hp63c-thumb.webp",
-   "bytes": 5306
+   "bytes": 4884
   },
   "cut": "birefnet"
  },
@@ -88809,19 +89122,19 @@
     "w": 1200,
     "h": 953,
     "file": "img/ttmc-more/tm-hpb1500-1200.webp",
-    "bytes": 95734
+    "bytes": 94348
    },
    {
     "w": 800,
     "h": 635,
     "file": "img/ttmc-more/tm-hpb1500-800.webp",
-    "bytes": 59108
+    "bytes": 57996
    },
    {
     "w": 480,
     "h": 381,
     "file": "img/ttmc-more/tm-hpb1500-480.webp",
-    "bytes": 31428
+    "bytes": 30380
    }
   ],
   "alpha": true,
@@ -88829,7 +89142,7 @@
    "w": 160,
    "h": 127,
    "file": "img/ttmc-more/tm-hpb1500-thumb.webp",
-   "bytes": 7446
+   "bytes": 7182
   },
   "cut": "birefnet"
  },
@@ -88840,19 +89153,19 @@
     "w": 963,
     "h": 660,
     "file": "img/ttmc-more/tm-hpb1500d-963.webp",
-    "bytes": 57152
+    "bytes": 52780
    },
    {
     "w": 800,
     "h": 548,
     "file": "img/ttmc-more/tm-hpb1500d-800.webp",
-    "bytes": 54598
+    "bytes": 50344
    },
    {
     "w": 480,
     "h": 329,
     "file": "img/ttmc-more/tm-hpb1500d-480.webp",
-    "bytes": 31284
+    "bytes": 28184
    }
   ],
   "alpha": true,
@@ -88860,7 +89173,7 @@
    "w": 160,
    "h": 110,
    "file": "img/ttmc-more/tm-hpb1500d-thumb.webp",
-   "bytes": 7698
+   "bytes": 7046
   },
   "cut": "birefnet"
  },
@@ -88871,19 +89184,19 @@
     "w": 968,
     "h": 1256,
     "file": "img/ttmc-more/tm-hpb580-968.webp",
-    "bytes": 89596
+    "bytes": 82062
    },
    {
     "w": 800,
     "h": 1038,
     "file": "img/ttmc-more/tm-hpb580-800.webp",
-    "bytes": 85720
+    "bytes": 77654
    },
    {
     "w": 480,
     "h": 623,
     "file": "img/ttmc-more/tm-hpb580-480.webp",
-    "bytes": 49066
+    "bytes": 43458
    }
   ],
   "alpha": true,
@@ -88891,7 +89204,7 @@
    "w": 123,
    "h": 160,
    "file": "img/ttmc-more/tm-hpb580-thumb.webp",
-   "bytes": 9620
+   "bytes": 8544
   },
   "cut": "birefnet"
  },
@@ -88902,13 +89215,13 @@
     "w": 669,
     "h": 823,
     "file": "img/ttmc-more/tm-hpb580d-669.webp",
-    "bytes": 54180
+    "bytes": 49360
    },
    {
     "w": 480,
     "h": 590,
     "file": "img/ttmc-more/tm-hpb580d-480.webp",
-    "bytes": 42210
+    "bytes": 38414
    }
   ],
   "alpha": true,
@@ -88916,7 +89229,7 @@
    "w": 130,
    "h": 160,
    "file": "img/ttmc-more/tm-hpb580d-thumb.webp",
-   "bytes": 8618
+   "bytes": 7728
   },
   "cut": "birefnet"
  },
@@ -88927,7 +89240,7 @@
     "w": 450,
     "h": 574,
     "file": "img/ttmc-more/tm-hpp100-450.webp",
-    "bytes": 46302
+    "bytes": 43692
    }
   ],
   "alpha": true,
@@ -88935,7 +89248,7 @@
    "w": 125,
    "h": 160,
    "file": "img/ttmc-more/tm-hpp100-thumb.webp",
-   "bytes": 10106
+   "bytes": 9444
   },
   "cut": "birefnet"
  },
@@ -88962,10 +89275,16 @@
   "alt": "HRBM50HV profile bender with hydraulic top roll and pedestal control",
   "variants": [
    {
+    "w": 702,
+    "h": 920,
+    "file": "img/ttmc-more/tm-hrbm50-702.webp",
+    "bytes": 43406
+   },
+   {
     "w": 480,
     "h": 629,
     "file": "img/ttmc-more/tm-hrbm50-480.webp",
-    "bytes": 38160
+    "bytes": 34198
    }
   ],
   "alpha": true,
@@ -88973,7 +89292,7 @@
    "w": 122,
    "h": 160,
    "file": "img/ttmc-more/tm-hrbm50-thumb.webp",
-   "bytes": 6704
+   "bytes": 6068
   },
   "cut": "birefnet"
  },
@@ -88981,10 +89300,16 @@
   "alt": "HRBM65 hydraulic profile bender with \u00d82-1/2\u2033 shafts and mobile control panel",
   "variants": [
    {
+    "w": 706,
+    "h": 875,
+    "file": "img/ttmc-more/tm-hrbm65-706.webp",
+    "bytes": 53650
+   },
+   {
     "w": 480,
     "h": 595,
     "file": "img/ttmc-more/tm-hrbm65-480.webp",
-    "bytes": 40668
+    "bytes": 36894
    }
   ],
   "alpha": true,
@@ -88992,7 +89317,7 @@
    "w": 129,
    "h": 160,
    "file": "img/ttmc-more/tm-hrbm65-thumb.webp",
-   "bytes": 7270
+   "bytes": 6642
   },
   "cut": "birefnet"
  },
@@ -89003,7 +89328,7 @@
     "w": 202,
     "h": 537,
     "file": "img/ttmc-more/tm-hs-202.webp",
-    "bytes": 16292
+    "bytes": 14642
    }
   ],
   "alpha": true,
@@ -89011,7 +89336,7 @@
    "w": 60,
    "h": 160,
    "file": "img/ttmc-more/tm-hs-thumb.webp",
-   "bytes": 4050
+   "bytes": 3598
   },
   "cut": "birefnet"
  },
@@ -89041,7 +89366,7 @@
     "w": 407,
     "h": 538,
     "file": "img/ttmc-more/tm-hs800-407.webp",
-    "bytes": 20712
+    "bytes": 18870
    }
   ],
   "alpha": true,
@@ -89049,7 +89374,7 @@
    "w": 121,
    "h": 160,
    "file": "img/ttmc-more/tm-hs800-thumb.webp",
-   "bytes": 6052
+   "bytes": 5404
   },
   "cut": "birefnet"
  },
@@ -89060,13 +89385,13 @@
     "w": 752,
     "h": 757,
     "file": "img/ttmc-more/tm-htb1000-752.webp",
-    "bytes": 88820
+    "bytes": 83724
    },
    {
     "w": 480,
     "h": 483,
     "file": "img/ttmc-more/tm-htb1000-480.webp",
-    "bytes": 57576
+    "bytes": 54178
    }
   ],
   "alpha": true,
@@ -89074,7 +89399,7 @@
    "w": 159,
    "h": 160,
    "file": "img/ttmc-more/tm-htb1000-thumb.webp",
-   "bytes": 12506
+   "bytes": 11814
   },
   "cut": "birefnet"
  },
@@ -89085,19 +89410,19 @@
     "w": 1200,
     "h": 1046,
     "file": "img/ttmc-more/tm-htb2000-1200.webp",
-    "bytes": 197628
+    "bytes": 193200
    },
    {
     "w": 800,
     "h": 697,
     "file": "img/ttmc-more/tm-htb2000-800.webp",
-    "bytes": 116940
+    "bytes": 114234
    },
    {
     "w": 480,
     "h": 418,
     "file": "img/ttmc-more/tm-htb2000-480.webp",
-    "bytes": 57434
+    "bytes": 55708
    }
   ],
   "alpha": true,
@@ -89105,7 +89430,7 @@
    "w": 160,
    "h": 139,
    "file": "img/ttmc-more/tm-htb2000-thumb.webp",
-   "bytes": 10880
+   "bytes": 10720
   },
   "cut": "birefnet"
  },
@@ -89135,7 +89460,7 @@
     "w": 411,
     "h": 707,
     "file": "img/ttmc-more/tm-htb25t-stand-411.webp",
-    "bytes": 29970
+    "bytes": 28396
    }
   ],
   "alpha": true,
@@ -89143,7 +89468,7 @@
    "w": 93,
    "h": 160,
    "file": "img/ttmc-more/tm-htb25t-stand-thumb.webp",
-   "bytes": 5458
+   "bytes": 5160
   },
   "cut": "birefnet"
  },
@@ -89154,13 +89479,13 @@
     "w": 800,
     "h": 470,
     "file": "img/ttmc-more/tm-htes-800.webp",
-    "bytes": 58762
+    "bytes": 56994
    },
    {
     "w": 480,
     "h": 282,
     "file": "img/ttmc-more/tm-htes-480.webp",
-    "bytes": 32634
+    "bytes": 31096
    }
   ],
   "alpha": true,
@@ -89168,7 +89493,7 @@
    "w": 160,
    "h": 94,
    "file": "img/ttmc-more/tm-htes-thumb.webp",
-   "bytes": 7456
+   "bytes": 7188
   },
   "cut": "birefnet"
  },
@@ -89176,16 +89501,22 @@
   "alt": "HW1830\u00d73.5 hydraulic folding machine with movable control panel",
   "variants": [
    {
+    "w": 956,
+    "h": 472,
+    "file": "img/ttmc-more/tm-hw-956.webp",
+    "bytes": 40788
+   },
+   {
     "w": 800,
     "h": 395,
     "file": "img/ttmc-more/tm-hw-800.webp",
-    "bytes": 35568
+    "bytes": 34586
    },
    {
     "w": 480,
     "h": 237,
     "file": "img/ttmc-more/tm-hw-480.webp",
-    "bytes": 19362
+    "bytes": 18632
    }
   ],
   "alpha": true,
@@ -89193,7 +89524,7 @@
    "w": 160,
    "h": 79,
    "file": "img/ttmc-more/tm-hw-thumb.webp",
-   "bytes": 4980
+   "bytes": 4726
   },
   "cut": "birefnet"
  },
@@ -89222,7 +89553,7 @@
     "w": 346,
     "h": 249,
     "file": "img/ttmc-more/tm-hw-box-346.webp",
-    "bytes": 8968
+    "bytes": 8202
    }
   ],
   "alpha": false,
@@ -89230,7 +89561,7 @@
    "w": 160,
    "h": 115,
    "file": "img/ttmc-more/tm-hw-box-thumb.webp",
-   "bytes": 2782
+   "bytes": 2460
   }
  },
  "tm-hw2440": {
@@ -89271,19 +89602,19 @@
     "w": 1200,
     "h": 745,
     "file": "img/ttmc-more/tm-hwe-1200.webp",
-    "bytes": 61314
+    "bytes": 57750
    },
    {
     "w": 800,
     "h": 496,
     "file": "img/ttmc-more/tm-hwe-800.webp",
-    "bytes": 37748
+    "bytes": 36064
    },
    {
     "w": 480,
     "h": 298,
     "file": "img/ttmc-more/tm-hwe-480.webp",
-    "bytes": 20532
+    "bytes": 19372
    }
   ],
   "alpha": true,
@@ -89291,7 +89622,7 @@
    "w": 160,
    "h": 99,
    "file": "img/ttmc-more/tm-hwe-thumb.webp",
-   "bytes": 5082
+   "bytes": 4786
   },
   "cut": "birefnet"
  },
@@ -89302,13 +89633,13 @@
     "w": 800,
     "h": 855,
     "file": "img/ttmc-more/tm-jtb40-800.webp",
-    "bytes": 48170
+    "bytes": 44330
    },
    {
     "w": 480,
     "h": 513,
     "file": "img/ttmc-more/tm-jtb40-480.webp",
-    "bytes": 27882
+    "bytes": 25294
    }
   ],
   "alpha": true,
@@ -89316,7 +89647,7 @@
    "w": 150,
    "h": 160,
    "file": "img/ttmc-more/tm-jtb40-thumb.webp",
-   "bytes": 6826
+   "bytes": 6236
   },
   "cut": "birefnet"
  },
@@ -89327,13 +89658,13 @@
     "w": 800,
     "h": 593,
     "file": "img/ttmc-more/tm-jtb50-800.webp",
-    "bytes": 44650
+    "bytes": 43512
    },
    {
     "w": 480,
     "h": 356,
     "file": "img/ttmc-more/tm-jtb50-480.webp",
-    "bytes": 24426
+    "bytes": 23740
    }
   ],
   "alpha": true,
@@ -89341,7 +89672,7 @@
    "w": 160,
    "h": 119,
    "file": "img/ttmc-more/tm-jtb50-thumb.webp",
-   "bytes": 6536
+   "bytes": 6314
   },
   "cut": "birefnet"
  },
@@ -89383,7 +89714,7 @@
     "w": 314,
     "h": 304,
     "file": "img/ttmc-more/tm-jtr30-314.webp",
-    "bytes": 17604
+    "bytes": 15754
    }
   ],
   "alpha": true,
@@ -89391,7 +89722,7 @@
    "w": 160,
    "h": 155,
    "file": "img/ttmc-more/tm-jtr30-thumb.webp",
-   "bytes": 8818
+   "bytes": 7760
   },
   "cut": "birefnet"
  },
@@ -89421,7 +89752,7 @@
     "w": 304,
     "h": 582,
     "file": "img/ttmc-more/tm-lb2-304.webp",
-    "bytes": 39304
+    "bytes": 36732
    }
   ],
   "alpha": true,
@@ -89429,7 +89760,7 @@
    "w": 84,
    "h": 160,
    "file": "img/ttmc-more/tm-lb2-thumb.webp",
-   "bytes": 6476
+   "bytes": 5914
   },
   "cut": "birefnet"
  },
@@ -89440,13 +89771,13 @@
     "w": 762,
     "h": 666,
     "file": "img/ttmc-more/tm-lm1450-762.webp",
-    "bytes": 66110
+    "bytes": 62902
    },
    {
     "w": 480,
     "h": 420,
     "file": "img/ttmc-more/tm-lm1450-480.webp",
-    "bytes": 41116
+    "bytes": 38966
    }
   ],
   "alpha": true,
@@ -89454,7 +89785,7 @@
    "w": 160,
    "h": 140,
    "file": "img/ttmc-more/tm-lm1450-thumb.webp",
-   "bytes": 9338
+   "bytes": 8710
   },
   "cut": "birefnet"
  },
@@ -89490,13 +89821,13 @@
     "w": 734,
     "h": 706,
     "file": "img/ttmc-more/tm-lm1450d-734.webp",
-    "bytes": 72384
+    "bytes": 67738
    },
    {
     "w": 480,
     "h": 462,
     "file": "img/ttmc-more/tm-lm1450d-480.webp",
-    "bytes": 45396
+    "bytes": 41712
    }
   ],
   "alpha": true,
@@ -89504,7 +89835,7 @@
    "w": 160,
    "h": 154,
    "file": "img/ttmc-more/tm-lm1450d-thumb.webp",
-   "bytes": 9878
+   "bytes": 9152
   },
   "cut": "birefnet"
  },
@@ -89551,19 +89882,19 @@
     "w": 1200,
     "h": 793,
     "file": "img/ttmc-more/tm-lq15-1200.webp",
-    "bytes": 83384
+    "bytes": 74246
    },
    {
     "w": 800,
     "h": 529,
     "file": "img/ttmc-more/tm-lq15-800.webp",
-    "bytes": 52202
+    "bytes": 46108
    },
    {
     "w": 480,
     "h": 317,
     "file": "img/ttmc-more/tm-lq15-480.webp",
-    "bytes": 28440
+    "bytes": 25086
    }
   ],
   "alpha": true,
@@ -89571,7 +89902,7 @@
    "w": 160,
    "h": 106,
    "file": "img/ttmc-more/tm-lq15-thumb.webp",
-   "bytes": 7206
+   "bytes": 6510
   },
   "cut": "birefnet"
  },
@@ -89582,19 +89913,19 @@
     "w": 1200,
     "h": 1440,
     "file": "img/ttmc-more/tm-m55-1200.webp",
-    "bytes": 122370
+    "bytes": 108240
    },
    {
     "w": 800,
     "h": 960,
     "file": "img/ttmc-more/tm-m55-800.webp",
-    "bytes": 81618
+    "bytes": 71514
    },
    {
     "w": 480,
     "h": 576,
     "file": "img/ttmc-more/tm-m55-480.webp",
-    "bytes": 44658
+    "bytes": 38804
    }
   ],
   "alpha": true,
@@ -89602,7 +89933,7 @@
    "w": 133,
    "h": 160,
    "file": "img/ttmc-more/tm-m55-thumb.webp",
-   "bytes": 8376
+   "bytes": 7478
   },
   "cut": "birefnet"
  },
@@ -89663,7 +89994,7 @@
     "w": 440,
     "h": 774,
     "file": "img/ttmc-more/tm-md380-440.webp",
-    "bytes": 33562
+    "bytes": 31998
    }
   ],
   "alpha": true,
@@ -89671,7 +90002,7 @@
    "w": 91,
    "h": 160,
    "file": "img/ttmc-more/tm-md380-thumb.webp",
-   "bytes": 5064
+   "bytes": 4808
   },
   "cut": "birefnet"
  },
@@ -89682,13 +90013,13 @@
     "w": 800,
     "h": 381,
     "file": "img/ttmc-more/tm-mfs-800.webp",
-    "bytes": 50626
+    "bytes": 45614
    },
    {
     "w": 480,
     "h": 229,
     "file": "img/ttmc-more/tm-mfs-480.webp",
-    "bytes": 29952
+    "bytes": 27028
    }
   ],
   "alpha": true,
@@ -89696,7 +90027,7 @@
    "w": 160,
    "h": 76,
    "file": "img/ttmc-more/tm-mfs-thumb.webp",
-   "bytes": 7266
+   "bytes": 6374
   },
   "cut": "birefnet"
  },
@@ -89726,7 +90057,7 @@
     "w": 480,
     "h": 378,
     "file": "img/ttmc-more/tm-minibrake-480.webp",
-    "bytes": 25392
+    "bytes": 23696
    }
   ],
   "alpha": true,
@@ -89734,7 +90065,7 @@
    "w": 160,
    "h": 126,
    "file": "img/ttmc-more/tm-minibrake-thumb.webp",
-   "bytes": 6184
+   "bytes": 5630
   },
   "cut": "birefnet"
  },
@@ -89745,7 +90076,7 @@
     "w": 334,
     "h": 309,
     "file": "img/ttmc-more/tm-mms3-334.webp",
-    "bytes": 16710
+    "bytes": 15234
    }
   ],
   "alpha": true,
@@ -89753,7 +90084,7 @@
    "w": 160,
    "h": 148,
    "file": "img/ttmc-more/tm-mms3-thumb.webp",
-   "bytes": 7418
+   "bytes": 6716
   },
   "cut": "birefnet"
  },
@@ -89783,7 +90114,7 @@
     "w": 322,
     "h": 368,
     "file": "img/ttmc-more/tm-ms-322.webp",
-    "bytes": 13762
+    "bytes": 12098
    }
   ],
   "alpha": true,
@@ -89791,7 +90122,7 @@
    "w": 140,
    "h": 160,
    "file": "img/ttmc-more/tm-ms-thumb.webp",
-   "bytes": 6072
+   "bytes": 5306
   },
   "cut": "birefnet"
  },
@@ -89821,13 +90152,13 @@
     "w": 776,
     "h": 442,
     "file": "img/ttmc-more/tm-pb1220-776.webp",
-    "bytes": 44426
+    "bytes": 37556
    },
    {
     "w": 480,
     "h": 273,
     "file": "img/ttmc-more/tm-pb1220-480.webp",
-    "bytes": 27676
+    "bytes": 24078
    }
   ],
   "alpha": true,
@@ -89835,7 +90166,7 @@
    "w": 160,
    "h": 91,
    "file": "img/ttmc-more/tm-pb1220-thumb.webp",
-   "bytes": 6260
+   "bytes": 5518
   },
   "cut": "birefnet"
  },
@@ -89846,19 +90177,19 @@
     "w": 1200,
     "h": 516,
     "file": "img/ttmc-more/tm-pb1220z-1200.webp",
-    "bytes": 58038
+    "bytes": 54244
    },
    {
     "w": 800,
     "h": 344,
     "file": "img/ttmc-more/tm-pb1220z-800.webp",
-    "bytes": 36620
+    "bytes": 33914
    },
    {
     "w": 480,
     "h": 206,
     "file": "img/ttmc-more/tm-pb1220z-480.webp",
-    "bytes": 19786
+    "bytes": 18336
    }
   ],
   "alpha": true,
@@ -89866,7 +90197,7 @@
    "w": 160,
    "h": 69,
    "file": "img/ttmc-more/tm-pb1220z-thumb.webp",
-   "bytes": 4736
+   "bytes": 4462
   },
   "cut": "birefnet"
  },
@@ -89874,10 +90205,16 @@
   "alt": "PBB2020/1.2 folding machine with foot-operated clamping beam",
   "variants": [
    {
+    "w": 751,
+    "h": 569,
+    "file": "img/ttmc-more/tm-pbb-751.webp",
+    "bytes": 58052
+   },
+   {
     "w": 480,
     "h": 364,
     "file": "img/ttmc-more/tm-pbb-480.webp",
-    "bytes": 46872
+    "bytes": 42454
    }
   ],
   "alpha": true,
@@ -89885,7 +90222,7 @@
    "w": 160,
    "h": 121,
    "file": "img/ttmc-more/tm-pbb-thumb.webp",
-   "bytes": 11046
+   "bytes": 10326
   },
   "cut": "birefnet"
  },
@@ -89896,13 +90233,13 @@
     "w": 772,
     "h": 706,
     "file": "img/ttmc-more/tm-pbb1020-772.webp",
-    "bytes": 56768
+    "bytes": 53030
    },
    {
     "w": 480,
     "h": 439,
     "file": "img/ttmc-more/tm-pbb1020-480.webp",
-    "bytes": 41282
+    "bytes": 38132
    }
   ],
   "alpha": true,
@@ -89910,7 +90247,7 @@
    "w": 160,
    "h": 146,
    "file": "img/ttmc-more/tm-pbb1020-thumb.webp",
-   "bytes": 11070
+   "bytes": 10258
   },
   "cut": "birefnet"
  },
@@ -89952,7 +90289,7 @@
     "w": 401,
     "h": 447,
     "file": "img/ttmc-more/tm-pbs7-401.webp",
-    "bytes": 18274
+    "bytes": 15254
    }
   ],
   "alpha": true,
@@ -89960,7 +90297,7 @@
    "w": 144,
    "h": 160,
    "file": "img/ttmc-more/tm-pbs7-thumb.webp",
-   "bytes": 5756
+   "bytes": 4892
   },
   "cut": "birefnet"
  },
@@ -89971,7 +90308,7 @@
     "w": 435,
     "h": 503,
     "file": "img/ttmc-more/tm-pbs9-435.webp",
-    "bytes": 29016
+    "bytes": 25054
    }
   ],
   "alpha": true,
@@ -89979,7 +90316,7 @@
    "w": 138,
    "h": 160,
    "file": "img/ttmc-more/tm-pbs9-thumb.webp",
-   "bytes": 7278
+   "bytes": 6180
   },
   "cut": "birefnet"
  },
@@ -90813,19 +91150,19 @@
     "w": 1200,
     "h": 396,
     "file": "img/ttmc-more/tm-bsm3150-1200.webp",
-    "bytes": 45338
+    "bytes": 45658
    },
    {
     "w": 800,
     "h": 264,
     "file": "img/ttmc-more/tm-bsm3150-800.webp",
-    "bytes": 28612
+    "bytes": 28428
    },
    {
     "w": 480,
     "h": 159,
     "file": "img/ttmc-more/tm-bsm3150-480.webp",
-    "bytes": 15498
+    "bytes": 14886
    }
   ],
   "alpha": true,
@@ -90833,7 +91170,7 @@
    "w": 160,
    "h": 53,
    "file": "img/ttmc-more/tm-bsm3150-thumb.webp",
-   "bytes": 4144
+   "bytes": 3930
   },
   "cut": "birefnet"
  },
@@ -90841,10 +91178,16 @@
   "alt": "Slitter head of the shear and brake machine",
   "variants": [
    {
+    "w": 755,
+    "h": 543,
+    "file": "img/ttmc-more/tm-bsm3150-head-755.webp",
+    "bytes": 15798
+   },
+   {
     "w": 480,
     "h": 345,
     "file": "img/ttmc-more/tm-bsm3150-head-480.webp",
-    "bytes": 9436
+    "bytes": 9482
    }
   ],
   "alpha": false,
@@ -90852,7 +91195,7 @@
    "w": 160,
    "h": 115,
    "file": "img/ttmc-more/tm-bsm3150-head-thumb.webp",
-   "bytes": 1992
+   "bytes": 1878
   }
  },
  "tm-cd24": {
@@ -91056,10 +91399,16 @@
   "alt": "HP-30C C-frame hydraulic press with foot pedal",
   "variants": [
    {
+    "w": 794,
+    "h": 1544,
+    "file": "img/ttmc-more/tm-hp30c2-794.webp",
+    "bytes": 58774
+   },
+   {
     "w": 480,
     "h": 933,
     "file": "img/ttmc-more/tm-hp30c2-480.webp",
-    "bytes": 42900
+    "bytes": 37392
    }
   ],
   "alpha": true,
@@ -91067,7 +91416,7 @@
    "w": 82,
    "h": 160,
    "file": "img/ttmc-more/tm-hp30c2-thumb.webp",
-   "bytes": 5082
+   "bytes": 4362
   },
   "cut": "birefnet"
  },
@@ -91075,16 +91424,22 @@
   "alt": "HP-63C C-frame hydraulic press with guard doors",
   "variants": [
    {
+    "w": 947,
+    "h": 1702,
+    "file": "img/ttmc-more/tm-hp63c2-947.webp",
+    "bytes": 164414
+   },
+   {
     "w": 800,
     "h": 1438,
     "file": "img/ttmc-more/tm-hp63c2-800.webp",
-    "bytes": 145262
+    "bytes": 137374
    },
    {
     "w": 480,
     "h": 863,
     "file": "img/ttmc-more/tm-hp63c2-480.webp",
-    "bytes": 72516
+    "bytes": 69378
    }
   ],
   "alpha": true,
@@ -91092,7 +91447,7 @@
    "w": 89,
    "h": 160,
    "file": "img/ttmc-more/tm-hp63c2-thumb.webp",
-   "bytes": 4842
+   "bytes": 4472
   },
   "cut": "birefnet"
  },
@@ -91152,19 +91507,19 @@
     "w": 1200,
     "h": 1087,
     "file": "img/ttmc-more/tm-ksm850-1200.webp",
-    "bytes": 67334
+    "bytes": 68988
    },
    {
     "w": 800,
     "h": 725,
     "file": "img/ttmc-more/tm-ksm850-800.webp",
-    "bytes": 39818
+    "bytes": 40006
    },
    {
     "w": 480,
     "h": 435,
     "file": "img/ttmc-more/tm-ksm850-480.webp",
-    "bytes": 20606
+    "bytes": 20394
    }
   ],
   "alpha": true,
@@ -91172,7 +91527,7 @@
    "w": 160,
    "h": 145,
    "file": "img/ttmc-more/tm-ksm850-thumb.webp",
-   "bytes": 5136
+   "bytes": 5022
   },
   "cut": "birefnet"
  },
@@ -91198,10 +91553,16 @@
   "alt": "Cartridge filter of the downdraft table",
   "variants": [
    {
+    "w": 552,
+    "h": 772,
+    "file": "img/ttmc-more/tm-mdt-filter-552.webp",
+    "bytes": 12750
+   },
+   {
     "w": 480,
     "h": 671,
     "file": "img/ttmc-more/tm-mdt-filter-480.webp",
-    "bytes": 12990
+    "bytes": 10752
    }
   ],
   "alpha": false,
@@ -91209,7 +91570,7 @@
    "w": 114,
    "h": 160,
    "file": "img/ttmc-more/tm-mdt-filter-thumb.webp",
-   "bytes": 2124
+   "bytes": 1684
   }
  },
  "tm-mdt4840": {
@@ -91219,13 +91580,13 @@
     "w": 800,
     "h": 925,
     "file": "img/ttmc-more/tm-mdt4840-800.webp",
-    "bytes": 46510
+    "bytes": 37570
    },
    {
     "w": 480,
     "h": 555,
     "file": "img/ttmc-more/tm-mdt4840-480.webp",
-    "bytes": 26458
+    "bytes": 20832
    }
   ],
   "alpha": true,
@@ -91233,7 +91594,7 @@
    "w": 138,
    "h": 160,
    "file": "img/ttmc-more/tm-mdt4840-thumb.webp",
-   "bytes": 5488
+   "bytes": 4580
   },
   "cut": "birefnet"
  },
@@ -91555,10 +91916,16 @@
   "alt": "Slitting machine with the decoiler and the outfeed table",
   "variants": [
    {
+    "w": 674,
+    "h": 337,
+    "file": "img/ttmc-more/tm-ps1220-line-674.webp",
+    "bytes": 36270
+   },
+   {
     "w": 480,
     "h": 240,
     "file": "img/ttmc-more/tm-ps1220-line-480.webp",
-    "bytes": 29410
+    "bytes": 28076
    }
   ],
   "alpha": true,
@@ -91566,7 +91933,7 @@
    "w": 160,
    "h": 80,
    "file": "img/ttmc-more/tm-ps1220-line-thumb.webp",
-   "bytes": 6644
+   "bytes": 6378
   },
   "cut": "birefnet"
  },
@@ -91577,13 +91944,13 @@
     "w": 800,
     "h": 555,
     "file": "img/ttmc-more/tm-ps1220-slit-800.webp",
-    "bytes": 47482
+    "bytes": 43340
    },
    {
     "w": 480,
     "h": 333,
     "file": "img/ttmc-more/tm-ps1220-slit-480.webp",
-    "bytes": 25230
+    "bytes": 22782
    }
   ],
   "alpha": false,
@@ -91591,7 +91958,7 @@
    "w": 160,
    "h": 111,
    "file": "img/ttmc-more/tm-ps1220-slit-thumb.webp",
-   "bytes": 4446
+   "bytes": 3952
   }
  },
  "tm-ptr185": {
@@ -91724,19 +92091,19 @@
     "w": 1200,
     "h": 748,
     "file": "img/ttmc-more/tm-srb3202000d-1200.webp",
-    "bytes": 85320
+    "bytes": 77416
    },
    {
     "w": 800,
     "h": 498,
     "file": "img/ttmc-more/tm-srb3202000d-800.webp",
-    "bytes": 55866
+    "bytes": 50226
    },
    {
     "w": 480,
     "h": 299,
     "file": "img/ttmc-more/tm-srb3202000d-480.webp",
-    "bytes": 29572
+    "bytes": 26240
    }
   ],
   "alpha": true,
@@ -91744,7 +92111,7 @@
    "w": 160,
    "h": 100,
    "file": "img/ttmc-more/tm-srb3202000d-thumb.webp",
-   "bytes": 7044
+   "bytes": 6420
   },
   "cut": "birefnet"
  },
@@ -91814,10 +92181,16 @@
   "alt": "Planer-thicknesser opened for thicknessing",
   "variants": [
    {
+    "w": 745,
+    "h": 575,
+    "file": "img/ttmc-more/tm-tdm-thick-745.webp",
+    "bytes": 28886
+   },
+   {
     "w": 480,
     "h": 370,
     "file": "img/ttmc-more/tm-tdm-thick-480.webp",
-    "bytes": 21862
+    "bytes": 20460
    }
   ],
   "alpha": true,
@@ -91825,7 +92198,7 @@
    "w": 160,
    "h": 123,
    "file": "img/ttmc-more/tm-tdm-thick-thumb.webp",
-   "bytes": 5564
+   "bytes": 5240
   },
   "cut": "birefnet"
  },
@@ -92204,10 +92577,16 @@
   "alt": "Welding torch holder on a positioner",
   "variants": [
    {
+    "w": 568,
+    "h": 832,
+    "file": "img/ttmc-more/tm-wgs-568.webp",
+    "bytes": 45844
+   },
+   {
     "w": 480,
     "h": 703,
     "file": "img/ttmc-more/tm-wgs-480.webp",
-    "bytes": 44848
+    "bytes": 42688
    }
   ],
   "alpha": true,
@@ -92215,7 +92594,7 @@
    "w": 109,
    "h": 160,
    "file": "img/ttmc-more/tm-wgs-thumb.webp",
-   "bytes": 6736
+   "bytes": 6318
   },
   "cut": "birefnet"
  },
@@ -92244,19 +92623,19 @@
     "w": 1200,
     "h": 1128,
     "file": "img/ttmc-more/tm-wj1040-1200.webp",
-    "bytes": 82464
+    "bytes": 76298
    },
    {
     "w": 800,
     "h": 752,
     "file": "img/ttmc-more/tm-wj1040-800.webp",
-    "bytes": 51684
+    "bytes": 47632
    },
    {
     "w": 480,
     "h": 451,
     "file": "img/ttmc-more/tm-wj1040-480.webp",
-    "bytes": 26956
+    "bytes": 24646
    }
   ],
   "alpha": true,
@@ -92264,7 +92643,7 @@
    "w": 160,
    "h": 150,
    "file": "img/ttmc-more/tm-wj1040-thumb.webp",
-   "bytes": 6374
+   "bytes": 5870
   },
   "cut": "birefnet"
  },
@@ -92487,10 +92866,16 @@
   "alt": "WM2000 multifunction woodworking machine \u2014 planer and saw",
   "variants": [
    {
+    "w": 791,
+    "h": 632,
+    "file": "img/ttmc-more/tm-wm2000-791.webp",
+    "bytes": 40284
+   },
+   {
     "w": 480,
     "h": 384,
     "file": "img/ttmc-more/tm-wm2000-480.webp",
-    "bytes": 27300
+    "bytes": 24260
    }
   ],
   "alpha": true,
@@ -92498,7 +92883,7 @@
    "w": 160,
    "h": 128,
    "file": "img/ttmc-more/tm-wm2000-thumb.webp",
-   "bytes": 6276
+   "bytes": 5640
   },
   "cut": "birefnet"
  },
@@ -92509,13 +92894,13 @@
     "w": 800,
     "h": 420,
     "file": "img/ttmc-more/tm-wm2200-800.webp",
-    "bytes": 32144
+    "bytes": 30418
    },
    {
     "w": 480,
     "h": 252,
     "file": "img/ttmc-more/tm-wm2200-480.webp",
-    "bytes": 17676
+    "bytes": 16612
    }
   ],
   "alpha": true,
@@ -92523,7 +92908,7 @@
    "w": 160,
    "h": 84,
    "file": "img/ttmc-more/tm-wm2200-thumb.webp",
-   "bytes": 4612
+   "bytes": 4260
   },
   "cut": "birefnet"
  },
@@ -92531,10 +92916,16 @@
   "alt": "WM2200R multifunction machine with thicknesser on its legs",
   "variants": [
    {
+    "w": 564,
+    "h": 612,
+    "file": "img/ttmc-more/tm-wm2200r-564.webp",
+    "bytes": 30188
+   },
+   {
     "w": 480,
     "h": 521,
     "file": "img/ttmc-more/tm-wm2200r-480.webp",
-    "bytes": 31442
+    "bytes": 28348
    }
   ],
   "alpha": true,
@@ -92542,7 +92933,7 @@
    "w": 147,
    "h": 160,
    "file": "img/ttmc-more/tm-wm2200r-thumb.webp",
-   "bytes": 6866
+   "bytes": 6146
   },
   "cut": "birefnet"
  },
@@ -92550,10 +92941,16 @@
   "alt": "WM2500E multifunction woodworking machine",
   "variants": [
    {
+    "w": 798,
+    "h": 529,
+    "file": "img/ttmc-more/tm-wm2500e-798.webp",
+    "bytes": 28824
+   },
+   {
     "w": 480,
     "h": 318,
     "file": "img/ttmc-more/tm-wm2500e-480.webp",
-    "bytes": 19660
+    "bytes": 18292
    }
   ],
   "alpha": true,
@@ -92561,7 +92958,7 @@
    "w": 160,
    "h": 106,
    "file": "img/ttmc-more/tm-wm2500e-thumb.webp",
-   "bytes": 5028
+   "bytes": 4612
   },
   "cut": "birefnet"
  },
@@ -92680,16 +93077,22 @@
   "alt": "WP-110 welding positioner with 8\u2033 chuck and foot pedal",
   "variants": [
    {
+    "w": 1050,
+    "h": 893,
+    "file": "img/ttmc-more/tm-wp110-1050.webp",
+    "bytes": 82332
+   },
+   {
     "w": 800,
     "h": 680,
     "file": "img/ttmc-more/tm-wp110-800.webp",
-    "bytes": 66684
+    "bytes": 62458
    },
    {
     "w": 480,
     "h": 408,
     "file": "img/ttmc-more/tm-wp110-480.webp",
-    "bytes": 35654
+    "bytes": 33444
    }
   ],
   "alpha": true,
@@ -92697,7 +93100,7 @@
    "w": 160,
    "h": 136,
    "file": "img/ttmc-more/tm-wp110-thumb.webp",
-   "bytes": 8082
+   "bytes": 7574
   },
   "cut": "birefnet"
  },
@@ -92705,16 +93108,22 @@
   "alt": "Control panel: speed, foot pedal and auto mode, forward and reverse",
   "variants": [
    {
+    "w": 937,
+    "h": 531,
+    "file": "img/ttmc-more/tm-wp110-panel-937.webp",
+    "bytes": 22492
+   },
+   {
     "w": 800,
     "h": 453,
     "file": "img/ttmc-more/tm-wp110-panel-800.webp",
-    "bytes": 18976
+    "bytes": 18248
    },
    {
     "w": 480,
     "h": 272,
     "file": "img/ttmc-more/tm-wp110-panel-480.webp",
-    "bytes": 10222
+    "bytes": 9638
    }
   ],
   "alpha": false,
@@ -92722,23 +93131,29 @@
    "w": 160,
    "h": 91,
    "file": "img/ttmc-more/tm-wp110-panel-thumb.webp",
-   "bytes": 2222
+   "bytes": 2068
   }
  },
  "tm-wp110t": {
   "alt": "WP-110T welding positioner with hollow chuck",
   "variants": [
    {
+    "w": 1113,
+    "h": 812,
+    "file": "img/ttmc-more/tm-wp110t-1113.webp",
+    "bytes": 73030
+   },
+   {
     "w": 800,
     "h": 584,
     "file": "img/ttmc-more/tm-wp110t-800.webp",
-    "bytes": 55436
+    "bytes": 53632
    },
    {
     "w": 480,
     "h": 350,
     "file": "img/ttmc-more/tm-wp110t-480.webp",
-    "bytes": 30322
+    "bytes": 28986
    }
   ],
   "alpha": true,
@@ -92746,7 +93161,7 @@
    "w": 160,
    "h": 117,
    "file": "img/ttmc-more/tm-wp110t-thumb.webp",
-   "bytes": 7108
+   "bytes": 6734
   },
   "cut": "birefnet"
  },
@@ -92773,10 +93188,16 @@
   "alt": "WP-220 tilting welding positioner with foot pedal",
   "variants": [
    {
+    "w": 630,
+    "h": 915,
+    "file": "img/ttmc-more/tm-wp220-630.webp",
+    "bytes": 49956
+   },
+   {
     "w": 480,
     "h": 697,
     "file": "img/ttmc-more/tm-wp220-480.webp",
-    "bytes": 43392
+    "bytes": 39466
    }
   ],
   "alpha": true,
@@ -92784,7 +93205,7 @@
    "w": 110,
    "h": 160,
    "file": "img/ttmc-more/tm-wp220-thumb.webp",
-   "bytes": 7176
+   "bytes": 6548
   },
   "cut": "birefnet"
  },
@@ -92875,7 +93296,7 @@
     "w": 415,
     "h": 528,
     "file": "img/ttmc-more/tm-wp350-415.webp",
-    "bytes": 40730
+    "bytes": 36736
    }
   ],
   "alpha": true,
@@ -92883,7 +93304,7 @@
    "w": 126,
    "h": 160,
    "file": "img/ttmc-more/tm-wp350-thumb.webp",
-   "bytes": 9536
+   "bytes": 8742
   },
   "cut": "birefnet"
  },
@@ -92940,16 +93361,22 @@
   "alt": "WP-500 welding positioner with motorized tilt",
   "variants": [
    {
+    "w": 1019,
+    "h": 871,
+    "file": "img/ttmc-more/tm-wp500-1019.webp",
+    "bytes": 67876
+   },
+   {
     "w": 800,
     "h": 684,
     "file": "img/ttmc-more/tm-wp500-800.webp",
-    "bytes": 64140
+    "bytes": 57366
    },
    {
     "w": 480,
     "h": 410,
     "file": "img/ttmc-more/tm-wp500-480.webp",
-    "bytes": 36366
+    "bytes": 32510
    }
   ],
   "alpha": true,
@@ -92957,7 +93384,7 @@
    "w": 160,
    "h": 137,
    "file": "img/ttmc-more/tm-wp500-thumb.webp",
-   "bytes": 8508
+   "bytes": 7728
   },
   "cut": "birefnet"
  },
@@ -93329,10 +93756,16 @@
   "alt": "QCS-400A aluminum cut-off saw with pneumatic clamping and safety hood",
   "variants": [
    {
+    "w": 559,
+    "h": 799,
+    "file": "img/ttmc-more/tm-qcs400a-559.webp",
+    "bytes": 39944
+   },
+   {
     "w": 480,
     "h": 686,
     "file": "img/ttmc-more/tm-qcs400a-480.webp",
-    "bytes": 35438
+    "bytes": 36152
    }
   ],
   "alpha": true,
@@ -93340,7 +93773,7 @@
    "w": 112,
    "h": 160,
    "file": "img/ttmc-more/tm-qcs400a-thumb.webp",
-   "bytes": 5474
+   "bytes": 5244
   },
   "cut": "birefnet"
  },
@@ -93351,19 +93784,19 @@
     "w": 1200,
     "h": 1910,
     "file": "img/bandsaw/nt-vs300-1-1200.webp",
-    "bytes": 122588
+    "bytes": 96484
    },
    {
     "w": 800,
     "h": 1273,
     "file": "img/bandsaw/nt-vs300-1-800.webp",
-    "bytes": 70724
+    "bytes": 57732
    },
    {
     "w": 480,
     "h": 764,
     "file": "img/bandsaw/nt-vs300-1-480.webp",
-    "bytes": 36782
+    "bytes": 31300
    }
   ],
   "alpha": true,
@@ -93371,7 +93804,7 @@
    "w": 101,
    "h": 160,
    "file": "img/bandsaw/nt-vs300-1-thumb.webp",
-   "bytes": 5602
+   "bytes": 4846
   }
  },
  "nt-vs400-1": {
@@ -93381,19 +93814,19 @@
     "w": 1200,
     "h": 1920,
     "file": "img/bandsaw/nt-vs400-1-1200.webp",
-    "bytes": 131002
+    "bytes": 123050
    },
    {
     "w": 800,
     "h": 1280,
     "file": "img/bandsaw/nt-vs400-1-800.webp",
-    "bytes": 81448
+    "bytes": 75200
    },
    {
     "w": 480,
     "h": 768,
     "file": "img/bandsaw/nt-vs400-1-480.webp",
-    "bytes": 43094
+    "bytes": 39642
    }
   ],
   "alpha": true,
@@ -93401,7 +93834,7 @@
    "w": 100,
    "h": 160,
    "file": "img/bandsaw/nt-vs400-1-thumb.webp",
-   "bytes": 6528
+   "bytes": 6036
   },
   "cut": "birefnet"
  },
@@ -96677,19 +97110,19 @@
     "w": 1200,
     "h": 917,
     "file": "img/ttmc-more/tm-dm5-1200.webp",
-    "bytes": 60796
+    "bytes": 52690
    },
    {
     "w": 800,
     "h": 611,
     "file": "img/ttmc-more/tm-dm5-800.webp",
-    "bytes": 40052
+    "bytes": 33814
    },
    {
     "w": 480,
     "h": 367,
     "file": "img/ttmc-more/tm-dm5-480.webp",
-    "bytes": 22522
+    "bytes": 18930
    }
   ],
   "alpha": true,
@@ -96697,7 +97130,7 @@
    "w": 160,
    "h": 122,
    "file": "img/ttmc-more/tm-dm5-thumb.webp",
-   "bytes": 5868
+   "bytes": 4962
   },
   "cut": "birefnet"
  },
@@ -96708,13 +97141,13 @@
     "w": 800,
     "h": 442,
     "file": "img/ttmc-more/tm-esr1300-15e-800.webp",
-    "bytes": 61942
+    "bytes": 58324
    },
    {
     "w": 480,
     "h": 265,
     "file": "img/ttmc-more/tm-esr1300-15e-480.webp",
-    "bytes": 35414
+    "bytes": 32926
    }
   ],
   "alpha": true,
@@ -96722,7 +97155,7 @@
    "w": 160,
    "h": 88,
    "file": "img/ttmc-more/tm-esr1300-15e-thumb.webp",
-   "bytes": 8210
+   "bytes": 7792
   },
   "cut": "birefnet"
  },
@@ -96833,19 +97266,19 @@
     "w": 1200,
     "h": 953,
     "file": "img/ttmc-more/tm-dm5a-1200.webp",
-    "bytes": 72660
+    "bytes": 64902
    },
    {
     "w": 800,
     "h": 635,
     "file": "img/ttmc-more/tm-dm5a-800.webp",
-    "bytes": 47400
+    "bytes": 41638
    },
    {
     "w": 480,
     "h": 381,
     "file": "img/ttmc-more/tm-dm5a-480.webp",
-    "bytes": 26230
+    "bytes": 22916
    }
   ],
   "alpha": true,
@@ -96853,7 +97286,7 @@
    "w": 160,
    "h": 127,
    "file": "img/ttmc-more/tm-dm5a-thumb.webp",
-   "bytes": 6416
+   "bytes": 5788
   },
   "cut": "birefnet"
  },
@@ -96892,10 +97325,16 @@
   "alt": "DS-20A 20\u2033 disc sander \u2014 the table rides up and down the column",
   "variants": [
    {
+    "w": 704,
+    "h": 1215,
+    "file": "img/ttmc-more/tm-ds20a-704.webp",
+    "bytes": 65810
+   },
+   {
     "w": 480,
     "h": 828,
     "file": "img/ttmc-more/tm-ds20a-480.webp",
-    "bytes": 44234
+    "bytes": 42124
    }
   ],
   "alpha": true,
@@ -96903,7 +97342,7 @@
    "w": 93,
    "h": 160,
    "file": "img/ttmc-more/tm-ds20a-thumb.webp",
-   "bytes": 5056
+   "bytes": 4770
   },
   "cut": "birefnet"
  },
@@ -96941,10 +97380,16 @@
   "alt": "PRS-76 tube end grinder with 4\u2033 belt",
   "variants": [
    {
+    "w": 722,
+    "h": 605,
+    "file": "img/ttmc-more/tm-prs76-722.webp",
+    "bytes": 33072
+   },
+   {
     "w": 480,
     "h": 402,
     "file": "img/ttmc-more/tm-prs76-480.webp",
-    "bytes": 24410
+    "bytes": 23226
    }
   ],
   "alpha": true,
@@ -96952,7 +97397,7 @@
    "w": 160,
    "h": 134,
    "file": "img/ttmc-more/tm-prs76-thumb.webp",
-   "bytes": 6292
+   "bytes": 6012
   },
   "cut": "birefnet"
  },
@@ -96963,19 +97408,19 @@
     "w": 1200,
     "h": 1288,
     "file": "img/ttmc-more/tm-prs76a-1200.webp",
-    "bytes": 82750
+    "bytes": 76988
    },
    {
     "w": 800,
     "h": 859,
     "file": "img/ttmc-more/tm-prs76a-800.webp",
-    "bytes": 55968
+    "bytes": 51210
    },
    {
     "w": 480,
     "h": 515,
     "file": "img/ttmc-more/tm-prs76a-480.webp",
-    "bytes": 30922
+    "bytes": 28296
    }
   ],
   "alpha": true,
@@ -96983,7 +97428,7 @@
    "w": 149,
    "h": 160,
    "file": "img/ttmc-more/tm-prs76a-thumb.webp",
-   "bytes": 7354
+   "bytes": 6808
   },
   "cut": "birefnet"
  },
@@ -96991,16 +97436,22 @@
   "alt": "S-75HB / S-150HB heavy-duty belt grinder with the built-in dust collector",
   "variants": [
    {
+    "w": 1190,
+    "h": 1386,
+    "file": "img/ttmc-more/tm-s75hb-1190.webp",
+    "bytes": 109046
+   },
+   {
     "w": 800,
     "h": 932,
     "file": "img/ttmc-more/tm-s75hb-800.webp",
-    "bytes": 78212
+    "bytes": 72574
    },
    {
     "w": 480,
     "h": 559,
     "file": "img/ttmc-more/tm-s75hb-480.webp",
-    "bytes": 40400
+    "bytes": 37488
    }
   ],
   "alpha": true,
@@ -97008,7 +97459,7 @@
    "w": 137,
    "h": 160,
    "file": "img/ttmc-more/tm-s75hb-thumb.webp",
-   "bytes": 7602
+   "bytes": 7088
   },
   "cut": "birefnet"
  },
@@ -97016,16 +97467,22 @@
   "alt": "S-75L / S-150L light-type belt grinder on pedestal",
   "variants": [
    {
+    "w": 1154,
+    "h": 1306,
+    "file": "img/ttmc-more/tm-s75l-1154.webp",
+    "bytes": 71776
+   },
+   {
     "w": 800,
     "h": 905,
     "file": "img/ttmc-more/tm-s75l-800.webp",
-    "bytes": 53342
+    "bytes": 50040
    },
    {
     "w": 480,
     "h": 543,
     "file": "img/ttmc-more/tm-s75l-480.webp",
-    "bytes": 28254
+    "bytes": 26230
    }
   ],
   "alpha": true,
@@ -97033,7 +97490,7 @@
    "w": 141,
    "h": 160,
    "file": "img/ttmc-more/tm-s75l-thumb.webp",
-   "bytes": 6600
+   "bytes": 6046
   },
   "cut": "birefnet"
  },
@@ -97491,13 +97948,13 @@
     "w": 690,
     "h": 708,
     "file": "img/ttmc-more/tm-lm1450c-690.webp",
-    "bytes": 69528
+    "bytes": 65912
    },
    {
     "w": 480,
     "h": 493,
     "file": "img/ttmc-more/tm-lm1450c-480.webp",
-    "bytes": 49262
+    "bytes": 46074
    }
   ],
   "alpha": true,
@@ -97505,7 +97962,7 @@
    "w": 156,
    "h": 160,
    "file": "img/ttmc-more/tm-lm1450c-thumb.webp",
-   "bytes": 10242
+   "bytes": 9666
   },
   "cut": "birefnet"
  },
@@ -97516,7 +97973,7 @@
     "w": 304,
     "h": 819,
     "file": "img/ttmc-more/tm-t25a-304.webp",
-    "bytes": 31320
+    "bytes": 30186
    }
   ],
   "alpha": true,
@@ -97524,7 +97981,7 @@
    "w": 59,
    "h": 160,
    "file": "img/ttmc-more/tm-t25a-thumb.webp",
-   "bytes": 4816
+   "bytes": 4552
   },
   "cut": "birefnet"
  },
@@ -97535,13 +97992,13 @@
     "w": 631,
     "h": 1391,
     "file": "img/ttmc-more/tm-t25ch-631.webp",
-    "bytes": 72592
+    "bytes": 69146
    },
    {
     "w": 480,
     "h": 1058,
     "file": "img/ttmc-more/tm-t25ch-480.webp",
-    "bytes": 58848
+    "bytes": 56036
    }
   ],
   "alpha": true,
@@ -97549,7 +98006,7 @@
    "w": 73,
    "h": 160,
    "file": "img/ttmc-more/tm-t25ch-thumb.webp",
-   "bytes": 5396
+   "bytes": 5108
   },
   "cut": "birefnet"
  },
@@ -97560,7 +98017,7 @@
     "w": 480,
     "h": 1271,
     "file": "img/ttmc-more/tm-t30-480.webp",
-    "bytes": 66126
+    "bytes": 62284
    }
   ],
   "alpha": true,
@@ -97568,7 +98025,7 @@
    "w": 60,
    "h": 160,
    "file": "img/ttmc-more/tm-t30-thumb.webp",
-   "bytes": 5338
+   "bytes": 4990
   },
   "cut": "birefnet"
  },
@@ -97705,13 +98162,13 @@
     "w": 559,
     "h": 1248,
     "file": "img/ttmc-more/tm-wtz13j-559.webp",
-    "bytes": 66736
+    "bytes": 64344
    },
    {
     "w": 480,
     "h": 1072,
     "file": "img/ttmc-more/tm-wtz13j-480.webp",
-    "bytes": 62144
+    "bytes": 59698
    }
   ],
   "alpha": true,
@@ -97719,7 +98176,7 @@
    "w": 72,
    "h": 160,
    "file": "img/ttmc-more/tm-wtz13j-thumb.webp",
-   "bytes": 5838
+   "bytes": 5664
   },
   "cut": "birefnet"
  },
@@ -97730,7 +98187,7 @@
     "w": 379,
     "h": 867,
     "file": "img/ttmc-more/tm-wtz16j-379.webp",
-    "bytes": 41290
+    "bytes": 40742
    }
   ],
   "alpha": true,
@@ -97738,7 +98195,7 @@
    "w": 70,
    "h": 160,
    "file": "img/ttmc-more/tm-wtz16j-thumb.webp",
-   "bytes": 5544
+   "bytes": 5450
   },
   "cut": "birefnet"
  },
@@ -97749,13 +98206,13 @@
     "w": 644,
     "h": 890,
     "file": "img/ttmc-more/tm-x6336wa-644.webp",
-    "bytes": 78136
+    "bytes": 72104
    },
    {
     "w": 480,
     "h": 663,
     "file": "img/ttmc-more/tm-x6336wa-480.webp",
-    "bytes": 60352
+    "bytes": 55618
    }
   ],
   "alpha": true,
@@ -97763,7 +98220,7 @@
    "w": 116,
    "h": 160,
    "file": "img/ttmc-more/tm-x6336wa-thumb.webp",
-   "bytes": 8806
+   "bytes": 8054
   },
   "cut": "birefnet"
  },
@@ -97774,13 +98231,13 @@
     "w": 710,
     "h": 874,
     "file": "img/ttmc-more/tm-xq6226b-710.webp",
-    "bytes": 79360
+    "bytes": 72790
    },
    {
     "w": 480,
     "h": 591,
     "file": "img/ttmc-more/tm-xq6226b-480.webp",
-    "bytes": 53600
+    "bytes": 48980
    }
   ],
   "alpha": true,
@@ -97788,7 +98245,7 @@
    "w": 130,
    "h": 160,
    "file": "img/ttmc-more/tm-xq6226b-thumb.webp",
-   "bytes": 9006
+   "bytes": 8278
   },
   "cut": "birefnet"
  },
@@ -97799,13 +98256,13 @@
     "w": 777,
     "h": 1441,
     "file": "img/ttmc-more/tm-zx7550c-777.webp",
-    "bytes": 104232
+    "bytes": 100254
    },
    {
     "w": 480,
     "h": 890,
     "file": "img/ttmc-more/tm-zx7550c-480.webp",
-    "bytes": 66426
+    "bytes": 63870
    }
   ],
   "alpha": true,
@@ -97813,7 +98270,7 @@
    "w": 86,
    "h": 160,
    "file": "img/ttmc-more/tm-zx7550c-thumb.webp",
-   "bytes": 6136
+   "bytes": 5908
   },
   "cut": "birefnet"
  },
@@ -105043,19 +105500,19 @@
     "w": 1200,
     "h": 777,
     "file": "img/ttmc-more/tm-3in1-610-1200.webp",
-    "bytes": 69664
+    "bytes": 63430
    },
    {
     "w": 800,
     "h": 518,
     "file": "img/ttmc-more/tm-3in1-610-800.webp",
-    "bytes": 46296
+    "bytes": 42126
    },
    {
     "w": 480,
     "h": 311,
     "file": "img/ttmc-more/tm-3in1-610-480.webp",
-    "bytes": 25376
+    "bytes": 22772
    }
   ],
   "alpha": true,
@@ -105063,7 +105520,7 @@
    "w": 160,
    "h": 104,
    "file": "img/ttmc-more/tm-3in1-610-thumb.webp",
-   "bytes": 6126
+   "bytes": 5532
   },
   "cut": "birefnet"
  },
@@ -105074,19 +105531,19 @@
     "w": 1200,
     "h": 741,
     "file": "img/shears/tt-q11nc-4x1300-1200.webp",
-    "bytes": 59844
+    "bytes": 53690
    },
    {
     "w": 800,
     "h": 494,
     "file": "img/shears/tt-q11nc-4x1300-800.webp",
-    "bytes": 38202
+    "bytes": 34080
    },
    {
     "w": 480,
     "h": 296,
     "file": "img/shears/tt-q11nc-4x1300-480.webp",
-    "bytes": 20662
+    "bytes": 18574
    }
   ],
   "alpha": true,
@@ -105094,7 +105551,7 @@
    "w": 160,
    "h": 99,
    "file": "img/shears/tt-q11nc-4x1300-thumb.webp",
-   "bytes": 4938
+   "bytes": 4524
   },
   "cut": "birefnet"
  },
@@ -116380,19 +116837,19 @@
     "w": 947,
     "h": 1800,
     "file": "img/ttmc-more/tm-tb3a-947.webp",
-    "bytes": 103652
+    "bytes": 100078
    },
    {
     "w": 800,
     "h": 1521,
     "file": "img/ttmc-more/tm-tb3a-800.webp",
-    "bytes": 89586
+    "bytes": 85830
    },
    {
     "w": 480,
     "h": 912,
     "file": "img/ttmc-more/tm-tb3a-480.webp",
-    "bytes": 47880
+    "bytes": 45540
    }
   ],
   "alpha": true,
@@ -116400,7 +116857,7 @@
    "w": 84,
    "h": 160,
    "file": "img/ttmc-more/tm-tb3a-thumb.webp",
-   "bytes": 5068
+   "bytes": 4664
   },
   "cut": "birefnet"
  },
@@ -116442,13 +116899,13 @@
     "w": 800,
     "h": 445,
     "file": "img/ttmc-more/tm-bsm1220-800.webp",
-    "bytes": 42142
+    "bytes": 37390
    },
    {
     "w": 480,
     "h": 267,
     "file": "img/ttmc-more/tm-bsm1220-480.webp",
-    "bytes": 24402
+    "bytes": 21110
    }
   ],
   "alpha": true,
@@ -116456,7 +116913,7 @@
    "w": 160,
    "h": 89,
    "file": "img/ttmc-more/tm-bsm1220-thumb.webp",
-   "bytes": 6266
+   "bytes": 5370
   },
   "cut": "birefnet"
  },
@@ -116467,19 +116924,19 @@
     "w": 1107,
     "h": 1308,
     "file": "img/ttmc-more/tm-eb625-1107.webp",
-    "bytes": 79194
+    "bytes": 77300
    },
    {
     "w": 800,
     "h": 945,
     "file": "img/ttmc-more/tm-eb625-800.webp",
-    "bytes": 62808
+    "bytes": 61002
    },
    {
     "w": 480,
     "h": 567,
     "file": "img/ttmc-more/tm-eb625-480.webp",
-    "bytes": 35424
+    "bytes": 34380
    }
   ],
   "alpha": true,
@@ -116487,7 +116944,7 @@
    "w": 135,
    "h": 160,
    "file": "img/ttmc-more/tm-eb625-thumb.webp",
-   "bytes": 7160
+   "bytes": 6940
   },
   "cut": "birefnet"
  },
@@ -116498,13 +116955,13 @@
     "w": 800,
     "h": 299,
     "file": "img/ttmc-more/tm-hb1650-800.webp",
-    "bytes": 29256
+    "bytes": 27022
    },
    {
     "w": 480,
     "h": 179,
     "file": "img/ttmc-more/tm-hb1650-480.webp",
-    "bytes": 17394
+    "bytes": 15728
    }
   ],
   "alpha": true,
@@ -116512,7 +116969,7 @@
    "w": 160,
    "h": 60,
    "file": "img/ttmc-more/tm-hb1650-thumb.webp",
-   "bytes": 4272
+   "bytes": 3772
   },
   "cut": "birefnet"
  },
@@ -116523,19 +116980,19 @@
     "w": 1200,
     "h": 529,
     "file": "img/ttmc-more/tm-mf3020-1200.webp",
-    "bytes": 80924
+    "bytes": 76604
    },
    {
     "w": 800,
     "h": 353,
     "file": "img/ttmc-more/tm-mf3020-800.webp",
-    "bytes": 54460
+    "bytes": 51074
    },
    {
     "w": 480,
     "h": 212,
     "file": "img/ttmc-more/tm-mf3020-480.webp",
-    "bytes": 30232
+    "bytes": 28524
    }
   ],
   "alpha": true,
@@ -116543,7 +117000,7 @@
    "w": 160,
    "h": 71,
    "file": "img/ttmc-more/tm-mf3020-thumb.webp",
-   "bytes": 6768
+   "bytes": 6364
   },
   "cut": "birefnet"
  },
@@ -116554,19 +117011,19 @@
     "w": 1200,
     "h": 1189,
     "file": "img/ttmc-more/tm-pbb1020-1a-1200.webp",
-    "bytes": 95330
+    "bytes": 89614
    },
    {
     "w": 800,
     "h": 793,
     "file": "img/ttmc-more/tm-pbb1020-1a-800.webp",
-    "bytes": 66592
+    "bytes": 63550
    },
    {
     "w": 480,
     "h": 476,
     "file": "img/ttmc-more/tm-pbb1020-1a-480.webp",
-    "bytes": 36436
+    "bytes": 33402
    }
   ],
   "alpha": true,
@@ -116574,7 +117031,7 @@
    "w": 160,
    "h": 159,
    "file": "img/ttmc-more/tm-pbb1020-1a-thumb.webp",
-   "bytes": 9748
+   "bytes": 9084
   },
   "cut": "birefnet"
  },
@@ -116616,7 +117073,7 @@
     "w": 316,
     "h": 728,
     "file": "img/ttmc-more/tm-rb1000-316.webp",
-    "bytes": 21748
+    "bytes": 19932
    }
   ],
   "alpha": true,
@@ -116624,7 +117081,7 @@
    "w": 69,
    "h": 160,
    "file": "img/ttmc-more/tm-rb1000-thumb.webp",
-   "bytes": 4448
+   "bytes": 3984
   },
   "cut": "birefnet"
  },
@@ -116635,19 +117092,19 @@
     "w": 1014,
     "h": 1789,
     "file": "img/ttmc-more/tm-rb1100-1014.webp",
-    "bytes": 62602
+    "bytes": 55214
    },
    {
     "w": 800,
     "h": 1411,
     "file": "img/ttmc-more/tm-rb1100-800.webp",
-    "bytes": 52676
+    "bytes": 46690
    },
    {
     "w": 480,
     "h": 847,
     "file": "img/ttmc-more/tm-rb1100-480.webp",
-    "bytes": 29336
+    "bytes": 26122
    }
   ],
   "alpha": true,
@@ -116655,7 +117112,7 @@
    "w": 91,
    "h": 160,
    "file": "img/ttmc-more/tm-rb1100-thumb.webp",
-   "bytes": 4480
+   "bytes": 3932
   },
   "cut": "birefnet"
  },
@@ -116666,13 +117123,13 @@
     "w": 761,
     "h": 452,
     "file": "img/ttmc-more/tm-tsb2020-761.webp",
-    "bytes": 31992
+    "bytes": 28818
    },
    {
     "w": 480,
     "h": 285,
     "file": "img/ttmc-more/tm-tsb2020-480.webp",
-    "bytes": 25082
+    "bytes": 22650
    }
   ],
   "alpha": true,
@@ -116680,7 +117137,7 @@
    "w": 160,
    "h": 95,
    "file": "img/ttmc-more/tm-tsb2020-thumb.webp",
-   "bytes": 6712
+   "bytes": 6068
   },
   "cut": "birefnet"
  },
@@ -116691,19 +117148,19 @@
     "w": 997,
     "h": 1243,
     "file": "img/ttmc-more/tm-w1050f-997.webp",
-    "bytes": 131006
+    "bytes": 116956
    },
    {
     "w": 800,
     "h": 997,
     "file": "img/ttmc-more/tm-w1050f-800.webp",
-    "bytes": 113760
+    "bytes": 103694
    },
    {
     "w": 480,
     "h": 598,
     "file": "img/ttmc-more/tm-w1050f-480.webp",
-    "bytes": 63172
+    "bytes": 56366
    }
   ],
   "alpha": true,
@@ -116711,7 +117168,7 @@
    "w": 128,
    "h": 160,
    "file": "img/ttmc-more/tm-w1050f-thumb.webp",
-   "bytes": 11762
+   "bytes": 10878
   },
   "cut": "birefnet"
  },
@@ -116722,13 +117179,13 @@
     "w": 708,
     "h": 641,
     "file": "img/ttmc-more/tm-w1060-708.webp",
-    "bytes": 47256
+    "bytes": 44122
    },
    {
     "w": 480,
     "h": 435,
     "file": "img/ttmc-more/tm-w1060-480.webp",
-    "bytes": 37426
+    "bytes": 34596
    }
   ],
   "alpha": true,
@@ -116736,7 +117193,7 @@
    "w": 160,
    "h": 145,
    "file": "img/ttmc-more/tm-w1060-thumb.webp",
-   "bytes": 10290
+   "bytes": 9470
   },
   "cut": "birefnet"
  },
@@ -116747,13 +117204,13 @@
     "w": 800,
     "h": 688,
     "file": "img/ttmc-more/tm-w1220n-800.webp",
-    "bytes": 50508
+    "bytes": 47216
    },
    {
     "w": 480,
     "h": 413,
     "file": "img/ttmc-more/tm-w1220n-480.webp",
-    "bytes": 30112
+    "bytes": 27346
    }
   ],
   "alpha": true,
@@ -116761,7 +117218,7 @@
    "w": 160,
    "h": 138,
    "file": "img/ttmc-more/tm-w1220n-thumb.webp",
-   "bytes": 7352
+   "bytes": 6826
   },
   "cut": "birefnet"
  },
@@ -116772,19 +117229,19 @@
     "w": 1200,
     "h": 689,
     "file": "img/ttmc-more/tm-w305a-1200.webp",
-    "bytes": 59694
+    "bytes": 52700
    },
    {
     "w": 800,
     "h": 460,
     "file": "img/ttmc-more/tm-w305a-800.webp",
-    "bytes": 38772
+    "bytes": 34472
    },
    {
     "w": 480,
     "h": 276,
     "file": "img/ttmc-more/tm-w305a-480.webp",
-    "bytes": 20998
+    "bytes": 18406
    }
   ],
   "alpha": true,
@@ -116792,7 +117249,7 @@
    "w": 160,
    "h": 92,
    "file": "img/ttmc-more/tm-w305a-thumb.webp",
-   "bytes": 5458
+   "bytes": 4800
   },
   "cut": "birefnet"
  },
@@ -116803,19 +117260,19 @@
     "w": 1200,
     "h": 944,
     "file": "img/ttmc-more/tm-w460-1200.webp",
-    "bytes": 57770
+    "bytes": 54604
    },
    {
     "w": 800,
     "h": 629,
     "file": "img/ttmc-more/tm-w460-800.webp",
-    "bytes": 36084
+    "bytes": 33776
    },
    {
     "w": 480,
     "h": 378,
     "file": "img/ttmc-more/tm-w460-480.webp",
-    "bytes": 18550
+    "bytes": 17294
    }
   ],
   "alpha": true,
@@ -116823,7 +117280,7 @@
    "w": 160,
    "h": 126,
    "file": "img/ttmc-more/tm-w460-thumb.webp",
-   "bytes": 4788
+   "bytes": 4440
   },
   "cut": "birefnet"
  },
@@ -116834,13 +117291,13 @@
     "w": 800,
     "h": 448,
     "file": "img/ttmc-more/tm-w610-800.webp",
-    "bytes": 30620
+    "bytes": 27224
    },
    {
     "w": 480,
     "h": 269,
     "file": "img/ttmc-more/tm-w610-480.webp",
-    "bytes": 17866
+    "bytes": 15740
    }
   ],
   "alpha": true,
@@ -116848,7 +117305,7 @@
    "w": 160,
    "h": 90,
    "file": "img/ttmc-more/tm-w610-thumb.webp",
-   "bytes": 4748
+   "bytes": 4274
   },
   "cut": "birefnet"
  },
@@ -116859,13 +117316,13 @@
     "w": 798,
     "h": 570,
     "file": "img/ttmc-more/tm-w610b-798.webp",
-    "bytes": 26402
+    "bytes": 24720
    },
    {
     "w": 480,
     "h": 343,
     "file": "img/ttmc-more/tm-w610b-480.webp",
-    "bytes": 18806
+    "bytes": 16838
    }
   ],
   "alpha": true,
@@ -116873,7 +117330,7 @@
    "w": 160,
    "h": 114,
    "file": "img/ttmc-more/tm-w610b-thumb.webp",
-   "bytes": 5180
+   "bytes": 4758
   },
   "cut": "birefnet"
  },
@@ -116884,13 +117341,13 @@
     "w": 800,
     "h": 1796,
     "file": "img/ttmc-more/tm-pph500-800.webp",
-    "bytes": 115776
+    "bytes": 104346
    },
    {
     "w": 480,
     "h": 1077,
     "file": "img/ttmc-more/tm-pph500-480.webp",
-    "bytes": 64996
+    "bytes": 59044
    }
   ],
   "alpha": true,
@@ -116898,7 +117355,7 @@
    "w": 71,
    "h": 160,
    "file": "img/ttmc-more/tm-pph500-thumb.webp",
-   "bytes": 5948
+   "bytes": 5534
   },
   "cut": "birefnet"
  },
@@ -116939,19 +117396,19 @@
     "w": 1200,
     "h": 1077,
     "file": "img/bandsaw/nt-dc14-tgk4235-1200.webp",
-    "bytes": 106232
+    "bytes": 98042
    },
    {
     "w": 800,
     "h": 718,
     "file": "img/bandsaw/nt-dc14-tgk4235-800.webp",
-    "bytes": 65424
+    "bytes": 60340
    },
    {
     "w": 480,
     "h": 431,
     "file": "img/bandsaw/nt-dc14-tgk4235-480.webp",
-    "bytes": 36430
+    "bytes": 33480
    }
   ],
   "alpha": true,
@@ -116959,7 +117416,7 @@
    "w": 160,
    "h": 144,
    "file": "img/bandsaw/nt-dc14-tgk4235-thumb.webp",
-   "bytes": 9136
+   "bytes": 8490
   },
   "cut": "birefnet"
  },
@@ -116970,19 +117427,19 @@
     "w": 1200,
     "h": 1260,
     "file": "img/bandsaw/nt-dc11-tbk4228-1200.webp",
-    "bytes": 132898
+    "bytes": 121318
    },
    {
     "w": 800,
     "h": 840,
     "file": "img/bandsaw/nt-dc11-tbk4228-800.webp",
-    "bytes": 77782
+    "bytes": 71144
    },
    {
     "w": 480,
     "h": 504,
     "file": "img/bandsaw/nt-dc11-tbk4228-480.webp",
-    "bytes": 41440
+    "bytes": 37448
    }
   ],
   "alpha": true,
@@ -116990,7 +117447,7 @@
    "w": 152,
    "h": 160,
    "file": "img/bandsaw/nt-dc11-tbk4228-thumb.webp",
-   "bytes": 9376
+   "bytes": 8726
   }
  },
  "tm-bsm3150-caster": {
@@ -127217,7 +127674,7 @@
     "w": 206,
     "h": 185,
     "file": "img/ttmc-more/tm-hwe-curtain-206.webp",
-    "bytes": 5098
+    "bytes": 4402
    }
   ],
   "alpha": false,
@@ -127225,7 +127682,7 @@
    "w": 160,
    "h": 144,
    "file": "img/ttmc-more/tm-hwe-curtain-thumb.webp",
-   "bytes": 2938
+   "bytes": 2504
   }
  },
  "tm-hwe-gauge": {
@@ -127235,7 +127692,7 @@
     "w": 260,
     "h": 180,
     "file": "img/ttmc-more/tm-hwe-gauge-260.webp",
-    "bytes": 4848
+    "bytes": 3632
    }
   ],
   "alpha": false,
@@ -127243,7 +127700,7 @@
    "w": 160,
    "h": 111,
    "file": "img/ttmc-more/tm-hwe-gauge-thumb.webp",
-   "bytes": 2144
+   "bytes": 1558
   }
  },
  "tm-hwe-panel": {
@@ -127721,19 +128178,19 @@
     "w": 1200,
     "h": 980,
     "file": "img/ttmc-more/tm-wj655-1200.webp",
-    "bytes": 68066
+    "bytes": 71128
    },
    {
     "w": 800,
     "h": 653,
     "file": "img/ttmc-more/tm-wj655-800.webp",
-    "bytes": 41030
+    "bytes": 42208
    },
    {
     "w": 480,
     "h": 392,
     "file": "img/ttmc-more/tm-wj655-480.webp",
-    "bytes": 22574
+    "bytes": 22226
    }
   ],
   "alpha": true,
@@ -127741,7 +128198,7 @@
    "w": 160,
    "h": 131,
    "file": "img/ttmc-more/tm-wj655-thumb.webp",
-   "bytes": 5970
+   "bytes": 5790
   },
   "cut": "birefnet"
  }
