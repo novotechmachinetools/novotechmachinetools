@@ -346,17 +346,30 @@ def img(name, max_w=None):
     if max_w:
         v = [x for x in v if x["w"] <= max_w] or v[:1]
     largest = v[-1]
+    # photos changed in place after they were published get ?v=<content hash>: the server lets browsers keep images a year
+    # ("immutable"), so without it a returning visitor would go on seeing the old photo (the TTMC photos recoloured grey, Nov 10 2026)
+    q = (lambda f: f"{f}?v={file_v(f)}") if image_map.get(name, {}).get("recolor") else (lambda f: f)
     return {
         "name": name,
         "alt": image_map.get(name, {}).get("alt") or e["alt"],
-        "src": largest["file"],
+        "src": q(largest["file"]),
         "w": largest["w"], "h": largest["h"],
-        "srcset": ", ".join(f"{x['file']} {x['w']}w" for x in v),
-        "small": v[0]["file"],
-        "thumb": (e.get("thumb") or v[0])["file"],
-        "thumb_srcset": ", ".join(f"{x['file']} {x['w']}w" for x in ([e["thumb"]] if e.get("thumb") else []) + [v[0]]),
+        "srcset": ", ".join(f"{q(x['file'])} {x['w']}w" for x in v),
+        "small": q(v[0]["file"]),
+        "thumb": q((e.get("thumb") or v[0])["file"]),
+        "thumb_srcset": ", ".join(f"{q(x['file'])} {x['w']}w" for x in ([e["thumb"]] if e.get("thumb") else []) + [v[0]]),
         "alpha": e["alpha"],
     }
+
+
+FILE_V = {}
+
+
+def file_v(f):
+    """8 hex digits of a src/ file's content, for ?v="""
+    if f not in FILE_V:
+        FILE_V[f] = hashlib.md5(open(os.path.join(ROOT, "src", f), "rb").read()).hexdigest()[:8]
+    return FILE_V[f]
 
 
 # ---------------------------------------------------------------- jinja
