@@ -1478,7 +1478,7 @@ TAB["tt-rbm"] = [
         ("Working position", "TXT", ["Vertical", "Horizontal and vertical", "Vertical", "Vertical", "Horizontal and vertical"]),
         ("Top roll readout", "TXT", ["—", "—", "LED readout", "—", "—"]),
     ] + profile_rows([C_RBM10, C_RBM10, C_RBM20, C_RBM30, C_RBM30HV]) + [
-        ("Round tube", "TXT", ["—", "—", "Ø3/4″ pipe, min. Ø15.7″ (400 mm); Ø1-3/16 × 0.06″ (30 × 1.5 mm), min. Ø15.7″ (400 mm)", "Ø1-3/16 × 0.04″ (30 × 1 mm), min. Ø31.5″ (800 mm)", "Ø1-3/8 – 2-3/8 × 0.08″ (35 – 60 × 2 mm), min. Ø39.4″ (1,000 mm), special rolls"]),
+        ("*Round tube", "TXT", ["—", "—", "Ø3/8 × 0.06″ (10 × 1.5 mm), min. Ø3.1″ (80 mm); Ø3/4″ pipe, min. Ø15.7″ (400 mm); Ø1-3/16 × 0.06″ (30 × 1.5 mm), min. Ø15.7″ (400 mm)", "Ø13/16 × 0.04″ (20 × 1 mm), min. Ø19.7″ (500 mm); Ø1-3/16 × 0.04″ (30 × 1 mm), min. Ø31.5″ (800 mm)", "Ø1-3/8 – 2-3/8 × 0.08″ (35 – 60 × 2 mm), min. Ø39.4″ (1,000 mm), optional special rolls"]),
         ("Packing size L × W × H", "TXT", ["20 × 19 × 27″ (50 × 48 × 68 cm) + stand 23 × 14 × 34″ (59 × 35 × 86 cm)", "37 × 31 × 53″ (95 × 80 × 135 cm)", "39 × 19 × 54″ (98 × 47 × 138 cm) + base 28 × 18 × 31″ (70 × 45 × 80 cm)",
                                            "37 × 24 × 59″ (93 × 62 × 150 cm)", "46 × 30 × 50″ (116 × 75 × 127 cm)"]),
         ("*Weight", "KG", [158, 235, 120, 213, 224]),
@@ -1489,9 +1489,9 @@ TAB["tt-rbm"] = [
         ("Top roll", "TXT", ["Manual", "Hydraulic", "Manual", "Manual", "Hydraulic", "Hydraulic"]),
         ("Working position", "TXT", ["Horizontal and vertical", "Horizontal and vertical", "Vertical", "Horizontal and vertical", "Horizontal and vertical", "Horizontal and vertical"]),
     ] + profile_rows([C_40, C_40, C_50, C_50, C_50, C_65]) + [
-        ("Round tube (special rolls)", "TXT", ["Ø1-3/16 – 2-3/4 × 0.08″ (30 – 70 × 2 mm), min. Ø27.6″ (700 mm)", "Ø1-3/16 – 2-3/4 × 0.08″ (30 – 70 × 2 mm), min. Ø27.6″ (700 mm)",
+        ("*Round tube (optional special rolls)", "TXT", ["Ø1-3/16 – 2-3/4 × 0.08″ (30 – 70 × 2 mm), min. Ø27.6″ (700 mm)", "Ø1-3/16 – 2-3/4 × 0.08″ (30 – 70 × 2 mm), min. Ø27.6″ (700 mm)",
                                                "Ø1-3/16 – 2-3/4 × 0.08″ (30 – 70 × 2 mm), min. Ø23.6″ (600 mm)", "Ø1-3/16 – 2-3/4 × 0.08″ (30 – 70 × 2 mm), min. Ø23.6″ (600 mm)",
-                                               "Ø1-3/16 – 2-3/4 × 0.08″ (30 – 70 × 2 mm), min. Ø23.6″ (600 mm)", "Ø3-15/16 × 0.08″ (100 × 2 mm), min. Ø39.4″ (1,000 mm)"]),
+                                               "Ø1-3/16 – 2-3/4 × 0.08″ (30 – 70 × 2 mm), min. Ø23.6″ (600 mm)", "Ø2-3/8 × 0.08″ (60 × 2 mm), min. Ø19.7″ (500 mm); Ø3-15/16 × 0.08″ (100 × 2 mm), min. Ø39.4″ (1,000 mm)"]),
         ("Packing size L × W × H", "PK", [(140, 95, 134), (134, 93, 185), (100, 82, 155), (100, 82, 153), (122, 82, 180), (122, 110, 188)]),
         ("*Weight", "KG", [425, 490, 450, 460, 515, 720]),
     ]),
