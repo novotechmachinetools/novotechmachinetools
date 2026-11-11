@@ -73,6 +73,49 @@ def blue_to_grey(im, min_pixels=150):
     return res if mode == "RGBA" else res.convert(mode if mode in ("RGB", "L") else "RGB")
 
 
+def red_grey_white(im, min_area=0.001, white=236.0):
+    """A grey-and-maroon TTMC machine made like its white-and-grey siblings (the owner, Nov 10 2026: the HW2440 folder):
+    the large maroon areas become the RBM 50 grey (light and shade kept; the red e-stop, labels and the orange pedals are left
+    alone — small areas and other hues), and the light-grey paint becomes the off-white of the HW photo (shading kept)."""
+    from scipy import ndimage
+    mode = im.mode
+    a = np.asarray(im.convert("RGBA")).astype(np.float32)
+    rgb = a[..., :3] / 255
+    hue, sat, val = _hsv(rgb)
+    inside = a[..., 3] > 0
+    hd = np.minimum(np.abs(hue - 351), 360 - np.abs(hue - 351))         # maroon paint sits at about 351°
+    hw = np.clip((30 - hd) / 12, 0, 1)
+    w = hw * np.clip((sat - 0.18) / 0.17, 0, 1) * np.clip((val - 0.10) / 0.10, 0, 1) * inside
+    lab, n = ndimage.label(w > 0.3)
+    if n:
+        sizes = ndimage.sum(np.ones_like(w), lab, range(1, n + 1))
+        keep = np.isin(lab, 1 + np.where(sizes >= min_area * w.size)[0])
+        keep = ndimage.binary_dilation(keep, iterations=3)
+        w = w * keep
+        lum = a[..., :3] @ LUMA
+        core = w > 0.85
+        if core.sum() >= 150:
+            grey = (lum * (TL / float(lum[core].mean())))[..., None] * (TARGET / TL)[None, None, :]
+            out = a[..., :3] * (1 - w[..., None]) + np.clip(grey, 0, 255) * w[..., None]
+            rest = hw * np.clip((sat - 0.05) / 0.10, 0, 1) * (1 - w) * keep
+            l2 = out @ LUMA
+            a[..., :3] = out * (1 - rest[..., None]) + l2[..., None] * rest[..., None]
+    # light-grey paint → off-white (the tone of the HW2440's sibling photo tm-hw, its whites at R:G:B 0.989 : 1.003 : 1.013)
+    rgb = a[..., :3] / 255
+    _, sat2, _ = _hsv(rgb)
+    lum = a[..., :3] @ LUMA
+    gw = np.clip((0.16 - sat2) / 0.08, 0, 1) * np.clip((lum - 95) / 30, 0, 1) * inside * (1 - w)
+    ref = lum[(gw > 0.9) & (lum > 165) & (lum < 200)]
+    if ref.size > 500:
+        k = white / float(np.median(ref))
+        tone = np.array([0.989, 1.003, 1.013])
+        new = np.clip((lum * k)[..., None] * tone[None, None, :], 0, 255)
+        a[..., :3] = a[..., :3] * (1 - gw[..., None]) + new * gw[..., None]
+    a[..., :3] = np.clip(a[..., :3], 0, 255)
+    res = Image.fromarray(a.round().astype(np.uint8), "RGBA")
+    return res if mode == "RGBA" else res.convert("RGB")
+
+
 if __name__ == "__main__":
     args = sys.argv[1:]
     for src, dst in zip(args[0::2], args[1::2]):
