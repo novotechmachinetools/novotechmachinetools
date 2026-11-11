@@ -1747,6 +1747,12 @@ def render_page(page):
     # phone (the owner, Nov 1 2026); a page with one product keeps its two small photos
     if page.get("template") == "category.html" and page.get("groups") and page.get("hero_minis_all", True) is not False:
         keys, labels = all_item_minis(page)
+        # "hero_minis_replace": {photo: {"image", "label"}} puts another photo the owner picked in a small photo's place (angle
+        # rolls, Nov 10 2026: the HRBM 50 HV and HRBM 65 instead of the small ring roller and the tube roller)
+        for old, new in (page.get("hero_minis_replace") or {}).items():
+            if old in keys and new["image"] in manifest and new["image"] not in keys:
+                keys[keys.index(old)] = new["image"]
+                labels[new["image"]] = new.get("label") or labels.get(old)
         if keys:
             set_hero_many(page, keys, labels)
     if page.get("template") == "hub.html" and page.get("hero_minis_pick"):
