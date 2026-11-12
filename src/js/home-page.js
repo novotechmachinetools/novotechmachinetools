@@ -98,7 +98,9 @@
   /* ---------- machines at work: one slide in view, arrows, thumbnails, swipe (scroll snap), autoplay ---------- */
   Array.prototype.forEach.call(d.querySelectorAll("[data-slider]"), function (sl) {
     var track = sl.querySelector(".hp-slides"), slides = track.querySelectorAll(".hp-slide"), thumbs = sl.querySelectorAll(".hp-thumbs button");
-    var n = slides.length, cur = 0, timer = null, hold = false, DELAY = 6500;
+    // a new slide every 5 seconds (the owner, Nov 12 2026)
+    var n = slides.length, cur = 0, timer = null, hold = false, DELAY = 5000;
+    var canHover = w.matchMedia && w.matchMedia("(hover: hover) and (pointer: fine)").matches;
     if (!n) return;
     sl.style.setProperty("--hp-slide", DELAY / 1000 + "s");
     function mark(i) {
@@ -129,7 +131,8 @@
     function tick() { if (!hold && !d.hidden) go(cur + 1); }
     function restart() {
       clearInterval(timer);
-      if (reduce) return;
+      // it plays with "reduce motion" on too (the owner: "make the slider work") — those visitors get the slides changing
+      // without the sliding movement (go() scrolls at once), and every visitor can stop it: hover, keyboard focus, a tap
       // the progress bar starts again with the new slide
       sl.classList.remove("is-auto"); void sl.offsetWidth; sl.classList.add("is-auto");
       timer = setInterval(tick, DELAY);
@@ -142,9 +145,17 @@
       if (e.key === "ArrowLeft") { e.preventDefault(); go(cur - 1, true); }
     });
     function pause(on) { hold = on; sl.classList.toggle("is-paused", on); }
-    sl.addEventListener("mouseenter", function () { pause(true); });
-    sl.addEventListener("mouseleave", function () { pause(false); });
-    sl.addEventListener("focusin", function () { pause(true); });
+    // a mouse over the slider holds it; on a phone or tablet a tap is not a hover (Safari keeps the "mouse" on the slider after
+    // a tap, so the slides stood still for good), and only keyboard focus holds it, not the focus a tap or click leaves behind
+    if (canHover) {
+      sl.addEventListener("mouseenter", function () { pause(true); });
+      sl.addEventListener("mouseleave", function () { pause(false); });
+    }
+    sl.addEventListener("focusin", function (e) {
+      var kb = true;
+      try { kb = e.target.matches(":focus-visible"); } catch (err) { kb = false; }
+      if (kb) pause(true);
+    });
     sl.addEventListener("focusout", function () { pause(false); });
     sl.addEventListener("touchstart", function () { pause(true); }, { passive: true });
     sl.addEventListener("touchend", function () { setTimeout(function () { pause(false); }, 4000); }, { passive: true });

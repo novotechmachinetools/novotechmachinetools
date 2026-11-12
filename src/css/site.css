@@ -808,8 +808,10 @@ small { font-size: .85em; }
 @media (max-width: 700px) { .line-title { font-size: 28px; } .line-head { padding: 14px 14px 12px; } }
 
 /* ---------- AI machine finder: header button and chat panel ---------- */
-.ai-open { display: inline-flex; align-items: center; gap: 8px; font-family: var(--cond); font-weight: 600; font-size: 18px; color: var(--charcoal); background: var(--paper); border: 1px solid var(--line); border-radius: 999px; padding: 7px 14px 7px 11px; cursor: pointer; line-height: 1; white-space: nowrap; }
-.ai-open:hover, .ai-open:focus-visible { border-color: var(--orange); color: var(--orange-ink); background: #FFF7EE; }
+/* the AI machine finder in the header: solid orange so it stands out on every page (the owner, Nov 12 2026) — dark text on
+   the orange for contrast */
+.ai-open { display: inline-flex; align-items: center; gap: 8px; font-family: var(--cond); font-weight: 700; font-size: 18px; color: var(--ink); background: var(--orange); border: 1px solid var(--orange-deep); border-radius: 999px; padding: 7px 14px 7px 11px; cursor: pointer; line-height: 1; white-space: nowrap; box-shadow: 0 2px 10px rgba(242, 138, 31, .35); }
+.ai-open:hover, .ai-open:focus-visible { border-color: var(--orange-deep); color: var(--ink); background: var(--orange-deep); box-shadow: 0 3px 14px rgba(242, 138, 31, .5); }
 .ai-open svg { flex: none; }
 .ai-open-badge { display: none; }
 /* the panel fills most of the screen: the answer is a long list of machine cards (the owner, Nov 7 2026: "a bit bigger — many models get listed") */
@@ -924,7 +926,7 @@ body.ai-locked { overflow: hidden; }
 @media (max-width: 1180px) {
   .ai-open .ai-open-label { display: none; }
   .ai-open { gap: 5px; padding: 6px 7px 6px 9px; }
-  .ai-open-badge { display: inline-block; font-family: var(--cond); font-weight: 800; font-size: 15px; line-height: 1; letter-spacing: .03em; background: var(--orange); color: var(--ink); padding: 4px 6px 3px; border-radius: 999px; }
+  .ai-open-badge { display: inline-block; font-family: var(--cond); font-weight: 800; font-size: 15px; line-height: 1; letter-spacing: .03em; background: var(--ink); color: #fff; padding: 4px 6px 3px; border-radius: 999px; }
   .header-contact .btn { white-space: nowrap; }
 }
 @media (min-width: 961px) and (max-width: 1100px) { .nav-menu > li > a { padding: 10px 8px; white-space: nowrap; } .header-row { gap: 14px; } }
@@ -990,6 +992,8 @@ body.ai-locked { overflow: hidden; }
 .section-more { margin: 22px 0 0; }
 .link-button { font: inherit; color: var(--orange-ink); background: none; border: 0; padding: 0; text-decoration: underline; text-underline-offset: 2px; text-decoration-skip-ink: none; cursor: pointer; }
 .link-button:hover { color: var(--orange-deep); }
+/* the in-text "AI machine finder" link on the Products page stays a text link (the orange pill is the header button) */
+.link-button.ai-open, .link-button.ai-open:hover, .link-button.ai-open:focus-visible { display: inline; background: none; border: 0; padding: 0; box-shadow: none; font: inherit; color: var(--orange-ink); }
 
 /* page header of the text pages */
 .page-hero { background: var(--paper); border-bottom: 1px solid var(--line-soft); }
