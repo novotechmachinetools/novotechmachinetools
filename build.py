@@ -712,6 +712,8 @@ def family_videos(f):
             v["title"] = YT_CHANNEL[i][0]
         if not v.get("duration") and i in YT_CHANNEL:
             v["duration"] = _iso_dur(YT_CHANNEL[i][1])
+        if not v.get("duration") and not isinstance(it, str) and it.get("duration"):   # an unlisted video (not in the export)
+            v["duration"] = _iso_dur(it["duration"])
         out.append(v)
     f["videos"] = out
 
