@@ -422,8 +422,8 @@ def rfq_type(x):
 env.globals.update(site=site, img=img, staging=STAGING, year=datetime.date.today().year, dia=dia, inch=inch, bar_sizes=bar_sizes,
                    nav_contains=nav_contains, nav_is=nav_is, css_text=css_text, rfq_type=rfq_type)
 sys.path.insert(0, os.path.join(ROOT, "tools"))
-import section_icons  # noqa: E402  the section shapes of the profile benders' capacity tables (the owner, Nov 11 2026)
-env.globals["sec_icon"] = lambda fid, label: section_icons.svg(section_icons.icon_id(fid, label) or "")
+import section_icons  # noqa: E402  the section pictures of the profile benders' capacity tables (the owner, Nov 11 2026)
+env.globals["sec_icon"] = lambda fid, label: section_icons.html(section_icons.icon_id(fid, label))
 env.globals["asset_v"] = lambda name: hashlib.md5(open(os.path.join(ROOT, "src", name), "rb").read()).hexdigest()[:8]   # ?v= for any src/ file
 
 

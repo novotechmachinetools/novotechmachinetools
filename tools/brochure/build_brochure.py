@@ -230,8 +230,8 @@ def render(spec, no_inline, budgets=None, tight=None, colsplit=None):
     env = Environment(loader=FileSystemLoader(HERE), autoescape=False)
     env.filters["img"] = img
     sys.path.insert(0, os.path.join(ROOT, "tools"))
-    import section_icons   # the section shapes of the profile benders' capacity rows, as on the site (the owner, Nov 11 2026)
-    env.globals["sec_icon"] = lambda fid, label: section_icons.svg(section_icons.icon_id(fid, label) or "")
+    import section_icons   # the section pictures of the profile benders' capacity rows, as on the site (the owner, Nov 11 2026)
+    env.globals["sec_icon"] = lambda fid, label: section_icons.html(section_icons.icon_id(fid, label), "file://" + section_icons.DIR + "/", lazy=False)
     included = [(spec["made_in"], "")] + INCLUDED[1:] if spec.get("made_in") else INCLUDED   # value line: "Built in China to North American standards"
     html = env.get_template("brochure.html").render(spec=spec, site=SITE, families=families, groups=groups, total=total, included=included, intro=intro,
                                                      fonts="file://" + os.path.join(ROOT, "src", "fonts"), logo=img("novotech-logo", 800, png=True),
