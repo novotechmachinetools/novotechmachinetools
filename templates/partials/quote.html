@@ -14,6 +14,9 @@
       <p class="quote-form-head"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v12H5.2L4 17.2V4z"/><path d="M8 9h8M8 12.5h5"/></svg>Your quote request<small>We reply within one business day</small></p>
       <input type="hidden" name="page" value="{{ page.title }}">
       <input type="hidden" name="page_short" value="{{ short }}">
+      {#- the short machine name of the e-mail's subject, "RFQ for press brake" (the owner, Nov 11 2026; content/rfq.json) — on a general
+          page the machine family picked in the form sets it (its data-rfq, site.js) #}
+      <input type="hidden" name="rfq" value="{{ rfq_type(page) }}">
       {#- the page's address, for the button in the customer's automatic reply that leads back to it (the owner, Nov 9 2026) #}
       <input type="hidden" name="page_url" value="{{ page.url }}">
       <input type="hidden" name="ts" value="{{ build_ts }}">
@@ -40,7 +43,7 @@
           <option value="">{{ q.select_placeholder or "Choose a machine family…" }}</option>
           <option value="Not sure — please advise">Not sure — please advise</option>
           {% for g in page.groups %}{% for f in g.families %}<option value="{{ f.name }}">{{ f.name }} — {{ f.models_label }}</option>{% endfor %}{% endfor %}
-          {% if not page.groups and page.catalog_groups %}{% for g in page.catalog_groups %}<optgroup label="{{ g.title }}">{% for c in g.cards %}<option value="{{ c.label }}">{{ c.label }}</option>{% endfor %}</optgroup>{% endfor %}{% endif %}
+          {% if not page.groups and page.catalog_groups %}{% for g in page.catalog_groups %}<optgroup label="{{ g.title }}">{% for c in g.cards %}<option value="{{ c.label }}" data-rfq="{{ rfq_type(c.slug) }}">{{ c.label }}</option>{% endfor %}</optgroup>{% endfor %}{% endif %}
           <option value="{{ site.agents.form_option }}">{{ site.agents.form_option }}</option>
         </select>
       </div>

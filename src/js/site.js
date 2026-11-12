@@ -668,6 +668,14 @@
   /* ---------- quote form: submit in place, fall back to a normal POST ---------- */
   var form = d.querySelector(".quote-form");
   if (form && window.fetch && window.FormData) {
+    // the e-mail's subject is "RFQ for <machine>" (the owner, Nov 11 2026): the page's own machine, or on a general page the
+    // machine family picked in the form (its data-rfq)
+    var rfqIn = form.querySelector("input[name=rfq]"), rfq0 = rfqIn ? rfqIn.value : "";
+    var setRfq = function () {
+      if (!rfqIn) return;
+      var sel = form.querySelector("select[name=machine]"), o = sel && sel.options[sel.selectedIndex];
+      rfqIn.value = (o && o.getAttribute("data-rfq")) || rfq0;
+    };
     var status = form.querySelector(".form-status");
     var fileIn = form.querySelector("input[type=file]");
     var MAX_FILES = 10, MAX_BYTES = 13 * 1024 * 1024;   // as in quote.php (the owner, Nov 9 2026)
@@ -737,12 +745,14 @@
         // GitHub test site: no PHP here, so hand the request to the visitor's e-mail app instead
         var f = function (n) { var el = form.elements[n]; return el ? el.value : ""; };
         var body = "Name: " + f("name") + "\nCompany: " + f("company") + "\nEmail: " + f("email") + "\nPhone: " + f("phone") + "\nMachine: " + f("machine") + "\nPage: " + f("page") + "\n\n" + f("message");
-        window.location.href = "mailto:" + EMAIL + "?subject=" + encodeURIComponent("Quote request — " + (f("machine") || "NovoTech website")) + "&body=" + encodeURIComponent(body);
+        setRfq();
+        window.location.href = "mailto:" + EMAIL + "?subject=" + encodeURIComponent(f("rfq") ? "RFQ for " + f("rfq") : "RFQ") + "&body=" + encodeURIComponent(body);
         say("", "This is the test site (GitHub) and it cannot send e-mail by itself, so your request was opened in your e-mail app instead" +
           (fileIn && fileIn.files && fileIn.files.length ? " — please attach your files there" : "") +
           ". On the live site at NovoTechMachineTools.com the form sends directly to " + EMAIL + ", attachments included.");
         return;
       }
+      setRfq();
       var btn = form.querySelector("button[type=submit]");
       btn.disabled = true; say("", fileIn && fileIn.files && fileIn.files.length ? "Sending your request and files…" : "Sending…");
       withToken(function () {

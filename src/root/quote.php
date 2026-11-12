@@ -255,11 +255,12 @@ $machine = $f('machine', 200);
 $message = $f('message', 4000);
 $page    = $f('page', 200);
 $pageShort = $f('page_short', 80);    // the page in a word or two: "Rebar benders", "Ironworkers", "Contact us"
+$rfq     = $f('rfq', 60);            // the machine in a word or two, for the subject: "press brake", "plate roller", "bandsaw"
 
 if ($name === '' || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
     respond(false, 'Please add your name and a valid email address.', 422);
 }
-foreach ([$name, $company, $email, $phone, $machine, $page, $pageShort] as $v) {
+foreach ([$name, $company, $email, $phone, $machine, $page, $pageShort, $rfq] as $v) {
     if (preg_match('/[\r\n]/', $v)) { respond(false, 'Invalid input.', 422); }
 }
 
@@ -370,10 +371,12 @@ if ($files) {
     $headers[] = "Content-Type: text/plain; charset=UTF-8";
     $body = $text;
 }
-// the subject names the page the form was sent from in a word or two, and the machine when one was chosen (the owner,
-// Nov 7 2026: "so I know which page the form was filled on and which product the customer means")
-$subject = 'Quote request' . ($pageShort !== '' ? " — $pageShort" : '') . ($machine !== '' ? ": $machine" : '')
-         . ($files ? ' (' . count($files) . ' file' . (count($files) > 1 ? 's' : '') . ' attached)' : '');
+// a short subject: "RFQ for press brake", "RFQ for plate roller", "RFQ for bandsaw" — the machine in a word or two, no model, specs
+// or page (the owner, Nov 11 2026: "a 10-km subject is confusing"); the page and the machine chosen are in the e-mail itself.
+// $rfq is the page's machine (content/rfq.json), or on a general page the machine family picked in the form; a dealer enquiry says so
+$dealer = stripos($machine, 'sales agent') !== false || stripos($machine, 'dealer') !== false;
+$rfqName = preg_replace('/[^\p{L}\p{N} \-\/&.]+/u', '', $rfq);
+$subject = $dealer ? 'Dealer inquiry' : ($rfqName !== '' ? "RFQ for $rfqName" : 'RFQ');
 $subject = '=?UTF-8?B?' . base64_encode($subject) . '?=';
 
 $sent = @mail($TO, $subject, $body, implode("\r\n", $headers), "-f$FROM");

@@ -391,8 +391,36 @@ def css_text(name):
     return open(os.path.join(DIST, "css", name), encoding="utf-8").read().replace("../fonts/", "fonts/")
 
 
+RFQ = {k: v for k, v in json.load(open(os.path.join(ROOT, "content", "rfq.json"), encoding="utf-8")).items() if not k.startswith("_")}
+RFQ_WARNED = set()
+
+
+def rfq_type(x):
+    """The short machine name in the subject of the quote-form e-mail, 'RFQ for <name>' (the owner, Nov 11 2026: "RFQ for press
+    brake, RFQ for plate roller, RFQ for bandsaw — short, no model or specs"), for a page (dict) or a page slug / href.
+    From content/rfq.json; a page not listed there gets its menu label, singular and in lower case, and a warning."""
+    if isinstance(x, dict):
+        slug, label = x.get("slug", ""), x.get("nav_label") or ""
+    else:
+        slug, label = str(x).split("#")[0], ""
+        slug = slug[:-5] if slug.endswith(".html") else slug
+    if slug in RFQ:
+        return RFQ[slug]
+    if slug and slug not in RFQ_WARNED:
+        RFQ_WARNED.add(slug)
+        print(f"  note: {slug} is not in content/rfq.json — its quote e-mails are titled from the menu label")
+    name = re.split(r" & | &amp; | and |, | — | – | \(", re.sub(r"^All ", "", label))[0].strip()
+    if not name:
+        return ""
+    words = name.split()
+    w = words[-1]
+    words[-1] = (w[:-3] + "y" if w.endswith("ies") else w[:-2] if re.search(r"(ch|sh|x)es$", w) else
+                 w[:-1] if w.endswith("s") and not w.endswith("ss") else w)
+    return " ".join(v if (v.isupper() or any(ch.isdigit() for ch in v)) else v.lower() for v in words)
+
+
 env.globals.update(site=site, img=img, staging=STAGING, year=datetime.date.today().year, dia=dia, inch=inch, bar_sizes=bar_sizes,
-                   nav_contains=nav_contains, nav_is=nav_is, css_text=css_text)
+                   nav_contains=nav_contains, nav_is=nav_is, css_text=css_text, rfq_type=rfq_type)
 env.globals["asset_v"] = lambda name: hashlib.md5(open(os.path.join(ROOT, "src", name), "rb").read()).hexdigest()[:8]   # ?v= for any src/ file
 
 
