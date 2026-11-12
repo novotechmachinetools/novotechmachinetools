@@ -215,6 +215,23 @@ def spec_table(tb, title, sub, spec, overrides=None):
     return {"title": title, "sub": sub, "models": list(tb["models"]), "rows": build_rows(tb, spec, overrides)}
 
 
+# The catalogue's chart names its rows only by a drawing; the names first given to some of them described the opposite
+# orientation (the owner, Nov 11 2026: "the shapes are right, the descriptions are not").  Read from the drawings, checked against
+# the capacities: the first flat bar stands on edge (its width along the radius, the hard way) and the second lies flat; the beam
+# rows with the larger sections bend about the weak axis (easy way) and the channel with its web flat bends the hard way.
+# The tables now also show each drawing (tools/section_icons.py).
+RELABEL = {
+    "Flat bar — easy way": "Flat bar — on edge (hard way)",
+    "Flat bar — hard way": "Flat bar — flat (easy way)",
+    "Tee — flange out": "Tee — flange flat",
+    "Channel — easy way": "Channel — web flat (hard way)",
+    "I-beam — hard way": "I-beam — easy way",
+    "I-beam — easy way": "I-beam — hard way",
+    "H-beam — hard way": "H-beam — easy way",
+    "H-beam — easy way": "H-beam — hard way",
+}
+
+
 def chart_table(page, machines, title, sub):
     """Section-bending capacity chart as a spec table: rows = profiles, cells = 'max section → min rolling Ø' lines."""
     ch = CHARTS[str(page)]
@@ -225,7 +242,7 @@ def chart_table(page, machines, title, sub):
         for i in idx:
             lines = [a.replace("⁄", "/") + (f" → Ø{d}" if d else "") for a, d in r["cells"][i]]
             cells.append(" · ".join(lines) if lines else "—")
-        label = r["profile"]
+        label = RELABEL.get(r["profile"], r["profile"])
         rows.append({"label": label, "sub": {"STD": "standard rolls", "OPT": "optional rolls", "STD*": "standard rolls*", "OPT*": "optional rolls*", "OPT**": "optional rolls**", "STD**": "standard rolls**"}.get(r["dies"], ""), "cells": cells, "key": False})
     return {"title": title, "sub": sub, "models": list(machines), "rows": rows}
 

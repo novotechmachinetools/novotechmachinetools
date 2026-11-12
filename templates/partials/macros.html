@@ -113,7 +113,7 @@
       <tbody>
         {% for r in t.rows %}
         <tr class="row-text{{ ' row-key' if r.key else '' }}">
-          <th scope="row">{{ r.label }}{% if r.sub %}<small>{{ r.sub }}</small>{% endif %}</th>
+          <th scope="row">{{ sec_icon(f.id, r.label) | safe }}{{ r.label }}{% if r.sub %}<small>{{ r.sub }}</small>{% endif %}</th>
           {% for c in r.cells %}<td>{{ c }}</td>{% endfor %}
         </tr>
         {% endfor %}

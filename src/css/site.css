@@ -413,6 +413,8 @@ small { font-size: .85em; }
 .spec-table thead th.label-col { background: var(--charcoal-2); }
 .spec-table tbody th { font-weight: 600; color: var(--charcoal); background: var(--paper); min-width: 200px; max-width: 260px; }
 .spec-table tbody th small { display: block; font-weight: 400; color: var(--steel); }
+/* the section shape of a profile bender's capacity row: the bent bar with its section at both ends (tools/section_icons.py) */
+.spec-table tbody th .sec-ico { display: block; width: 92px; height: 33px; margin: 0 0 3px -4px; }
 .spec-table tbody tr.row-cap th { border-left: 5px solid var(--orange); }
 .spec-table tbody tr.row-text th { border-left: 5px solid var(--line); }
 .spec-table tr.row-cap td { white-space: nowrap; }
