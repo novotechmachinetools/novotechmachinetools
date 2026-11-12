@@ -1807,6 +1807,10 @@ def render_page(page):
         pick = [m for m in page["hero_minis_pick"] if m["image"] in manifest]
         set_hero_many(page, [m["image"] for m in pick], {m["image"]: m["label"] for m in pick},
                       {m["image"]: m["href"] for m in pick if m.get("href")})
+        # "sub": a short description under the model name; "scale": a photo drawn smaller on a desktop, so a compact machine
+        # looks its size beside the others (press brake hub, the owner, Nov 12 2026)
+        page["hero_mini_subs"] = {m["image"]: m["sub"] for m in pick if m.get("sub")}
+        page["hero_mini_scale"] = {m["image"]: m["scale"] for m in pick if m.get("scale")}
     elif page.get("template") == "hub.html" and page.get("subpages") and page.get("hero_image") and page.get("hero_minis_all", True) is not False:
         keys, labels, links = hub_item_minis(page)
         if keys:

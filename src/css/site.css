@@ -213,7 +213,10 @@ small { font-size: .85em; }
 .hero-minis.is-many { list-style: none; margin: 6px 0 0; padding: 0; width: min(100%, 943px); justify-self: center; display: grid; grid-template-columns: repeat(var(--n), minmax(0, 1fr)); gap: 12px 10px; align-items: stretch; }
 .hero-minis.is-many li { display: flex; justify-content: center; min-width: 0; }
 .hero-minis.is-many .hero-mini-link { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 6px; width: 100%; min-height: 48px; padding: 6px 4px; border-radius: 8px; line-height: 1.2; text-decoration: none; color: var(--charcoal); }
-.hero-minis.is-many img { display: block; width: auto; max-width: 100%; height: var(--mh, 127px); object-fit: contain; object-position: bottom; filter: drop-shadow(0 8px 10px rgba(30, 30, 30, .28)); }
+.hero-minis.is-many img { display: block; width: auto; max-width: 100%; height: calc(var(--mh, 127px) * var(--ms, 1)); object-fit: contain; object-position: bottom; filter: drop-shadow(0 8px 10px rgba(30, 30, 30, .28)); }
+/* a model name with a short description under it (press brake hub, the owner, Nov 12 2026) */
+.hero-mini-cap .hero-mini-name { display: block; font-weight: 700; color: var(--charcoal); }
+.hero-mini-cap .hero-mini-sub { display: block; font-size: 12px; font-weight: 400; }
 .hero-mini-cap { font-family: var(--sans); font-weight: 500; font-size: 13px; line-height: 1.3; letter-spacing: .01em; text-align: center; color: var(--steel); max-width: 12.45em; overflow-wrap: anywhere; }
 /* the name of the large photo's machine: black on the orange band, no box (option A, the owner, Nov 1 2026) — 6.5:1 contrast */
 .hero-main-cap { position: relative; z-index: 2; margin: 4px 0 0; padding: 0; max-width: 90%; font-size: 14px; font-weight: 600; line-height: 1.3; letter-spacing: .01em; color: var(--ink); text-align: center; }

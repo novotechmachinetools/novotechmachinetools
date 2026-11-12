@@ -14,8 +14,9 @@
     {% if page.hero_caption %}<p class="hero-main-cap">{{ page.hero_caption }}</p>{% endif %}
   </div>
   <ul class="hero-minis is-many" style="--n: {{ page.hero_cols[0] }}; --m: {{ page.hero_cols[1] }}; --nw: {{ page.hero_cols_wide or page.hero_cols[0] }}; --mh: {{ page.hero_mini_h }}px; --mhm: {{ page.hero_mini_hm }}px">
+    {% set subs = page.hero_mini_subs or {} %}{% set msc = page.hero_mini_scale or {} %}
     {% for n in page.hero_image_secondary %}{% set m = img(n) %}
-    <li>{% if hl.get(n) %}<a class="hero-mini-link" href="{{ hl[n] }}">{% else %}<span class="hero-mini-link">{% endif %}<img src="{{ m.small }}" srcset="{{ m.srcset }}" sizes="(max-width: 960px) 31vw, 219px" width="{{ m.w }}" height="{{ m.h }}" alt="{{ m.alt }}" loading="lazy" decoding="async"><span class="hero-mini-cap">{{ page.hero_mini_labels[n] }}</span>{% if hl.get(n) %}</a>{% else %}</span>{% endif %}</li>
+    <li{% if msc.get(n) %} style="--ms: {{ msc[n] }}"{% endif %}>{% if hl.get(n) %}<a class="hero-mini-link" href="{{ hl[n] }}">{% else %}<span class="hero-mini-link">{% endif %}<img src="{{ m.small }}" srcset="{{ m.srcset }}" sizes="(max-width: 960px) 31vw, 219px" width="{{ m.w }}" height="{{ m.h }}" alt="{{ m.alt }}" loading="lazy" decoding="async"><span class="hero-mini-cap">{% if subs.get(n) %}<span class="hero-mini-name">{{ page.hero_mini_labels[n] }}</span><span class="hero-mini-sub">{{ subs[n] }}</span>{% else %}{{ page.hero_mini_labels[n] }}{% endif %}</span>{% if hl.get(n) %}</a>{% else %}</span>{% endif %}</li>
     {% endfor %}
   </ul>
   {% else %}

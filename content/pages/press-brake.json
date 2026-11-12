@@ -321,21 +321,26 @@
   {
    "image": "dn-ddm-2",
    "label": "DDM",
+   "sub": "Servo Electric Press Brake",
    "href": "electric-press-brake.html#dn-ddm"
   },
   {
    "image": "dn-xl1560-studio",
    "label": "XL",
-   "href": "compact-hydraulic-press-brakes.html#dn-xl-1560"
+   "sub": "Compact Hydraulic Press Brake",
+   "href": "compact-hydraulic-press-brakes.html#dn-xl-1560",
+   "scale": 0.75
   },
   {
    "image": "vl-wad-1",
    "label": "WAD",
+   "sub": "Hydraulic CNC Press Brake",
    "href": "hydraulic-press-brake.html#vl-wad"
   },
   {
    "image": "vl-wadg-1",
    "label": "WADG",
+   "sub": "Servo Electric Press Brake",
    "href": "electric-press-brake.html#vl-wadg"
   }
  ]
