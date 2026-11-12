@@ -109,7 +109,10 @@ def build():
                      "intro_video": None, "intro_video_heading": None, "intro_video_text": None,
                      "related_pages": HUB_PAGE["related_pages"], "related_title": HUB_PAGE["related_title"],
                      "why_title": "Included with every press brake from NovoTech", "why_features": PBN.why_features(),
-                     "hub_compact": True, "compare": COMPARE, "subpage_link": "all models, specifications and photos"})
+                     "hub_compact": True, "compare": COMPARE, "subpage_link": "all models, specifications and photos",
+                     # the small photos under the hero, the WAD and WADG series among them (the owner, Nov 12 2026)
+                     "hero_caption": "Hydraulic press brakes",
+                     "hero_minis_pick": [{"image": "vl-wad-1", "label": "WAD CNC press brakes", "href": "hydraulic-press-brake.html#vl-wad"}, {"image": "dn-ddm-2", "label": "Electric press brakes", "href": "electric-press-brake.html"}, {"image": "vl-wadg-1", "label": "WADG electric press brakes", "href": "electric-press-brake.html#vl-wadg"}, {"image": "dn-xl1560-studio", "label": "Compact press brakes", "href": "compact-hydraulic-press-brakes.html"}]})
     # the hub's subpages carry the line class for the cards (premium / value)
     path = os.path.join(ROOT, "content", "pages", f"{PBN.HUB}.json")
     page = json.load(open(path, encoding="utf-8"))
