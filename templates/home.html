@@ -60,24 +60,10 @@
       </a></li>
       {% endfor %}
     </ul>
-    {# every kind of machine, grouped as in the Products menu: nothing on the site is more than one click away #}
-    <div class="hp-index" aria-labelledby="hp-index-title">
-      <h3 id="hp-index-title" class="hp-index-title">Every kind of machine we sell</h3>
-      <div class="hp-index-grid">
-        {% for g in page.catalog_groups if g.cards %}
-        <details class="hp-idx" open>
-          <summary>{{ g.title }} <span>{{ g.cards | length }}</span></summary>
-          <ul>
-            {% for c in g.cards %}<li><a href="{{ c.href }}">{% if c.image %}<span class="hp-idx-img{{ ' is-cutout' if c.image.alpha else '' }}"><img src="{{ c.image.thumb }}" alt="" width="48" height="36" loading="lazy" decoding="async"></span>{% endif %}<span>{{ c.label }}</span></a></li>{% endfor %}
-          </ul>
-        </details>
-        {% endfor %}
-      </div>
-    </div>
   </div>
 </section>
 
-{# ---------- machines at work: slides ---------- #}
+{# ---------- machines at work: slides, right above "Every kind of machine we sell" (the owner, Nov 12 2026) ---------- #}
 {% set slides = page.work_slides %}
 <section class="hp-work" aria-labelledby="hp-work-title">
   <div class="wrap">
@@ -105,6 +91,25 @@
         <li><button type="button" data-go="{{ loop.index0 }}" aria-label="{{ s.kicker }} — slide {{ loop.index }}, {{ s.title }}"><img src="{{ im.thumb }}" alt="" width="96" height="54" loading="lazy" decoding="async"><span>{{ s.kicker }}</span><i class="hp-bar" aria-hidden="true"></i></button></li>
         {% endfor %}
       </ol>
+    </div>
+  </div>
+</section>
+
+{# ---------- every kind of machine, grouped as in the Products menu: nothing on the site is more than one click away ---------- #}
+<section class="hp-catalog" aria-labelledby="hp-index-title">
+  <div class="wrap">
+    <div class="hp-index">
+      <h2 id="hp-index-title" class="hp-index-title">Every kind of machine we sell</h2>
+      <div class="hp-index-grid">
+        {% for g in page.catalog_groups if g.cards %}
+        <details class="hp-idx" open>
+          <summary>{{ g.title }} <span>{{ g.cards | length }}</span></summary>
+          <ul>
+            {% for c in g.cards %}<li><a href="{{ c.href }}">{% if c.image %}<span class="hp-idx-img{{ ' is-cutout' if c.image.alpha else '' }}"><img src="{{ c.image.thumb }}" alt="" width="48" height="36" loading="lazy" decoding="async"></span>{% endif %}<span>{{ c.label }}</span></a></li>{% endfor %}
+          </ul>
+        </details>
+        {% endfor %}
+      </div>
     </div>
   </div>
 </section>

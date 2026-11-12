@@ -810,8 +810,9 @@ small { font-size: .85em; }
 /* ---------- AI machine finder: header button and chat panel ---------- */
 /* the AI machine finder in the header: solid orange so it stands out on every page (the owner, Nov 12 2026) — dark text on
    the orange for contrast */
-.ai-open { display: inline-flex; align-items: center; gap: 8px; font-family: var(--cond); font-weight: 700; font-size: 18px; color: var(--ink); background: var(--orange); border: 1px solid var(--orange-deep); border-radius: 999px; padding: 7px 14px 7px 11px; cursor: pointer; line-height: 1; white-space: nowrap; box-shadow: 0 2px 10px rgba(242, 138, 31, .35); }
-.ai-open:hover, .ai-open:focus-visible { border-color: var(--orange-deep); color: var(--ink); background: var(--orange-deep); box-shadow: 0 3px 14px rgba(242, 138, 31, .5); }
+/* the same orange as the "Get a quote" button beside it (the owner, Nov 12 2026: the glowing version was too strong) */
+.ai-open { display: inline-flex; align-items: center; gap: 8px; font-family: var(--cond); font-weight: 700; font-size: 18px; color: var(--ink); background: var(--orange); border: 1px solid var(--orange); border-radius: 999px; padding: 7px 14px 7px 11px; cursor: pointer; line-height: 1; white-space: nowrap; transition: background-color .15s, border-color .15s, color .15s; }
+.ai-open:hover, .ai-open:focus-visible { border-color: var(--orange-deep); color: #fff; background: var(--orange-deep); }
 .ai-open svg { flex: none; }
 .ai-open-badge { display: none; }
 /* the panel fills most of the screen: the answer is a long list of machine cards (the owner, Nov 7 2026: "a bit bigger — many models get listed") */
