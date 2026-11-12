@@ -26,7 +26,8 @@ TFM_PDF = BR + "TFM3100x2E TFMS3100X2E.pdf"
 DST = P.DST
 
 
-def S(src, box=None, alt="", white=(), logo=(), clean=False, detail=False, xref=None, logo_out=(), lines=(), poly=(), red_out=()):
+def S(src, box=None, alt="", white=(), logo=(), clean=False, detail=False, xref=None, logo_out=(), lines=(), poly=(), red_out=(),
+      rows=()):
     """src: an image file, or a PDF with xref; box: crop (x0, y0, x1, y1) in source pixels, None = whole image;
     white / logo: boxes (x0, y0, x1, y1) in source pixels painted white / filled from the surface around the badge;
     logo_out: badge boxes in the pixels of the finished (cropped and trimmed) photo, padded by PAD;
@@ -35,9 +36,12 @@ def S(src, box=None, alt="", white=(), logo=(), clean=False, detail=False, xref=
     poly: polygons [(x, y), …] in source pixels painted white — what stands under or around the machine and is not part of it
     (the YQ-450's shipping pallet, Nov 7 2026), so the cut-out leaves it out;
     red_out: boxes in the pixels of the finished photo where the red of a catalogue leader line is inpainted from around it — also
-    where the line crosses the machine (the BSM3150's leg, Nov 7 2026)"""
+    where the line crosses the machine (the BSM3150's leg, Nov 7 2026);
+    rows: boxes (x0, y0, x1, y1) in source pixels holding a logo on a flat painted panel (the TFM's top beam, Nov 11 2026) —
+    each row of the box is filled with a straight line between the paint just left and just right of it, with the paint's own
+    grain; cleaner than inpainting on a large flat surface, where a smeared patch shows"""
     return dict(src=src, xref=xref, box=box, alt=alt, white=list(white), logo=list(logo), clean=clean, detail=detail,
-                logo_out=list(logo_out), lines=list(lines), poly=[list(q) for q in poly], red_out=list(red_out))
+                logo_out=list(logo_out), lines=list(lines), poly=[list(q) for q in poly], red_out=list(red_out), rows=list(rows))
 
 
 def erase_lines(im, lines):
@@ -76,10 +80,13 @@ PHOTOS = {
     "tm-efms2540l": S(BEND + "EFMS-2540X1.5L.png", (40, 320, 1860, 965), "EFMS-2540×1.5L electric folding machine with segmented beams and foot pedals",
                       clean=True),
     "tm-efms2540l-angle": S(BEND + "EFMS-2540X1.5L.png", (1436, 1081, 1840, 1414), "Bending angle setting dial", detail=True),
-    "tm-tfm3100": S(BR + "TFM3100X2E.jpg", (125, 265, 2362, 1360), "TFM 3100×2E CNC electric folding machine with touch-screen control",
-                    white=[(380, 1180, 1060, 1290)], logo=[(780, 555, 1065, 652)], clean=True),
+    # the photo of the owner's TFM / TFMS sheet (Nov 11 2026: "the TFM photo in this file is better"), not the older brochure JPEG
+    "tm-tfm3100": S(TFM_PDF, (166, 255, 2371, 1380), "TFM 3100×2E CNC electric folding machine with touch-screen control", xref=43,
+                    white=[(352, 1234, 926, 1318)], rows=[(891, 595, 1069, 656)]),
     "tm-tfm-screen": S(BR + "TFM3100X2E.jpg", (1834, 1629, 2365, 1989), "Touch-screen CNC of the folding machine", detail=True),
     "tm-tfm-table": S(BR + "TFM3100X2E.jpg", (110, 1630, 909, 1989), "CNC back gauge table with fingers", detail=True),
+    "tm-tfm-beam": S(TFM_PDF, (1005, 1694, 1784, 2033), "Upper clamping beam and hardened nose bar", xref=43, detail=True,
+                     rows=[(1231, 1694, 1502, 1749)]),
     "tm-tfms3100": S(TFM_PDF, (130, 300, 2426, 1298), "TFMS 3100×2E CNC electric folding machine with segmented upper beam", xref=53, clean=True, logo_out=[(838, 285, 1022, 338)]),
     "tm-tfms-box": S(TFM_PDF, (1815, 1361, 2403, 1773), "Box folded on the segmented folding machine", xref=53, detail=True),
     "tm-tfms-segments": S(TFM_PDF, (1192, 1361, 1798, 1773), "Segmented upper beam", xref=53, detail=True),
@@ -251,6 +258,8 @@ def paint(im, boxes, mode):
         for x0, y0, x1, y1 in boxes:
             a[y0:y1, x0:x1] = 255
         return Image.fromarray(a)
+    if mode == "rows":
+        return fill_rows(a, boxes)
     import cv2
     from scipy import ndimage
     f = cv2.GaussianBlur(a.astype(np.float32), (0, 0), 1.0)
@@ -284,11 +293,38 @@ def paint(im, boxes, mode):
     return Image.fromarray(a)
 
 
+def fill_rows(a, boxes, side=10, gap=2, feather=3):
+    """paint(…, "rows"): every row of each box is a straight line between the mean colour of `side` px just left and just right
+    of the box (smoothed over a few rows), plus noise with the grain of the paint beside the box; the rows just above and below
+    the box are blended in over `feather` px, so no seam shows."""
+    from scipy import ndimage
+    out = a.astype(np.float32)
+    for x0, y0, x1, y1 in boxes:
+        rng = np.random.default_rng(x0 * 31 + y0)
+        Y0, Y1 = max(0, y0 - feather), min(out.shape[0], y1 + feather)
+        L = ndimage.gaussian_filter1d(out[Y0:Y1, x0 - gap - side:x0 - gap].mean(1), 1.5, axis=0)
+        R = ndimage.gaussian_filter1d(out[Y0:Y1, x1 + gap:x1 + gap + side].mean(1), 1.5, axis=0)
+        t = np.linspace(0, 1, x1 - x0 + 2 * gap + 2)[gap + 1:-gap - 1][None, :, None]
+        plane = L[:, None, :] * (1 - t) + R[:, None, :] * t
+        ref = np.concatenate([out[y0:y1, max(0, x0 - 60):x0 - 4], out[y0:y1, x1 + 4:x1 + 60]], 1)
+        grain = (ref - ndimage.gaussian_filter(ref, (3, 3, 0))).std((0, 1))
+        noise = ndimage.gaussian_filter(rng.normal(0, 1, plane.shape[:2]), 0.7)[..., None]
+        plane = plane + noise / max(float(noise.std()), 1e-6) * grain[None, None, :]
+        w = np.ones(plane.shape[:2], np.float32)
+        for i in range(y0 - Y0):
+            w[i, :] = (i + 1) / (y0 - Y0 + 1)
+        for i in range(Y1 - y1):
+            w[-1 - i, :] = (i + 1) / (Y1 - y1 + 1)
+        out[Y0:Y1, x0:x1] = out[Y0:Y1, x0:x1] * (1 - w[..., None]) + plane * w[..., None]
+    return Image.fromarray(np.clip(out, 0, 255).round().astype(np.uint8))
+
+
 def process(key):
     p = PHOTOS[key]
     im = pdf_image(p["src"], p["xref"]) if p["xref"] else Image.open(p["src"]).convert("RGB")
     im = paint(im, p["white"], "white")
     im = paint(im, p["logo"], "logo")
+    im = paint(im, p["rows"], "rows")
     if p["poly"]:
         from PIL import ImageDraw
         dr = ImageDraw.Draw(im)

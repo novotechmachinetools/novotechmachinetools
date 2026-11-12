@@ -95,7 +95,7 @@ BRAKES = [
        "Touch screen: 2,000 programs of 99 bends, graphic profile library, radius bending, angle correction",
        "Bending angle 0 – 135°; clamping opening 4-7/8″ (125 mm); reverse bends from 1/2″",
        "TFMS: segmented upper beam for boxes 4″ (100 mm) deep"],
-      ["tm-tfm3100", "tm-tfms3100", "tm-tfm-screen", "tm-tfm-table", "tm-tfms-segments", "tm-tfms-box"], headline="14 ga × 122 – 145″",
+      ["tm-tfm3100", "tm-tfms3100", "tm-tfm-screen", "tm-tfm-table", "tm-tfm-beam", "tm-tfms-segments", "tm-tfms-box"], headline="14 ga × 122 – 145″",
       cap="[Bending length]"),
     F("tt-efm", P_BRAKE, "hyd", "EFM / EFMS electric folding machines, 16 – 20 ga × 80 – 120″", "EFM electric folders", [T["tt-pbb"][2]] + NT["tt-efms-l"],
       "Motorized folding with the operator's hands free: one motor closes the clamping beam, a second swings the folding beam, both run "

@@ -349,7 +349,10 @@ EXTRA = {
         points_add=["NovoTech value line: RBM / HRBM motorized profile benders Ø13/16 – 2-1/2″ shafts, ETR-50 tube roller, CRB-76 decorative roller"],
         faq_add=[{"q": "Premium-line angle roll or value-line ring roller?",
                   "a": "The premium-line PK and HPK angle rolls are built in Turkey for daily structural work — heavier frames, larger shafts, NC options and capacities to 6″ angle. The value-line RBM and HRBM ring rollers are lighter and lower in price for the fabrication, railing and ornamental shop: flat bar, angle, channel, tee and tube to 4-3/4 × 1″ flat on the HRBM65, with one combination roll set for every profile."}],
-        set={"hero_brand_line": "Premium-line angle rolls are built in Turkey to NovoTech's specification with European hydraulic and electrical components; the value-line ring rollers and tube rollers are built in China to NovoTech's specification. All sold with a 1-year warranty and supported from Mississauga, ON, Canada."},
+        set={"hero_brand_line": "Premium-line angle rolls are built in Turkey to NovoTech's specification with European hydraulic and electrical components; the value-line ring rollers and tube rollers are built in China to NovoTech's specification. All sold with a 1-year warranty and supported from Mississauga, ON, Canada.",
+             # the hero's small photos show the HRBM 50 and 65 hydraulic profile benders, not the ring and tube rollers (the owner, Nov 10 2026)
+             "hero_minis_replace": {"tm-rbm30hv": {"image": "tm-hrbm50", "label": "Hydraulic profile bender, Ø1-15/16″"},
+                                    "tm-etr50": {"image": "tm-hrbm65", "label": "Hydraulic profile bender, Ø2-1/2″"}}},
     ),
     D2.P_BEAD: dict(
         groups=[("tt-bead", "Beading machines and bead rollers · value line", "Motorized beading machines to 8 ga and motorized deep-throat bead rollers to 42″ — NovoTech value line, built in China.", False, None),
@@ -486,7 +489,9 @@ def register_images(used):
         src = f"tools/src-images/ttmc-more/{key}.jpg"
         if not os.path.exists(os.path.join(ROOT, src)):
             raise SystemExit(f"missing crop for {key} — run tools/{tool}")
-        imap[key] = {"src": src, "alt": alt, "section": "ttmc-more", "trim": True, "quality": 82, "cutout": not detail, "cut_size": size}
+        # what was set by hand on the photo stays: the blue paint made grey ("recolor", Nov 10 2026), a crop, a cut-out engine
+        keep = {k: v for k, v in imap.get(key, {}).items() if k in ("recolor", "crop", "orig", "upscale") or (k == "cutout" and isinstance(v, str))}
+        imap[key] = {"src": src, "alt": alt, "section": "ttmc-more", "trim": True, "quality": 82, "cutout": not detail, "cut_size": size, **keep}
         spec = f"tools/cutout-specs/birefnet/{key}.json"       # keep / drop polygons for a photo BiRefNet gets wrong (smeared stand, floor shadow)
         if os.path.exists(os.path.join(ROOT, spec)):
             imap[key]["cut_spec"] = spec

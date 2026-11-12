@@ -92311,29 +92311,29 @@
   "variants": [
    {
     "w": 1200,
-    "h": 567,
+    "h": 607,
     "file": "img/ttmc-more/tm-tfm3100-1200.webp",
-    "bytes": 65820
+    "bytes": 63058
    },
    {
     "w": 800,
-    "h": 378,
+    "h": 405,
     "file": "img/ttmc-more/tm-tfm3100-800.webp",
-    "bytes": 39554
+    "bytes": 40558
    },
    {
     "w": 480,
-    "h": 227,
+    "h": 243,
     "file": "img/ttmc-more/tm-tfm3100-480.webp",
-    "bytes": 21066
+    "bytes": 21982
    }
   ],
   "alpha": true,
   "thumb": {
    "w": 160,
-   "h": 76,
+   "h": 81,
    "file": "img/ttmc-more/tm-tfm3100-thumb.webp",
-   "bytes": 4976
+   "bytes": 5244
   },
   "cut": "birefnet"
  },
@@ -128225,5 +128225,29 @@
    "bytes": 5790
   },
   "cut": "birefnet"
+ },
+ "tm-tfm-beam": {
+  "alt": "Upper clamping beam and hardened nose bar",
+  "variants": [
+   {
+    "w": 779,
+    "h": 339,
+    "file": "img/ttmc-more/tm-tfm-beam-779.webp",
+    "bytes": 16736
+   },
+   {
+    "w": 480,
+    "h": 209,
+    "file": "img/ttmc-more/tm-tfm-beam-480.webp",
+    "bytes": 8316
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 70,
+   "file": "img/ttmc-more/tm-tfm-beam-thumb.webp",
+   "bytes": 1532
+  }
  }
 }
