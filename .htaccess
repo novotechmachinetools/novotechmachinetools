@@ -6,6 +6,12 @@ RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} ^www\. [NC]
 RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
 RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
+# any other name of the site goes to the one address: mail.novotechmachinetools.com served the pages too and Google crawled
+# them there (Search Console, Nov 12 2026); cPanel's own service names and the certificate checks under /.well-known/ stay
+RewriteCond %{HTTP_HOST} \.novotechmachinetools\.com\.?(:\d+)?$ [NC]
+RewriteCond %{HTTP_HOST} !^(webmail|cpanel|whm|webdisk|cpcalendars|cpcontacts|autodiscover|autoconfig)\. [NC]
+RewriteCond %{REQUEST_URI} !^/\.well-known/
+RewriteRule ^ https://novotechmachinetools.com%{REQUEST_URI} [R=301,L]
 
 # ---- Server-side settings, keys and the e-mail designs quote.php reads are never served ----
 <FilesMatch "^(\.user\.ini|form-config\.php|ai-config\.php|quote-mail\.php|mail-lib\.php|.*\.sample\.php|\.cpanel\.yml|\.deploy-hostpapa\.sh)$">
@@ -14,6 +20,9 @@ RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
 
 # ---- Clean URLs: /band-saw serves band-saw.html, and /band-saw.html redirects to /band-saw ----
 RewriteCond %{THE_REQUEST} \s/+((?:[^\s?]+/)?)index\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
+# /index (no .html) served the home page as a copy of / (Search Console, Nov 12 2026)
+RewriteCond %{THE_REQUEST} \s/+((?:[^\s?]+/)?)index[\s?] [NC]
 RewriteRule ^ /%1 [R=301,L]
 RewriteCond %{THE_REQUEST} \s/+([^\s?]+)\.html[\s?] [NC]
 RewriteCond %{DOCUMENT_ROOT}/%1.html -f
@@ -25,6 +34,27 @@ RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^([^.]+)$ $1.html [L]
 
 # ---- Old URLs that changed (add one line per moved page) ---------------------
+# Addresses Google found cut short — old links broken at a hyphen, old file names cut at their first space — each to the
+# page it was cut from (Search Console "Not found (404)", Nov 12 2026)
+RedirectMatch 301 ^/folder-(sheet-)?$ /folder-sheet-metal-brake
+RedirectMatch 301 ^/(band|bekamak|bekamak-dual|bekamak-pivot)-$ /band-saw
+RedirectMatch 301 ^/pipe-pr$ /angle-rolls
+RedirectMatch 301 ^/(pipe|mandrel)-$ /pipe-benders
+RedirectMatch 301 ^/rebar-(bender-and-)?$ /rebar-bender-and-cutter
+RedirectMatch 301 ^/the-benefits-of-using-a-rebar-bender-and-$ /the-benefits-of-using-a-rebar-bender-and-cutter-in-construction
+RedirectMatch 301 ^/plate-(roller-)?$ /plate-rollers
+RedirectMatch 301 ^/sheet-metal-plate-$ /sheet-metal-plate-deburring-edge-rounding-finishing-grinding
+RedirectMatch 301 ^/press-$ /press-brake
+RedirectMatch 301 ^/circular-cutting-$ /circle-cutters-and-seamers
+RedirectMatch 301 ^/laser-cutting-$ /laser-cutting-machine
+RedirectMatch 301 ^/files/HNM$ /corner-notcher
+RedirectMatch 301 ^/files/BS300x370$ /automatic-feed-band-saws
+RedirectMatch 301 ^/files/BMS$ /manual-band-saws
+RedirectMatch 301 ^/files/SF3015HM$ /files/NovoTech-Senfeng-SF3015HM-Tube-Plate-Laser-Technical-Specification-2026.pdf
+RedirectMatch 301 ^/files/ESR$ /plate-rollers
+Redirect 301 "/SFB 32 HD hydraulic NC mandrel pipe bender.pdf" "/nc-tube-benders"
+# the old site's video storage: gone
+RedirectMatch 410 ^/v/media/
 # RedirectMatch 301 ^/old-page(\.html)?$ /new-page
 RedirectMatch 301 ^/bekamak-pivot-band-saw(\.html)?$ /band-saw
 RedirectMatch 301 ^/sheet-metal-deburring-machines(\.html)?$ /sheet-metal-plate-deburring-edge-rounding-finishing-grinding
