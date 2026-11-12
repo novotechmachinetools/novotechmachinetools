@@ -21,7 +21,7 @@ LOG="$HOME/deploy-hostpapa.log"
     echo "refusing: the old site is still in public_html — rename it first"; exit 1
   fi
   if command -v rsync >/dev/null 2>&1; then
-    rsync -a --delete --omit-dir-times --no-perms \
+    rsync -a --delete --omit-dir-times --no-perms --no-owner --no-group \
       --exclude='.git' --exclude='.cpanel.yml' --exclude='.deploy-hostpapa.sh' \
       --exclude='form-config.php' --exclude='ai-config.php' --exclude='.well-known' --exclude='cgi-bin' --exclude='error_log' \
       ./ "$DEST/"
@@ -30,6 +30,10 @@ LOG="$HOME/deploy-hostpapa.log"
     cp -a . "$DEST/"
     rm -rf "$DEST/.git" "$DEST/.cpanel.yml" "$DEST/.deploy-hostpapa.sh"
   fi
+  # the web server must be able to enter the document root: on Nov 12 2026 a deploy left public_html 0750 without the web
+  # server's group and the whole site answered 403 ("pcfg_openfile: unable to check htaccess file") — rsync no longer touches
+  # the owner or group (--no-owner --no-group) and the root is set to 0755 after every copy
+  chmod 755 "$DEST"
   chmod 644 "$DEST/.htaccess" "$DEST/.user.ini" 2>/dev/null || true
   find "$DEST" -name '*.php' -exec chmod 644 {} + 2>/dev/null || true
   echo "done: $(find "$DEST" -type f | wc -l) files"
