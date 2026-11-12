@@ -37,18 +37,17 @@ VOLT_FAQ = {"q": "What voltage do these saws run on?",
 BK = {
     "manual": dict(
         title="Manual Metal Band Saws — Double-Miter Gravity-Feed Bandsaws | NovoTech",
-        meta="Gravity-feed manual band saws BMS 230DG and 270DG: double-miter heads to 60°, hydraulic descent, Ø9″ to 10-5/8″ — plus the BMH 170 hydraulic power hacksaw. Specs in inches and mm, CSA panels.",
+        meta="Gravity-feed manual band saws BMS 230DG and 270DG: double-miter heads to 60°, hydraulic descent, Ø9″ to 10-5/8″. Specs in inches and mm, CSA panels.",
         h1="Bekamak manual band saws",
-        intro="Gravity-feed pivot saws built by Bekamak in Turkey for maintenance shops, fabricators and anyone cutting a few pieces at a time: the operator positions the bar, closes the vise and lowers the bow; a hydraulic cylinder controls the descent and the double-miter head swivels both ways for angle cuts. Below them, the BMH 170 hydraulic power hacksaw — the simplest and lowest-cost Bekamak saw, for Ø6-3/4″ bar a piece at a time. Premium-line construction with CSA-approved panels and support from Mississauga, ON, Canada.",
-        points=["Hydraulic-damped gravity feed with adjustable cutting pressure", "Double-miter head: +60° right, −45° left", "Round capacities Ø9″ (230 mm) and Ø10-5/8″ (270 mm); BMH 170 hacksaw to Ø6-3/4″ (170 mm)"],
+        intro="Gravity-feed pivot saws built by Bekamak in Turkey for maintenance shops, fabricators and anyone cutting a few pieces at a time: the operator positions the bar, closes the vise and lowers the bow; a hydraulic cylinder controls the descent and the double-miter head swivels both ways for angle cuts. Premium-line construction with CSA-approved panels and support from Mississauga, ON, Canada.",
+        points=["Hydraulic-damped gravity feed with adjustable cutting pressure", "Double-miter head: +60° right, −45° left", "Round capacities Ø9″ (230 mm) and Ø10-5/8″ (270 mm)"],
         hero="bk-hero-manual", minis=["bk-bms-230dg-1-cut"],
-        lead="European-style pivot saws with heavy castings, variable-speed motors and hydraulic descent control — and a hydraulic power hacksaw for the smallest shops.",
+        lead="European-style pivot saws with heavy castings, variable-speed motors and hydraulic descent control.",  # BMH 170 power hacksaw: taken off the site and out of the brochure (the owner, Nov 12 2026)
         video=FACTORY_VIDEO,
         video_text="A tour of the Bekamak plant in Turkey, where the premium-line band saws on this page are engineered and built.",
         faq=[
             {"q": "What does “gravity feed” mean on a band saw?", "a": "The saw bow descends under its own weight; a hydraulic cylinder with an adjustable valve controls how fast it drops, so the operator sets the cutting pressure for the material. After the cut the operator lifts the bow back up by hand."},
             {"q": "Can a manual band saw cut miters?", "a": "Yes. The BMS 230DG and 270DG heads swivel to both sides — +60° to the right and −45° to the left — with an angle scale and fast stops at 30°, 45° and 60°, so one setup covers most structural miters."},
-            {"q": "Band saw or power hacksaw?", "a": "A band saw cuts continuously with an endless blade, so it is faster, cuts larger sections and leaves a better surface; the BMH 170 power hacksaw cuts on the forward stroke of a flat 13-3/4″ blade under hydraulic feed. It takes Ø6-3/4″ (170 mm) at 0° and Ø4-3/8″ at 45°, weighs 584 lb, uses inexpensive hacksaw blades and costs less than any band saw — the choice for a maintenance shop or a few cuts a day."},
             {"q": "When should I move up to a semi-automatic saw?", "a": "When you cut more than a few dozen pieces a day, or when the operator is tied up holding the bow. A semi-automatic saw clamps hydraulically, cuts at a preset feed and lifts the bow by itself, so the operator only loads material. See the Bekamak semi-automatic band saws page."},
             VOLT_FAQ,
         ]),

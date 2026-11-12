@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Add (or refresh) the Bekamak products defined in tools/bekamak_extra.py — the GANTRY 2200XS, the vertical
-band saws and the bekamak.com-only models (BMSO 320S, TERRA 6, BMH 170, plus the BMSO 460CS / 1313CS inside the
+band saws and the bekamak.com-only models (BMSO 320S, TERRA 6, plus the BMSO 460CS / 1313CS inside the
 CS family) — in content/families/bandsaw.json WITHOUT regenerating the file (tools/bandsaw_data.py is a first
 pass only; the JSON carries later enrichments).  Registers their bekamak.com photos in tools/image_map.json and
 builds the Standard / Optional Features tiles ("model_features") of the new models from the bekamak.com crawl
@@ -45,8 +45,6 @@ PHOTOS = {
                   (1, "BMSO 320S — rear view: blade wheels, electrical cabinet and the servo shuttle vise")],
     "TERRA 6": [(0, "Bekamak TERRA 6 high-speed fully automatic band saw, Ø26″ (660 mm): enclosed cabin and PC-based control"),
                 (1, "TERRA 6 — front quarter view of the cabin; blade speed to 1,970 ft/min (600 m/min)"), (2, "TERRA 6 — left side of the enclosure")],
-    "BMH 170": [(1, "Bekamak BMH 170 hydraulic power hacksaw, Ø6-3/4″ (170 mm), with the vise and roller table"),
-                (2, "BMH 170 — front quarter view with the material length stop"), (0, "BMH 170 — right side: reciprocating frame and hydraulic feed cylinder")],
 }
 
 
@@ -147,7 +145,7 @@ def main():
             models.append(dict(EXTRA_MODELS[name], name=name))
             images += register_photos(name)
             slug = slug_by_name.get(norm(name))
-            if slug and name in ("BMSO 320S", "TERRA 6", "BMH 170"):
+            if slug and name in ("BMSO 320S", "TERRA 6"):
                 mf.append(feature_tiles(name, slug, imap, hashes, keys))
         rec0 = site_slug(F["models"][0], site_by_name) or {}
         opt = []

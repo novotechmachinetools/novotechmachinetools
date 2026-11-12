@@ -48,7 +48,7 @@ EXTRA_MODELS = {
 # ---- models that are on bekamak.com but not in the 2025/2026 catalogues (specs from bekamak.com, Oct 2026) -------------
 # BMSO 320S: pivot-type fully automatic servo-feed saw (bekamak.com/urun/bmso-320s).  BMSO 460CS and BMSO 1313CS: the two
 # CS NC servo double-column sizes the catalogue skips.  TERRA 6: the high-speed (600 m/min) enclosed production saw.
-# BMH 170: hydraulic power hacksaw.  OPUS 300 (TCT circular saw) is in CIRCULAR_FAMILIES below.
+# OPUS 300 (TCT circular saw) is in CIRCULAR_FAMILIES below.  (The BMH 170 power hacksaw was taken off the site, the owner, Nov 12 2026.)
 EXTRA_MODELS.update({
     "BMSO 320S": model("BMSO 320S", {"0": {"round": 320, "rect": [370, 320], "square": 320}}, 2.2, "15-120", [4160, 34, 1.1], 1900,
                        hyd=1.5, cool=0.12, wh=850, dims=[1950, 2150, 1800], feed=700,
@@ -66,9 +66,6 @@ EXTRA_MODELS.update({
                      other={"Bow servo motor": "2 kW", "Feeder servo motor": "1.5 kW", "Coolant filtration unit": "0.75 kW", "Feed stroke": "700 mm",
                             "Unloading stroke": "300 mm", "Multiple-stroke feed length": "9999 mm", "Minimum cutting length": "15 mm",
                             "Minimum remnant in automatic mode": "0 mm", "Depth with chip conveyor": "2975 mm"}),
-    "BMH 170": model("BMH 170", {"0": {"round": 170, "rect": [200, 120], "square": 145}, "+45": {"round": 110, "rect": [110, 110], "square": 120}},
-                     0.75, "120", None, 265, wh=430, dims=[1100, 600, 810],
-                     other={"Hacksaw blade L × W × T": "13-3/4″ × 1-3/16″ × .059″ (350 × 30 × 1.5 mm)"}),
 })
 
 
@@ -162,17 +159,6 @@ BANDSAW_FAMILIES = [
                    "Options: micro-spray lubrication, 10 ft (3 m) material roller table"],
          optional=["Micro-spray lubrication", "10 ft (3 m) material roller table"],
          videos=[], headline="Ø26″ (660 mm) round · blade speed to 1,970 ft/min (600 m/min) · carbide and bi-metal blades"),
-    dict(id="bekamak-bmh-170", group="manual", after="bekamak-bms-dg", name="BMH 170 hydraulic power hacksaw, 6-3/4″", short="BMH 170 hacksaw", models=["BMH 170"],
-         summary="Not a band saw but the simplest Bekamak saw of all: a hydraulic power hacksaw whose flat 13-3/4″ (350 mm) blade reciprocates while "
-                 "hydraulic pressure feeds it through the material. The operator clamps the bar in the vise, sets the cutting speed and the length stop "
-                 "and starts the cut; the frame lifts when the piece drops. Ø6-3/4″ (170 mm) round at 0° and Ø4-3/8″ (110 mm) at 45°, a 1 HP motor and "
-                 "a footprint of 43″ × 24″ — for the small shop, the maintenance department and anyone who cuts a few pieces a day.",
-         features=["Ø6-3/4″ (170 mm) round, 7-7/8″ × 4-3/4″ (200 × 120 mm) rectangular at 0°; Ø4-3/8″ (110 mm) round at 45°",
-                   "Hydraulic down-feed of the reciprocating 13-3/4″ × 1-3/16″ (350 × 30 mm) hacksaw blade; cutting-speed control",
-                   "1 HP (0.75 kW) motor; vise, adjustable material length stop and height adjustment",
-                   "Coolant pump, roller table, electrical panel and control panel standard; 584 lb (265 kg)"],
-         optional=[],
-         videos=[], headline="Ø6-3/4″ (170 mm) round · 7-7/8″ × 4-3/4″ rectangular · hydraulic feed"),
 ]
 
 # models added to families that tools/bandsaw_data.py built from the catalogue: (family id) -> list of

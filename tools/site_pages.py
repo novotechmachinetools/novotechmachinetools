@@ -170,7 +170,7 @@ BROCHURES = [
     ("cutting", "NovoTech-Ironworkers-Value-Line-2026.pdf", "NovoTech value-line hydraulic ironworkers"),
     ("cutting", "NovoTech-Cevisa-Plate-Bevelling-Machines-2026.pdf", "Cevisa plate bevelling machines"),
     ("sawing", "NovoTech-Bekamak-Band-Saws-Catalogue-2026.pdf", "Bekamak band saw and circular saw catalogue"),
-    ("sawing", "NovoTech-Bekamak-Saws-Supplement-2026.pdf", "Bekamak supplement: BMSO 320S, BMSO CS NC, TERRA 6, BMH 170 and OPUS 300"),
+    ("sawing", "NovoTech-Bekamak-Saws-Supplement-2026.pdf", "Bekamak supplement: BMSO 320S, BMSO CS NC, TERRA 6 and OPUS 300"),
     ("sawing", "NovoTech-Value-Line-Band-Saws-Catalogue-2026.pdf", "NovoTech value-line band saw catalogue"),
     ("sawing", "wikus/marathon-m42.pdf", "WIKUS MARATHON® M42 bimetal band saw blade — data sheet"),
     ("sawing", "wikus/futura.pdf", "WIKUS FUTURA® carbide-tipped band saw blade — data sheet"),

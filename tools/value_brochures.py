@@ -142,7 +142,7 @@ BEKAMAK_PDF = ("files/NovoTech-Bekamak-Saws-Supplement-2026.pdf", "Download the 
 BEKAMAK = dict(
     title="Bekamak saws — catalogue supplement 2026",
     subtitle="BMSO 320S servo-feed automatic band saw · BMSO CS NC double column band saws · TERRA 6 high-speed band saw · "
-             "BMH 170 power hacksaw · OPUS 300 carbide circular saw",
+             "OPUS 300 carbide circular saw",
     cover_line="Bekamak · made in Turkey · sold & serviced in Canada by NovoTech",
     about_kicker="Bekamak · made in Turkey", country="Turkey", made_in="Made in Turkey by Bekamak with European components",
     range_label="Bekamak saws · supplement", about_for="Bekamak saws",
@@ -151,14 +151,13 @@ BEKAMAK = dict(
                 "circular saws, sold, installed and supported in Canada by NovoTech Machine Tools from Mississauga, Ontario.",
                 "This supplement carries the Bekamak machines that are not in the Bekamak catalogue 2025/2026: the BMSO 320S servo-feed "
                 "automatic band saw, the full BMSO CS NC double column range with the BMSO 460CS and the BMSO 1313CS for 51″ blocks, the "
-                "TERRA 6 that runs its blade at up to 1,970 ft/min (600 m/min), the BMH 170 hydraulic power hacksaw and the OPUS 300 "
+                "TERRA 6 that runs its blade at up to 1,970 ft/min (600 m/min) and the OPUS 300 "
                 "carbide circular saw for solid bar to Ø11-3/4″."],
     single_phase=False, year="2026",
     family_sets=["bandsaw", "all-cold-saws"],
-    families=["bekamak-bmso-s", "bekamak-bmso-cs", "bekamak-terra-6", "bekamak-bmh-170", "bekamak-opus-300"],
+    families=["bekamak-bmso-s", "bekamak-bmso-cs", "bekamak-terra-6", "bekamak-opus-300"],  # BMH 170 power hacksaw: taken off the site and out of the brochure (the owner, Nov 12 2026)
     groups=[{"title": "Automatic band saws", "families": ["bekamak-bmso-s"]},
             {"title": "Double column band saws", "families": ["bekamak-bmso-cs", "bekamak-terra-6"]},
-            {"title": "Power hacksaws", "families": ["bekamak-bmh-170"]},
             {"title": "Carbide circular saws", "families": ["bekamak-opus-300"]}],
     cover_photos=["bk-bmso-320s-1", "bk-terra-6-1", "bk-opus-300-1", "bk-bmso-820cs-1"],
     out="src/" + BEKAMAK_PDF[0])

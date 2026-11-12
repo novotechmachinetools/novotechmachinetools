@@ -1,7 +1,6 @@
 {
  "order": [
   "bekamak-bms-dg",
-  "bekamak-bmh-170",
   "bekamak-bmsy-dgh",
   "bekamak-bmsy-g",
   "bekamak-bmsy-straight",
@@ -11517,123 +11516,6 @@
        "image": null
       }
      ]
-    }
-   ]
-  },
-  "bekamak-bmh-170": {
-   "id": "bekamak-bmh-170",
-   "brand": "bekamak",
-   "line": "premium",
-   "group": "manual",
-   "name": "BMH 170 hydraulic power hacksaw, 6-3/4″",
-   "short": "BMH 170 hacksaw",
-   "models_label": "BMH 170",
-   "summary": "Not a band saw but the simplest Bekamak saw of all: a hydraulic power hacksaw whose flat 13-3/4″ (350 mm) blade reciprocates while hydraulic pressure feeds it through the material. The operator clamps the bar in the vise, sets the cutting speed and the length stop and starts the cut; the frame lifts when the piece drops. Ø6-3/4″ (170 mm) round at 0° and Ø4-3/8″ (110 mm) at 45°, a 1 HP motor and a footprint of 43″ × 24″ — for the small shop, the maintenance department and anyone who cuts a few pieces a day.",
-   "features": [
-    "Ø6-3/4″ (170 mm) round, 7-7/8″ × 4-3/4″ (200 × 120 mm) rectangular at 0°; Ø4-3/8″ (110 mm) round at 45°",
-    "Hydraulic down-feed of the reciprocating 13-3/4″ × 1-3/16″ (350 × 30 mm) hacksaw blade; cutting-speed control",
-    "1 HP (0.75 kW) motor; vise, adjustable material length stop and height adjustment",
-    "Coolant pump, roller table, electrical panel and control panel standard; 584 lb (265 kg)"
-   ],
-   "optional": [],
-   "images": [
-    "bk-bmh-170-2",
-    "bk-bmh-170-3",
-    "bk-bmh-170-1"
-   ],
-   "videos": [],
-   "headline": "Ø6-3/4″ (170 mm) round · 7-7/8″ × 4-3/4″ rectangular · hydraulic feed",
-   "specs": {
-    "kind": "bandsaw",
-    "models": [
-     {
-      "name": "BMH 170",
-      "capacity_mm": {
-       "0": {
-        "round": 170,
-        "rect": [
-         200,
-         120
-        ],
-        "square": 145
-       },
-       "+45": {
-        "round": 110,
-        "rect": [
-         110,
-         110
-        ],
-        "square": 120
-       }
-      },
-      "main_motor_kw": 0.75,
-      "hydraulic_motor_kw": null,
-      "coolant_pump_kw": null,
-      "blade_speed_m_min": "120",
-      "band_mm": null,
-      "working_height_mm": 430,
-      "weight_kg": 265,
-      "dims_mm": [
-       1100,
-       600,
-       810
-      ],
-      "feed_length_mm": null,
-      "feed_type": null,
-      "other": {
-       "Hacksaw blade L × W × T": "13-3/4″ × 1-3/16″ × .059″ (350 × 30 × 1.5 mm)"
-      },
-      "notes": ""
-     }
-    ]
-   },
-   "model_features": [
-    {
-     "model": "BMH 170",
-     "slug": "bmh-170",
-     "standard": [
-      {
-       "title": "Vise",
-       "image": "bk-det-2013-03-07-101650"
-      },
-      {
-       "title": "Adjustable material length stop",
-       "image": "bk-det-2013-03-06-585648"
-      },
-      {
-       "title": "Bow height adjustment",
-       "image": "bk-det-2013-03-06-568099"
-      },
-      {
-       "title": "Electrical panel",
-       "image": "bk-det-2013-03-06-8985"
-      },
-      {
-       "title": "Cutting speed control",
-       "image": "bk-det-2013-03-06-974818"
-      },
-      {
-       "title": "Control panel",
-       "image": "bk-det-2013-03-06-956619"
-      },
-      {
-       "title": "Hydraulic feed cylinder",
-       "image": "bk-det-2013-03-06-161756"
-      },
-      {
-       "title": "Coolant pump",
-       "image": "bk-det-2013-03-06-993708"
-      },
-      {
-       "title": "Roller table",
-       "image": "bk-det-2013-03-06-855162"
-      },
-      {
-       "title": "Saw blade",
-       "image": "bk-det-2013-03-06-517930"
-      }
-     ],
-     "optional": []
     }
    ]
   }
