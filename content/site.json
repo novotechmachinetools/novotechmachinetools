@@ -165,12 +165,12 @@
          "href": "vertical-metal-band-saw.html"
         }
        ]
+      },
+      {
+       "label": "Band saw blades",
+       "href": "band-saw-blades.html"
       }
      ]
-    },
-    {
-     "label": "Aluminum & vinyl (PVC) saws",
-     "href": "aluminum-and-pvc-upcut-saws.html"
     },
     {
      "label": "Cold saws",
@@ -187,8 +187,30 @@
      ]
     },
     {
-     "label": "Band saw blades",
-     "href": "band-saw-blades.html"
+     "label": "Aluminum & vinyl (PVC) saws",
+     "href": "aluminum-and-pvc-upcut-saws.html"
+    },
+    {
+     "label": "Aluminum & vinyl (PVC) processing machines",
+     "href": "pvc-aluminum-window-machines.html",
+     "children": [
+      {
+       "label": "Vinyl (PVC) welding & corner cleaning",
+       "href": "pvc-window-welding-machines.html"
+      },
+      {
+       "label": "CNC centres & copy routers",
+       "href": "profile-machining-centres-copy-routers.html"
+      },
+      {
+       "label": "Assembly machines & conveyors",
+       "href": "window-assembly-machines.html"
+      },
+      {
+       "label": "Window production lines",
+       "href": "window-production-lines.html"
+      }
+     ]
     },
     {
      "label": "Angle rolls",
@@ -517,28 +539,6 @@
     {
      "label": "Surface grinders",
      "href": "surface-grinder.html"
-    },
-    {
-     "label": "Aluminum & vinyl (PVC) processing machines",
-     "href": "pvc-aluminum-window-machines.html",
-     "children": [
-      {
-       "label": "Vinyl (PVC) welding & corner cleaning",
-       "href": "pvc-window-welding-machines.html"
-      },
-      {
-       "label": "CNC centres & copy routers",
-       "href": "profile-machining-centres-copy-routers.html"
-      },
-      {
-       "label": "Assembly machines & conveyors",
-       "href": "window-assembly-machines.html"
-      },
-      {
-       "label": "Window production lines",
-       "href": "window-production-lines.html"
-      }
-     ]
     },
     {
      "label": "Woodworking machinery",
