@@ -673,7 +673,7 @@ BIG_FIRST = {
     "tt-pb": ["tm-w2540a", "tm-w1220pb", "tm-bp1648h", "tm-bp1650", "tm-pb1220z", "tm-pb1220", "tm-w305a"],
     "tt-pb-heavy": ["tm-w2540h2", "tm-wu", "tm-w2540h", "tm-w1830p", "tm-w1500h", "tm-w2540h2-fingers", "tm-w2540h2-gauge"],
     "tt-folder-bp": ["tm-tsbs", "tm-mfs", "tm-pbb1020a", "tm-pbb3sh"],
-    "tt-hb": ["tm-w2040", "tm-w1220n", "tm-w1050f", "tm-w1500", "tm-hb1650", "tm-w1050", "tm-hb2250", "tm-w1060", "tm-hb2248", "tm-w1220",
+    "tt-hb": ["tm-w2040", "tm-w1220n", "tm-w1050f", "tm-w1500", "tm-hb1650", "tm-w1050", "tm-w1060", "tm-hb2248", "tm-w1220",
               "tm-w610"],
     "tt-folder": ["tm-tsb2060", "tm-tsb2020", "tm-mf3020", "tm-tfs", "tm-wf", "tm-pbb", "tm-pbb1020", "tm-pbb1020-1a", "tm-brake36"],
     "tt-bench-brake": ["tm-w1000", "tm-w610b", "tm-wb14", "tm-w460", "tm-zwj"],

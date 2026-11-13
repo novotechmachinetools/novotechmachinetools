@@ -530,18 +530,24 @@ def page_ld(page):
             products.append(prod)
     graph.append({"@type": "ItemList", "@id": url + "#products", "name": page["h1"], "numberOfItems": len(products), "itemListElement": [{"@type": "ListItem", "position": i + 1, "item": p} for i, p in enumerate(products)]})
     # videos
-    vids = []
+    # one VideoObject per video with an @id of its own: all the videos of a family used to share "#<family>-video", and
+    # nodes with one @id are one node to a JSON-LD reader — a family's 10 videos merged into a single video with 10 names
+    # (Nov 13 2026). A video shown in two families of the page is listed once.
+    vids, seen_v = [], set()
     for g in ([] if page.get("subpages") else page.get("groups", [])):      # a hub shows cards only: its videos (and their anchors) are on the line pages
         for f in g["families"]:
             for v in f.get("videos") or []:
-                vids.append((v, url + "#" + f["id"] + "-video"))
-    if page.get("intro_video"):
+                if v["id"] not in seen_v:
+                    seen_v.add(v["id"])
+                    vids.append((v, url + "#video-" + v["id"]))
+    if page.get("intro_video") and page["intro_video"]["id"] not in seen_v:
         vids.append((page["intro_video"], url + "#GMS-introduction-video"))
     for v, vurl in vids:
         t = img(v["thumb"])
         graph.append({
             "@type": "VideoObject", "@id": vurl, "name": v["title"], "description": v["title"] + " — NovoTech Machine Tools, Canada.",
-            "thumbnailUrl": [absurl(t["src"])], "uploadDate": upload_datetime(v), "duration": v.get("duration", "PT2M"),
+            "thumbnailUrl": [absurl(t["src"])], "uploadDate": upload_datetime(v),
+            **({"duration": v["duration"]} if v.get("duration") else {}),      # a length we don't know is left out, not guessed
             "contentUrl": "https://www.youtube.com/watch?v=" + v["id"], "embedUrl": "https://www.youtube-nocookie.com/embed/" + v["id"],
             "publisher": {"@id": site["domain"] + "/#organization"},
         })
@@ -695,10 +701,16 @@ def _iso_dur(mmss):
 def family_videos(f):
     lst = VIDEO_MAP.get(f["id"])
     extra = (VIDEO_MAP.get("_add") or {}).get(f["id"]) or []
+    # "_drop": a video the family would show twice — the same footage uploaded again under another title (Nov 13 2026)
+    drop = set((VIDEO_MAP.get("_drop") or {}).get(f["id"]) or [])
     if lst is None and extra:                      # "_add": videos appended to the family's own list
         lst = [v["id"] for v in f.get("videos") or []]
     if lst is None:
+        if drop and f.get("videos"):
+            f["videos"] = [v for v in f["videos"] if v["id"] not in drop]
         return
+    lst = [it for it in lst if (it if isinstance(it, str) else it["id"]) not in drop]
+    extra = [it for it in extra if it["id"] not in drop]
     have = {(it if isinstance(it, str) else it["id"]) for it in lst}
     lst = list(lst) + [dict(it, new=True) for it in extra if it["id"] not in have]
     cur = {v["id"]: v for v in f.get("videos") or []}
@@ -787,7 +799,8 @@ def sort_videos(f):
                              else (1, YT_ORDER.get(v["id"], 1e9)))[:MAX_VIDEOS]
 
 
-MAX_VIDEOS = 10        # per product (owner, Oct 30 2026): three in view on desktop, the rest in the carousel
+MAX_VIDEOS = None      # no limit: every video of the product, three in view on desktop, the rest in the slider
+                       # (the owner, Nov 12 2026; it was 10 since Oct 30 2026)
 
 
 def family_thumb(f):
@@ -1360,7 +1373,7 @@ def site_page_ld(page):
         t = img(v["thumb"])
         graph.append({"@type": "VideoObject", "@id": url + "#video-" + v["id"], "name": v["title"],
                       "description": v["title"] + " — NovoTech Machine Tools, Canada.", "thumbnailUrl": [absurl(t["src"])],
-                      "uploadDate": upload_datetime(v), "duration": v.get("duration", "PT2M"),
+                      "uploadDate": upload_datetime(v), **({"duration": v["duration"]} if v.get("duration") else {}),
                       "contentUrl": "https://www.youtube.com/watch?v=" + v["id"], "embedUrl": "https://www.youtube-nocookie.com/embed/" + v["id"],
                       "publisher": {"@id": site["domain"] + "/#organization"}})
     return json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False)

@@ -710,7 +710,7 @@ TUBE_FAMILIES = [
                    "Unloading rack 6.6 ft (2 m) with automatic sorting of scrap and parts; 10 or 13 ft (3 / 4 m) optional"] + TB_STD,
          optional=TB_OPT,
          images=["sf-t-1", "sf-t-2", "sf-t-7524", "sf-t-3", "sf-t-4", "sf-t-semi", "sf-t-loading", "sf-t-factory", "sf-t-cell",
-                 "sf-t-unload", "sf-t-head", "sf-t-chuck", "sf-t-cutting", "sf-t-holes", "sf-t-profiles", "sf-t-software", "sf-t-thickness"],
+                 "sf-t-unload", "sf-t-head", "sf-t-cutting", "sf-t-holes", "sf-t-profiles", "sf-t-software", "sf-t-thickness"],
          videos=[],
          # Senfeng's SF6012T and SF6024T technical solutions in NovoTech format (tools/brochure/senfeng_tube_editions.py) — the owner, Nov 1 2026
          spec_pdfs=[dict(file="files/NovoTech-Senfeng-SF6012T-Tube-Laser-Technical-Specification-2026.pdf",
