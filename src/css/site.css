@@ -373,6 +373,9 @@ small { font-size: .85em; }
 .family-text { grid-area: text; }
 .family-vids { grid-area: vids; min-width: 0; }
 .family-vids .family-videos, .family-vids .vid-carousel { margin-top: 0; }
+/* a family without photos (the LVD-style tooling, Nov 13 2026): no empty photo column — the text and its tables run across */
+.family.no-media .family-grid { grid-template-columns: minmax(0, 1fr); grid-template-areas: "text" "vids"; }
+.family.no-media .family-text > .summary { max-width: 54.24em; }
 /* trial layout, Dener XL only (the owner, Oct 31 2026): on desktop the gallery runs across the page, the video strip under it,
    then the text — standard and optional equipment side by side; phones and tablets keep the usual stacked order */
 @media (min-width: 961px) {

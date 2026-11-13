@@ -79,7 +79,7 @@
   {% endif %}
 
   {% for f in g.families %}
-  <article class="family{{ ' is-stacked' if f.layout == 'stacked' else '' }}" id="{{ f.id }}">
+  <article class="family{{ ' is-stacked' if f.layout == 'stacked' else '' }}{{ ' no-media' if not f.gallery else '' }}" id="{{ f.id }}">
     {% for a in f.alt_ids or [] %}<span id="{{ a }}" class="anchor"></span>{% endfor %}
     <header class="family-head">
       <h3 class="family-name">{{ f.name }}</h3>
@@ -87,9 +87,11 @@
     </header>
 
     <div class="family-grid">
+      {% if f.gallery %}
       <div class="family-media">
         {{ gallery(f.gallery, f.id) }}
       </div>
+      {% endif %}
       {% if f.videos %}
       <div class="family-vids">
         {% set nv = f.videos|length %}
