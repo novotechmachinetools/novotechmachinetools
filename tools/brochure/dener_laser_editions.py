@@ -73,6 +73,26 @@ def im(src, w=1600, bg=(255, 255, 255)):
     return "file://" + out
 
 
+def overlay_grad(mid):
+    """file:// URL of a charcoal gradient PNG — 86 % at the top, `mid` at 45 %, clear at the bottom — laid over a full-page photo
+    as an image with an alpha channel.  A CSS rgba gradient became a shading under a soft mask in the PDF, which PDF.js
+    (Firefox and many phone and web viewers) painted pink (the owner, Nov 12 2026: check every brochure, fix what is broken)."""
+    out = os.path.join(OUTIMG, f"grad-charcoal-{round(mid * 100)}.png")
+    if not os.path.exists(out):
+        from PIL import Image
+        os.makedirs(OUTIMG, exist_ok=True)
+        h = 512
+        g = Image.new("RGBA", (8, h))
+        px = g.load()
+        for y in range(h):
+            t = y / (h - 1)
+            a = .86 + (mid - .86) * t / .45 if t <= .45 else mid * (1 - (t - .45) / .55)
+            for x in range(8):
+                px[x, y] = (24, 25, 27, round(a * 255))
+        g.save(out)
+    return "file://" + out
+
+
 def qr(url):
     import segno
     out = os.path.join(OUTIMG, "qr-" + hashlib.md5(url.encode()).hexdigest()[:10] + ".svg")
@@ -1500,8 +1520,7 @@ def book_tube():
     b.page("Tube fiber laser", body, toc="Tube Fiber Laser Cutting Machine")
     # catalogue p5 — engineered for every profile
     body = ('<div class="photo-panel" style="height:654pt;margin-top:-4pt"><img src="%s" style="object-position:50%% 55%%">'
-            '<div style="position:absolute;left:0;top:0;right:0;height:62%%;background:linear-gradient(180deg,rgba(24,25,27,.86) 0%%,'
-            'rgba(24,25,27,.62) 45%%,rgba(24,25,27,0) 100%%)"></div>'
+            '<img src="%s" alt="" style="position:absolute;left:0;top:0;width:100%%;height:62%%;object-fit:fill">'
             '<div style="position:absolute;left:18pt;top:16pt;right:18pt"><div style="font:700 30pt/1.05 Oswald;color:#fff;text-transform:uppercase">'
             'Engineered for<br>every profile</div><div style="font:500 17pt/1.2 Oswald;color:#fff;margin-top:4pt">Tube &amp; profile laser cutting</div>'
             '<div style="width:60pt;height:3.7pt;background:%s;margin-top:8pt"></div>'
@@ -1511,7 +1530,7 @@ def book_tube():
             '<div class="overlay"><div class="st"><div><b>Complex</b><span>Profile cutting</span></div><div><b>High-speed</b><span>Production</span></div>'
             '<div><b>Precise &amp; clean</b><span>Results</span></div><div><b>Reduced</b><span>Material waste</span></div></div>'
             '<p><b>Tube Series</b> delivers speed, precision and efficiency for modern production.</p></div></div>'
-            % (im("tube/cutting.png", 1400), ORANGE))
+            % (im("tube/cutting.png", 1400), overlay_grad(.62), ORANGE))
     b.page("Engineered for every profile", body, toc="Engineered for Every Profile")
     # catalogue p6 — software
     body = (title("Software", "TubeST nesting solution") + P(TUBEST)
@@ -1703,9 +1722,8 @@ def book_shear():
 
     def panel(img, top_html, overlay_html, pos="50% 55%"):
         return ('<div class="photo-panel" style="height:654pt;margin-top:-4pt"><img src="%s" style="object-position:%s">'
-                '<div style="position:absolute;left:0;top:0;right:0;height:52%%;background:linear-gradient(180deg,rgba(24,25,27,.86) 0%%,'
-                'rgba(24,25,27,.6) 45%%,rgba(24,25,27,0) 100%%)"></div>'
-                '<div style="position:absolute;left:18pt;top:16pt;right:18pt">%s</div>%s</div>' % (im("shear/" + img + ".png", 1600), pos, top_html, overlay_html))
+                '<img src="%s" alt="" style="position:absolute;left:0;top:0;width:100%%;height:52%%;object-fit:fill">'
+                '<div style="position:absolute;left:18pt;top:16pt;right:18pt">%s</div>%s</div>' % (im("shear/" + img + ".png", 1600), pos, overlay_grad(.6), top_html, overlay_html))
 
     def head(t1, t2):
         return (f'<div style="font:700 30pt/1.05 Oswald;color:#fff;text-transform:uppercase">{t1}</div>'

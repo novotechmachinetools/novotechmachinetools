@@ -274,10 +274,12 @@ def vid(i, title, dur):
 
 
 def yt_dur(mmss):
-    """'4:07' → 'PT4M7S'."""
+    """'4:07' → 'PT4M7S'; '1:02:03' → 'PT1H2M3S'; '15' (a short, seconds only, as the channel list gives some) → 'PT0M15S'."""
     p = [int(x) for x in mmss.split(":")]
     if len(p) == 3:
         return f"PT{p[0]}H{p[1]}M{p[2]}S"
+    if len(p) == 1:
+        return f"PT0M{p[0]}S"
     return f"PT{p[0]}M{p[1]}S"
 
 
