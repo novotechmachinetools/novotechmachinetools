@@ -116,7 +116,8 @@
     {% if br.tagline %}<p class="group-lead">{{ br.tagline }}</p>{% endif %}
     {% if lg.pdfs %}<p class="line-links">{% for pd in lg.pdfs %}<a class="btn btn-ghost btn-small" href="{{ pd.file }}" download>{{ pd.label }} <small>({{ pd.size }})</small></a> {% endfor %}</p>{% endif %}
   </header>
-  <ul class="family-cards">
+  {# --cvh / --cvhm: the list's height as a first guess while it is not laid out yet (content-visibility, PageSpeed, Nov 13 2026) #}
+  <ul class="family-cards" style="--cvh: {{ ((lg.cards | length + 2) // 3) * 540 }}px; --cvhm: {{ (lg.cards | length) * 540 }}px">
     {% for it in lg.cards %}{% set f = it.f %}
     <li class="family-card">
       {% if f.card_image %}
@@ -165,7 +166,7 @@
     <h2 id="{{ sp.slug }}-overview-title">{{ sp.cards_title or (sp.title ~ ' line-up') }}</h2>
     <p class="group-lead"><a class="arrow" href="{{ sp.href }}">All specifications{{ ', photos and videos' if sp.has_videos else ' and photos' }}</a></p>
   </header>
-  <ul class="family-cards">
+  <ul class="family-cards" style="--cvh: {{ ((sp.families | length + 2) // 3) * 540 }}px; --cvhm: {{ (sp.families | length) * 540 }}px">
     {% for f in sp.families %}
     <li class="family-card" id="{{ f.id }}">
       {% for a in f.alt_ids or [] %}<span id="{{ a }}" class="anchor"></span>{% endfor %}

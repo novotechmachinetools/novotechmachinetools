@@ -257,23 +257,26 @@ small { font-size: .85em; }
 .group-lead { color: var(--charcoal-2); font-size: 18px; }
 .family { padding: 30px 0 36px; }
 .family + .family { border-top: 1px dashed var(--line); }
-/* PageSpeed (Nov 13 2026): every family, the sections under the families and the footer are laid out and painted only as
-   they come near the screen (content-visibility), so a long page's first paint no longer waits for the layout of the whole
+/* PageSpeed (Nov 13 2026): every family, the sections under the families, the quote form, the agents band, the footer and a
+   hub page's family cards and comparison table are laid out and painted only as they come near the screen (content-visibility), so a long page's first paint no longer waits for the layout of the whole
    page; the browser keeps a box's real height once it has been shown (the "auto" height), --cvh is only a first guess (the
    median height of a family / section on the busy pages).
    Paint containment clips at the box's edge, so each box reaches --cvx into the side margin (a padding and an equal negative
    margin, or a content-box width: the content stays exactly where it was) to keep the video arrows (16 px outside the slider),
    shadows and focus rings visible; the dashed line between two families is drawn inside that margin, as long as before. */
-.family.cv, section.why, section.videos.wrap, section.guide.wrap, section.faq.wrap, .site-footer { content-visibility: auto; contain-intrinsic-height: auto var(--cvh, 2400px); }
+.family.cv, section.why, section.videos.wrap, section.guide.wrap, section.faq.wrap, .site-footer, section.quote, section.agents, ul.family-cards, section.group.compare { content-visibility: auto; contain-intrinsic-height: auto var(--cvh, 2400px); }
 .family.cv, section.videos.wrap, section.guide.wrap, section.faq.wrap { --cvx: 8px; }
 .family.cv { margin-inline: calc(-1 * var(--cvx)); padding-inline: var(--cvx); }
 .family + .family.cv { position: relative; border-top-color: transparent; }
 .family + .family.cv::before { content: ""; position: absolute; top: 0; left: var(--cvx); right: var(--cvx); border-top: 1px dashed var(--line); }
 section.videos.wrap, section.guide.wrap, section.faq.wrap { box-sizing: content-box; padding-inline: var(--cvx); }
-section.why { --cvh: 900px; } section.videos.wrap { --cvh: 460px; } section.guide.wrap { --cvh: 3000px; } section.faq.wrap { --cvh: 680px; } .site-footer { --cvh: 430px; }
+section.why { --cvh: 900px; } section.videos.wrap { --cvh: 460px; } section.guide.wrap { --cvh: 3000px; } section.faq.wrap { --cvh: 680px; } .site-footer { --cvh: 910px; }
+section.quote { --cvh: 960px; } section.agents { --cvh: 460px; } section.group.compare { --cvh: 900px; }
+ul.family-cards { --cvx: 8px; margin-inline: calc(-1 * var(--cvx)); padding-inline: var(--cvx); }   /* hub pages: the cards' photo links keep their focus ring */
 @media (max-width: 960px) {   /* the median heights on a tablet and a phone */
   .family.cv { --cvh: 3100px; }
-  section.why { --cvh: 1400px; } section.videos.wrap { --cvh: 560px; } section.guide.wrap { --cvh: 3600px; } section.faq.wrap { --cvh: 900px; } .site-footer { --cvh: 900px; }
+  section.why { --cvh: 1400px; } section.videos.wrap { --cvh: 560px; } section.guide.wrap { --cvh: 3600px; } section.faq.wrap { --cvh: 900px; } .site-footer { --cvh: 2300px; }
+  section.quote { --cvh: 1550px; } section.agents { --cvh: 840px; } ul.family-cards { contain-intrinsic-height: auto var(--cvhm, 2000px); }
 }
 @media (min-width: 1001px) { .family.cv, section.videos.wrap, section.guide.wrap, section.faq.wrap { --cvx: 16px; } }   /* the side margin is 16 px */
 @media (min-width: 1300px) { .family.cv, section.videos.wrap, section.guide.wrap, section.faq.wrap { --cvx: 28px; } }   /* 32 px */
