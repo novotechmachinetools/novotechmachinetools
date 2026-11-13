@@ -225,8 +225,9 @@ PAGES = {
 # the kinds from the largest machines to the smallest — on the hub, in its tables and in the Products menu (the owner, Nov 7 2026:
 # "the big machine first, at the top, then down to the smaller one", on every page of the sheet metal brakes); on every page the
 # groups go from the largest machine to the smallest too, and each family's photos (tools/ttmc_more_data.py BIG_FIRST)
-PAGES = {k: PAGES[k] for k in ("hydraulic-folding-machine", "box-and-pan-brake", "sheet-metal-hand-brake", "magnetic-sheet-metal-brake",
-                              "roofing-siding-brake", "shear-brake-roll-3-in-1")}
+# … except the roofing & siding brakes, right under the hydraulic & CNC folders in the menu and on the hub (the owner, Nov 12 2026)
+PAGES = {k: PAGES[k] for k in ("hydraulic-folding-machine", "roofing-siding-brake", "box-and-pan-brake", "sheet-metal-hand-brake",
+                              "magnetic-sheet-metal-brake", "shear-brake-roll-3-in-1")}
 
 HUB_PAGE = dict(
     title="Sheet Metal Brakes & Folding Machines for Sale in Canada — Box & Pan, Hand, Magnetic, Hydraulic & CNC | NovoTech",
