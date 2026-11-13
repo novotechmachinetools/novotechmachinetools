@@ -176,7 +176,7 @@ BROCHURES = [
     ("sawing", "wikus/futura.pdf", "WIKUS FUTURA® carbide-tipped band saw blade — data sheet"),
     ("sawing", "NovoTech-Cold-Saws-Cut-Off-Saws-Value-Line-2026.pdf", "NovoTech value-line cold saws and cut-off saws"),
     ("rolling", "NovoTech-Plate-Rolls-Premium-Line-2026.pdf", "NovoTech premium-line plate rolls"),
-    ("rolling", "NovoTech-Isitan-Sheet-Metal-Forming-Catalogue-2025.pdf", "ISITAN machinery catalogue"),
+    ("rolling", "NovoTech-Isitan-Sheet-Metal-Forming-Catalogue-2026.pdf", "ISITAN machinery catalogue"),
     ("rolling", "NovoTech-Angle-Rolls-Section-Benders-2026.pdf", "Angle rolls and section benders"),
     ("rolling", "NovoTech-Hydraulic-Shop-Presses-2026.pdf", "Hydraulic shop presses"),
     ("rolling", "NovoTech-Production-Hydraulic-Presses-2026.pdf", "Production hydraulic presses"),

@@ -252,7 +252,7 @@ def manual_spec(tables, glance_keys, glance, caps, note):
 
 BRAND_LINE = "ISITAN machines are made in Turkey by ISITAN Makine — sheet-metal forming machinery since 1959, with European components. Sold, installed and supported in Canada by NovoTech."
 ORIGIN = {"title": "Made in Turkey by ISITAN", "text": "ISITAN has built sheet-metal machinery in Bursa since 1959 — two factories, CE-certified machines with European components."}
-PDF = {"file": "files/NovoTech-Isitan-Sheet-Metal-Forming-Catalogue-2025.pdf", "label": "Download the ISITAN machinery catalogue", "size": "PDF · 29 MB · imperial units"}
+PDF = {"file": "files/NovoTech-Isitan-Sheet-Metal-Forming-Catalogue-2026.pdf", "label": "Download the ISITAN machinery catalogue", "size": "PDF · 6 MB · imperial units"}
 PDF_BK = {"file": "files/NovoTech-Bekamak-Band-Saws-Catalogue-2026.pdf", "label": "Bekamak saw catalogue", "size": "PDF · 7.5 MB · imperial units"}
 VOLT_FAQ_GENERIC = {"q": "What voltage do these machines run on?",
                     "a": "Three-phase machines are supplied for 600 V as standard with a CSA-approved panel; 208 V, 240 V and 480 V 3-phase are available on request, and 240 V single-phase on models whose main motor is 2.2 kW (3 HP) or less — a machine with a motor above 2.2 kW must run on three-phase power and cannot be converted to 240 V single-phase. Manual machines have no electrics."}

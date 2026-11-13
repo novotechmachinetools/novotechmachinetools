@@ -101,7 +101,7 @@ RULES = [  # (regex on the file name, case-insensitive) -> target; first match w
     (r"CUB 30|Cub-30|seam-grinder|deburr|Dust collector", "/sheet-metal-plate-deburring-edge-rounding-finishing-grinding"),
     (r"POLEKS|surface-grinder|YTQ400", "/surface-grinder"),
     (r"wire-bending", "/wire-bending-machines"),
-    (r"ISITAN", P + "NovoTech-Isitan-Sheet-Metal-Forming-Catalogue-2025.pdf"),
+    (r"ISITAN", P + "NovoTech-Isitan-Sheet-Metal-Forming-Catalogue-2026.pdf"),
     (r"NOVOTECH-Brochure", "/brochures"),
     (r"lifting-magnet|SAHINLER|Hilalsan|price-list|stock-list", "/products"),
 ]
