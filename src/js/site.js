@@ -287,6 +287,53 @@
     targets.forEach(function (t) { io.observe(t); });
   }
 
+  /* ---------- links to a place on the same page (#id): the scroll follows its target ----------
+     The families and sections far down a page are laid out only when they come near the screen (content-visibility, PageSpeed,
+     Nov 13 2026) and have a guessed height until then, so the browser's own smooth scroll, which aims once, stopped up to
+     10,000 px short of the last family. This scroll measures where the target is on every frame, and stays on it until
+     the boxes around it have their real heights. Any wheel, touch, key or click of the visitor's stops it. */
+  var cvBoxes = d.querySelector(".family.cv, section.why, section.videos.wrap, section.guide.wrap, section.faq.wrap");
+  if (cvBoxes && window.requestAnimationFrame && window.history && history.pushState) {
+    var de = d.documentElement, scrollRun = 0, userAt = 0;
+    var noMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    ["wheel", "touchstart", "keydown", "mousedown"].forEach(function (n) {
+      window.addEventListener(n, function () { userAt = Date.now(); }, { passive: true });
+    });
+    var followTo = function (t) {
+      var run = ++scrollRun, startAt = Date.now(), y0 = window.pageYOffset, t0 = null, last = null, still = 0, frames = 0;
+      var dest = function () {
+        var pad = parseFloat(getComputedStyle(de).scrollPaddingTop) || 0;
+        return Math.max(0, Math.min(t.getBoundingClientRect().top + window.pageYOffset - pad, de.scrollHeight - window.innerHeight));
+      };
+      var dur = noMotion || !de.classList.contains("is-loaded") ? 0 : Math.min(1100, 350 + Math.abs(dest() - y0) / 12);
+      de.style.scrollBehavior = "auto";                       // each step below is instant; this function is the animation
+      var frame = function (now) {
+        if (run !== scrollRun || userAt > startAt || ++frames > 600) { if (run === scrollRun) de.style.scrollBehavior = ""; return; }
+        if (t0 === null) t0 = now;
+        var to = dest(), k = dur ? Math.min(1, (now - t0) / dur) : 1;
+        var e = k < 0.5 ? 4 * k * k * k : 1 - Math.pow(-2 * k + 2, 3) / 2;          // ease in and out
+        window.scrollTo(0, Math.round(y0 + (to - y0) * e));
+        if (k >= 1) { if (last !== null && Math.abs(to - last) < 1) still++; else still = 0; last = to; }
+        if (still < 5) window.requestAnimationFrame(frame); else de.style.scrollBehavior = "";
+      };
+      window.requestAnimationFrame(frame);
+    };
+    d.addEventListener("click", function (ev) {
+      if (ev.defaultPrevented || ev.button !== 0 || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return;
+      var a = ev.target.closest && ev.target.closest("a[href^='#']"), id = "", t;
+      try { id = a ? decodeURIComponent(a.getAttribute("href").slice(1)) : ""; } catch (err) { return; }
+      t = id && d.getElementById(id);
+      if (!t) return;
+      ev.preventDefault();
+      if (location.hash !== "#" + id) history.pushState(null, "", "#" + id);
+      followTo(t);
+      if (ev.detail === 0) {                                    // opened with the keyboard: Tab goes on from the target
+        if (!t.hasAttribute("tabindex") && !/^(A|BUTTON|INPUT|SELECT|TEXTAREA|SUMMARY)$/.test(t.tagName)) t.setAttribute("tabindex", "-1");
+        t.focus({ preventScroll: true });
+      }
+    });
+  }
+
   /* ---------- galleries: thumbnails swap the main image, lightbox on click ----------
      The photo viewer's white stage has ONE size per photo set: the smallest box that holds every photo of the set
      at the largest size the window allows (each photo is scaled into it with object-fit: contain). So the stage, the
@@ -417,6 +464,7 @@
     var index = 0;
     // the caption band is as tall as the longest description of this gallery needs at the current width (1 – 3 lines,
     // up to 5 on a phone), so a long caption is shown in full and nothing below moves when the photo changes
+    var fitted = false;
     function fitCaption() {
       if (!capDesc || !items.length) return;
       var probe = d.createElement("span"), cw = capDesc.clientWidth;
@@ -427,12 +475,21 @@
       items.forEach(function (it) { probe.textContent = it.cap2 || it.alt || ""; lines = Math.max(lines, Math.round(probe.scrollHeight / 20)); });
       probe.remove();
       figure.style.setProperty("--cap-lines", Math.min(cw < 460 ? 5 : 3, lines));
+      fitted = true;
     }
-    fitCaption();
+    // a gallery in a family that is laid out only near the screen (.cv, PageSpeed, Nov 13 2026) is measured when it comes
+    // within 1,200 px of the screen: measuring it at once would make the browser lay out every family of the page
+    if (g.closest(".cv") && "IntersectionObserver" in window) {
+      var fio = new IntersectionObserver(function (es) {
+        if (es.some(function (e) { return e.isIntersecting; })) { fio.disconnect(); fitCaption(); }
+      }, { rootMargin: "1200px 0px" });
+      fio.observe(g);
+    } else fitCaption();
     var fitW = window.innerWidth, fitT;
     window.addEventListener("resize", function () {
       if (window.innerWidth === fitW) return;          // a phone's toolbar showing or hiding changes only the height
-      fitW = window.innerWidth; clearTimeout(fitT); fitT = setTimeout(fitCaption, 150);
+      fitW = window.innerWidth; clearTimeout(fitT);
+      if (fitted) fitT = setTimeout(fitCaption, 150);
     });
     function show(i) {
       index = (i + items.length) % items.length;
@@ -622,7 +679,15 @@
     var t;
     track.addEventListener("scroll", function () { clearTimeout(t); t = setTimeout(update, 120); }, { passive: true });
     window.addEventListener("resize", update);
-    update();
+    // measured when it comes near the screen, not all at load: each measurement made the browser lay the whole page out again
+    // (a long page has a dozen strips), and a family off screen is not laid out at all now (content-visibility, Nov 13 2026).
+    // Until then the strip shows what the page was built with: the first videos, the back arrow off.
+    if ("IntersectionObserver" in window) {
+      var cio = new IntersectionObserver(function (es) {
+        if (es.some(function (e) { return e.isIntersecting; })) { cio.disconnect(); update(); }
+      }, { rootMargin: "600px 0px" });
+      cio.observe(c);
+    } else update();
   });
   /* in view (half or more, for 350 ms — a fast scroll past starts nothing): start muted, or resume where it paused;
      out of view: pause. A video in a carousel counts only while it is on the visible part of the strip. */

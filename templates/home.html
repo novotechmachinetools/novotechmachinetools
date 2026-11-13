@@ -19,7 +19,7 @@
       <source media="(max-aspect-ratio: 4/5)" srcset="{{ poster_tall.srcset }}" sizes="100vw">
       <img src="{{ poster.src }}" srcset="{{ poster.srcset }}" sizes="100vw" width="{{ poster.w }}" height="{{ poster.h }}" alt="" fetchpriority="high" decoding="async">
     </picture>
-    <video muted playsinline loop preload="none" disablepictureinpicture tabindex="-1" data-wide="{{ hv.wide.h264 }}" data-wide-av1="{{ hv.wide.av1 }}" data-tall="{{ hv.tall.h264 }}" data-tall-av1="{{ hv.tall.av1 }}"></video>
+    <video muted playsinline loop preload="none" disablepictureinpicture tabindex="-1" data-wide="{{ hv.wide.h264 }}?v={{ asset_v(hv.wide.h264) }}" data-wide-av1="{{ hv.wide.av1 }}?v={{ asset_v(hv.wide.av1) }}" data-tall="{{ hv.tall.h264 }}?v={{ asset_v(hv.tall.h264) }}" data-tall-av1="{{ hv.tall.av1 }}?v={{ asset_v(hv.tall.av1) }}"></video>
   </div>
   {# the owner (Nov 7 2026): nothing on the video but the title — the AI search sits in its own band right under it #}
   <div class="wrap hp-hero-inner">

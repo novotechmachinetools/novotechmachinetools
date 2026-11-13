@@ -521,9 +521,11 @@ Redirect 301 "/files/twin-head-mitering-cold-saw-LCS-400-DX.pdf" "/cold-saws"
   ExpiresByType font/woff2 "access plus 1 year"
   ExpiresByType application/pdf "access plus 1 month"
   ExpiresByType application/json "access plus 1 year"
+  # the home page's header video (10 - 38 MB): kept a year, its address changes with the file (?v=, templates/home.html)
+  ExpiresByType video/mp4 "access plus 1 year"
 </IfModule>
 <IfModule mod_headers.c>
-  <FilesMatch "\.(css|js|json|webp|png|jpg|svg|ico|woff2)$">
+  <FilesMatch "\.(css|js|json|webp|png|jpg|svg|ico|woff2|mp4)$">
     Header set Cache-Control "public, max-age=31536000, immutable"
   </FilesMatch>
   <FilesMatch "\.html$">

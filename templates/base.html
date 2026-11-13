@@ -30,11 +30,11 @@
 <meta name="twitter:title" content="{{ page.og_title or page.title }}">
 <meta name="twitter:description" content="{{ page.meta_description }}">
 <meta name="twitter:image" content="{{ site.domain }}/img/social/{{ page.slug }}.jpg">
-<link rel="preload" href="fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="fonts/barlow-condensed-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="fonts/barlow-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="fonts/barlow-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-condensed-core-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-condensed-core-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-core-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-core-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/barlow-core-600.woff2" as="font" type="font/woff2" crossorigin>
 {% if page.hero_image and not page.hero_video %}<link rel="preload" as="image" href="{{ img(page.hero_image).src }}" imagesrcset="{{ img(page.hero_image).srcset }}" imagesizes="(max-width: 700px) 92vw, {{ page.hero_width or (820 if page.hero_large else 680) }}px" fetchpriority="high">{% endif %}
 {% if inline_css %}<style>{{ inline_css | safe }}</style>{% else %}<link rel="stylesheet" href="css/site.css?v={{ css_hash }}">{% endif %}
 {% block head %}{% endblock %}
@@ -46,7 +46,7 @@
   <div class="wrap header-row">
     <a class="brand" href="index.html" aria-label="NovoTech Machine Tools — home">
       {% set logo = img('novotech-logo', 360) %}
-      <img src="{{ logo.src }}" srcset="{{ logo.srcset }}" sizes="(max-width: 700px) 170px, 200px" width="{{ logo.w }}" height="{{ logo.h }}" alt="NovoTech Machine Tools Inc." fetchpriority="high">
+      <img src="{{ logo.src }}" srcset="{{ logo.srcset }}" sizes="(max-width: 600px) 125px, (max-width: 960px) 170px, 200px" width="{{ logo.w }}" height="{{ logo.h }}" alt="NovoTech Machine Tools Inc." fetchpriority="high">
     </a>
     <nav class="site-nav" aria-label="Main">
       <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu"><svg class="nav-toggle-icon" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path class="nt-l1" d="M3 6.5h18"/><path class="nt-l2" d="M3 12h18"/><path class="nt-l3" d="M3 17.5h18"/></svg>Menu</button>

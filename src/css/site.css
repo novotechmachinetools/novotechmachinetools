@@ -1,13 +1,22 @@
 /* NovoTech Machine Tools — site stylesheet
    Palette: machine orange + charcoal, cool greys. Type: Barlow (text) + Barlow Condensed (display). */
 
-@font-face { font-family: "Barlow"; font-style: normal; font-weight: 400; font-display: swap; src: url("../fonts/barlow-latin-400-normal.woff2") format("woff2"); }
-@font-face { font-family: "Barlow"; font-style: normal; font-weight: 500; font-display: swap; src: url("../fonts/barlow-latin-500-normal.woff2") format("woff2"); }
-@font-face { font-family: "Barlow"; font-style: normal; font-weight: 600; font-display: swap; src: url("../fonts/barlow-latin-600-normal.woff2") format("woff2"); }
-@font-face { font-family: "Barlow"; font-style: normal; font-weight: 700; font-display: swap; src: url("../fonts/barlow-latin-700-normal.woff2") format("woff2"); }
-@font-face { font-family: "Barlow Condensed"; font-style: normal; font-weight: 500; font-display: swap; src: url("../fonts/barlow-condensed-latin-500-normal.woff2") format("woff2"); }
-@font-face { font-family: "Barlow Condensed"; font-style: normal; font-weight: 600; font-display: swap; src: url("../fonts/barlow-condensed-latin-600-normal.woff2") format("woff2"); }
-@font-face { font-family: "Barlow Condensed"; font-style: normal; font-weight: 700; font-display: swap; src: url("../fonts/barlow-condensed-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow"; font-style: normal; font-weight: 400; font-display: swap; src: url("../fonts/barlow-latin-400-normal.woff2") format("woff2"); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: "Barlow"; font-style: normal; font-weight: 500; font-display: swap; src: url("../fonts/barlow-latin-500-normal.woff2") format("woff2"); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: "Barlow"; font-style: normal; font-weight: 600; font-display: swap; src: url("../fonts/barlow-latin-600-normal.woff2") format("woff2"); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: "Barlow"; font-style: normal; font-weight: 700; font-display: swap; src: url("../fonts/barlow-latin-700-normal.woff2") format("woff2"); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: "Barlow Condensed"; font-style: normal; font-weight: 500; font-display: swap; src: url("../fonts/barlow-condensed-latin-500-normal.woff2") format("woff2"); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: "Barlow Condensed"; font-style: normal; font-weight: 600; font-display: swap; src: url("../fonts/barlow-condensed-latin-600-normal.woff2") format("woff2"); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: "Barlow Condensed"; font-style: normal; font-weight: 700; font-display: swap; src: url("../fonts/barlow-condensed-latin-700-normal.woff2") format("woff2"); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+/* the characters the pages use (tools/subset_fonts.py, PageSpeed, Nov 13 2026: 11 - 17 KB a file instead of 22 KB): listed
+   after the full latin files, so a browser takes these and downloads a full file only for a character outside this set */
+@font-face { font-family: "Barlow"; font-style: normal; font-weight: 400; font-display: swap; src: url("../fonts/barlow-core-400.woff2") format("woff2"); unicode-range: U+0020-007E,U+00A0-00A1,U+00A7,U+00A9,U+00AB,U+00AE,U+00B0-00B3,U+00B5-00B7,U+00B9-00C0,U+00C2,U+00C4,U+00C7-00CB,U+00CE-00CF,U+00D4,U+00D6-00D9,U+00DB-00DC,U+00DF-00E0,U+00E2,U+00E4,U+00E7-00EB,U+00EE-00EF,U+00F4,U+00F6-00F9,U+00FB-00FC,U+00FF,U+2013-2014,U+2018-201A,U+201C-201E,U+2022,U+2026,U+2032-2033,U+2039-203A,U+20AC,U+2122,U+2212; }
+@font-face { font-family: "Barlow"; font-style: normal; font-weight: 500; font-display: swap; src: url("../fonts/barlow-core-500.woff2") format("woff2"); unicode-range: U+0020-007E,U+00A0-00A1,U+00A7,U+00A9,U+00AB,U+00AE,U+00B0-00B3,U+00B5-00B7,U+00B9-00C0,U+00C2,U+00C4,U+00C7-00CB,U+00CE-00CF,U+00D4,U+00D6-00D9,U+00DB-00DC,U+00DF-00E0,U+00E2,U+00E4,U+00E7-00EB,U+00EE-00EF,U+00F4,U+00F6-00F9,U+00FB-00FC,U+00FF,U+2013-2014,U+2018-201A,U+201C-201E,U+2022,U+2026,U+2032-2033,U+2039-203A,U+20AC,U+2122,U+2212; }
+@font-face { font-family: "Barlow"; font-style: normal; font-weight: 600; font-display: swap; src: url("../fonts/barlow-core-600.woff2") format("woff2"); unicode-range: U+0020-007E,U+00A0-00A1,U+00A7,U+00A9,U+00AB,U+00AE,U+00B0-00B3,U+00B5-00B7,U+00B9-00C0,U+00C2,U+00C4,U+00C7-00CB,U+00CE-00CF,U+00D4,U+00D6-00D9,U+00DB-00DC,U+00DF-00E0,U+00E2,U+00E4,U+00E7-00EB,U+00EE-00EF,U+00F4,U+00F6-00F9,U+00FB-00FC,U+00FF,U+2013-2014,U+2018-201A,U+201C-201E,U+2022,U+2026,U+2032-2033,U+2039-203A,U+20AC,U+2122,U+2212; }
+@font-face { font-family: "Barlow"; font-style: normal; font-weight: 700; font-display: swap; src: url("../fonts/barlow-core-700.woff2") format("woff2"); unicode-range: U+0020-007E,U+00A0-00A1,U+00A7,U+00A9,U+00AB,U+00AE,U+00B0-00B3,U+00B5-00B7,U+00B9-00C0,U+00C2,U+00C4,U+00C7-00CB,U+00CE-00CF,U+00D4,U+00D6-00D9,U+00DB-00DC,U+00DF-00E0,U+00E2,U+00E4,U+00E7-00EB,U+00EE-00EF,U+00F4,U+00F6-00F9,U+00FB-00FC,U+00FF,U+2013-2014,U+2018-201A,U+201C-201E,U+2022,U+2026,U+2032-2033,U+2039-203A,U+20AC,U+2122,U+2212; }
+@font-face { font-family: "Barlow Condensed"; font-style: normal; font-weight: 500; font-display: swap; src: url("../fonts/barlow-condensed-core-500.woff2") format("woff2"); unicode-range: U+0020-007E,U+00A0-00A1,U+00A7,U+00A9,U+00AB,U+00AE,U+00B0-00B3,U+00B5-00B7,U+00B9-00C0,U+00C2,U+00C4,U+00C7-00CB,U+00CE-00CF,U+00D4,U+00D6-00D9,U+00DB-00DC,U+00DF-00E0,U+00E2,U+00E4,U+00E7-00EB,U+00EE-00EF,U+00F4,U+00F6-00F9,U+00FB-00FC,U+00FF,U+2013-2014,U+2018-201A,U+201C-201E,U+2022,U+2026,U+2032-2033,U+2039-203A,U+20AC,U+2122,U+2212; }
+@font-face { font-family: "Barlow Condensed"; font-style: normal; font-weight: 600; font-display: swap; src: url("../fonts/barlow-condensed-core-600.woff2") format("woff2"); unicode-range: U+0020-007E,U+00A0-00A1,U+00A7,U+00A9,U+00AB,U+00AE,U+00B0-00B3,U+00B5-00B7,U+00B9-00C0,U+00C2,U+00C4,U+00C7-00CB,U+00CE-00CF,U+00D4,U+00D6-00D9,U+00DB-00DC,U+00DF-00E0,U+00E2,U+00E4,U+00E7-00EB,U+00EE-00EF,U+00F4,U+00F6-00F9,U+00FB-00FC,U+00FF,U+2013-2014,U+2018-201A,U+201C-201E,U+2022,U+2026,U+2032-2033,U+2039-203A,U+20AC,U+2122,U+2212; }
+@font-face { font-family: "Barlow Condensed"; font-style: normal; font-weight: 700; font-display: swap; src: url("../fonts/barlow-condensed-core-700.woff2") format("woff2"); unicode-range: U+0020-007E,U+00A0-00A1,U+00A7,U+00A9,U+00AB,U+00AE,U+00B0-00B3,U+00B5-00B7,U+00B9-00C0,U+00C2,U+00C4,U+00C7-00CB,U+00CE-00CF,U+00D4,U+00D6-00D9,U+00DB-00DC,U+00DF-00E0,U+00E2,U+00E4,U+00E7-00EB,U+00EE-00EF,U+00F4,U+00F6-00F9,U+00FB-00FC,U+00FF,U+2013-2014,U+2018-201A,U+201C-201E,U+2022,U+2026,U+2032-2033,U+2039-203A,U+20AC,U+2122,U+2212; }
 /* latin-ext subsets (İ, ş, Ş …) — downloaded only on pages that use those characters */
 @font-face { font-family: "Barlow"; font-style: normal; font-weight: 400; font-display: swap; src: url("../fonts/barlow-latin-ext-400-normal.woff2") format("woff2"); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
 @font-face { font-family: "Barlow"; font-style: normal; font-weight: 500; font-display: swap; src: url("../fonts/barlow-latin-ext-500-normal.woff2") format("woff2"); unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF; }
@@ -247,6 +256,25 @@ small { font-size: .85em; }
 .group-lead { color: var(--charcoal-2); font-size: 18px; }
 .family { padding: 30px 0 36px; }
 .family + .family { border-top: 1px dashed var(--line); }
+/* PageSpeed (Nov 13 2026): every family after the first and the sections under the families are laid out and painted only as
+   they come near the screen (content-visibility), so a long page's first paint no longer waits for the layout of the whole
+   page; the browser keeps a box's real height once it has been shown (the "auto" height), --cvh is only a first guess (the
+   median height of a family / section on the busy pages).
+   Paint containment clips at the box's edge, so each box reaches --cvx into the side margin (a padding and an equal negative
+   margin, or a content-box width: the content stays exactly where it was) to keep the video arrows (16 px outside the slider),
+   shadows and focus rings visible; the dashed line between two families is drawn inside that margin, as long as before. */
+.family.cv, section.why, section.videos.wrap, section.guide.wrap, section.faq.wrap { content-visibility: auto; contain-intrinsic-height: auto var(--cvh, 2400px); }
+.family.cv { --cvx: 8px; margin-inline: calc(-1 * var(--cvx)); padding-inline: var(--cvx); }
+.family + .family.cv { position: relative; border-top-color: transparent; }
+.family + .family.cv::before { content: ""; position: absolute; top: 0; left: var(--cvx); right: var(--cvx); border-top: 1px dashed var(--line); }
+section.videos.wrap, section.guide.wrap, section.faq.wrap { box-sizing: content-box; padding-inline: 8px; }
+section.why { --cvh: 900px; } section.videos.wrap { --cvh: 460px; } section.guide.wrap { --cvh: 3000px; } section.faq.wrap { --cvh: 680px; }
+@media (max-width: 960px) {   /* the median heights on a tablet and a phone */
+  .family.cv { --cvh: 3100px; }
+  section.why { --cvh: 1400px; } section.videos.wrap { --cvh: 560px; } section.guide.wrap { --cvh: 3600px; } section.faq.wrap { --cvh: 900px; }
+}
+@media (min-width: 1001px) { .family.cv { --cvx: 16px; } }
+@media (min-width: 1300px) { .family.cv { --cvx: 28px; } }
 .family-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 22px; margin-bottom: 18px; }
 .family-name { margin: 0; }
 .nameplate { margin: 0; }

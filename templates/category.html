@@ -58,12 +58,14 @@
 
 <div class="wrap page-body">
 {# no "every model at a glance" table on any page (the owner, Nov 1 2026: delete it everywhere, hubs included) #}
+{# families after the first are laid out and painted only near the screen (.cv: content-visibility, PageSpeed, Nov 13 2026) #}
+{% set nfam = namespace(i=0) %}
 {% for g in page.groups %}
 <section class="group{{ (' line-' ~ g.brand ~ (' line-value' if g.brand == 'novotech' else ' line-premium')) if g.brand else '' }}" id="{{ g.id }}" aria-labelledby="{{ g.id }}-title">
   {% if g.brand %}{% set br = site.brands[g.brand] %}
   <header class="line-head">
     <div class="line-badge line-{{ g.brand }}">
-      {% if br.logo %}{% set lg = img(br.logo) %}<img src="{{ lg.src }}" width="{{ lg.w }}" height="{{ lg.h }}" alt="{{ br.name }}" loading="lazy" decoding="async">{% endif %}
+      {% if br.logo %}{% set lg = img(br.logo) %}<img src="{{ lg.small }}" srcset="{{ lg.thumb_srcset }}" sizes="{{ (34 * lg.w / lg.h) | round | int }}px" width="{{ lg.w }}" height="{{ lg.h }}" alt="{{ br.name }}" loading="lazy" decoding="async">{% endif %}
       <span class="line-name">{{ br.line }}</span>
     </div>
     <h2 id="{{ g.id }}-title" class="line-title">{{ g.title }}</h2>
@@ -78,8 +80,8 @@
   </header>
   {% endif %}
 
-  {% for f in g.families %}
-  <article class="family{{ ' is-stacked' if f.layout == 'stacked' else '' }}{{ ' no-media' if not f.gallery else '' }}" id="{{ f.id }}">
+  {% for f in g.families %}{% set nfam.i = nfam.i + 1 %}
+  <article class="family{{ ' is-stacked' if f.layout == 'stacked' else '' }}{{ ' no-media' if not f.gallery else '' }}{{ ' cv' if nfam.i > 1 else '' }}" id="{{ f.id }}">
     {% for a in f.alt_ids or [] %}<span id="{{ a }}" class="anchor"></span>{% endfor %}
     <header class="family-head">
       <h3 class="family-name">{{ f.name }}</h3>

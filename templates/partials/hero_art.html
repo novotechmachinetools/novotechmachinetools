@@ -15,8 +15,15 @@
   </div>
   <ul class="hero-minis is-many" style="--n: {{ page.hero_cols[0] }}; --m: {{ page.hero_cols[1] }}; --nw: {{ page.hero_cols_wide or page.hero_cols[0] }}; --mh: {{ page.hero_mini_h }}px; --mhm: {{ page.hero_mini_hm }}px">
     {% set subs = page.hero_mini_subs or {} %}{% set msc = page.hero_mini_scale or {} %}
-    {% for n in page.hero_image_secondary %}{% set m = img(n) %}
-    <li{% if msc.get(n) %} style="--ms: {{ msc[n] }}"{% endif %}>{% if hl.get(n) %}<a class="hero-mini-link" href="{{ hl[n] }}">{% else %}<span class="hero-mini-link">{% endif %}<img src="{{ m.small }}" srcset="{{ m.srcset }}" sizes="(max-width: 960px) 31vw, 219px" width="{{ m.w }}" height="{{ m.h }}" alt="{{ m.alt }}" loading="lazy" decoding="async"><span class="hero-mini-cap">{% if subs.get(n) %}<span class="hero-mini-name">{{ page.hero_mini_labels[n] }}</span><span class="hero-mini-sub">{{ subs[n] }}</span>{% else %}{{ page.hero_mini_labels[n] }}{% endif %}</span>{% if hl.get(n) %}</a>{% else %}</span>{% endif %}</li>
+    {# sizes: the width the photo is shown at, so the browser takes the 160 px thumbnail or the 240 / 320 px file
+       (tools/small_variants.py) instead of the 480 px one (PageSpeed, Nov 13 2026) — its height times its width / height (on a
+       phone the --mhm height, on a tablet 1.5 times that, on a desktop --mh, at most 219 px wide), or, when that is wider than
+       its column on a 360 px phone / a 601 px tablet, the column's share of the screen #}
+    {% set mc = page.hero_cols[1] %}{% set hm = page.hero_mini_hm %}
+    {% set colp = (360 - 32 - 8 * (mc - 1)) / mc - 4 %}{% set colt = (601 - 32 - 8 * (mc - 1)) / mc - 4 %}
+    {% set vwp = 92 if mc == 1 else 46 if mc == 2 else 30 %}{% set vwt = 94 if mc == 1 else 47 if mc == 2 else 31 %}
+    {% for n in page.hero_image_secondary %}{% set m = img(n) %}{% set ar = m.w / m.h %}{% set dw = [219, (page.hero_mini_h * (msc.get(n) or 1) * ar) | round | int] | min %}{% set wp = (hm * ar) | round | int %}{% set wt = (1.5 * hm * ar) | round | int %}
+    <li{% if msc.get(n) %} style="--ms: {{ msc[n] }}"{% endif %}>{% if hl.get(n) %}<a class="hero-mini-link" href="{{ hl[n] }}">{% else %}<span class="hero-mini-link">{% endif %}<img src="{{ m.small }}" srcset="{% if m.thumb != m.small %}{{ m.thumb }} {{ m.thumb_w }}w, {% endif %}{{ m.srcset }}" sizes="(max-width: 600px) {{ (wp ~ 'px') if wp <= colp else (vwp ~ 'vw') }}, (max-width: 960px) {{ (wt ~ 'px') if wt <= colt else (vwt ~ 'vw') }}, {{ dw }}px" width="{{ m.w }}" height="{{ m.h }}" alt="{{ m.alt }}" loading="lazy" decoding="async" fetchpriority="low"><span class="hero-mini-cap">{% if subs.get(n) %}<span class="hero-mini-name">{{ page.hero_mini_labels[n] }}</span><span class="hero-mini-sub">{{ subs[n] }}</span>{% else %}{{ page.hero_mini_labels[n] }}{% endif %}</span>{% if hl.get(n) %}</a>{% else %}</span>{% endif %}</li>
     {% endfor %}
   </ul>
   {% else %}
@@ -27,7 +34,7 @@
   {% set ns = namespace(h=198) %}
   {% if page.hero_minis_same_h %}{% for n in page.hero_image_secondary %}{% set m = img(n) %}{% set ch = [198, (278 * m.h / m.w) | round | int] | min %}{% if ch < ns.h %}{% set ns.h = ch %}{% endif %}{% endfor %}{% endif %}
   <div class="hero-minis">
-    {% for n in page.hero_image_secondary %}{% set m = img(n) %}{% set mh = 198 %}{% set mw = (mh * m.w / m.h) | round | int %}{% if mw > 278 %}{% set mw = 278 %}{% set mh = (278 * m.h / m.w) | round | int %}{% endif %}{% if page.hero_minis_same_h and mh > ns.h %}{% set mh = ns.h %}{% set mw = (mh * m.w / m.h) | round | int %}{% endif %}{% if hl.get(n) %}<a class="hero-mini-link" href="{{ hl[n] }}">{% endif %}<img src="{{ m.small }}" srcset="{{ m.srcset }}" sizes="{{ mw }}px" width="{{ mw }}" height="{{ mh }}" style="width:{{ mw }}px;height:{{ mh }}px" alt="{{ m.alt }}" loading="lazy" decoding="async">{% if hl.get(n) %}</a>{% endif %}{% endfor %}
+    {% for n in page.hero_image_secondary %}{% set m = img(n) %}{% set mh = 198 %}{% set mw = (mh * m.w / m.h) | round | int %}{% if mw > 278 %}{% set mw = 278 %}{% set mh = (278 * m.h / m.w) | round | int %}{% endif %}{% if page.hero_minis_same_h and mh > ns.h %}{% set mh = ns.h %}{% set mw = (mh * m.w / m.h) | round | int %}{% endif %}{% if hl.get(n) %}<a class="hero-mini-link" href="{{ hl[n] }}">{% endif %}<img src="{{ m.small }}" srcset="{{ m.srcset }}" sizes="{{ mw }}px" width="{{ mw }}" height="{{ mh }}" style="width:{{ mw }}px;height:{{ mh }}px" alt="{{ m.alt }}" loading="lazy" decoding="async" fetchpriority="low">{% if hl.get(n) %}</a>{% endif %}{% endfor %}
   </div>
   {% endif %}
   {% endif %}
