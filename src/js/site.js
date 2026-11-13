@@ -260,9 +260,12 @@
   // the kinds-of-machine row scrolls sideways on phones: bring the current kind into view so its arrow meets the family bar
   var secNav = d.querySelector(".section-nav-row .section-nav");
   var secCur = secNav && secNav.querySelector("a[aria-current='page']");
-  if (secCur && secNav.scrollWidth > secNav.clientWidth + 2) {
-    secNav.scrollLeft = Math.max(0, secCur.offsetLeft - (secNav.clientWidth - secCur.offsetWidth) / 2);
-  }
+  var centreSec = function () {
+    if (secNav.scrollWidth > secNav.clientWidth + 2) secNav.scrollLeft = Math.max(0, secCur.offsetLeft - (secNav.clientWidth - secCur.offsetWidth) / 2);
+  };
+  // measured once the first frame is drawn: reading its width at once made the browser lay out the whole page in the middle of
+  // this script, a long task on the busy pages (PageSpeed, Nov 13 2026)
+  if (secCur) { if (window.requestAnimationFrame) window.requestAnimationFrame(function () { setTimeout(centreSec, 0); }); else centreSec(); }
   var jumpLinks = Array.prototype.slice.call(d.querySelectorAll(".jump-list a[href^='#']"));
   if (jumpLinks.length && "IntersectionObserver" in window) {
     var byId = {};
@@ -328,7 +331,7 @@
       if (location.hash !== "#" + id) history.pushState(null, "", "#" + id);
       followTo(t);
       if (ev.detail === 0) {                                    // opened with the keyboard: Tab goes on from the target
-        if (!t.hasAttribute("tabindex") && !/^(A|BUTTON|INPUT|SELECT|TEXTAREA|SUMMARY)$/.test(t.tagName)) t.setAttribute("tabindex", "-1");
+        if (!t.hasAttribute("tabindex") && !/^(A|BUTTON|INPUT|SELECT|TEXTAREA|SUMMARY)$/.test(t.tagName)) { t.setAttribute("tabindex", "-1"); t.classList.add("jump-target"); }
         t.focus({ preventScroll: true });
       }
     });
@@ -451,7 +454,9 @@
     el.style.touchAction = "pan-y";
   }
 
-  d.querySelectorAll(".gallery").forEach(function (g) {
+  // a gallery in a family that is laid out only near the screen (.cv, PageSpeed, Nov 13 2026) is set up when it comes within
+  // 1,200 px of the screen: setting up every gallery at once, and measuring its caption, made a long task on the busy pages
+  var setupGallery = function (g) {
     var main = g.querySelector(".gallery-main img");
     var link = g.querySelector(".gallery-main .gallery-link");
     var figure = g.querySelector(".gallery-main");
@@ -464,7 +469,6 @@
     var index = 0;
     // the caption band is as tall as the longest description of this gallery needs at the current width (1 – 3 lines,
     // up to 5 on a phone), so a long caption is shown in full and nothing below moves when the photo changes
-    var fitted = false;
     function fitCaption() {
       if (!capDesc || !items.length) return;
       var probe = d.createElement("span"), cw = capDesc.clientWidth;
@@ -475,21 +479,12 @@
       items.forEach(function (it) { probe.textContent = it.cap2 || it.alt || ""; lines = Math.max(lines, Math.round(probe.scrollHeight / 20)); });
       probe.remove();
       figure.style.setProperty("--cap-lines", Math.min(cw < 460 ? 5 : 3, lines));
-      fitted = true;
     }
-    // a gallery in a family that is laid out only near the screen (.cv, PageSpeed, Nov 13 2026) is measured when it comes
-    // within 1,200 px of the screen: measuring it at once would make the browser lay out every family of the page
-    if (g.closest(".cv") && "IntersectionObserver" in window) {
-      var fio = new IntersectionObserver(function (es) {
-        if (es.some(function (e) { return e.isIntersecting; })) { fio.disconnect(); fitCaption(); }
-      }, { rootMargin: "1200px 0px" });
-      fio.observe(g);
-    } else fitCaption();
+    fitCaption();
     var fitW = window.innerWidth, fitT;
     window.addEventListener("resize", function () {
       if (window.innerWidth === fitW) return;          // a phone's toolbar showing or hiding changes only the height
-      fitW = window.innerWidth; clearTimeout(fitT);
-      if (fitted) fitT = setTimeout(fitCaption, 150);
+      fitW = window.innerWidth; clearTimeout(fitT); fitT = setTimeout(fitCaption, 150);
     });
     function show(i) {
       index = (i + items.length) % items.length;
@@ -554,7 +549,11 @@
       e.preventDefault();
       openLb(items, index);
     });
-  });
+  };
+  var galIO = "IntersectionObserver" in window && new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { galIO.unobserve(e.target); setupGallery(e.target); } });
+  }, { rootMargin: "1200px 0px" });
+  d.querySelectorAll(".gallery").forEach(function (g) { if (galIO && g.closest(".cv")) galIO.observe(g); else setupGallery(g); });
 
   /* ---------- Products page: a category's sub-page, section or product under the pointer shows in the card's large photo ---------- */
   d.querySelectorAll(".cat-card.has-subs").forEach(function (card) {

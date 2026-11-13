@@ -86,6 +86,7 @@ img { max-width: 100%; height: auto; display: block; }
 a { color: var(--orange-ink); text-decoration-thickness: 1px; text-underline-offset: 2px; text-decoration-skip-ink: none; }
 a:hover { color: var(--orange-deep); }
 :focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.jump-target:focus { outline: none; }   /* a family or section reached by keyboard through an in-page link (site.js): no frame round it */
 h1, h2, h3, h4 { font-family: var(--cond); line-height: 1.05; margin: 0 0 .4em; color: var(--charcoal); letter-spacing: -.005em; }
 h1 { font-size: clamp(40px, 6vw, 64px); font-weight: 700; }
 h2 { font-size: clamp(30px, 4vw, 42px); font-weight: 700; }
@@ -256,25 +257,26 @@ small { font-size: .85em; }
 .group-lead { color: var(--charcoal-2); font-size: 18px; }
 .family { padding: 30px 0 36px; }
 .family + .family { border-top: 1px dashed var(--line); }
-/* PageSpeed (Nov 13 2026): every family after the first and the sections under the families are laid out and painted only as
+/* PageSpeed (Nov 13 2026): every family, the sections under the families and the footer are laid out and painted only as
    they come near the screen (content-visibility), so a long page's first paint no longer waits for the layout of the whole
    page; the browser keeps a box's real height once it has been shown (the "auto" height), --cvh is only a first guess (the
    median height of a family / section on the busy pages).
    Paint containment clips at the box's edge, so each box reaches --cvx into the side margin (a padding and an equal negative
    margin, or a content-box width: the content stays exactly where it was) to keep the video arrows (16 px outside the slider),
    shadows and focus rings visible; the dashed line between two families is drawn inside that margin, as long as before. */
-.family.cv, section.why, section.videos.wrap, section.guide.wrap, section.faq.wrap { content-visibility: auto; contain-intrinsic-height: auto var(--cvh, 2400px); }
-.family.cv { --cvx: 8px; margin-inline: calc(-1 * var(--cvx)); padding-inline: var(--cvx); }
+.family.cv, section.why, section.videos.wrap, section.guide.wrap, section.faq.wrap, .site-footer { content-visibility: auto; contain-intrinsic-height: auto var(--cvh, 2400px); }
+.family.cv, section.videos.wrap, section.guide.wrap, section.faq.wrap { --cvx: 8px; }
+.family.cv { margin-inline: calc(-1 * var(--cvx)); padding-inline: var(--cvx); }
 .family + .family.cv { position: relative; border-top-color: transparent; }
 .family + .family.cv::before { content: ""; position: absolute; top: 0; left: var(--cvx); right: var(--cvx); border-top: 1px dashed var(--line); }
-section.videos.wrap, section.guide.wrap, section.faq.wrap { box-sizing: content-box; padding-inline: 8px; }
-section.why { --cvh: 900px; } section.videos.wrap { --cvh: 460px; } section.guide.wrap { --cvh: 3000px; } section.faq.wrap { --cvh: 680px; }
+section.videos.wrap, section.guide.wrap, section.faq.wrap { box-sizing: content-box; padding-inline: var(--cvx); }
+section.why { --cvh: 900px; } section.videos.wrap { --cvh: 460px; } section.guide.wrap { --cvh: 3000px; } section.faq.wrap { --cvh: 680px; } .site-footer { --cvh: 430px; }
 @media (max-width: 960px) {   /* the median heights on a tablet and a phone */
   .family.cv { --cvh: 3100px; }
-  section.why { --cvh: 1400px; } section.videos.wrap { --cvh: 560px; } section.guide.wrap { --cvh: 3600px; } section.faq.wrap { --cvh: 900px; }
+  section.why { --cvh: 1400px; } section.videos.wrap { --cvh: 560px; } section.guide.wrap { --cvh: 3600px; } section.faq.wrap { --cvh: 900px; } .site-footer { --cvh: 900px; }
 }
-@media (min-width: 1001px) { .family.cv { --cvx: 16px; } }
-@media (min-width: 1300px) { .family.cv { --cvx: 28px; } }
+@media (min-width: 1001px) { .family.cv, section.videos.wrap, section.guide.wrap, section.faq.wrap { --cvx: 16px; } }   /* the side margin is 16 px */
+@media (min-width: 1300px) { .family.cv, section.videos.wrap, section.guide.wrap, section.faq.wrap { --cvx: 28px; } }   /* 32 px */
 .family-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 22px; margin-bottom: 18px; }
 .family-name { margin: 0; }
 .nameplate { margin: 0; }
