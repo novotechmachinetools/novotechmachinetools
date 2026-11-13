@@ -153,7 +153,7 @@ VOLT_OPT = "Custom voltage: 208 V, 240 V, 480 V or 600 V 3-phase"
 CE = "Built to CE standards"
 
 # ================================================================================================ saws
-T_401 = table("SC 401", "Upcut saw, Ø450 mm blade", ["SC 401"], [
+T_401 = table("SC 401", "Upcut saw, Ø17-11/16″ (450 mm) blade", ["SC 401"], [
     row("Cutting angle", ["0° – 180°"], True, "quick stops 15°, 22.5°, 30°, 45°, 60°, 90°"),
     row("Blade", [dia(450)], True, "diamond-tipped"),
     row("Blade bore", [dia(32)]),
@@ -383,8 +383,8 @@ T_902 = table("SC 902", "Hydraulic corner crimping machine", ["SC 902"], [
 SCREW = ["Single screwing machine", "Double-head screwing machine", "Sash assembly machine"]
 T_SCREW = table("Screwing and sash assembly", "Pneumatic screwing stations and a sash hardware assembly machine", SCREW, [
     row("Job", ["Screwing at one station", "Screwing with two heads at once, PVC and aluminum", "Fitting and screwing sash hardware, single and double opening"], True),
-    row("Working range", ["A and B 1.6 – 4.7″", "—", "—"], False, "min – max"),
-    row("Screw size", ["3.9 × 16 mm to 4.2 × 38 mm", "to 4.2 × 38 mm", "—"], True),
+    row("Working range", ["A and B 1-9/16″ – 4-3/4″ (40 – 120 mm)", "—", "—"], False, "min – max"),
+    row("Screw size", ["#7 × 5/8″ to #8 × 1-1/2″ (3.9 × 16 to 4.2 × 38 mm)", "to #8 × 1-1/2″ (4.2 × 38 mm)", "—"], True),
     row("Screwing motor", ["Pneumatic, 0.7 HP, 3,000 rpm, stall torque 5 lb·ft", "2 × pneumatic, 0.7 HP, 3,000 rpm, stall torque 5 lb·ft",
                            "Automatic screwing with laser alignment"]),
     row("Cycle", ["Foot pedal", "—", "Double opening window: 3.5 min on average"], True),
@@ -608,13 +608,13 @@ FAMILIES = [
         "The fastest way to weld a PVC window frame: the SC 100 Gold Plus welds all four corners at 90° at the same time. Its "
         "heads ride on linear rails, driven by servo motors through planetary gearboxes, and automatic carriers bring the profiles "
         "in; frames from 16-1/8 × 19-1/2″ up to 145-11/16 × 106-5/16″ (410 × 495 to 3,700 × 2,700 mm), profiles 1-9/16″ to "
-        "7-7/8″ high, with a 0.2 mm seam on every profile type. A barcode scanner and a 19″ Windows screen recall each profile's "
+        "7-7/8″ high, with a 0.2 mm (.008″) seam on every profile type. A barcode scanner and a 19″ Windows screen recall each profile's "
         "temperatures and times. The Gold Plus Full adds a high-precision carrier robot and a CNC corner cleaner that recognises "
         "each frame itself — welding and cleaning in one line, four frames on it at once, with automatic colour / white separation.",
         "4 corners at once · frames to 145-11/16 × 106-5/16″ · welding and cleaning line (Full)",
         ["Welds the four corners of a PVC frame at 90° at the same time; single-corner welding too",
          "Axes on servo motors with planetary gearboxes; linear-rail top presses; automatic carriers",
-         "0.2 mm weld seam possible on every profile type; U (threshold-less door) welding",
+         "0.2 mm (.008″) weld seam possible on every profile type; U (threshold-less door) welding",
          "Heating temperature and time set independently by PID; welding, cooling and temperature stored per profile",
          "Barcode scanner and 19″ Windows-based screen; quick mould change; roll-type Teflon changed in minutes",
          "Gold Plus Full: carrier robot arm and CNC corner cleaner that identifies each frame without the operator; 2-axis carrier "
@@ -630,13 +630,13 @@ FAMILIES = [
         "SC 100 · SC 101 double- and single-head PVC welders, profiles to 6-5/16″ high", "SC 100 · SC 101", "SC 100 · SC 101 · 2 models",
         "The welders of most PVC window shops. The SC 100 welds two corners at once: its right head is moved to the profile "
         "length and locked with a button, profiles from 13-3/8″ to 126″ (340 – 3,200 mm) long and 1-9/16″ to 6-5/16″ high, with a "
-        "normal or a 0.2 mm seam on laminated profiles, and top-down centring on linear guides. The SC 101 welds one corner at any "
+        "normal or a 0.2 mm (.008″) seam on laminated profiles, and top-down centring on linear guides. The SC 101 welds one corner at any "
         "angle from 25° to 180° — for arches, bays and odd frames — with individually clamping top pistons, a moving left table and "
         "a foot pedal. Both are PLC-controlled with thermostatic heating plates set on a digital display, store temperature, "
         "time and pressure for each profile type, and change moulds quickly.",
         "Two corners (SC 100) or one at 25° – 180° (SC 101) · profiles to 6-5/16″ high",
         ["SC 100: two heads, right head positioned and locked by button; profiles 13-3/8″ – 126″ (340 – 3,200 mm) long",
-         "SC 100: normal and 0.2 mm seams on laminated profiles; single-corner welding; top-down centring; linear guides",
+         "SC 100: normal and 0.2 mm (.008″) seams on laminated profiles; single-corner welding; top-down centring; linear guides",
          "SC 101: any angle from 25° to 180°; individually clamping top pistons; moving left table; foot-pedal clamping",
          "PLC control; thermostatic heating plates, temperature set on a digital display; temperature, time and pressure per profile",
          "Quick mould change; power supply protected against voltage surges",
@@ -805,16 +805,17 @@ FAMILIES = [
         spec(T_902, {"SC 902": ["Aluminum 90° corners", f"Profiles to {inch(130)} high", f"{hpv(2.2)} HP", f"{cfmv(20)} CFM", lbv(360)]},
              caps={"SC 902": "hydraulic corner crimper"})),
     fam("plastmak-screw", "pm-screw", P_ASSY,
-        "Screwing machines and sash assembly machine, screws to 4.2 × 38 mm", "Screwing & sash assembly",
+        "Screwing machines and sash assembly machine, screws to #8 × 1-1/2″", "Screwing & sash assembly",
         "Single screwing · double-head screwing · sash assembly · 3 machines",
-        "Assembly stations for the steps after the frame is welded or crimped. The single screwing machine drives screws from 3.9 "
-        "× 16 mm to 4.2 × 38 mm with a pneumatic motor and stable torque control, its working range set between 1.6″ and 4.7″ and "
+        "Assembly stations for the steps after the frame is welded or crimped. The single screwing machine drives screws from #7 × 5/8″ "
+        "to #8 × 1-1/2″ (3.9 × 16 to 4.2 × 38 mm) with a pneumatic motor and stable torque control, its working range set between "
+        "1-9/16″ and 4-3/4″ (40 – 120 mm) and "
         "its cycle started by a foot pedal — compact enough to slot into a line, fed by an automatic screw feeder. The double-head "
         "screwing machine drives two screws at once into PVC and aluminum profiles. The sash assembly machine fits single and "
         "double opening hardware in series without moulds or templates: laser alignment, automatic measuring and screwing, a "
         "three-arm drilling unit, a hinge template and an espagnolette groove cutter — 3.5 minutes on average for a double "
         "opening window.",
-        "Screws 3.9 × 16 to 4.2 × 38 mm · double-opening sash in 3.5 min",
+        "Screws #7 × 5/8″ to #8 × 1-1/2″ · double-opening sash in 3.5 min",
         ["Single screwing: pneumatic screwing system with precise torque control; adjustable working range (A – B); foot pedal",
          "Single screwing: works with an automatic screw feeding unit; compact, ergonomic and easy to maintain",
          "Double-head screwing: two pneumatic screwing motors driving at the same time, PVC and aluminum profiles",
@@ -824,8 +825,8 @@ FAMILIES = [
          "Compressed air required; RAL 7035 grey"],
         [],
         ["pm-screw-single", "pm-screw-double", "pm-sash", "pm-screw-motor"],
-        spec(T_SCREW, {"Single screwing machine": ["Working range 1.6 – 4.7″", "Screws 3.9 × 16 – 4.2 × 38 mm", "0.7 HP motor", "—", "276 lb"],
-                       "Double-head screwing machine": ["Two heads", "Screws to 4.2 × 38 mm", "2 × 0.7 HP motors", "—", "463 lb"],
+        spec(T_SCREW, {"Single screwing machine": ["Working range 1-9/16″ – 4-3/4″", "Screws #7 × 5/8″ – #8 × 1-1/2″", "0.7 HP motor", "—", "276 lb"],
+                       "Double-head screwing machine": ["Two heads", "Screws to #8 × 1-1/2″", "2 × 0.7 HP motors", "—", "463 lb"],
                        "Sash assembly machine": ["Double sash in 3.5 min", "Hardware fitting and screwing", "—", "—", "—"]},
              NOTE_NT, caps={"Single screwing machine": "pneumatic, foot pedal", "Double-head screwing machine": "two heads at once",
                             "Sash assembly machine": "laser alignment, automatic screwing"})),

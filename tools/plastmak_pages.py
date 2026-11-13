@@ -13,8 +13,10 @@ saws") and the new "Aluminum & PVC processing machines" hub with four pages; ima
     python3 tools/plastmak_pages.py                  # families, pages, image_map entries (tools/plastmak_keys.txt)
     python3 tools/make_images.py --only $(cat tools/plastmak_keys.txt)
 
-The brochure on the pages is NovoTech's own Plastmak catalogue (NovoTech_Plastmak_Window_Machinery_2026.pdf), copied to
-src/files/NovoTech-Plastmak-Window-Machinery-2026.pdf.
+The brochure on the pages, src/files/NovoTech-Plastmak-Window-Machinery-2026.pdf, is built from these families since Nov 12 2026
+(the owner: the first catalogue was disorganised, its photos broken and its contents wrong — "build a new one from scratch"):
+
+    python3 tools/brochure/build_brochure.py tools/brochure/specs/plastmak.json
 """
 import json
 import os
@@ -342,8 +344,8 @@ def video_ids():
 
 
 def copy_pdf():
-    """the owner's brochure, copied once: the site's copy carries in-place fixes — the model codes with a Latin C ("SC 400S",
-    the owner, Nov 9 2026) and the e-mail size (tools/pdf_email_fit.py) — so it is never overwritten from the original"""
+    """only when the site has no brochure at all: the owner's first catalogue.  The site's copy is the generated brochure
+    (tools/brochure/specs/plastmak.json, Nov 12 2026), so it is never overwritten from the original"""
     dst = os.path.join(ROOT, "src", PDF_FILE)
     if not os.path.exists(dst):
         shutil.copyfile(PDF_SRC, dst)

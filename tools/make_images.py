@@ -161,5 +161,11 @@ for name, spec in MAP.items():
         manifest[name]["cut"] = cut
     print(f"{name:34s} {im.width}x{im.height}{' cut' if cut else ''} -> " + ", ".join(f"{v['w']}w {v['bytes']//1024}KB" for v in variants))
 
+# every photo's alt text follows image_map.json, also on a run with --only: a corrected alt ("SÇ 402" → "SC 402", "11 ga" →
+# "1/8″") stayed stale in the manifest — on the site and in the PDF brochures' captions — until that photo itself was rebuilt
+# (Nov 12 2026, 144 photos)
+for name, spec in MAP.items():
+    if name in manifest and "alt" in spec:
+        manifest[name]["alt"] = spec["alt"]
 json.dump(manifest, open(mpath, "w"), indent=1)
 print("manifest entries:", len(manifest))

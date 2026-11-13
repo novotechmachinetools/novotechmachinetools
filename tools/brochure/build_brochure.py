@@ -105,6 +105,20 @@ def cover_layout(imgs, W=7.9, H=4.35, pad=0.2, gap=0.2):
     return [dict(imgs[p["k"]], x=round(p["x"], 3), y=round(p["y"], 3), w_in=round(p["w"], 3), h_in=round(p["h"], 3)) for p in best]
 
 
+def cover_placed(spec):
+    """spec "cover_place": the cover photos at fixed places instead of cover_layout() — [{"key", "x", "y", "w"}] in inches inside
+    the white band (7.9 × 4.35 in), later ones drawn in front; cut-outs stay transparent (PNG) so a photo may overlap another
+    (the owner, Nov 12 2026: the Plastmak brochure's cover shows the SC 4000S and the SC 402 both as the main machines)"""
+    out = []
+    for c in spec.get("cover_place") or []:
+        im = img(c["key"], c.get("size", 1200), png=bool(MANIFEST.get(c["key"], {}).get("alpha")))
+        if not im:
+            continue
+        h = c["w"] * im["h"] / im["w"]
+        out.append(dict(im, x=c["x"], y=c["y"], w_in=c["w"], h_in=round(h, 3), label=c.get("label")))
+    return out
+
+
 def table_weight(t):
     return 2 + len(t["rows"]) * (1.0 + 0.08 * max(0, len(t["models"]) - 4))
 
@@ -186,6 +200,26 @@ def bandsaw_tables(f):
     return dict(f["specs"], tables=[{"title": f.get("short") or f["name"], "sub": "", "models": t["models"], "rows": t["rows"]}], note=note)
 
 
+FRACTION = re.compile(r"(?<![A-Za-z0-9/.])(\d+-\d+/\d+)")
+
+
+def keep_fractions(html):
+    """a fractional inch never breaks at its hyphen: "1-" at the end of a line and "1/2″" on the next (the owner's brochures
+    are in fractional inches) — each one in the text goes in a no-wrap span; tags, styles and scripts are left alone"""
+    out, skip = [], False
+    for part in re.split(r"(<[^>]+>)", html):
+        if part.startswith("<"):
+            low = part[:8].lower()
+            if low.startswith(("<style", "<script")):
+                skip = True
+            elif low.startswith(("</style", "</scrip")):
+                skip = False
+            out.append(part)
+        else:
+            out.append(part if skip else FRACTION.sub(r'<span class="nw">\1</span>', part))
+    return "".join(out)
+
+
 def render(spec, no_inline, budgets=None, tight=None, colsplit=None):
     fams_all = {}
     for s in spec["family_sets"]:
@@ -198,14 +232,16 @@ def render(spec, no_inline, budgets=None, tight=None, colsplit=None):
         elif (f.get("specs") or {}).get("kind") == "bandsaw" and "tables" not in f["specs"]:
             f["specs"] = bandsaw_tables(f)
         f["hero"] = img(f["images"][0]) if f["images"] else None
-        f["minis"] = [img(k) for k in f["images"][1:3]]
+        f["minis"] = [img(k, spec.get("mini_size", 1200)) for k in f["images"][1:3]]     # spec "mini_size": the two side photos (≈2.9″ wide)
         f["mini_alts"] = [MANIFEST.get(k, {}).get("alt", "") for k in f["images"][1:3]]
         f["series"] = f.get("short", f["name"]).split(" ")[0] if not f.get("series") else f["series"]
         f["tight"] = (tight or {}).get(fid, 0)       # 1 / 2 / 3: smaller photo band and type when the equipment lists overflow
         # every other photo of the family on detail pages after the family page, nine to a page with their captions — the
         # brochure carries all the photos and details, not a summary (the owner, Nov 1 2026: "summarize no PDF catalogue");
         # a spec can turn it off with "gallery": false
-        gal = [g for g in (img(k) for k in f["images"][3:]) if g] if spec.get("gallery", True) else []
+        # spec "gallery_size": the detail photos' width in px (a 2.4″ cell needs no more than 800 px; keeps a brochure with many
+        # photos small enough to e-mail without recompressing the finished PDF, which broke its images — Nov 12 2026)
+        gal = [g for g in (img(k, spec.get("gallery_size", 1200)) for k in f["images"][3:]) if g] if spec.get("gallery", True) else []
         f["gallery_pages"] = [gal[i:i + 9] for i in range(0, len(gal), 9)]
         families.append(f)
     layout(families, no_inline, budgets, colsplit)
@@ -225,6 +261,9 @@ def render(spec, no_inline, budgets=None, tight=None, colsplit=None):
     groups = []
     for g in spec.get("groups", []):
         groups.append({"title": g["title"], "families": [f for f in families if f["id"] in g["families"]]})
+        for f in groups[-1]["families"]:     # spec group "tab": the orange tab of its family pages instead of "<series> series"
+            if g.get("tab"):                 # (Plastmak: every model is an "SC", so the tab names the kind of machine)
+                f["tab"] = g["tab"]
     if not groups:
         groups = [{"title": spec["title"], "families": families}]
     env = Environment(loader=FileSystemLoader(HERE), autoescape=False)
@@ -235,7 +274,8 @@ def render(spec, no_inline, budgets=None, tight=None, colsplit=None):
     included = [(spec["made_in"], "")] + INCLUDED[1:] if spec.get("made_in") else INCLUDED   # value line: "Built in China to North American standards"
     html = env.get_template("brochure.html").render(spec=spec, site=SITE, families=families, groups=groups, total=total, included=included, intro=intro,
                                                      fonts="file://" + os.path.join(ROOT, "src", "fonts"), logo=img("novotech-logo", 800, png=True),
-                                                     cover_imgs=cover_layout([img(k) for k in spec["cover_photos"]]), year=spec.get("year", "2026"))
+                                                     cover_imgs=cover_placed(spec) or cover_layout([img(k) for k in spec["cover_photos"]]), year=spec.get("year", "2026"))
+    html = keep_fractions(html)
     out_html = os.path.join(HERE, "out", os.path.basename(spec["out"]).replace(".pdf", ".html"))
     os.makedirs(os.path.dirname(out_html), exist_ok=True)
     open(out_html, "w", encoding="utf-8").write(html)
