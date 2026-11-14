@@ -49,6 +49,12 @@
     });
   });
 
+  /* a link that names a machine (?m=bt26, from the Mailchimp campaign: the owner, Nov 14 2026) chooses it in the form */
+  try {
+    var want = new URLSearchParams(location.search).get("m"), msel = form.querySelector("select[name='machines[]']");
+    if (want && msel && /^[a-z0-9-]{1,60}$/.test(want) && msel.querySelector("option[value='" + want + "']")) msel.value = want;
+  } catch (e) {}
+
   var ts = form.querySelector("input[name=ts]");
   if (ts) ts.value = String(Math.floor(Date.now() / 1000));
   var status = form.querySelector(".form-status");
