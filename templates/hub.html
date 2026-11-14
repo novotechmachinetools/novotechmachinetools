@@ -61,7 +61,7 @@
 </section>
 {% endfor %}
 {% else %}
-<section class="wrap subpages" aria-label="Rebar machinery pages">
+<section class="wrap subpages" aria-label="{{ page.nav_label or page.h1 }} pages">
   {% set n_cards = page.subpages|length + (page.extra_cards or [])|length %}
   <ul class="subpage-grid{{ ' is-4' if n_cards == 4 else (' is-2' if n_cards == 2 else '') }}">
     {% for sp in page.subpages %}{% set im = img(sp.image) %}

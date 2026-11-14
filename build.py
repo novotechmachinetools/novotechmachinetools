@@ -269,6 +269,66 @@ def build_bandsaw_table(spec):
     return {"models": names, "rows": rows}
 
 
+# ---------------------------------------------------------------- band saws: standard / optional equipment by model
+# (the owner, Nov 13 2026: "the standard and optional accessories are on Bekamak's own site but not on ours — add a section to
+# the spec table: the features down the left and, for every model, a tick if it has it, a cross if it does not").
+# Bekamak: "model_features" (the Standard / Optional Features tabs of every model on bekamak.com).  Captions that name the
+# same part in different words on different models are merged, so a model is not marked as lacking a part it has; the band
+# blade rows are left out (the blade size is a row of the spec table).  Other saws: "equipment" in the family data.
+EQUIP_SAME = {
+    "chip brush": "Blade brush", "coolant pump (boron oil)": "Coolant pump", "2° inclined head": "2° inclined blade",
+    "cutting pressure control": "Cutting pressure adjustment", "material length stop rod": "Material length stop",
+    "cutting speed indicator": "Cutting speed display", "hydraulic vise cylinder": "Hydraulic vise",
+    "blade deviation sensor": "Blade deflection control", "double vise": "Second vise", "hydraulic split vise": "Split vise",
+    "motorized chip brush": "Motorized swarf brush",
+}
+
+
+def equipment_rows(f, names):
+    """rows for the spec table: [{"label", "cells": ["std" | "opt" | "no" | "na"], "type": "equip"}] and a note, or ([], "")
+    "no": an option the manufacturer lists for other models of the family but not for this one; "na": not listed"""
+    status, order = {}, []          # title -> {model: "std" | "opt"}
+
+    def put(title, model, kind):
+        t = EQUIP_SAME.get(title.lower(), title)
+        if t not in status:
+            status[t] = {}; order.append(t)
+        if status[t].get(model) != "std":
+            status[t][model] = kind
+
+    listed = []
+    if f.get("model_features"):
+        for mf in f["model_features"]:
+            if mf["model"] not in names:
+                continue
+            listed.append(mf["model"])
+            for kind, k in (("standard", "std"), ("optional", "opt")):
+                for it in mf[kind]:
+                    if not it["title"].lower().startswith("band saw blade"):
+                        put(it["title"], mf["model"], k)
+    elif f.get("equipment"):
+        listed = list(names)
+        for kind, k in (("standard", "std"), ("optional", "opt")):
+            for it in f["equipment"].get(kind) or []:
+                title, models = (it, names) if isinstance(it, str) else (it["title"], it.get("models") or names)
+                for m in models:
+                    put(title, m, k)
+    if not order:
+        return [], ""
+    is_option = {t: any(v == "opt" for v in status[t].values()) for t in order}
+    n_std = lambda t: sum(1 for v in status[t].values() if v == "std")
+    # the parts every saw has first (standard on the most models), the options after them
+    pos = {t: i for i, t in enumerate(order)}
+    order.sort(key=lambda t: (1 if n_std(t) == 0 else 0, -n_std(t) if n_std(t) else -len(status[t]), pos[t]))
+    rows = []
+    for t in order:
+        cells = [(status[t].get(m) or ("no" if is_option[t] else "na")) if m in listed else "na" for m in names]
+        rows.append({"label": t, "cells": cells, "type": "equip"})
+    missing = [m for m in names if m not in listed]
+    note = ("The manufacturer publishes no equipment list for the " + " · ".join(missing) + " — ask us for it.") if missing else ""
+    return rows, note
+
+
 def bandsaw_round0(m):
     try:
         return m["capacity_mm"]["0"]["round"] or 0
@@ -764,13 +824,15 @@ if os.path.exists(_vd):
 # used as they are; a bare date (a video's "upload_date", or the old default) becomes midday Mississauga time that day.
 TORONTO = ZoneInfo("America/Toronto")
 VIDEO_PUBLISHED = {}
+VIDEO_APPROX = {}          # the channel's Videos tab: "3 weeks ago", "2 years ago" turned into a date (tools/video_dates.json "approx")
 if os.path.exists(_vd):
     for _sec in ("anchors", "shorts", "dates"):
         VIDEO_PUBLISHED.update(json.load(open(_vd, encoding="utf-8")).get(_sec) or {})
+    VIDEO_APPROX = json.load(open(_vd, encoding="utf-8")).get("approx") or {}
 
 
 def upload_datetime(v):
-    t = (VIDEO_PUBLISHED.get(v.get("id")) or v.get("upload_date") or "2023-12-26").strip()
+    t = (VIDEO_PUBLISHED.get(v.get("id")) or v.get("upload_date") or VIDEO_APPROX.get(v.get("id")) or "2023-12-26").strip()
     if "T" not in t:
         return datetime.datetime.fromisoformat(t + "T12:00:00").replace(tzinfo=TORONTO).isoformat()
     dt = datetime.datetime.fromisoformat(t.replace("Z", "+00:00"))
@@ -826,6 +888,12 @@ def prepare_family(f):
         f["model_caps"] = {**(f["specs"].get("caps") or {}), **(f.get("model_caps") or {})}
     elif f.get("specs") and f["specs"].get("kind") == "bandsaw":
         f["table"] = build_bandsaw_table(f["specs"])
+        eq_rows, eq_note = equipment_rows(f, f["table"]["models"])
+        if eq_rows:
+            f["table"]["rows"] += [{"label": "Standard and optional equipment", "type": "section"}] + eq_rows
+            f["table"]["equip_note"] = eq_note
+            f["table"]["has_no"] = any("no" in r["cells"] for r in eq_rows)
+            f["table"]["has_na"] = any("na" in r["cells"] for r in eq_rows)
         rounds = [bandsaw_round0(m) for m in f["specs"]["models"]]
         f["max_mm"] = max(rounds) if rounds else 0
         lo = min(r for r in rounds if r) if any(rounds) else 0

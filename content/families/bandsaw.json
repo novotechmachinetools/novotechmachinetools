@@ -753,7 +753,7 @@
        "-45": {
         "round": 320,
         "rect": [
-         340,
+         300,
          320
         ],
         "square": 300
@@ -785,7 +785,7 @@
       ],
       "feed_length_mm": null,
       "other": {},
-      "notes": "No +60 degree row is printed for this model (only -60). Height is printed as 2140 mm, taller than the 440DGH (1870 mm); kept as printed."
+      "notes": "No +60 degree row is printed for this model (only -60). Height is printed as 2140 mm, taller than the 440DGH (1870 mm); kept as printed. Nov 13 2026: -45 degree rectangle set to 300 x 320 mm as on bekamak.com (the catalogue prints 340 x 320 mm); the smaller figure is shown until Bekamak confirms."
      },
      {
       "name": "BMSY 360DGH",
@@ -6044,7 +6044,7 @@
       "name": "BMSO 825C",
       "capacity_mm": {
        "0": {
-        "round": 900,
+        "round": 825,
         "rect": [
          900,
          790
@@ -6074,7 +6074,7 @@
        "Feed Motor": "0.55 kW",
        "Chip Conveyor Motor": "0.25 kW"
       },
-      "notes": "Table headed 'BMSO 825C' but the p24 model list says 'BMSO 810C'. Printed 0° round capacity is 900 mm (not 825), rectangle 900x790 mm, square 790 mm. Band printed as '8400 x 41 x 1,3 mm' (41 mm wide, unlike the 54 mm band of the BMSY 825C). Cutting speed printed 20 - 100 m/min. Weight printed as '3500 Kg'. This table uses decimal points (1.5 / 0.55 / 0.12 / 0.25 kW) where the others use commas. Reproduced as printed - confirm with Bekamak."
+      "notes": "Table headed 'BMSO 825C' but the p24 model list says 'BMSO 810C'. Printed 0° round capacity is 900 mm (not 825), rectangle 900x790 mm, square 790 mm. Band printed as '8400 x 41 x 1,3 mm' (41 mm wide, unlike the 54 mm band of the BMSY 825C). Cutting speed printed 20 - 100 m/min. Weight printed as '3500 Kg'. This table uses decimal points (1.5 / 0.55 / 0.12 / 0.25 kW) where the others use commas. Reproduced as printed - confirm with Bekamak. Nov 13 2026: round capacity set to 825 mm as on bekamak.com (the catalogue prints 900 mm, more than the 790 mm the saw passes in height and at odds with the model name and the BMSY 825C)."
      }
     ]
    },
@@ -9194,6 +9194,18 @@
       }
      }
     ]
+   },
+   "equipment": {
+    "standard": [
+     "Servo bow feed (two servo motors)",
+     "Servo material feed, 27-1/2 ft (8.4 m) stroke",
+     "MES production-management software",
+     "Vises that hold the cut piece for safe unloading",
+     "Hydraulic chip brush",
+     "Spiral and bottom chip conveyors",
+     "Coolant radiator"
+    ],
+    "optional": []
    }
   },
   "bekamak-bmsy-460vg": {
@@ -9326,6 +9338,31 @@
       "notes": ""
      }
     ]
+   },
+   "equipment": {
+    "standard": [
+     "Powered frame rotation ±60°, angle set on the control panel",
+     "Hydraulic vise",
+     "Cutting pressure adjustment",
+     "Automatic bow return",
+     "Inverter — variable blade speed",
+     "Hydro-mechanical blade tension",
+     "Safety switch",
+     "Linear guides",
+     "Optical bow height adjustment",
+     "Cutting width adjustment lever",
+     "5° inclined blade",
+     "Blade brush",
+     "Coolant pump",
+     "Heavy-duty gearbox"
+    ],
+    "optional": [
+     "Servo motor on the feeder",
+     "Motorized chip conveyor",
+     "Hydraulic top clamp",
+     "Micro-spray lubrication",
+     "Laser line pointer"
+    ]
    }
   },
   "bekamak-bmsy-613vt": {
@@ -9406,6 +9443,18 @@
       "notes": ""
      }
     ]
+   },
+   "equipment": {
+    "standard": [
+     "Servo cutting feed",
+     "Inverter — variable blade speed",
+     "Hydraulic blade tension",
+     "Planetary gearbox",
+     "Coolant pump"
+    ],
+    "optional": [
+     "Chip conveyor"
+    ]
    }
   },
   "bekamak-vb-0814-8": {
@@ -9480,6 +9529,14 @@
       "notes": ""
      }
     ]
+   },
+   "equipment": {
+    "standard": [
+     "MES production-management software",
+     "Chip conveyor",
+     "Coolant system"
+    ],
+    "optional": []
    }
   },
   "bekamak-cross-0626vt": {
@@ -9560,6 +9617,16 @@
       "notes": ""
      }
     ]
+   },
+   "equipment": {
+    "standard": [
+     "Feeder motor with servo positioning",
+     "Programmed cut lengths",
+     "Blade brush",
+     "Chip conveyor",
+     "Coolant pump"
+    ],
+    "optional": []
    }
   },
   "novotech-bs-315gf": {
@@ -9691,6 +9758,22 @@
        "250": "10″"
       }
      }
+    ]
+   },
+   "equipment": {
+    "standard": [
+     "Hydraulic clamping vise",
+     "Hydraulic down-feed with variable feed rate",
+     "Hydraulic bow lift",
+     "Angle stops at 30°, 45° and 60°",
+     "Inverter — variable blade speed",
+     "Electro-mechanical blade tensioner with microswitch",
+     "Blade and flywheel safety guards",
+     "Coolant system"
+    ],
+    "optional": [
+     "Roller stand with length stop",
+     "Extra blades"
     ]
    }
   },
@@ -9839,6 +9922,24 @@
       "notes": ""
      }
     ]
+   },
+   "equipment": {
+    "standard": [
+     "Hydraulic clamping vise",
+     "Hydraulic bow descent",
+     "Quick-lock swivel, left and right",
+     "Inverter — variable blade speed",
+     {
+      "title": "Movable control panel",
+      "models": [
+       "BS-460G-JC"
+      ]
+     }
+    ],
+    "optional": [
+     "PLC control",
+     "Roller stands"
+    ]
    }
   },
   "novotech-bs-2114th": {
@@ -9916,6 +10017,18 @@
       },
       "notes": ""
      }
+    ]
+   },
+   "equipment": {
+    "standard": [
+     "Automatic bow descent and return (hydraulic)",
+     "Inverter — variable blade speed",
+     "Sintered-carbide blade guides",
+     "Quick-clamp sliding vise",
+     "Coolant pump"
+    ],
+    "optional": [
+     "Roller stand with length stop"
     ]
    }
   },
@@ -10007,6 +10120,18 @@
       "notes": ""
      }
     ]
+   },
+   "equipment": {
+    "standard": [
+     "Automatic cutting cycle",
+     "Hydraulic clamping vise",
+     "Digital read-out of the feed position",
+     "Inverter — variable blade speed",
+     "Movable control panel"
+    ],
+    "optional": [
+     "Roller conveyors"
+    ]
    }
   },
   "novotech-bs-5030": {
@@ -10075,6 +10200,20 @@
       },
       "notes": ""
      }
+    ]
+   },
+   "equipment": {
+    "standard": [
+     "PLC control with touch screen",
+     "Hydraulic clamping vise",
+     "Variable hydraulic down-feed",
+     "Blade overload protection",
+     "Bearing and carbide blade guides",
+     "Four blade speeds",
+     "Work light"
+    ],
+    "optional": [
+     "Roller stands"
     ]
    }
   },
@@ -10205,6 +10344,24 @@
       "notes": ""
      }
     ]
+   },
+   "equipment": {
+    "standard": [
+     "Roller feeding with automatic cycle",
+     "Piece counter",
+     "Hydraulic clamping vise",
+     "Inverter — variable blade speed",
+     {
+      "title": "Miter cutting 0° – 60°",
+      "models": [
+       "BS300x370H"
+      ]
+     }
+    ],
+    "optional": [
+     "Roller conveyors",
+     "Extra blades"
+    ]
    }
   },
   "novotech-bs-460gb": {
@@ -10297,6 +10454,19 @@
       "notes": ""
      }
     ]
+   },
+   "equipment": {
+    "standard": [
+     "Automatic feeding and clamping",
+     "PLC control",
+     "20 ft material stand",
+     "Safety guard net",
+     "Inverter — variable blade speed"
+    ],
+    "optional": [
+     "Servo motor for the blade drive",
+     "Extra stands and supports"
+    ]
    }
   },
   "novotech-bs-650g": {
@@ -10380,6 +10550,21 @@
       "notes": ""
      }
     ]
+   },
+   "equipment": {
+    "standard": [
+     "Automatic swivel to 60° right",
+     "NC feeding with linear scale",
+     "Automatic clamping",
+     "Servo blade drive, stepless speed",
+     "Swivelling control panel",
+     "Work light",
+     "Chip extraction",
+     "Coolant system"
+    ],
+    "optional": [
+     "Material supports and roller conveyors"
+    ]
    }
   },
   "novotech-bs-5040": {
@@ -10449,6 +10634,20 @@
       },
       "notes": ""
      }
+    ]
+   },
+   "equipment": {
+    "standard": [
+     "Hydraulic shuttle-vise feeding",
+     "Bundle clamping device",
+     "PLC control with touch screen",
+     "Automatic chip conveyor",
+     "Four blade speeds",
+     "Work light",
+     "Coolant system"
+    ],
+    "optional": [
+     "Roller conveyors"
     ]
    }
   },
@@ -10523,6 +10722,21 @@
       },
       "notes": ""
      }
+    ]
+   },
+   "equipment": {
+    "standard": [
+     "Automatic feed with hydraulic shuttle vise",
+     "3-position vise for bundle cutting",
+     "Inverter — variable blade speed",
+     "Automatic chip conveyor",
+     "Work light",
+     "Coolant system",
+     "Material stand"
+    ],
+    "optional": [
+     "Roller stand",
+     "Extra blades"
     ]
    }
   },
@@ -10685,6 +10899,19 @@
       "notes": ""
      }
     ]
+   },
+   "equipment": {
+    "standard": [
+     "CNC / PLC automatic feeding and clamping",
+     "Hydraulic vises",
+     "Servo motor for stepless blade speed",
+     "Work light",
+     "Chip extraction",
+     "Coolant system"
+    ],
+    "optional": [
+     "Material supports and roller conveyors"
+    ]
    }
   },
   "novotech-tbk-4228": {
@@ -10814,6 +11041,27 @@
       "notes": ""
      }
     ]
+   },
+   "equipment": {
+    "standard": [
+     "Hydraulic variable down-feed",
+     "Hydraulic clamping",
+     "Auto shut-off at the end of the cut",
+     "Three blade speeds (belt drive)",
+     "Work light",
+     "Coolant system",
+     "Material stand",
+     {
+      "title": "Miter cutting to 45°",
+      "models": [
+       "TBK-4228A"
+      ]
+     }
+    ],
+    "optional": [
+     "Roller stand",
+     "Extra blades"
+    ]
    }
   },
   "novotech-tgk-4235": {
@@ -10923,6 +11171,21 @@
       "notes": ""
      }
     ]
+   },
+   "equipment": {
+    "standard": [
+     "Hydraulic variable down-feed",
+     "Hydraulic clamping",
+     "Hydraulic blade tensioning",
+     "Inverter — variable blade speed",
+     "Work light",
+     "Coolant pump",
+     "Material stand"
+    ],
+    "optional": [
+     "Three-position hydraulic clamping vise",
+     "Roller stands"
+    ]
    }
   },
   "novotech-gz4250": {
@@ -11023,6 +11286,23 @@
       },
       "notes": ""
      }
+    ]
+   },
+   "equipment": {
+    "standard": [
+     "Hydraulic clamping",
+     "Variable blade speed",
+     "Powered roller table with chain drive",
+     {
+      "title": "Hydraulic blade tensioning",
+      "models": [
+       "GZ4260/120"
+      ]
+     }
+    ],
+    "optional": [
+     "Roller conveyors",
+     "Bundle clamping"
     ]
    }
   },
@@ -11189,6 +11469,21 @@
       },
       "notes": ""
      }
+    ]
+   },
+   "equipment": {
+    "standard": [
+     "Inverter — variable blade speed",
+     "Built-in blade welder with annealing",
+     "Blade grinder",
+     "Tilting table",
+     "Table gauge",
+     "Adjustable blade guard",
+     "Work light"
+    ],
+    "optional": [
+     "Servo-driven table feed",
+     "Extra blades in several widths and pitches"
     ]
    }
   },

@@ -68,7 +68,7 @@
 <div class="specs" id="{{ f.id }}-specs">
   <section class="table-scroll" tabindex="0" aria-label="{{ f.name }} technical specifications">
     <table class="spec-table">
-      <caption>{{ f.name }} — technical specifications and capacities</caption>
+      <caption>{{ f.name }} — technical specifications{{ ', capacities and standard / optional equipment' if t.equip_note is defined else ' and capacities' }}</caption>
       <thead>
         <tr>
           <th scope="col" class="label-col">Model</th>
@@ -77,6 +77,15 @@
       </thead>
       <tbody>
         {% for r in t.rows %}
+        {% if r.type == 'section' %}
+        {# standard / optional equipment by model, under the sizes (the owner, Nov 13 2026) #}
+        <tr class="row-section" id="{{ f.id }}-equipment"><th scope="colgroup" colspan="{{ t.models|length + 1 }}">{{ r.label }}</th></tr>
+        {% elif r.type == 'equip' %}
+        <tr class="row-equip">
+          <th scope="row">{{ r.label }}</th>
+          {% for c in r.cells %}<td>{% if c == 'std' %}<span class="eq eq-std" aria-hidden="true">✓</span><span class="sr-only">Standard</span>{% elif c == 'opt' %}<span class="eq eq-opt">Optional</span>{% elif c == 'no' %}<span class="eq eq-no" aria-hidden="true">✗</span><span class="sr-only">Not offered</span>{% else %}<span class="eq eq-na" aria-hidden="true">–</span><span class="sr-only">Not listed</span>{% endif %}</td>{% endfor %}
+        </tr>
+        {% else %}
         <tr class="{{ 'row-cap' if r.type == 'cap' or r.cap else 'row-text' }}">
           <th scope="row">{{ r.label }}{% if r.sub %}<small>{{ r.sub }}</small>{% endif %}</th>
           {% for c in r.cells %}
@@ -89,10 +98,12 @@
           </td>
           {% endfor %}
         </tr>
+        {% endif %}
         {% endfor %}
       </tbody>
     </table>
   </section>
+  {% if t.equip_note is defined %}<p class="table-note equip-legend"><span class="eq eq-std" aria-hidden="true">✓</span> standard · <span class="eq eq-opt">Optional</span> at extra cost{% if t.has_no %} · <span class="eq eq-no" aria-hidden="true">✗</span> not in the manufacturer's option list for that model{% endif %}{% if t.has_na %} · <span class="eq eq-na" aria-hidden="true">–</span> not listed for that model{% endif %}. {{ t.equip_note }}</p>{% endif %}
   <p class="table-note">{% if f.specs.kind == 'bandsaw' %}Capacities are the largest stock the saw passes at the stated angle, converted from the manufacturer's metric data and rounded to the nearest 1/8″. Blade size is length × width × thickness. {{ site.voltage_note }}{% else %}Single-bar capacity shows the largest Canadian metric bar / US bar number that fits. Dimensions are overall W × L × H. {{ site.voltage_note }}{% endif %}</p>
 </div>
 {%- endmacro %}

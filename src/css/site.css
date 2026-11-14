@@ -468,6 +468,16 @@ ul.family-cards { --cvx: 8px; margin-inline: calc(-1 * var(--cvx)); padding-inli
 .spec-table tbody th, .spec-table thead th.label-col { position: sticky; left: 0; z-index: 1; }
 .spec-table tbody th { box-shadow: 1px 0 0 var(--line); }
 .table-note { font-size: 14px; color: var(--steel); margin: 8px 0 0; max-width: 50.85em; }
+/* band saws: standard / optional equipment by model, a section of the spec table (Nov 13 2026) */
+.spec-table tbody tr.row-section th { position: static; max-width: none; background: var(--charcoal-2); color: #fff; font-family: var(--cond); font-weight: 600; font-size: 18px; letter-spacing: .01em; padding: 8px 12px; box-shadow: none; }
+.spec-table tbody tr.row-equip th { border-left: 5px solid var(--line); font-weight: 500; }
+.spec-table tr.row-equip td { white-space: nowrap; padding-top: 6px; padding-bottom: 6px; }
+.eq { display: inline-block; font-weight: 700; line-height: 1.2; }
+.eq-std { color: #1B7A3D; font-size: 1.35em; line-height: 1; }
+.eq-opt { color: var(--orange-ink); font-weight: 600; font-size: .9em; border: 1px solid currentColor; border-radius: 3px; padding: 0 5px; }
+.eq-no { color: #A12A2A; font-size: 1.25em; line-height: 1; }
+.eq-na { color: var(--steel); font-weight: 400; }
+.equip-legend .eq-opt { font-size: 12.5px; }
 
 /* ---------- why / standard features ---------- */
 .why { background: var(--charcoal); color: #fff; padding: 46px 0 36px; margin-top: 30px; }
