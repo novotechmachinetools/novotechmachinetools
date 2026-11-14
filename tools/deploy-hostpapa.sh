@@ -12,6 +12,9 @@
 # repository_root ("Update from Remote" + "Deploy HEAD Commit"). The cPanel host name and user name are kept only in the
 # private ~/.hp, never in this public repository (the owner, Nov 14 2026).
 # The cloud workspace cannot reach port 2083 itself (HostPapa resets the connection).
+# Since Nov 14 2026 the server also pulls by itself: cron runs ~/novotech-autodeploy.sh every 5 minutes, which does
+# "Update from Remote" + "Deploy HEAD Commit" whenever the hostpapa branch has a new build (log: ~/novotech-autodeploy.log),
+# so pushing the branch is enough — the build is live within about 5 minutes.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 MODE="${1:-staging}"
