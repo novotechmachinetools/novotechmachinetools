@@ -5,19 +5,36 @@
   "use strict";
   var d = document;
 
-  /* countdown to the end of the sale */
+  /* countdown to the end of the sale: days, hours, minutes and seconds, ticking every second (the owner, Nov 14 2026) */
   var cnt = d.querySelector("[data-bf-end]");
   if (cnt) {
-    var END = Date.parse(cnt.getAttribute("data-bf-end"));
-    var out = cnt.querySelector("[data-bf-count]");
+    var END = Date.parse(cnt.getAttribute("data-bf-end")), timer = 0;
+    var pad = function (n) { return (n < 10 ? "0" : "") + n; };
+    var set = function (sel, v) { var el = cnt.querySelector(sel); if (el && el.textContent !== v) el.textContent = v; };
     var tick = function () {
       var ms = END - Date.now();
-      if (!(ms > 0)) { cnt.textContent = "The Black Friday sale has ended."; return false; }
-      var dd = Math.floor(ms / 864e5), h = Math.floor(ms % 864e5 / 36e5), m = Math.floor(ms % 36e5 / 6e4);
-      out.textContent = dd >= 1 ? dd + (dd === 1 ? " day " : " days ") + h + " h" : h + " h " + m + " min";
+      if (!(ms > 0)) {
+        clearInterval(timer);
+        cnt.innerHTML = '<p class="bf-count-label">The Black Friday sale has ended.</p>';
+        return false;
+      }
+      set("[data-cd-d]", pad(Math.floor(ms / 864e5))); set("[data-cd-h]", pad(Math.floor(ms % 864e5 / 36e5)));
+      set("[data-cd-m]", pad(Math.floor(ms % 36e5 / 6e4))); set("[data-cd-s]", pad(Math.floor(ms % 6e4 / 1e3)));
       return true;
     };
-    if (tick()) setInterval(tick, 30000);
+    var start = function () { clearInterval(timer); if (tick()) timer = setInterval(tick, 1000); };
+    d.addEventListener("visibilitychange", function () { if (d.hidden) clearInterval(timer); else start(); });
+    start();
+  }
+
+  /* the category chips: the one whose machines are on screen is marked */
+  var chips = d.querySelectorAll(".bf-cats a");
+  if (chips.length && "IntersectionObserver" in window) {
+    var mark = function (id) { chips.forEach(function (a) { a.classList.toggle("is-current", a.getAttribute("href") === "#" + id); }); };
+    var cio = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) mark(e.target.id); });
+    }, { rootMargin: "-45% 0px -50% 0px" });
+    d.querySelectorAll(".bf-cat").forEach(function (s) { cio.observe(s); });
   }
 
   var form = d.querySelector(".bf-form");

@@ -28,17 +28,28 @@
   var quoteUrl = bar.getAttribute("data-quote") || "#reques-a-quote";
   var dlg = null, teaser = null, timer = null, autoDone = false, lastFocus = null;
 
-  function left() {
+  /* the countdown ticks every second (the owner, Nov 14 2026: "a seconds timer, for urgency"): the bar, the popup's strip
+     and its day / hour / minute / second boxes. One timer for the page, paused while the tab is hidden. */
+  function pad(n) { return (n < 10 ? "0" : "") + n; }
+  function parts() {
     var ms = Math.max(0, END - Date.now());
-    var d = Math.floor(ms / 864e5), h = Math.floor(ms % 864e5 / 36e5), m = Math.floor(ms % 36e5 / 6e4);
-    if (d >= 1) return d + (d === 1 ? " day " : " days ") + h + " h";
-    return h + " h " + m + " min";
+    return { d: Math.floor(ms / 864e5), h: Math.floor(ms % 864e5 / 36e5), m: Math.floor(ms % 36e5 / 6e4), s: Math.floor(ms % 6e4 / 1e3) };
   }
+  function inline(p) { return (p.d ? p.d + "d " : "") + pad(p.h) + ":" + pad(p.m) + ":" + pad(p.s); }
+  function set(root, sel, v) { var el = root.querySelector(sel); if (el && el.textContent !== v) el.textContent = v; }
   function tick() {
-    if (!dlg) return;
-    var t = left();
-    dlg.querySelectorAll("[data-promo-count]").forEach(function (el) { el.textContent = t; });
+    var p = parts(), t = inline(p);
+    [bar, dlg].forEach(function (root) {
+      if (!root) return;
+      root.querySelectorAll("[data-promo-tick], [data-promo-count]").forEach(function (el) { if (el.textContent !== t) el.textContent = t; });
+      root.querySelectorAll("[data-cd]").forEach(function (c) {
+        set(c, "[data-cd-d]", pad(p.d)); set(c, "[data-cd-h]", pad(p.h)); set(c, "[data-cd-m]", pad(p.m)); set(c, "[data-cd-s]", pad(p.s));
+      });
+    });
   }
+  function startTicking() { clearInterval(timer); tick(); timer = setInterval(tick, 1000); }
+  document.addEventListener("visibilitychange", function () { if (document.hidden) clearInterval(timer); else startTicking(); });
+  startTicking();
 
   function prefill() {
     var m = document.getElementById("q-message");
@@ -60,7 +71,6 @@
     dlg.addEventListener("click", function (e) { if (e.target === dlg) close(); });   // backdrop (desktop)
     dlg.addEventListener("keydown", function (e) { if (e.key === "Escape" && !dlg.hasAttribute("aria-modal")) close(); });
     dlg.addEventListener("close", function () {
-      clearInterval(timer);
       lset("closed", String(Date.now()));
       showTeaser();
       if (lastFocus && lastFocus.focus) lastFocus.focus();
@@ -71,7 +81,7 @@
     if (!dlg) build();
     if (dlg.open) return;
     lastFocus = document.activeElement;
-    tick(); timer = setInterval(tick, 30000);
+    tick();
     if (teaser) teaser.hidden = true;
     if (phone || typeof dlg.showModal !== "function") {
       dlg.classList.add("is-sheet");

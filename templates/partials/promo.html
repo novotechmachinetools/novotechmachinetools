@@ -4,7 +4,7 @@
 {% set qhref = page.quote_href or p.deals_url or p.quote_url or ('contact-us.html#reques-a-quote' if page.no_quote else '#reques-a-quote') %}
 <div class="promo-bar" id="promo-bar" data-start="{{ p.start }}" data-end="{{ p.end }}" data-quote="{{ qhref }}"{% if p.deals_url %} data-deals="1"{% endif %}>
   <div class="wrap promo-bar-row">
-    <p class="promo-bar-text"><b class="promo-tag">Black Friday</b><span class="promo-long">Sale prices on in-stock machines <i aria-hidden="true">·</i> 5% off factory orders <i aria-hidden="true">·</i> 100% write-off*</span><span class="promo-short">Stock deals + 5% off factory orders</span><span class="promo-ends"><i aria-hidden="true">·</i> Ends Dec 4</span></p>
+    <p class="promo-bar-text"><b class="promo-tag">Black Friday</b><span class="promo-long">Sale prices on in-stock machines <i aria-hidden="true">·</i> 5% off factory orders <i aria-hidden="true">·</i> 100% write-off*</span><span class="promo-short">Stock deals + 5% off factory orders</span><span class="promo-ends"><i aria-hidden="true">·</i> <span class="sr-only">Ends Dec 4</span><span aria-hidden="true">Ends in <b class="promo-tick" data-promo-tick>Dec 4</b></span></span></p>
     <button type="button" class="promo-bar-cta" data-promo-open aria-haspopup="dialog">See the deals<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
   </div>
 </div>
@@ -33,7 +33,10 @@
       <a class="btn btn-primary promo-go" data-promo-quote href="{{ qhref }}">{{ "See the Black Friday deals" if p.deals_url and not page.quote_href else "Get my Black Friday quote" }}</a>
       <a class="promo-call" href="tel:{{ site.phone_tel }}">or call {{ site.phone }}</a>
     </div>
-    <p class="promo-count">Sale ends in <strong data-promo-count>Dec 4</strong></p>
+    <div class="promo-count"><span class="promo-count-label">Sale ends in</span>
+      <div class="cd cd-sm" data-cd role="timer" aria-hidden="true"><span class="cd-u"><b data-cd-d>--</b><i>days</i></span><span class="cd-u"><b data-cd-h>--</b><i>hours</i></span><span class="cd-u"><b data-cd-m>--</b><i>min</i></span><span class="cd-u cd-s"><b data-cd-s>--</b><i>sec</i></span></div>
+      <span class="sr-only">December 4, 2026, 11:59 pm Eastern time</span>
+    </div>
     <p class="promo-fine">*Federal immediate expensing: machinery used in Canada mainly to manufacture or process goods for sale or lease, deducted for the tax year it becomes available for use. Ontario Made Manufacturing Investment Tax Credit: eligible Ontario corporations. Ask your accountant whether your business qualifies. Offer ends Dec 4, 2026, 11:59 pm ET; in-stock prices while quantities last.</p>
     <p class="promo-fine-short">*Eligible equipment and businesses — ask your accountant. Ends Dec 4, 11:59 pm ET.</p>
   </div>

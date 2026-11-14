@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% from "partials/macros.html" import gallery, video with context %}
 {# Black Friday 2026 (content/pages/black-friday-machinery-sale.json): the in-stock machines with their photos and specifications,
    no prices — "Get instant QUOTE" sends the form to bf-quote.php, which checks the buyer and e-mails the private price list
    (the owner, Nov 13 2026). #}
@@ -16,15 +17,21 @@
       <p class="bf-eyebrow"><b>Black Friday</b> Nov 16 – Dec 4, 2026</p>
       <h1>{{ page.h1 }}</h1>
       <p class="lead">{{ page.intro }}</p>
-      <p class="bf-count" data-bf-end="{{ promo.end or '2026-12-04T23:59:59-05:00' }}">Sale ends in <strong data-bf-count>Dec 4, 11:59 pm ET</strong></p>
+      <div class="bf-count" data-bf-end="{{ promo.end or '2026-12-04T23:59:59-05:00' }}">
+        <p class="bf-count-label" data-bf-count-label>Sale ends in</p>
+        <div class="cd" data-cd role="timer" aria-hidden="true">
+          <span class="cd-u"><b data-cd-d>--</b><i>days</i></span><span class="cd-u"><b data-cd-h>--</b><i>hours</i></span><span class="cd-u"><b data-cd-m>--</b><i>min</i></span><span class="cd-u cd-s"><b data-cd-s>--</b><i>sec</i></span>
+        </div>
+        <p class="sr-only">The sale ends on Friday, December 4, 2026, at 11:59 pm Eastern time.</p>
+      </div>
       <div class="bf-ctas">
         <a class="btn btn-primary bf-go" href="#instant-quote">Get instant QUOTE</a>
         <a class="btn bf-ghost" href="#in-stock">See in-stock machines</a>
       </div>
     </div>
     <div class="bf-hero-art" aria-hidden="true">
-      {% for x in items[:2] if x.img %}
-      <img class="bf-hero-m bf-hero-m{{ loop.index }}" src="{{ x.img.small }}" srcset="{{ x.img.srcset }}" sizes="(max-width: 900px) 70vw, 560px" width="{{ x.img.w }}" height="{{ x.img.h }}" alt=""{% if loop.first %} fetchpriority="high"{% else %} loading="lazy"{% endif %} decoding="async">
+      {% for k in page.hero_art or [] %}{% set x = img(k) %}
+      <img class="bf-hero-m bf-hero-m{{ loop.index }}" src="{{ x.small }}" srcset="{{ x.srcset }}" sizes="(max-width: 900px) 70vw, 560px" width="{{ x.w }}" height="{{ x.h }}" alt=""{% if loop.first %} fetchpriority="high"{% else %} loading="lazy"{% endif %} decoding="async">
       {% endfor %}
     </div>
   </div>
@@ -42,30 +49,64 @@
 <section class="wrap bf-stock" id="in-stock" aria-labelledby="bf-stock-title">
   <div class="bf-head">
     <h2 id="bf-stock-title">In-stock machinery for sale in Mississauga, ON</h2>
-    <p>{{ items | length }} machine{{ '' if items | length == 1 else 's' }} at Black Friday prices. Click <b>Get instant QUOTE</b> and the price list with the full specifications is emailed to you within minutes.</p>
+    <p>{{ items | length }} machines at Black Friday prices, with photos, videos and the full description of each one. Click <b>Get instant QUOTE</b> and the price list is emailed to you within minutes.</p>
   </div>
-  <ul class="bf-grid">
-    {% for x in items %}
-    <li class="bf-card" id="stock-{{ x.id }}">
-      <div class="bf-card-art{{ ' is-cutout' if x.img and x.img.alpha else '' }}">
-        <span class="bf-tag">In stock{% if x.qty and x.qty > 1 %} · {{ x.qty }} units{% endif %}</span>
-        {% if x.img %}<img src="{{ x.img.small }}" srcset="{{ x.img.srcset }}" sizes="(max-width: 640px) 92vw, (max-width: 1100px) 45vw, 420px" width="{{ x.img.w }}" height="{{ x.img.h }}" alt="{{ x.name }} {{ x.type | lower }}" loading="lazy" decoding="async">{% endif %}
-      </div>
-      <div class="bf-card-body">
-        <p class="bf-line">{{ x.brand }}{% if x.line %} · {{ x.line | lower }}{% endif %}{% if x.condition and x.condition != 'New' %} · {{ x.condition }}{% endif %}</p>
-        <h3>{{ x.model }}</h3>
-        <p class="bf-type">{{ x.type }}</p>
-        {% if x.specs %}<dl class="bf-specs">{% for r in x.specs %}<div><dt>{{ r.label }}</dt><dd>{{ r.value }}</dd></div>{% endfor %}</dl>{% endif %}
-        {% if x.highlights %}<ul class="bf-highlights">{% for h in x.highlights %}<li>{{ h }}</li>{% endfor %}</ul>{% endif %}
-        {% if x.note %}<p class="bf-note">{{ x.note }}</p>{% endif %}
-        <div class="bf-card-ctas">
-          <a class="btn btn-primary bf-go" href="#instant-quote" data-bf-pick="{{ x.id }}">Get instant QUOTE</a>
-          {% if x.href %}<a class="bf-more" href="{{ x.href }}">Full specifications and videos</a>{% endif %}
+  <nav class="bf-cats" aria-label="Machine types">
+    <ul>{% for c in page.stock_groups %}<li><a href="#cat-{{ c.id }}">{{ c.title }} <span>{{ c['items'] | length }}</span></a></li>{% endfor %}</ul>
+  </nav>
+  {% for c in page.stock_groups %}
+  <section class="bf-cat" id="cat-{{ c.id }}" aria-labelledby="cat-{{ c.id }}-title">
+    <h3 class="bf-cat-title" id="cat-{{ c.id }}-title">{{ c.title }}</h3>
+    {% for x in c['items'] %}
+    <article class="family cv bf-item{{ ' no-media' if not x.imgs else '' }}" id="stock-{{ x.id }}" aria-labelledby="t-{{ x.id }}">
+      <header class="bf-item-head">
+        <p class="bf-item-meta"><span class="bf-status{{ ' is-back' if x.status == 'back' else '' }}">{{ x.status_text }}</span>{% if x.brand_name %}<span class="bf-line">{{ x.brand_name }}{% if x.line %} · {{ x.line | lower }}{% endif %}</span>{% endif %}</p>
+        <h4 class="family-name bf-title" id="t-{{ x.id }}">{{ x.title }}</h4>
+        {% if x.sub %}<p class="nameplate"><span>{{ x.sub }}</span></p>{% endif %}
+      </header>
+      <div class="family-grid">
+        {% if x.imgs %}<div class="family-media">{{ gallery(x.imgs, 'g-' ~ x.id) }}</div>{% endif %}
+        {% if x.vids %}
+        <div class="family-vids">
+          {% set nv = x.vids | length %}
+          {% if nv > 1 %}
+          <div class="vid-carousel" style="--vc-n: {{ nv }}" role="region" aria-roledescription="carousel" aria-label="{{ x.model }} videos ({{ nv }})">
+            <div class="family-videos is-multi vc-track" tabindex="0">{% for v in x.vids %}{{ video(v) }}{% endfor %}</div>
+            <button type="button" class="vc-btn vc-prev" aria-label="Previous videos" disabled></button>
+            <button type="button" class="vc-btn vc-next" aria-label="Next videos"></button>
+            <p class="vc-status" aria-live="polite">Videos 1 – {{ [nv, 3] | min }} of {{ nv }}</p>
+          </div>
+          {% else %}
+          <div class="family-videos bf-one-video">{{ video(x.vids[0]) }}</div>
+          {% endif %}
+        </div>
+        {% endif %}
+        <div class="family-text bf-text">
+          {% if x.capacity %}<p class="bf-capacity"><span>Capacity</span>{{ x.capacity }}</p>{% endif %}
+          {% if x.caps %}<dl class="bf-caps">{% for r in x.caps %}<div><dt>{{ r[0] }}</dt><dd>{{ r[1] }}</dd></div>{% endfor %}</dl>{% endif %}
+          {% if x.about %}<p class="bf-about">{{ x.about }}</p>{% endif %}
+          {% if x.key %}<ul class="bf-key">{% for k in x.key %}<li>{{ k }}</li>{% endfor %}</ul>{% endif %}
+          {% set feats = x.features or [] %}
+          {% if feats %}
+          <ul class="features bf-feat">{% for k in feats[:7] %}<li>{{ k }}</li>{% endfor %}</ul>
+          {% if feats | length > 7 %}<details class="bf-feat-more"><summary>Show all {{ feats | length }} features</summary><ul class="features bf-feat">{% for k in feats[7:] %}<li>{{ k }}</li>{% endfor %}</ul></details>{% endif %}
+          {% endif %}
+          {% if x.optional %}<p class="bf-opt"><b>Optional:</b> {{ x.optional | join('; ') }}</p>{% endif %}
+          {% if x.badges %}<ul class="bf-badges">{% for bd in x.badges %}<li>{{ bd }}</li>{% endfor %}</ul>{% endif %}
+          <div class="bf-item-ctas">
+            <a class="btn btn-primary bf-go" href="#instant-quote" data-bf-pick="{{ x.id }}">Get instant QUOTE</a>
+            <ul class="bf-links">
+              {% if x.href %}<li><a href="{{ x.href }}">Product page</a></li>{% endif %}
+              {% if x.brochure %}<li><a href="{{ x.brochure }}" target="_blank" rel="noopener">Brochure (PDF)</a></li>{% endif %}
+              {% if x.guide %}<li><a href="{{ x.guide }}">Buying guide</a></li>{% endif %}
+            </ul>
+          </div>
         </div>
       </div>
-    </li>
+    </article>
     {% endfor %}
-  </ul>
+  </section>
+  {% endfor %}
   <p class="bf-factory"><b>Need a different size or model?</b> Order any machine from the factory by December 4 and take 5% off, with only 10% down and the balance on delivery. <a href="#instant-quote" data-bf-pick="factory-order">Ask for a factory-order quote</a></p>
 </section>
 
@@ -161,10 +202,12 @@
       </div>
       <fieldset class="field field-wide bf-picks">
         <legend>Machines you are interested in</legend>
-        <div class="bf-pick-list">
-          {% for x in items %}<label class="bf-pick"><input type="checkbox" name="machines[]" value="{{ x.id }}"> <span><b>{{ x.model }}</b> {{ x.type }}</span></label>{% endfor %}
-          <label class="bf-pick"><input type="checkbox" name="machines[]" value="factory-order"> <span><b>Factory order</b> another size or model, 5% off</span></label>
-        </div>
+        {% for c in page.stock_groups %}
+        <p class="bf-pick-cat">{{ c.title }}</p>
+        <div class="bf-pick-list">{% for x in c['items'] %}<label class="bf-pick"><input type="checkbox" name="machines[]" value="{{ x.id }}"> <span><b>{{ x.title }}</b>{% if x.status == 'back' %} <small>back order</small>{% endif %}</span></label>{% endfor %}</div>
+        {% endfor %}
+        <p class="bf-pick-cat">Something else</p>
+        <div class="bf-pick-list"><label class="bf-pick"><input type="checkbox" name="machines[]" value="factory-order"> <span><b>Factory order</b> — another size or model, 5% off</span></label></div>
       </fieldset>
       <div class="field field-wide">
         <label for="bf-message">Anything else? <span class="opt">optional</span></label>

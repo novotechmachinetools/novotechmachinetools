@@ -40707,5 +40707,291 @@
   "trim": false,
   "quality": 72,
   "section": "bandsaw"
+ },
+ "bf-stirrups": {
+  "src": "tools/src-images/black-friday/bf-stirrups.png",
+  "alt": "Rebar stirrups and hooks bent on a B series rebar bender",
+  "section": "black-friday",
+  "trim": true,
+  "cutout": false,
+  "quality": 84
+ },
+ "bf-spiral-ring": {
+  "src": "tools/src-images/black-friday/bf-spiral-ring.png",
+  "alt": "Round stirrup bent with the spiral bending attachment",
+  "section": "black-friday",
+  "trim": true,
+  "cutout": false,
+  "quality": 84
+ },
+ "bf-gw52a": {
+  "src": "tools/src-images/black-friday/bf-gw52a.png",
+  "alt": "GW52 A rebar and stirrup bender",
+  "section": "black-friday",
+  "trim": true,
+  "cutout": false,
+  "quality": 84
+ },
+ "bf-gw52a-panel": {
+  "src": "tools/src-images/black-friday/bf-gw52a-panel.jpg",
+  "alt": "GW52 A control panel with the angle selectors, manual / foot pedal switch and push buttons",
+  "section": "black-friday",
+  "trim": true,
+  "cutout": false,
+  "quality": 84
+ },
+ "bf-gw52a-stirrups": {
+  "src": "tools/src-images/black-friday/bf-gw52a-stirrups.png",
+  "alt": "Square stirrup and U-bar bent on the GW52 A",
+  "section": "black-friday",
+  "trim": true,
+  "cutout": false,
+  "quality": 84
+ },
+ "bf-h45": {
+  "src": "tools/src-images/black-friday/bf-h45.jpg",
+  "alt": "H45 hydraulic rebar cutter",
+  "section": "black-friday",
+  "trim": true,
+  "cutout": false,
+  "quality": 84
+ },
+ "bf-power24": {
+  "src": "tools/src-images/black-friday/bf-power24.jpg",
+  "alt": "POWER24 portable hydraulic rebar cutter",
+  "section": "black-friday",
+  "trim": true,
+  "cutout": false,
+  "quality": 84
+ },
+ "bf-bms270dg": {
+  "src": "tools/src-images/black-friday/bf-bms270dg.jpg",
+  "alt": "BMS 270 DG 10.6″ manual double-miter band saw",
+  "section": "black-friday",
+  "trim": true,
+  "cutout": false,
+  "quality": 84
+ },
+ "bf-bms270dg-panel": {
+  "src": "tools/src-images/black-friday/bf-bms270dg-panel.jpg",
+  "alt": "BMS 270 DG control panel",
+  "section": "black-friday",
+  "trim": true,
+  "cutout": false,
+  "quality": 84
+ },
+ "bf-arg300": {
+  "src": "tools/src-images/black-friday/bf-arg300.jpg",
+  "alt": "ARG 300 PLUS E-F 12″ manual double-miter band saw",
+  "section": "black-friday",
+  "trim": true,
+  "cutout": false,
+  "quality": 84
+ },
+ "bf-arg300-panel": {
+  "src": "tools/src-images/black-friday/bf-arg300-panel.png",
+  "alt": "ARG 300 PLUS E-F control panel and inverter blade-speed dial",
+  "section": "black-friday",
+  "trim": true,
+  "cutout": false,
+  "quality": 84
+ },
+ "bf-bs315gf": {
+  "src": "tools/src-images/black-friday/bf-bs315gf.jpg",
+  "alt": "BS 315 GF 10″ semi-automatic double-miter band saw",
+  "section": "black-friday",
+  "trim": true,
+  "cutout": false,
+  "quality": 84
+ },
+ "bf-bs315gf-panel": {
+  "src": "tools/src-images/black-friday/bf-bs315gf-panel.png",
+  "alt": "BS 315 GF control panel with the hydraulic pressure gauge",
+  "section": "black-friday",
+  "trim": true,
+  "cutout": false,
+  "quality": 84
+ },
+ "bf-bs300-panel": {
+  "src": "tools/src-images/black-friday/bf-bs300-panel.png",
+  "alt": "BS 300x370 control panel and roller feeding",
+  "section": "black-friday",
+  "trim": true,
+  "cutout": false,
+  "quality": 84
+ },
+ "bf-bmso350ga-panel": {
+  "src": "tools/src-images/black-friday/bf-bmso350ga-panel.jpg",
+  "alt": "BMSO 350GA touch-screen NC controller",
+  "section": "black-friday",
+  "trim": true,
+  "cutout": false,
+  "quality": 84
+ },
+ "bf-esr-dro": {
+  "src": "tools/src-images/black-friday/bf-esr-dro.png",
+  "alt": "ESR motorized back roll and digital readout",
+  "section": "black-friday",
+  "trim": true,
+  "cutout": false,
+  "quality": 84
+ },
+ "bf-mrms": {
+  "src": "tools/src-images/black-friday/bf-mrms.jpg",
+  "alt": "MRM-S 1550x150 plate roller with foot pedal",
+  "section": "black-friday",
+  "trim": true,
+  "cutout": false,
+  "quality": 84
+ },
+ "bf-3rhmd": {
+  "src": "tools/src-images/black-friday/bf-3rhmd.jpg",
+  "alt": "3R HMD 1550x90 hydraulic slip roll",
+  "section": "black-friday",
+  "trim": true,
+  "cutout": false,
+  "quality": 84
+ },
+ "bf-hrbm65": {
+  "src": "tools/src-images/black-friday/bf-hrbm65.jpg",
+  "alt": "HRBM 65 hydraulic profile bender",
+  "section": "black-friday",
+  "trim": true,
+  "cutout": false,
+  "quality": 84
+ },
+ "bf-hrbm50-dro": {
+  "src": "tools/src-images/black-friday/bf-hrbm50-dro.png",
+  "alt": "HRBM 50 HV control box with digital readout",
+  "section": "black-friday",
+  "trim": true,
+  "cutout": false,
+  "quality": 84
+ },
+ "bf-rbm50": {
+  "src": "tools/src-images/black-friday/bf-rbm50.jpg",
+  "alt": "RBM 50 HV manual profile bender",
+  "section": "black-friday",
+  "trim": true,
+  "cutout": false,
+  "quality": 84
+ },
+ "bf-rm18e-rollers": {
+  "src": "tools/src-images/black-friday/bf-rm18e-rollers.png",
+  "alt": "RM18E standard and extra roller sets",
+  "section": "black-friday",
+  "trim": true,
+  "cutout": false,
+  "quality": 84
+ },
+ "bf-ckh3150": {
+  "src": "tools/src-images/black-friday/bf-ckh3150.png",
+  "alt": "CKH 3150 portable roofing brake with slitter and casters",
+  "section": "black-friday",
+  "trim": true,
+  "cutout": false,
+  "quality": 84
+ },
+ "bf-ckh-slitter": {
+  "src": "tools/src-images/black-friday/bf-ckh-slitter.jpg",
+  "alt": "CKH roofing brake slitter for cutting sheets",
+  "section": "black-friday",
+  "trim": true,
+  "cutout": false,
+  "quality": 84
+ },
+ "bf-xl1560": {
+  "src": "tools/src-images/black-friday/bf-xl1560.jpg",
+  "alt": "Dener XL 1560 CNC press brake, 5 ft × 66 US tons (60 t)",
+  "section": "black-friday",
+  "trim": true,
+  "cutout": false,
+  "quality": 84
+ },
+ "bf-bk050": {
+  "src": "tools/src-images/black-friday/bf-bk050.png",
+  "alt": "BK-050 rotary draw pipe bender with NC controller",
+  "section": "black-friday",
+  "trim": true,
+  "cutout": false,
+  "quality": 84
+ },
+ "bf-xl220": {
+  "src": "tools/src-images/black-friday/bf-xl220.png",
+  "alt": "Dener XL 40220 CNC mild hybrid press brake, 13 ft × 243 US tons (220 t)",
+  "section": "black-friday",
+  "trim": true,
+  "cutout": false,
+  "quality": 84
+ },
+ "video-Mq2_wXnQCxw": {
+  "src": "/home/claude/gms-site/yt/Mq2_wXnQCxw.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-AsFGExPgx1U": {
+  "src": "/home/claude/gms-site/yt/AsFGExPgx1U.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-m2VMcdrqHKY": {
+  "src": "/home/claude/gms-site/yt/m2VMcdrqHKY.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-40Gqg63CD_A": {
+  "src": "/home/claude/gms-site/yt/40Gqg63CD_A.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-Tkt1Vyhfxs8": {
+  "src": "/home/claude/gms-site/yt/Tkt1Vyhfxs8.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-unh5PxweWcM": {
+  "src": "/home/claude/gms-site/yt/unh5PxweWcM.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-s_moWUnVh3Y": {
+  "src": "/home/claude/gms-site/yt/s_moWUnVh3Y.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-F_0UXH6XP6A": {
+  "src": "/home/claude/gms-site/yt/F_0UXH6XP6A.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-XmU2iX34i80": {
+  "src": "/home/claude/gms-site/yt/XmU2iX34i80.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
+ },
+ "video-fLiNSKnZ6Pk": {
+  "src": "/home/claude/gms-site/yt/fLiNSKnZ6Pk.jpg",
+  "alt": "Video thumbnail",
+  "trim": false,
+  "quality": 72,
+  "section": "bandsaw"
  }
 }

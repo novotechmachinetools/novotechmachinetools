@@ -238,18 +238,22 @@ function bf_send_offer(array $r): bool {
                 'TYPE'    => nt_e((string)($m['type'] ?? '')),
                 'REGULAR' => !empty($m['regular']) ? '<span style="color:#5A5D62;text-decoration:line-through;">' . nt_e((string)$m['regular']) . '</span><br>' : '',
                 'PRICE'   => nt_e((string)$m['price']),
-                'QTY'     => $qty > 1 ? '<br><span style="font-size:12px;color:#5A5D62;">' . $qty . ' in stock</span>' : '',
+                // under the price: units in stock, the 36-month lease payment and a back-order note (Nov 14 2026)
+                'QTY'     => ($qty > 1 ? '<br><span style="font-size:12px;color:#5A5D62;">' . $qty . ' in stock</span>' : '')
+                           . (!empty($m['lease']) ? '<br><span style="font-size:12px;color:#5A5D62;white-space:nowrap;">' . nt_e((string)$m['lease']) . '</span>' : '')
+                           . (!empty($m['note']) ? '<br><span style="font-size:12px;color:#8A4A0E;white-space:normal;">' . nt_e((string)$m['note']) . '</span>' : ''),
             ]);
             $lines[] = '- ' . ($m['name'] ?? $id) . (!empty($m['type']) ? ', ' . $m['type'] : '') . ': ' . $m['price']
-                     . (!empty($m['regular']) ? ' (regular ' . $m['regular'] . ')' : '');
+                     . (!empty($m['regular']) ? ' (regular ' . $m['regular'] . ')' : '')
+                     . (!empty($m['lease']) ? ', ' . $m['lease'] : '') . (!empty($m['note']) ? ' — ' . $m['note'] : '');
         }
         $pricesHtml = nt_fill($MAIL['bf_prices_box'], [
-            'TITLE' => 'Black Friday prices · in stock in Mississauga, ON',
+            'TITLE' => 'Black Friday prices · Mississauga, ON',
             'ROWS'  => $rows,
-            'NOTE'  => ($picked ? '&#9632; = the machines you asked about. ' : '') . 'Prices in CAD, plus applicable taxes; freight, installation and training extra.'
+            'NOTE'  => ($picked ? '&#9632; = the machines you asked about. ' : '') . 'Prices in CAD, plus applicable taxes; freight, installation and training extra unless the price list says they are included. Monthly payments: 36-month lease, 0% down, on approved credit.'
                      . ($hasPdf ? ' Full specifications in the attached PDF.' : ''),
         ]);
-        $pricesText = "Black Friday prices (in stock in Mississauga, ON; CAD, plus applicable taxes):\n" . implode("\n", $lines) . "\n\n";
+        $pricesText = "Black Friday prices (Mississauga, ON; CAD, plus applicable taxes; monthly payments: 36-month lease, 0% down, on approved credit):\n" . implode("\n", $lines) . "\n\n";
     }
     $attached = $hasPdf ? 'Your Black Friday price list is attached, with the sale price and the full specifications of every machine in stock. ' : '';
     list($src, $images) = nt_images($MAIL['bf_offer']);

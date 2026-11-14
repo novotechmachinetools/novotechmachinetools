@@ -1909,36 +1909,57 @@ def machine_type(f, model):
 
 
 def stock_items(page):
-    """content/pages/black-friday-machinery-sale.json "stock": [{"family": "set:id", "model", "qty", "id"?, "image"?, "name"?,
-    "type"?, "specs"? [[label, value]], "highlights"? [...], "note"?}] -> the cards of the Black Friday page: the model's own
-    photo when the gallery has one named after it, its spec rows, three standard-equipment lines and a link to its family on
-    its product page. Prices never come here: they are e-mailed by bf-quote.php from the private price list."""
+    """content/pages/black-friday-machinery-sale.json "stock" — the owner's price list of Nov 13 2026 without its prices — ->
+    the machine cards of the Black Friday page: a photo gallery (his photos plus the ones on the product page, each with its
+    caption), the capacity, his description lines, badges, the NovoTech videos and the links to the product page, the
+    brochure and the buying guide. Prices never come here: bf-quote.php e-mails them from the private price list."""
+    titles = page.get("video_titles") or {}
     out = []
     for it in page.get("stock") or []:
-        fset, fid = it["family"].split(":", 1)
-        f = prepare_family(family(page, fid, fset))
-        model = it.get("model") or f.get("short", "")
-        keys = [k for k in (f.get("images") or []) if isinstance(k, str) and k in manifest]
-        pk = it.get("image") or model_photo(model, keys) or ((f.get("card_image") or {}).get("name"))
-        slug = FAMILY_PAGE.get((fset, fid))
-        brand = site.get("brands", {}).get(f.get("brand"), {}) or (ALL_PAGES.get(slug) or {}).get("brand") or {}
-        specs = [{"label": a, "value": b} for a, b in it["specs"]] if it.get("specs") else model_spec_rows(f, model)
-        strip = lambda x: html_mod.unescape(re.sub(r"<[^>]+>", "", x)) if isinstance(x, str) else ""
-        highlights = it.get("highlights") or [strip(x) for x in (f.get("features") or [])[:3]]
-        sid = it.get("id") or re.sub(r"[^a-z0-9]+", "-", model.lower()).strip("-")
-        out.append({
-            "id": sid, "model": model, "name": it.get("name") or f"{brand.get('name', '')} {model}".strip(),
-            "type": it.get("type") or machine_type(f, model), "qty": it.get("qty", 1),
-            "condition": it.get("condition", "New"), "note": it.get("note", ""),
-            "brand": brand.get("name", ""), "line": brand.get("line", ""), "origin": brand.get("origin") or brand.get("country", ""),
-            "img": img(pk) if pk else None, "specs": specs, "highlights": highlights,
-            "href": f"{slug}#{fid}" if slug else "", "family_name": f.get("name", ""),
-        })
+        f = fset = fid = None
+        if it.get("family"):
+            fset, fid = it["family"].split(":", 1)
+            f = family(page, fid, fset)
+        slug = FAMILY_PAGE.get((fset, fid)) if f else None
+        if it.get("page"):
+            href = it["page"] + (f"#{fid}" if slug == it["page"] else "")
+        else:
+            href = f"{slug}#{fid}" if slug else ""
+        brand = (site.get("brands", {}).get(f.get("brand")) if f else None) or ({"name": it["brand"]} if it.get("brand") else {})
+        model = it["model"]
+        images = []
+        for e in it.get("images") or []:
+            key, cap = e[0], (e[1] if len(e) > 1 else None)
+            im = dict(img(key))
+            cap = cap or image_map.get(key, {}).get("alt") or im["alt"]
+            im["cap1"], im["cap2"] = model, cap
+            im["alt"] = cap if model.split()[0].lower() in cap.lower() else f"{model}: {cap}"
+            images.append(im)
+        videos = []
+        for vid in it.get("videos") or []:
+            if "video-" + vid not in manifest:
+                raise SystemExit(f"black friday stock: no thumbnail video-{vid} — run tools/yt_thumbs.py {vid} and make_images")
+            v = {"id": vid, "title": titles.get(vid) or YT_CHANNEL.get(vid, ("Video",))[0], "thumb": "video-" + vid}
+            if vid in (it.get("shorts") or []):
+                v["short"] = True
+            videos.append(v)
+        out.append(dict(it, href=href, brand_name=brand.get("name", ""), line=brand.get("line", ""), imgs=images, vids=videos,
+                        status_text=(f"Back order · about {it.get('lead', 90)} days" if it.get("status") == "back"
+                                     else "In stock in Mississauga, ON")))
     seen = set()
     for x in out:
         if x["id"] in seen:
-            raise SystemExit(f"black friday stock: two machines with the id {x['id']} — give one an \"id\"")
+            raise SystemExit(f"black friday stock: two machines with the id {x['id']}")
         seen.add(x["id"])
+    cats = []
+    for c in page.get("stock_cats") or [{"id": None, "title": ""}]:
+        items = [x for x in out if x.get("cat") == c["id"] or c["id"] is None]
+        if items:
+            cats.append(dict(c, items=items))
+    missing = [x["id"] for x in out if not any(x in c["items"] for c in cats)]
+    if missing:
+        raise SystemExit(f"black friday stock: no category for {missing}")
+    page["stock_groups"] = cats
     return out
 
 

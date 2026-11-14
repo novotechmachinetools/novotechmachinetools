@@ -1,36 +1,1661 @@
 {
- "_note": "Black Friday 2026 page (templates/black-friday.html; keywords from Ahrefs, Canada, Nov 13 2026: 'machinery sale' and '… for sale'; 'black friday' with machinery has no search volume). The stock list below is a SAMPLE for the layout until the owner sends the real list of in-stock machines; draft stays true (noindex, not in the sitemap) until then. Prices never go on this page: bf-quote.php e-mails them from the private price list on the server.",
+ "_note": "Black Friday 2026 page (templates/black-friday.html; keywords from Ahrefs, Canada, Nov 13 2026: 'machinery sale' and '… for sale'; 'black friday' with machinery has no search volume). \"stock\" is the owner's price list of Nov 13 2026 (24 machines) with his own descriptions, photos and videos, grouped by \"stock_cats\". Prices never go on this page: bf-quote.php e-mails them, with the price-list PDF, from the private files on the server (~/novotech-private/black-friday).",
  "slug": "black-friday-machinery-sale",
  "template": "black-friday.html",
- "draft": true,
+ "draft": false,
  "no_quote": true,
  "quote_href": "#instant-quote",
  "nav_label": "Black Friday sale",
  "title": "Black Friday Machinery Sale — In-Stock Machines | NovoTech",
- "meta_description": "Black Friday machinery sale: in-stock machines for sale in Mississauga, ON, ready to ship, plus 5% off factory orders until Dec 4. Get an instant quote by email.",
+ "meta_description": "Black Friday machinery sale in Mississauga, ON: in-stock CNC press brakes, band saws, plate rollers, rebar benders and more. 5% off factory orders until Dec 4.",
  "h1": "Black Friday machinery sale",
  "social_title": "Black Friday machinery sale — Nov 16 to Dec 4",
  "intro": "Black Friday prices on the in-stock machinery in our Mississauga, ON warehouse, ready to ship, and 5% off any machine you order from the factory by December 4. Ask for an instant quote and the price list with full specifications is in your inbox within minutes.",
  "hero_image": "dn-xl-1",
  "breadcrumb": [
-  {"label": "Home", "href": "index.html"},
-  {"label": "Black Friday sale"}
+  {
+   "label": "Home",
+   "href": "index.html"
+  },
+  {
+   "label": "Black Friday sale"
+  }
  ],
  "stock": [
-  {"family": "press-brakes:dn-xl", "model": "XL 30135", "qty": 1},
-  {"family": "bandsaw:bekamak-bmso-ga", "model": "BMSO 350GA", "qty": 1},
-  {"family": "plate-rolls:isitan-mrm-s", "model": "MRM-S 2050x150", "qty": 1},
-  {"family": "rebar:Rebar-bending-machine-B-BS-MG-series", "model": "B 36", "qty": 2}
+  {
+   "id": "b36",
+   "cat": "rebar",
+   "model": "B36",
+   "title": "B36 rebar bender",
+   "sub": "Programmable stirrup bender",
+   "family": "rebar:Rebar-bending-machine-B-BS-MG-series",
+   "brand": "GMS",
+   "guide": "rebar-bender#buying-guide",
+   "brochure": "files/NovoTech-GMS-Rebar-Bending-Cutting-Machines-Catalogue.pdf",
+   "capacity": "Rebar up to Ø 1.4″ (36 mm)",
+   "about": "The B36 bends stirrups with its programmable bending angle system: program up to three bending angles, with an unlimited number of bends for each angle, all from the push-button control panel. With the optional spiral bending attachment it also makes round and spiral stirrups.",
+   "key": [
+    "Comes with a full set of dies and tooling for a variety of bar diameters and bending radiuses"
+   ],
+   "features": [
+    "Programmable rebar bender, PLC controlled",
+    "Adjustable bending angle, bends left and right",
+    "Manual or automatic operation",
+    "Bends about 1,100 pieces of rebar in 8 hours",
+    "4 HP motor, 600 V 3-phase",
+    "CSA-approved electric panel"
+   ],
+   "badges": [
+    "1-year warranty",
+    "7-day money-back guarantee",
+    "Made in Turkey"
+   ],
+   "optional": [
+    "Round and spiral stirrup bending attachment"
+   ],
+   "images": [
+    [
+     "b-36",
+     "B36 rebar bender with its foot pedal"
+    ],
+    [
+     "b-bending-disc",
+     "Bending disc with the bending pins, during a bend"
+    ],
+    [
+     "b-multi-bend",
+     "Bending rebar on the B series"
+    ],
+    [
+     "b-pins-rollers",
+     "Standard bending pins, rollers and sleeves"
+    ],
+    [
+     "b-bar-stop",
+     "Adjustable bar stop and angle-setting lever"
+    ],
+    [
+     "tooling-set",
+     "Standard bending tooling"
+    ],
+    [
+     "bf-stirrups",
+     "Stirrups and hooks bent on the B series"
+    ],
+    [
+     "spiral-bending-attachment",
+     "Spiral bending attachment (optional)"
+    ]
+   ],
+   "videos": [
+    "Mq2_wXnQCxw",
+    "PvXkQ72TrZ4",
+    "YhbU43ypxRU"
+   ]
+  },
+  {
+   "id": "b45",
+   "cat": "rebar",
+   "model": "B45",
+   "title": "B45 rebar bender",
+   "sub": "Programmable stirrup bender",
+   "family": "rebar:Rebar-bending-machine-B-BS-MG-series",
+   "brand": "GMS",
+   "guide": "rebar-bender#buying-guide",
+   "brochure": "files/NovoTech-GMS-Rebar-Bending-Cutting-Machines-Catalogue.pdf",
+   "capacity": "Rebar up to Ø 1-3/4″ (45 mm)",
+   "about": "The B45 bends stirrups with its programmable bending angle system: program up to three bending angles, with an unlimited number of bends for each angle, all from the push-button control panel. With the optional spiral bending attachment (in stock) it also makes round and spiral stirrups.",
+   "key": [
+    "Comes with a full set of dies and tooling for a variety of bar diameters and bending radiuses"
+   ],
+   "features": [
+    "Programmable rebar bender, PLC controlled",
+    "Adjustable bending angle, bends left and right",
+    "Manual or automatic operation",
+    "Bends about 1,100 pieces of rebar in 8 hours",
+    "5.5 HP motor, 600 V 3-phase",
+    "CSA-approved electric panel"
+   ],
+   "badges": [
+    "1-year warranty",
+    "7-day money-back guarantee",
+    "Made in Turkey"
+   ],
+   "optional": [
+    "Round and spiral stirrup bending attachment (in stock)"
+   ],
+   "images": [
+    [
+     "b-45x1",
+     "B45 rebar bender with its foot pedal"
+    ],
+    [
+     "b-bending-disc",
+     "Bending disc with the bending pins, during a bend"
+    ],
+    [
+     "b-multi-bend",
+     "Bending rebar on the B45"
+    ],
+    [
+     "b-pins-rollers",
+     "Standard bending pins, rollers and sleeves"
+    ],
+    [
+     "b-bar-stop",
+     "Adjustable bar stop and angle-setting lever"
+    ],
+    [
+     "tooling-set",
+     "Standard bending tooling"
+    ],
+    [
+     "bf-stirrups",
+     "Stirrups and hooks bent on the B series"
+    ],
+    [
+     "spiral-bending-attachment",
+     "Spiral bending attachment (optional, in stock)"
+    ]
+   ],
+   "videos": [
+    "Mq2_wXnQCxw",
+    "YhbU43ypxRU",
+    "V8oJgSzeiq4"
+   ]
+  },
+  {
+   "id": "spiral-attachment",
+   "cat": "rebar",
+   "model": "Spiral attachment",
+   "title": "Spiral and round stirrup bending attachment",
+   "sub": "Optional attachment for the B45 rebar bender",
+   "family": "rebar:Rebar-bending-machine-B-BS-MG-series",
+   "brand": "GMS",
+   "guide": "rebar-bender#buying-guide",
+   "brochure": "files/NovoTech-GMS-Rebar-Bending-Cutting-Machines-Catalogue.pdf",
+   "capacity": "Round stirrups and spirals on the B45",
+   "about": "Install it on the B45 rebar bender and the machine also produces round and spiral stirrups.",
+   "images": [
+    [
+     "spiral-bending-attachment",
+     "Spiral bending attachment with a bent spiral"
+    ],
+    [
+     "bf-spiral-ring",
+     "Round stirrup bent with the attachment"
+    ]
+   ],
+   "videos": [
+    "PvXkQ72TrZ4"
+   ]
+  },
+  {
+   "id": "gw52a",
+   "cat": "rebar",
+   "model": "GW52 A",
+   "title": "GW52 A rebar bender",
+   "sub": "Stirrup bender",
+   "page": "rebar-bender",
+   "guide": "rebar-bender#buying-guide",
+   "capacity": "Rebar Ø 1.57″ (40 mm) · round rod Ø 1.77″ (45 mm)",
+   "features": [
+    "Bending angle set with pins",
+    "2 bending angles, chosen on the machine with a flip switch",
+    "Manual operation or automatic with the foot pedal",
+    "Comes with a full set of dies",
+    "Bends about 1,100 pieces of rebar in 8 hours",
+    "5.5 HP (4 kW) motor, 600 V 3-phase",
+    "Weight 836 lb (379 kg)",
+    "CSA-approved electric panel"
+   ],
+   "badges": [
+    "1-year warranty",
+    "7-day money-back guarantee"
+   ],
+   "images": [
+    [
+     "bf-gw52a",
+     "GW52 A rebar bender"
+    ],
+    [
+     "bf-gw52a-panel",
+     "Control panel: angle selectors, manual / pedal switch and push buttons"
+    ],
+    [
+     "bf-gw52a-stirrups",
+     "Square stirrup and U-bar bent on the GW52 A"
+    ]
+   ],
+   "videos": [
+    "AsFGExPgx1U"
+   ]
+  },
+  {
+   "id": "h45",
+   "cat": "rebar",
+   "model": "H45",
+   "title": "H45 hydraulic rebar cutter",
+   "family": "rebar:Hydraulic-rebar-cutter",
+   "brand": "GMS",
+   "guide": "rebar-cutter#buying-guide",
+   "brochure": "files/NovoTech-GMS-Rebar-Bending-Cutting-Machines-Catalogue.pdf",
+   "capacity": "Cuts rebar up to Ø 1-3/4″ (45 mm)",
+   "features": [
+    "Overload protection",
+    "Joystick-type hydraulic valve",
+    "European electric components",
+    "600 V 3-phase",
+    "CSA-approved electrics"
+   ],
+   "badges": [
+    "1-year warranty",
+    "7-day money-back guarantee",
+    "Made in Turkey"
+   ],
+   "images": [
+    [
+     "bf-h45",
+     "H45 hydraulic rebar cutter"
+    ],
+    [
+     "h-blades",
+     "Cutting blade of the H series cutters"
+    ]
+   ],
+   "videos": [
+    "0L43B6f0Gio",
+    "eZI4hX-giPg",
+    "MPkRy0OXaNQ"
+   ]
+  },
+  {
+   "id": "power24",
+   "cat": "rebar",
+   "model": "POWER24",
+   "title": "POWER24 portable hydraulic rebar cutter",
+   "sub": "110 V or 220 V single-phase",
+   "family": "rebar:Hydraulic-rebar-cutter",
+   "brand": "GMS",
+   "guide": "rebar-cutter#buying-guide",
+   "brochure": "files/NovoTech-GMS-Rebar-Bending-Cutting-Machines-Catalogue.pdf",
+   "capacity": "Cuts rebar up to Ø 15/16″ (24 mm)",
+   "features": [
+    "Dual voltage: 110 V or 220 V single-phase",
+    "European electric components",
+    "CSA-approved electrics"
+   ],
+   "badges": [
+    "1-year warranty",
+    "7-day money-back guarantee",
+    "Made in Turkey"
+   ],
+   "images": [
+    [
+     "power-24",
+     "POWER24 portable rebar cutter"
+    ],
+    [
+     "bf-power24",
+     "POWER24 with its hydraulic unit"
+    ],
+    [
+     "power-24-cutting",
+     "Cutting head"
+    ],
+    [
+     "power-24-lever",
+     "Cutting lever"
+    ],
+    [
+     "power-24-unit",
+     "Hydraulic power unit"
+    ],
+    [
+     "power-24-bars",
+     "Cutting several small bars at once"
+    ]
+   ],
+   "videos": [
+    "hrM0RQ0JHW8",
+    "eZI4hX-giPg"
+   ]
+  },
+  {
+   "id": "bms-270dg",
+   "cat": "bandsaw",
+   "model": "BMS 270 DG",
+   "title": "BMS 270 DG manual double-miter band saw",
+   "sub": "10.6″ · inverter blade-speed drive",
+   "family": "bandsaw:bekamak-bms-dg",
+   "brand": "Bekamak",
+   "guide": "band-saw#buying-guide",
+   "brochure": "files/NovoTech-Bekamak-Band-Saws-Catalogue-2026.pdf",
+   "caps": [
+    [
+     "Round",
+     "10.63″"
+    ],
+    [
+     "Square",
+     "10.63″"
+    ],
+    [
+     "Rectangle",
+     "13.4″ × 9.45″"
+    ],
+    [
+     "Miter",
+     "±45° and +60°"
+    ]
+   ],
+   "features": [
+    "±45° and +60° double mitering",
+    "Stepless blade speed control by inverter drive",
+    "Blade chip brush",
+    "Blade tension indicator",
+    "Automatic cycle start switch",
+    "20″ work stop",
+    "Coolant pump",
+    "European electric and hydraulic components",
+    "Manual head uplift",
+    "2 HP (1.5 kW) motor, 220 V single-phase",
+    "Blade 10′ 4.4″ × 1″ × .035″",
+    "CSA-approved electric panel"
+   ],
+   "badges": [
+    "1-year warranty",
+    "7-day money-back guarantee",
+    "Made in Turkey"
+   ],
+   "images": [
+    [
+     "bf-bms270dg",
+     "BMS 270 DG manual double-miter band saw"
+    ],
+    [
+     "bk-bms-270dg-2",
+     "BMS 270 DG — second view"
+    ],
+    [
+     "bk-bms-270dg-3",
+     "BMS 270 DG — third view"
+    ],
+    [
+     "bk-bms-270dg-4",
+     "BMS 270 DG — fourth view"
+    ],
+    [
+     "bkd-bms-dg-vise",
+     "Vise and handwheel"
+    ],
+    [
+     "bf-bms270dg-panel",
+     "Control panel"
+    ]
+   ],
+   "videos": [
+    "Cef4WeM5WQg"
+   ]
+  },
+  {
+   "id": "arg-300",
+   "cat": "bandsaw",
+   "model": "ARG 300 PLUS E-F",
+   "title": "ARG 300 PLUS E-F manual double-miter band saw",
+   "sub": "12″ · inverter blade-speed drive",
+   "page": "manual-band-saws",
+   "guide": "band-saw#buying-guide",
+   "caps": [
+    [
+     "Round",
+     "12″"
+    ],
+    [
+     "Square",
+     "11.42″"
+    ],
+    [
+     "Rectangle",
+     "14.17″ × 7.5″"
+    ],
+    [
+     "Miter",
+     "±45° and +60°"
+    ]
+   ],
+   "features": [
+    "±45° and +60° double mitering",
+    "Stepless blade speed control by inverter drive",
+    "Wheel-driven blade chip brush",
+    "Blade tension indicator",
+    "Automatic cycle start switch",
+    "20″ work stop",
+    "Coolant pump",
+    "European electric and hydraulic components",
+    "Manual head uplift",
+    "3 HP (2.2 kW) motor, 220 V single-phase",
+    "Blade 10′ 4.016″ × 1″ × .035″",
+    "CSA-approved electric panel"
+   ],
+   "badges": [
+    "1-year warranty",
+    "7-day money-back guarantee",
+    "Made in Europe (Czech Republic)"
+   ],
+   "images": [
+    [
+     "bf-arg300",
+     "ARG 300 PLUS E-F manual double-miter band saw"
+    ],
+    [
+     "bf-arg300-panel",
+     "Controls and inverter blade-speed dial"
+    ]
+   ],
+   "videos": [
+    "m2VMcdrqHKY"
+   ]
+  },
+  {
+   "id": "bs-315gf",
+   "cat": "bandsaw",
+   "model": "BS 315 GF",
+   "title": "BS 315 GF semi-automatic double-miter band saw",
+   "sub": "10″ · inverter drive · hydraulic uplift and vise",
+   "family": "bandsaw:novotech-bs-315gf",
+   "brand": "NovoTech",
+   "guide": "band-saw#buying-guide",
+   "brochure": "files/NovoTech-Value-Line-Band-Saws-Catalogue-2026.pdf",
+   "caps": [
+    [
+     "Round",
+     "10″"
+    ],
+    [
+     "Square",
+     "10″"
+    ],
+    [
+     "Rectangle",
+     "12-3/8″ × 7.5″"
+    ],
+    [
+     "Miter",
+     "45° left, 60° right"
+    ]
+   ],
+   "features": [
+    "Stepless blade speed control by inverter drive",
+    "Hydraulic head uplift",
+    "Hydraulic vise with pressure adjustment valve",
+    "Cutting head swivels 45° left and 60° right",
+    "Down-feed speed set with a hydraulic valve",
+    "Direct-drive gearbox (no belt and pulley)",
+    "Blade chip brush",
+    "Blade tension indicator",
+    "Head stroke adjusts to the part diameter to shorten the cycle time",
+    "Coolant pump",
+    "20″ length stop",
+    "Blade cover door with safety interlock",
+    "Weight 881 lb (400 kg)",
+    "220 V single-phase",
+    "Blade 9′ 3.2″ × 1″ × .035″",
+    "CSA-approved electric panel"
+   ],
+   "badges": [
+    "1-year warranty",
+    "7-day money-back guarantee",
+    "Made in China"
+   ],
+   "images": [
+    [
+     "nt-bs315gf-1"
+    ],
+    [
+     "bf-bs315gf",
+     "BS 315 GF semi-automatic double-miter band saw"
+    ],
+    [
+     "nt-bs315gf-v2"
+    ],
+    [
+     "nt-bs315gf-v3"
+    ],
+    [
+     "nt-bs315gf-v4"
+    ],
+    [
+     "nt-bs315gf-d7"
+    ],
+    [
+     "nt-bs315gf-d1"
+    ],
+    [
+     "nt-bs315gf-d4"
+    ],
+    [
+     "nt-bs315gf-d6"
+    ],
+    [
+     "bf-bs315gf-panel",
+     "Control panel with the hydraulic pressure gauge"
+    ]
+   ],
+   "videos": [
+    "iwCyiXP3JRg",
+    "jX-yVggdD-U",
+    "tiDUzLB64hY",
+    "obbCib0YB24",
+    "OBEMU6_zQSw",
+    "yylLY38qVrM"
+   ]
+  },
+  {
+   "id": "bs-300x370",
+   "cat": "bandsaw",
+   "model": "BS 300x370",
+   "title": "BS 300x370 automatic band saw",
+   "sub": "12″ auto feed · inverter drive · hydraulic uplift and vise",
+   "family": "bandsaw:novotech-bs300x370",
+   "brand": "NovoTech",
+   "guide": "band-saw#buying-guide",
+   "brochure": "files/NovoTech-Value-Line-Band-Saws-Catalogue-2026.pdf",
+   "caps": [
+    [
+     "Round",
+     "11.8″"
+    ],
+    [
+     "Square",
+     "11″"
+    ],
+    [
+     "Rectangle",
+     "14.5″ × 11″"
+    ],
+    [
+     "Angle",
+     "90°"
+    ]
+   ],
+   "features": [
+    "Automatic material feeding: motorized vise with roller feeder",
+    "Electric length stop",
+    "Digital screen to set the quantity of cuts",
+    "Stepless blade speed control by inverter drive",
+    "Hydraulic head uplift",
+    "Hydraulic vise with pressure adjustment valve",
+    "Down-feed speed adjustment valve",
+    "Blade chip brush",
+    "Blade tension indicator",
+    "Coolant pump",
+    "20″ length stop",
+    "Blade doors with safety interlock",
+    "Main motor 3 HP (2.2 kW), feed motor 0.33 HP (0.25 kW)",
+    "Weight 1,763 lb (800 kg)",
+    "600 V 3-phase",
+    "Blade 12′ 6.39″ × 1″ × .035″",
+    "CSA-approved electric panel"
+   ],
+   "badges": [
+    "1-year warranty",
+    "7-day money-back guarantee",
+    "Made in China"
+   ],
+   "images": [
+    [
+     "nt-a12-1",
+     "BS 300x370 automatic band saw with roller feed"
+    ],
+    [
+     "nt-a12-2",
+     "Control panel with piece counter"
+    ],
+    [
+     "nt-a12-3",
+     "Powered roller feed and hydraulic vise"
+    ],
+    [
+     "bf-bs300-panel",
+     "Control panel and roller feeding"
+    ]
+   ],
+   "videos": [
+    "Htz0nH8eTOY",
+    "BE_QG8hzgRI",
+    "-sHF4F2vy0I",
+    "ZK2mzm-OAoI"
+   ]
+  },
+  {
+   "id": "bmso-350ga",
+   "cat": "bandsaw",
+   "model": "BMSO 350GA",
+   "title": "BMSO 350GA programmable automatic miter band saw",
+   "sub": "14″ · touch-screen NC controller",
+   "family": "bandsaw:bekamak-bmso-ga",
+   "brand": "Bekamak",
+   "guide": "band-saw#buying-guide",
+   "brochure": "files/NovoTech-Bekamak-Band-Saws-Catalogue-2026.pdf",
+   "caps": [
+    [
+     "Round",
+     "13-3/4″"
+    ],
+    [
+     "Square",
+     "13-3/4″"
+    ],
+    [
+     "Rectangle",
+     "15-3/4″ × 13-3/4″"
+    ],
+    [
+     "Miter",
+     "0–45°"
+    ]
+   ],
+   "features": [
+    "Touch-screen NC controller",
+    "0–45° swiveling head, digital angle display on the screen",
+    "Programmable motorized feeder",
+    "Hydraulic vise",
+    "Blade speed control by VFD inverter",
+    "4′ infeed table",
+    "Blade tension indicator",
+    "Hydraulic head uplift",
+    "600 V 3-phase",
+    "Blade 13′ 7.78″ × 1-1/4″ × .042″",
+    "CSA-approved electric panel"
+   ],
+   "badges": [
+    "1-year warranty",
+    "7-day money-back guarantee",
+    "Made in Turkey"
+   ],
+   "status": "back",
+   "lead": 90,
+   "images": [
+    [
+     "bk-bmso-350ga-1",
+     "BMSO 350GA automatic miter band saw"
+    ],
+    [
+     "bk-bmso-350ga-2",
+     "BMSO 350GA — second view"
+    ],
+    [
+     "bk-bmso-350ga-3",
+     "BMSO 350GA — third view"
+    ],
+    [
+     "bk-bmso-350ga-4",
+     "BMSO 350GA — fourth view"
+    ],
+    [
+     "bf-bmso350ga-panel",
+     "Touch-screen NC controller"
+    ]
+   ],
+   "videos": [
+    "Dv_guTxwZ2g",
+    "DwMoB3JW2gY",
+    "EJmMbr1g4Hs",
+    "FjbwH4Chf0w"
+   ]
+  },
+  {
+   "id": "esr-1550",
+   "cat": "rolls",
+   "model": "ESR 1550x4.5",
+   "title": "ESR 1550x4.5 initial pinch slip roll",
+   "sub": "Electric plate roller · motorized back roll",
+   "family": "ttmc-more:tt-esr",
+   "brand": "NovoTech",
+   "guide": "plate-rollers#buying-guide",
+   "brochure": "files/NovoTech-Rolls-Benders-Tube-Machines-Value-Line-2026.pdf",
+   "capacity": "5 ft × 3/16″ (1550 × 4.5 mm) · top roll Ø 5.9″",
+   "key": [
+    "Digital readout shows the back roll travel",
+    "Motorized back roll"
+   ],
+   "features": [
+    "All 3 rolls are powered",
+    "Cone rolling attachment",
+    "Wire bending grooves",
+    "600 V 3-phase",
+    "CSA-approved electric panel"
+   ],
+   "badges": [
+    "1-year warranty",
+    "7-day money-back guarantee",
+    "Made in China"
+   ],
+   "images": [
+    [
+     "tm-esr1300e",
+     "ESR slip roll with the digital back-roll readout"
+    ],
+    [
+     "bf-esr-dro",
+     "Motorized back roll and digital readout"
+    ],
+    [
+     "tm-esr",
+     "ESR series: wire bending grooves and cone rolling"
+    ]
+   ],
+   "videos": [
+    "40Gqg63CD_A",
+    "58AJnp_KtJ8",
+    "WjSyjSanAxY"
+   ]
+  },
+  {
+   "id": "mrm-s-1550",
+   "cat": "rolls",
+   "model": "MRM-S 1550x150",
+   "title": "MRM-S 1550x150 plate roller",
+   "sub": "Motorized 3-roll plate bending machine",
+   "family": "plate-rolls:isitan-mrm-s",
+   "brand": "ISITAN",
+   "guide": "plate-rollers#buying-guide",
+   "brochure": "files/NovoTech-Isitan-Sheet-Metal-Forming-Catalogue-2026.pdf",
+   "capacity": "5 ft × 1/4″ (1550 × 6 mm) · top roll Ø 5.9″",
+   "key": [
+    "Digital readout for the back roll",
+    "Induction-hardened rolls",
+    "Motorized back roll"
+   ],
+   "features": [
+    "Cone rolling attachment",
+    "European electric components",
+    "600 V 3-phase",
+    "CSA-approved electric panel"
+   ],
+   "badges": [
+    "1-year warranty",
+    "7-day money-back guarantee",
+    "Made in Turkey"
+   ],
+   "status": "back",
+   "lead": 60,
+   "images": [
+    [
+     "bf-mrms",
+     "MRM-S 1550x150 plate roller"
+    ],
+    [
+     "is-mrms-1050-150",
+     "MRM-S plate roller"
+    ],
+    [
+     "is-mrms-cone",
+     "Cone-bending device"
+    ],
+    [
+     "is-mrms-drop-end",
+     "Drop-end with safety switch"
+    ],
+    [
+     "is-mrms-panel",
+     "Control panel with digital readout"
+    ]
+   ],
+   "videos": [
+    "zkY8pYDFmhE",
+    "kJd0rPRFykY"
+   ]
+  },
+  {
+   "id": "3r-hmd-1550",
+   "cat": "rolls",
+   "model": "3R HMD 1550x90",
+   "title": "3R HMD 1550x90 hydraulic slip roll",
+   "sub": "Tilting hydraulic back roll · ideal for cones",
+   "family": "plate-rolls:isitan-3r-hmd",
+   "brand": "ISITAN",
+   "guide": "plate-rollers#buying-guide",
+   "brochure": "files/NovoTech-Isitan-Sheet-Metal-Forming-Catalogue-2026.pdf",
+   "capacity": "5 ft × 14 ga (1550 × 2 mm) · 12 ga × 4 ft",
+   "key": [
+    "Digital readout for the back roll",
+    "Induction-hardened rolls",
+    "220 V single-phase",
+    "Ideal for cone bending thanks to the tilting hydraulic back roll"
+   ],
+   "features": [
+    "Hydraulic back roll travel",
+    "Safety shut-off when the top roll swivels out",
+    "Cone rolling attachment",
+    "Wire bending grooves",
+    "CSA-approved electric panel"
+   ],
+   "badges": [
+    "Made in Turkey"
+   ],
+   "images": [
+    [
+     "bf-3rhmd",
+     "3R HMD 1550x90 hydraulic slip roll"
+    ],
+    [
+     "is-3rhmd-1270-90",
+     "3R HMD hydraulic slip roll"
+    ]
+   ],
+   "videos": [
+    "pJEAqF5MZ9Y"
+   ]
+  },
+  {
+   "id": "hrbm-65",
+   "cat": "angle",
+   "model": "HRBM 65",
+   "title": "HRBM 65 hydraulic profile bender",
+   "sub": "Angle roll · horizontal and vertical",
+   "family": "ttmc-more:tt-rbm",
+   "brand": "NovoTech",
+   "guide": "angle-rolls#buying-guide",
+   "brochure": "files/NovoTech-Rolls-Benders-Tube-Machines-Value-Line-2026.pdf",
+   "caps": [
+    [
+     "Flat bar, hard way",
+     "3-1/8″ × 1″"
+    ],
+    [
+     "Square tube",
+     "2″ × 2″ × 1/8″"
+    ],
+    [
+     "Pipe",
+     "4″ × 1/16″"
+    ],
+    [
+     "Angle",
+     "2-3/4″ × 2-3/4″ × 1/4″"
+    ],
+    [
+     "T-bar",
+     "3-1/8″ × 1-9/16″ × 1/4″"
+    ],
+    [
+     "U-channel",
+     "4″ × 2″ × 1/6″"
+    ]
+   ],
+   "features": [
+    "Horizontal and vertical working position",
+    "Comes with a set of adjustable dies for square tubes, angle irons, flat bars (easy and hard way), channels, T-bars and solid square and round bars",
+    "Pipe bending dies made to order",
+    "600 V 3-phase",
+    "CSA-approved electric panel"
+   ],
+   "badges": [
+    "1-year warranty",
+    "7-day money-back guarantee",
+    "Made in China"
+   ],
+   "optional": [
+    "Pipe rolling dies"
+   ],
+   "images": [
+    [
+     "bf-hrbm65",
+     "HRBM 65 hydraulic profile bender"
+    ],
+    [
+     "tm-hrbm65",
+     "HRBM 65 with its mobile control"
+    ],
+    [
+     "tm-hrbm-work",
+     "Rolling a ring of round tube"
+    ]
+   ],
+   "videos": [
+    "fLPYw6JHcW0",
+    "KZs8wdQeOoY",
+    "_WRBOrvhA90",
+    "UXI2r9eyywY"
+   ]
+  },
+  {
+   "id": "hrbm-50hv",
+   "cat": "angle",
+   "model": "HRBM 50 HV",
+   "title": "HRBM 50 HV hydraulic profile bender + digital readout",
+   "sub": "Angle roll · horizontal and vertical",
+   "family": "ttmc-more:tt-rbm",
+   "brand": "NovoTech",
+   "guide": "angle-rolls#buying-guide",
+   "brochure": "files/NovoTech-Rolls-Benders-Tube-Machines-Value-Line-2026.pdf",
+   "caps": [
+    [
+     "Flat bar, hard way",
+     "2-3/8″ × 3/8″"
+    ],
+    [
+     "Square tube",
+     "2″ × 2″ × 1/8″"
+    ],
+    [
+     "Pipe",
+     "2-3/4″ × 1/16″"
+    ],
+    [
+     "Angle",
+     "2-3/8″ × 2-3/8″ × 3/16″"
+    ],
+    [
+     "T-bar",
+     "2-3/8″ × 1/4″"
+    ],
+    [
+     "U-channel",
+     "3-1/8″ × 1-3/4″ × 1/4″"
+    ]
+   ],
+   "key": [
+    "Digital readout"
+   ],
+   "features": [
+    "Horizontal and vertical working position",
+    "Comes with a set of adjustable dies for square tubes, angle irons, flat bars (easy and hard way), channels, T-bars and solid square and round bars",
+    "Pipe bending dies made to order",
+    "220 V single-phase",
+    "CSA-approved electric panel"
+   ],
+   "badges": [
+    "1-year warranty",
+    "7-day money-back guarantee",
+    "Made in China"
+   ],
+   "optional": [
+    "Pipe rolling dies"
+   ],
+   "images": [
+    [
+     "tm-hrbm50",
+     "HRBM 50 HV with hydraulic top roll and pedestal control"
+    ],
+    [
+     "bf-hrbm50-dro",
+     "Control box with digital readout"
+    ],
+    [
+     "tm-hrbm-work",
+     "Rolling a ring of round tube"
+    ]
+   ],
+   "videos": [
+    "whqMKlfb3Do",
+    "kMc1q9hx8Fw",
+    "UXI2r9eyywY"
+   ]
+  },
+  {
+   "id": "rbm-50hv",
+   "cat": "angle",
+   "model": "RBM 50 HV",
+   "title": "RBM 50 HV manual profile bender",
+   "sub": "Angle roll · horizontal and vertical",
+   "family": "ttmc-more:tt-rbm",
+   "brand": "NovoTech",
+   "guide": "angle-rolls#buying-guide",
+   "brochure": "files/NovoTech-Rolls-Benders-Tube-Machines-Value-Line-2026.pdf",
+   "caps": [
+    [
+     "Flat bar, hard way",
+     "2-3/8″ × 3/8″"
+    ],
+    [
+     "Square tube",
+     "2″ × 2″ × 1/8″"
+    ],
+    [
+     "Pipe",
+     "2-3/4″ × 1/16″"
+    ],
+    [
+     "Angle",
+     "2-3/8″ × 2-3/8″ × 3/16″"
+    ],
+    [
+     "T-bar",
+     "2-3/8″ × 1/4″"
+    ],
+    [
+     "U-channel",
+     "3-1/8″ × 1-3/4″ × 1/4″"
+    ]
+   ],
+   "features": [
+    "Horizontal and vertical working position",
+    "Comes with a set of adjustable dies for square tubes, angle irons, flat bars (easy and hard way), channels, T-bars and solid square and round bars",
+    "Pipe bending dies made to order",
+    "220 V single-phase",
+    "CSA-approved electric panel"
+   ],
+   "badges": [
+    "1-year warranty",
+    "7-day money-back guarantee",
+    "Made in China"
+   ],
+   "optional": [
+    "Pipe rolling dies"
+   ],
+   "images": [
+    [
+     "bf-rbm50",
+     "RBM 50 HV manual profile bender"
+    ],
+    [
+     "tm-hrbm-work",
+     "Rolling a ring of round tube"
+    ]
+   ],
+   "videos": [
+    "oC5WEeOthkM",
+    "UbTfvOwHaGk",
+    "HTNWqKyUOkU",
+    "ISdaTOmDoKo",
+    "UXI2r9eyywY"
+   ]
+  },
+  {
+   "id": "rm18e",
+   "cat": "sheet",
+   "model": "RM18E",
+   "title": "RM18E bead roller",
+   "sub": "Power beading machine",
+   "family": "ttmc-more:tt-duct",
+   "page": "bead-rollers",
+   "brand": "NovoTech",
+   "guide": "bead-rollers#buying-guide",
+   "brochure": "files/NovoTech-HVAC-Sheet-Metal-Machines-Value-Line-2026.pdf",
+   "capacity": "Sheet up to 14 ga (1.8 mm)",
+   "features": [
+    "Includes 3 sets of dies",
+    "220 V single-phase",
+    "CSA-approved electrics"
+   ],
+   "badges": [
+    "1-year warranty",
+    "7-day money-back guarantee"
+   ],
+   "images": [
+    [
+     "tm-rm18e",
+     "RM18E power bead roller"
+    ],
+    [
+     "bf-rm18e-rollers",
+     "Standard and extra roller sets"
+    ]
+   ],
+   "videos": [
+    "HeFp6yHXOJs"
+   ],
+   "shorts": [
+    "HeFp6yHXOJs"
+   ]
+  },
+  {
+   "id": "ckh-3150",
+   "cat": "sheet",
+   "model": "CKH 3150",
+   "title": "CKH 3150 portable roofing brake",
+   "sub": "With slitter and lockable casters",
+   "page": "roofing-siding-brake",
+   "guide": "folder-sheet-metal-brake#buying-guide",
+   "capacity": "10 ft × 22 ga (3150 × 0.8 mm)",
+   "features": [
+    "Slitter for cutting sheets included",
+    "Lockable casters for easy moving",
+    "Weight 600 lb"
+   ],
+   "badges": [
+    "1-year warranty",
+    "Made in Turkey"
+   ],
+   "optional": [
+    "Hemming tool"
+   ],
+   "images": [
+    [
+     "bf-ckh3150",
+     "CKH 3150 portable roofing brake with slitter and casters"
+    ],
+    [
+     "bf-ckh-slitter",
+     "Slitter for cutting sheets"
+    ]
+   ],
+   "videos": [
+    "s_moWUnVh3Y",
+    "F_0UXH6XP6A",
+    "XmU2iX34i80",
+    "fLiNSKnZ6Pk"
+   ]
+  },
+  {
+   "id": "xl-1560",
+   "cat": "brake",
+   "model": "XL 1560",
+   "title": "Dener XL 1560 CNC mild hybrid press brake",
+   "sub": "4 axes: Y1, Y2, X, R · ESA S840 CNC",
+   "family": "press-brakes:dn-xl-1560",
+   "brand": "Dener",
+   "guide": "press-brake#buying-guide",
+   "brochure": "files/NovoTech-Dener-Hydraulic-Press-Brakes-2026.pdf",
+   "capacity": "5 ft × 66 US tons (1560 mm × 60 t)",
+   "features": [
+    "ESA S840 15.6″ 2D graphical touch-screen CNC controller (Italy)",
+    "2D offline programming software",
+    "Mild hybrid system: a servo motor drives the main hydraulic pump, so the motor never idles — far less electricity, less noise and less hydraulic maintenance",
+    "Heavy-duty 2-axis back gauge X + R (back and forth, up and down) with 2 finger stops",
+    "DSP-AP laser finger safety + MCS safety PLC",
+    "2 front supports: sliding arms with manual height adjustment",
+    "North American / European Promecam tool clamping",
+    "EUROSTAMP 1281 punch, 9 segmented pieces, 805 mm (Italy)",
+    "EUROSTAMP 2067 4-V die (Italy)",
+    "Side and back covers with safety interlocks",
+    "Foot pedal with emergency stop button",
+    "Waterproof aluminum-foil overseas packaging",
+    "600 V 3-phase",
+    "CSA-approved electric panel"
+   ],
+   "badges": [
+    "Free delivery",
+    "Free installation and training",
+    "1-year warranty",
+    "Made in Turkey with European components"
+   ],
+   "images": [
+    [
+     "bf-xl1560",
+     "Dener XL 1560 CNC press brake"
+    ],
+    [
+     "dn-xl1560-studio"
+    ],
+    [
+     "dn-xl1560-photo-left"
+    ],
+    [
+     "dn-xl1560-photo-right"
+    ],
+    [
+     "dn-xl1560-control"
+    ],
+    [
+     "dn-xl1560-tooling"
+    ],
+    [
+     "dn-xl1560-backgauge"
+    ],
+    [
+     "dn-xl-es-1281",
+     "EUROSTAMP 1281 punch"
+    ],
+    [
+     "dn-xl-es-2067",
+     "EUROSTAMP 2067 four-way V-die"
+    ],
+    [
+     "dn-xl-g-esa-s840",
+     "ESA S840 15.6″ touch-screen CNC control"
+    ]
+   ],
+   "videos": [
+    "5FWxGB6hoJI",
+    "VGd39pN2zBM",
+    "0pvdG-DYO-E",
+    "pRxr7CB2pDQ",
+    "CFkFmrRCaFc",
+    "unh5PxweWcM",
+    "dXorm3f4fBY",
+    "6gb7oiwOWmA",
+    "sVrVS6A-yJY",
+    "hZSWcdxjjnM",
+    "Tkt1Vyhfxs8",
+    "A1i_NljuVQo"
+   ]
+  },
+  {
+   "id": "xl-40220-6",
+   "cat": "brake",
+   "model": "XL 40220 6+1",
+   "title": "Dener XL 40220 CNC mild hybrid press brake, 6+1 axes",
+   "sub": "6+1 axes: Y1, Y2, X, R, Z1, Z2 + CNC crowning · Delem DA-66S",
+   "family": "press-brakes:dn-xl",
+   "brand": "Dener",
+   "guide": "press-brake#buying-guide",
+   "brochure": "files/NovoTech-Dener-Hydraulic-Press-Brakes-2026.pdf",
+   "capacity": "13 ft × 243 US tons (4000 mm × 220 t)",
+   "features": [
+    "Delem DA-66S 24″ 2D graphical touch-screen CNC controller (Netherlands)",
+    "2D offline programming software",
+    "Wila NSCL-I/HC Pro hydraulic punch clamping with power pack",
+    "Wila NSCR-I/HC Pro hydraulic die clamping with power pack",
+    "Wila CNC motorized crowning to compensate deflection",
+    "Heavy-duty 4-axis back gauge X, R, Z1, Z2 (back and forth, up and down, both fingers move left and right), 2 CNC-controlled fingers",
+    "Mild hybrid system: a servo motor drives the main hydraulic pump, so the motor never idles — far less electricity, less noise and less hydraulic maintenance",
+    "DSP-AP laser finger safety + MCS safety PLC",
+    "2 front supports: sliding arms with manual height adjustment",
+    "Side and back safety covers with interlocks",
+    "Heavy-duty ram guideways",
+    "Foot pedal with emergency stop button",
+    "Large daylight and throat depth",
+    "600 V 3-phase, transformer included",
+    "CSA-approved electric panel"
+   ],
+   "badges": [
+    "Free installation and training",
+    "1-year warranty",
+    "Made in Turkey with European components"
+   ],
+   "optional": [
+    "Wila punches and dies to your requirements (the machine comes without tooling)"
+   ],
+   "images": [
+    [
+     "bf-xl220",
+     "Dener XL 40220 CNC press brake, 13 ft × 243 US tons (220 t)"
+    ],
+    [
+     "dn-xl-3",
+     "Dener XL press brake — three-quarter view"
+    ],
+    [
+     "dn-xl-g-delem-da66s",
+     "Delem DA-66S 24″ touch-screen CNC control"
+    ],
+    [
+     "dn-xl-wila",
+     "Wila New Standard upper tool holder on the ram"
+    ],
+    [
+     "dn-det-bg-4axis",
+     "4-axis CNC back gauge (X, R, Z1, Z2)"
+    ],
+    [
+     "dn-xl-p-dsp-laser",
+     "DSP-AP laser safety system"
+    ],
+    [
+     "dn-xl-p-back-covers",
+     "Back safety covers with interlocks"
+    ],
+    [
+     "dn-xl-servo-pump",
+     "Mild hybrid: servo motor and servo pump on the oil tank"
+    ],
+    [
+     "dn-xl-throat",
+     "High daylight, long stroke and deep throat"
+    ]
+   ],
+   "videos": [
+    "6gb7oiwOWmA",
+    "pRxr7CB2pDQ",
+    "5FWxGB6hoJI",
+    "0pvdG-DYO-E",
+    "dXorm3f4fBY",
+    "CFkFmrRCaFc",
+    "unh5PxweWcM",
+    "sVrVS6A-yJY",
+    "hZSWcdxjjnM",
+    "Tkt1Vyhfxs8",
+    "A1i_NljuVQo"
+   ]
+  },
+  {
+   "id": "xl-40220-4",
+   "cat": "brake",
+   "model": "XL 40220 4+1",
+   "title": "Dener XL 40220 CNC mild hybrid press brake, 4+1 axes",
+   "sub": "4+1 axes: Y1, Y2, X, R + CNC crowning · ESA S875W",
+   "family": "press-brakes:dn-xl",
+   "brand": "Dener",
+   "guide": "press-brake#buying-guide",
+   "brochure": "files/NovoTech-Dener-Hydraulic-Press-Brakes-2026.pdf",
+   "capacity": "13 ft × 243 US tons (4000 mm × 220 t)",
+   "features": [
+    "ESA S875W 21″ 3D graphical touch-screen CNC controller (Italy)",
+    "3D offline programming software",
+    "Dener CNC motorized crowning to compensate deflection",
+    "Heavy-duty 2-axis back gauge X + R (back and forth, up and down) with 2 finger stops",
+    "Mild hybrid system: a servo motor drives the main hydraulic pump, so the motor never idles — far less electricity, less noise and less hydraulic maintenance",
+    "DSP-AP laser finger safety + MCS safety PLC",
+    "Euro-American Promecam tool clamping",
+    "Euro-American die holder",
+    "EUROSTAMP 1281 punch (Italy)",
+    "EUROSTAMP 2067 4-V die (Italy)",
+    "2 front supports: sliding arms with manual height adjustment",
+    "Side and back safety covers with interlocks",
+    "Heavy-duty ram guideways",
+    "Foot pedal with emergency stop button",
+    "Large daylight and throat depth",
+    "600 V 3-phase, transformer included",
+    "CSA-approved electric panel"
+   ],
+   "badges": [
+    "Free installation and training",
+    "1-year warranty",
+    "Made in Turkey with European components"
+   ],
+   "images": [
+    [
+     "bf-xl220",
+     "Dener XL 40220 CNC press brake, 13 ft × 243 US tons (220 t)"
+    ],
+    [
+     "dn-xl-3",
+     "Dener XL press brake — three-quarter view"
+    ],
+    [
+     "dn-xl-g-esa-s875w",
+     "ESA S875W 21″ 3D touch-screen CNC control"
+    ],
+    [
+     "dn-xl-p-crowning",
+     "CNC motorized crowning of the lower table"
+    ],
+    [
+     "dn-det-bg-2axis",
+     "2-axis CNC back gauge (X, R)"
+    ],
+    [
+     "dn-xl-q-euro-american",
+     "Euro / American segmented punch holders"
+    ],
+    [
+     "dn-xl-es-1281",
+     "EUROSTAMP 1281 punch"
+    ],
+    [
+     "dn-xl-es-2067",
+     "EUROSTAMP 2067 four-way V-die"
+    ],
+    [
+     "dn-xl-p-dsp-laser",
+     "DSP-AP laser safety system"
+    ],
+    [
+     "dn-xl-servo-pump",
+     "Mild hybrid: servo motor and servo pump on the oil tank"
+    ]
+   ],
+   "videos": [
+    "pRxr7CB2pDQ",
+    "5FWxGB6hoJI",
+    "VGd39pN2zBM",
+    "6gb7oiwOWmA",
+    "0pvdG-DYO-E",
+    "dXorm3f4fBY",
+    "CFkFmrRCaFc",
+    "unh5PxweWcM",
+    "sVrVS6A-yJY",
+    "hZSWcdxjjnM",
+    "Tkt1Vyhfxs8",
+    "A1i_NljuVQo"
+   ]
+  },
+  {
+   "id": "bk-050",
+   "cat": "tube",
+   "model": "BK-050",
+   "title": "BK-050 rotary draw pipe bender",
+   "sub": "NC controller · programmable bending angle",
+   "family": "tube-benders:isitan-bk",
+   "brand": "ISITAN",
+   "brochure": "files/NovoTech-Isitan-Sheet-Metal-Forming-Catalogue-2026.pdf",
+   "capacity": "Tube Ø 2-3/8″ × 1/8″ wall",
+   "features": [
+    "Comes with 2 sets of dies: Ø 1-1/2″ × 4.5″ CLR and Ø 1-5/8″ × 5″ CLR (or the size you need)",
+    "Simple NC controller, programmable bending angle, up to 100 programs",
+    "European electric components",
+    "220 V single-phase",
+    "CSA-approved electrics"
+   ],
+   "badges": [
+    "1-year warranty",
+    "7-day money-back guarantee",
+    "Made in Turkey"
+   ],
+   "images": [
+    [
+     "bf-bk050",
+     "BK-050 rotary draw pipe bender with NC controller"
+    ],
+    [
+     "is-bk-050"
+    ],
+    [
+     "is-bk-panel"
+    ],
+    [
+     "is-bk-tooling"
+    ],
+    [
+     "is-bk-part"
+    ]
+   ],
+   "videos": [
+    "a94tjN7aVRk"
+   ]
+  },
+  {
+   "id": "hkm-60",
+   "cat": "iron",
+   "model": "HKM 60",
+   "title": "HKM 60 hydraulic ironworker",
+   "sub": "66 US tons (60 t) · single operator",
+   "family": "sahinler:sahinler-hkm-single",
+   "brand": "NovoTech",
+   "guide": "ironworker-machines#buying-guide",
+   "brochure": "files/NovoTech-Ironworkers-Punching-Machines-2026.pdf",
+   "caps": [
+    [
+     "Punching",
+     "Ø 1-1/8″ × 9/16″"
+    ],
+    [
+     "Angle cutting",
+     "4-3/4″ × 4-3/4″ × 1/2″"
+    ],
+    [
+     "Round and square bar",
+     "1-9/16″"
+    ],
+    [
+     "Flat bar shearing",
+     "7-7/8″ × 13/16″ or 11-13/16″ × 9/16″"
+    ],
+    [
+     "Notching",
+     "3/8″"
+    ]
+   ],
+   "features": [
+    "Single operator",
+    "600 V 3-phase",
+    "CSA-approved electric panel"
+   ],
+   "badges": [
+    "1-year warranty",
+    "7-day money-back guarantee",
+    "Made in Turkey"
+   ],
+   "optional": [
+    "12-set punch and die kit",
+    "Press brake dies 4″ × 1/2″"
+   ],
+   "images": [
+    [
+     "sh-hkm60",
+     "HKM 60 hydraulic ironworker with five work stations"
+    ],
+    [
+     "sh-hkm-tool-punches",
+     "Punches and dies"
+    ],
+    [
+     "sh-hkm-tool-notch",
+     "Rectangular notching tool"
+    ]
+   ],
+   "videos": [
+    "MQrQtCYScJY",
+    "y7qRRXgHKEM",
+    "7i0384bLxF0",
+    "gBdw8nMRdEU",
+    "YzEKOaNtOPI",
+    "Ih_g56w46tU"
+   ]
+  }
  ],
  "faq_title": "Black Friday questions",
  "faq": [
-  {"q": "How does the instant quote work?", "a": "Fill in the form with your company details and the machines you are interested in. The Black Friday price list, with the sale price and the full specifications of every in-stock machine, is emailed to you within minutes. Reply to that email or call us to reserve a machine."},
-  {"q": "Why are the prices not on the page?", "a": "Black Friday prices go to buyers directly by email, so every buyer gets the full price list, the specifications and the terms in one place."},
-  {"q": "Are these machines really in stock?", "a": "Yes. They are in our warehouse at 1365 Mid-Way Blvd, Unit 26, Mississauga, ON, ready to ship, and you can see them before you buy: call +1 647 526 5510 to book a visit. In-stock machines are first come, first served."},
-  {"q": "How long do the Black Friday prices last?", "a": "Until Friday, December 4, 2026, at 11:59 pm Eastern time, or until the machine is sold."},
-  {"q": "What if the machine I need is not in stock?", "a": "Order it from the factory by December 4 and take 5% off. You pay only 10% down to confirm the order and the remaining 90% on delivery."},
-  {"q": "Can I finance the machine?", "a": "Yes. Financing with 0% down is available through our financing partners, on approved credit."},
-  {"q": "Can I write the machine off this year?", "a": "Canadian businesses can deduct 100% of the cost of eligible manufacturing and processing equipment in the tax year it becomes available for use, and eligible Ontario corporations can also claim the 15% Ontario Made Manufacturing Investment Tax Credit. Eligibility depends on your business and how the machine is used, so ask your accountant. A machine from stock can be delivered and running before your year-end."},
-  {"q": "Do you deliver outside Ontario?", "a": "Yes. We arrange freight from Mississauga, ON to every province and territory and to customers anywhere in the United States."}
+  {
+   "q": "How does the instant quote work?",
+   "a": "Fill in the form with your company details and the machines you are interested in. The Black Friday price list, with the sale price and the full specifications of every in-stock machine, is emailed to you within minutes. Reply to that email or call us to reserve a machine."
+  },
+  {
+   "q": "Why are the prices not on the page?",
+   "a": "Black Friday prices go to buyers directly by email, so every buyer gets the full price list, the specifications and the terms in one place."
+  },
+  {
+   "q": "Are these machines really in stock?",
+   "a": "Yes. They are in our warehouse at 1365 Mid-Way Blvd, Unit 26, Mississauga, ON, ready to ship, and you can see them before you buy: call +1 647 526 5510 to book a visit. Two are on back order at their Black Friday price: the BMSO 350GA band saw (about 90 days) and the MRM-S 1550x150 plate roller (about 60 days) — 10% down secures one. In-stock machines are first come, first served."
+  },
+  {
+   "q": "How long do the Black Friday prices last?",
+   "a": "Until Friday, December 4, 2026, at 11:59 pm Eastern time, or until the machine is sold."
+  },
+  {
+   "q": "What if the machine I need is not in stock?",
+   "a": "Order it from the factory by December 4 and take 5% off. You pay only 10% down to confirm the order and the remaining 90% on delivery."
+  },
+  {
+   "q": "Can I finance the machine?",
+   "a": "Yes. Financing with 0% down is available through our financing partners, on approved credit."
+  },
+  {
+   "q": "Can I write the machine off this year?",
+   "a": "Canadian businesses can deduct 100% of the cost of eligible manufacturing and processing equipment in the tax year it becomes available for use, and eligible Ontario corporations can also claim the 15% Ontario Made Manufacturing Investment Tax Credit. Eligibility depends on your business and how the machine is used, so ask your accountant. A machine from stock can be delivered and running before your year-end."
+  },
+  {
+   "q": "Do you deliver outside Ontario?",
+   "a": "Yes. We arrange freight from Mississauga, ON to every province and territory and to customers anywhere in the United States."
+  }
+ ],
+ "stock_cats": [
+  {
+   "id": "rebar",
+   "title": "Rebar benders and cutters"
+  },
+  {
+   "id": "bandsaw",
+   "title": "Band saws"
+  },
+  {
+   "id": "rolls",
+   "title": "Plate rollers and slip rolls"
+  },
+  {
+   "id": "angle",
+   "title": "Angle rolls (profile benders)"
+  },
+  {
+   "id": "sheet",
+   "title": "Sheet metal machines"
+  },
+  {
+   "id": "brake",
+   "title": "CNC press brakes"
+  },
+  {
+   "id": "tube",
+   "title": "Pipe bender"
+  },
+  {
+   "id": "iron",
+   "title": "Ironworker"
+  }
+ ],
+ "video_titles": {
+  "Mq2_wXnQCxw": "B 45 and B 36 Rebar Benders – Bar Bending Machines for Construction",
+  "PvXkQ72TrZ4": "B 36 Rebar Bender with Spiral Bending Attachment",
+  "YhbU43ypxRU": "GMS B 45 and B 36 rebar benders at work",
+  "V8oJgSzeiq4": "GMS B 45x1 rebar bender — operating instructions",
+  "AsFGExPgx1U": "GW 42 and GW 52 Rebar Benders – Construction Bar Bending",
+  "0L43B6f0Gio": "GMS H 45 hydraulic rebar cutter — Ø1-3/4″ (45 mm)",
+  "eZI4hX-giPg": "GMS hydraulic rebar cutters",
+  "MPkRy0OXaNQ": "GMS H series hydraulic cutter — operating instructions",
+  "hrM0RQ0JHW8": "GMS POWER 24 portable rebar cutter on 120 V",
+  "Cef4WeM5WQg": "Bekamak BMS 270DG manual double-miter band saw",
+  "m2VMcdrqHKY": "ARG 300 PLUS EF 12\" Double Mitering Band Saw",
+  "iwCyiXP3JRg": "BS-315GF 10″ semi-automatic double-miter band saw with inverter drive, hydraulic up-lift and hydraulic vise",
+  "jX-yVggdD-U": "BS-315GF 10\" Semi-Automatic Double Mitering Band Saw – Inverter, Hydraulic Lift",
+  "tiDUzLB64hY": "BS 315 GF 10 in Semi-Automatic Double Mitering Band Saw",
+  "obbCib0YB24": "BS-315GF 10″ double-miter semi-automatic band saw with hydraulic vise",
+  "OBEMU6_zQSw": "BS 315 GF 10 in Double Miter Band Saw – Inverter Drive, Hydraulic Uplift and Vise",
+  "yylLY38qVrM": "BS-315GF 10″ semi-automatic swivel band saw with hydraulic up-lift and down-feed — miter cuts both sides",
+  "Htz0nH8eTOY": "BS 300 x 370 12 in Auto-Feed Band Saw – Hydraulic Vise and Uplift",
+  "BE_QG8hzgRI": "BS 300 x 370 12\" Auto-Feed Band Saw – Inverter, Hydraulic Lift and Vise",
+  "-sHF4F2vy0I": "BS 300 x 370 12\" Auto-Feed Band Saw – Fully Automatic Horizontal Saw",
+  "ZK2mzm-OAoI": "BS 300 x 370 12 in Auto-Feed Band Saw – Inverter Drive and Hydraulic Vise",
+  "Dv_guTxwZ2g": "BMSO 350 GA Fully Automatic Mitering Band Saw – NC Angle Cutting",
+  "DwMoB3JW2gY": "Bekamak BMSO 350GA automatic miter band saw with NC controller",
+  "EJmMbr1g4Hs": "Bekamak BMSO 350GA — instruction video",
+  "FjbwH4Chf0w": "Bekamak BMSO 350GA 14″ automatic swivelling-head band saw",
+  "40Gqg63CD_A": "ESR 5' x 3/16\" Plate Roller – Electric Slip Roll for Sheet and Plate",
+  "58AJnp_KtJ8": "ESR 5 ft x 3/16 in Pinch Plate Roller – Powered Sheet Rolling",
+  "WjSyjSanAxY": "ESR 5 ft x 3/16 in Pinch Roller – Plate Roller Close-Up",
+  "zkY8pYDFmhE": "MRM-S Initial Pinch Plate Rolling Machine – 3-Roll Plate Bending Roll",
+  "kJd0rPRFykY": "MRM-S 1550 x 170 Plate Rolling Machine with Powered Bottom Roll",
+  "pJEAqF5MZ9Y": "3R HMD Hydraulic Slip Roll – 5' x 14 Gauge (1500 x 2 mm)",
+  "fLPYw6JHcW0": "HRBM 65 HV Hydraulic Angle Roll – 4 in with Adjustable Dies",
+  "KZs8wdQeOoY": "HRBM 65 Hydraulic Angle Roll – 4 in Ring Roller",
+  "_WRBOrvhA90": "HRBM65 Hydraulic Angle Roll – 4 in Roll Bender for Profiles",
+  "UXI2r9eyywY": "RBM and HRBM Angle Roller – Adjustable Dies for Profiles",
+  "whqMKlfb3Do": "HRBM 50 HV Hydraulic Angle Roll – 2-3/4 in with Digital Readout",
+  "kMc1q9hx8Fw": "HRBM 50 HV (2-3/4\") Hydraulic Angle Roll – Section Roll Bender",
+  "oC5WEeOthkM": "RBM 50 HV Tube Roller – Angle Roll for Pipe and Profile Bending",
+  "UbTfvOwHaGk": "RBM 50 HV Ring Roller – 2 3/4 in Roll Bender for Tube and Profile",
+  "HTNWqKyUOkU": "RBM 50 HV Angle Roll – 2 3/4 in Roll Bender for Profiles",
+  "ISdaTOmDoKo": "RBM 50 HV Angle Roll – Section Roll Bender",
+  "HeFp6yHXOJs": "RM18E Bead Roller – Rotary Machine for 14 Gauge Sheet Metal",
+  "s_moWUnVh3Y": "CKH 10 ft Roofing Brake – Making a Hem on Sheet Metal",
+  "F_0UXH6XP6A": "CKH Roofing Metal Brake and Slitter – 10 ft x 21 Gauge Sheet Metal Folding",
+  "XmU2iX34i80": "10' x 21 Gauge Roofing Brake and Slitter – Siding and Flashing Bending",
+  "fLiNSKnZ6Pk": "CKH 10 ft Roofing Brake – Bending a Hem for Roofing Contractors",
+  "5FWxGB6hoJI": "XL series hydraulic CNC press brakes",
+  "VGd39pN2zBM": "CNC press brake instruction with the ESA control",
+  "0pvdG-DYO-E": "DENER XL 3100 × 100 — 10 ft × 110 US tons CNC press brake",
+  "pRxr7CB2pDQ": "XL 13 ft × 243 US tons (220 t) with laser angle measurement and sheet follower",
+  "CFkFmrRCaFc": "DENER PUMA XL 10 ft × 149 US tons (135 t) 6-axis CNC press brake",
+  "unh5PxweWcM": "New CNC Press Brakes – Tooling and Back Gauge Close-Up",
+  "dXorm3f4fBY": "DENER XL 13 ft × 353 US tons (320 t) CNC hydraulic press brake",
+  "6gb7oiwOWmA": "XL 13 ft x 220 Ton Mild Hybrid CNC Press Brake – WILA Hydraulic Punch and Die Clamping",
+  "sVrVS6A-yJY": "1800 Ton x 60 ft Tandem Press Brake – 18.4 m Heavy Bending",
+  "hZSWcdxjjnM": "XL 8 m x 640 Ton Tandem Press Brake – Long Part Bending",
+  "Tkt1Vyhfxs8": "Press Brake Assembly Line – How CNC Press Brakes Are Built",
+  "A1i_NljuVQo": "Press Brake, Laser and Shear Factory Tour – Sheet Metal Machinery Production",
+  "a94tjN7aVRk": "BK 050 Rotary Draw Pipe Bender with NC Controller – Tube Bending Machine",
+  "MQrQtCYScJY": "Angle iron miter cutting on the HKM 60",
+  "y7qRRXgHKEM": "HKM 60 Ironworker Walkaround – Stations and Features",
+  "7i0384bLxF0": "HKM 60 (66 US ton) hydraulic ironworker",
+  "gBdw8nMRdEU": "Punching with Off-Center Dies on the HKM 60 Ironworker",
+  "YzEKOaNtOPI": "HKM 60 Hydraulic Ironworker",
+  "Ih_g56w46tU": "HKM 60 ironworker machine"
+ },
+ "hero_art": [
+  "dn-xl-1",
+  "bk-hero-auto-350ga"
  ]
 }
