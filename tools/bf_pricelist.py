@@ -2,6 +2,12 @@
 """Black Friday 2026 price list PDF — the file bf-quote.php e-mails to a buyer.
 
     python3 tools/bf_pricelist.py PRICES.json OUT.pdf
+    python3 tools/bf_pricelist.py --public src/files/black-friday
+
+--public (the owner, Nov 14 2026) writes the PDFs without a single price, for everyone: the whole list as a light catalogue
+(the download button of the Mailchimp campaign: Mailchimp sends no attachments) and one sheet per machine (the "Download
+PDF" button of every card on the Black Friday page, file name = the "sheet" of the machine in the page JSON). In their price
+box: the Black Friday price is e-mailed on request — prices only ever leave in the private price list.
 
 The machines, their text, photos and videos come from content/pages/black-friday-machinery-sale.json (the page shows them
 without prices) and the links from the built page (dist/black-friday-machinery-sale.html, so the PDF links exactly where
@@ -18,8 +24,16 @@ SITE = "https://novotechmachinetools.com/"
 PAGE_SLUG = "black-friday-machinery-sale"
 ORANGE, CHARCOAL, STEEL, INK, PAPER, LINE = "#F28A1F", "#2D2E30", "#5A5D62", "#1F2022", "#F4F5F6", "#D9DBDE"
 
-prices = json.load(open(sys.argv[1], encoding="utf-8"))
-OUT = sys.argv[2]
+PUBLIC = len(sys.argv) > 2 and sys.argv[1] == "--public"
+CATALOGUE = "NovoTech-Black-Friday-2026-In-Stock-Machines.pdf"   # never "price list" in a public file name (deploy guard)
+if PUBLIC:
+    prices, OUTDIR = {}, sys.argv[2]
+    os.makedirs(OUTDIR, exist_ok=True)
+    OUT = os.path.join(OUTDIR, CATALOGUE)
+else:
+    prices = json.load(open(sys.argv[1], encoding="utf-8"))
+    OUT = sys.argv[2]
+MAIN_W, THUMB_W, QUALITY = (480, 170, 64) if PUBLIC else (720, 260, 76)   # the public files travel by e-mail link: lighter
 page = json.load(open(os.path.join(ROOT, "content", "pages", PAGE_SLUG + ".json"), encoding="utf-8"))
 manifest = json.load(open(os.path.join(ROOT, "tools", "image_manifest.json"), encoding="utf-8"))
 image_map = json.load(open(os.path.join(ROOT, "tools", "image_map.json"), encoding="utf-8"))
@@ -53,7 +67,7 @@ def jpeg(key, width, name=None):
     if im.width > width:
         im = im.resize((width, round(im.height * width / im.width)), Image.LANCZOS)
     p = os.path.join(TMP, (name or key) + f"-{width}.jpg")
-    im.save(p, "JPEG", quality=76, optimize=True, progressive=False)
+    im.save(p, "JPEG", quality=QUALITY, optimize=True, progressive=False)
     return "file://" + p
 
 
@@ -89,16 +103,19 @@ def yt(vid):
 
 
 FONT = "file://" + os.path.join(ROOT, "src", "fonts")
+HEAD_R = "BLACK FRIDAY 2026 · IN-STOCK MACHINES" if PUBLIC else "BLACK FRIDAY 2026 · IN-STOCK PRICE LIST"
+FOOT_L = ("Black Friday prices by email until Dec 4, 2026, 11:59 pm ET · +1 647 526 5510 · info@novotechmachinetools.com" if PUBLIC else
+          "Prices valid until Dec 4, 2026, 11:59 pm ET · CAD, plus applicable taxes · +1 647 526 5510 · info@novotechmachinetools.com")
 cats = {c["id"]: c["title"] for c in page["stock_cats"]}
 items = []
 for it in page["stock"]:
     pr = prices.get(it["id"])
-    if not pr:
+    if not pr and not PUBLIC:
         raise SystemExit(f"no price for {it['id']}")
     keys = [x[0] for x in it["images"]]
     caps = [(x[1] if len(x) > 1 else image_map.get(x[0], {}).get("alt", "")) for x in it["images"]]
-    items.append(dict(it, pr=pr, links=links_of(it["id"]), main=jpeg(keys[0], 720), main_cap=caps[0],
-                      thumbs=[(jpeg(k, 260), c) for k, c in list(zip(keys, caps))[1:4]]))
+    items.append(dict(it, pr=pr or {}, links=links_of(it["id"]), main=jpeg(keys[0], MAIN_W), main_cap=caps[0],
+                      thumbs=[(jpeg(k, THUMB_W), c) for k, c in list(zip(keys, caps))[1:4]]))
 
 # ------------------------------------------------------------------ html
 CSS = f"""
@@ -115,8 +132,8 @@ CSS = f"""
 @page {{
   size: Letter; margin: 0.78in 0.5in 0.7in;
   @top-left {{ content: "NOVOTECH MACHINE TOOLS"; font: 700 9pt BC, sans-serif; letter-spacing: .12em; color: {CHARCOAL}; vertical-align: bottom; padding-bottom: 8pt; }}
-  @top-right {{ content: "BLACK FRIDAY 2026 · IN-STOCK PRICE LIST"; font: 700 9pt BC, sans-serif; letter-spacing: .12em; color: {ORANGE}; vertical-align: bottom; padding-bottom: 8pt; }}
-  @bottom-left {{ content: "Prices valid until Dec 4, 2026, 11:59 pm ET · CAD, plus applicable taxes · +1 647 526 5510 · info@novotechmachinetools.com"; font: 400 7.5pt B, sans-serif; color: {STEEL}; vertical-align: top; padding-top: 8pt; }}
+  @top-right {{ content: "{HEAD_R}"; font: 700 9pt BC, sans-serif; letter-spacing: .12em; color: {ORANGE}; vertical-align: bottom; padding-bottom: 8pt; }}
+  @bottom-left {{ content: "{FOOT_L}"; font: 400 7.5pt B, sans-serif; color: {STEEL}; vertical-align: top; padding-top: 8pt; }}
   @bottom-right {{ content: "Page " counter(page) " of " counter(pages); font: 600 8pt B, sans-serif; color: {CHARCOAL}; vertical-align: top; padding-top: 8pt; }}
 }}
 @page :first {{ margin: 0; @top-left {{ content: none; }} @top-right {{ content: none; }} @bottom-left {{ content: none; }} @bottom-right {{ content: none; }} }}
@@ -203,6 +220,18 @@ ul.feat.one {{ columns: 1; }}
 .links .vids a {{ display: inline-flex; align-items: center; justify-content: center; min-width: 13pt; height: 13pt; padding: 0 3pt; text-decoration: none; background: {CHARCOAL}; color: #fff; border-radius: 2pt; font: 700 8pt BC, sans-serif; }}
 .links .vids a:first-of-type {{ background: {ORANGE}; color: {INK}; }}
 .links .lbl {{ font: 700 7.4pt BC, sans-serif; letter-spacing: .1em; text-transform: uppercase; color: {STEEL}; }}
+.price.ask .bfp {{ font-size: 17pt; }}
+.price.ask .p2 {{ gap: 3pt; }}
+.ask-go {{ align-self: flex-start; font: 700 9.5pt BC, sans-serif; letter-spacing: .04em; text-transform: uppercase; text-decoration: none; color: {INK}; background: {ORANGE}; padding: 3pt 9pt 2.5pt; border-radius: 2pt; }}
+/* ---------------- one machine sheet (--public) */
+.sheet .item {{ border-top: 0; padding-top: 0; }}
+.sh-top {{ display: flex; align-items: center; justify-content: space-between; border-bottom: 4pt solid {ORANGE}; padding-bottom: 7pt; margin-bottom: 10pt; }}
+.sh-top img {{ height: 0.6in; }}
+.sh-badge {{ font: 700 15pt/1 BC, sans-serif; text-transform: uppercase; letter-spacing: .06em; color: #fff; background: {CHARCOAL}; border-left: 5pt solid {ORANGE}; padding: 6pt 11pt 5pt; text-align: right; }}
+.sh-badge small {{ display: block; margin-top: 3pt; font: 600 8.5pt B, sans-serif; letter-spacing: 0; text-transform: none; color: {ORANGE}; }}
+.sh-cta {{ break-inside: avoid; margin-top: 10pt; border: 1.4pt solid {ORANGE}; border-radius: 4pt; padding: 8pt 12pt; font-size: 8.8pt; color: #3B3D40; }}
+.sh-cta b {{ display: block; font: 700 13pt BC, sans-serif; color: {CHARCOAL}; margin-bottom: 2pt; }}
+.sh-cta a {{ font-weight: 700; color: {INK}; text-decoration: underline; text-decoration-color: {ORANGE}; }}
 /* ---------------- terms */
 .terms {{ break-before: page; }}
 .terms h3 {{ font: 700 12.5pt BC, sans-serif; margin: 10pt 0 3pt; color: {CHARCOAL}; }}
@@ -219,13 +248,32 @@ def li(xs):
     return "".join(f"<li>{e(x)}</li>" for x in xs)
 
 
-def item_html(x):
+ASK_URL = f"{SITE}{PAGE_SLUG}#instant-quote"
+
+
+def price_box(x):
+    """the orange price box: the Black Friday price, the regular price struck through and the lease payment — or, in the
+    public files, where to get the price (by e-mail, in minutes)"""
     pr = x["pr"]
+    if PUBLIC:
+        return (f'<div class="price ask"><div class="p1"><span class="lbl">Black Friday price</span><span class="bfp">By email</span></div>'
+                f'<div class="p2"><span class="reg">Ask for the price list and we email it to you in minutes.</span>'
+                f'<a class="ask-go" href="{ASK_URL}">Get the Black Friday price</a></div>'
+                f'<div class="lease">0% down financing <small>· 36-month lease, on approved credit</small></div></div>')
     save = pr["regular"] - pr["price"]
     note = pr.get("lease_note")
     lease_txt = (f'or <b>{e(pr["lease"])}</b> / month {e(note)}' if note else
                  f'or <b>{e(pr["lease"])}</b> / month for 36 months')
     lease = f'<div class="lease">{lease_txt} <small>· 36-month lease, 0% down, on approved credit</small></div>'
+    return f"""<div class="price">
+        <div class="p1"><span class="lbl">Black Friday price</span><span class="bfp">{money(pr['price'])}</span></div>
+        <div class="p2"><span class="reg">Regular price <s>{money(pr['regular'])}</s></span><span class="save">You save {money(save)}</span></div>
+        {lease}
+      </div>"""
+
+
+def item_html(x):
+    pr = x["pr"]
     status = (f'<span class="st back">Back order · about {x.get("lead", 90)} days · 10% down secures it</span>'
               if x.get("status") == "back" else '<span class="st">In stock in Mississauga, ON</span>')
     brand = x.get("brand") or ""
@@ -236,8 +284,9 @@ def item_html(x):
     feats = x.get("features") or []
     feat = f'<ul class="feat{" one" if len(feats) <= 3 else ""}">{li(feats)}</ul>' if feats else ""
     opt = ""
-    if pr.get("pdf_optional"):
-        opt = '<p class="opt"><b>Optional:</b> ' + e("; ".join(pr["pdf_optional"])) + "</p>"
+    options = x.get("optional") if PUBLIC else pr.get("pdf_optional")   # the public list names the options without prices
+    if options:
+        opt = '<p class="opt"><b>Optional:</b> ' + e("; ".join(options)) + "</p>"
     badges = "".join(f"<span>{e(b)}</span>" for b in x.get("badges") or [])
     vids = x.get("videos") or []
     vlinks = ""
@@ -261,11 +310,7 @@ def item_html(x):
       {f'<div class="thumbs">{thumbs}</div>' if thumbs else ''}
     </div>
     <div class="info">
-      <div class="price">
-        <div class="p1"><span class="lbl">Black Friday price</span><span class="bfp">{money(pr['price'])}</span></div>
-        <div class="p2"><span class="reg">Regular price <s>{money(pr['regular'])}</s></span><span class="save">You save {money(save)}</span></div>
-        {lease}
-      </div>
+      {price_box(x)}
       {capy}{caps}
       {f'<p class="about">{e(x["about"])}</p>' if x.get('about') else ''}
       {f'<ul class="key">{li(x["key"])}</ul>' if x.get('key') else ''}
@@ -278,6 +323,28 @@ def item_html(x):
 
 
 logo = jpeg("novotech-logo", 700, "logo")
+ASK_LINK = f'<a href="{ASK_URL}">novotechmachinetools.com/{PAGE_SLUG}</a>'
+if PUBLIC:
+    cv_sub = f"In-stock machines<small>{len(items)} machines on sale<br>in our Mississauga, ON warehouse</small>"
+    offer1 = "Ask for the price list: we email it to you in minutes"
+    offer3 = "36-month lease, on approved credit"
+    cv_foot = (f"<b>Black Friday prices until Friday, December 4, 2026, 11:59 pm ET.</b> Get the price list at {ASK_LINK} "
+               "or call +1 647 526 5510 (Mon–Fri 9:00–17:00 ET). *See the terms on the last page.")
+    terms_prices = (f"<li>Black Friday prices are valid now until Friday, December 4, 2026, 11:59 pm Eastern time, while quantities last. "
+                    f"Ask for the price list at {ASK_LINK} or call +1 647 526 5510 and we email it to you. In-stock machines are first come, first served.</li>")
+    terms_fin = ("<p>0% down financing: a 36-month lease on approved credit (OAC), with a $10 buyout at the end of the lease, plus applicable "
+                 "taxes. The monthly payment of every machine is in the price list.</p>")
+else:
+    cv_sub = f"In-stock price list<small>{len(items)} machines at Black Friday prices<br>from our Mississauga, ON warehouse</small>"
+    offer1 = "Every machine in this list, while quantities last"
+    offer3 = "36-month lease payment shown for every machine, on approved credit"
+    cv_foot = ("<b>Prices valid until Friday, December 4, 2026, 11:59 pm ET.</b> Prices in Canadian dollars, plus applicable taxes. "
+               "To reserve a machine, reply to our email or call +1 647 526 5510 (Mon–Fri 9:00–17:00 ET). *See the terms on the last page.")
+    terms_prices = ("<li>Black Friday prices are valid now until Friday, December 4, 2026, 11:59 pm Eastern time, while quantities last. "
+                    "In-stock machines are first come, first served.</li>")
+    terms_fin = ("<p>The monthly payments shown are for a 36-month lease with 0% down, on approved credit (OAC), with a $10 buyout at the "
+                 "end of the lease, plus applicable taxes. Rates quoted on November 13, 2026 by our financing partner and subject to change.</p>")
+cover_m1, cover_m2 = (png('dn-xl-1', 620), png('bk-hero-auto-350ga', 360)) if PUBLIC else (png('dn-xl-1', 760), png('bk-hero-auto-350ga', 420))
 body = []
 body.append(f"""
 <div class="cover">
@@ -286,16 +353,16 @@ body.append(f"""
   <div class="cv-band2"></div><div class="cv-band"></div>
   <div class="cv-title"><span class="cv-dates">Now until Dec 4, 2026</span>
     <div class="cv-big">Black<span>Friday</span></div>
-    <div class="cv-sub">In-stock price list<small>{len(items)} machines at Black Friday prices<br>from our Mississauga, ON warehouse</small></div></div>
-  <img class="cv-m1" src="{png('dn-xl-1', 760)}" alt="">
-  <img class="cv-m2" src="{png('bk-hero-auto-350ga', 420)}" alt="">
+    <div class="cv-sub">{cv_sub}</div></div>
+  <img class="cv-m1" src="{cover_m1}" alt="">
+  <img class="cv-m2" src="{cover_m2}" alt="">
   <div class="cv-offers">
-    <div class="cv-offer"><b>Black Friday prices on stock</b><span>Every machine in this list, while quantities last</span></div>
+    <div class="cv-offer"><b>Black Friday prices on stock</b><span>{offer1}</span></div>
     <div class="cv-offer"><b>5% off factory orders</b><span>Confirm by Dec 4 — only 10% down, 90% on delivery</span></div>
-    <div class="cv-offer"><b>0% down financing</b><span>36-month lease payment shown for every machine, on approved credit</span></div>
+    <div class="cv-offer"><b>0% down financing</b><span>{offer3}</span></div>
     <div class="cv-offer tax"><b>100% first-year write-off*</b><span>Eligible manufacturing equipment — Ontario manufacturers can add a 15% tax credit*</span></div>
   </div>
-  <div class="cv-foot"><b>Prices valid until Friday, December 4, 2026, 11:59 pm ET.</b> Prices in Canadian dollars, plus applicable taxes. To reserve a machine, reply to our email or call +1 647 526 5510 (Mon–Fri 9:00–17:00 ET). *See the terms on the last page.</div>
+  <div class="cv-foot">{cv_foot}</div>
 </div>""")
 for cid, ctitle in cats.items():
     xs = [x for x in items if x["cat"] == cid]
@@ -303,30 +370,59 @@ for cid, ctitle in cats.items():
         continue
     body.append(f'<h1 class="sec-title cat-h">{e(ctitle)}</h1>')
     body += [item_html(x) for x in xs]
+TERMS_REST = """
+  <h3>100% first-year write-off*</h3>
+  <p>Federal immediate expensing: machinery used in Canada mainly to manufacture or process goods for sale or lease can be deducted in full in the tax year it becomes available for use, so a machine from stock can be delivered and running before your year-end. Ontario Made Manufacturing Investment Tax Credit: eligible Ontario corporations can also claim a 15% tax credit on qualifying manufacturing machinery and equipment.</p>
+  <p><i>*General information, not tax advice. Eligibility depends on your business, how the machine is used and when it becomes available for use. Ask your accountant.</i></p>
+  <h3>Warranty</h3>
+  <p>Warranty and money-back guarantee as shown for each machine. Specifications and photos are for reference and subject to change without notice; errors and omissions excepted.</p>"""
 body.append(f"""
 <section class="terms">
   <h1 class="sec-title">Black Friday terms</h1>
   <h3>Prices and dates</h3>
-  <ul><li>Black Friday prices are valid now until Friday, December 4, 2026, 11:59 pm Eastern time, while quantities last. In-stock machines are first come, first served.</li>
+  <ul>{terms_prices}
   <li>All prices are in Canadian dollars (CAD), plus applicable taxes, for pickup at our Mississauga, ON warehouse. Freight across Canada and the US is arranged at competitive rates. Installation and training are available on request at an additional charge, except where a machine says it includes them.</li>
   <li>Back-order machines (marked in this list) are sold at their Black Friday price with 10% down to secure the order.</li></ul>
   <h3>Factory orders: 5% off</h3>
   <p>Any machine ordered from the factory and confirmed by December 4, 2026 is 5% off, with only 10% down to confirm the order and the remaining 90% on delivery.</p>
   <h3>Financing</h3>
-  <p>The monthly payments shown are for a 36-month lease with 0% down, on approved credit (OAC), with a $10 buyout at the end of the lease, plus applicable taxes. Rates quoted on November 13, 2026 by our financing partner and subject to change.</p>
-  <h3>100% first-year write-off*</h3>
-  <p>Federal immediate expensing: machinery used in Canada mainly to manufacture or process goods for sale or lease can be deducted in full in the tax year it becomes available for use, so a machine from stock can be delivered and running before your year-end. Ontario Made Manufacturing Investment Tax Credit: eligible Ontario corporations can also claim a 15% tax credit on qualifying manufacturing machinery and equipment.</p>
-  <p><i>*General information, not tax advice. Eligibility depends on your business, how the machine is used and when it becomes available for use. Ask your accountant.</i></p>
-  <h3>Warranty</h3>
-  <p>Warranty and money-back guarantee as shown for each machine. Specifications and photos are for reference and subject to change without notice; errors and omissions excepted.</p>
+  {terms_fin}{TERMS_REST}
   <div class="contact-box"><img src="{logo}" alt="">
     <p><b>Reserve your machine: +1 647 526 5510</b><br>info@novotechmachinetools.com · novotechmachinetools.com<br>Showroom and warehouse: 1365 Mid-Way Blvd, Unit 26, Mississauga, ON L5T 2J5 · Mon–Fri 9:00–17:00 ET<br>
     <a href="{SITE}{PAGE_SLUG}">See every machine with photos and videos online</a></p></div>
 </section>""")
 
-doc = f'<!doctype html><html lang="en"><head><meta charset="utf-8"><title>NovoTech Black Friday 2026 — In-stock price list</title><style>{CSS}</style></head><body>{"".join(body)}</body></html>'
+TITLE = "NovoTech Black Friday 2026 — In-stock machines" if PUBLIC else "NovoTech Black Friday 2026 — In-stock price list"
+SUBJECT = "Black Friday prices by email until Dec 4, 2026" if PUBLIC else "Black Friday prices, valid until Dec 4, 2026"
+jobs = []   # (html file, pdf file, title)
+
+
+def html_doc(title, css, inner, cls=""):
+    return (f'<!doctype html><html lang="en"><head><meta charset="utf-8"><title>{e(title)}</title><style>{css}</style></head>'
+            f'<body class="{cls}">{inner}</body></html>')
+
+
 hp = os.path.join(TMP, "pricelist.html")
-open(hp, "w", encoding="utf-8").write(doc)
+open(hp, "w", encoding="utf-8").write(html_doc(TITLE, CSS, "".join(body)))
+jobs.append((hp, OUT, TITLE))
+
+if PUBLIC:
+    # one sheet per machine: no cover, the logo and the Black Friday badge on top, where to get the price at the bottom
+    first = ("@page :first {{ margin: 0; @top-left {{ content: none; }} @top-right {{ content: none; }} "
+             "@bottom-left {{ content: none; }} @bottom-right {{ content: none; }} }}").replace("{{", "{").replace("}}", "}")
+    assert first in CSS, "the cover page rule changed"
+    CSS_SHEET = CSS.replace(first, "@page :first { @top-left { content: none; } @top-right { content: none; } }")
+    top = (f'<div class="sh-top"><img src="{logo}" alt="NovoTech Machine Tools">'
+           '<div class="sh-badge">Black Friday 2026<small>In stock in Mississauga, ON · now until Dec 4, 2026</small></div></div>')
+    for x in items:
+        cta = (f'<div class="sh-cta"><b>Get the Black Friday price</b>Ask for the price list at {ASK_LINK} or call +1 647 526 5510 '
+               '(Mon–Fri 9:00–17:00 ET) and we email it to you in minutes. In-stock machines are first come, first served · 5% off '
+               'factory orders confirmed by Dec 4 · 0% down financing on approved credit · 1365 Mid-Way Blvd, Unit 26, Mississauga, ON.</div>')
+        name = os.path.basename(x["sheet"])
+        sp = os.path.join(TMP, x["id"] + ".html")
+        t = f'NovoTech {x["title"]} — Black Friday 2026'
+        open(sp, "w", encoding="utf-8").write(html_doc(t, CSS_SHEET, top + item_html(x) + cta, "sheet"))
+        jobs.append((sp, os.path.join(OUTDIR, name), t))
 
 import asyncio
 from playwright.async_api import async_playwright
@@ -336,17 +432,22 @@ async def render():
     async with async_playwright() as p:
         b = await p.chromium.launch()
         pg = await b.new_page()
-        await pg.goto("file://" + hp, wait_until="load")
-        await pg.evaluate("document.fonts.ready")
-        await pg.pdf(path=OUT, prefer_css_page_size=True, print_background=True, tagged=True, outline=True)
+        for src, dst, _ in jobs:
+            await pg.goto("file://" + src, wait_until="load")
+            await pg.evaluate("document.fonts.ready")
+            await pg.pdf(path=dst, prefer_css_page_size=True, print_background=True, tagged=True, outline=True)
         await b.close()
 
 asyncio.run(render())
 from pypdf import PdfReader, PdfWriter   # title and author in the file properties
-r = PdfReader(OUT)
-w = PdfWriter(clone_from=r)
-w.add_metadata({"/Title": "NovoTech Black Friday 2026 — In-stock price list", "/Author": "NovoTech Machine Tools Inc.",
-                "/Subject": "Black Friday prices, valid until Dec 4, 2026"})
-with open(OUT, "wb") as f:
-    w.write(f)
-print(OUT, f"{os.path.getsize(OUT) / 1e6:.1f} MB,", len(r.pages), "pages; html", hp)
+for src, dst, title in jobs:
+    r = PdfReader(dst)
+    w = PdfWriter(clone_from=r)
+    w.add_metadata({"/Title": title, "/Author": "NovoTech Machine Tools Inc.", "/Subject": SUBJECT})
+    with open(dst, "wb") as f:
+        w.write(f)
+    if dst == OUT or len(jobs) < 4:
+        print(dst, f"{os.path.getsize(dst) / 1e6:.2f} MB,", len(r.pages), "pages; html", src)
+if PUBLIC:
+    sizes = [os.path.getsize(d) for _, d, _ in jobs[1:]]
+    print(f"{len(sizes)} machine sheets, {min(sizes) / 1e3:.0f}–{max(sizes) / 1e3:.0f} KB")

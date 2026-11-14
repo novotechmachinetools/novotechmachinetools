@@ -1,5 +1,5 @@
 {
- "_note": "Black Friday 2026 page (templates/black-friday.html; keywords from Ahrefs, Canada, Nov 13 2026: 'machinery sale' and '… for sale'; 'black friday' with machinery has no search volume). \"stock\" is the owner's price list of Nov 13 2026 (24 machines) with his own descriptions, photos and videos, grouped by \"stock_cats\". Prices never go on this page: bf-quote.php e-mails them, with the price-list PDF, from the private files on the server (~/novotech-private/black-friday).",
+ "_note": "Black Friday 2026 page (templates/black-friday.html; keywords from Ahrefs, Canada, Nov 13 2026: 'machinery sale' and '… for sale'; 'black friday' with machinery has no search volume). \"stock\" is the owner's price list of Nov 13 2026 (24 machines, plus the BT 26 he added on Nov 14: 25) with his own descriptions, photos and videos, grouped by \"stock_cats\". Prices never go on this page: bf-quote.php e-mails them, with the price-list PDF, from the private files on the server (~/novotech-private/black-friday).",
  "slug": "black-friday-machinery-sale",
  "template": "black-friday.html",
  "draft": false,
@@ -22,6 +22,59 @@
   }
  ],
  "stock": [
+  {
+   "id": "bt26",
+   "cat": "rebar",
+   "model": "BT 26",
+   "title": "BT 26 portable rebar bender",
+   "sub": "Portable stirrup bender, 110 V single-phase",
+   "family": "rebar:Protable-rebar-bender-MG-BT-A-series",
+   "brand": "GMS",
+   "guide": "rebar-bender#buying-guide",
+   "brochure": "files/NovoTech-GMS-Rebar-Bending-Cutting-Machines-Catalogue.pdf",
+   "capacity": "Rebar up to Ø 1″ (26 mm)",
+   "about": "Our most popular rebar bender. The BT 26 plugs into a regular 110 V single-phase outlet through its built-in transformer, stands on its own base at a comfortable working height and moves easily from job to job. Its PLC programs the bending angle, the number of bends and the bending sequence, three push buttons call up preset angles, and it bends stirrups as well as single bends.",
+   "key": [
+    "Runs on 110 V single-phase (can be set to run on 220 V single-phase as well), built-in transformer"
+   ],
+   "features": [
+    "PLC control: programmable bending angle, number of bends and bending sequence",
+    "3 push buttons for preset bending angles; bending angle adjustable",
+    "VFD drive controls motor power and torque, with overload protection",
+    "Bends left and right, manually or automatically; foot pedal starts the bending cycle",
+    "Stirrups and other kinds of bends",
+    "Full set of dies and tooling for a variety of bar diameters and bending radiuses",
+    "Comes with a stand for easy operation",
+    "3 HP (2,200 W) motor",
+    "CSA-approved electric panel with door safety interlock and emergency stop button",
+    "Built with European components"
+   ],
+   "badges": [
+    "1-year warranty",
+    "7-day money-back guarantee",
+    "Made in Turkey"
+   ],
+   "images": [
+    [
+     "bt-26",
+     "BT 26 portable rebar bender on its stand, with the foot pedal"
+    ],
+    [
+     "nt-about-bt26",
+     "BT 26 benders in stock in our Mississauga, ON warehouse"
+    ],
+    [
+     "video-RB9W4DQ9Mp4",
+     "Bending rebar on the BT 26"
+    ]
+   ],
+   "videos": [
+    "RB9W4DQ9Mp4",
+    "-A4JchYPbIY",
+    "JDsfbSoCdN0"
+   ],
+   "sheet": "files/black-friday/NovoTech-BT-26-portable-rebar-bender-Black-Friday.pdf"
+  },
   {
    "id": "b36",
    "cat": "rebar",
@@ -91,7 +144,8 @@
     "Mq2_wXnQCxw",
     "PvXkQ72TrZ4",
     "YhbU43ypxRU"
-   ]
+   ],
+   "sheet": "files/black-friday/NovoTech-B36-rebar-bender-Black-Friday.pdf"
   },
   {
    "id": "b45",
@@ -162,7 +216,8 @@
     "Mq2_wXnQCxw",
     "YhbU43ypxRU",
     "V8oJgSzeiq4"
-   ]
+   ],
+   "sheet": "files/black-friday/NovoTech-B45-rebar-bender-Black-Friday.pdf"
   },
   {
    "id": "spiral-attachment",
@@ -188,7 +243,8 @@
    ],
    "videos": [
     "PvXkQ72TrZ4"
-   ]
+   ],
+   "sheet": "files/black-friday/NovoTech-Spiral-and-round-stirrup-bending-attachment-Black-Friday.pdf"
   },
   {
    "id": "gw52a",
@@ -229,7 +285,8 @@
    ],
    "videos": [
     "AsFGExPgx1U"
-   ]
+   ],
+   "sheet": "files/black-friday/NovoTech-GW52-A-rebar-bender-Black-Friday.pdf"
   },
   {
    "id": "h45",
@@ -267,7 +324,8 @@
     "0L43B6f0Gio",
     "eZI4hX-giPg",
     "MPkRy0OXaNQ"
-   ]
+   ],
+   "sheet": "files/black-friday/NovoTech-H45-hydraulic-rebar-cutter-Black-Friday.pdf"
   },
   {
    "id": "power24",
@@ -319,7 +377,8 @@
    "videos": [
     "hrM0RQ0JHW8",
     "eZI4hX-giPg"
-   ]
+   ],
+   "sheet": "files/black-friday/NovoTech-POWER24-portable-hydraulic-rebar-cutter-Black-Friday.pdf"
   },
   {
    "id": "bms-270dg",
@@ -396,7 +455,8 @@
    ],
    "videos": [
     "Cef4WeM5WQg"
-   ]
+   ],
+   "sheet": "files/black-friday/NovoTech-BMS-270-DG-manual-double-miter-band-saw-Black-Friday.pdf"
   },
   {
    "id": "arg-300",
@@ -455,7 +515,8 @@
    ],
    "videos": [
     "m2VMcdrqHKY"
-   ]
+   ],
+   "sheet": "files/black-friday/NovoTech-ARG-300-PLUS-E-F-manual-double-miter-band-saw-Black-Friday.pdf"
   },
   {
    "id": "bs-315gf",
@@ -549,7 +610,8 @@
     "obbCib0YB24",
     "OBEMU6_zQSw",
     "yylLY38qVrM"
-   ]
+   ],
+   "sheet": "files/black-friday/NovoTech-BS-315-GF-semi-automatic-double-miter-band-saw-Black-Friday.pdf"
   },
   {
    "id": "bs-300x370",
@@ -626,7 +688,8 @@
     "BE_QG8hzgRI",
     "-sHF4F2vy0I",
     "ZK2mzm-OAoI"
-   ]
+   ],
+   "sheet": "files/black-friday/NovoTech-BS-300x370-automatic-band-saw-Black-Friday.pdf"
   },
   {
    "id": "bmso-350ga",
@@ -703,7 +766,8 @@
     "DwMoB3JW2gY",
     "EJmMbr1g4Hs",
     "FjbwH4Chf0w"
-   ]
+   ],
+   "sheet": "files/black-friday/NovoTech-BMSO-350GA-programmable-automatic-miter-band-saw-Black-Friday.pdf"
   },
   {
    "id": "esr-1550",
@@ -750,7 +814,8 @@
     "40Gqg63CD_A",
     "58AJnp_KtJ8",
     "WjSyjSanAxY"
-   ]
+   ],
+   "sheet": "files/black-friday/NovoTech-ESR-1550x4-5-initial-pinch-slip-roll-Black-Friday.pdf"
   },
   {
    "id": "mrm-s-1550",
@@ -806,7 +871,8 @@
    "videos": [
     "zkY8pYDFmhE",
     "kJd0rPRFykY"
-   ]
+   ],
+   "sheet": "files/black-friday/NovoTech-MRM-S-1550x150-plate-roller-Black-Friday.pdf"
   },
   {
    "id": "3r-hmd-1550",
@@ -847,7 +913,8 @@
    ],
    "videos": [
     "pJEAqF5MZ9Y"
-   ]
+   ],
+   "sheet": "files/black-friday/NovoTech-3R-HMD-1550x90-hydraulic-slip-roll-Black-Friday.pdf"
   },
   {
    "id": "hrbm-65",
@@ -919,7 +986,8 @@
     "KZs8wdQeOoY",
     "_WRBOrvhA90",
     "UXI2r9eyywY"
-   ]
+   ],
+   "sheet": "files/black-friday/NovoTech-HRBM-65-hydraulic-profile-bender-Black-Friday.pdf"
   },
   {
    "id": "hrbm-50hv",
@@ -993,7 +1061,8 @@
     "whqMKlfb3Do",
     "kMc1q9hx8Fw",
     "UXI2r9eyywY"
-   ]
+   ],
+   "sheet": "files/black-friday/NovoTech-HRBM-50-HV-hydraulic-profile-bender-digital-readout-Black-Friday.pdf"
   },
   {
    "id": "rbm-50hv",
@@ -1062,7 +1131,8 @@
     "HTNWqKyUOkU",
     "ISdaTOmDoKo",
     "UXI2r9eyywY"
-   ]
+   ],
+   "sheet": "files/black-friday/NovoTech-RBM-50-HV-manual-profile-bender-Black-Friday.pdf"
   },
   {
    "id": "rm18e",
@@ -1100,7 +1170,8 @@
    ],
    "shorts": [
     "HeFp6yHXOJs"
-   ]
+   ],
+   "sheet": "files/black-friday/NovoTech-RM18E-bead-roller-Black-Friday.pdf"
   },
   {
    "id": "ckh-3150",
@@ -1138,7 +1209,8 @@
     "F_0UXH6XP6A",
     "XmU2iX34i80",
     "fLiNSKnZ6Pk"
-   ]
+   ],
+   "sheet": "files/black-friday/NovoTech-CKH-3150-portable-roofing-brake-Black-Friday.pdf"
   },
   {
    "id": "xl-1560",
@@ -1215,7 +1287,8 @@
    ],
    "shorts": [
     "eNfViH5ywrY"
-   ]
+   ],
+   "sheet": "files/black-friday/NovoTech-XL-1560-CNC-mild-hybrid-press-brake-Black-Friday.pdf"
   },
   {
    "id": "xl-40220-6",
@@ -1303,7 +1376,8 @@
     "hZSWcdxjjnM",
     "Tkt1Vyhfxs8",
     "A1i_NljuVQo"
-   ]
+   ],
+   "sheet": "files/black-friday/NovoTech-XL-40220-CNC-mild-hybrid-press-brake-6-1-axes-Black-Friday.pdf"
   },
   {
    "id": "xl-40220-4",
@@ -1395,7 +1469,8 @@
     "hZSWcdxjjnM",
     "Tkt1Vyhfxs8",
     "A1i_NljuVQo"
-   ]
+   ],
+   "sheet": "files/black-friday/NovoTech-XL-40220-CNC-mild-hybrid-press-brake-4-1-axes-Black-Friday.pdf"
   },
   {
    "id": "bk-050",
@@ -1439,7 +1514,8 @@
    ],
    "videos": [
     "a94tjN7aVRk"
-   ]
+   ],
+   "sheet": "files/black-friday/NovoTech-BK-050-rotary-draw-pipe-bender-Black-Friday.pdf"
   },
   {
    "id": "hkm-60",
@@ -1508,7 +1584,8 @@
     "gBdw8nMRdEU",
     "YzEKOaNtOPI",
     "Ih_g56w46tU"
-   ]
+   ],
+   "sheet": "files/black-friday/NovoTech-HKM-60-hydraulic-ironworker-Black-Friday.pdf"
   }
  ],
  "faq_title": "Black Friday questions",
@@ -1581,6 +1658,9 @@
   }
  ],
  "video_titles": {
+  "RB9W4DQ9Mp4": "GMS BT 26 portable rebar bender bending Ø1″ (26 mm)",
+  "-A4JchYPbIY": "GMS BT 26 portable rebar bender on 120 V",
+  "JDsfbSoCdN0": "GMS BT 26 and MG 20 portable rebar benders",
   "Mq2_wXnQCxw": "B 45 and B 36 Rebar Benders – Bar Bending Machines for Construction",
   "PvXkQ72TrZ4": "B 36 Rebar Bender with Spiral Bending Attachment",
   "YhbU43ypxRU": "GMS B 45 and B 36 rebar benders at work",

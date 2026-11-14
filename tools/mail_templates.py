@@ -69,9 +69,9 @@ Tel: <a href="{TEL}" style="color:{INK};text-decoration:none;">{PHONE}</a></td><
 <tr><td style="padding:12px 0 0 0;"><table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>{icons}</tr></table></td></tr></table>'''
 
 
-def shell(inner, pre, bg="#FFFFFF"):
+def shell(inner, pre, bg="#FFFFFF", head=""):
     return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="color-scheme" content="light"><meta name="supported-color-schemes" content="light"><title>NovoTech Machine Tools</title></head>
+<meta name="color-scheme" content="light"><meta name="supported-color-schemes" content="light"><title>NovoTech Machine Tools</title>{head}</head>
 <body style="margin:0;padding:0;background:{bg};">
 <div style="display:none;max-height:0;overflow:hidden;opacity:0;">{pre}</div>
 {inner}
@@ -213,6 +213,57 @@ BF_TAX = ("*Canadian businesses can deduct 100% of the cost of eligible manufact
 BF_WHY = "You received this email because you asked for the Black Friday price list on NovoTechMachineTools.com."
 
 
+# the whole price list in the body of the e-mail, machine by machine like the PDF (the owner, Nov 14 2026): its rows are made
+# by tools/bf_mail_list.py into the private bf-mail-list.json (prices inside), styled here. Classes keep the e-mail under
+# Gmail's 102 KB; what must survive a mail app without <style> (the price box frame, the red regular price, the white text on
+# the dark lease line) is also on the tags. Phones: photo above the details.
+_F = f"font-family:{FONT};"
+BF_LIST_CSS = (
+    f".bh{{{_F}padding:24px 0 2px;font-size:21px;line-height:27px;font-weight:bold;color:{BTN_INK};}}"
+    f".bc{{{_F}padding:20px 0 6px;border-bottom:3px solid {ORANGE};font-size:13px;line-height:18px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:{ORANGE_TXT};}}"
+    f".bm{{{_F}padding:16px 0 18px;border-bottom:1px dashed #D9DBDE;font-size:14px;line-height:20px;color:{INK};}}"
+    f".bt{{font-size:20px;line-height:25px;font-weight:bold;color:{BTN_INK};}}"
+    ".bmeta{padding:6px 0 0;font-size:12px;line-height:22px;}"
+    f".bs{{background:{INK};color:#FFFFFF;border-left:3px solid {ORANGE};padding:3px 8px;font-weight:bold;}}"
+    ".bst{color:#17663A;font-weight:bold;letter-spacing:.5px;text-transform:uppercase;font-size:11px;white-space:nowrap;}"
+    ".bstb{color:#8A4A0E;}"
+    f".bbr{{color:{MUTED};letter-spacing:1px;text-transform:uppercase;font-size:11px;}}"
+    f".c1{{{_F}width:200px;padding:12px 16px 0 0;}}"
+    f".c2{{{_F}padding:12px 0 0;font-size:14px;line-height:20px;color:{INK};}}"
+    ".mi{display:block;width:200px;height:150px;border:1px solid #D9DBDE;}"
+    ".th{padding:6px 6px 0 0;}"
+    ".thi{display:block;width:62px;height:47px;border:1px solid #D9DBDE;}"
+    f".pb{{border:2px solid {ORANGE};}}"
+    f".p1{{{_F}background:#FFF3E6;padding:8px 10px;vertical-align:middle;white-space:nowrap;}}"
+    ".pl{font-size:10px;line-height:13px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:#8A4A0E;}"
+    f".pp{{display:block;font-size:26px;line-height:31px;color:{BTN_INK};}}"
+    f".p2{{{_F}padding:8px 10px;vertical-align:middle;font-size:13px;line-height:19px;color:{MUTED};}}"
+    ".rg{color:#D0021B;font-weight:bold;font-size:15px;}"
+    ".sv{color:#17663A;}"
+    f".ls{{{_F}background:{INK};color:#FFFFFF;padding:5px 10px;font-size:13px;line-height:18px;}}"
+    f".ls b{{color:{ORANGE};font-size:15px;}}"
+    ".ls span{color:#C9CBCF;font-size:11px;}"
+    f".cy{{padding:10px 0 2px;font-size:15px;line-height:20px;font-weight:bold;color:{BTN_INK};}}"
+    ".cy span{display:block;font-size:10px;line-height:13px;letter-spacing:1px;text-transform:uppercase;color:#8A4A0E;}"
+    f".kt{{border-top:2px solid {ORANGE};}}"
+    f".kv{{{_F}font-size:12px;line-height:17px;padding:3px 0;border-bottom:1px solid #E8EAEC;color:{MUTED};}}"
+    f".kvv{{text-align:right;font-weight:bold;color:{BTN_INK};}}"
+    ".ab{margin:0;padding:6px 0;font-size:13px;line-height:19px;color:#3B3D40;}"
+    f".ky{{background:#FFF3E6;border-left:3px solid {ORANGE};padding:4px 8px;margin:2px 0;font-size:13px;line-height:18px;font-weight:bold;}}"
+    ".ft{padding:6px 0 4px;font-size:13px;line-height:19px;}"
+    f".ft b{{color:{ORANGE};}}"
+    ".op{padding:2px 0 4px;font-size:13px;line-height:18px;}"
+    f".bd{{padding:2px 0 6px;font-size:12px;line-height:18px;color:{MUTED};}}"
+    ".lk{font-size:13px;line-height:22px;}"
+    f".lk a{{color:{BTN_INK};font-weight:bold;}}"
+    f".lk a.vd{{background:{INK};color:#FFFFFF;text-decoration:none;padding:1px 6px;}}"
+    f".pk{{display:inline-block;background:{ORANGE};color:{BTN_INK};font-size:11px;line-height:16px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;padding:3px 8px;margin-bottom:6px;}}"
+    "@media only screen and (max-width:600px){.c1,.c2{display:block!important;width:100%!important;padding:12px 0 0!important}"
+    ".mi{width:100%!important;height:auto!important}}")
+BF_LIST_WRAP = (f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">{T("ROWS")}</table>'
+                f'<p style="margin:12px 0 18px 0;font-family:{FONT};font-size:12px;line-height:18px;color:{MUTED};">{T("NOTE")}</p>')
+
+
 def bf_terms_rows():
     rows = [("In-stock machines", "Black Friday prices, first come, first served"),
             ("Factory orders", "5% off when confirmed by Dec 4 &middot; only 10% down, balance on delivery"),
@@ -252,7 +303,8 @@ def bf_offer():
 <tr><td style="padding:6px 24px 22px 24px;font-family:{FONT};font-size:12px;line-height:18px;color:{MUTED};">{BF_TAX}</td></tr>
 <tr><td style="background:{INK};padding:16px 24px;font-family:{FONT};font-size:12px;line-height:18px;color:#B4B6BA;">{BF_WHY}</td></tr>
 </table></td></tr></table>'''
-    return shell(inner, "Your NovoTech Black Friday price list: in-stock machines in Mississauga, ON, 5% off factory orders until Dec 4.", "#E9EAEC")
+    return shell(inner, "Your NovoTech Black Friday price list: in-stock machines in Mississauga, ON, 5% off factory orders until Dec 4.", "#E9EAEC",
+                 f"<style>{BF_LIST_CSS}</style>")
 
 
 BF_TEXT = f"""Here are your Black Friday prices{T("COMMA_NAME")}
@@ -301,6 +353,10 @@ TEMPLATES = {
                       f'<p style="margin:10px 0 8px 0;font-family:{FONT};font-size:12px;line-height:18px;color:{MUTED};">{T("NOTE")}</p></td></tr></table>'
                       '<div style="height:16px;line-height:16px;font-size:0;">&nbsp;</div>'),
     "bf_mark": f'<span style="color:{ORANGE};">&#9632;&nbsp;</span>',
+    "bf_list": BF_LIST_WRAP,
+    "bf_list_head": f'<tr><td class="bh" style="font-family:{FONT};font-size:21px;font-weight:bold;">{T("T")}</td></tr>',
+    "bf_list_cat": f'<tr><td class="bc" style="font-family:{FONT};color:{ORANGE_TXT};border-bottom:3px solid {ORANGE};">{T("T")}</td></tr>',
+    "bf_list_pick": f'<div class="pk" style="background:{ORANGE};">You asked about this machine</div>',
     "reply": auto_reply(), "text": TEXT,
     "summary_row": SUMMARY_ROW,
     "about": f' about <b style="color:#FFFFFF;">{T("T")}</b>',

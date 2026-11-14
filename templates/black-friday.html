@@ -95,6 +95,8 @@
           {% if x.badges %}<ul class="bf-badges">{% for bd in x.badges %}<li>{{ bd }}</li>{% endfor %}</ul>{% endif %}
           <div class="bf-item-ctas">
             <a class="btn btn-primary bf-go" href="#instant-quote" data-bf-pick="{{ x.id }}">Get instant QUOTE</a>
+            {# the machine's own PDF, without prices (tools/bf_pricelist.py --public; the owner, Nov 14 2026) #}
+            {% if x.sheet %}<a class="btn btn-ghost bf-pdf" href="{{ x.sheet }}" download><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M14 3H6.5A1.5 1.5 0 0 0 5 4.5v15A1.5 1.5 0 0 0 6.5 21h11a1.5 1.5 0 0 0 1.5-1.5V8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M14 3v5h5M12 11v6m-3-3 3 3 3-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Download PDF</a>{% endif %}
             <ul class="bf-links">
               {% if x.href %}<li><a href="{{ x.href }}">Product page</a></li>{% endif %}
               {% if x.brochure %}<li><a href="{{ x.brochure }}" target="_blank" rel="noopener">Brochure (PDF)</a></li>{% endif %}

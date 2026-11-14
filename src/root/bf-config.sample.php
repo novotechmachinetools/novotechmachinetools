@@ -18,6 +18,9 @@ return [
     'pdf'      => 'NovoTech-Black-Friday-2026-Price-List.pdf',
     'pdf_name' => 'NovoTech-Black-Friday-2026-Price-List.pdf',
 
+    // optional: the whole price list inside the e-mail, machine by machine with its photos (tools/bf_mail_list.py writes it)
+    'mail_list' => 'bf-mail-list.json',
+
     // the in-stock machines with their Black Friday prices, shown as a table in the e-mail (optional: without them the PDF
     // alone carries the prices). id = the machine's id on the page (its checkbox in the form)
     'machines' => [

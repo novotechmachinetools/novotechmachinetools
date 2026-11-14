@@ -175,4 +175,33 @@
       s.addEventListener("click", function (e) { if (!w.matchMedia("(max-width: 640px)").matches) e.preventDefault(); });   // the index stays open on large screens
     });
   }
+  /* ---------- Black Friday countdown under the video (the owner, Nov 14 2026): days, hours, minutes and seconds to the end
+     of the sale, every second; a number that changes drops in; paused while the tab is hidden ---------- */
+  var cnt = d.querySelector(".hp-bf [data-bf-end]");
+  if (cnt) {
+    var END = Date.parse(cnt.getAttribute("data-bf-end")), cdTimer = 0;
+    var pad2 = function (n) { return (n < 10 ? "0" : "") + n; };
+    var put = function (sel, v) {
+      var el = cnt.querySelector(sel);
+      if (!el || el.textContent === v) return;
+      el.textContent = v;
+      if (!reduce) { el.classList.remove("is-tick"); void el.offsetWidth; el.classList.add("is-tick"); }
+    };
+    var tickBf = function () {
+      var ms = END - Date.now();
+      if (!(ms > 0)) {
+        clearInterval(cdTimer);
+        var band = cnt.closest(".hp-bf");
+        if (band) band.classList.add("hp-bf-ended");
+        cnt.innerHTML = '<p class="hp-bf-label">The Black Friday sale has ended.</p>';
+        return false;
+      }
+      put("[data-cd-d]", pad2(Math.floor(ms / 864e5))); put("[data-cd-h]", pad2(Math.floor(ms % 864e5 / 36e5)));
+      put("[data-cd-m]", pad2(Math.floor(ms % 36e5 / 6e4))); put("[data-cd-s]", pad2(Math.floor(ms % 6e4 / 1e3)));
+      return true;
+    };
+    var runBf = function () { clearInterval(cdTimer); if (tickBf()) cdTimer = setInterval(tickBf, 1000); };
+    d.addEventListener("visibilitychange", function () { if (d.hidden) clearInterval(cdTimer); else runBf(); });
+    runBf();
+  }
 })();

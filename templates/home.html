@@ -29,6 +29,31 @@
   {# no pause button on the video (the owner, Nov 8 2026); it still stops under reduced motion, off screen and behind the finder #}
 </section>
 
+{# ---------- Black Friday 2026 (the owner, Nov 14 2026: "the Black Friday timer and the link to its page under the video — a
+     beautiful, eye-catching timer"): only while the sale runs — base.html marks the page promo-off before and after it ---------- #}
+{% if site.promo and site.promo.enabled %}{% set bf_url = site.promo.deals_url or 'black-friday-machinery-sale' %}
+<section class="hp-bf" aria-labelledby="hp-bf-title">
+  <div class="wrap hp-bf-grid">
+    <a class="hp-bf-text" href="{{ bf_url }}">
+      <span class="hp-bf-eyebrow">Now until Dec 4, 2026</span>
+      <span class="hp-bf-title" id="hp-bf-title">Black <b>Friday</b> <span class="hp-bf-sale">sale</span></span>
+      <span class="hp-bf-lead">In-stock machines on sale in Mississauga, ON <i aria-hidden="true">·</i> 5% off factory orders <i aria-hidden="true">·</i> 0% down financing</span>
+    </a>
+    <div class="hp-bf-count" data-bf-end="{{ site.promo.end }}">
+      <p class="hp-bf-label" data-bf-count-label>Sale ends in</p>
+      <div class="cd hp-cd" role="timer" aria-hidden="true">
+        <span class="cd-u"><b data-cd-d>--</b><i>days</i></span><span class="cd-sep" aria-hidden="true">:</span><span class="cd-u"><b data-cd-h>--</b><i>hours</i></span><span class="cd-sep" aria-hidden="true">:</span><span class="cd-u"><b data-cd-m>--</b><i>min</i></span><span class="cd-sep" aria-hidden="true">:</span><span class="cd-u cd-s"><b data-cd-s>--</b><i>sec</i></span>
+      </div>
+      <p class="sr-only">The sale ends on Friday, December 4, 2026, at 11:59 pm Eastern time.</p>
+    </div>
+    <div class="hp-bf-cta">
+      <a class="btn btn-primary hp-bf-go" href="{{ bf_url }}">See the Black Friday deals<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path d="M5 12h13m-5-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <span class="hp-bf-note">Get the price list by email in minutes</span>
+    </div>
+  </div>
+</section>
+{% endif %}
+
 {# ---------- the AI machine finder, right under the video ---------- #}
 <section class="hp-finder" aria-label="AI machine finder">
   <div class="wrap">

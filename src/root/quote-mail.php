@@ -25,7 +25,7 @@ function nt_mail_templates(): array
     $t = [];
     $t['bf_offer'] = <<<'NTMAIL'
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="color-scheme" content="light"><meta name="supported-color-schemes" content="light"><title>NovoTech Machine Tools</title></head>
+<meta name="color-scheme" content="light"><meta name="supported-color-schemes" content="light"><title>NovoTech Machine Tools</title><style>.bh{font-family:Arial,Helvetica,sans-serif;padding:24px 0 2px;font-size:21px;line-height:27px;font-weight:bold;color:#1F2022;}.bc{font-family:Arial,Helvetica,sans-serif;padding:20px 0 6px;border-bottom:3px solid #F28A1F;font-size:13px;line-height:18px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:#B85C00;}.bm{font-family:Arial,Helvetica,sans-serif;padding:16px 0 18px;border-bottom:1px dashed #D9DBDE;font-size:14px;line-height:20px;color:#2D2E30;}.bt{font-size:20px;line-height:25px;font-weight:bold;color:#1F2022;}.bmeta{padding:6px 0 0;font-size:12px;line-height:22px;}.bs{background:#2D2E30;color:#FFFFFF;border-left:3px solid #F28A1F;padding:3px 8px;font-weight:bold;}.bst{color:#17663A;font-weight:bold;letter-spacing:.5px;text-transform:uppercase;font-size:11px;white-space:nowrap;}.bstb{color:#8A4A0E;}.bbr{color:#5A5D62;letter-spacing:1px;text-transform:uppercase;font-size:11px;}.c1{font-family:Arial,Helvetica,sans-serif;width:200px;padding:12px 16px 0 0;}.c2{font-family:Arial,Helvetica,sans-serif;padding:12px 0 0;font-size:14px;line-height:20px;color:#2D2E30;}.mi{display:block;width:200px;height:150px;border:1px solid #D9DBDE;}.th{padding:6px 6px 0 0;}.thi{display:block;width:62px;height:47px;border:1px solid #D9DBDE;}.pb{border:2px solid #F28A1F;}.p1{font-family:Arial,Helvetica,sans-serif;background:#FFF3E6;padding:8px 10px;vertical-align:middle;white-space:nowrap;}.pl{font-size:10px;line-height:13px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:#8A4A0E;}.pp{display:block;font-size:26px;line-height:31px;color:#1F2022;}.p2{font-family:Arial,Helvetica,sans-serif;padding:8px 10px;vertical-align:middle;font-size:13px;line-height:19px;color:#5A5D62;}.rg{color:#D0021B;font-weight:bold;font-size:15px;}.sv{color:#17663A;}.ls{font-family:Arial,Helvetica,sans-serif;background:#2D2E30;color:#FFFFFF;padding:5px 10px;font-size:13px;line-height:18px;}.ls b{color:#F28A1F;font-size:15px;}.ls span{color:#C9CBCF;font-size:11px;}.cy{padding:10px 0 2px;font-size:15px;line-height:20px;font-weight:bold;color:#1F2022;}.cy span{display:block;font-size:10px;line-height:13px;letter-spacing:1px;text-transform:uppercase;color:#8A4A0E;}.kt{border-top:2px solid #F28A1F;}.kv{font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:17px;padding:3px 0;border-bottom:1px solid #E8EAEC;color:#5A5D62;}.kvv{text-align:right;font-weight:bold;color:#1F2022;}.ab{margin:0;padding:6px 0;font-size:13px;line-height:19px;color:#3B3D40;}.ky{background:#FFF3E6;border-left:3px solid #F28A1F;padding:4px 8px;margin:2px 0;font-size:13px;line-height:18px;font-weight:bold;}.ft{padding:6px 0 4px;font-size:13px;line-height:19px;}.ft b{color:#F28A1F;}.op{padding:2px 0 4px;font-size:13px;line-height:18px;}.bd{padding:2px 0 6px;font-size:12px;line-height:18px;color:#5A5D62;}.lk{font-size:13px;line-height:22px;}.lk a{color:#1F2022;font-weight:bold;}.lk a.vd{background:#2D2E30;color:#FFFFFF;text-decoration:none;padding:1px 6px;}.pk{display:inline-block;background:#F28A1F;color:#1F2022;font-size:11px;line-height:16px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;padding:3px 8px;margin-bottom:6px;}@media only screen and (max-width:600px){.c1,.c2{display:block!important;width:100%!important;padding:12px 0 0!important}.mi{width:100%!important;height:auto!important}}</style></head>
 <body style="margin:0;padding:0;background:#E9EAEC;">
 <div style="display:none;max-height:0;overflow:hidden;opacity:0;">Your NovoTech Black Friday price list: in-stock machines in Mississauga, ON, 5% off factory orders until Dec 4.</div>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#E9EAEC;">
@@ -108,6 +108,18 @@ NTMAIL;
 NTMAIL;
     $t['bf_mark'] = <<<'NTMAIL'
 <span style="color:#F28A1F;">&#9632;&nbsp;</span>
+NTMAIL;
+    $t['bf_list'] = <<<'NTMAIL'
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">{{ROWS}}</table><p style="margin:12px 0 18px 0;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:18px;color:#5A5D62;">{{NOTE}}</p>
+NTMAIL;
+    $t['bf_list_head'] = <<<'NTMAIL'
+<tr><td class="bh" style="font-family:Arial,Helvetica,sans-serif;font-size:21px;font-weight:bold;">{{T}}</td></tr>
+NTMAIL;
+    $t['bf_list_cat'] = <<<'NTMAIL'
+<tr><td class="bc" style="font-family:Arial,Helvetica,sans-serif;color:#B85C00;border-bottom:3px solid #F28A1F;">{{T}}</td></tr>
+NTMAIL;
+    $t['bf_list_pick'] = <<<'NTMAIL'
+<div class="pk" style="background:#F28A1F;">You asked about this machine</div>
 NTMAIL;
     $t['reply'] = <<<'NTMAIL'
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
