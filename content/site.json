@@ -21,7 +21,7 @@
  "promo": {
   "_note": "Black Friday 2026 bar + popup on every page (templates/partials/promo.html, src/js/promo.js). Shows only between start and end (Eastern time); add ?bfpreview to any URL to see it outside those dates. Set enabled to false and rebuild after Dec 4 to remove it.",
   "enabled": true,
-  "start": "2026-11-16T00:00:00-05:00",
+  "start": "2026-11-14T00:00:00-05:00",
   "end": "2026-12-04T23:59:59-05:00",
   "quote_url": ""
  },

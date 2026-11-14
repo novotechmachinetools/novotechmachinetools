@@ -320,7 +320,7 @@ body.append(f"""
   <div class="cv-top"><img src="{logo}" alt="NovoTech Machine Tools">
     <div class="cv-contact"><b>+1 647 526 5510</b><br>info@novotechmachinetools.com<br>novotechmachinetools.com<br>1365 Mid-Way Blvd, Unit 26, Mississauga, ON</div></div>
   <div class="cv-band2"></div><div class="cv-band"></div>
-  <div class="cv-title"><span class="cv-dates">Nov 16 – Dec 4, 2026</span>
+  <div class="cv-title"><span class="cv-dates">Now until Dec 4, 2026</span>
     <div class="cv-big">Black<span>Friday</span></div>
     <div class="cv-sub">In-stock price list<small>{len(items)} machines at Black Friday prices<br>from our Mississauga, ON warehouse</small></div></div>
   <img class="cv-m1" src="{png('dn-xl-1', 760)}" alt="">
@@ -351,7 +351,7 @@ body.append(f"""
 <section class="terms">
   <h1 class="sec-title">Black Friday terms</h1>
   <h3>Prices and dates</h3>
-  <ul><li>Black Friday prices are valid from November 16 to Friday, December 4, 2026, 11:59 pm Eastern time, while quantities last. In-stock machines are first come, first served.</li>
+  <ul><li>Black Friday prices are valid now until Friday, December 4, 2026, 11:59 pm Eastern time, while quantities last. In-stock machines are first come, first served.</li>
   <li>All prices are in Canadian dollars (CAD), plus applicable taxes, for pickup at our Mississauga, ON warehouse. Freight across Canada and the US is arranged at competitive rates. Installation and training are available on request at an additional charge, except where a machine says it includes them.</li>
   <li>Back-order machines (marked in this list) are sold at their Black Friday price with 10% down to secure the order.</li></ul>
   <h3>Factory orders: 5% off</h3>
@@ -390,7 +390,7 @@ from pypdf import PdfReader, PdfWriter   # title and author in the file properti
 r = PdfReader(OUT)
 w = PdfWriter(clone_from=r)
 w.add_metadata({"/Title": "NovoTech Black Friday 2026 — In-stock price list", "/Author": "NovoTech Machine Tools Inc.",
-                "/Subject": "Black Friday prices, Nov 16 – Dec 4, 2026"})
+                "/Subject": "Black Friday prices, valid until Dec 4, 2026"})
 with open(OUT, "wb") as f:
     w.write(f)
 print(OUT, f"{os.path.getsize(OUT) / 1e6:.1f} MB,", len(r.pages), "pages; html", hp)
