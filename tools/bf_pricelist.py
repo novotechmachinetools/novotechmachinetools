@@ -4,10 +4,11 @@
     python3 tools/bf_pricelist.py PRICES.json OUT.pdf
     python3 tools/bf_pricelist.py --public src/files/black-friday
 
---public (the owner, Nov 14 2026) writes the PDFs without a single price, for everyone: the whole list as a light catalogue
-(the download button of the Mailchimp campaign: Mailchimp sends no attachments) and one sheet per machine (the "Download
-PDF" button of every card on the Black Friday page, file name = the "sheet" of the machine in the page JSON). In their price
-box: the Black Friday price is e-mailed on request — prices only ever leave in the private price list.
+--public (the owner, Nov 14 2026) writes the same list without a single price, for everyone: one light catalogue of every
+machine in stock, behind the "Download PDF" button of every card on the Black Friday page (catalogue_pdf in the page JSON)
+and the download button of the Mailchimp campaign (Mailchimp sends no attachments). In its price boxes: the Black Friday
+price is e-mailed on request — prices only ever leave in the private price list. No PDF per machine (the owner, Nov 14
+2026: "one PDF with all the machines, every card links to it").
 
 The machines, their text, photos and videos come from content/pages/black-friday-machinery-sale.json (the page shows them
 without prices) and the links from the built page (dist/black-friday-machinery-sale.html, so the PDF links exactly where
@@ -223,15 +224,6 @@ ul.feat.one {{ columns: 1; }}
 .price.ask .bfp {{ font-size: 17pt; }}
 .price.ask .p2 {{ gap: 3pt; }}
 .ask-go {{ align-self: flex-start; font: 700 9.5pt BC, sans-serif; letter-spacing: .04em; text-transform: uppercase; text-decoration: none; color: {INK}; background: {ORANGE}; padding: 3pt 9pt 2.5pt; border-radius: 2pt; }}
-/* ---------------- one machine sheet (--public) */
-.sheet .item {{ border-top: 0; padding-top: 0; }}
-.sh-top {{ display: flex; align-items: center; justify-content: space-between; border-bottom: 4pt solid {ORANGE}; padding-bottom: 7pt; margin-bottom: 10pt; }}
-.sh-top img {{ height: 0.6in; }}
-.sh-badge {{ font: 700 15pt/1 BC, sans-serif; text-transform: uppercase; letter-spacing: .06em; color: #fff; background: {CHARCOAL}; border-left: 5pt solid {ORANGE}; padding: 6pt 11pt 5pt; text-align: right; }}
-.sh-badge small {{ display: block; margin-top: 3pt; font: 600 8.5pt B, sans-serif; letter-spacing: 0; text-transform: none; color: {ORANGE}; }}
-.sh-cta {{ break-inside: avoid; margin-top: 10pt; border: 1.4pt solid {ORANGE}; border-radius: 4pt; padding: 8pt 12pt; font-size: 8.8pt; color: #3B3D40; }}
-.sh-cta b {{ display: block; font: 700 13pt BC, sans-serif; color: {CHARCOAL}; margin-bottom: 2pt; }}
-.sh-cta a {{ font-weight: 700; color: {INK}; text-decoration: underline; text-decoration-color: {ORANGE}; }}
 /* ---------------- terms */
 .terms {{ break-before: page; }}
 .terms h3 {{ font: 700 12.5pt BC, sans-serif; margin: 10pt 0 3pt; color: {CHARCOAL}; }}
@@ -360,7 +352,7 @@ body.append(f"""
     <div class="cv-offer"><b>Black Friday prices on stock</b><span>{offer1}</span></div>
     <div class="cv-offer"><b>5% off factory orders</b><span>Confirm by Dec 4 — only 10% down, 90% on delivery</span></div>
     <div class="cv-offer"><b>0% down financing</b><span>{offer3}</span></div>
-    <div class="cv-offer tax"><b>100% first-year write-off*</b><span>Eligible manufacturing equipment — Ontario manufacturers can add a 15% tax credit*</span></div>
+    <div class="cv-offer tax"><b>100% first-year write-off*</b><span>Most equipment, under the new federal rule — Ontario manufacturers can add a 15% tax credit*</span></div>
   </div>
   <div class="cv-foot">{cv_foot}</div>
 </div>""")
@@ -372,7 +364,7 @@ for cid, ctitle in cats.items():
     body += [item_html(x) for x in xs]
 TERMS_REST = """
   <h3>100% first-year write-off*</h3>
-  <p>Federal immediate expensing: machinery used in Canada mainly to manufacture or process goods for sale or lease can be deducted in full in the tax year it becomes available for use, so a machine from stock can be delivered and running before your year-end. Ontario Made Manufacturing Investment Tax Credit: eligible Ontario corporations can also claim a 15% tax credit on qualifying manufacturing machinery and equipment.</p>
+  <p>Productivity Mega Deduction, announced by the federal government on September 15, 2026: a corporation can deduct 100% of the cost of most equipment acquired after September 14, 2026 in the tax year it becomes available for use. Federal immediate expensing: machinery used in Canada mainly to manufacture or process goods for sale or lease can also be deducted in full in that year, so a machine from stock can be delivered and running before your year-end. Ontario Made Manufacturing Investment Tax Credit: eligible Ontario corporations can also claim a 15% tax credit on qualifying manufacturing machinery and equipment.</p>
   <p><i>*General information, not tax advice. Eligibility depends on your business, how the machine is used and when it becomes available for use. Ask your accountant.</i></p>
   <h3>Warranty</h3>
   <p>Warranty and money-back guarantee as shown for each machine. Specifications and photos are for reference and subject to change without notice; errors and omissions excepted.</p>"""
@@ -406,24 +398,6 @@ hp = os.path.join(TMP, "pricelist.html")
 open(hp, "w", encoding="utf-8").write(html_doc(TITLE, CSS, "".join(body)))
 jobs.append((hp, OUT, TITLE))
 
-if PUBLIC:
-    # one sheet per machine: no cover, the logo and the Black Friday badge on top, where to get the price at the bottom
-    first = ("@page :first {{ margin: 0; @top-left {{ content: none; }} @top-right {{ content: none; }} "
-             "@bottom-left {{ content: none; }} @bottom-right {{ content: none; }} }}").replace("{{", "{").replace("}}", "}")
-    assert first in CSS, "the cover page rule changed"
-    CSS_SHEET = CSS.replace(first, "@page :first { @top-left { content: none; } @top-right { content: none; } }")
-    top = (f'<div class="sh-top"><img src="{logo}" alt="NovoTech Machine Tools">'
-           '<div class="sh-badge">Black Friday 2026<small>In stock in Mississauga, ON · now until Dec 4, 2026</small></div></div>')
-    for x in items:
-        cta = (f'<div class="sh-cta"><b>Get the Black Friday price</b>Ask for the price list at {ASK_LINK} or call +1 647 526 5510 '
-               '(Mon–Fri 9:00–17:00 ET) and we email it to you in minutes. In-stock machines are first come, first served · 5% off '
-               'factory orders confirmed by Dec 4 · 0% down financing on approved credit · 1365 Mid-Way Blvd, Unit 26, Mississauga, ON.</div>')
-        name = os.path.basename(x["sheet"])
-        sp = os.path.join(TMP, x["id"] + ".html")
-        t = f'NovoTech {x["title"]} — Black Friday 2026'
-        open(sp, "w", encoding="utf-8").write(html_doc(t, CSS_SHEET, top + item_html(x) + cta, "sheet"))
-        jobs.append((sp, os.path.join(OUTDIR, name), t))
-
 import asyncio
 from playwright.async_api import async_playwright
 
@@ -446,8 +420,4 @@ for src, dst, title in jobs:
     w.add_metadata({"/Title": title, "/Author": "NovoTech Machine Tools Inc.", "/Subject": SUBJECT})
     with open(dst, "wb") as f:
         w.write(f)
-    if dst == OUT or len(jobs) < 4:
-        print(dst, f"{os.path.getsize(dst) / 1e6:.2f} MB,", len(r.pages), "pages; html", src)
-if PUBLIC:
-    sizes = [os.path.getsize(d) for _, d, _ in jobs[1:]]
-    print(f"{len(sizes)} machine sheets, {min(sizes) / 1e3:.0f}–{max(sizes) / 1e3:.0f} KB")
+    print(dst, f"{os.path.getsize(dst) / 1e6:.2f} MB,", len(r.pages), "pages; html", src)

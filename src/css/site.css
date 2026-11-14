@@ -273,6 +273,8 @@ small { font-size: .85em; }
    margin, or a content-box width: the content stays exactly where it was) to keep the video arrows (16 px outside the slider),
    shadows and focus rings visible; the dashed line between two families is drawn inside that margin, as long as before. */
 .family.cv, section.why, section.videos.wrap, section.guide.wrap, section.faq.wrap, .site-footer, section.quote, section.agents, ul.family-cards, section.group.compare { content-visibility: auto; contain-intrinsic-height: auto var(--cvh, 2400px); }
+/* arriving at a #place (base.html adds .cv-off): every box at its real height, so the browser's jump lands on the place */
+.cv-off .family.cv, .cv-off section.why, .cv-off section.videos.wrap, .cv-off section.guide.wrap, .cv-off section.faq.wrap, .cv-off .site-footer, .cv-off section.quote, .cv-off section.agents, .cv-off ul.family-cards, .cv-off section.group.compare { content-visibility: visible; }
 .family.cv, section.videos.wrap, section.guide.wrap, section.faq.wrap { --cvx: 8px; }
 .family.cv { margin-inline: calc(-1 * var(--cvx)); padding-inline: var(--cvx); }
 .family + .family.cv { position: relative; border-top-color: transparent; }
@@ -1680,7 +1682,10 @@ body.ai-locked { overflow: hidden; }
 .bf-cat-title { display: flex; align-items: center; gap: 12px; margin: 0; padding-bottom: 10px; border-bottom: 3px solid var(--charcoal); font-size: clamp(28px, 3.4vw, 38px); }
 .bf-cat-title::before { content: ""; width: 14px; height: 14px; background: var(--orange); transform: rotate(45deg); }
 /* one machine: the product-page family layout (gallery | text, videos across) under a header with stock status and brand */
-.bf-item { --cvh: 1250px; scroll-margin-top: calc(var(--header-h) + 64px); }
+/* the guessed height of a machine card until it is laid out: the median card, 1,210 px on a laptop and 1,740 px on a phone
+   (measured Nov 14 2026); .family.cv's own 3,100 px phone guess made the page 30,000 px too long on a phone */
+.family.cv.bf-item { --cvh: 1250px; scroll-margin-top: calc(var(--header-h) + 64px); }
+@media (max-width: 960px) { .family.cv.bf-item { --cvh: 1750px; } }
 .bf-item-head { margin-bottom: 18px; }
 .bf-item-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin: 0 0 8px; }
 .bf-status { display: inline-flex; align-items: center; gap: 8px; padding: 5px 11px 4px; border-radius: 3px; background: #E5F4EA; color: #17663A; font-family: var(--cond); font-weight: 700; font-size: 15px; letter-spacing: .06em; text-transform: uppercase; }

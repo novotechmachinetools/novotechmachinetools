@@ -295,6 +295,49 @@
      Nov 13 2026) and have a guessed height until then, so the browser's own smooth scroll, which aims once, stopped up to
      10,000 px short of the last family. This scroll measures where the target is on every frame, and stays on it until
      the boxes around it have their real heights. Any wheel, touch, key or click of the visitor's stops it. */
+  // where the browser's own jump puts a target: the page's scroll padding (under the sticky header) plus the target's margin
+  var jumpDest = function (t) {
+    var de = d.documentElement;
+    var pad = (parseFloat(getComputedStyle(de).scrollPaddingTop) || 0) + (parseFloat(getComputedStyle(t).scrollMarginTop) || 0);
+    return Math.max(0, Math.min(Math.round(t.getBoundingClientRect().top + window.pageYOffset - pad), de.scrollHeight - window.innerHeight));
+  };
+
+  /* ---------- arriving with #place in the address (a link in a PDF, an e-mail, the Mailchimp campaign, another page) ----------
+     The browser jumps once, early, and the boxes above the target then still change height (photos, fonts, the boxes laid out
+     only near the screen): the owner, Nov 14 2026, from the price list's link to #instant-quote landed on "Apply to become an
+     agent", under the form. Every box is laid out at its real height from the start (the inline script in base.html adds
+     .cv-off before the page paints), and until the visitor scrolls, clicks or types the page keeps the target in place while it
+     settles: until it has loaded and nothing has moved for 1.5 s (12 s at most), and again when a tab opened in the background
+     comes to the front. Not when the browser brings back a position (back / forward, a reload part way down the page). */
+  (function () {
+    var id = "", t, nav, de = d.documentElement;
+    try { id = decodeURIComponent(location.hash.slice(1)); } catch (err) { return; }
+    t = id && d.getElementById(id);
+    if (!t || t === d.body || !window.requestAnimationFrame) return;
+    try { nav = performance.getEntriesByType("navigation")[0]; } catch (err) { nav = null; }
+    if (nav && (nav.type === "back_forward" || (nav.type === "reload" && window.pageYOffset > 10))) return;
+    var done = false, loaded = d.readyState === "complete", started = Date.now(), movedAt = Date.now(), last = null;
+    var stop = function () { if (!done) { done = true; de.style.scrollBehavior = ""; } };
+    ["wheel", "touchstart", "keydown", "mousedown"].forEach(function (n) { window.addEventListener(n, stop, { passive: true }); });
+    window.addEventListener("load", function () { loaded = true; movedAt = Date.now(); });
+    if (d.fonts && d.fonts.ready) d.fonts.ready.then(function () { movedAt = Date.now(); });
+    var hold = function () {
+      if (done) return;
+      if (d.hidden) {                                   // opened in a background tab: nothing is laid out until it is shown
+        var shown = function () { if (!d.hidden) { d.removeEventListener("visibilitychange", shown); started = movedAt = Date.now(); hold(); } };
+        d.addEventListener("visibilitychange", shown);
+        return;
+      }
+      var to = jumpDest(t);
+      if (Math.abs(to - window.pageYOffset) > 1) { de.style.scrollBehavior = "auto"; window.scrollTo(0, to); }
+      if (last === null || Math.abs(to - last) > 1) movedAt = Date.now();
+      last = to;
+      if (Date.now() - started > 12000 || (loaded && Date.now() - movedAt > 1500)) { stop(); return; }
+      window.requestAnimationFrame(hold);
+    };
+    window.requestAnimationFrame(hold);
+  })();
+
   var cvBoxes = d.querySelector(".family.cv, section.why, section.videos.wrap, section.guide.wrap, section.faq.wrap");
   if (cvBoxes && window.requestAnimationFrame && window.history && history.pushState) {
     var de = d.documentElement, scrollRun = 0, userAt = 0;
@@ -304,10 +347,7 @@
     });
     var followTo = function (t) {
       var run = ++scrollRun, startAt = Date.now(), y0 = window.pageYOffset, t0 = null, last = null, still = 0, frames = 0;
-      var dest = function () {
-        var pad = parseFloat(getComputedStyle(de).scrollPaddingTop) || 0;
-        return Math.max(0, Math.min(t.getBoundingClientRect().top + window.pageYOffset - pad, de.scrollHeight - window.innerHeight));
-      };
+      var dest = function () { return jumpDest(t); };
       var dur = noMotion || !de.classList.contains("is-loaded") ? 0 : Math.min(1100, 350 + Math.abs(dest() - y0) / 12);
       de.style.scrollBehavior = "auto";                       // each step below is instant; this function is the animation
       var frame = function (now) {

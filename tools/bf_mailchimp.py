@@ -85,7 +85,8 @@ def item(it):
     if it.get("badges"):
         body.append(f'<div style="padding:2px 0 8px;font-size:12px;line-height:18px;color:{MUTED};">'
                     + " &middot; ".join(e(b) for b in it["badges"]) + "</div>")
-    links = [f'<a href="{SITE}{it["sheet"]}" style="color:{INK};font-weight:bold;">Machine PDF</a>']
+    # the one PDF of every machine (no PDF per machine: the owner, Nov 14 2026)
+    links = [f'<a href="{CATALOGUE}" style="color:{INK};font-weight:bold;">PDF catalogue</a>']
     if it.get("videos"):
         links.append(f'<a href="https://youtu.be/{it["videos"][0]}" style="color:{INK};font-weight:bold;">Video</a>')
     body.append(

@@ -1940,7 +1940,9 @@ def stock_items(page):
             if "video-" + vid not in manifest:
                 raise SystemExit(f"black friday stock: no thumbnail video-{vid} — run tools/yt_thumbs.py {vid} and make_images")
             v = {"id": vid, "title": titles.get(vid) or YT_CHANNEL.get(vid, ("Video",))[0], "thumb": "video-" + vid}
-            if vid in (it.get("shorts") or []):
+            # a Short keeps its tall frame only as the card's single video; in a row of videos it takes the same 16:9 frame
+            # as the others, or it towers over them (the owner, Nov 14 2026: "why is the XL video so big?")
+            if vid in (it.get("shorts") or []) and len(it.get("videos") or []) == 1:
                 v["short"] = True
             videos.append(v)
         out.append(dict(it, href=href, brand_name=brand.get("name", ""), line=brand.get("line", ""), imgs=images, vids=videos,

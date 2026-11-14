@@ -38,6 +38,7 @@
 {% if page.hero_image and not page.hero_video %}<link rel="preload" as="image" href="{{ img(page.hero_image).src }}" imagesrcset="{{ img(page.hero_image).srcset }}" imagesizes="(max-width: 700px) 92vw, {{ page.hero_width or (820 if page.hero_large else 680) }}px" fetchpriority="high">{% endif %}
 {% if inline_css %}<style>{{ inline_css | safe }}</style>{% else %}<link rel="stylesheet" href="css/site.css?v={{ css_hash }}">{% endif %}
 {% block head %}{% endblock %}
+<script>/* arriving at a #place (a link in a PDF or an e-mail): every box is laid out at its real height before the browser jumps (site.css .cv-off), so the jump lands on the place */if(location.hash.length>1)document.documentElement.className+=" cv-off"</script>
 {% if site.promo and site.promo.enabled %}<script>/* Black Friday bar: hidden before it starts and after it ends (runs before the page paints, so nothing jumps); ?bfpreview shows it anyway */(function(d,n){if(location.search.indexOf("bfpreview")<0&&(n<Date.parse("{{ site.promo.start }}")||n>Date.parse("{{ site.promo.end }}")))d.documentElement.className+=" promo-off"})(document,Date.now())</script>{% endif %}
 <script type="application/ld+json">{{ ld_json|safe }}</script>
 </head>
