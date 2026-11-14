@@ -7,6 +7,11 @@
 # The commit is built from dist/ with a temporary index — no second copy of the 900 MB build on disk; unchanged images
 # are the same blobs GitHub already has, so a push carries only what changed.
 # Afterwards the server side is triggered with the cPanel API (device shell: bash ~/hp.sh update BRANCH; bash ~/hp.sh deploy).
+# Without that shell, from a cPanel tab the owner has logged in to: UAPI VersionControl/update with
+# repository_root=<cPanel home>/repositories/site and branch=BRANCH, then VersionControlDeployment/create with the same
+# repository_root ("Update from Remote" + "Deploy HEAD Commit"). The cPanel host name and user name are kept only in the
+# private ~/.hp, never in this public repository (the owner, Nov 14 2026).
+# The cloud workspace cannot reach port 2083 itself (HostPapa resets the connection).
 set -euo pipefail
 cd "$(dirname "$0")/.."
 MODE="${1:-staging}"
