@@ -38,10 +38,12 @@
 {% if page.hero_image and not page.hero_video %}<link rel="preload" as="image" href="{{ img(page.hero_image).src }}" imagesrcset="{{ img(page.hero_image).srcset }}" imagesizes="(max-width: 700px) 92vw, {{ page.hero_width or (820 if page.hero_large else 680) }}px" fetchpriority="high">{% endif %}
 {% if inline_css %}<style>{{ inline_css | safe }}</style>{% else %}<link rel="stylesheet" href="css/site.css?v={{ css_hash }}">{% endif %}
 {% block head %}{% endblock %}
+{% if site.promo and site.promo.enabled %}<script>/* Black Friday bar: hidden before it starts and after it ends (runs before the page paints, so nothing jumps); ?bfpreview shows it anyway */(function(d,n){if(location.search.indexOf("bfpreview")<0&&(n<Date.parse("{{ site.promo.start }}")||n>Date.parse("{{ site.promo.end }}")))d.documentElement.className+=" promo-off"})(document,Date.now())</script>{% endif %}
 <script type="application/ld+json">{{ ld_json|safe }}</script>
 </head>
 <body id="top"{% block body_attrs %}{% endblock %}>
 <a class="skip" href="#main">Skip to content</a>
+{% if site.promo and site.promo.enabled %}{% include "partials/promo.html" %}{% endif %}
 <header class="site-header">
   <div class="wrap header-row">
     <a class="brand" href="index.html" aria-label="NovoTech Machine Tools — home">
@@ -139,6 +141,7 @@
 <a class="to-top" href="#top" aria-label="Back to top" title="Back to top"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path d="M12 19V5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="m5 12 7-7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
 {% include "partials/ai.html" %}
 <script src="js/site.js?v={{ js_hash }}" defer></script>
+{% if site.promo and site.promo.enabled %}<script src="js/promo.js?v={{ build_ts }}" defer></script>{% endif %}
 {% block scripts %}{% endblock %}
 </body>
 </html>

@@ -1,0 +1,40 @@
+{# Black Friday 2026 — announcement bar (in the page, so it never shifts the layout) and the popup (a <template>:
+   inert and not indexed until promo.js shows it). Dates and switch: "promo" in content/site.json. #}
+{% set p = site.promo %}
+<div class="promo-bar" id="promo-bar" data-start="{{ p.start }}" data-end="{{ p.end }}" data-quote="{{ p.quote_url or ('contact-us.html#reques-a-quote' if page.no_quote else '#reques-a-quote') }}">
+  <div class="wrap promo-bar-row">
+    <p class="promo-bar-text"><b class="promo-tag">Black Friday</b><span class="promo-long">Sale prices on in-stock machines <i aria-hidden="true">·</i> 5% off factory orders <i aria-hidden="true">·</i> 100% write-off*</span><span class="promo-short">Stock deals + 5% off factory orders</span><span class="promo-ends"><i aria-hidden="true">·</i> Ends Dec 4</span></p>
+    <button type="button" class="promo-bar-cta" data-promo-open aria-haspopup="dialog">See the deals<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+  </div>
+</div>
+<template id="promo-tpl">
+<dialog class="promo" aria-labelledby="promo-title">
+  <button type="button" class="promo-x" data-promo-close aria-label="Close"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></button>
+  <div class="promo-art">
+    <p class="promo-dates">Nov 16 – Dec 4, 2026</p>
+    <p class="promo-big"><span>Black</span> <span>Friday</span></p>
+    <p class="promo-sub">Machine sale</p>
+    <div class="promo-machines" aria-hidden="true">
+      <img class="promo-m1" src="img/dener/dn-xl-1-800.webp" width="800" height="503" alt="" decoding="async">
+      <img class="promo-m2" src="img/bandsaw/bk-hero-auto-350ga-480.webp" width="480" height="435" alt="" decoding="async">
+    </div>
+  </div>
+  <div class="promo-body">
+    <p class="promo-strip"><b>Black Friday</b> Ends in <span data-promo-count>Dec 4</span></p>
+    <h2 id="promo-title">Save now. Write off 100%.*</h2>
+    <ul class="promo-offers">
+      <li><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" focusable="false"><path d="M3 12V4a1 1 0 0 1 1-1h8l9 9-9 9-9-9z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="8" cy="8" r="1.8" fill="currentColor"/></svg><p><b>In-stock machines <span class="nw">on sale</span></b><span>Black Friday prices, ready to ship from Mississauga, ON</span></p></li>
+      <li><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" focusable="false"><path d="M19 5L5 19" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><circle cx="7" cy="7" r="2.6" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17" cy="17" r="2.6" fill="none" stroke="currentColor" stroke-width="2"/></svg><p><b>5% off factory orders</b><span>Confirm by Dec 4 — only 10% down, balance on delivery</span></p></li>
+      <li><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" focusable="false"><rect x="2.5" y="6" width="19" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M2.5 10.5h19" stroke="currentColor" stroke-width="2"/><path d="M6 15h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><p><b>0% down financing</b><span>Through our financing partners, on approved credit</span></p></li>
+      <li class="promo-offer-tax"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" focusable="false"><path d="M6 2.5h9l4 4v15H6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9.5 12.5l2 2 4-4.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><p><b>100% first-year <span class="nw">write-off*</span></b><span>Deduct the full cost of eligible manufacturing equipment in the year it goes to work in your shop. Ontario manufacturers can add a 15% tax credit.*</span></p></li>
+    </ul>
+    <div class="promo-ctas">
+      <a class="btn btn-primary promo-go" data-promo-quote href="#reques-a-quote">Get my Black Friday quote</a>
+      <a class="promo-call" href="tel:{{ site.phone_tel }}">or call {{ site.phone }}</a>
+    </div>
+    <p class="promo-count">Sale ends in <strong data-promo-count>Dec 4</strong></p>
+    <p class="promo-fine">*Federal immediate expensing: machinery used in Canada mainly to manufacture or process goods for sale or lease, deducted for the tax year it becomes available for use. Ontario Made Manufacturing Investment Tax Credit: eligible Ontario corporations. Ask your accountant whether your business qualifies. Offer ends Dec 4, 2026, 11:59 pm ET; in-stock prices while quantities last.</p>
+    <p class="promo-fine-short">*Eligible equipment and businesses — ask your accountant. Ends Dec 4, 11:59 pm ET.</p>
+  </div>
+</dialog>
+</template>
