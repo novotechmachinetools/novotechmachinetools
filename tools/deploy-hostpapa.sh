@@ -25,7 +25,10 @@ python3 build.py $FLAGS >/dev/null
 python3 tools/check_links.py
 [ -f dist/.cpanel.yml ] && [ -f dist/.deploy-hostpapa.sh ] || { echo "deployment files missing in dist/" >&2; exit 1; }
 [ -f dist/quote.php ] && [ -f dist/ask.php ] || { echo "php endpoints missing in dist/" >&2; exit 1; }
-for secret in form-config.php ai-config.php; do [ -e "dist/$secret" ] && { echo "refusing: dist/$secret must never be published" >&2; exit 1; }; done
+for secret in form-config.php ai-config.php bf-config.php; do [ -e "dist/$secret" ] && { echo "refusing: dist/$secret must never be published" >&2; exit 1; }; done
+# the Black Friday prices live only in ~/novotech-private on the server (bf-quote.php e-mails them): never in the public build
+leak="$(find dist -iname '*price-list*' -o -iname '*pricelist*.pdf' -o -iname 'prices*.json' | head -3)"
+[ -z "$leak" ] || { echo "refusing: price files in dist/: $leak" >&2; exit 1; }
 SRC="$(git rev-parse --short HEAD)"
 git fetch -q origin "+refs/heads/$BRANCH:refs/remotes/origin/$BRANCH" 2>/dev/null || true
 PARENT="$(git rev-parse -q --verify "refs/remotes/origin/$BRANCH" || true)"
