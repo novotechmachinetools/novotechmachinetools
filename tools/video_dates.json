@@ -18,7 +18,13 @@
  "dates": {
   "a94tjN7aVRk": "2022-03-31",
   "-IWt6hTn58g": "2021-05-01",
-  "O8lhjHhD3nQ": "2026-11-13T03:10:00Z"
+  "O8lhjHhD3nQ": "2026-11-13T03:10:00Z",
+  "wR0SMz2bWWM": "2026-11-14T01:39:00Z",
+  "uBgX6f-9ypY": "2026-11-14T01:44:00Z",
+  "v5XQJegQGG4": "2026-11-14T02:33:00Z",
+  "CNd67PL4aTc": "2026-11-14T03:04:00Z",
+  "IqX5XmXtIVc": "2026-11-14T03:17:00Z",
+  "cT9PcJkiQBs": "2026-11-14T03:20:00Z"
  },
  "approx_comment": "Approximate publish dates of the regular uploads, read from the channel's public Videos tab on Nov 13 2026 (YouTube shows '3 weeks ago', '2 years ago': exact to the day for recent videos, to the month or year for older ones). build.py uses them for VideoObject uploadDate only when no exact date is known ('anchors', 'shorts', 'dates'), instead of one placeholder date for every video.",
  "approx": {
