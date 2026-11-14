@@ -1909,7 +1909,7 @@ def machine_type(f, model):
 
 
 def stock_items(page):
-    """content/pages/black-friday-machine-sale.json "stock": [{"family": "set:id", "model", "qty", "id"?, "image"?, "name"?,
+    """content/pages/black-friday-machinery-sale.json "stock": [{"family": "set:id", "model", "qty", "id"?, "image"?, "name"?,
     "type"?, "specs"? [[label, value]], "highlights"? [...], "note"?}] -> the cards of the Black Friday page: the model's own
     photo when the gallery has one named after it, its spec rows, three standard-equipment lines and a link to its family on
     its product page. Prices never come here: they are e-mailed by bf-quote.php from the private price list."""

@@ -1,6 +1,6 @@
 <?php
 /**
- * Black Friday 2026 — settings of bf-quote.php (the instant quote on /black-friday-machine-sale).
+ * Black Friday 2026 — settings of bf-quote.php (the instant quote on /black-friday-machinery-sale).
  *
  * The real file is bf-config.php, kept OUTSIDE the website on the server, in ~/novotech-private/black-friday/ next to the
  * price list PDF (the deploy copies the site into public_html and deletes what is not in the build; a file outside it is

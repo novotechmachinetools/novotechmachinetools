@@ -1,6 +1,6 @@
 <?php
 /**
- * NovoTech — Black Friday 2026 instant quote: the form on /black-friday-machine-sale (templates/black-friday.html, js/bf.js).
+ * NovoTech — Black Friday 2026 instant quote: the form on /black-friday-machinery-sale (templates/black-friday.html, js/bf.js).
  *
  * The owner (Nov 13 2026): the page shows the in-stock machines without prices; a buyer fills in his company details and the
  * website e-mails him the price list by itself — unless he is a machinery dealer or reseller, one of NovoTech's suppliers or
@@ -16,7 +16,7 @@ declare(strict_types=1);
 $FROM       = 'website@novotechmachinetools.com';   // the notification to info@ (as quote.php)
 $REPLY_FROM = 'info@novotechmachinetools.com';      // the price list to the buyer: from the sales inbox, replies go there
 $MIN_SECS   = 4;                                     // forms sent faster than this are bots
-$PAGE       = 'https://novotechmachinetools.com/black-friday-machine-sale';
+$PAGE       = 'https://novotechmachinetools.com/black-friday-machinery-sale';
 $PHONE      = '+1 647 526 5510';
 
 define('NT_QUOTE', true);

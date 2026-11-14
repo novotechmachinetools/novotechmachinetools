@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{# Black Friday 2026 (content/pages/black-friday-machine-sale.json): the in-stock machines with their photos and specifications,
+{# Black Friday 2026 (content/pages/black-friday-machinery-sale.json): the in-stock machines with their photos and specifications,
    no prices — "Get instant QUOTE" sends the form to bf-quote.php, which checks the buyer and e-mails the private price list
    (the owner, Nov 13 2026). #}
 {% block content %}
@@ -41,7 +41,7 @@
 
 <section class="wrap bf-stock" id="in-stock" aria-labelledby="bf-stock-title">
   <div class="bf-head">
-    <h2 id="bf-stock-title">In stock in Mississauga, ON — ready to ship</h2>
+    <h2 id="bf-stock-title">In-stock machinery for sale in Mississauga, ON</h2>
     <p>{{ items | length }} machine{{ '' if items | length == 1 else 's' }} at Black Friday prices. Click <b>Get instant QUOTE</b> and the price list with the full specifications is emailed to you within minutes.</p>
   </div>
   <ul class="bf-grid">

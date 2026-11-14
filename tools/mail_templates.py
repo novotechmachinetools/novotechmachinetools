@@ -206,7 +206,7 @@ def notification():
 # bf-quote.php: the price list the website e-mails by itself to a buyer who asked for an instant quote on the Black Friday page
 # (the owner, Nov 13 2026: "the site emails the price list automatically, with a copy to info@ so I can follow up").  The
 # prices come from the private price list on the server, never from the site's pages or this repository.
-BF_PAGE = SITE + "/black-friday-machine-sale"
+BF_PAGE = SITE + "/black-friday-machinery-sale"
 BF_TAX = ("*Canadian businesses can deduct 100% of the cost of eligible manufacturing and processing equipment in the tax year it "
           "becomes available for use, and eligible Ontario corporations can add the 15% Ontario Made Manufacturing Investment Tax "
           "Credit. General information, not tax advice: ask your accountant whether your business qualifies.")
