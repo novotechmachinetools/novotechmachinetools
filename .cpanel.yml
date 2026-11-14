@@ -1,0 +1,6 @@
+---
+# cPanel Git Version Control deployment (HostPapa): after "git pull" of the built site, copy it into the document root.
+# The branch decides the target: "hostpapa" -> public_html (the live site), any other branch -> public_html/new (the test copy).
+deployment:
+  tasks:
+    - /bin/bash .deploy-hostpapa.sh
