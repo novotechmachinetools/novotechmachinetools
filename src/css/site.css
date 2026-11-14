@@ -198,10 +198,18 @@ small { font-size: .85em; }
 /* ---------- hero ---------- */
 .hero { background: var(--paper); border-bottom: 1px solid var(--line-soft); overflow: hidden; }
 .hero-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: 32px; align-items: start; padding: 36px 0 28px; }   /* start, not center: the machine photo sits beside the title above the fold, and the art does not move when the web fonts arrive (PageSpeed CLS, Nov 8 2026) */
-.crumbs ol { list-style: none; margin: 0 0 14px; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; font-size: 15px; color: var(--steel); align-items: center; }
-.crumbs li { display: inline-flex; align-items: center; }
-.crumbs li + li::before { content: "/"; margin-right: 6px; color: var(--mist); }
-.crumbs a, .crumbs span { color: var(--steel); text-decoration: none; display: inline-block; padding: 4px 0; line-height: 1.3; }
+/* one line at every width: a long trail wrapped onto 3 – 4 lines on phones, and onto one line more or less once the web
+   font arrived, which pushed the whole page down (PageSpeed CLS 0.12, the owner, Nov 14 2026). Only the current page
+   (also the h1 right below) gives way, with an ellipsis; on phones it is left out and the section before it gives way */
+.crumbs ol { list-style: none; margin: 0 0 14px; padding: 0; display: flex; flex-wrap: nowrap; gap: 6px; font-size: 15px; color: var(--steel); align-items: center; min-width: 0; overflow: hidden; }
+.crumbs li { display: flex; align-items: center; min-width: 0; flex: none; }
+.crumbs li:last-child { flex: 0 1 auto; }
+.crumbs li + li::before { content: "/"; margin-right: 6px; color: var(--mist); flex: none; }
+.crumbs a, .crumbs span { color: var(--steel); text-decoration: none; display: block; min-width: 0; padding: 4px 0; line-height: 1.3; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+@media (max-width: 700px) {
+  .crumbs li:last-child:not(:nth-child(2)) { display: none; }
+  .crumbs li:nth-last-child(2):not(:first-child) { flex: 0 1 auto; }
+}
 .crumbs a:hover { color: var(--orange-ink); text-decoration: underline; }
 .lead { font-size: 19px; max-width: 36.16em; color: var(--charcoal-2); }
 .hero-points { list-style: none; padding: 0; margin: 10px 0 0; display: grid; gap: 6px; }
