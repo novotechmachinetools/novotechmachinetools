@@ -40,11 +40,11 @@
   var form = d.querySelector(".bf-form");
   if (!form) return;
 
-  /* a card's button ticks its machine in the form */
+  /* a card's button chooses its machine in the form's drop-down */
   d.querySelectorAll("[data-bf-pick]").forEach(function (a) {
     a.addEventListener("click", function () {
-      var box = form.querySelector("input[name='machines[]'][value='" + a.getAttribute("data-bf-pick") + "']");
-      if (box) box.checked = true;
+      var sel = form.querySelector("select[name='machines[]']"), id = a.getAttribute("data-bf-pick");
+      if (sel && sel.querySelector("option[value='" + id + "']")) sel.value = id;
       setTimeout(function () { var n = form.querySelector("#bf-name"); if (n && !n.value) n.focus({ preventScroll: true }); }, 450);
     });
   });
@@ -99,10 +99,7 @@
       if (wrong) bad.push(el);
     });
     if (bad.length) {
-      var own = form.querySelector("input[name=own_use]");
-      say("is-error", bad.length === 1 && bad[0] === own
-        ? "Please confirm that you are buying for use in your own business."
-        : "Please fill in the fields marked required, with a valid email address.");
+      say("is-error", "Please fill in your name, email and phone number.");
       bad[0].focus();
       return;
     }

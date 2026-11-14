@@ -148,25 +148,6 @@ h1, h2, h3 {{ font-family: D, BC, sans-serif; margin: 0; line-height: 1.02; colo
 .cv-offer.tax {{ background: #FFF3E6; }}
 .cv-foot {{ position: absolute; z-index: 4; left: 0.55in; right: 0.55in; bottom: 0.32in; font: 400 8.2pt/1.4 B, sans-serif; color: #C9CBCF; }}
 .cv-foot b {{ color: #fff; }}
-/* ---------------- at a glance */
-.glance {{ break-after: page; }}
-.sec-title {{ display: flex; align-items: center; gap: 9pt; font: 700 24pt BC, sans-serif; color: {CHARCOAL}; padding-bottom: 6pt; border-bottom: 2.5pt solid {CHARCOAL}; margin-bottom: 8pt; }}
-.sec-title::before {{ content: ""; width: 10pt; height: 10pt; background: {ORANGE}; transform: rotate(45deg); }}
-.lead {{ margin: 0 0 9pt; color: {STEEL}; font-size: 9.2pt; }}
-table.gl {{ width: 100%; border-collapse: collapse; font-size: 8.3pt; }}
-table.gl th {{ text-align: right; font: 700 7.6pt BC, sans-serif; letter-spacing: .1em; text-transform: uppercase; color: {STEEL}; padding: 0 5pt 4pt; border-bottom: 1pt solid {LINE}; }}
-table.gl th:first-child {{ text-align: left; padding-left: 0; }}
-table.gl td {{ padding: 2.3pt 5pt; border-bottom: .6pt solid #E8EAEC; text-align: right; white-space: nowrap; }}
-table.gl td:first-child {{ text-align: left; white-space: normal; padding-left: 0; }}
-table.gl td:first-child a {{ text-decoration: none; font-weight: 600; color: {INK}; }}
-table.gl td:first-child small {{ color: {STEEL}; font-size: 7.6pt; }}
-table.gl tr.cat td {{ padding-top: 6pt; font: 700 9.5pt BC, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: {ORANGE}; border-bottom: 1pt solid {ORANGE}; }}
-table.gl .old {{ color: {STEEL}; text-decoration: line-through; }}
-table.gl .bf {{ font-weight: 700; color: {INK}; }}
-table.gl .save {{ color: #17663A; font-weight: 600; }}
-table.gl .lease {{ color: {CHARCOAL}; }}
-table.gl .bo {{ display: inline-block; margin-left: 4pt; font: 700 6.8pt BC, sans-serif; letter-spacing: .06em; text-transform: uppercase; color: #8A4A0E; background: #FFF3E6; padding: 1pt 4pt; border-radius: 2pt; }}
-.gl-note {{ margin-top: 8pt; font-size: 8pt; color: {STEEL}; }}
 /* ---------------- machine */
 .cat-h {{ break-after: avoid; margin: 0 0 6pt; }}
 .item {{ break-inside: avoid; padding: 7pt 0 9pt; border-top: 1pt dashed {LINE}; }}
@@ -193,8 +174,8 @@ table.gl .bo {{ display: inline-block; margin-left: 4pt; font: 700 6.8pt BC, san
 .price .lbl {{ display: block; font: 700 7pt BC, sans-serif; letter-spacing: .12em; text-transform: uppercase; color: #8A4A0E; }}
 .price .bfp {{ display: block; font: 700 22pt/1 BC, sans-serif; color: {INK}; }}
 .price .p2 {{ padding: 4pt 10pt; display: flex; flex-direction: column; justify-content: center; gap: 2pt; }}
-.price .reg {{ font-size: 8.6pt; color: {STEEL}; }}
-.price .reg s {{ color: {STEEL}; }}
+.price .reg {{ font-size: 9.8pt; color: {STEEL}; }}
+.price .reg s {{ color: #D0021B; font-weight: 700; }}   /* the regular price struck through in red (the owner, Nov 14 2026) */
 .price .save {{ font: 700 10pt BC, sans-serif; color: #17663A; letter-spacing: .02em; }}
 .price .lease {{ grid-column: 1 / -1; background: {CHARCOAL}; color: #fff; padding: 2.6pt 10pt; font: 600 8.6pt B, sans-serif; }}
 .price .lease b {{ color: {ORANGE}; font-size: 10.4pt; }}
@@ -296,23 +277,6 @@ def item_html(x):
 </section>"""
 
 
-def glance_rows():
-    out = []
-    for cid, ctitle in cats.items():
-        xs = [x for x in items if x["cat"] == cid]
-        if not xs:
-            continue
-        out.append(f'<tr class="cat"><td colspan="5">{e(ctitle)}</td></tr>')
-        for x in xs:
-            pr = x["pr"]
-            bo = '<span class="bo">back order</span>' if x.get("status") == "back" else ""
-            lease = f'{e(pr["lease"])}/mo' + (f' <small>{e(pr["lease_note"])}</small>' if pr.get("lease_note") else "")
-            out.append(f'<tr><td><a href="#m-{x["id"]}">{e(x["title"])}</a>{bo}</td><td class="old">{money(pr["regular"])}</td>'
-                       f'<td class="bf">{money(pr["price"])}</td><td class="save">{money(pr["regular"] - pr["price"])}</td>'
-                       f'<td class="lease">{lease}</td></tr>')
-    return "".join(out)
-
-
 logo = jpeg("novotech-logo", 700, "logo")
 body = []
 body.append(f"""
@@ -333,14 +297,6 @@ body.append(f"""
   </div>
   <div class="cv-foot"><b>Prices valid until Friday, December 4, 2026, 11:59 pm ET.</b> Prices in Canadian dollars, plus applicable taxes. To reserve a machine, reply to our email or call +1 647 526 5510 (Mon–Fri 9:00–17:00 ET). *See the terms on the last page.</div>
 </div>""")
-body.append(f"""
-<section class="glance">
-  <h1 class="sec-title">Price list at a glance</h1>
-  <p class="lead">Click a machine for its photos, full description, videos and links. All prices in CAD, plus applicable taxes.</p>
-  <table class="gl"><thead><tr><th>Machine</th><th>Regular</th><th>Black Friday</th><th>You save</th><th>36-month lease</th></tr></thead>
-  <tbody>{glance_rows()}</tbody></table>
-  <p class="gl-note">Lease payments: 36-month lease, 0% down, on approved credit, $10 buyout at the end of the lease, plus applicable taxes; quoted Nov 13, 2026 and subject to change.</p>
-</section>""")
 for cid, ctitle in cats.items():
     xs = [x for x in items if x["cat"] == cid]
     if not xs:

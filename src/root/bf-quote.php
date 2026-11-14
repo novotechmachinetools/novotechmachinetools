@@ -308,11 +308,11 @@ function bf_notify(array $r, string $status): bool {
     $machines = bf_machine_labels($r['machines']);
     $rows = $row('Email', $link('mailto:' . str_replace('%40', '@', rawurlencode($r['email'])), $r['email']))
           . $row('Phone', strlen($tel) >= 7 ? $link("tel:$tel", $r['phone']) : nt_e($r['phone']))
-          . $row('Business', nt_e($r['business']))
-          . $row('Location', nt_e(implode(', ', array_filter([$r['city'], $r['region'], $r['country']]))))
+          . ($r['company'] !== '' ? $row('Company', nt_e($r['company'])) : '')
+          . ($r['business'] !== '' ? $row('Business', nt_e($r['business'])) : '')
+          . (array_filter([$r['city'], $r['region']]) ? $row('Location', nt_e(implode(', ', array_filter([$r['city'], $r['region'], $r['country']])))) : '')
           . ($web !== '' && filter_var($web, FILTER_VALIDATE_URL) ? $row('Website', $link($web, $r['web'])) : ($r['web'] !== '' ? $row('Website', nt_e($r['web'])) : ''))
-          . $row('Machines', $machines ? implode('<br>', array_map('nt_machine', $machines)) : nt_fill($MAIL['muted'], ['T' => 'none ticked']))
-          . $row('Own use', $r['own_use'] ? 'Confirmed: buying for use in own business' : '<span style="color:#B3261E;">Not confirmed</span>')
+          . $row('Machine', $machines ? implode('<br>', array_map('nt_machine', $machines)) : nt_fill($MAIL['muted'], ['T' => 'none chosen']))
           . $row('Offers and news', $r['news'] ? 'Yes, may be emailed offers' : 'No')
           . $row('Received', nt_e($r['when']));
     $sent = $status === 'sent' || $status === 'approved';
@@ -336,9 +336,9 @@ function bf_notify(array $r, string $status): bool {
     list($src, $images) = nt_images($MAIL['notify']);
     $html = nt_fill($MAIL['notify'], $src + [
         'LABEL'   => nt_e($label),
-        'PRE'     => nt_e(($sent ? 'Price list sent: ' : 'On hold: ') . $r['name'] . ' · ' . $r['company']),
+        'PRE'     => nt_e(($sent ? 'Price list sent: ' : 'On hold: ') . $r['name'] . ($r['company'] !== '' ? ' · ' . $r['company'] : '')),
         'NAME'    => nt_e($r['name']),
-        'COMPANY' => nt_fill($MAIL['notify_company'], ['T' => nt_e($r['company'])]),
+        'COMPANY' => $r['company'] !== '' ? nt_fill($MAIL['notify_company'], ['T' => nt_e($r['company'])]) : '',
         'ABOUT'   => $about,
         'DETAILS' => $reasons . $box('Details', nt_fill($MAIL['rows_table'], ['ROWS' => $rows])),
         'MESSAGE' => $box('Message', nt_fill($MAIL['text_block'], ['TEXT' => $msg])),
@@ -350,8 +350,8 @@ function bf_notify(array $r, string $status): bool {
     $text = "Black Friday instant quote — " . ($sent ? "price list sent to {$r['email']}" : ($status === 'failed' ? 'NOT SENT' : 'ON HOLD, nothing sent')) . "\n\n"
           . ($r['reasons'] ? "Why it is on hold:\n- " . implode("\n- ", $r['reasons']) . "\n\n" : '')
           . "Name:      {$r['name']}\nCompany:   {$r['company']}\nEmail:     {$r['email']}\nPhone:     {$r['phone']}\n"
-          . "Business:  {$r['business']}\nLocation:  " . implode(', ', array_filter([$r['city'], $r['region'], $r['country']])) . "\n"
-          . "Website:   {$r['web']}\nMachines:  " . implode('; ', $machines) . "\nOwn use:   " . ($r['own_use'] ? 'confirmed' : 'NOT confirmed') . "\n"
+          . "Location:  " . implode(', ', array_filter([$r['city'], $r['region'], $r['country']])) . "\n"
+          . "Website:   {$r['web']}\nMachine:   " . ($machines ? implode('; ', $machines) : 'none chosen') . "\n"
           . "News:      " . ($r['news'] ? 'yes' : 'no') . "\nReceived:  {$r['when']}\n\nMessage:\n{$r['message']}\n\n"
           . ($review !== '' ? "Review and send: $review\n" : '') . "Request {$r['id']}, IP {$r['ip']}\n";
     $alt = 'NTN-' . bin2hex(random_bytes(12));
@@ -381,6 +381,7 @@ if (isset($_GET['review']) || (($_POST['action'] ?? '') === 'approve')) {
     foreach (['Name' => $r['name'], 'Company' => $r['company'], 'Email' => $r['email'], 'Phone' => $r['phone'], 'Business' => $r['business'],
               'Location' => implode(', ', array_filter([$r['city'], $r['region'], $r['country']])), 'Website' => $r['web'],
               'Machines' => implode('; ', bf_machine_labels($r['machines'])), 'Received' => $r['when']] as $k => $v) {
+        if ((string)$v === '') { continue; }
         $details .= '<tr><td style="padding:4px 14px 4px 0;color:#5A5D62;vertical-align:top">' . nt_e($k) . '</td><td style="padding:4px 0;font-weight:bold">' . nt_e((string)$v) . '</td></tr>';
     }
     $details .= '</table>';
@@ -454,12 +455,10 @@ $r['machines'] = array_values(array_unique($r['machines']));
 foreach (['name', 'company', 'email', 'phone', 'city', 'region', 'country', 'web', 'business'] as $k) {
     if (preg_match('/[\r\n]/', $r[$k])) { respond(false, 'Invalid input.', 422); }
 }
-if ($r['name'] === '' || $r['company'] === '' || !filter_var($r['email'], FILTER_VALIDATE_EMAIL) || strlen(bf_digits($r['phone'])) < 7
-    || $r['city'] === '' || $r['region'] === '' || $r['business'] === '') {
-    respond(false, 'Please fill in the fields marked required, with a valid email address and phone number.', 422);
-}
-if (!$r['own_use']) {
-    respond(false, 'Please confirm that you are buying for use in your own business.', 422);
+// Only the name, email and phone are required (the owner, Nov 14 2026): company, city, province, country, website, the
+// machine and the message are optional, and the "what does your company do" and "own use" questions were taken off the form.
+if ($r['name'] === '' || !filter_var($r['email'], FILTER_VALIDATE_EMAIL) || strlen(bf_digits($r['phone'])) < 7) {
+    respond(false, 'Please fill in your name, a valid email address and your phone number.', 422);
 }
 
 $now = new DateTime('now', new DateTimeZone('America/Toronto'));
@@ -488,9 +487,6 @@ foreach ((array)($BF['competitor_phones'] ?? []) as $p) {
     if (strlen($cd) >= 7 && strlen($pd) >= 7 && (substr($pd, -strlen($cd)) === $cd || substr($cd, -strlen($pd)) === $pd)) {
         $reasons[] = 'Phone number is on the competitor list (' . $p . ')'; break;
     }
-}
-if (stripos($r['business'], 'dealer') !== false || stripos($r['business'], 'reseller') !== false) {
-    $reasons[] = 'Says the company is a machinery dealer, distributor or reseller';
 }
 if ($w = bf_match((array)($BF['dealer_words'] ?? []), $domain . ' ' . $webDomain, $r['company'])) {
     $reasons[] = "Company name or domain suggests a machinery seller: \"$w\"";
