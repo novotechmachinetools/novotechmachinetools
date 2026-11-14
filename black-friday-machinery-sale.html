@@ -85,7 +85,7 @@
         <li class="has-children">
           <a href="products">Products</a>
           <button type="button" class="sub-toggle" aria-expanded="false" aria-label="Show all products">▾</button>
-          <div class="mega" data-preview="nav-preview.json?v=1794665959">
+          <div class="mega" data-preview="nav-preview.json?v=1794666556">
           <ul class="sub-menu">
             <li class="has-tree">
               <a href="rebar-bender-and-cutter">Rebar benders &amp; cutters</a>
@@ -2384,8 +2384,8 @@
         <input id="bf-name" name="name" type="text" required autocomplete="name">
       </div>
       <div class="field">
-        <label for="bf-company">Company <span>required</span></label>
-        <input id="bf-company" name="company" type="text" required autocomplete="organization">
+        <label for="bf-company">Company</label>
+        <input id="bf-company" name="company" type="text" autocomplete="organization">
       </div>
       <div class="field">
         <label for="bf-email">Business email <span>required</span></label>
@@ -2396,17 +2396,17 @@
         <input id="bf-phone" name="phone" type="tel" required autocomplete="tel">
       </div>
       <div class="field">
-        <label for="bf-city">City <span>required</span></label>
-        <input id="bf-city" name="city" type="text" required autocomplete="address-level2">
+        <label for="bf-city">City</label>
+        <input id="bf-city" name="city" type="text" autocomplete="address-level2">
       </div>
       <div class="field">
-        <label for="bf-region">Province or state <span>required</span></label>
-        <input id="bf-region" name="region" type="text" required autocomplete="address-level1" list="bf-regions">
+        <label for="bf-region">Province or state</label>
+        <input id="bf-region" name="region" type="text" autocomplete="address-level1" list="bf-regions">
         <datalist id="bf-regions"><option value="Alberta"><option value="British Columbia"><option value="Manitoba"><option value="New Brunswick"><option value="Newfoundland and Labrador"><option value="Northwest Territories"><option value="Nova Scotia"><option value="Nunavut"><option value="Ontario"><option value="Prince Edward Island"><option value="Quebec"><option value="Saskatchewan"><option value="Yukon"></datalist>
       </div>
       <div class="field">
-        <label for="bf-country">Country <span>required</span></label>
-        <select id="bf-country" name="country" required autocomplete="country-name">
+        <label for="bf-country">Country</label>
+        <select id="bf-country" name="country" autocomplete="country-name">
           <option value="Canada">Canada</option>
           <option value="United States">United States</option>
           <option value="Other">Other</option>
@@ -2417,47 +2417,25 @@
         <input id="bf-web" name="company_web" type="text" inputmode="url" autocomplete="url" placeholder="yourcompany.com">
       </div>
       <div class="field field-wide">
-        <label for="bf-business">What does your company do? <span>required</span></label>
-        <select id="bf-business" name="business" required>
-          <option value="">Choose one…</option>
-          <option>Metal fabrication / job shop</option>
-          <option>Manufacturer (our own products)</option>
-          <option>Construction, rebar or steel erection</option>
-          <option>Machine shop, maintenance or repair</option>
-          <option>HVAC or sheet metal contractor</option>
-          <option>Agriculture or farm</option>
-          <option>School or training centre</option>
-          <option>Machinery dealer, distributor or reseller</option>
-          <option>Other</option>
+        <label for="bf-machine">Machine you are interested in <span class="opt">optional</span></label>
+        <select id="bf-machine" name="machines[]">
+          <option value="">Choose a machine…</option>
+<optgroup label="Rebar benders and cutters"><option value="b36">B36 rebar bender</option><option value="b45">B45 rebar bender</option><option value="spiral-attachment">Spiral and round stirrup bending attachment</option><option value="gw52a">GW52 A rebar bender</option><option value="h45">H45 hydraulic rebar cutter</option><option value="power24">POWER24 portable hydraulic rebar cutter</option></optgroup>
+<optgroup label="Band saws"><option value="bms-270dg">BMS 270 DG manual double-miter band saw</option><option value="arg-300">ARG 300 PLUS E-F manual double-miter band saw</option><option value="bs-315gf">BS 315 GF semi-automatic double-miter band saw</option><option value="bs-300x370">BS 300x370 automatic band saw</option><option value="bmso-350ga">BMSO 350GA programmable automatic miter band saw (back order)</option></optgroup>
+<optgroup label="Plate rollers and slip rolls"><option value="esr-1550">ESR 1550x4.5 initial pinch slip roll</option><option value="mrm-s-1550">MRM-S 1550x150 plate roller (back order)</option><option value="3r-hmd-1550">3R HMD 1550x90 hydraulic slip roll</option></optgroup>
+<optgroup label="Angle rolls (profile benders)"><option value="hrbm-65">HRBM 65 hydraulic profile bender</option><option value="hrbm-50hv">HRBM 50 HV hydraulic profile bender + digital readout</option><option value="rbm-50hv">RBM 50 HV manual profile bender</option></optgroup>
+<optgroup label="Sheet metal machines"><option value="rm18e">RM18E bead roller</option><option value="ckh-3150">CKH 3150 portable roofing brake</option></optgroup>
+<optgroup label="CNC press brakes"><option value="xl-1560">Dener XL 1560 CNC mild hybrid press brake</option><option value="xl-40220-6">Dener XL 40220 CNC mild hybrid press brake, 6+1 axes</option><option value="xl-40220-4">Dener XL 40220 CNC mild hybrid press brake, 4+1 axes</option></optgroup>
+<optgroup label="Pipe bender"><option value="bk-050">BK-050 rotary draw pipe bender</option></optgroup>
+<optgroup label="Ironworker"><option value="hkm-60">HKM 60 hydraulic ironworker</option></optgroup>
+<optgroup label="Something else"><option value="factory-order">Factory order — another size or model, 5% off</option></optgroup>
         </select>
       </div>
-      <fieldset class="field field-wide bf-picks">
-        <legend>Machines you are interested in</legend>
-        <p class="bf-pick-cat">Rebar benders and cutters</p>
-        <div class="bf-pick-list"><label class="bf-pick"><input type="checkbox" name="machines[]" value="b36"> <span><b>B36 rebar bender</b></span></label><label class="bf-pick"><input type="checkbox" name="machines[]" value="b45"> <span><b>B45 rebar bender</b></span></label><label class="bf-pick"><input type="checkbox" name="machines[]" value="spiral-attachment"> <span><b>Spiral and round stirrup bending attachment</b></span></label><label class="bf-pick"><input type="checkbox" name="machines[]" value="gw52a"> <span><b>GW52 A rebar bender</b></span></label><label class="bf-pick"><input type="checkbox" name="machines[]" value="h45"> <span><b>H45 hydraulic rebar cutter</b></span></label><label class="bf-pick"><input type="checkbox" name="machines[]" value="power24"> <span><b>POWER24 portable hydraulic rebar cutter</b></span></label></div>
-        <p class="bf-pick-cat">Band saws</p>
-        <div class="bf-pick-list"><label class="bf-pick"><input type="checkbox" name="machines[]" value="bms-270dg"> <span><b>BMS 270 DG manual double-miter band saw</b></span></label><label class="bf-pick"><input type="checkbox" name="machines[]" value="arg-300"> <span><b>ARG 300 PLUS E-F manual double-miter band saw</b></span></label><label class="bf-pick"><input type="checkbox" name="machines[]" value="bs-315gf"> <span><b>BS 315 GF semi-automatic double-miter band saw</b></span></label><label class="bf-pick"><input type="checkbox" name="machines[]" value="bs-300x370"> <span><b>BS 300x370 automatic band saw</b></span></label><label class="bf-pick"><input type="checkbox" name="machines[]" value="bmso-350ga"> <span><b>BMSO 350GA programmable automatic miter band saw</b> <small>back order</small></span></label></div>
-        <p class="bf-pick-cat">Plate rollers and slip rolls</p>
-        <div class="bf-pick-list"><label class="bf-pick"><input type="checkbox" name="machines[]" value="esr-1550"> <span><b>ESR 1550x4.5 initial pinch slip roll</b></span></label><label class="bf-pick"><input type="checkbox" name="machines[]" value="mrm-s-1550"> <span><b>MRM-S 1550x150 plate roller</b> <small>back order</small></span></label><label class="bf-pick"><input type="checkbox" name="machines[]" value="3r-hmd-1550"> <span><b>3R HMD 1550x90 hydraulic slip roll</b></span></label></div>
-        <p class="bf-pick-cat">Angle rolls (profile benders)</p>
-        <div class="bf-pick-list"><label class="bf-pick"><input type="checkbox" name="machines[]" value="hrbm-65"> <span><b>HRBM 65 hydraulic profile bender</b></span></label><label class="bf-pick"><input type="checkbox" name="machines[]" value="hrbm-50hv"> <span><b>HRBM 50 HV hydraulic profile bender + digital readout</b></span></label><label class="bf-pick"><input type="checkbox" name="machines[]" value="rbm-50hv"> <span><b>RBM 50 HV manual profile bender</b></span></label></div>
-        <p class="bf-pick-cat">Sheet metal machines</p>
-        <div class="bf-pick-list"><label class="bf-pick"><input type="checkbox" name="machines[]" value="rm18e"> <span><b>RM18E bead roller</b></span></label><label class="bf-pick"><input type="checkbox" name="machines[]" value="ckh-3150"> <span><b>CKH 3150 portable roofing brake</b></span></label></div>
-        <p class="bf-pick-cat">CNC press brakes</p>
-        <div class="bf-pick-list"><label class="bf-pick"><input type="checkbox" name="machines[]" value="xl-1560"> <span><b>Dener XL 1560 CNC mild hybrid press brake</b></span></label><label class="bf-pick"><input type="checkbox" name="machines[]" value="xl-40220-6"> <span><b>Dener XL 40220 CNC mild hybrid press brake, 6+1 axes</b></span></label><label class="bf-pick"><input type="checkbox" name="machines[]" value="xl-40220-4"> <span><b>Dener XL 40220 CNC mild hybrid press brake, 4+1 axes</b></span></label></div>
-        <p class="bf-pick-cat">Pipe bender</p>
-        <div class="bf-pick-list"><label class="bf-pick"><input type="checkbox" name="machines[]" value="bk-050"> <span><b>BK-050 rotary draw pipe bender</b></span></label></div>
-        <p class="bf-pick-cat">Ironworker</p>
-        <div class="bf-pick-list"><label class="bf-pick"><input type="checkbox" name="machines[]" value="hkm-60"> <span><b>HKM 60 hydraulic ironworker</b></span></label></div>
-        <p class="bf-pick-cat">Something else</p>
-        <div class="bf-pick-list"><label class="bf-pick"><input type="checkbox" name="machines[]" value="factory-order"> <span><b>Factory order</b> — another size or model, 5% off</span></label></div>
-      </fieldset>
       <div class="field field-wide">
         <label for="bf-message">Anything else? <span class="opt">optional</span></label>
         <textarea id="bf-message" name="message" rows="3" placeholder="Material and sizes you run, voltage, delivery city…"></textarea>
       </div>
       <div class="field field-wide bf-checks">
-        <label class="bf-check"><input type="checkbox" name="own_use" value="1" required> <span>I am buying for use in my own business, not for resale. <span class="req">required</span></span></label>
         <label class="bf-check"><input type="checkbox" name="news" value="1"> <span>Email me NovoTech offers and news. You can unsubscribe at any time.</span></label>
       </div>
 <input type="hidden" name="g-recaptcha-response" value="">      <div class="field field-wide form-actions">
@@ -2533,7 +2511,7 @@
   </div>
 </footer>
 <a class="to-top" href="#top" aria-label="Back to top" title="Back to top"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path d="M12 19V5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="m5 12 7-7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-<div class="ai-panel" id="ai-panel" hidden data-server="1" data-page="black-friday-machinery-sale" data-ai="js/ai.js?v=3c44ec1c" data-cat="ai/catalogue.json?v=1794665959">
+<div class="ai-panel" id="ai-panel" hidden data-server="1" data-page="black-friday-machinery-sale" data-ai="js/ai.js?v=3c44ec1c" data-cat="ai/catalogue.json?v=1794666556">
   <div class="ai-backdrop" data-ai-close></div>
   <div class="ai-dialog" role="dialog" aria-modal="true" aria-labelledby="ai-title">
     <header class="ai-head">
@@ -2567,5 +2545,5 @@
     <p class="ai-foot">Answers come from NovoTech's catalogue and can contain mistakes — confirm capacities with us before ordering · <a href="tel:+16475265510">+1 647 526 5510</a></p>
   </div>
 </div><script src="js/site.js?v=b33af8fb" defer></script>
-<script src="js/promo.js?v=1794665959" defer></script><script src="js/bf.js?v=a6f336e8" defer></script></body>
+<script src="js/promo.js?v=1794666556" defer></script><script src="js/bf.js?v=1c8320d8" defer></script></body>
 </html>
