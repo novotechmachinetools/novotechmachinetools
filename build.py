@@ -1819,6 +1819,127 @@ def both_tons_page(page, everything):
     walk(page)
 
 PREPARED = []   # prepared page dicts (families resolved) — used for the AI assistant's catalogue
+FAMILY_PAGE = {}   # (family set, family id) → the product page that shows it (not a hub), filled by main()
+ALL_PAGES = {}     # slug → page data as loaded, filled by main()
+
+
+def _singular(s):
+    """'XL hydraulic press brakes' -> 'XL hydraulic press brake' (the last word only)"""
+    words = s.split()
+    if not words:
+        return s
+    w = words[-1]
+    words[-1] = (w[:-3] + "y" if w.endswith("ies") else w[:-2] if re.search(r"(ch|sh|x)es$", w) else
+                 w[:-1] if w.endswith("s") and not w.endswith("ss") else w)
+    return " ".join(words)
+
+
+def _cell_text(c):
+    if isinstance(c, dict):
+        c = c.get("t") or c.get("text") or c.get("html") or ""
+    if isinstance(c, (list, tuple)):
+        c = " · ".join(_cell_text(x) for x in c)
+    return html_mod.unescape(re.sub(r"<[^>]+>", "", str(c))).strip()
+
+
+def model_spec_rows(f, model, limit=7):
+    """the spec rows of one model, from the family's prepared tables: the key rows first; a band saw shows its straight
+    capacities and one 45° capacity, then motor, blade and weight (the Black Friday cards)"""
+    norm = lambda s: re.sub(r"[^a-z0-9]", "", str(s).lower())
+    tables = f.get("tables") or ([f["table"]] if f.get("table") else [])
+    for t in tables:
+        names = [m if isinstance(m, str) else (m.get("name") or "") for m in t.get("models", [])]
+        idx = next((i for i, n in enumerate(names) if norm(n) == norm(model)), None)
+        if idx is None and len(names) == 1 and norm(model) in norm(names[0]):
+            idx = 0
+        if idx is None:
+            continue
+        rows, seen45, seen_cap = [], False, False
+        for r in t.get("rows", []):
+            if r.get("type") == "section":
+                break
+            cells = r.get("cells") or []
+            if idx >= len(cells):
+                continue
+            c = cells[idx]
+            if r.get("type") == "cap" and isinstance(c, list):
+                # rebar machines: the first steel grade only, as "1 × 35M / #11 · 2 × 20M / #6"
+                if seen_cap:
+                    continue
+                seen_cap = True
+                sub = (r.get("sub") or "").replace("tensile", "").strip()
+                label = (r.get("label") or "").split(" · ")[0] + (f", {sub} steel" if sub else "")
+                val = " · ".join(f"{e.get('n', 1)} × {e.get('bars') or e.get('dia')}" for e in c if isinstance(e, dict))
+                if val:
+                    rows.append({"label": label, "value": val, "key": True})
+                continue
+            label = _cell_text(r.get("label") or "") + (f" ({r['sub']})" if r.get("sub") else "")
+            val = _cell_text(c)
+            if not re.search(r"[A-Za-z0-9]", val):
+                continue
+            if not val or val in ("—", "-", "–", "no", "na"):
+                continue
+            if label.startswith("Capacity"):
+                straight = "0° (straight)" in label
+                is45 = "45°" in label and label.endswith("round") and not seen45
+                if not (straight or is45):
+                    continue
+                seen45 = seen45 or is45
+                label = label.replace("Capacity ", "").replace(" — ", ", ").replace("0° (straight)", "Capacity at 0°")
+                if is45:
+                    label = "Capacity at " + label
+            rows.append({"label": label, "value": val, "key": bool(r.get("key") or r.get("cap"))})
+        rows = [r for r in rows if r["key"]] + [r for r in rows if not r["key"]]
+        return rows[:limit]
+    return []
+
+
+def machine_type(f, model):
+    """the kind of machine in a few words, from the family name without its series and model: 'XL hydraulic CNC press
+    brakes, 66 – 661 US tons' -> 'Hydraulic CNC press brake'; 'BMSO 350GA automatic single-miter band saw with encoder
+    feed' -> 'Automatic single-miter band saw'"""
+    name = re.split(r" with |, | — | – | · |\(", f.get("name") or "")[0]
+    toks = name.split()
+    mtoks = {t.lower() for t in re.split(r"[\s/]+", model)}
+    while toks and (toks[0].lower() in mtoks or toks[0].lower() in ("series", "range") or re.sub(r"[^a-z0-9]", "", toks[0].lower()) in
+                    {re.sub(r"[^a-z0-9]", "", m) for m in mtoks}):
+        toks = toks[1:]
+    t = _singular(" ".join(toks)) if toks else _singular(f.get("short") or "")
+    return t[:1].upper() + t[1:]
+
+
+def stock_items(page):
+    """content/pages/black-friday-machine-sale.json "stock": [{"family": "set:id", "model", "qty", "id"?, "image"?, "name"?,
+    "type"?, "specs"? [[label, value]], "highlights"? [...], "note"?}] -> the cards of the Black Friday page: the model's own
+    photo when the gallery has one named after it, its spec rows, three standard-equipment lines and a link to its family on
+    its product page. Prices never come here: they are e-mailed by bf-quote.php from the private price list."""
+    out = []
+    for it in page.get("stock") or []:
+        fset, fid = it["family"].split(":", 1)
+        f = prepare_family(family(page, fid, fset))
+        model = it.get("model") or f.get("short", "")
+        keys = [k for k in (f.get("images") or []) if isinstance(k, str) and k in manifest]
+        pk = it.get("image") or model_photo(model, keys) or ((f.get("card_image") or {}).get("name"))
+        slug = FAMILY_PAGE.get((fset, fid))
+        brand = site.get("brands", {}).get(f.get("brand"), {}) or (ALL_PAGES.get(slug) or {}).get("brand") or {}
+        specs = [{"label": a, "value": b} for a, b in it["specs"]] if it.get("specs") else model_spec_rows(f, model)
+        strip = lambda x: html_mod.unescape(re.sub(r"<[^>]+>", "", x)) if isinstance(x, str) else ""
+        highlights = it.get("highlights") or [strip(x) for x in (f.get("features") or [])[:3]]
+        sid = it.get("id") or re.sub(r"[^a-z0-9]+", "-", model.lower()).strip("-")
+        out.append({
+            "id": sid, "model": model, "name": it.get("name") or f"{brand.get('name', '')} {model}".strip(),
+            "type": it.get("type") or machine_type(f, model), "qty": it.get("qty", 1),
+            "condition": it.get("condition", "New"), "note": it.get("note", ""),
+            "brand": brand.get("name", ""), "line": brand.get("line", ""), "origin": brand.get("origin") or brand.get("country", ""),
+            "img": img(pk) if pk else None, "specs": specs, "highlights": highlights,
+            "href": f"{slug}#{fid}" if slug else "", "family_name": f.get("name", ""),
+        })
+    seen = set()
+    for x in out:
+        if x["id"] in seen:
+            raise SystemExit(f"black friday stock: two machines with the id {x['id']} — give one an \"id\"")
+        seen.add(x["id"])
+    return out
 
 
 def render_page(page):
@@ -1931,6 +2052,8 @@ def render_page(page):
             jl = list(page["jump_links"])
             jl.insert(next((i for i, j in enumerate(jl) if j["href"] == "#reques-a-quote"), len(jl)), {"href": gid, "label": "Buying guide"})
             page["jump_links"] = jl
+    if page.get("template") == "black-friday.html":
+        page["stock_items"] = stock_items(page)
     is_site = (page.get("site_template") or page.get("template")) in SITE_TEMPLATES
     if is_site:
         prepare_site_page(page)
@@ -2188,6 +2311,7 @@ def main():
     except ImportError:
         print("rcssmin/rjsmin not installed - shipping unminified CSS/JS")
     for extra in ("robots.txt", "llms.txt", ".htaccess", ".user.ini", "quote.php", "quote-mail.php", "mail-lib.php", "ask.php", "ai-config.sample.php", "form-config.sample.php",
+                  "bf-quote.php", "bf-config.sample.php",
                   "favicon.ico", "favicon.svg", "site.webmanifest", INDEXNOW_KEY + ".txt", ".cpanel.yml", ".deploy-hostpapa.sh"):
         s = os.path.join(ROOT, "src", "root", extra)
         if os.path.exists(s):
@@ -2269,6 +2393,18 @@ def main():
             shown |= {(g.get("family_set") or p.get("family_set"), f) for f in g.get("families", []) if isinstance(f, str)}
     SHOWN_FAMILIES[0] = len(shown)
     PDF_INDEX.update(build_pdf_index(loaded))
+    # the Black Friday popup leads to the sale page once that page is published (not a draft): the "deals_url" of the promo
+    bf_live = [p["slug"] for p in loaded if p.get("template") == "black-friday.html" and not p.get("draft")]
+    if site.get("promo") and bf_live:
+        site["promo"]["deals_url"] = bf_live[0]
+    ALL_PAGES.update(by_slug_all)
+    for p in loaded:   # where each family is shown, for the links of the Black Friday page's cards
+        if p.get("subpages") or p.get("template") in SITE_TEMPLATES or p.get("template") == "black-friday.html":
+            continue
+        for g in p.get("groups", []):
+            for f in g.get("families", []):
+                if isinstance(f, str):
+                    FAMILY_PAGE.setdefault((g.get("family_set") or p.get("family_set"), f), p["slug"])
     for page in loaded:
         html = render_page(page)
         if ARTIFACT:

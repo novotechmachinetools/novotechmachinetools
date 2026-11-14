@@ -1,0 +1,197 @@
+{% extends "base.html" %}
+{# Black Friday 2026 (content/pages/black-friday-machine-sale.json): the in-stock machines with their photos and specifications,
+   no prices — "Get instant QUOTE" sends the form to bf-quote.php, which checks the buyer and e-mails the private price list
+   (the owner, Nov 13 2026). #}
+{% block content %}
+{% set items = page.stock_items or [] %}
+{% set promo = site.promo or {} %}
+<section class="bf-hero">
+  <div class="wrap bf-hero-grid">
+    <div class="bf-hero-copy">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <ol>
+          {% for c in page.breadcrumb %}<li>{% if c.href %}<a href="{{ c.href }}">{{ c.label }}</a>{% else %}<span aria-current="page">{{ c.label }}</span>{% endif %}</li>{% endfor %}
+        </ol>
+      </nav>
+      <p class="bf-eyebrow"><b>Black Friday</b> Nov 16 – Dec 4, 2026</p>
+      <h1>{{ page.h1 }}</h1>
+      <p class="lead">{{ page.intro }}</p>
+      <p class="bf-count" data-bf-end="{{ promo.end or '2026-12-04T23:59:59-05:00' }}">Sale ends in <strong data-bf-count>Dec 4, 11:59 pm ET</strong></p>
+      <div class="bf-ctas">
+        <a class="btn btn-primary bf-go" href="#instant-quote">Get instant QUOTE</a>
+        <a class="btn bf-ghost" href="#in-stock">See in-stock machines</a>
+      </div>
+    </div>
+    <div class="bf-hero-art" aria-hidden="true">
+      {% for x in items[:2] if x.img %}
+      <img class="bf-hero-m bf-hero-m{{ loop.index }}" src="{{ x.img.small }}" srcset="{{ x.img.srcset }}" sizes="(max-width: 900px) 70vw, 560px" width="{{ x.img.w }}" height="{{ x.img.h }}" alt=""{% if loop.first %} fetchpriority="high"{% else %} loading="lazy"{% endif %} decoding="async">
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="wrap bf-offers" aria-label="Black Friday offers">
+  <ul>
+    <li><svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true" focusable="false"><path d="M3 12V4a1 1 0 0 1 1-1h8l9 9-9 9-9-9z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="8" cy="8" r="1.8" fill="currentColor"/></svg><p><b>In-stock machines on sale</b>Black Friday prices, ready to ship from Mississauga, ON</p></li>
+    <li><svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true" focusable="false"><path d="M19 5L5 19" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><circle cx="7" cy="7" r="2.6" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17" cy="17" r="2.6" fill="none" stroke="currentColor" stroke-width="2"/></svg><p><b>5% off factory orders</b>Confirm by Dec 4 — only 10% down, balance on delivery</p></li>
+    <li><svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true" focusable="false"><rect x="2.5" y="6" width="19" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M2.5 10.5h19" stroke="currentColor" stroke-width="2"/><path d="M6 15h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><p><b>0% down financing</b>Through our financing partners, on approved credit</p></li>
+    <li class="bf-offer-tax"><svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true" focusable="false"><path d="M6 2.5h9l4 4v15H6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9.5 12.5l2 2 4-4.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><p><b>100% first-year write-off*</b>On eligible manufacturing equipment — <a href="#write-off">how it works</a></p></li>
+  </ul>
+</section>
+
+<section class="wrap bf-stock" id="in-stock" aria-labelledby="bf-stock-title">
+  <div class="bf-head">
+    <h2 id="bf-stock-title">In stock in Mississauga, ON — ready to ship</h2>
+    <p>{{ items | length }} machine{{ '' if items | length == 1 else 's' }} at Black Friday prices. Click <b>Get instant QUOTE</b> and the price list with the full specifications is emailed to you within minutes.</p>
+  </div>
+  <ul class="bf-grid">
+    {% for x in items %}
+    <li class="bf-card" id="stock-{{ x.id }}">
+      <div class="bf-card-art{{ ' is-cutout' if x.img and x.img.alpha else '' }}">
+        <span class="bf-tag">In stock{% if x.qty and x.qty > 1 %} · {{ x.qty }} units{% endif %}</span>
+        {% if x.img %}<img src="{{ x.img.small }}" srcset="{{ x.img.srcset }}" sizes="(max-width: 640px) 92vw, (max-width: 1100px) 45vw, 420px" width="{{ x.img.w }}" height="{{ x.img.h }}" alt="{{ x.name }} {{ x.type | lower }}" loading="lazy" decoding="async">{% endif %}
+      </div>
+      <div class="bf-card-body">
+        <p class="bf-line">{{ x.brand }}{% if x.line %} · {{ x.line | lower }}{% endif %}{% if x.condition and x.condition != 'New' %} · {{ x.condition }}{% endif %}</p>
+        <h3>{{ x.model }}</h3>
+        <p class="bf-type">{{ x.type }}</p>
+        {% if x.specs %}<dl class="bf-specs">{% for r in x.specs %}<div><dt>{{ r.label }}</dt><dd>{{ r.value }}</dd></div>{% endfor %}</dl>{% endif %}
+        {% if x.highlights %}<ul class="bf-highlights">{% for h in x.highlights %}<li>{{ h }}</li>{% endfor %}</ul>{% endif %}
+        {% if x.note %}<p class="bf-note">{{ x.note }}</p>{% endif %}
+        <div class="bf-card-ctas">
+          <a class="btn btn-primary bf-go" href="#instant-quote" data-bf-pick="{{ x.id }}">Get instant QUOTE</a>
+          {% if x.href %}<a class="bf-more" href="{{ x.href }}">Full specifications and videos</a>{% endif %}
+        </div>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+  <p class="bf-factory"><b>Need a different size or model?</b> Order any machine from the factory by December 4 and take 5% off, with only 10% down and the balance on delivery. <a href="#instant-quote" data-bf-pick="factory-order">Ask for a factory-order quote</a></p>
+</section>
+
+<section class="bf-steps" aria-labelledby="bf-steps-title">
+  <div class="wrap">
+    <h2 id="bf-steps-title">How the instant quote works</h2>
+    <ol>
+      <li><b>Fill in the form</b>Your company, your contact details and the machines you are looking at.</li>
+      <li><b>Get the price list by email</b>Black Friday prices and full specifications, in your inbox within minutes.</li>
+      <li><b>Reserve your machine</b>Reply or call +1 647 526 5510. In-stock machines are first come, first served.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="wrap bf-tax" id="write-off" aria-labelledby="bf-tax-title">
+  <h2 id="bf-tax-title">Write off 100% of eligible equipment in year one*</h2>
+  <div class="bf-tax-grid">
+    <p><b>Federal immediate expensing.</b> Machinery used in Canada mainly to manufacture or process goods for sale or lease can be deducted in full in the tax year it becomes available for use. A machine from stock can be delivered and running before your year-end.</p>
+    <p><b>Ontario Made Manufacturing Investment Tax Credit.</b> Eligible Ontario corporations can also claim a 15% tax credit on qualifying manufacturing machinery and equipment.</p>
+  </div>
+  <p class="bf-fine">*General information, not tax advice. Eligibility depends on your business, how the machine is used and when it becomes available for use. Ask your accountant.</p>
+</section>
+
+<section class="quote bf-quote" id="instant-quote" aria-labelledby="bfq-title">
+  <div class="wrap quote-grid">
+    <div class="quote-copy">
+      <h2 id="bfq-title">Get your instant quote</h2>
+      <p>Tell us about your company and the machines you are looking at. We email you the Black Friday price list within minutes:</p>
+      <ul class="bf-checklist">
+        <li>Sale prices on every in-stock machine</li>
+        <li>Full specifications and standard equipment</li>
+        <li>Factory-order terms: 5% off, 10% down, balance on delivery</li>
+      </ul>
+      <p class="quote-contact">Prefer to talk? Call <a href="tel:{{ site.phone_tel }}">{{ site.phone }}</a> ({{ site.hours }} Eastern).</p>
+      <p class="quote-contact">Machinery dealers and resellers: please call us — dealer pricing is quoted separately.</p>
+    </div>
+    <form class="quote-form bf-form" action="bf-quote.php" method="post" novalidate{% if staging %} data-staging="1"{% endif %}{% if site.recaptcha_site_key %} data-recaptcha="{{ site.recaptcha_site_key }}"{% endif %}>
+      <p class="quote-form-head"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12V4a1 1 0 0 1 1-1h8l9 9-9 9-9-9z"/><circle cx="8" cy="8" r="1.4"/></svg>Instant quote<small>Price list by email in minutes</small></p>
+      <input type="hidden" name="ts" value="">
+      <input type="hidden" name="page_url" value="{{ page.url }}">
+      <p class="hp" aria-hidden="true"><label>Leave this field empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label></p>
+      <div class="field">
+        <label for="bf-name">Name <span>required</span></label>
+        <input id="bf-name" name="name" type="text" required autocomplete="name">
+      </div>
+      <div class="field">
+        <label for="bf-company">Company <span>required</span></label>
+        <input id="bf-company" name="company" type="text" required autocomplete="organization">
+      </div>
+      <div class="field">
+        <label for="bf-email">Business email <span>required</span></label>
+        <input id="bf-email" name="email" type="email" required autocomplete="email">
+      </div>
+      <div class="field">
+        <label for="bf-phone">Phone <span>required</span></label>
+        <input id="bf-phone" name="phone" type="tel" required autocomplete="tel">
+      </div>
+      <div class="field">
+        <label for="bf-city">City <span>required</span></label>
+        <input id="bf-city" name="city" type="text" required autocomplete="address-level2">
+      </div>
+      <div class="field">
+        <label for="bf-region">Province or state <span>required</span></label>
+        <input id="bf-region" name="region" type="text" required autocomplete="address-level1" list="bf-regions">
+        <datalist id="bf-regions">{% for r in ["Alberta", "British Columbia", "Manitoba", "New Brunswick", "Newfoundland and Labrador", "Northwest Territories", "Nova Scotia", "Nunavut", "Ontario", "Prince Edward Island", "Quebec", "Saskatchewan", "Yukon"] %}<option value="{{ r }}">{% endfor %}</datalist>
+      </div>
+      <div class="field">
+        <label for="bf-country">Country <span>required</span></label>
+        <select id="bf-country" name="country" required autocomplete="country-name">
+          <option value="Canada">Canada</option>
+          <option value="United States">United States</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="bf-web">Company website</label>
+        <input id="bf-web" name="company_web" type="text" inputmode="url" autocomplete="url" placeholder="yourcompany.com">
+      </div>
+      <div class="field field-wide">
+        <label for="bf-business">What does your company do? <span>required</span></label>
+        <select id="bf-business" name="business" required>
+          <option value="">Choose one…</option>
+          <option>Metal fabrication / job shop</option>
+          <option>Manufacturer (our own products)</option>
+          <option>Construction, rebar or steel erection</option>
+          <option>Machine shop, maintenance or repair</option>
+          <option>HVAC or sheet metal contractor</option>
+          <option>Agriculture or farm</option>
+          <option>School or training centre</option>
+          <option>Machinery dealer, distributor or reseller</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <fieldset class="field field-wide bf-picks">
+        <legend>Machines you are interested in</legend>
+        <div class="bf-pick-list">
+          {% for x in items %}<label class="bf-pick"><input type="checkbox" name="machines[]" value="{{ x.id }}"> <span><b>{{ x.model }}</b> {{ x.type }}</span></label>{% endfor %}
+          <label class="bf-pick"><input type="checkbox" name="machines[]" value="factory-order"> <span><b>Factory order</b> another size or model, 5% off</span></label>
+        </div>
+      </fieldset>
+      <div class="field field-wide">
+        <label for="bf-message">Anything else? <span class="opt">optional</span></label>
+        <textarea id="bf-message" name="message" rows="3" placeholder="Material and sizes you run, voltage, delivery city…"></textarea>
+      </div>
+      <div class="field field-wide bf-checks">
+        <label class="bf-check"><input type="checkbox" name="own_use" value="1" required> <span>I am buying for use in my own business, not for resale. <span class="req">required</span></span></label>
+        <label class="bf-check"><input type="checkbox" name="news" value="1"> <span>Email me NovoTech offers and news. You can unsubscribe at any time.</span></label>
+      </div>
+      {% if site.recaptcha_site_key %}<input type="hidden" name="g-recaptcha-response" value="">{% endif %}
+      <div class="field field-wide form-actions">
+        <button class="btn btn-primary" type="submit">Get instant QUOTE</button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+        {% if site.recaptcha_site_key %}<p class="field-note recaptcha-note">This form is protected by reCAPTCHA; Google's <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply.</p>{% endif %}
+      </div>
+    </form>
+  </div>
+</section>
+
+{% if page.faq %}
+<section class="faq wrap" aria-labelledby="faq-title">
+  <h2 id="faq-title">{{ page.faq_title or "Questions we get asked" }}</h2>
+  <div class="faq-list">
+    {% for q in page.faq %}<details><summary>{{ q.q }}</summary><p>{{ q.a }}</p></details>{% endfor %}
+  </div>
+</section>
+{% endif %}
+{% endblock %}
+
+{% block scripts %}<script src="js/bf.js?v={{ asset_v('js/bf.js') }}" defer></script>{% endblock %}

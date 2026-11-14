@@ -730,7 +730,7 @@
   }
 
   /* ---------- quote form: submit in place, fall back to a normal POST ---------- */
-  var form = d.querySelector(".quote-form");
+  var form = d.querySelector(".quote-form:not(.bf-form)");   // the Black Friday instant quote has its own script (js/bf.js)
   if (form && window.fetch && window.FormData) {
     // the e-mail's subject is "RFQ for <machine>" (the owner, Nov 11 2026): the page's own machine, or on a general page the
     // machine family picked in the form (its data-rfq)

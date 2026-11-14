@@ -1,7 +1,8 @@
 {# Black Friday 2026 — announcement bar (in the page, so it never shifts the layout) and the popup (a <template>:
    inert and not indexed until promo.js shows it). Dates and switch: "promo" in content/site.json. #}
 {% set p = site.promo %}
-<div class="promo-bar" id="promo-bar" data-start="{{ p.start }}" data-end="{{ p.end }}" data-quote="{{ p.quote_url or ('contact-us.html#reques-a-quote' if page.no_quote else '#reques-a-quote') }}">
+{% set qhref = page.quote_href or p.deals_url or p.quote_url or ('contact-us.html#reques-a-quote' if page.no_quote else '#reques-a-quote') %}
+<div class="promo-bar" id="promo-bar" data-start="{{ p.start }}" data-end="{{ p.end }}" data-quote="{{ qhref }}"{% if p.deals_url %} data-deals="1"{% endif %}>
   <div class="wrap promo-bar-row">
     <p class="promo-bar-text"><b class="promo-tag">Black Friday</b><span class="promo-long">Sale prices on in-stock machines <i aria-hidden="true">·</i> 5% off factory orders <i aria-hidden="true">·</i> 100% write-off*</span><span class="promo-short">Stock deals + 5% off factory orders</span><span class="promo-ends"><i aria-hidden="true">·</i> Ends Dec 4</span></p>
     <button type="button" class="promo-bar-cta" data-promo-open aria-haspopup="dialog">See the deals<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
@@ -29,7 +30,7 @@
       <li class="promo-offer-tax"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" focusable="false"><path d="M6 2.5h9l4 4v15H6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9.5 12.5l2 2 4-4.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><p><b>100% first-year <span class="nw">write-off*</span></b><span>Deduct the full cost of eligible manufacturing equipment in the year it goes to work in your shop. Ontario manufacturers can add a 15% tax credit.*</span></p></li>
     </ul>
     <div class="promo-ctas">
-      <a class="btn btn-primary promo-go" data-promo-quote href="#reques-a-quote">Get my Black Friday quote</a>
+      <a class="btn btn-primary promo-go" data-promo-quote href="{{ qhref }}">{{ "See the Black Friday deals" if p.deals_url and not page.quote_href else "Get my Black Friday quote" }}</a>
       <a class="promo-call" href="tel:{{ site.phone_tel }}">or call {{ site.phone }}</a>
     </div>
     <p class="promo-count">Sale ends in <strong data-promo-count>Dec 4</strong></p>

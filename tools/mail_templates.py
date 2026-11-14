@@ -202,7 +202,105 @@ def notification():
     return shell(inner, T("PRE"), "#FFFFFF")
 
 
+# ---------------------------------------------------------------------------------------------- Black Friday 2026
+# bf-quote.php: the price list the website e-mails by itself to a buyer who asked for an instant quote on the Black Friday page
+# (the owner, Nov 13 2026: "the site emails the price list automatically, with a copy to info@ so I can follow up").  The
+# prices come from the private price list on the server, never from the site's pages or this repository.
+BF_PAGE = SITE + "/black-friday-machine-sale"
+BF_TAX = ("*Canadian businesses can deduct 100% of the cost of eligible manufacturing and processing equipment in the tax year it "
+          "becomes available for use, and eligible Ontario corporations can add the 15% Ontario Made Manufacturing Investment Tax "
+          "Credit. General information, not tax advice: ask your accountant whether your business qualifies.")
+BF_WHY = "You received this email because you asked for the Black Friday price list on NovoTechMachineTools.com."
+
+
+def bf_terms_rows():
+    rows = [("In-stock machines", "Black Friday prices, first come, first served"),
+            ("Factory orders", "5% off when confirmed by Dec 4 &middot; only 10% down, balance on delivery"),
+            ("Financing", "0% down through our financing partners, on approved credit"),
+            ("Write-off", "100% in year one on eligible manufacturing equipment*"),
+            ("Offer ends", "Friday, December 4, 2026, 11:59 pm Eastern")]
+    return "".join(SUMMARY_ROW.replace(T("K"), k).replace(T("V"), v) for k, v in rows)
+
+
+def bf_offer():
+    inner = f'''<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#E9EAEC;">
+<tr><td align="center" style="padding:28px 12px;">
+<table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background:#FFFFFF;">
+{header("Black Friday 2026")}
+<tr><td style="background:{INK};padding:30px 24px 28px 24px;">
+<div style="display:inline-block;background:{ORANGE};padding:5px 10px 4px 10px;font-family:{BTN_FONT};font-size:15px;line-height:18px;font-weight:bold;letter-spacing:1px;text-transform:uppercase;color:{BTN_INK};">Black Friday price list</div>
+<h1 style="margin:14px 0 0 0;font-family:{FONT};font-size:28px;line-height:34px;font-weight:bold;color:#FFFFFF;">Here are your Black Friday prices{T("COMMA_NAME")}</h1>
+<div style="width:64px;height:4px;line-height:4px;font-size:0;background:{ORANGE};margin-top:14px;">&nbsp;</div>
+<p style="margin:0;padding-top:14px;font-family:{FONT};font-size:16px;line-height:25px;color:#E1E2E4;">Thank you for your interest. {T("ATTACHED")}The machines are in our Mississauga, ON warehouse, ready to ship, and they are first come, first served: reply to this email or call us to reserve yours.</p>
+</td></tr>
+<tr><td style="padding:28px 24px 6px 24px;">
+{T("PICKED")}
+{T("PRICES")}
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:{BG};border-left:4px solid {ORANGE};">
+<tr><td style="padding:14px 18px;">
+<div style="{LABEL}padding-bottom:6px;">Black Friday terms</div>
+<table role="presentation" cellpadding="0" cellspacing="0" border="0">{bf_terms_rows()}</table>
+</td></tr></table>
+<div style="height:22px;line-height:22px;font-size:0;">&nbsp;</div>
+{P("Questions about a machine, options, voltage or delivery to your shop? Simply reply to this email.")}
+{button(TEL, "Call " + PHONE)}{button(T("PAGE_URL"), "See the machines", False)}{CLEAR}
+</td></tr>
+<tr><td style="padding:16px 24px 12px 24px;">
+{P(REGARDS, "margin-bottom:0;")}
+{signature(18)}
+</td></tr>
+<tr><td style="padding:6px 24px 22px 24px;font-family:{FONT};font-size:12px;line-height:18px;color:{MUTED};">{BF_TAX}</td></tr>
+<tr><td style="background:{INK};padding:16px 24px;font-family:{FONT};font-size:12px;line-height:18px;color:#B4B6BA;">{BF_WHY}</td></tr>
+</table></td></tr></table>'''
+    return shell(inner, "Your NovoTech Black Friday price list: in-stock machines in Mississauga, ON, 5% off factory orders until Dec 4.", "#E9EAEC")
+
+
+BF_TEXT = f"""Here are your Black Friday prices{T("COMMA_NAME")}
+
+Thank you for your interest. {T("ATTACHED_TEXT")}The machines are in our Mississauga, ON warehouse, ready to ship, and they are first come, first served: reply to this email or call us to reserve yours.
+
+{T("PICKED_TEXT")}{T("PRICES_TEXT")}Black Friday terms
+In-stock machines: Black Friday prices, first come, first served
+Factory orders: 5% off when confirmed by Dec 4, only 10% down, balance on delivery
+Financing: 0% down through our financing partners, on approved credit
+Write-off: 100% in year one on eligible manufacturing equipment*
+Offer ends: Friday, December 4, 2026, 11:59 pm Eastern
+
+Questions about a machine, options, voltage or delivery to your shop? Simply reply to this email, or call {PHONE}.
+
+See the machines: {T("PAGE_URL")}
+
+Best regards,
+The sales team
+NovoTech Machine Tools Inc.
+
+www.NovoTechMachineTools.com
+info@NovoTechMachineTools.com
+1365 Mid-Way Blvd 26, Mississauga
+Ontario L5T 2J5, Canada
+Tel: {PHONE}
+
+{BF_TAX}
+
+{BF_WHY}
+"""
+
+# one machine of the price list in the e-mail: model and kind on the left, the Black Friday price (and the regular price struck
+# through, when the price list gives one) on the right; {{MARK}} flags the machines the buyer ticked
+BF_PRICE_ROW = (f'<tr><td style="padding:9px 10px 9px 0;border-bottom:1px solid {LINE};font-family:{FONT};font-size:14px;line-height:20px;color:{INK};vertical-align:top;">'
+                f'{T("MARK")}<b>{T("MODEL")}</b><br><span style="color:{MUTED};">{T("TYPE")}</span></td>'
+                f'<td align="right" style="padding:9px 0;border-bottom:1px solid {LINE};font-family:{FONT};font-size:15px;line-height:20px;color:{INK};vertical-align:top;white-space:nowrap;">'
+                f'{T("REGULAR")}<b style="color:{ORANGE_TXT};">{T("PRICE")}</b>{T("QTY")}</td></tr>')
+
 TEMPLATES = {
+    "bf_offer": bf_offer(), "bf_offer_text": BF_TEXT,
+    "bf_price_row": BF_PRICE_ROW,
+    "bf_prices_box": (f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border:1px solid {LINE};border-top:4px solid {ORANGE};">'
+                      f'<tr><td style="padding:14px 18px 6px 18px;"><div style="{LABEL}padding-bottom:4px;">{T("TITLE")}</div>'
+                      f'<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">{T("ROWS")}</table>'
+                      f'<p style="margin:10px 0 8px 0;font-family:{FONT};font-size:12px;line-height:18px;color:{MUTED};">{T("NOTE")}</p></td></tr></table>'
+                      '<div style="height:16px;line-height:16px;font-size:0;">&nbsp;</div>'),
+    "bf_mark": f'<span style="color:{ORANGE};">&#9632;&nbsp;</span>',
     "reply": auto_reply(), "text": TEXT,
     "summary_row": SUMMARY_ROW,
     "about": f' about <b style="color:#FFFFFF;">{T("T")}</b>',

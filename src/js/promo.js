@@ -97,11 +97,18 @@
     teaser.hidden = false;
   }
 
-  document.querySelectorAll("[data-promo-open]").forEach(function (b) { b.addEventListener("click", open); });
+  // on the sale page itself the bar's button goes to the machines instead of opening the popup
+  var onSalePage = !!document.getElementById("in-stock") && /black-friday/.test(location.pathname);
+  document.querySelectorAll("[data-promo-open]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      if (onSalePage) { document.getElementById("in-stock").scrollIntoView({ behavior: "smooth" }); return; }
+      open();
+    });
+  });
 
   /* automatic opening */
   var path = location.pathname;
-  var quietPage = /contact-us|privacy-policy|page-not-found|404/.test(path);
+  var quietPage = /contact-us|privacy-policy|page-not-found|404|black-friday/.test(path);
   var closedAt = parseInt(lget("closed"), 10) || 0;
   var recentlyClosed = Date.now() - closedAt < 3 * 864e5;
   if (closedAt && !quietPage) showTeaser();

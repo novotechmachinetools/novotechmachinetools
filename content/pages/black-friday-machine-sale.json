@@ -1,0 +1,36 @@
+{
+ "_note": "Black Friday 2026 page (templates/black-friday.html). The stock list below is a SAMPLE for the layout until the owner sends the real list of in-stock machines; draft stays true (noindex, not in the sitemap) until then. Prices never go on this page: bf-quote.php e-mails them from the private price list on the server.",
+ "slug": "black-friday-machine-sale",
+ "template": "black-friday.html",
+ "draft": true,
+ "no_quote": true,
+ "quote_href": "#instant-quote",
+ "nav_label": "Black Friday sale",
+ "title": "Black Friday Machine Sale 2026 | NovoTech Machine Tools",
+ "meta_description": "Black Friday prices on in-stock metalworking machines in Mississauga, ON, and 5% off factory orders until Dec 4, 2026. Get an instant quote by email.",
+ "h1": "Black Friday machine sale",
+ "social_title": "Black Friday machine sale — Nov 16 to Dec 4",
+ "intro": "Black Friday prices on the machines in our Mississauga, ON warehouse, ready to ship, and 5% off any machine you order from the factory by December 4. Ask for an instant quote and the price list with full specifications is in your inbox within minutes.",
+ "hero_image": "dn-xl-1",
+ "breadcrumb": [
+  {"label": "Home", "href": "index.html"},
+  {"label": "Black Friday sale"}
+ ],
+ "stock": [
+  {"family": "press-brakes:dn-xl", "model": "XL 30135", "qty": 1},
+  {"family": "bandsaw:bekamak-bmso-ga", "model": "BMSO 350GA", "qty": 1},
+  {"family": "plate-rolls:isitan-mrm-s", "model": "MRM-S 2050x150", "qty": 1},
+  {"family": "rebar:Rebar-bending-machine-B-BS-MG-series", "model": "B 36", "qty": 2}
+ ],
+ "faq_title": "Black Friday questions",
+ "faq": [
+  {"q": "How does the instant quote work?", "a": "Fill in the form with your company details and the machines you are interested in. The Black Friday price list, with the sale price and the full specifications of every in-stock machine, is emailed to you within minutes. Reply to that email or call us to reserve a machine."},
+  {"q": "Why are the prices not on the page?", "a": "Black Friday prices go to buyers directly by email, so every buyer gets the full price list, the specifications and the terms in one place."},
+  {"q": "Are these machines really in stock?", "a": "Yes. They are in our warehouse at 1365 Mid-Way Blvd, Unit 26, Mississauga, ON, ready to ship, and you can see them before you buy: call +1 647 526 5510 to book a visit. In-stock machines are first come, first served."},
+  {"q": "How long do the Black Friday prices last?", "a": "Until Friday, December 4, 2026, at 11:59 pm Eastern time, or until the machine is sold."},
+  {"q": "What if the machine I need is not in stock?", "a": "Order it from the factory by December 4 and take 5% off. You pay only 10% down to confirm the order and the remaining 90% on delivery."},
+  {"q": "Can I finance the machine?", "a": "Yes. Financing with 0% down is available through our financing partners, on approved credit."},
+  {"q": "Can I write the machine off this year?", "a": "Canadian businesses can deduct 100% of the cost of eligible manufacturing and processing equipment in the tax year it becomes available for use, and eligible Ontario corporations can also claim the 15% Ontario Made Manufacturing Investment Tax Credit. Eligibility depends on your business and how the machine is used, so ask your accountant. A machine from stock can be delivered and running before your year-end."},
+  {"q": "Do you deliver outside Ontario?", "a": "Yes. We arrange freight from Mississauga, ON to every province and territory and to customers anywhere in the United States."}
+ ]
+}

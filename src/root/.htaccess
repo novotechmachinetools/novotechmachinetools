@@ -14,7 +14,7 @@ RewriteCond %{REQUEST_URI} !^/\.well-known/
 RewriteRule ^ https://novotechmachinetools.com%{REQUEST_URI} [R=301,L]
 
 # ---- Server-side settings, keys and the e-mail designs quote.php reads are never served ----
-<FilesMatch "^(\.user\.ini|form-config\.php|ai-config\.php|quote-mail\.php|mail-lib\.php|.*\.sample\.php|\.cpanel\.yml|\.deploy-hostpapa\.sh)$">
+<FilesMatch "^(\.user\.ini|form-config\.php|ai-config\.php|bf-config\.php|quote-mail\.php|mail-lib\.php|.*\.sample\.php|\.cpanel\.yml|\.deploy-hostpapa\.sh)$">
   Require all denied
 </FilesMatch>
 
