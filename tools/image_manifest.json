@@ -145396,7 +145396,7 @@
   }
  },
  "bf-xl1560": {
-  "alt": "Dener XL 1560 CNC press brake, 5 ft \u00d7 66 US tons",
+  "alt": "Dener XL 1560 CNC press brake, 5 ft \u00d7 66 US tons (60 t)",
   "variants": [
    {
     "w": 1200,
@@ -145456,7 +145456,7 @@
   }
  },
  "bf-xl220": {
-  "alt": "Dener XL 13 ft \u00d7 220 ton CNC mild hybrid press brake",
+  "alt": "Dener XL 40220 CNC mild hybrid press brake, 13 ft \u00d7 243 US tons (220 t)",
   "variants": [
    {
     "w": 746,
@@ -145741,6 +145741,66 @@
    "h": 120,
    "file": "img/bandsaw/video-fLiNSKnZ6Pk-thumb.webp",
    "bytes": 2818
+  }
+ },
+ "video-d4f2rYbhags": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-d4f2rYbhags-1200.webp",
+    "bytes": 66574
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-d4f2rYbhags-800.webp",
+    "bytes": 38898
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-d4f2rYbhags-480.webp",
+    "bytes": 19592
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-d4f2rYbhags-thumb.webp",
+   "bytes": 4312
+  }
+ },
+ "video-ftbBLQL5nM8": {
+  "alt": "Video thumbnail",
+  "variants": [
+   {
+    "w": 1200,
+    "h": 675,
+    "file": "img/bandsaw/video-ftbBLQL5nM8-1200.webp",
+    "bytes": 66250
+   },
+   {
+    "w": 800,
+    "h": 450,
+    "file": "img/bandsaw/video-ftbBLQL5nM8-800.webp",
+    "bytes": 37656
+   },
+   {
+    "w": 480,
+    "h": 270,
+    "file": "img/bandsaw/video-ftbBLQL5nM8-480.webp",
+    "bytes": 18456
+   }
+  ],
+  "alpha": false,
+  "thumb": {
+   "w": 160,
+   "h": 90,
+   "file": "img/bandsaw/video-ftbBLQL5nM8-thumb.webp",
+   "bytes": 4062
   }
  }
 }
