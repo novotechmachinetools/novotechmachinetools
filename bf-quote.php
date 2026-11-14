@@ -203,6 +203,50 @@ function bf_machine_labels(array $ids): array {
     return $out;
 }
 
+// the whole price list inside the e-mail, machine by machine with its photos, price and details like the PDF (the owner,
+// Nov 14 2026). tools/bf_mail_list.py writes it into the private folder (bf-mail-list.json: the rows of every machine, prices
+// inside, and the photos they name); the machines the buyer asked about come first, flagged. The photos travel inside the
+// e-mail like the logo (Outlook downloads no pictures by itself); a photo missing on the server is linked from the site.
+// Returns [HTML, the photo parts for nt_alternative], or ['', []] without the file.
+function bf_mail_list(array $picked): array {
+    global $BF, $PRIV, $MAIL;
+    $file = $PRIV . '/' . basename((string)($BF['mail_list'] ?? 'bf-mail-list.json'));
+    if (!isset($MAIL['bf_list'], $MAIL['bf_list_cat'], $MAIL['bf_list_head'], $MAIL['bf_list_pick']) || !is_file($file)) { return ['', []]; }
+    $L = json_decode((string)file_get_contents($file), true);
+    if (!is_array($L) || empty($L['cats']) || !is_array($L['cats'])) { return ['', []]; }
+    $head = static function (string $k, string $t) use ($MAIL): string { return nt_fill($MAIL[$k], ['T' => nt_e($t)]); };
+    $mine = $rest = '';
+    $n = 0;
+    foreach ($L['cats'] as $c) {
+        $part = '';
+        foreach ((array)($c['items'] ?? []) as $it) {
+            $html = (string)($it['html'] ?? '');
+            if (in_array((string)($it['id'] ?? ''), $picked, true)) { $mine .= strtr($html, ['{{PICK}}' => $MAIL['bf_list_pick']]); $n++; continue; }
+            $part .= strtr($html, ['{{PICK}}' => '']);
+        }
+        if ($part !== '') { $rest .= $head('bf_list_cat', (string)($c['title'] ?? '')) . $part; }
+    }
+    if ($rest === '' && $mine === '') { return ['', []]; }
+    $rows = $mine !== ''
+        ? $head('bf_list_head', $n > 1 ? 'The machines you asked about' : 'The machine you asked about') . $mine
+          . ($rest !== '' ? $head('bf_list_head', 'Every other machine in stock') . $rest : '')
+        : $rest;
+    $images = [];
+    $files = (array)($L['images'] ?? []);
+    $rows = (string)preg_replace_callback('/cid:(i\d+)@nt\b/', static function ($m) use ($files, &$images) {
+        $rel = (string)($files[$m[1]] ?? '');
+        if ($rel === '' || !preg_match('#^img/email/bf/[a-zA-Z0-9_.-]+\.jpg$#', $rel)) { return 'https://novotechmachinetools.com/img/email/novotech-logo.png'; }
+        $path = __DIR__ . '/' . $rel;
+        if (!is_file($path)) { return 'https://novotechmachinetools.com/' . $rel; }
+        if (!isset($images[$m[1]])) {
+            $images[$m[1]] = ['cid' => $m[1] . '@nt', 'mime' => 'image/jpeg', 'name' => basename($rel), 'data' => (string)file_get_contents($path)];
+        }
+        return 'cid:' . $m[1] . '@nt';
+    }, $rows);
+    $note = 'Prices in CAD, plus applicable taxes, for pickup in Mississauga, ON; freight, installation and training extra unless the machine says they are included. Monthly payments: 36-month lease, 0% down, on approved credit, $10 buyout at the end.';
+    return [nt_fill($MAIL['bf_list'], ['ROWS' => $rows, 'NOTE' => nt_e($note)]), array_values($images)];
+}
+
 // ------------------------------------------------------------------------------------------------ the e-mails
 // the price list to the buyer: HTML with a plain-text twin, the PDF attached. False when there is nothing to send.
 function bf_send_offer(array $r): bool {
@@ -255,8 +299,14 @@ function bf_send_offer(array $r): bool {
         ]);
         $pricesText = "Black Friday prices (Mississauga, ON; CAD, plus applicable taxes; monthly payments: 36-month lease, 0% down, on approved credit):\n" . implode("\n", $lines) . "\n\n";
     }
-    $attached = $hasPdf ? 'Your Black Friday price list is attached, with the sale price and the full specifications of every machine in stock. ' : '';
+    // the full list in the e-mail itself: it replaces the short price table and the "your request" box
+    list($listHtml, $listImages) = bf_mail_list($picked);
+    if ($listHtml !== '') { $pricesHtml = $listHtml; $pickedHtml = ''; }
+    $attached = $listHtml !== ''
+        ? 'Below is every machine in stock with its photos, Black Friday price and details' . ($hasPdf ? ', and the same price list is attached as a PDF. ' : '. ')
+        : ($hasPdf ? 'Your Black Friday price list is attached, with the sale price and the full specifications of every machine in stock. ' : '');
     list($src, $images) = nt_images($MAIL['bf_offer']);
+    $images = array_merge($images, $listImages);
     $html = nt_fill($MAIL['bf_offer'], $src + [
         'COMMA_NAME' => $first !== '' ? ', ' . nt_e($first) : '',
         'ATTACHED'   => nt_e($attached),
