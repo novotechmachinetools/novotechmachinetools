@@ -78,8 +78,8 @@
       <tbody>
         {% for r in t.rows %}
         {% if r.type == 'section' %}
-        {# standard / optional equipment by model, under the sizes (the owner, Nov 13 2026) #}
-        <tr class="row-section" id="{{ f.id }}-equipment"><th scope="colgroup" colspan="{{ t.models|length + 1 }}">{{ r.label }}</th></tr>
+        {# standard / optional equipment by model, under the sizes (the owner, Nov 13 2026); the model names are repeated in this row (Nov 14) #}
+        <tr class="row-section" id="{{ f.id }}-equipment"><th scope="col">{{ r.label }}</th>{% for m in t.models %}<th scope="col">{{ m }}</th>{% endfor %}</tr>
         {% elif r.type == 'equip' %}
         <tr class="row-equip">
           <th scope="row">{{ r.label }}</th>

@@ -445,9 +445,11 @@ ul.family-cards { --cvx: 8px; margin-inline: calc(-1 * var(--cvx)); padding-inli
 .specs { margin-top: 26px; }
 .table-scroll { overflow-x: auto; border: 1px solid var(--line); scrollbar-width: thin; }
 .table-scroll:focus-visible { outline-offset: -3px; }
-.spec-table { border-collapse: separate; border-spacing: 0; width: 100%; min-width: 640px; font-size: 15.5px; }
+.spec-table { border-collapse: separate; border-spacing: 0; width: 100%; min-width: 640px; font-size: 15.5px; line-height: 1.35; }
 .spec-table caption { text-align: left; font-family: var(--cond); font-weight: 600; font-size: 20px; color: var(--charcoal); padding: 10px 12px; background: var(--paper); border-bottom: 1px solid var(--line); }
-.spec-table th, .spec-table td { padding: 9px 12px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line-soft); }
+/* rows kept tight: the tables grew long with the equipment rows (the owner, Nov 14 2026) */
+.spec-table th, .spec-table td { padding: 5px 12px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line-soft); }
+.spec-table thead th { padding-top: 8px; padding-bottom: 8px; }
 .spec-table thead th { background: var(--charcoal); color: #fff; font-family: var(--cond); font-weight: 600; font-size: 19px; letter-spacing: .01em; white-space: nowrap; }
 .spec-table thead th.label-col { background: var(--charcoal-2); }
 .spec-table tbody th { font-weight: 600; color: var(--charcoal); background: var(--paper); min-width: 200px; max-width: 260px; }
@@ -469,13 +471,15 @@ ul.family-cards { --cvx: 8px; margin-inline: calc(-1 * var(--cvx)); padding-inli
 .spec-table tbody th { box-shadow: 1px 0 0 var(--line); }
 .table-note { font-size: 14px; color: var(--steel); margin: 8px 0 0; max-width: 50.85em; }
 /* band saws: standard / optional equipment by model, a section of the spec table (Nov 13 2026) */
-.spec-table tbody tr.row-section th { position: static; max-width: none; background: var(--charcoal-2); color: #fff; font-family: var(--cond); font-weight: 600; font-size: 18px; letter-spacing: .01em; padding: 8px 12px; box-shadow: none; }
-.spec-table tbody tr.row-equip th { border-left: 5px solid var(--line); font-weight: 500; }
-.spec-table tr.row-equip td { white-space: nowrap; padding-top: 6px; padding-bottom: 6px; }
+/* the section row repeats the model names, so nobody scrolls back up to the table head (the owner, Nov 14 2026) */
+.spec-table tbody tr.row-section th { position: static; min-width: 0; max-width: none; background: var(--charcoal); color: #fff; font-family: var(--cond); font-weight: 600; font-size: 17px; letter-spacing: .01em; padding: 6px 12px; box-shadow: none; white-space: nowrap; }
+.spec-table tbody tr.row-section th:first-child { position: sticky; left: 0; z-index: 1; background: var(--charcoal-2); white-space: normal; min-width: 200px; max-width: 260px; }
+.spec-table tbody tr.row-equip th { border-left: 5px solid var(--line); font-weight: 500; padding-top: 3px; padding-bottom: 3px; }
+.spec-table tr.row-equip td { white-space: nowrap; padding-top: 3px; padding-bottom: 3px; }
 .eq { display: inline-block; font-weight: 700; line-height: 1.2; }
-.eq-std { color: #1B7A3D; font-size: 1.35em; line-height: 1; }
+.eq-std { color: #1B7A3D; font-size: 1.3em; line-height: 1; }
 .eq-opt { color: var(--orange-ink); font-weight: 600; font-size: .9em; border: 1px solid currentColor; border-radius: 3px; padding: 0 5px; }
-.eq-no { color: #A12A2A; font-size: 1.25em; line-height: 1; }
+.eq-no { color: #A12A2A; font-size: 1.2em; line-height: 1; }
 .eq-na { color: var(--steel); font-weight: 400; }
 .equip-legend .eq-opt { font-size: 12.5px; }
 
